@@ -47,7 +47,7 @@ source_suffix = ['.rst','.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'Wiki For W600' 
+project = u'W600 文档中心' 
 copyright = u'2018, ThingsTurn'
 author = u'ThingsTurn'
 # The version info for the project you're documenting, acts as replacement for
@@ -96,7 +96,7 @@ latex_elements={# The paper size ('letterpaper' or 'a4paper').
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'WikiForW600.tex', u'Wiki For W600 Documentation',
+    (master_doc, 'Docs_of_W600.tex', u'Docs of W600',
      u'ThingsTurn', 'manual'),
 ]
 
@@ -105,7 +105,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'wikiforw600', u'Wiki For W600 Documentation',
+    (master_doc, 'Docs_of_W600', u'Docs of W600',
      [author], 1)
 ]
 
@@ -119,8 +119,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'WikiForW600', u'Wiki For W600 Documentation',
-     author, 'WikiForW600', 'One line description of project.',
+    (master_doc, 'Docs_of_W600', u'Docs of W600',
+     author, 'thingsturn', 'One line description of project.',
      'Miscellaneous'),
 ]
 
