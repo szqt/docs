@@ -1,0 +1,26 @@
+{% extends "!layout.html" %}
+  {% block footer %} {{ super() }}
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #cf1f1f;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #fcfcfc;
+    }
+	.wy-menu-vertical li.current {
+	  background: #ffffff;
+	}
+	.wy-dropdown-menu>dd.call-to-action {
+	background:#ffffff;
+	}
+	.wy-dropdown-menu>dd.call-to-action:hover {
+		background:#ffffff
+	}
+	.wy-menu-vertical a {
+    color: #cf1f1f;
+}
+  </style>
+{% endblock %}
