@@ -3,12 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Wiki For W600's documentation!
+欢迎访问 W600 在线文档中心
 ==========================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
    
-   how_to_be_a_rich_man
-
+   test
+   start
+   develop
+   api
+   hardware
+   tools
+   vsf
+   faq
