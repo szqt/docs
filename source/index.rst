@@ -46,5 +46,4 @@ W600 特性
    api/index
    hardware
    tools
-   vsf
    faq
