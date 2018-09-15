@@ -2,7 +2,6 @@ SDK API
 ============
 
 .. toctree::
-   :hidden:
 
    app
    driver

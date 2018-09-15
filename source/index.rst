@@ -1,7 +1,7 @@
 欢迎访问 W600 文档中心
 ==========================================
 
-`本文档 <https://docs.thingsturn.com>`_ 由 `星通智联 <https://www.thingsturn.com>`_ 进行主要维护，您可以通过 `GitHub <https://github.com/thingsturn/w600_docs>`_ 进行协助编辑。
+`本文档 <https://docs.thingsturn.com>`_ 主要由 `星通智联 <https://www.thingsturn.com>`_ 进行维护，您可以通过 `GitHub <https://github.com/thingsturn/w600_docs>`_ 进行协助编辑。
 
 W600 特性
 ==========
@@ -21,7 +21,7 @@ W600 特性
 
 选型表
 =========
-
+待上传...
 
 其它资源
 ==========
@@ -42,7 +42,7 @@ W600 特性
    :hidden:
 
    start
-   develop
+   develop/index
    api/index
    hardware
    tools

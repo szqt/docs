@@ -1,12 +1,12 @@
 入门指导
---------
+=========
 
 本文档旨在指导用户创建 W600
 的软件环境。本文将通过一个简单的例子来说明如何使用 W600
 进行应用开发，包括环境配置、程序编译、固件下载等步骤。
 
 1 概述
-~~~~~~
+---------------
 
 W600是联盛德新一代支持多接口、多协议的无线局域网802.11n（1T1R）低功耗
 WLAN SoC 芯片。芯片内置 Cortex-M3 CPU处理器和Flash，集成射频收发前端RF
@@ -22,10 +22,8 @@ Cortex-M3 处理器，代码可移植性更强、开发环境友善。
 .. figure:: img/block.png
    :alt: w600 block
 
-   w600 block
-
 2 准备工作
-~~~~~~~~~~
+---------------
 
 -  **电脑**\ ：目前仅支持 Windows 操作系统（需使用 MDK ）
 -  **工具链**\ ：MDK (后续支持 GCC)
@@ -33,7 +31,7 @@ Cortex-M3 处理器，代码可移植性更强、开发环境友善。
 -  **Micro USB 线**\ （需支持数据传输）
 
 3 开发板介绍
-~~~~~~~~~~~~
+---------------
 
 TB-01 是一款基于联盛德 W600
 的超小体积核心开发板，该开发板引出了芯片的所有IO，并且内置LDO和UART传输芯片，只需一根
@@ -43,10 +41,8 @@ Micro USB
 .. figure:: img/tb-01.png
    :alt: tb-01
 
-   tb-01
-
 4 MDK 环境搭建
-~~~~~~~~~~~~~~
+---------------
 
 由于 SDK 需要 Cortex-M3 的 Device Pack 支持，如果在线下载速度较慢 或
 安装遇到问题，建议安装 `MDK
@@ -56,53 +52,41 @@ Micro USB
 .. figure:: img/mdk_legacy.png
    :alt: MDK Legacy
 
-   MDK Legacy
-
 4.1 打开工程
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
-下载 `WM_SDK_W600 <>`__ ，解压后，打开
-\**WM_SDK`\Tools`\Keil`\Project`\WM`\_W600.uvproj*\*
-文件
+下载 :download:`WM_SDK_W600 </upload/WM_SDK_W600_G2.02.05_20180702.zip>` ，解压后，打开 **\\WM_SDK\\Tools\\Keil\\Project\\WM\\_W600.uvproj** 文件
 
 .. figure:: img/mdk_open_prj.png
    :alt: open project
 
-   open project
-
 ``注意：若提示工程打开失败，请检查 MDK 是否按照上一章节进行正确配置``
 
 4.2 修改 Demo 示例
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 找到main.c，此处的 void UserMain(void) 是用户程序的函数入口
 
 修改 SDK 打印信息
 
 .. figure:: img/modify_user_main.png
-   :alt: MDK Build
-
-   MDK Build
+   :alt: Modify main.c
 
 4.3 编译固件
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 点击菜单栏可进行编译
 
 .. figure:: img/mdk_build_prj.png
    :alt: MDK Build
 
-   MDK Build
-
 控制台窗口输出如下：
 
 .. figure:: img/build_output.png
-   :alt: MDK Build
-
-   MDK Build
+   :alt: Build Output
 
 5 固件烧录与调试
-~~~~~~~~~~~~~~~~
+---------------------
 
 **注意：由于我们在硬件上将 W600 的 RESET 引脚和串口芯片的 RTS
 引脚连接在了一起，当您在使用其它串口工具（如
@@ -111,7 +95,7 @@ SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可�
 固件烧录和调试需依赖\ `星通智联串口调试助手 </tools>`__
 
 5.1 连接设备
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 1. 将开发板与电脑通过 Micro USB 线进行连接
 
@@ -123,8 +107,6 @@ SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可�
 
    .. figure:: img/fw_reboot.png
       :alt: firmware download
-
-      firmware download
 
    **如有异常，请参考以下方法进行检查**
 
@@ -148,11 +130,10 @@ SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可�
    .. figure:: img/fw_download.png
       :alt: firmware download
 
-      firmware download
 
 结束
 ~~~~
 
-恭喜你已完成 W600的入门！
+恭喜！你已完成 W600的入门！
 
 现在你可以尝试其他的示例工程或者直接开发自己的应用程序。
