@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎访问 W600 在线文档中心
+欢迎访问 W600 文档中心
 ==========================================
 
 .. toctree::

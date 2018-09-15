@@ -136,5 +136,20 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # otherwise, readthedocs.org uses their theme by default, so no need to specify it
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+html_theme_options = {
+#    'canonical_url': '',
+#    'analytics_id': '',
+#    'logo_only': False,
+#    'display_version': True,
+    'prev_next_buttons_location': 'both',
+    'style_external_links': True,
+#    'vcs_pageview_mode': '',
+    # Toc options
+    'collapse_navigation': False,
+#    'sticky_navigation': True,
+#    'navigation_depth': 4,
+#    'includehidden': True,
+#    'titles_only': False
+}
 _exts = "../exts"
 sys.path.append(os.path.abspath(_exts))
