@@ -3,7 +3,7 @@
 
 `本文档 <https://docs.thingsturn.com>`_ 主要由 `星通智联 <https://www.thingsturn.com>`_ 进行维护，您可以通过 `GitHub <https://github.com/thingsturn/w600_docs>`_ 进行协助编辑。
 
-.. note::
+.. important::
     初次上手，强烈建议您优先阅读  `W600 入门指导 <start>`__
 
 W600 特性
@@ -31,11 +31,14 @@ W600 特性
 
 深圳市星通智联科技有限公司
 
-邮箱: support@thingsturn.com
+论坛：http://w600.fun
+
+邮箱：support@thingsturn.com
+
+官网：http://www.thingsturn.com
 
 淘宝：http://shop.thingsturn.com
 
-论坛：http://w600.fun
 
 地址: 深圳市宝安区固戍二路鸿宇商务大厦1118
 
