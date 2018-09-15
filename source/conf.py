@@ -141,7 +141,7 @@ html_theme_options = {
 #    'analytics_id': '',
 #    'logo_only': False,
 #    'display_version': True,
-    'prev_next_buttons_location': 'both',
+#    'prev_next_buttons_location': 'both',
     'style_external_links': True,
 #    'vcs_pageview_mode': '',
     # Toc options
