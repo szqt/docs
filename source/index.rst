@@ -39,12 +39,11 @@ W600 特性
 地址: 深圳市宝安区固戍二路鸿宇商务大厦1118
 
 .. toctree::
-   :maxdepth: 2
    :hidden:
 
    start
    develop
-   api
+   api/index
    hardware
    tools
    vsf
