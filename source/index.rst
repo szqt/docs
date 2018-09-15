@@ -1,14 +1,47 @@
-.. Wiki For W600 documentation master file, created by
-   sphinx-quickstart on Fri Sep 14 00:18:10 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 欢迎访问 W600 文档中心
 ==========================================
 
+`本文档 <https://docs.thingsturn.com>`_ 由 `星通智联 <https://www.thingsturn.com>`_ 进行主要维护，您可以通过 `GitHub <https://github.com/thingsturn/w600_docs>`_ 进行协助编辑。
+
+W600 特性
+==========
+1. 内置 288KB SRAM，用户可用RAM超过160KB；
+2. 内置 1MB Flash，用户固件大小可达450KB；
+3. 支持SWD调试（近期会出教程）；
+4. 支持HT40，WiFi速率最高150Mbps；
+5. 集成1个高速SPI设备控制器，工作时钟范围0~50MHz；
+6. 集成1个I2C控制器，支持100/400Kbps速率；
+7. 2个完整UART接口，波特率范围1200bps~2Mbps；
+8. 集成双工I²S控制器，支持32KHz~192KHz 编解码；
+9. 集成PWM控制器，支持5路PWM输出或2路PWM输入；
+10. 集成7816接口，支持EVM2000规范，并兼容串口功能。
+11. 集成通用加密硬件加速器，支持PRNG/ SHA1/ MD5/ RC4/ DES/ 3DES/ AES/ CRC等多种加解密协议；
+12. 除 wlan.lib 外，其它资源完全开放；
+13. 使用keil 开发环境（GCC近期会出教程）。
+
+选型表
+=========
+
+
+其它资源
+==========
+
+`星通智联官方淘宝店铺 <http://shop.thingsturn.com>`_
+
+`W600 粉丝论坛 <http://w600.fun>`_
+
+联系我们
+==========
+深圳市星通智联科技有限公司
+
+邮箱: support@thingsturn.com
+
+地址: 深圳市宝安区固戍二路鸿宇商务大厦1118
+
 .. toctree::
    :maxdepth: 2
-   
+   :hidden:
+
    start
    develop
    api
