@@ -3,6 +3,9 @@
 
 `本文档 <https://docs.thingsturn.com>`_ 主要由 `星通智联 <https://www.thingsturn.com>`_ 进行维护，您可以通过 `GitHub <https://github.com/thingsturn/w600_docs>`_ 进行协助编辑。
 
+.. note::
+    初次上手，强烈建议您优先阅读  `W600 入门指导 <start>`__
+
 W600 特性
 ==========
 1. 内置 288KB SRAM，用户可用RAM超过160KB；
@@ -23,18 +26,16 @@ W600 特性
 =========
 待上传...
 
-其它资源
-==========
-
-`星通智联官方淘宝店铺 <http://shop.thingsturn.com>`_
-
-`W600 粉丝论坛 <http://w600.fun>`_
-
 联系我们
 ==========
+
 深圳市星通智联科技有限公司
 
 邮箱: support@thingsturn.com
+
+淘宝：http://shop.thingsturn.com
+
+论坛：http://w600.fun
 
 地址: 深圳市宝安区固戍二路鸿宇商务大厦1118
 
@@ -44,6 +45,6 @@ W600 特性
    start
    develop/index
    api/index
-   hardware
+   hardware/index
    tools
    faq

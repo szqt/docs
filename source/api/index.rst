@@ -2,6 +2,7 @@ SDK API
 ============
 
 .. toctree::
+   :titlesonly:
 
    app
    driver

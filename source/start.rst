@@ -19,8 +19,8 @@ Switch、Balun、低噪声放大器、滤波器、功率放大器、电源管理
 Flash，使得芯片外围电路器件更少，且模块体积更小、成本更优。W600不仅提供了更加丰富的接口和更大的内存空间，还集成了各种加解密硬件加速器，可提供更快的加解密算法执行速度。芯片采用业界通用的
 Cortex-M3 处理器，代码可移植性更强、开发环境友善。
 
-.. figure:: img/block.png
-   :alt: w600 block
+.. image:: img/block.png
+   :width: 500px
 
 2 准备工作
 ---------------
@@ -38,8 +38,8 @@ TB-01 是一款基于联盛德 W600
 Micro USB
 数据线与电脑连接即可使用，支持一键下载，外设拥有5个环形LED和2颗按键，调试操作极其方便。
 
-.. figure:: img/tb-01.png
-   :alt: tb-01
+.. image:: img/tb_01.png
+   :width: 300px
 
 4 MDK 环境搭建
 ---------------
@@ -49,16 +49,16 @@ Micro USB
 5 <https://www.keil.com/download/product/>`__ 的同时也安装对应的 `Legacy
 版本 <http://www.keil.com/mdk5/legacy/>`__
 
-.. figure:: img/mdk_legacy.png
-   :alt: MDK Legacy
+.. image:: img/mdk_legacy.png
+   :width: 500px
 
 4.1 打开工程
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 下载 :download:`WM_SDK_W600 </upload/WM_SDK_W600_G2.02.05_20180702.zip>` ，解压后，打开 **\\WM_SDK\\Tools\\Keil\\Project\\WM\\_W600.uvproj** 文件
 
-.. figure:: img/mdk_open_prj.png
-   :alt: open project
+.. image:: img/mdk_open_prj.png
+   :width: 500px
 
 ``注意：若提示工程打开失败，请检查 MDK 是否按照上一章节进行正确配置``
 
@@ -69,21 +69,21 @@ Micro USB
 
 修改 SDK 打印信息
 
-.. figure:: img/modify_user_main.png
-   :alt: Modify main.c
+.. image:: img/modify_user_main.png
+   :width: 500px
 
 4.3 编译固件
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 点击菜单栏可进行编译
 
-.. figure:: img/mdk_build_prj.png
-   :alt: MDK Build
+.. image:: img/mdk_build_prj.png
+   :width: 500px
 
 控制台窗口输出如下：
 
-.. figure:: img/build_output.png
-   :alt: Build Output
+.. image:: img/build_output.png
+   :width: 500px
 
 5 固件烧录与调试
 ---------------------
@@ -105,8 +105,8 @@ SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可�
 
 4. 串口打印信息如下，说明开发板正常工作
 
-   .. figure:: img/fw_reboot.png
-      :alt: firmware download
+   .. image:: img/fw_reboot.png
+      :width: 500px
 
    **如有异常，请参考以下方法进行检查**
 
@@ -127,8 +127,9 @@ SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可�
 
 3. 观察固件运行信息
 
-   .. figure:: img/fw_download.png
-      :alt: firmware download
+   .. image:: img/fw_download.png
+       :width: 500px
+
 
 
 结束

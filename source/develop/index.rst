@@ -3,6 +3,7 @@
 
 
 .. toctree::
+   :titlesonly:
 
    at
    soc
