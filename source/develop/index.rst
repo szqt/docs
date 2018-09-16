@@ -8,4 +8,4 @@
    at
    soc
    t_cloud
-   swd
+   how_to_use_jlink

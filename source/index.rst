@@ -49,5 +49,6 @@ W600 特性
    develop/index
    api/index
    hardware/index
+   vsf/index
    tools
    faq
