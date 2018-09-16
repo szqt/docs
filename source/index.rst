@@ -24,7 +24,25 @@ W600 特性
 
 选型表
 =========
-待上传...
+.. image:: img/tw_01.png
+   :width: 300px
+
+TW-01，兼容ESP-01，8Pin直插
+
+.. image:: img/tw_02.png
+   :width: 300px
+
+TW-02，兼容E2S，11Pin 金手指
+
+.. image:: img/tw_03.png
+   :width: 300px
+
+TW-03，兼容ESP-12F，22Pin 邮票孔
+
+.. image:: img/tb_01.png
+   :width: 300px
+
+TB-01，全IO引出，支持一键下载
 
 联系我们
 ==========
