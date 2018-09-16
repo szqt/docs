@@ -4,7 +4,7 @@
 `本文档 <https://docs.thingsturn.com>`_ 主要由 `星通智联 <https://www.thingsturn.com>`_ 进行维护，您可以通过 `GitHub <https://github.com/thingsturn/w600_docs>`_ 进行协助编辑。
 
 .. important::
-    初次上手，强烈建议您优先阅读  `W600 入门指导 <start>`__
+    初次上手，强烈建议您优先阅读  `W600 入门指导 <start>`__ 和 `W600 常见问题 <faq>`__
 
 W600 特性
 ==========
