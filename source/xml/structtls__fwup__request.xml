@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__fwup__request" kind="struct" language="C++" prot="public">
+    <compoundname>tls_fwup_request</compoundname>
+    <includes refid="wm__fwup_8h" local="no">wm_fwup.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__fwup__request_1a9447e553c4c09c18501b4812230a0929" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref></type>
+        <definition>struct dl_list tls_fwup_request::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="101" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fwup__request_1a37f5b203e0f03c174834b5eac2bf01f5" prot="public" static="no" mutable="no">
+        <type>u8 *</type>
+        <definition>u8* tls_fwup_request::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="115" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fwup__request_1ac4d6713e174ec58431c8412b272e1585" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_fwup_request::data_len</definition>
+        <argsstring></argsstring>
+        <name>data_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="116" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fwup__request_1aee2a7ae670a57d8076d5da62ac323591" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tls_fwup_request::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="117" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fwup__request_1afd934466c95ecf96b4a0078677cd9d0d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* tls_fwup_request::complete) (struct tls_fwup_request *request, void *arg)</definition>
+        <argsstring>)(struct tls_fwup_request *request, void *arg)</argsstring>
+        <name>complete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="118" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fwup__request_1aa62ffe5275e1623f28c44e54cbda3cbc" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* tls_fwup_request::arg</definition>
+        <argsstring></argsstring>
+        <name>arg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="119" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure for firmware update request </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="162">
+        <label>tls_fwup_request</label>
+        <link refid="structtls__fwup__request"/>
+        <childnode refid="163" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="163">
+        <label>dl_list</label>
+        <link refid="structdl__list"/>
+        <childnode refid="163" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Platform/wm_fwup.h" line="113" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="113" bodyend="120"/>
+    <listofallmembers>
+      <member refid="structtls__fwup__request_1aa62ffe5275e1623f28c44e54cbda3cbc" prot="public" virt="non-virtual"><scope>tls_fwup_request</scope><name>arg</name></member>
+      <member refid="structtls__fwup__request_1afd934466c95ecf96b4a0078677cd9d0d" prot="public" virt="non-virtual"><scope>tls_fwup_request</scope><name>complete</name></member>
+      <member refid="structtls__fwup__request_1a37f5b203e0f03c174834b5eac2bf01f5" prot="public" virt="non-virtual"><scope>tls_fwup_request</scope><name>data</name></member>
+      <member refid="structtls__fwup__request_1ac4d6713e174ec58431c8412b272e1585" prot="public" virt="non-virtual"><scope>tls_fwup_request</scope><name>data_len</name></member>
+      <member refid="structtls__fwup__request_1a9447e553c4c09c18501b4812230a0929" prot="public" virt="non-virtual"><scope>tls_fwup_request</scope><name>list</name></member>
+      <member refid="structtls__fwup__request_1aee2a7ae670a57d8076d5da62ac323591" prot="public" virt="non-virtual"><scope>tls_fwup_request</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

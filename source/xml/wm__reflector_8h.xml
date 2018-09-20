@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__reflector_8h" kind="file" language="C++">
+    <compoundname>wm_reflector.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <incdepgraph>
+      <node id="198">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="197">
+        <label>Include/Driver/wm_reflector.h</label>
+        <link refid="wm__reflector_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__reflector_8h_1a7ec998b8958895fb2383c7965eab23bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_reflector_open</definition>
+        <argsstring>(int ctr_io)</argsstring>
+        <name>tls_reflector_open</name>
+        <param>
+          <type>int</type>
+          <declname>ctr_io</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to initial the reflector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ctr_io</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctrl io</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_reflector.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__reflector_8h_1a58da6ad85aed04b5f8ee43949e8b2a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_reflector_close</definition>
+        <argsstring>(int ctr_io)</argsstring>
+        <name>tls_reflector_close</name>
+        <param>
+          <type>int</type>
+          <declname>ctr_io</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to close the reflector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ctr_io</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ctrl io</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_reflector.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__reflector_8h_1ae560f4ed93669068c5361a0aaee13cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_reflector_output_status</definition>
+        <argsstring>(int out_io)</argsstring>
+        <name>tls_reflector_output_status</name>
+        <param>
+          <type>int</type>
+          <declname>out_io</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to read reflector output status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">out_io</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output io</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>status</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_reflector.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>reflector driver module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2016 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>WM_REFLECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_REFLECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__reflector_8h_1a7ec998b8958895fb2383c7965eab23bc" kindref="member">tls_reflector_open</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctr_io);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__reflector_8h_1a58da6ad85aed04b5f8ee43949e8b2a77" kindref="member">tls_reflector_close</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctr_io);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__reflector_8h_1ae560f4ed93669068c5361a0aaee13cbc" kindref="member">tls_reflector_output_status</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>out_io);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_reflector.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structfd__set" kind="struct" language="C++" prot="public">
+    <compoundname>fd_set</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfd__set_1ac81e0368e3874d3805a0d574664988d0" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char fd_set::fd_bits</definition>
+        <argsstring>[(FD_SETSIZE+7)/8]</argsstring>
+        <name>fd_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="393" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Net/wm_sockets.h" line="392" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="392" bodyend="394"/>
+    <listofallmembers>
+      <member refid="structfd__set_1ac81e0368e3874d3805a0d574664988d0" prot="public" virt="non-virtual"><scope>fd_set</scope><name>fd_bits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__irq__handler" kind="struct" language="C++" prot="public">
+    <compoundname>tls_irq_handler</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__irq__handler_1aeefab698c2c347cae1fb94fa3b4eb00b" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* tls_irq_handler::handler) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="70" column="1" bodyfile="Include/Driver/wm_irq.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__irq__handler_1ab97092fc86ab7c8576d0fdfdaf5a8f9f" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* tls_irq_handler::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="71" column="1" bodyfile="Include/Driver/wm_irq.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__irq__handler_1a498348775d57dd718060547c8f78c5a0" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_irq_handler::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="73" column="1" bodyfile="Include/Driver/wm_irq.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_irq.h" line="69" column="1" bodyfile="Include/Driver/wm_irq.h" bodystart="68" bodyend="74"/>
+    <listofallmembers>
+      <member refid="structtls__irq__handler_1a498348775d57dd718060547c8f78c5a0" prot="public" virt="non-virtual"><scope>tls_irq_handler</scope><name>counter</name></member>
+      <member refid="structtls__irq__handler_1ab97092fc86ab7c8576d0fdfdaf5a8f9f" prot="public" virt="non-virtual"><scope>tls_irq_handler</scope><name>data</name></member>
+      <member refid="structtls__irq__handler_1aeefab698c2c347cae1fb94fa3b4eb00b" prot="public" virt="non-virtual"><scope>tls_irq_handler</scope><name>handler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_5b9acf90d48ec4b1765d1bc4d04cd6ee" kind="dir">
+    <compoundname>Include/Platform</compoundname>
+    <innerfile refid="aes_8h">aes.h</innerfile>
+    <innerfile refid="wm__crypto__hard_8h">wm_crypto_hard.h</innerfile>
+    <innerfile refid="wm__fwup_8h">wm_fwup.h</innerfile>
+    <innerfile refid="wm__mem_8h">wm_mem.h</innerfile>
+    <innerfile refid="wm__params_8h">wm_params.h</innerfile>
+    <innerfile refid="wm__wl__mbox_8h">wm_wl_mbox.h</innerfile>
+    <innerfile refid="wm__wl__task_8h">wm_wl_task.h</innerfile>
+    <innerfile refid="wm__wl__timers_8h">wm_wl_timers.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Platform/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__channel__sw__ie" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_channel_sw_ie</compoundname>
+    <includes refid="wm__ieee80211_8h" local="no">wm_ieee80211.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__channel__sw__ie_1aa6e87ff6f9d05ba9ae2f97709e750c31" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_channel_sw_ie::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="877" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="877" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__channel__sw__ie_1a29d210197860a0add8d80986a0bcbd10" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_channel_sw_ie::new_ch_num</definition>
+        <argsstring></argsstring>
+        <name>new_ch_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="878" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="878" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__channel__sw__ie_1a4766c1a195c7ae443f6e8f05285eed00" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_channel_sw_ie::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="879" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="879" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct <ref refid="structieee80211__channel__sw__ie" kindref="compound">ieee80211_channel_sw_ie</ref></para><para>This structure refers to &quot;Channel Switch Announcement information element&quot; </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_ieee80211.h" line="876" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="876" bodyend="880"/>
+    <listofallmembers>
+      <member refid="structieee80211__channel__sw__ie_1a4766c1a195c7ae443f6e8f05285eed00" prot="public" virt="non-virtual"><scope>ieee80211_channel_sw_ie</scope><name>count</name></member>
+      <member refid="structieee80211__channel__sw__ie_1aa6e87ff6f9d05ba9ae2f97709e750c31" prot="public" virt="non-virtual"><scope>ieee80211_channel_sw_ie</scope><name>mode</name></member>
+      <member refid="structieee80211__channel__sw__ie_1a29d210197860a0add8d80986a0bcbd10" prot="public" virt="non-virtual"><scope>ieee80211_channel_sw_ie</scope><name>new_ch_num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

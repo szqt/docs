@@ -1,0 +1,1531 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__pwm_8h" kind="file" language="C++">
+    <compoundname>wm_pwm.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <incdepgraph>
+      <node id="194">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="193">
+        <label>Include/Driver/wm_pwm.h</label>
+        <link refid="wm__pwm_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="195">
+        <label>Include/Driver/wm_pwm.h</label>
+        <link refid="wm__pwm_8h"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__pwm__init__param" prot="public">_pwm_init_param</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__pwm_8h_1a61d0f345cb1ae13ff5ff3e4f1feb1a5d" prot="public" static="no">
+        <name>PWM_CHANNEL_MAX_NUM</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pwm channel&apos;s maximum number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="17" column="9" bodyfile="Include/Driver/wm_pwm.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_pwm_out_mode</name>
+        <enumvalue id="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a712cbe20b64fb65a2773e0daaf78b730" prot="public">
+          <name>WM_PWM_OUT_MODE_BRAKE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>brake mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a952b9c8b40f1e6cabaf416daef54a4ad" prot="public">
+          <name>WM_PWM_OUT_MODE_ALLSYC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>all synchronous mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a1cc90d9d3e0c525569ab463384cbc6c7" prot="public">
+          <name>WM_PWM_OUT_MODE_2SYC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>two channel synchronous mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a7a0126abd563d4f7d87b2d8f962be49f" prot="public">
+          <name>WM_PWM_OUT_MODE_MC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>complementary mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a5ea80bc80b61194bade09bae0a588a2e" prot="public">
+          <name>WM_PWM_OUT_MODE_INDPT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>independent mode </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pwm work mode for signal generate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="21" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_pwm_cap_int_type</name>
+        <enumvalue id="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8a688f4cf7f73061b16d6876ee3ed8106f" prot="public">
+          <name>WM_PWM_CAP_RISING_EDGE_INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>rising edge arises the interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8a01a3b56dba2a050b71a9442d9bad4ea1" prot="public">
+          <name>WM_PWM_CAP_FALLING_EDGE_INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>falling edge arises the interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8a7af287c453a55d14d75b5c1576ac7e19" prot="public">
+          <name>WM_PWM_CAP_RISING_FALLING_EDGE_INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>both rising edge and falling edge arise the interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8afd612fd0e47383d7f9f7767c8fc9bbee" prot="public">
+          <name>WM_PWM_CAP_DMA_INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>dma request </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt type for capture mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="30" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__pwm_8h_1a14340069a678734a63d0684198e560be" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_pwm_out_en_state</name>
+        <enumvalue id="wm__pwm_8h_1a14340069a678734a63d0684198e560bea23ece31e0cb18bafe56399707457e6c1" prot="public">
+          <name>WM_PWM_OUT_EN_STATE_TRI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>set tristate status </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1a14340069a678734a63d0684198e560bea30c9d4b18080ba1ecbcd7f89bd91f1e8" prot="public">
+          <name>WM_PWM_OUT_EN_STATE_OUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>set output status </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pwm output status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="38" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__pwm_8h_1aef94fedb54125d41fa026634933c133c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_pwm_cnt_type</name>
+        <enumvalue id="wm__pwm_8h_1aef94fedb54125d41fa026634933c133ca09220be3c9810fd2e8c4399259d84411" prot="public">
+          <name>WM_PWM_CNT_TYPE_EDGE_ALLGN_CAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>edge alignment(only capture mode) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1aef94fedb54125d41fa026634933c133ca74d4dec31ad0e1f3b10f6c65dd9f3f4e" prot="public">
+          <name>WM_PWM_CNT_TYPE_EDGE_ALIGN_OUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>edge alignment(only output mode) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1aef94fedb54125d41fa026634933c133ca88959b2ce690e150294db26b51c834ec" prot="public">
+          <name>WM_PWM_CNT_TYPE_CENTER_ALIGN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>central alignment </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pwm count mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="44" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__pwm_8h_1ab235618a090324788ef488342916756b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_pwm_loop_type</name>
+        <enumvalue id="wm__pwm_8h_1ab235618a090324788ef488342916756bac4ca23d70727ca7566bf95e3bd3639a2" prot="public">
+          <name>WM_PWM_LOOP_TYPE_SINGLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>single mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1ab235618a090324788ef488342916756bab11a3c20a0816245fa5f4f00727638a2" prot="public">
+          <name>WM_PWM_LOOP_TYPE_LOOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>auto load </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pwm cycle type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="51" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__pwm_8h_1a488b8145a95e149bc34af9aac54b87d8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_pwm_waveform_inversion</name>
+        <enumvalue id="wm__pwm_8h_1a488b8145a95e149bc34af9aac54b87d8a7fb63064ee7b7667522e40287076b53e" prot="public">
+          <name>WM_PWM_WAVEFORM_NOINVERSION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>not inverse </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1a488b8145a95e149bc34af9aac54b87d8a45d261fcefd0e9c88ca2437b5919f8d6" prot="public">
+          <name>WM_PWM_WAVEFORM_INVERSION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>inversion </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pwm waveform inversion mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="57" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_pwm_brake_out_level</name>
+        <enumvalue id="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabfaf9bee87cea48157f5cb1a480049fc061" prot="public">
+          <name>WM_PWM_BRAKE_OUT_HIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>output high level </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabfa45f9fbf0c78730d0f22088d128392c7b" prot="public">
+          <name>WM_PWM_BRAKE_OUT_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>output low level </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pwm output level in the brake mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="63" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="63" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__pwm_8h_1ab79dc697d292acb666903b3015b7e1af" prot="public" static="no">
+        <type>struct <ref refid="struct__pwm__init__param" kindref="compound">_pwm_init_param</ref></type>
+        <definition>typedef struct _pwm_init_param pwm_init_param</definition>
+        <argsstring></argsstring>
+        <name>pwm_init_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pwm initial parameters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga442831877a184c854abd47644092a305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pwm_isr_register</definition>
+        <argsstring>(void(*callback)(void))</argsstring>
+        <name>tls_pwm_isr_register</name>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register the pwm interrupt callback function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pwm interrupt callback function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga7b1b8b02c0a615a3092d83560a2ea2c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_duty_config</definition>
+        <argsstring>(u8 channel, u8 duty)</argsstring>
+        <name>tls_pwm_duty_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>duty</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set duty radio. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,range form 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of active levels</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gab2e927f05d8b4f63a819b51d051f5a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_freq_config</definition>
+        <argsstring>(u8 channel, u16 clkdiv, u8 period)</argsstring>
+        <name>tls_pwm_freq_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>clkdiv</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set frequency. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO., range form 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">clkdiv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>clock divider, range 0 to 65535 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of the counting clock cycle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gad40dff093544c202c2a320f013838e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_out_mode_config</definition>
+        <argsstring>(u8 channel, enum tls_pwm_out_mode mode)</argsstring>
+        <name>tls_pwm_out_mode_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665" kindref="member">tls_pwm_out_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set the output mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO., range form 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm work mode for signal generate</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gae8d9bb18a8e726bfa3fdb0df12736948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_cnt_type_config</definition>
+        <argsstring>(u8 channel, enum tls_pwm_cnt_type cnt_type)</argsstring>
+        <name>tls_pwm_cnt_type_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133c" kindref="member">tls_pwm_cnt_type</ref></type>
+          <declname>cnt_type</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set the counting mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,range form 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cnt_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>counting mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gad8098baf916900697d2ff3ae157efe4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_loop_mode_config</definition>
+        <argsstring>(u8 channel, enum tls_pwm_loop_type loop_mode)</argsstring>
+        <name>tls_pwm_loop_mode_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="wm__pwm_8h_1ab235618a090324788ef488342916756b" kindref="member">tls_pwm_loop_type</ref></type>
+          <declname>loop_mode</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set whether to loop. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,range form 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">loop_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to loop</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga2cc465d8dd9118465df7ceac20f02e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_out_inverse_cmd</definition>
+        <argsstring>(u8 channel, bool en)</argsstring>
+        <name>tls_pwm_out_inverse_cmd</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set whether to inverse the output. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,range form 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ENABLE or DISABLE</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga3ded905635271ece569bcb7f84857b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_stoptime_by_period_config</definition>
+        <argsstring>(u8 channel, u8 pnum)</argsstring>
+        <name>tls_pwm_stoptime_by_period_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>pnum</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set the number of period to be generated. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,range form 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pnum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of period to be generated,range from 0 to 255</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gaff4dfb4eb8211f4466f9b68027df23cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_output_en_cmd</definition>
+        <argsstring>(u8 channel, bool en)</argsstring>
+        <name>tls_pwm_output_en_cmd</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set output enable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,channel 0 or channel 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ENABLE or DISABLE</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gad0873196d10906d84eeaf8667740bf5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_deadzone_config</definition>
+        <argsstring>(u8 channel, bool dten, u8 dtclkdiv, u8 dtcnt)</argsstring>
+        <name>tls_pwm_deadzone_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dten</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>dtclkdiv</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>dtcnt</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set the dead time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,channel 0 or channel 2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dten</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether enalbe the deat time, ENABLE or DISABLE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dtclkdiv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dead zone clock divider, range 0 to 3 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dtcnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of the counting clock cycle, range 0 to 255</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga1ff419ff73955435ebeaeebf1db45759" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_capture_inverse_cmd</definition>
+        <argsstring>(u8 channel, bool en)</argsstring>
+        <name>tls_pwm_capture_inverse_cmd</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set whether to inverse the capture input. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,channel 0 or channel 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ENABLE or DISABLE</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gaf141de053829d755ea78f4d0ecdc2a63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_brake_mode_config</definition>
+        <argsstring>(u8 channel, bool en, enum tls_pwm_brake_out_level brok)</argsstring>
+        <name>tls_pwm_brake_mode_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabf" kindref="member">tls_pwm_brake_out_level</ref></type>
+          <declname>brok</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set break mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,channel 0 or channel 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether enable the break mode,ENABLE or DISABLE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">brok</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when break</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga4f03dd018b919269e4fa3b1c449fc545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_capture_mode_config</definition>
+        <argsstring>(u8 channel)</argsstring>
+        <name>tls_pwm_capture_mode_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to enable the capture mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO.,channel 0 or channel 4</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gaa24dc842ad66e4040b9fe20024c362ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_stoptime_irq_cmd</definition>
+        <argsstring>(u8 channel, bool en)</argsstring>
+        <name>tls_pwm_stoptime_irq_cmd</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set the interrupt about the number of period. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel,range from 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>enble or disable</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gaa98d01754b13cda71477ae2258edf60d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_capture_irq_type_config</definition>
+        <argsstring>(u8 channel, enum tls_pwm_cap_int_type int_type)</argsstring>
+        <name>tls_pwm_capture_irq_type_config</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8" kindref="member">tls_pwm_cap_int_type</ref></type>
+          <declname>int_type</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set the interrupt about the capture. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel,channel 0 or channel 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">int_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt type</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="301" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gacef57627cde9e623ac10b3ea2195cc19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_out_init</definition>
+        <argsstring>(pwm_init_param pwm_param)</argsstring>
+        <name>tls_pwm_out_init</name>
+        <param>
+          <type><ref refid="wm__pwm_8h_1ab79dc697d292acb666903b3015b7e1af" kindref="member">pwm_init_param</ref></type>
+          <declname>pwm_param</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to initial pwm(out mode) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pwm_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>structure containing the initialization parameters</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga555575dc99eefbcf67d1051d366e3499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_cap_init</definition>
+        <argsstring>(u8 channel, u16 clkdiv, bool inverse_en, enum tls_pwm_cap_int_type int_type)</argsstring>
+        <name>tls_pwm_cap_init</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>clkdiv</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inverse_en</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8" kindref="member">tls_pwm_cap_int_type</ref></type>
+          <declname>int_type</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to initial pwm(capture mode) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel, channel 0 or channel 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">clkdiv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>clock divider, range 0 to 65535 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inverse_en</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether the input signal is reversed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">int_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt type</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga7946a788ff3f5178f26458ae5f66bd46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_start</definition>
+        <argsstring>(u8 channel)</argsstring>
+        <name>tls_pwm_start</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to start pwm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel, range from 0 to 4</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="340" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga377334a6d2636df81c84eea52c749ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pwm_freq_set</definition>
+        <argsstring>(u8 channel, u32 freq)</argsstring>
+        <name>tls_pwm_freq_set</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to stop pwm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel no, range form 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency, range from 1 to 156250</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="352" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gaf28db8179feecca560eb8c6977cdb2d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pwm_duty_set</definition>
+        <argsstring>(u8 channel, u8 duty)</argsstring>
+        <name>tls_pwm_duty_set</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>duty</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set duty radio. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel NO., range form 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>duty radio, range from 0 to 255</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="364" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1gac862398335241edb6b6344b9cfb14ae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_init</definition>
+        <argsstring>(u8 channel, u32 freq, u8 duty, u8 pnum)</argsstring>
+        <name>tls_pwm_init</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>duty</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>pnum</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to initial pwm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel, range from 0 to 4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to frequency, freq range from 1 to 156250 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to duty radio, duty range from 0 to 255</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="378" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_w_m___driver___a_p_is_1ga6e5da4925abcb88dd03aa101a8b199ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_pwm_stop</definition>
+        <argsstring>(u8 channel)</argsstring>
+        <name>tls_pwm_stop</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to stop pwm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pwm channel, range from 0 to 4</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="390" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>pwm driver module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_PWM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_PWM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="wm__pwm_8h_1a61d0f345cb1ae13ff5ff3e4f1feb1a5d" refkind="member"><highlight class="preprocessor">#define<sp/>PWM_CHANNEL_MAX_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665" kindref="member">tls_pwm_out_mode</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22" refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a712cbe20b64fb65a2773e0daaf78b730" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a712cbe20b64fb65a2773e0daaf78b730" kindref="member">WM_PWM_OUT_MODE_BRAKE</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="23" refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a952b9c8b40f1e6cabaf416daef54a4ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a952b9c8b40f1e6cabaf416daef54a4ad" kindref="member">WM_PWM_OUT_MODE_ALLSYC</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a1cc90d9d3e0c525569ab463384cbc6c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a1cc90d9d3e0c525569ab463384cbc6c7" kindref="member">WM_PWM_OUT_MODE_2SYC</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a7a0126abd563d4f7d87b2d8f962be49f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a7a0126abd563d4f7d87b2d8f962be49f" kindref="member">WM_PWM_OUT_MODE_MC</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a5ea80bc80b61194bade09bae0a588a2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665a5ea80bc80b61194bade09bae0a588a2e" kindref="member">WM_PWM_OUT_MODE_INDPT</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8" kindref="member">tls_pwm_cap_int_type</ref>{</highlight></codeline>
+<codeline lineno="31" refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8a688f4cf7f73061b16d6876ee3ed8106f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8a688f4cf7f73061b16d6876ee3ed8106f" kindref="member">WM_PWM_CAP_RISING_EDGE_INT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32" refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8a01a3b56dba2a050b71a9442d9bad4ea1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8a01a3b56dba2a050b71a9442d9bad4ea1" kindref="member">WM_PWM_CAP_FALLING_EDGE_INT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8a7af287c453a55d14d75b5c1576ac7e19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8a7af287c453a55d14d75b5c1576ac7e19" kindref="member">WM_PWM_CAP_RISING_FALLING_EDGE_INT</ref>,<sp/></highlight></codeline>
+<codeline lineno="34" refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8afd612fd0e47383d7f9f7767c8fc9bbee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8afd612fd0e47383d7f9f7767c8fc9bbee" kindref="member">WM_PWM_CAP_DMA_INT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="wm__pwm_8h_1a14340069a678734a63d0684198e560be" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1a14340069a678734a63d0684198e560be" kindref="member">tls_pwm_out_en_state</ref>{</highlight></codeline>
+<codeline lineno="39" refid="wm__pwm_8h_1a14340069a678734a63d0684198e560bea23ece31e0cb18bafe56399707457e6c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1a14340069a678734a63d0684198e560bea23ece31e0cb18bafe56399707457e6c1" kindref="member">WM_PWM_OUT_EN_STATE_TRI</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="wm__pwm_8h_1a14340069a678734a63d0684198e560bea30c9d4b18080ba1ecbcd7f89bd91f1e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1a14340069a678734a63d0684198e560bea30c9d4b18080ba1ecbcd7f89bd91f1e8" kindref="member">WM_PWM_OUT_EN_STATE_OUT</ref><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133c" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133c" kindref="member">tls_pwm_cnt_type</ref>{</highlight></codeline>
+<codeline lineno="45" refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133ca09220be3c9810fd2e8c4399259d84411" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133ca09220be3c9810fd2e8c4399259d84411" kindref="member">WM_PWM_CNT_TYPE_EDGE_ALLGN_CAP</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133ca74d4dec31ad0e1f3b10f6c65dd9f3f4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133ca74d4dec31ad0e1f3b10f6c65dd9f3f4e" kindref="member">WM_PWM_CNT_TYPE_EDGE_ALIGN_OUT</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133ca88959b2ce690e150294db26b51c834ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133ca88959b2ce690e150294db26b51c834ec" kindref="member">WM_PWM_CNT_TYPE_CENTER_ALIGN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="wm__pwm_8h_1ab235618a090324788ef488342916756b" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1ab235618a090324788ef488342916756b" kindref="member">tls_pwm_loop_type</ref>{</highlight></codeline>
+<codeline lineno="52" refid="wm__pwm_8h_1ab235618a090324788ef488342916756bac4ca23d70727ca7566bf95e3bd3639a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1ab235618a090324788ef488342916756bac4ca23d70727ca7566bf95e3bd3639a2" kindref="member">WM_PWM_LOOP_TYPE_SINGLE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="wm__pwm_8h_1ab235618a090324788ef488342916756bab11a3c20a0816245fa5f4f00727638a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1ab235618a090324788ef488342916756bab11a3c20a0816245fa5f4f00727638a2" kindref="member">WM_PWM_LOOP_TYPE_LOOP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="wm__pwm_8h_1a488b8145a95e149bc34af9aac54b87d8" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1a488b8145a95e149bc34af9aac54b87d8" kindref="member">tls_pwm_waveform_inversion</ref>{</highlight></codeline>
+<codeline lineno="58" refid="wm__pwm_8h_1a488b8145a95e149bc34af9aac54b87d8a7fb63064ee7b7667522e40287076b53e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1a488b8145a95e149bc34af9aac54b87d8a7fb63064ee7b7667522e40287076b53e" kindref="member">WM_PWM_WAVEFORM_NOINVERSION</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="wm__pwm_8h_1a488b8145a95e149bc34af9aac54b87d8a45d261fcefd0e9c88ca2437b5919f8d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1a488b8145a95e149bc34af9aac54b87d8a45d261fcefd0e9c88ca2437b5919f8d6" kindref="member">WM_PWM_WAVEFORM_INVERSION</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabf" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabf" kindref="member">tls_pwm_brake_out_level</ref>{</highlight></codeline>
+<codeline lineno="64" refid="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabfaf9bee87cea48157f5cb1a480049fc061" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabfaf9bee87cea48157f5cb1a480049fc061" kindref="member">WM_PWM_BRAKE_OUT_HIGH</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabfa45f9fbf0c78730d0f22088d128392c7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabfa45f9fbf0c78730d0f22088d128392c7b" kindref="member">WM_PWM_BRAKE_OUT_LOW</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="struct__pwm__init__param" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__pwm__init__param" kindref="compound">_pwm_init_param</ref>{</highlight></codeline>
+<codeline lineno="70" refid="struct__pwm__init__param_1a88042276143655de091119f11f771d08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665" kindref="member">tls_pwm_out_mode</ref><sp/><ref refid="struct__pwm__init__param_1a88042276143655de091119f11f771d08" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="struct__pwm__init__param_1a40b1e4856eb67c12e709e3f0065e764e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct__pwm__init__param_1a40b1e4856eb67c12e709e3f0065e764e" kindref="member">channel</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="struct__pwm__init__param_1af50fa9d5b3fd0dcdc2a2f8ecaeb50c61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="struct__pwm__init__param_1af50fa9d5b3fd0dcdc2a2f8ecaeb50c61" kindref="member">clkdiv</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="struct__pwm__init__param_1a5b320d7e5efaeef349fc21676c6fbf64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct__pwm__init__param_1a5b320d7e5efaeef349fc21676c6fbf64" kindref="member">period</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="struct__pwm__init__param_1a4ff91f8af86313ee8da2dfcb86a3d0c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct__pwm__init__param_1a4ff91f8af86313ee8da2dfcb86a3d0c4" kindref="member">duty</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="struct__pwm__init__param_1a0319ed97a0d8b5688d1d646821b4d10a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct__pwm__init__param_1a0319ed97a0d8b5688d1d646821b4d10a" kindref="member">dten</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="struct__pwm__init__param_1ab773992bc633ff21cefb6a3e5428a81a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct__pwm__init__param_1ab773992bc633ff21cefb6a3e5428a81a" kindref="member">dtclkdiv</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="struct__pwm__init__param_1ae8760855ca8837953546572926a30935" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct__pwm__init__param_1ae8760855ca8837953546572926a30935" kindref="member">dtcnt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="struct__pwm__init__param_1abeff96d785654a006901e30e8215a6da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133c" kindref="member">tls_pwm_cnt_type</ref><sp/><ref refid="struct__pwm__init__param_1abeff96d785654a006901e30e8215a6da" kindref="member">cnt_type</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="struct__pwm__init__param_1a5dc8705c0479e6bc40180462b7323ff4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1ab235618a090324788ef488342916756b" kindref="member">tls_pwm_loop_type</ref><sp/><ref refid="struct__pwm__init__param_1a5dc8705c0479e6bc40180462b7323ff4" kindref="member">loop_type</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="struct__pwm__init__param_1a14e6de54a4ad736aa586d091db6e8adb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct__pwm__init__param_1a14e6de54a4ad736aa586d091db6e8adb" kindref="member">inverse_en</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="struct__pwm__init__param_1a32be78d8ca8f575bd70a05312d0e25a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct__pwm__init__param_1a32be78d8ca8f575bd70a05312d0e25a0" kindref="member">pnum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="struct__pwm__init__param_1a68569715c8cf3601262537ecd4ed663d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct__pwm__init__param_1a68569715c8cf3601262537ecd4ed663d" kindref="member">pnum_int</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}<ref refid="wm__pwm_8h_1ab79dc697d292acb666903b3015b7e1af" kindref="member">pwm_init_param</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga442831877a184c854abd47644092a305" kindref="member">tls_pwm_isr_register</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*callback)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga7b1b8b02c0a615a3092d83560a2ea2c7" kindref="member">tls_pwm_duty_config</ref>(u8<sp/>channel,<sp/>u8<sp/>duty);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gab2e927f05d8b4f63a819b51d051f5a0f" kindref="member">tls_pwm_freq_config</ref>(u8<sp/>channel,<sp/>u16<sp/>clkdiv,<sp/>u8<sp/>period);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gad40dff093544c202c2a320f013838e4c" kindref="member">tls_pwm_out_mode_config</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665" kindref="member">tls_pwm_out_mode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gae8d9bb18a8e726bfa3fdb0df12736948" kindref="member">tls_pwm_cnt_type_config</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133c" kindref="member">tls_pwm_cnt_type</ref><sp/>cnt_type);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gad8098baf916900697d2ff3ae157efe4d" kindref="member">tls_pwm_loop_mode_config</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1ab235618a090324788ef488342916756b" kindref="member">tls_pwm_loop_type</ref><sp/>loop_mode);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga2cc465d8dd9118465df7ceac20f02e0b" kindref="member">tls_pwm_out_inverse_cmd</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga3ded905635271ece569bcb7f84857b9e" kindref="member">tls_pwm_stoptime_by_period_config</ref>(u8<sp/>channel,<sp/>u8<sp/>pnum);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gaff4dfb4eb8211f4466f9b68027df23cd" kindref="member">tls_pwm_output_en_cmd</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gad0873196d10906d84eeaf8667740bf5f" kindref="member">tls_pwm_deadzone_config</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dten,<sp/>u8<sp/>dtclkdiv,<sp/>u8<sp/>dtcnt);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga1ff419ff73955435ebeaeebf1db45759" kindref="member">tls_pwm_capture_inverse_cmd</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gaf141de053829d755ea78f4d0ecdc2a63" kindref="member">tls_pwm_brake_mode_config</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1adb51e5cf83823dff59fb90336aa7dabf" kindref="member">tls_pwm_brake_out_level</ref><sp/>brok);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga4f03dd018b919269e4fa3b1c449fc545" kindref="member">tls_pwm_capture_mode_config</ref>(u8<sp/>channel);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gaa24dc842ad66e4040b9fe20024c362ee" kindref="member">tls_pwm_stoptime_irq_cmd</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gaa98d01754b13cda71477ae2258edf60d" kindref="member">tls_pwm_capture_irq_type_config</ref>(u8<sp/>channel,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8" kindref="member">tls_pwm_cap_int_type</ref><sp/>int_type);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gacef57627cde9e623ac10b3ea2195cc19" kindref="member">tls_pwm_out_init</ref>(<ref refid="struct__pwm__init__param" kindref="compound">pwm_init_param</ref><sp/>pwm_param);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga555575dc99eefbcf67d1051d366e3499" kindref="member">tls_pwm_cap_init</ref>(u8<sp/>channel,<sp/>u16<sp/>clkdiv,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inverse_en,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__pwm_8h_1afca732563df5e12cfdc4f3494b749ed8" kindref="member">tls_pwm_cap_int_type</ref><sp/>int_type);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga7946a788ff3f5178f26458ae5f66bd46" kindref="member">tls_pwm_start</ref>(u8<sp/>channel);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga377334a6d2636df81c84eea52c749ae1" kindref="member">tls_pwm_freq_set</ref>(u8<sp/>channel,<sp/>u32<sp/>freq);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gaf28db8179feecca560eb8c6977cdb2d1" kindref="member">tls_pwm_duty_set</ref>(u8<sp/>channel,<sp/>u8<sp/>duty);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1gac862398335241edb6b6344b9cfb14ae6" kindref="member">tls_pwm_init</ref>(u8<sp/>channel,u32<sp/>freq,<sp/>u8<sp/>duty,<sp/>u8<sp/>pnum);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_w_m___driver___a_p_is_1ga6e5da4925abcb88dd03aa101a8b199ef" kindref="member">tls_pwm_stop</ref>(u8<sp/>channel);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_PWM_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_pwm.h"/>
+  </compounddef>
+</doxygen>

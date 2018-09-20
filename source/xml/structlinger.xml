@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structlinger" kind="struct" language="C++" prot="public">
+    <compoundname>linger</compoundname>
+    <includes refid="wm__sockets_8h" local="no">wm_sockets.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlinger_1aa917aeadf061af6ed64aad87df3255fc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int linger::l_onoff</definition>
+        <argsstring></argsstring>
+        <name>l_onoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>option on/off </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="149" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlinger_1a2b7d01c9a43f95d2ba6f6cf0ec68b412" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int linger::l_linger</definition>
+        <argsstring></argsstring>
+        <name>l_linger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>linger time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="150" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure used for manipulating linger option. </para>    </detaileddescription>
+    <location file="Include/Net/wm_sockets.h" line="148" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="148" bodyend="151"/>
+    <listofallmembers>
+      <member refid="structlinger_1a2b7d01c9a43f95d2ba6f6cf0ec68b412" prot="public" virt="non-virtual"><scope>linger</scope><name>l_linger</name></member>
+      <member refid="structlinger_1aa917aeadf061af6ed64aad87df3255fc" prot="public" virt="non-virtual"><scope>linger</scope><name>l_onoff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

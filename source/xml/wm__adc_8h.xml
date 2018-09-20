@@ -1,0 +1,851 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__adc_8h" kind="file" language="C++">
+    <compoundname>wm_adc.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <incdepgraph>
+      <node id="82">
+        <label>Include/Driver/wm_adc.h</label>
+        <link refid="wm__adc_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structadc__st" prot="public">adc_st</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__adc_8h_1a9f9b5a6687346599e48229865c20ffc2" prot="public" static="no">
+        <name>ADC_DEST_BUFFER_DMA</name>
+        <initializer>(u32)0x20028000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="21" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a41900574320781e34398e1fffa91e6ed" prot="public" static="no">
+        <name>ADC_DEST_BUFFER_SIZE</name>
+        <initializer>65532</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="22" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1aebf59ee355b5bf87553f57458241fea5" prot="public" static="no">
+        <name>SAMPLE_NUM_PER_CHANNEL</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="23" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a59cfe189a017e83403ec5ca0b070ccff" prot="public" static="no">
+        <name>CONFIG_ADC_CAL_OFFSET_TEMP12</name>
+        <initializer>(1&lt;&lt;23)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="27" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a80835083e182058ab637c0c1daa47306" prot="public" static="no">
+        <name>CONFIG_ADC_G_CTRL12</name>
+        <initializer>(1&lt;&lt;22)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="28" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a4c41e7924b5b2014592a83b095c3136b" prot="public" static="no">
+        <name>CONFIG_ADC_CMP_POL</name>
+        <initializer>(1&lt;&lt;21)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="29" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1ad5ddceda442efb04ef31bd9740b50d92" prot="public" static="no">
+        <name>CONFIG_ADC_REF_SEL</name>
+        <initializer>(1&lt;&lt;20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="30" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a88ecb7eb8c11c9bf3d641c6cc6b88a22" prot="public" static="no">
+        <name>CONFIG_ADC_BUF_BYPASS</name>
+        <initializer>(1&lt;&lt;19)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="31" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a109534757eab95840540bfc09dd28d75" prot="public" static="no">
+        <name>CONFIG_ADC_DMA_MASK</name>
+        <initializer>(0xFF&lt;&lt;11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="32" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a995da4d06c0c5cd1aa7e37bfa87a1900" prot="public" static="no">
+        <name>CONFIG_ADC_EN_CAL</name>
+        <initializer>(1&lt;&lt;10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="33" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a869546e71cb3115d54ba6c21d664e737" prot="public" static="no">
+        <name>CONFIG_ADC_INT_CMP</name>
+        <initializer>(1&lt;&lt;9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="34" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1afbbd99867f67524c302d350bbc58579c" prot="public" static="no">
+        <name>CONFIG_ADC_INT</name>
+        <initializer>(1&lt;&lt;8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="35" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a2fc9d2f8908232fc170ac25252f23e4a" prot="public" static="no">
+        <name>CONFIG_ADC_CMP_INT_MASK</name>
+        <initializer>(1&lt;&lt;7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="36" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a13a69695c379168fc9375c9057e30e67" prot="public" static="no">
+        <name>CONFIG_ADC_INT_MASK</name>
+        <initializer>(1&lt;&lt;6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="37" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a5ecb1f140d97b06ce128dd3fe301bafe" prot="public" static="no">
+        <name>CONFIG_ADC_TEMP_ON</name>
+        <initializer>(1&lt;&lt;5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="38" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1ac3879ba7b0369f55dfd4bced67333971" prot="public" static="no">
+        <name>CONFIG_ADC_START</name>
+        <initializer>(1&lt;&lt;4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="39" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1aeb4e57f823acd0163bde1529c7c2d1f8" prot="public" static="no">
+        <name>CONFIG_ADC_CHL_MASK</name>
+        <initializer>(0xF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="40" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1aa6420988a22951830eda8ff8ca1fcd40" prot="public" static="no">
+        <name>CONFIG_ADC_CHL_OFFSET</name>
+        <initializer>(0x0E)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="42" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1ace354a882bfcff129a332c2693f2f8f3" prot="public" static="no">
+        <name>CONFIG_ADC_CHL_VOLT</name>
+        <initializer>(0x0D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="43" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1af27117ef4cb113d0050b1daa06e2b7b2" prot="public" static="no">
+        <name>CONFIG_ADC_CHL_TEMP</name>
+        <initializer>(0x0C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="44" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a4a009cb4680bf7d78c334299a75715ec" prot="public" static="no">
+        <name>CONFIG_ADC_INPUT_CMP_VAL</name>
+        <param><defname>n</defname></param>
+        <initializer>((n&amp;0x3FFF)&lt;&lt;14)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="49" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1aa2a1c5bdbcc07453cb614f64d1bb5a7b" prot="public" static="no">
+        <name>CONFIG_ADC_VCM</name>
+        <param><defname>n</defname></param>
+        <initializer>(((u32)n&amp;0x3F)&lt;&lt;26)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="50" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a276448d41dc2b9ba664a74d7153c14fb" prot="public" static="no">
+        <name>CONFIG_ADC_G_TEMP12</name>
+        <param><defname>n</defname></param>
+        <initializer>((n&amp;0x03)&lt;&lt;24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="51" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1aadb77c69ab38a425b0065ab8f6654f68" prot="public" static="no">
+        <name>ADC_INT_TYPE_ADC</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="55" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a25f6d0dfa8c56033942cac6fe25d0be5" prot="public" static="no">
+        <name>ADC_INT_TYPE_DMA</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="56" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a526456408e3d459bd2c7f83ad9b0cbee" prot="public" static="no">
+        <name>ADC_INT_TYPE_ADC_COMP</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="57" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1ab42e9d1d9ded2c7904211c7bf842d410" prot="public" static="no">
+        <name>ADC_REFERENCE_EXTERNAL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="59" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__adc_8h_1a0af6393f4cb2aecab9875a53c852bde3" prot="public" static="no">
+        <name>ADC_REFERENCE_INTERNAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="60" column="9" bodyfile="Include/Driver/wm_adc.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__adc_8h_1a6f8a21b1eec39f9201b1e1ef049581d1" prot="public" static="no">
+        <type>struct <ref refid="structadc__st" kindref="compound">adc_st</ref></type>
+        <definition>typedef struct adc_st ST_ADC</definition>
+        <argsstring></argsstring>
+        <name>ST_ADC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="69" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__adc_8h_1a05594c3699b57b89c224a460339853d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_init</definition>
+        <argsstring>(u8 ifusedma, u8 dmachannel)</argsstring>
+        <name>tls_adc_init</name>
+        <param>
+          <type>u8</type>
+          <declname>ifusedma</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>dmachannel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a1ae696bd37570035c26ca3a982e6355c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_irq_register</definition>
+        <argsstring>(int inttype, void(*callback)(u16 *buf, u16 len))</argsstring>
+        <name>tls_adc_irq_register</name>
+        <param>
+          <type>int</type>
+          <declname>inttype</declname>
+        </param>
+        <param>
+          <type>void(*)(u16 *buf, u16 len)</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a4fefa39c8b4ea9f83cfe4ced7d634ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_clear_irq</definition>
+        <argsstring>(int inttype)</argsstring>
+        <name>tls_adc_clear_irq</name>
+        <param>
+          <type>int</type>
+          <declname>inttype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1ac3801976c9270cf004bfca22fec0bdfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_start_with_dma</definition>
+        <argsstring>(int Channel, int Length)</argsstring>
+        <name>tls_adc_start_with_dma</name>
+        <param>
+          <type>int</type>
+          <declname>Channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a2005378902736bc7f38364a225e0d7eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_start_with_cpu</definition>
+        <argsstring>(int Channel)</argsstring>
+        <name>tls_adc_start_with_cpu</name>
+        <param>
+          <type>int</type>
+          <declname>Channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a16760c24d57a8f36f5db5f7ca2097816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_enable_calibration_buffer_offset</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_adc_enable_calibration_buffer_offset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a361f9e89a9cc18d7643c598e6b091d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_voltage_start_with_cpu</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_adc_voltage_start_with_cpu</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1ae5741c28605d1161662083f597bc8b37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_temp_offset_with_cpu</definition>
+        <argsstring>(u8 calTemp12)</argsstring>
+        <name>tls_adc_temp_offset_with_cpu</name>
+        <param>
+          <type>u8</type>
+          <declname>calTemp12</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a74c33edbd636851865f074157837eaf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_voltage_start_with_dma</definition>
+        <argsstring>(int Length)</argsstring>
+        <name>tls_adc_voltage_start_with_dma</name>
+        <param>
+          <type>int</type>
+          <declname>Length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a3109c5d26647c014119bdc0265364248" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u16</type>
+        <definition>u16 tls_read_adc_result</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_read_adc_result</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a44d1003066b4c05707846acd3091673a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_stop</definition>
+        <argsstring>(int ifusedma)</argsstring>
+        <name>tls_adc_stop</name>
+        <param>
+          <type>int</type>
+          <declname>ifusedma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1aefebc31d62622e2a5f0c6f87dc7c3760" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_config_cmp_reg</definition>
+        <argsstring>(int cmp_data, int cmp_pol)</argsstring>
+        <name>tls_adc_config_cmp_reg</name>
+        <param>
+          <type>int</type>
+          <declname>cmp_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmp_pol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1aaa2e2af0f6b627845f4dfb583da6a3df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_reference_sel</definition>
+        <argsstring>(int ref)</argsstring>
+        <name>tls_adc_reference_sel</name>
+        <param>
+          <type>int</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a52e62b4d892f7502a5caedb133037e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_set_clk</definition>
+        <argsstring>(int div)</argsstring>
+        <name>tls_adc_set_clk</name>
+        <param>
+          <type>int</type>
+          <declname>div</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a5d407e1c88284ca6f8a70490f572cc01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void signedToUnsignedData</definition>
+        <argsstring>(u16 *adcValue, u16 *offset)</argsstring>
+        <name>signedToUnsignedData</name>
+        <param>
+          <type>u16 *</type>
+          <declname>adcValue</declname>
+        </param>
+        <param>
+          <type>u16 *</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1ab01ecabf88e3b24627967aacc49b8bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_buffer_bypass_set</definition>
+        <argsstring>(u8 isset)</argsstring>
+        <name>tls_adc_buffer_bypass_set</name>
+        <param>
+          <type>u8</type>
+          <declname>isset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a1d42d6b3844a62de400880190204d26a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_adc_cmp_start</definition>
+        <argsstring>(int Channel, int cmp_data, int cmp_pol)</argsstring>
+        <name>tls_adc_cmp_start</name>
+        <param>
+          <type>int</type>
+          <declname>Channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmp_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmp_pol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="176" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*****************************************************************************<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>File<sp/>Name<sp/>:<sp/>wm_adc.h<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/>Description:<sp/>adc<sp/>Driver<sp/>Module<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Winner<sp/>Microelectronics<sp/>Co.,<sp/>Ltd.<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/>Author<sp/>:<sp/>dave</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/>Date<sp/>:<sp/>2014-8-15</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*****************************************************************************/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WM_ADC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_ADC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//每次启动dma之后，需要一段稳定时间，所以采集到的数据前面的12个byte不稳定，要舍去</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_DEST_BUFFER_DMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(u32)0x20028000//(u32)0x20037000<sp/><sp/><sp/><sp/>//前面的地方高速SPI可能会用<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_DEST_BUFFER_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>65532//2000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//以半字为单位<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAMPLE_NUM_PER_CHANNEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20//2000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_CAL_OFFSET_TEMP12<sp/><sp/><sp/><sp/>(1&lt;&lt;23)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_G_CTRL12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;22)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_CMP_POL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;21)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_REF_SEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;20)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_BUF_BYPASS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;19)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_DMA_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF&lt;&lt;11)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_EN_CAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_INT_CMP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_CMP_INT_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_INT_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_TEMP_ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_CHL_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_CHL_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0E)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_CHL_VOLT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0D)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_CHL_TEMP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_INPUT_CMP_VAL(n)<sp/><sp/><sp/><sp/><sp/>((n&amp;0x3FFF)&lt;&lt;14)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_VCM(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((u32)n&amp;0x3F)&lt;&lt;26)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_ADC_G_TEMP12(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((n&amp;0x03)&lt;&lt;24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_INT_TYPE_ADC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_INT_TYPE_DMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_INT_TYPE_ADC_COMP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_REFERENCE_EXTERNAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//外部参考</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_REFERENCE_INTERNAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//内部参考</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structadc__st" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structadc__st" kindref="compound">adc_st</ref>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dmachannel;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*adc_cb)(u16<sp/>*buf,<sp/>u16<sp/>len);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*adc_bigger_cb)(u16<sp/>*buf,<sp/>u16<sp/>len);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*adc_dma_cb)(u16<sp/>*buf,u16<sp/>len);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>valuelen;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*dma<sp/>采样数据长度*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>offset;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}<ref refid="structadc__st" kindref="compound">ST_ADC</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************************</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>init<sp/>adc.</highlight></codeline>
+<codeline lineno="73"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/>ifusedma<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>use<sp/>dma</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dmachannel<sp/><sp/>dma<sp/>channel</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="comment">*<sp/>Notes:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>requested<sp/>dma<sp/>channel<sp/>is<sp/>already<sp/>used<sp/>by<sp/>other<sp/>task,<sp/>system<sp/>will<sp/>auto<sp/>use<sp/>other<sp/>dma<sp/>channel.</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_init(u8<sp/>ifusedma,u8<sp/>dmachannel);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************************</highlight></codeline>
+<codeline lineno="85"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>register<sp/>interrupt<sp/>callback<sp/>function.</highlight></codeline>
+<codeline lineno="86"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="87"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/>inttype<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interrupt<sp/>type</highlight></codeline>
+<codeline lineno="88"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_INT_TYPE_ADC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc<sp/>interrupt,user<sp/>get<sp/>adc<sp/>result<sp/>from<sp/>the<sp/>callback<sp/>function.</highlight></codeline>
+<codeline lineno="89"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_INT_TYPE_DMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dma<sp/>interrupt,dma<sp/>transfer<sp/>the<sp/>adc<sp/>result<sp/>to<sp/>the<sp/>user&apos;s<sp/>buffer.</highlight></codeline>
+<codeline lineno="90"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>callback<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interrupt<sp/>callback<sp/>function.</highlight></codeline>
+<codeline lineno="91"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_irq_register(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inttype,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*callback)(u16<sp/>*buf,<sp/>u16<sp/>len));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************************</highlight></codeline>
+<codeline lineno="97"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>clear<sp/>the<sp/>interrupt<sp/>source.</highlight></codeline>
+<codeline lineno="98"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="99"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/>inttype<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interrupt<sp/>type</highlight></codeline>
+<codeline lineno="100"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_clear_irq(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inttype);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************************</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>start<sp/>adc,use<sp/>dma<sp/>for<sp/>transfer<sp/>data.</highlight></codeline>
+<codeline lineno="108"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="109"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/>channel<sp/><sp/><sp/><sp/><sp/>adc<sp/>channel,from<sp/>0<sp/>to<sp/>3<sp/>is<sp/>single<sp/>input;4<sp/>and<sp/>5<sp/>is<sp/>differential<sp/>input.</highlight></codeline>
+<codeline lineno="110"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accuracy<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sampling<sp/>precision</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_SAMPLE_ACCURACY_7Bits</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_SAMPLE_ACCURACY_9Bits</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_SAMPLE_ACCURACY_10Bits</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_SAMPLE_ACCURACY_12Bits</highlight></codeline>
+<codeline lineno="115"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>length<sp/><sp/><sp/><sp/><sp/><sp/>byte<sp/>data<sp/>length,is<sp/>an<sp/>integer<sp/>multiple<sp/>of<sp/>half<sp/>word,need<sp/>&lt;=<sp/>0x500</highlight></codeline>
+<codeline lineno="116"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_start_with_dma(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Channel,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************************</highlight></codeline>
+<codeline lineno="122"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>start<sp/>adc.</highlight></codeline>
+<codeline lineno="123"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="124"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/>channel<sp/><sp/><sp/><sp/><sp/>adc<sp/>channel,from<sp/>0<sp/>to<sp/>3<sp/>is<sp/>single<sp/>input;4<sp/>and<sp/>5<sp/>is<sp/>differential<sp/>input.</highlight></codeline>
+<codeline lineno="125"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accuracy<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sampling<sp/>precision</highlight></codeline>
+<codeline lineno="126"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_SAMPLE_ACCURACY_7Bits</highlight></codeline>
+<codeline lineno="127"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_SAMPLE_ACCURACY_9Bits</highlight></codeline>
+<codeline lineno="128"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_SAMPLE_ACCURACY_10Bits</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_SAMPLE_ACCURACY_12Bits</highlight></codeline>
+<codeline lineno="130"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_start_with_cpu(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Channel);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_enable_calibration_buffer_offset(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_voltage_start_with_cpu(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_temp_offset_with_cpu(u8<sp/>calTemp12);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_voltage_start_with_dma(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************************</highlight></codeline>
+<codeline lineno="142"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>read<sp/>adc<sp/>result.</highlight></codeline>
+<codeline lineno="143"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="144"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">u16<sp/>tls_read_adc_result(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************************</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>stop<sp/>the<sp/>adc.</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/>ifusedma<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>use<sp/>dma</highlight></codeline>
+<codeline lineno="153"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_stop(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ifusedma);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************************</highlight></codeline>
+<codeline lineno="158"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>config<sp/>adc<sp/>bigger<sp/>register.</highlight></codeline>
+<codeline lineno="159"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="160"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/>comp_data<sp/><sp/><sp/><sp/><sp/><sp/><sp/>compare<sp/>data</highlight></codeline>
+<codeline lineno="161"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_config_cmp_reg(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmp_data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmp_pol);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************************</highlight></codeline>
+<codeline lineno="166"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>set<sp/>adc<sp/>reference<sp/>source.</highlight></codeline>
+<codeline lineno="167"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="168"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/>ref<sp/><sp/><sp/><sp/><sp/>ADC_REFERENCE_EXTERNAL</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_REFERENCE_INTERNAL<sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_reference_sel(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ref);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_set_clk(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>div);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>signedToUnsignedData(u16<sp/>*adcValue,<sp/>u16<sp/>*offset);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_buffer_bypass_set(u8<sp/>isset);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_cmp_start(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Channel,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmp_data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmp_pol);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_adc.h"/>
+  </compounddef>
+</doxygen>

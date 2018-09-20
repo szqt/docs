@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__param__wps" kind="struct" language="C++" prot="public">
+    <compoundname>tls_param_wps</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__param__wps_1aa7f7cd27a45f895e69e40fe1176ad88a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_wps::wps_enable</definition>
+        <argsstring></argsstring>
+        <name>wps_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="359" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__wps_1a1d265a1a2f7471a8167621b9db626d4a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_wps::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="360" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__wps_1a3cbcf12dcb1c3627d9991e9df6ec3234" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_wps::flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="361" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__wps_1a2e3bf23ebcd9a60e60bc55ffdfec0bc4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_wps::res</definition>
+        <argsstring></argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="362" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__wps_1ac4cdb1959b02f17d2fad974f9d1bd099" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_wps::pin[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="363" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Platform/wm_params.h" line="358" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="358" bodyend="364"/>
+    <listofallmembers>
+      <member refid="structtls__param__wps_1a3cbcf12dcb1c3627d9991e9df6ec3234" prot="public" virt="non-virtual"><scope>tls_param_wps</scope><name>flag</name></member>
+      <member refid="structtls__param__wps_1a1d265a1a2f7471a8167621b9db626d4a" prot="public" virt="non-virtual"><scope>tls_param_wps</scope><name>mode</name></member>
+      <member refid="structtls__param__wps_1ac4cdb1959b02f17d2fad974f9d1bd099" prot="public" virt="non-virtual"><scope>tls_param_wps</scope><name>pin</name></member>
+      <member refid="structtls__param__wps_1a2e3bf23ebcd9a60e60bc55ffdfec0bc4" prot="public" virt="non-virtual"><scope>tls_param_wps</scope><name>res</name></member>
+      <member refid="structtls__param__wps_1aa7f7cd27a45f895e69e40fe1176ad88a" prot="public" virt="non-virtual"><scope>tls_param_wps</scope><name>wps_enable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

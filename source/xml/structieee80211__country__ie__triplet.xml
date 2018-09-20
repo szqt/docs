@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__country__ie__triplet" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_country_ie_triplet</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a5f49a8db813126782f6d834306d2edb5" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_country_ie_triplet::first_channel</definition>
+        <argsstring></argsstring>
+        <name>first_channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1630" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a87a086dc968a76742281e06a3e0758c0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_country_ie_triplet::num_channels</definition>
+        <argsstring></argsstring>
+        <name>num_channels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1631" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a78a624282b2c358e90049419d0c523e7" prot="public" static="no" mutable="no">
+        <type>s8</type>
+        <definition>s8 ieee80211_country_ie_triplet::max_power</definition>
+        <argsstring></argsstring>
+        <name>max_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1632" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a256fb042f4481b7165fba1e41d408c37" prot="public" static="no" mutable="no">
+        <type>__packed struct ieee80211_country_ie_triplet::@80::@81</type>
+        <definition>__packed struct ieee80211_country_ie_triplet::@80::@81  ieee80211_country_ie_triplet::chans</definition>
+        <argsstring></argsstring>
+        <name>chans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1633" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a554a9fc5c988972d8789315f48279d52" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_country_ie_triplet::reg_extension_id</definition>
+        <argsstring></argsstring>
+        <name>reg_extension_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1635" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a48777649e4c55e1a74bd35bb28496441" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_country_ie_triplet::reg_class</definition>
+        <argsstring></argsstring>
+        <name>reg_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1636" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a602060bbceb0e5ae68ca05d5efcc2f9f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_country_ie_triplet::coverage_class</definition>
+        <argsstring></argsstring>
+        <name>coverage_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1637" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a2989ac02f9f4ec95fca0f0c0264d3dd4" prot="public" static="no" mutable="no">
+        <type>__packed struct ieee80211_country_ie_triplet::@80::@82</type>
+        <definition>__packed struct ieee80211_country_ie_triplet::@80::@82  ieee80211_country_ie_triplet::ext</definition>
+        <argsstring></argsstring>
+        <name>ext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1638" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a4afaadd1dd83844b9116940f085b6b33" prot="public" static="no" mutable="no">
+        <type>__packed union ieee80211_country_ie_triplet::@80</type>
+        <definition>__packed union ieee80211_country_ie_triplet::@80  ieee80211_country_ie_triplet::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1639" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structieee80211__country__ie__triplet_1a9f0b20f7f5bdbbd56607dea90f207a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>union ieee80211_country_ie_triplet::@154</type>
+        <definition>union ieee80211_country_ie_triplet::@154 ieee80211_country_ie_triplet::__attribute__</definition>
+        <argsstring>((packed)) u</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(packed)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="592" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/WiFi/wm_ieee80211.h" line="1627" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1627" bodyend="1640"/>
+    <listofallmembers>
+      <member refid="structieee80211__country__ie__triplet_1a9f0b20f7f5bdbbd56607dea90f207a2d" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>__attribute__</name></member>
+      <member refid="structieee80211__country__ie__triplet_1a256fb042f4481b7165fba1e41d408c37" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>chans</name></member>
+      <member refid="structieee80211__country__ie__triplet_1a602060bbceb0e5ae68ca05d5efcc2f9f" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>coverage_class</name></member>
+      <member refid="structieee80211__country__ie__triplet_1a2989ac02f9f4ec95fca0f0c0264d3dd4" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>ext</name></member>
+      <member refid="structieee80211__country__ie__triplet_1a5f49a8db813126782f6d834306d2edb5" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>first_channel</name></member>
+      <member refid="structieee80211__country__ie__triplet_1a78a624282b2c358e90049419d0c523e7" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>max_power</name></member>
+      <member refid="structieee80211__country__ie__triplet_1a87a086dc968a76742281e06a3e0758c0" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>num_channels</name></member>
+      <member refid="structieee80211__country__ie__triplet_1a48777649e4c55e1a74bd35bb28496441" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>reg_class</name></member>
+      <member refid="structieee80211__country__ie__triplet_1a554a9fc5c988972d8789315f48279d52" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>reg_extension_id</name></member>
+      <member refid="structieee80211__country__ie__triplet_1a4afaadd1dd83844b9116940f085b6b33" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>u</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

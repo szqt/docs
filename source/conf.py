@@ -29,7 +29,11 @@ from recommonmark.parser import CommonMarkParser
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['chinese_search']
+extensions = ['chinese_search','breathe']
+
+breathe_projects = { "W600 SDK": "./xml" }
+breathe_default_project = "W600 SDK"
+breathe_domain_by_extension = {"h" : "c"}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

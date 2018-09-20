@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__ibss__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_ibss_info_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__ibss__info__t_1a0e42bd9e55a557e4043f393da8c3e867" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_ibss_info_t::ssid[33]</definition>
+        <argsstring>[33]</argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSID of ibss </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="219" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ibss__info__t_1a47cccfaf1b9aee5742718014ef594ff7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_ibss_info_t::encrypt</definition>
+        <argsstring></argsstring>
+        <name>encrypt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>encryption mode of ibss, value is: IEEE80211_ENCRYT_NONE, IEEE80211_ENCRYT_WEP40, IEEE80211_ENCRYT_WEP104, IEEE80211_ENCRYT_TKIP_WPA, IEEE80211_ENCRYT_CCMP_WPA, IEEE80211_ENCRYT_TKIP_WPA2, IEEE80211_ENCRYT_CCMP_WPA2, IEEE80211_ENCRYT_AUTO_WPA, IEEE80211_ENCRYT_AUTO_WPA2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="220" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ibss__info__t_1acc549e24022c530ee083f8d395023676" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_ibss_info_t::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>channel of ibss </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="225" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ibss__info__t_1a690693bbf001fbd78e797667fbdd00ee" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__key__info__t" kindref="compound">tls_key_info_t</ref></type>
+        <definition>struct tls_key_info_t tls_ibss_info_t::keyinfo</definition>
+        <argsstring></argsstring>
+        <name>keyinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Password (key) of ibss </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="225" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Wi-Fi configuration of ibss </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="173">
+        <label>tls_ibss_info_t</label>
+        <link refid="structtls__ibss__info__t"/>
+        <childnode refid="174" relation="usage">
+          <edgelabel>keyinfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="174">
+        <label>tls_key_info_t</label>
+        <link refid="structtls__key__info__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/WiFi/wm_wifi.h" line="218" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="218" bodyend="227"/>
+    <listofallmembers>
+      <member refid="structtls__ibss__info__t_1acc549e24022c530ee083f8d395023676" prot="public" virt="non-virtual"><scope>tls_ibss_info_t</scope><name>channel</name></member>
+      <member refid="structtls__ibss__info__t_1a47cccfaf1b9aee5742718014ef594ff7" prot="public" virt="non-virtual"><scope>tls_ibss_info_t</scope><name>encrypt</name></member>
+      <member refid="structtls__ibss__info__t_1a690693bbf001fbd78e797667fbdd00ee" prot="public" virt="non-virtual"><scope>tls_ibss_info_t</scope><name>keyinfo</name></member>
+      <member refid="structtls__ibss__info__t_1a0e42bd9e55a557e4043f393da8c3e867" prot="public" virt="non-virtual"><scope>tls_ibss_info_t</scope><name>ssid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

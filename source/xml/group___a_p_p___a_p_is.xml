@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___a_p_p___a_p_is" kind="group">
+    <compoundname>APP_APIs</compoundname>
+    <title>APP APIs</title>
+    <innergroup refid="group___a_t___r_i___a_p_is">AT_RI APIs</innergroup>
+    <innergroup refid="group___d_h_c_p_s___a_p_is">DHCPS APIs</innergroup>
+    <innergroup refid="group___d_l_n_a___a_p_is">DLNA APIs</innergroup>
+    <innergroup refid="group___d_n_s_s___a_p_is">DNSS APIs</innergroup>
+    <innergroup refid="group___h_t_t_p_c___a_p_is">HTTPC APIs</innergroup>
+    <innergroup refid="group___n_e_t_i_f___a_p_is">NETIF APIs</innergroup>
+    <innergroup refid="group___n_t_p___a_p_is">NTP APIs</innergroup>
+    <innergroup refid="group___w_e_b___a_p_is">WEB APIs</innergroup>
+    <innergroup refid="group___oneshot___a_p_is">Oneshot APIs</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___a_p_p___a_p_is_1ga76562ddc3d6c654272aaa3cb9eec5085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_oneshot_netif_status_event</definition>
+        <argsstring>(u8 status)</argsstring>
+        <name>wm_oneshot_netif_status_event</name>
+        <param>
+          <type>u8</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="204" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>APP APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

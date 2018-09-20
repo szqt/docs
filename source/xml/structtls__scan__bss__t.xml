@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__scan__bss__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_scan_bss_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__scan__bss__t_1af65e6c1685c93f957b6cdd8cfe03318d" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_scan_bss_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>total count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="251" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__scan__bss__t_1a673268e95dc97e5bd0940cd25678fcd0" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_scan_bss_t::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bss info total length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="252" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__scan__bss__t_1a2d3ce06f59ba4bbdb3d153bf4442c57c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__bss__info__t" kindref="compound">tls_bss_info_t</ref></type>
+        <definition>struct tls_bss_info_t tls_scan_bss_t::bss[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>bss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>list of bss found </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="252" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>scan result </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="212">
+        <label>tls_scan_bss_t</label>
+        <link refid="structtls__scan__bss__t"/>
+        <childnode refid="213" relation="usage">
+          <edgelabel>bss</edgelabel>
+        </childnode>
+      </node>
+      <node id="213">
+        <label>tls_bss_info_t</label>
+        <link refid="structtls__bss__info__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/WiFi/wm_wifi.h" line="250" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="250" bodyend="254"/>
+    <listofallmembers>
+      <member refid="structtls__scan__bss__t_1a2d3ce06f59ba4bbdb3d153bf4442c57c" prot="public" virt="non-virtual"><scope>tls_scan_bss_t</scope><name>bss</name></member>
+      <member refid="structtls__scan__bss__t_1af65e6c1685c93f957b6cdd8cfe03318d" prot="public" virt="non-virtual"><scope>tls_scan_bss_t</scope><name>count</name></member>
+      <member refid="structtls__scan__bss__t_1a673268e95dc97e5bd0940cd25678fcd0" prot="public" virt="non-virtual"><scope>tls_scan_bss_t</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

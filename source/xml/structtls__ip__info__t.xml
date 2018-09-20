@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__ip__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_ip_info_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__ip__info__t_1a889dce0148536ab2025ce7abec39b410" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_ip_info_t::ip_addr[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>ip_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IP address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="212" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ip__info__t_1a64c8e06e2a68a3fa019148eb93a836bc" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_ip_info_t::netmask[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>netmask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>netmask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="213" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ip__info__t_1a5ef1c85b49b99557fe7bb04093e9d95f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_ip_info_t::dnsname[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>dnsname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DNS server name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="214" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ip address information </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_wifi.h" line="211" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="211" bodyend="215"/>
+    <listofallmembers>
+      <member refid="structtls__ip__info__t_1a5ef1c85b49b99557fe7bb04093e9d95f" prot="public" virt="non-virtual"><scope>tls_ip_info_t</scope><name>dnsname</name></member>
+      <member refid="structtls__ip__info__t_1a889dce0148536ab2025ce7abec39b410" prot="public" virt="non-virtual"><scope>tls_ip_info_t</scope><name>ip_addr</name></member>
+      <member refid="structtls__ip__info__t_1a64c8e06e2a68a3fa019148eb93a836bc" prot="public" virt="non-virtual"><scope>tls_ip_info_t</scope><name>netmask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

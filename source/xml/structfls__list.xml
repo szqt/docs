@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structfls__list" kind="struct" language="C++" prot="public">
+    <compoundname>fls_list</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfls__list_1a801279769404056d2508edccb2182c67" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structfls__list" kindref="compound">fls_list</ref> *</type>
+        <definition>struct fls_list* fls_list::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="46" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfls__list_1a768f380ab98e1737bc486018f4aa20c7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structfls__list" kindref="compound">fls_list</ref> *</type>
+        <definition>struct fls_list* fls_list::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="47" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="26">
+        <label>fls_list</label>
+        <link refid="structfls__list"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_flash.h" line="45" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="44" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structfls__list_1a801279769404056d2508edccb2182c67" prot="public" virt="non-virtual"><scope>fls_list</scope><name>next</name></member>
+      <member refid="structfls__list_1a768f380ab98e1737bc486018f4aa20c7" prot="public" virt="non-virtual"><scope>fls_list</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

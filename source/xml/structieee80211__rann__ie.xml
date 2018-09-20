@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__rann__ie" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_rann_ie</compoundname>
+    <includes refid="wm__ieee80211_8h" local="no">wm_ieee80211.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__rann__ie_1a0692fc63896dc2a68de5b26d27d380d7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_rann_ie::rann_flags</definition>
+        <argsstring></argsstring>
+        <name>rann_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="901" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="901" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__rann__ie_1aafffa87941235cef0c375e070f5eed54" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_rann_ie::rann_hopcount</definition>
+        <argsstring></argsstring>
+        <name>rann_hopcount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="902" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="902" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__rann__ie_1a1c846168aaf2f144d5399ef0ec5de10d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_rann_ie::rann_ttl</definition>
+        <argsstring></argsstring>
+        <name>rann_ttl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="903" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="903" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__rann__ie_1af9d48e9315931d29162296c183ae84a8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_rann_ie::rann_addr</definition>
+        <argsstring>[6]</argsstring>
+        <name>rann_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="904" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="904" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__rann__ie_1a403e774b2186da445bf53abe443125de" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 ieee80211_rann_ie::rann_seq</definition>
+        <argsstring></argsstring>
+        <name>rann_seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="905" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="905" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__rann__ie_1a6daf9fa06540071d8e46e34ef835a23c" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 ieee80211_rann_ie::rann_metric</definition>
+        <argsstring></argsstring>
+        <name>rann_metric</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="906" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="906" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct <ref refid="structieee80211__rann__ie" kindref="compound">ieee80211_rann_ie</ref></para><para>This structure refers to &quot;Root Announcement information element&quot; </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_ieee80211.h" line="900" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="900" bodyend="907"/>
+    <listofallmembers>
+      <member refid="structieee80211__rann__ie_1af9d48e9315931d29162296c183ae84a8" prot="public" virt="non-virtual"><scope>ieee80211_rann_ie</scope><name>rann_addr</name></member>
+      <member refid="structieee80211__rann__ie_1a0692fc63896dc2a68de5b26d27d380d7" prot="public" virt="non-virtual"><scope>ieee80211_rann_ie</scope><name>rann_flags</name></member>
+      <member refid="structieee80211__rann__ie_1aafffa87941235cef0c375e070f5eed54" prot="public" virt="non-virtual"><scope>ieee80211_rann_ie</scope><name>rann_hopcount</name></member>
+      <member refid="structieee80211__rann__ie_1a6daf9fa06540071d8e46e34ef835a23c" prot="public" virt="non-virtual"><scope>ieee80211_rann_ie</scope><name>rann_metric</name></member>
+      <member refid="structieee80211__rann__ie_1a403e774b2186da445bf53abe443125de" prot="public" virt="non-virtual"><scope>ieee80211_rann_ie</scope><name>rann_seq</name></member>
+      <member refid="structieee80211__rann__ie_1a1c846168aaf2f144d5399ef0ec5de10d" prot="public" virt="non-virtual"><scope>ieee80211_rann_ie</scope><name>rann_ttl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

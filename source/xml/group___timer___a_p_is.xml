@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___timer___a_p_is" kind="group">
+    <compoundname>Timer_APIs</compoundname>
+    <title>Timer APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___timer___a_p_is_1gada41347b7b4ca30cb30ed8c9f627b1bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_timeout_p</definition>
+        <argsstring>(u8 timeo_assigned, u32 msecs, tls_timeout_handler handler, void *arg)</argsstring>
+        <name>tls_timeout_p</name>
+        <param>
+          <type>u8</type>
+          <declname>timeo_assigned</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>msecs</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>create a one-shot timer (aka timeout) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timeo_assigned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer NO. by assigned </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msecs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time in milliseconds after that the timer should expire </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback function that would be called by the timeout </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback argument that would be passed to handler</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>while waiting for a message using sys_timeouts_mbox_fetch() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_timers.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___timer___a_p_is_1ga78898977eac8e9ff2e26a2fb0ad40f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_untimeout_p</definition>
+        <argsstring>(u8 timeo_assigned, tls_timeout_handler handler, void *arg)</argsstring>
+        <name>tls_untimeout_p</name>
+        <param>
+          <type>u8</type>
+          <declname>timeo_assigned</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Go through timeout list (for this task only) and remove the first matching entry, even though the timeout has not triggered yet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timeo_assigned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer NO. by assigned </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback function that would be called by the timeout </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback argument that would be passed to handler</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_timers.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___timer___a_p_is_1ga10074dce279f6d80567ab34b5ab0c958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_timeouts_mbox_fetch_p</definition>
+        <argsstring>(u8 timeo_assigned, tls_mbox_t mbox, void **msg)</argsstring>
+        <name>tls_timeouts_mbox_fetch_p</name>
+        <param>
+          <type>u8</type>
+          <declname>timeo_assigned</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__mbox_8h_1aadd56e2d5afa81a5676f205f6c5534ff" kindref="member">tls_mbox_t</ref></type>
+          <declname>mbox</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Wait (forever) for a message to arrive in an mbox. While waiting, timeouts are processed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timeo_assigned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer NO. by assigned </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mbox to fetch the message from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">**msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the place to store the message</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_timers.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___timer___a_p_is_1ga181f7b222ec690506686f85cc2c85b10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_timer_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wl_timer_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>timer initialized </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_timers.h" line="91" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Software timer APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

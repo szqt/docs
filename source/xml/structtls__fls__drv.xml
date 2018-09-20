@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__fls__drv" kind="struct" language="C++" prot="public">
+    <compoundname>tls_fls_drv</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__fls__drv_1a40624cdd676540297b77492c3a1e818d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structfls__list" kindref="compound">fls_list</ref></type>
+        <definition>struct fls_list tls_fls_drv::drv_list</definition>
+        <argsstring></argsstring>
+        <name>drv_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="47" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a31caeeb3efcb29168477519a60945a11" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_fls_drv::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="57" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a882e4d57635bcf5c761578b0066b90db" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_fls_drv::total_size</definition>
+        <argsstring></argsstring>
+        <name>total_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="58" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a0fd1e3f8643a11897cd5404a8849355d" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_fls_drv::page_size</definition>
+        <argsstring></argsstring>
+        <name>page_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="59" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a47f15f3583c8b350e94b1d776d0638bf" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_fls_drv::program_size</definition>
+        <argsstring></argsstring>
+        <name>program_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="60" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1aaab34c82154aeda41f8f9873c83d7584" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_fls_drv::sector_size</definition>
+        <argsstring></argsstring>
+        <name>sector_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="61" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1ae4ae7d055f8e4912ed7ad2ab282d2d87" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_fls_drv::clock</definition>
+        <argsstring></argsstring>
+        <name>clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="62" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a2966f3293fa36d8e7d1ea59d27e189f3" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_fls_drv::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="63" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1aa9193bbcaacd88bc9cb8b022ff34632f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_fls_drv::cs_active</definition>
+        <argsstring></argsstring>
+        <name>cs_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="64" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a72c7dab1bda4c232e9a89ea8fe2c5218" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_fls_drv::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="65" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a0a8a580d88512b762c14da268554337e" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* tls_fls_drv::read) (u32, u8 *, u32)</definition>
+        <argsstring>)(u32, u8 *, u32)</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="66" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a3c207c0be2c7097e34c22cd7db87fc81" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* tls_fls_drv::fast_read) (u32, u8 *, u32)</definition>
+        <argsstring>)(u32, u8 *, u32)</argsstring>
+        <name>fast_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="67" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a6dcfd9750cf412855cbd966b1e5c2fea" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* tls_fls_drv::page_write) (u32, u8 *)</definition>
+        <argsstring>)(u32, u8 *)</argsstring>
+        <name>page_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="68" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a520ff1bb3a089d641fed34d603d2c11c" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* tls_fls_drv::erase) (u32)</definition>
+        <argsstring>)(u32)</argsstring>
+        <name>erase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="69" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a3bf9450f45de405d543c4ef6c4b22cde" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* tls_fls_drv::chip_erase) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>chip_erase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="70" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1a7f3fdb678f9b413e921802c4974dab2f" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* tls_fls_drv::probe) (u32 id)</definition>
+        <argsstring>)(u32 id)</argsstring>
+        <name>probe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="71" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls__drv_1acfc3d1e2a053a53626957b19647f8f76" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* tls_fls_drv::remove) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="72" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="152">
+        <label>tls_fls_drv</label>
+        <link refid="structtls__fls__drv"/>
+        <childnode refid="153" relation="usage">
+          <edgelabel>drv_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="153">
+        <label>fls_list</label>
+        <link refid="structfls__list"/>
+        <childnode refid="153" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_flash.h" line="55" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="54" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structtls__fls__drv_1a3bf9450f45de405d543c4ef6c4b22cde" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>chip_erase</name></member>
+      <member refid="structtls__fls__drv_1ae4ae7d055f8e4912ed7ad2ab282d2d87" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>clock</name></member>
+      <member refid="structtls__fls__drv_1aa9193bbcaacd88bc9cb8b022ff34632f" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>cs_active</name></member>
+      <member refid="structtls__fls__drv_1a40624cdd676540297b77492c3a1e818d" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>drv_list</name></member>
+      <member refid="structtls__fls__drv_1a520ff1bb3a089d641fed34d603d2c11c" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>erase</name></member>
+      <member refid="structtls__fls__drv_1a3c207c0be2c7097e34c22cd7db87fc81" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>fast_read</name></member>
+      <member refid="structtls__fls__drv_1a72c7dab1bda4c232e9a89ea8fe2c5218" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>flags</name></member>
+      <member refid="structtls__fls__drv_1a31caeeb3efcb29168477519a60945a11" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>id</name></member>
+      <member refid="structtls__fls__drv_1a2966f3293fa36d8e7d1ea59d27e189f3" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>mode</name></member>
+      <member refid="structtls__fls__drv_1a0fd1e3f8643a11897cd5404a8849355d" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>page_size</name></member>
+      <member refid="structtls__fls__drv_1a6dcfd9750cf412855cbd966b1e5c2fea" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>page_write</name></member>
+      <member refid="structtls__fls__drv_1a7f3fdb678f9b413e921802c4974dab2f" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>probe</name></member>
+      <member refid="structtls__fls__drv_1a47f15f3583c8b350e94b1d776d0638bf" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>program_size</name></member>
+      <member refid="structtls__fls__drv_1a0a8a580d88512b762c14da268554337e" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>read</name></member>
+      <member refid="structtls__fls__drv_1acfc3d1e2a053a53626957b19647f8f76" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>remove</name></member>
+      <member refid="structtls__fls__drv_1aaab34c82154aeda41f8f9873c83d7584" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>sector_size</name></member>
+      <member refid="structtls__fls__drv_1a882e4d57635bcf5c761578b0066b90db" prot="public" virt="non-virtual"><scope>tls_fls_drv</scope><name>total_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

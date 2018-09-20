@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__os__config_8inc" kind="file" language="PHP">
+    <compoundname>wm_os_config.inc</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">;__TLS_OS_UCOS<sp/><sp/>EQU<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssss</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">__TLS_OS_FREERTOS<sp/><sp/><sp/>EQU<sp/>1</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>END</highlight></codeline>
+    </programlisting>
+    <location file="Include/OS/wm_os_config.inc"/>
+  </compounddef>
+</doxygen>

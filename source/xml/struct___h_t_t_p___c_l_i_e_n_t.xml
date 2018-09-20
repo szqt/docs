@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct___h_t_t_p___c_l_i_e_n_t" kind="struct" language="C++" prot="public">
+    <compoundname>_HTTP_CLIENT</compoundname>
+    <includes refid="wm__http__client_8h" local="no">wm_http_client.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___h_t_t_p___c_l_i_e_n_t_1a1f84ac22567bc68b2cf4c5c0c597c57c" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 _HTTP_CLIENT::HTTPStatusCode</definition>
+        <argsstring></argsstring>
+        <name>HTTPStatusCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="180" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p___c_l_i_e_n_t_1a09c2900ee9e20f3174f1e74bb87f7743" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 _HTTP_CLIENT::RequestBodyLengthSent</definition>
+        <argsstring></argsstring>
+        <name>RequestBodyLengthSent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="181" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p___c_l_i_e_n_t_1adf5fb50e4cc6cb8484cb364df6b303b0" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 _HTTP_CLIENT::ResponseBodyLengthReceived</definition>
+        <argsstring></argsstring>
+        <name>ResponseBodyLengthReceived</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="182" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p___c_l_i_e_n_t_1af7308ed17badf4647025072262bd9c18" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 _HTTP_CLIENT::TotalResponseBodyLength</definition>
+        <argsstring></argsstring>
+        <name>TotalResponseBodyLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="183" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p___c_l_i_e_n_t_1a69f594cf29caa958ed852aec01ee5b66" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 _HTTP_CLIENT::HttpState</definition>
+        <argsstring></argsstring>
+        <name>HttpState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="184" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Data structure that the caller can request at any time that will include some information regarding the session </para>    </detaileddescription>
+    <location file="Include/App/wm_http_client.h" line="179" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="178" bodyend="185"/>
+    <listofallmembers>
+      <member refid="struct___h_t_t_p___c_l_i_e_n_t_1a69f594cf29caa958ed852aec01ee5b66" prot="public" virt="non-virtual"><scope>_HTTP_CLIENT</scope><name>HttpState</name></member>
+      <member refid="struct___h_t_t_p___c_l_i_e_n_t_1a1f84ac22567bc68b2cf4c5c0c597c57c" prot="public" virt="non-virtual"><scope>_HTTP_CLIENT</scope><name>HTTPStatusCode</name></member>
+      <member refid="struct___h_t_t_p___c_l_i_e_n_t_1a09c2900ee9e20f3174f1e74bb87f7743" prot="public" virt="non-virtual"><scope>_HTTP_CLIENT</scope><name>RequestBodyLengthSent</name></member>
+      <member refid="struct___h_t_t_p___c_l_i_e_n_t_1adf5fb50e4cc6cb8484cb364df6b303b0" prot="public" virt="non-virtual"><scope>_HTTP_CLIENT</scope><name>ResponseBodyLengthReceived</name></member>
+      <member refid="struct___h_t_t_p___c_l_i_e_n_t_1af7308ed17badf4647025072262bd9c18" prot="public" virt="non-virtual"><scope>_HTTP_CLIENT</scope><name>TotalResponseBodyLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

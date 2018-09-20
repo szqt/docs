@@ -1,0 +1,1624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___w_m___wi-_fi___a_p_is" kind="group">
+    <compoundname>WM_Wi-Fi_APIs</compoundname>
+    <title>WM_Wi-Fi APIs</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___w_m___wi-_fi___a_p_is_1gaac4dee9aa5cb5c7ecc737cc182f410d7" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* tls_wifi_oneshot_result_callback) (enum tls_wifi_oneshot_result_type type)</definition>
+        <argsstring>)(enum tls_wifi_oneshot_result_type type)</argsstring>
+        <name>tls_wifi_oneshot_result_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="426" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___w_m___wi-_fi___a_p_is_1ga951728abcde702c4a22956e5fa076ef8" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* tls_wifi_client_event_callback) (u8 *mac, enum tls_wifi_client_event_type event)</definition>
+        <argsstring>)(u8 *mac, enum tls_wifi_client_event_type event)</argsstring>
+        <name>tls_wifi_client_event_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="542" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gaf63d9183dfe40f0a6c263034b1707c20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_set_listen_mode</definition>
+        <argsstring>(u8 enable)</argsstring>
+        <name>tls_wifi_set_listen_mode</name>
+        <param>
+          <type>u8</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to enable/disable listen mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable:non-zero</parametername>
+<parametername direction="in">disable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>This function used when oneshot start. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga68d3c7cd61506471ed3060a8d01b9503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_wifi_get_listen_mode</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_get_listen_mode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get listen mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>normal mode </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>non-zero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>listen mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga5c0a5c4b2968c54ab0262bfa5c0c1200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_filter_mcast_mac</definition>
+        <argsstring>(u8 *mac, u8 receive)</argsstring>
+        <name>tls_filter_mcast_mac</name>
+        <param>
+          <type>u8 *</type>
+          <declname>mac</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>receive</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to filter multicast frames. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The multicast frame that we want receive or filter.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>receive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1, receive this multicast frame 0, filter this multicast frame</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>usage: For example: u8 mac[6]={01, 00, 5e, 7f, ff, fa},if receive is set to 0,the 802.11 multicast frames whose hdr-&gt;addr1 is [01 00 5e 7f ff fa] will be filtered. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gacbcc9813cca0c73b56003a1ab7a0a2de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_set_bcast_mac_filter</definition>
+        <argsstring>(u8 *mac, u8 receive, u8 clear)</argsstring>
+        <name>tls_wifi_set_bcast_mac_filter</name>
+        <param>
+          <type>u8 *</type>
+          <declname>mac</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>receive</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>clear</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set mac filter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mac: to be filtered or received</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">receive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1:not filter,zero:filter</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">clear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1:clear all, 0:do not clear, only add new filter</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>usage: normally, it is used to oneshot config </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="356" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga2bc4d3075b8457fb1864296d81f6e089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_restore_bcast_mac_filter</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_restore_bcast_mac_filter</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to restore mac filter to normal mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>normally, it is used to restore mac filter after oneshot config </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="367" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga51696c21571cd3cc5faa3a6f6d02df67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_data_recv_cb_register</definition>
+        <argsstring>(tls_wifi_data_recv_callback callback)</argsstring>
+        <name>tls_wifi_data_recv_cb_register</name>
+        <param>
+          <type><ref refid="wm__wifi_8h_1a39ef815a524fe2757fd2bda5be1e5702" kindref="member">tls_wifi_data_recv_callback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register recv wifi data callback function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point to receive Wi-Fi data function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="379" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga65df62df8bb8f6c5e02da700d405425e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_data_ext_recv_cb_register</definition>
+        <argsstring>(tls_wifi_data_ext_recv_callback callback)</argsstring>
+        <name>tls_wifi_data_ext_recv_cb_register</name>
+        <param>
+          <type><ref refid="wm__wifi_8h_1ae0924a8849e49719a80e0004f25ecd2b" kindref="member">tls_wifi_data_ext_recv_callback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register recv wifi extended data callback function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point to receive Wi-Fi extended data function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="391" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga5c08c2d527a7ef649fefed939501cedf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_set_oneshot_flag</definition>
+        <argsstring>(u8 flag)</argsstring>
+        <name>tls_wifi_set_oneshot_flag</name>
+        <param>
+          <type>u8</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set oneshot config flag. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0: closed oneshot non-zero:open oneshot</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="402" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga199859027d01d64c5d18fbe472233d59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_get_oneshot_flag</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_get_oneshot_flag</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get one shot flag. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>oneshot closed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>oneshot open</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="414" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga96ce58c3aed78a5c730198ba402b666d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_oneshot_result_cb_register</definition>
+        <argsstring>(tls_wifi_oneshot_result_callback callback)</argsstring>
+        <name>tls_wifi_oneshot_result_cb_register</name>
+        <param>
+          <type>tls_wifi_oneshot_result_callback</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga9aa61e23cff48bb2a71b67e3ff620114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_get_oneshot_ssidpwd</definition>
+        <argsstring>(u8 *ssid, u8 *pwd)</argsstring>
+        <name>tls_wifi_get_oneshot_ssidpwd</name>
+        <param>
+          <type>u8 *</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>pwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="438" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga70fb8fa39e9231daa338320e84b6d31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_get_oneshot_customdata</definition>
+        <argsstring>(u8 *data)</argsstring>
+        <name>tls_wifi_get_oneshot_customdata</name>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="447" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga3631c7010c3f74cb5bf44716f5963e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_change_chanel</definition>
+        <argsstring>(u32 chanid)</argsstring>
+        <name>tls_wifi_change_chanel</name>
+        <param>
+          <type>u32</type>
+          <declname>chanid</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to change channel actively. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">chanid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>Normally, it is just used in listen mode; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="458" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gabee9432a7be07447827bdc9c12ef872a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_scan</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_scan</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to trigger scan AP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>start scan </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_WIFI_SCANNING_BUSY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scanning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If not SUCCESS, user needs to call this function again to trigger scan </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="472" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gac9c171cbd6f47db2c51c081084f1aabe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_scan_result_cb_register</definition>
+        <argsstring>(void(*callback)(void))</argsstring>
+        <name>tls_wifi_scan_result_cb_register</name>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>before calling <ref refid="group___w_m___wi-_fi___a_p_is_1gabee9432a7be07447827bdc9c12ef872a" kindref="member">tls_wifi_scan()</ref> , application should call this function to register the call back function; </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point to callback function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>In callback function, user should send a message and return immediately. After callback called, scan result can be get by calling function tls_wifi_get_scan_rslt </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="487" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gaa17093bcf920fd66322d3252c5849713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_get_scan_rslt</definition>
+        <argsstring>(u8 *buf, u32 buffer_size)</argsstring>
+        <name>tls_wifi_get_scan_rslt</name>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>buffer_size</declname>
+        </param>
+        <briefdescription>
+<para>get scan result </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buf to be used to store returned BSS info </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buf size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>user need to alloc buffer in advance. size for one item of scan result is 43Bytes; the buffer size depends how many items user wants. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="502" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gaed36e7b7712ebd8e45436d5d392e1e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_softap_create</definition>
+        <argsstring>(struct tls_softap_info_t *apinfo, struct tls_ip_info_t *ipinfo)</argsstring>
+        <name>tls_wifi_softap_create</name>
+        <param>
+          <type>struct <ref refid="structtls__softap__info__t" kindref="compound">tls_softap_info_t</ref> *</type>
+          <declname>apinfo</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structtls__ip__info__t" kindref="compound">tls_ip_info_t</ref> *</type>
+          <declname>ipinfo</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to create soft ap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">apinfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>softap Wi-Fi configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ipinfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>softap ip address</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_WIFI_ERR_SSID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SSID is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_WIFI_ERR_KEY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key info not correct </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>soft ap create OK</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="517" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga43419f3bc2482d7c9c335bf7ddc523fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_softap_destroy</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_softap_destroy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to destroy soft ap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="529" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga806e4194975aca6fe3c646888905b555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="wm__wifi_8h_1a68533ba3b74ad28ada8a0419149f7983" kindref="member">tls_wifi_states</ref></type>
+        <definition>enum tls_wifi_states tls_wifi_softap_get_state</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_softap_get_state</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get soft ap&apos;s state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>soft ap&apos;s state</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="529" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga25b736a8be44c03753ba7e566acc290b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_softap_client_event_register</definition>
+        <argsstring>(tls_wifi_client_event_callback callback)</argsstring>
+        <name>tls_wifi_softap_client_event_register</name>
+        <param>
+          <type>tls_wifi_client_event_callback</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register client event. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>event callback</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="553" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gaa915c36025feeb352765f82c97786aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_get_authed_sta_info</definition>
+        <argsstring>(u32 *sta_num, u8 *buf, u32 buf_size)</argsstring>
+        <name>tls_wifi_get_authed_sta_info</name>
+        <param>
+          <type>u32 *</type>
+          <declname>sta_num</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>buf_size</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get the authed sta list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">sta_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the authed&apos;s station number</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address to store returned station list info(struct tls_sta_info_t[])</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="568" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gafc4d6ccd5f9ac5accf9570a6cd4d5e1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_ibss_create</definition>
+        <argsstring>(struct tls_ibss_info_t *ibssinfo, struct tls_ibssip_info_t *ipinfo)</argsstring>
+        <name>tls_wifi_ibss_create</name>
+        <param>
+          <type>struct <ref refid="structtls__ibss__info__t" kindref="compound">tls_ibss_info_t</ref> *</type>
+          <declname>ibssinfo</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structtls__ibssip__info__t" kindref="compound">tls_ibssip_info_t</ref> *</type>
+          <declname>ipinfo</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to create or join ibss. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ibssinfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ibss Wi-Fi configuration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*ipinfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ibss ip address</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IBSS join or create ok </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_WIFI_ERR_SSID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SSID is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_WIFI_ERR_KEY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key info not correct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Join IBSS if existed Create IBSS by SSID when not existed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="583" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gab9d87f2646073a563862211fa210366f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_disconnect</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_disconnect</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to destroy or leave Wi-Fi network. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>For AP, destroy soft AP For STA, leave the network by AP For IBSS, destroy or leave the IBSS network. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="596" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gafeee16f7268c37307a0aff5eb6ae06f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_connect</definition>
+        <argsstring>(u8 *ssid, u8 ssid_len, u8 *pwd, u8 pwd_len)</argsstring>
+        <name>tls_wifi_connect</name>
+        <param>
+          <type>u8 *</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>ssid_len</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>pwd</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>pwd_len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to connect AP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network Name to connect </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ssid_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of SSID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>password to connect AP </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pwd_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of password</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config ok, wifi will start to connect AP; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter wrong</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>User should register Wi-Fi status callback function to get result; wifi_status_change_cb just return WIFI MAC layer status; User should register netif status callback to get TCP/IP layer status; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="615" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gaccebcd0b1e02523af086d1558a018897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_connect_by_bssid</definition>
+        <argsstring>(u8 *bssid, u8 *pwd, u8 pwd_len)</argsstring>
+        <name>tls_wifi_connect_by_bssid</name>
+        <param>
+          <type>u8 *</type>
+          <declname>bssid</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>pwd</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>pwd_len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to connect AP by BSSID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*bssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BSSID to connect </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>password to connect AP </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pwd_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of password</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>When SSID hided,this function can not be used. User should register Wi-Fi status callback function to get result; wifi_status_change_cb just return WIFI MAC layer status; User should register netif status callback to get TCP/IP layer status; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="634" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga7c18eb72b79e6711554494aaf9e0020a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_connect_by_ssid_bssid</definition>
+        <argsstring>(u8 *ssid, u8 ssid_len, u8 *bssid, u8 *pwd, u8 pwd_len)</argsstring>
+        <name>tls_wifi_connect_by_ssid_bssid</name>
+        <param>
+          <type>u8 *</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>ssid_len</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>bssid</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>pwd</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>pwd_len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to connect AP by SSID an BSSID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network Name to connect </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ssid_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of SSID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*bssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BSSID to connect with SSID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>password to connect AP </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pwd_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of password</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>When SSID&amp;BSSID is knonw, user can use this function to connect Wi-Fi AP. User should register Wi-Fi status callback function to get result; wifi_status_change_cb just return WIFI MAC layer status; User should register netif status callback to get TCP/IP layer status; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="656" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga7a32443f1f3011f4e4086774b01822fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_auto_connect_flag</definition>
+        <argsstring>(u8 opt, u8 *mode)</argsstring>
+        <name>tls_wifi_auto_connect_flag</name>
+        <param>
+          <type>u8</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set auto connect mode: Enable/Disable. Get auto connect mode parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">opt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WIFI_AUTO_CNT_FLAG_SET or WIFI_AUTO_CNT_FLAG_GET </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>[in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out] mode WIFI_AUTO_CNT_OFF WIFI_AUTO_CNT_ON or WIFI_AUTO_CNT_TMP_OFF</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>WIFI_AUTO_CNT_OFF Disable/d; WIFI_AUTO_CNT_ON Enable/d; WIFI_AUTO_CNT_TMP_OFF For user initiated &quot;DISCONNECT&quot;, such as AT CMD; In such case, user might expect "disconnect witout reconnection, even in WIFI_AUTO_CNT_ON status; WIFI_AUTO_CNT_TMP_OFF flag just be effective for one time of &quot;DISCONNECT&quot;; After that or reboot, the FLAG will be set to the previous value; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="680" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga8e9ebb34594c26ff66e420ed0bb9589c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_status_change_cb_register</definition>
+        <argsstring>(void(*callback)(u8 status))</argsstring>
+        <name>tls_wifi_status_change_cb_register</name>
+        <param>
+          <type>void(*)(u8 status)</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register wifi status changed callback function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point to wifi status function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>WIFI_JOIN_SUCCESS connect with wifi AP correctly in Wifi layer; No IP address WIFI_JOIN_FAILED did not connect with wifi AP; normally, timeout in 20s after start connection WIFI_DISCONNECTED STA is disconnected with AP for any case, such as wifi AP shut dow, Wi-Fi AP changed password, and so on; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="698" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga1b50af940952ec45d7ad32552fda3d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_get_current_bss</definition>
+        <argsstring>(struct tls_curr_bss_t *bss)</argsstring>
+        <name>tls_wifi_get_current_bss</name>
+        <param>
+          <type>struct <ref refid="structtls__curr__bss__t" kindref="compound">tls_curr_bss_t</ref> *</type>
+          <declname>bss</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register Wi-Fi status changed callback function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">bss</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address where the network parameters will be write;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="709" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga9aebced2b79d4d8d010f7e3c43798ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_ethernet_data_rx_callback</definition>
+        <argsstring>(net_rx_data_cb callback)</argsstring>
+        <name>tls_ethernet_data_rx_callback</name>
+        <param>
+          <type><ref refid="wm__wifi_8h_1a81c727b3accf88c5069eeda88da55279" kindref="member">net_rx_data_cb</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register ETHERNET data rx callback function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point to receive ETHERNET data function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="782" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga1c52421d516b50d09c4a8a2b46bc5ccc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_set_psflag</definition>
+        <argsstring>(bool enable, bool alwaysflag)</argsstring>
+        <name>tls_wifi_set_psflag</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>alwaysflag</declname>
+        </param>
+        <briefdescription>
+<para>set powersave flag </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>non-zero: enable 0: disable </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">alwaysflag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0: only once, lost when restart; !0: always</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="807" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga4d435f1c3424d2433456b6775e5b11b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 tls_wifi_get_psflag</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_get_psflag</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>get current powersave flag </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>power-saving disable </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>non-zero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>power-saving enable</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="819" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga84df24ff00d6f17fdefb7c32b3001867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_send_oneshotdata</definition>
+        <argsstring>(u8 *dst, const u8 *ssid, u8 ssid_len)</argsstring>
+        <name>tls_wifi_send_oneshotdata</name>
+        <param>
+          <type>u8 *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>ssid_len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to send oneshot data to other sta. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NULL , send broadcast info !NULL, send unicast info </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*ssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SSID to be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ssid_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SSID length to be sent</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="833" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gad5ec9c8768ce9141db46ba8c1cb0c303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_wifi_get_tx_gain_max</definition>
+        <argsstring>(enum tls_wifi_tx_rate tx_rate)</argsstring>
+        <name>tls_wifi_get_tx_gain_max</name>
+        <param>
+          <type>enum <ref refid="wm__wifi_8h_1a86d5b3ebcab41ccf93a21b1f7967cc16" kindref="member">tls_wifi_tx_rate</ref></type>
+          <declname>tx_rate</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get max gain by rate index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tx_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate index (enum)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gain</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="844" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gac2856f458751b687dc9d6550dd7fca75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_send_mgmt</definition>
+        <argsstring>(enum tls_wifi_mgmt_type type, struct tls_wifi_hdr_mac_t *mac, u8 *ie, u16 ie_len, struct tls_wifi_tx_rate_t *tx)</argsstring>
+        <name>tls_wifi_send_mgmt</name>
+        <param>
+          <type>enum <ref refid="wm__wifi_8h_1a3b119cac813943aa528918a32c12b2a6" kindref="member">tls_wifi_mgmt_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structtls__wifi__hdr__mac__t" kindref="compound">tls_wifi_hdr_mac_t</ref> *</type>
+          <declname>mac</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>ie</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>ie_len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structtls__wifi__tx__rate__t" kindref="compound">tls_wifi_tx_rate_t</ref> *</type>
+          <declname>tx</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to send 802.11 management packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>management packet type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mac address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*ie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information elements, if have no ie can fill NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ie_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information elements length, it&apos;s zero if ie is NULL. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*tx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate and gain to transfer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="860" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gaf9e9ad8e104a7b239d6412fb8e7177e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_send_data</definition>
+        <argsstring>(struct tls_wifi_hdr_mac_t *mac, u8 *data, u16 data_len, struct tls_wifi_tx_rate_t *tx)</argsstring>
+        <name>tls_wifi_send_data</name>
+        <param>
+          <type>struct <ref refid="structtls__wifi__hdr__mac__t" kindref="compound">tls_wifi_hdr_mac_t</ref> *</type>
+          <declname>mac</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structtls__wifi__tx__rate__t" kindref="compound">tls_wifi_tx_rate_t</ref> *</type>
+          <declname>tx</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to send 802.11 data packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mac address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data packet buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data packet length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*tx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rate and gain</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="875" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga4e543971eb7529f695ef360bd12d2215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>enum <ref refid="wm__wifi_8h_1a68533ba3b74ad28ada8a0419149f7983" kindref="member">tls_wifi_states</ref></type>
+        <definition>enum tls_wifi_states tls_wifi_get_state</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_get_state</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get current Wi-Fi State. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Wi-Fi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State(enum)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="875" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga04806810b28f9c82abdb4a6ff6334dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_wifi_get_errno</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_get_errno</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get current error number during joining AP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number(WM_WIFI_ENOERR,WM_WIFI_ENOAP, WM_WIFI_EKEY,WM_WIFI_ELSI)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="912" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gad82bec457e35cd87980ac768af606325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_perror</definition>
+        <argsstring>(const char *info)</argsstring>
+        <name>tls_wifi_perror</name>
+        <param>
+          <type>const char *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>This Function is used to print current error during joining AP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>prefix information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="923" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga1e8b5310e04e610b4a030c74d983d26d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* tls_wifi_get_errinfo</definition>
+        <argsstring>(int eno)</argsstring>
+        <name>tls_wifi_get_errinfo</name>
+        <param>
+          <type>int</type>
+          <declname>eno</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get wifi error. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eno</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error number(WM_WIFI_ENOERR,WM_WIFI_ENOAP, WM_WIFI_EKEY,WM_WIFI_ELSI)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>description</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="935" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WM_Wi-Fi APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

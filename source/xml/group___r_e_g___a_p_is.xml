@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___r_e_g___a_p_is" kind="group">
+    <compoundname>REG_APIs</compoundname>
+    <title>REG APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___r_e_g___a_p_is_1ga7ff62a2c6a2679c0e664df203a88eb74" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void tls_reg_write32</definition>
+        <argsstring>(unsigned int reg, unsigned int val)</argsstring>
+        <name>tls_reg_write32</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to write value to register or memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address to be written </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to write</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_regs.h" line="846" column="1" bodyfile="Include/wm_regs.h" bodystart="846" bodyend="849"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_e_g___a_p_is_1ga79a1e20dbf3ef05ade09b2419e8e9607" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline unsigned int</type>
+        <definition>static __inline unsigned int tls_reg_read32</definition>
+        <argsstring>(unsigned int reg)</argsstring>
+        <name>tls_reg_read32</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to read value from register or memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address to read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>read from register or memory</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_regs.h" line="862" column="1" bodyfile="Include/wm_regs.h" bodystart="862" bodyend="866"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_e_g___a_p_is_1ga45e9a249b27a47601fa57e5536a870c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void tls_bitband_write</definition>
+        <argsstring>(volatile unsigned int addr, unsigned int bit, unsigned int val)</argsstring>
+        <name>tls_bitband_write</name>
+        <param>
+          <type>volatile unsigned int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>bit</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to write specified bit through bit-band alias region. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>32-bit aligned byte address where the bit exists. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value that the bit is set to, 0 or 1.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>Only when bit-band mechnism is supported, you can use it </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_regs.h" line="881" column="1" bodyfile="Include/wm_regs.h" bodystart="881" bodyend="890"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_e_g___a_p_is_1ga58cb5725367e1d9579efb5dea453de4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline unsigned int</type>
+        <definition>static __inline unsigned int tls_bitband_read</definition>
+        <argsstring>(volatile unsigned int addr, unsigned int bit)</argsstring>
+        <name>tls_bitband_read</name>
+        <param>
+          <type>volatile unsigned int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to read a single bit from address by bit-band alias region. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>32-bit aligned byte address where the bit exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the requested bit</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Only when bit-band mechnism is supported, you can use it </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_regs.h" line="903" column="1" bodyfile="Include/wm_regs.h" bodystart="903" bodyend="912"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Register operate APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

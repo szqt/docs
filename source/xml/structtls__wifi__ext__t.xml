@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__wifi__ext__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_wifi_ext_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__wifi__ext__t_1aa44bceedb0ca8ab79bd6210d69e63f20" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_wifi_ext_t::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>single strength </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="263" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>802.11 packet information from the physical layer </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_wifi.h" line="262" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="262" bodyend="264"/>
+    <listofallmembers>
+      <member refid="structtls__wifi__ext__t_1aa44bceedb0ca8ab79bd6210d69e63f20" prot="public" virt="non-virtual"><scope>tls_wifi_ext_t</scope><name>rssi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

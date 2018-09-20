@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__rtc_8h" kind="file" language="C++">
+    <compoundname>wm_rtc.h</compoundname>
+    <includes local="no">time.h</includes>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <incdepgraph>
+      <node id="202">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="200">
+        <label>Include/Driver/wm_rtc.h</label>
+        <link refid="wm__rtc_8h"/>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>time.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__rtc_8h_1ac6f27c28592ac6c18a818c1e12ed2673" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* tls_rtc_irq_callback) (void *arg)</definition>
+        <argsstring>)(void *arg)</argsstring>
+        <name>tls_rtc_irq_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>rtc interrupt callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_rtc.h" line="17" column="1" bodyfile="Include/Driver/wm_rtc.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___r_t_c___driver___a_p_is_1gaaacc327c99273b200cb8dc42e0754b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_set_rtc</definition>
+        <argsstring>(struct tm *tblock)</argsstring>
+        <name>tls_set_rtc</name>
+        <param>
+          <type>struct tm *</type>
+          <declname>tblock</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set pmu rtc time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tblock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_rtc.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___driver___a_p_is_1ga36349ef282d411d74bf042e933feff78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_get_rtc</definition>
+        <argsstring>(struct tm *tblock)</argsstring>
+        <name>tls_get_rtc</name>
+        <param>
+          <type>struct tm *</type>
+          <declname>tblock</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get pmu rtc time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">tblock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_rtc.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___driver___a_p_is_1ga61419f1c74b9628b69e1a37a30e2121c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_rtc_isr_register</definition>
+        <argsstring>(tls_rtc_irq_callback callback, void *arg)</argsstring>
+        <name>tls_rtc_isr_register</name>
+        <param>
+          <type><ref refid="wm__rtc_8h_1ac6f27c28592ac6c18a818c1e12ed2673" kindref="member">tls_rtc_irq_callback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register pmu rtc interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the rtc interrupt call back function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of call back function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>user not need clear interrupt flag. rtc callback function is called in interrupt, so can not operate the critical data in the callback fuuction, recommendation to send messages to other tasks to operate it. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_rtc.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___driver___a_p_is_1ga14eeddb4231d96796a3ccaea35689a74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_rtc_timer_start</definition>
+        <argsstring>(struct tm *tblock)</argsstring>
+        <name>tls_rtc_timer_start</name>
+        <param>
+          <type>struct tm *</type>
+          <declname>tblock</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to start pmu rtc timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tblock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_rtc.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c___driver___a_p_is_1gaea6f21e1f55bae6720bdea58c61980fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_rtc_timer_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_rtc_timer_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop pmu rtc timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>This function also is used to clear rtc timer interrupt </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_rtc.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>rtc Driver Module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_RTC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_RTC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="wm__rtc_8h_1ac6f27c28592ac6c18a818c1e12ed2673" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="wm__rtc_8h_1ac6f27c28592ac6c18a818c1e12ed2673" kindref="member">tls_rtc_irq_callback</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c___driver___a_p_is_1gaaacc327c99273b200cb8dc42e0754b5e" kindref="member">tls_set_rtc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>tm<sp/>*tblock);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c___driver___a_p_is_1ga36349ef282d411d74bf042e933feff78" kindref="member">tls_get_rtc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>tm<sp/>*tblock);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c___driver___a_p_is_1ga61419f1c74b9628b69e1a37a30e2121c" kindref="member">tls_rtc_isr_register</ref>(<ref refid="wm__rtc_8h_1ac6f27c28592ac6c18a818c1e12ed2673" kindref="member">tls_rtc_irq_callback</ref><sp/>callback,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c___driver___a_p_is_1ga14eeddb4231d96796a3ccaea35689a74" kindref="member">tls_rtc_timer_start</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>tm<sp/>*tblock);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c___driver___a_p_is_1gaea6f21e1f55bae6720bdea58c61980fa" kindref="member">tls_rtc_timer_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_rtc.h"/>
+  </compounddef>
+</doxygen>

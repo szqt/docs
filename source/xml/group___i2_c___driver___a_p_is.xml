@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___i2_c___driver___a_p_is" kind="group">
+    <compoundname>I2C_Driver_APIs</compoundname>
+    <title>I2C Driver APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___i2_c___driver___a_p_is_1ga4a4480c5754a43202d3dd8160ac71bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_i2c_init</definition>
+        <argsstring>(u32 freq)</argsstring>
+        <name>tls_i2c_init</name>
+        <param>
+          <type>u32</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>init the I2C module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C reference clock frequency in Hz that will be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>the freq must between 100k and 400k </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___driver___a_p_is_1ga04f13cc7c65c9f47afc99440fe58ce48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_i2c_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_i2c_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>send stop signal </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___driver___a_p_is_1gaf9a42dbcf3bc7ac7cdeebd51ef07de61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_i2c_wait_ack</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_i2c_wait_ack</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>waiting for ack signal </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WM_FAILED<itemizedlist>
+<listitem><para>WM_SUCCESS </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___driver___a_p_is_1ga339cff3ebf43cfebe2fb599a75f78efb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_i2c_write_byte</definition>
+        <argsstring>(u8 data, u8 ifstart)</argsstring>
+        <name>tls_i2c_write_byte</name>
+        <param>
+          <type>u8</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>ifstart</declname>
+        </param>
+        <briefdescription>
+<para>writes the data to data register of I2C module when ifstart one the start signal will be sent followed by the data when ifstart zero only the data will be send </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data will be write to the data register of I2C module </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ifstart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when one send start signal, when zero don&apos;t </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___driver___a_p_is_1ga6da4fffa842754fa7bd5b6634381b6e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_i2c_read_byte</definition>
+        <argsstring>(u8 ifack, u8 ifstop)</argsstring>
+        <name>tls_i2c_read_byte</name>
+        <param>
+          <type>u8</type>
+          <declname>ifack</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>ifstop</declname>
+        </param>
+        <briefdescription>
+<para>get the data stored in data register of I2C module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ifack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when one send ack after reading the data register,when zero don&apos;t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ifstop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when one send stop signal after read, when zero do not send stop </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>received data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___driver___a_p_is_1ga0bf16d7e2e7ca7548a99a7f39cb35205" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2c_transfer_done_register</definition>
+        <argsstring>(void(*done)(void))</argsstring>
+        <name>wm_i2c_transfer_done_register</name>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>done</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register i2c transfer done callback function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">done</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the i2c transfer done callback function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___driver___a_p_is_1ga069174d737a9c9c0ac108df39d84f3f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wm_i2c_start_write_it</definition>
+        <argsstring>(uint8_t devaddr, uint8_t wordaddr, uint8_t *buf, uint16_t len)</argsstring>
+        <name>wm_i2c_start_write_it</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devaddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>wordaddr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>start write through int mode </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">devaddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">wordaddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when one send stop signal after read, when zero do not send stop </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address point where data shoule be stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the length of data will be received </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WM_FAILED<itemizedlist>
+<listitem><para>WM_SUCCESS </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c___driver___a_p_is_1gaebd15672e4aeba4af679c415830245d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wm_i2c_start_read_it</definition>
+        <argsstring>(uint8_t devaddr, uint8_t wordaddr, uint8_t *buf, uint16_t len)</argsstring>
+        <name>wm_i2c_start_read_it</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devaddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>wordaddr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>get the data stored in data register of I2C module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ifack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when one send ack after reading the data register,when zero don&apos;t </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ifstop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when one send stop signal after read, when zero do not send stop </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>received data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="121" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_c___driver___a_p_is_1gae0f4e22e2e86aa635933971d14b8fe93" prot="public" static="no">
+        <name>wm_i2c_int_mask</name>
+        <param><defname>bl</defname></param>
+        <initializer>do { tls_bitband_write(HR_I2C_CTRL, 6, bl);}while(0);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="59" column="10" bodyfile="Include/Driver/wm_i2c.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2C driver APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

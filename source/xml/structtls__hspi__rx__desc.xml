@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__hspi__rx__desc" kind="struct" language="C++" prot="public">
+    <compoundname>tls_hspi_rx_desc</compoundname>
+    <includes refid="wm__hspi_8h" local="no">wm_hspi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__hspi__rx__desc_1a1e98853d5cae6691f49e5c5825ee043b" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_hspi_rx_desc::valid_ctrl</definition>
+        <argsstring></argsstring>
+        <name>valid_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="125" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__hspi__rx__desc_1ab731d52a4ac7fad0ce0a8389260f31ae" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_hspi_rx_desc::buf_addr</definition>
+        <argsstring></argsstring>
+        <name>buf_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="126" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__hspi__rx__desc_1a6a2d79c8b452c1e3ba58c095c8bf50ca" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_hspi_rx_desc::next_desc_addr</definition>
+        <argsstring></argsstring>
+        <name>next_desc_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="127" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definition of receive data descriptor structure </para>    </detaileddescription>
+    <location file="Include/Driver/wm_hspi.h" line="124" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="124" bodyend="128"/>
+    <listofallmembers>
+      <member refid="structtls__hspi__rx__desc_1ab731d52a4ac7fad0ce0a8389260f31ae" prot="public" virt="non-virtual"><scope>tls_hspi_rx_desc</scope><name>buf_addr</name></member>
+      <member refid="structtls__hspi__rx__desc_1a6a2d79c8b452c1e3ba58c095c8bf50ca" prot="public" virt="non-virtual"><scope>tls_hspi_rx_desc</scope><name>next_desc_addr</name></member>
+      <member refid="structtls__hspi__rx__desc_1a1e98853d5cae6691f49e5c5825ee043b" prot="public" virt="non-virtual"><scope>tls_hspi_rx_desc</scope><name>valid_ctrl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

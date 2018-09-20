@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__i2s__buf__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_i2s_buf_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__i2s__buf__t_1acf4def11e38a92bf540c1dab7b43302c" prot="public" static="no" mutable="no">
+        <type>uint32_t *</type>
+        <definition>uint32_t* tls_i2s_buf_t::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointer the bufffer address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="191" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__i2s__buf__t_1aec8d61249e3977d6a9d4c3772061e427" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t tls_i2s_buf_t::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the buffer size in bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="193" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__i2s__buf__t_1a3e2f30347a15d8beae8fdf368a6fd61f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t tls_i2s_buf_t::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current position of the data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="195" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_i2s.h" line="189" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="188" bodyend="196"/>
+    <listofallmembers>
+      <member refid="structtls__i2s__buf__t_1acf4def11e38a92bf540c1dab7b43302c" prot="public" virt="non-virtual"><scope>tls_i2s_buf_t</scope><name>buf</name></member>
+      <member refid="structtls__i2s__buf__t_1a3e2f30347a15d8beae8fdf368a6fd61f" prot="public" virt="non-virtual"><scope>tls_i2s_buf_t</scope><name>index</name></member>
+      <member refid="structtls__i2s__buf__t_1aec8d61249e3977d6a9d4c3772061e427" prot="public" virt="non-virtual"><scope>tls_i2s_buf_t</scope><name>len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

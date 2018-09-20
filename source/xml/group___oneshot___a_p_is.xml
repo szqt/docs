@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___oneshot___a_p_is" kind="group">
+    <compoundname>Oneshot_APIs</compoundname>
+    <title>Oneshot APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga8c052cff491faa002106bc9c992aafd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_wifi_dataframe_recv</definition>
+        <argsstring>(struct ieee80211_hdr *hdr, u32 data_len)</argsstring>
+        <name>tls_wifi_dataframe_recv</name>
+        <param>
+          <type>struct <ref refid="structieee80211__hdr" kindref="compound">ieee80211_hdr</ref> *</type>
+          <declname>hdr</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>WiFi data frame receive call back function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point to ieee80211 data header </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data len of ieee80211 data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mean</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga7fd56a1699beb71845007b343bb83661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void oneshot_airkiss_send_reply</definition>
+        <argsstring>(void)</argsstring>
+        <name>oneshot_airkiss_send_reply</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to reply to app of phone when airk- iss of WeChat configures successfully. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga189e6763a1a848189a6395a4c52fe473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_airkiss_recv</definition>
+        <argsstring>(u8 *data, u16 data_len)</argsstring>
+        <name>tls_airkiss_recv</name>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to deal with airkiss&apos;s protocol packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ieee80211 packet </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1gad9418d5b0ef894f3cbfcb5ebf202406e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_airkiss_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_airkiss_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to start airkiss. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga18bec4a77e6a69139a82a25d8575c662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_airkiss_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_airkiss_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop airkiss. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1gad0093be0797ef8a428b3ccf6b4fc94f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_oneshot_airkiss_change_channel</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_oneshot_airkiss_change_channel</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to change channel for airkiss. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga36409231df7e83719b20d8c501490738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wm_oneshot_task_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_oneshot_task_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to init oneshot task. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga27f65431a471b8220be5a9dd296925e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_oneshot_switch_channel_tim_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_oneshot_switch_channel_tim_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop oneshot timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1gab62769507d01baf5126652bc118755ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_oneshot_switch_channel_tim_temp_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_oneshot_switch_channel_tim_temp_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop oneshot temp timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1gac620df8585aa030a001ff42b126801a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_oneshot_is_ssid_bssid_match</definition>
+        <argsstring>(u8 *ssid, u8 ssid_len, u8 *bssid)</argsstring>
+        <name>tls_oneshot_is_ssid_bssid_match</name>
+        <param>
+          <type>u8 *</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>ssid_len</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>bssid</declname>
+        </param>
+        <briefdescription>
+<para>Judge bssid&amp;ssid if match. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ssid to be compared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ssid_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ssid length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bssid to be compared</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>1:bssid&amp;ssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>match 0:bssid&amp;ssid not match</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga2bf80c6873e73539cad5fbdb54f0b96d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_oneshot_find_chlist</definition>
+        <argsstring>(u8 *ssid, u8 ssid_len, u16 *chlist)</argsstring>
+        <name>tls_oneshot_find_chlist</name>
+        <param>
+          <type>u8 *</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>ssid_len</declname>
+        </param>
+        <param>
+          <type>u16 *</type>
+          <declname>chlist</declname>
+        </param>
+        <briefdescription>
+<para>Find channel according to ssid. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ssid to be compared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ssid_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ssid length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">chlist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chlist to be add according to ssid info</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="199" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wi-Fi oneshot APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

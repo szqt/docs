@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___d_e_b_u_g___a_p_is" kind="group">
+    <compoundname>DEBUG_APIs</compoundname>
+    <title>DEBUG APIs</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_e_b_u_g___a_p_is_1ga73da14a6302943bfb4bd4d9e58c15071" prot="public" static="no">
+        <name>TLS_DBGPRT_INFO</name>
+        <param><defname>f</defname></param>
+        <param><defname>a...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print information of the info level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="83" column="9" bodyfile="Include/wm_debug.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_b_u_g___a_p_is_1ga131f0ac212eb2e86a5717612212ecd53" prot="public" static="no">
+        <name>TLS_DBGPRT_WARNING</name>
+        <param><defname>f</defname></param>
+        <param><defname>a...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print information of the warning level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="91" column="9" bodyfile="Include/wm_debug.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_b_u_g___a_p_is_1gaa5b6b61e64339544ba63cd7484ebfb9a" prot="public" static="no">
+        <name>TLS_DBGPRT_ERR</name>
+        <param><defname>f</defname></param>
+        <param><defname>a...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print information of the error level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="99" column="9" bodyfile="Include/wm_debug.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_b_u_g___a_p_is_1gab308cdd2968e3de2dd5c7c6d25945dc2" prot="public" static="no">
+        <name>TLS_DBGPRT_DUMP</name>
+        <param><defname>p</defname></param>
+        <param><defname>len</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print information of the dump level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="116" column="9" bodyfile="Include/wm_debug.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DEBUG APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

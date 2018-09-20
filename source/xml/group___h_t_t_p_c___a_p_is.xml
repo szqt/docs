@@ -1,0 +1,980 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___h_t_t_p_c___a_p_is" kind="group">
+    <compoundname>HTTPC_APIs</compoundname>
+    <title>HTTPC APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga31533824fbe5aedc9c1557c2e665868e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HTTP_SESSION_HANDLE</type>
+        <definition>HTTP_SESSION_HANDLE HTTPClientOpenRequest</definition>
+        <argsstring>(HTTP_CLIENT_SESSION_FLAGS Flags)</argsstring>
+        <name>HTTPClientOpenRequest</name>
+        <param>
+          <type>HTTP_CLIENT_SESSION_FLAGS</type>
+          <declname>Flags</declname>
+        </param>
+        <briefdescription>
+<para>Allocate memory for a new HTTP Session. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session internal API flags, 0 should be passed here</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gaabcb6773e0e84a721c48e354cda84a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientCloseRequest</definition>
+        <argsstring>(HTTP_SESSION_HANDLE *pSession)</argsstring>
+        <name>HTTPClientCloseRequest</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE *</type>
+          <declname>pSession</declname>
+        </param>
+        <briefdescription>
+<para>Closes any active connection and free any used memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gaff6b211e89218c78e12d521f5ed6d9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSetAuth</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, HTTP_AUTH_SCHEMA AuthSchema, void *pReserved)</argsstring>
+        <name>HTTPClientSetAuth</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__http__client_8h_1a18affbb260729e84c6990396fa23c69e" kindref="member">HTTP_AUTH_SCHEMA</ref></type>
+          <declname>AuthSchema</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pReserved</declname>
+        </param>
+        <briefdescription>
+<para>Sets the HTTP authentication schema. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">AuthSchema</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Supported authentication methods </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pReserved</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reserved parameter</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga35bf3bc5117fa6eff1043146c2608929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSetCredentials</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pUserName, CHAR *pPassword)</argsstring>
+        <name>HTTPClientSetCredentials</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pUserName</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pPassword</declname>
+        </param>
+        <briefdescription>
+<para>Sets credentials for the target host. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pUserName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pPassword</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga15880b2d84f77155be14b1d0fbe8e937" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSetProxy</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pProxyName, UINT16 nPort, CHAR *pUserName, CHAR *pPassword)</argsstring>
+        <name>HTTPClientSetProxy</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pProxyName</declname>
+        </param>
+        <param>
+          <type>UINT16</type>
+          <declname>nPort</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pUserName</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pPassword</declname>
+        </param>
+        <briefdescription>
+<para>Sets all the proxy related parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pProxyName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The host name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The proxy port number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pUserName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User name for proxy authentication (can be null) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pPassword</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User password for proxy authentication (can be null)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="309" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gad8308ea8dcf181c72775d00112f0183c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSetVerb</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, HTTP_VERB HttpVerb)</argsstring>
+        <name>HTTPClientSetVerb</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__http__client_8h_1a9115e80a961baddfd0ff9ffdf47c273d" kindref="member">HTTP_VERB</ref></type>
+          <declname>HttpVerb</declname>
+        </param>
+        <briefdescription>
+<para>Sets the HTTP verb for the outgoing request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">HttpVerb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP supported verbs</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="321" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga0eb1fe3f76106de5e22e4a2682e2d758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientAddRequestHeaders</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pHeaderName, CHAR *pHeaderData, BOOL nInsert)</argsstring>
+        <name>HTTPClientAddRequestHeaders</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pHeaderName</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pHeaderData</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>nInsert</declname>
+        </param>
+        <briefdescription>
+<para>Add headers to the outgoing request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pHeaderName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Headers name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pHeaderData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nInsert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reserved could be any</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga6357d1572d460c97d78812c3d7907812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSendRequest</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pUrl, VOID *pData, UINT32 nDataLength, BOOL TotalLength, UINT32 nTimeout, UINT32 nClientPort)</argsstring>
+        <name>HTTPClientSendRequest</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pUrl</declname>
+        </param>
+        <param>
+          <type>VOID *</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nDataLength</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>TotalLength</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nTimeout</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nClientPort</declname>
+        </param>
+        <briefdescription>
+<para>This function builds the request headers, performs a DNS resolution, opens the connection (if it was not opened yet by a previous request or if it has closed) and sends the request headers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The requested URL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to post to the server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nDataLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of posted data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">TotalLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valid only when http method is post TRUE: Post data to http server. FALSE: In a post request without knowing the total length in advance so return error or use chunking. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation timeout </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nClientPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client side port 0 for none</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga624f1870cc147bf6ad5c482da9b7decb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientWriteData</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, VOID *pBuffer, UINT32 nBufferLength, UINT32 nTimeout)</argsstring>
+        <name>HTTPClientWriteData</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>VOID *</type>
+          <declname>pBuffer</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nBufferLength</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nTimeout</declname>
+        </param>
+        <briefdescription>
+<para>Write data to the remote server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to write to the server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nBufferLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of wtitten data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout for the operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="371" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga00212d4a63c9cc2cc8f44e1d4d2f7370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientRecvResponse</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, UINT32 nTimeout)</argsstring>
+        <name>HTTPClientRecvResponse</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nTimeout</declname>
+        </param>
+        <briefdescription>
+<para>Receives the response header on the connection and parses it. Performs any required authentication. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout for the operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gad4f9ce9263df70ebcf289024748d1b6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientReadData</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, VOID *pBuffer, UINT32 nBytesToRead, UINT32 nTimeout, UINT32 *nBytesRecived)</argsstring>
+        <name>HTTPClientReadData</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>VOID *</type>
+          <declname>pBuffer</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nBytesToRead</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nTimeout</declname>
+        </param>
+        <param>
+          <type>UINT32 *</type>
+          <declname>nBytesRecived</declname>
+        </param>
+        <briefdescription>
+<para>Read data from the server. Parse out the chunks data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*pBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a buffer that will be filled with the servers response </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nBytesToRead</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the buffer (numbers of bytes to read) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation timeout in seconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*nBytesRecived</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count of the bytes that were received in this operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="399" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gaaed0d145d2632414beaeb6e372735480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientGetInfo</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, HTTP_CLIENT *HTTPClient)</argsstring>
+        <name>HTTPClientGetInfo</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__http__client_8h_1a2752d98f954792b6135aee4b5fbdea06" kindref="member">HTTP_CLIENT</ref> *</type>
+          <declname>HTTPClient</declname>
+        </param>
+        <briefdescription>
+<para>Fill the users structure with the session information. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*HTTPClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The session information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="411" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gad7e756b250d7c202a045ac239e85a501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientFindFirstHeader</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pSearchClue, CHAR *pHeaderBuffer, UINT32 *nLength)</argsstring>
+        <name>HTTPClientFindFirstHeader</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pSearchClue</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pHeaderBuffer</declname>
+        </param>
+        <param>
+          <type>UINT32 *</type>
+          <declname>nLength</declname>
+        </param>
+        <briefdescription>
+<para>Initiate the headr searching functions and find the first header. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pSearchClue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Search clue </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*pHeaderBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a buffer that will be filled with the header name and value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*nLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count of the bytes that were received in this operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="425" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga3246ce097dc44ce3bba937130401ed4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientGetNextHeader</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pHeaderBuffer, UINT32 *nLength)</argsstring>
+        <name>HTTPClientGetNextHeader</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pHeaderBuffer</declname>
+        </param>
+        <param>
+          <type>UINT32 *</type>
+          <declname>nLength</declname>
+        </param>
+        <briefdescription>
+<para>Find the next header. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*pHeaderBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a buffer that will be filled with the header name and value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*nLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count of the bytes that were received in this operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="438" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gac1c142c6185597df667ce54164dced03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientFindCloseHeader</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession)</argsstring>
+        <name>HTTPClientFindCloseHeader</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <briefdescription>
+<para>Terminate a headers search session. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="449" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HTTP client APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

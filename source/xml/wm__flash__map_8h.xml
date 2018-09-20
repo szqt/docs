@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__flash__map_8h" kind="file" language="C++">
+    <compoundname>wm_flash_map.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" prot="public" static="no">
+        <name>FLASH_BASE_ADDR</name>
+        <initializer>(0x8000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH MAP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="15" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1a03724ddfe5cae03d54fc18a23729db3e" prot="public" static="no">
+        <name>SECBOOT_HEADER_ADDR</name>
+        <initializer>(<ref refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" kindref="member">FLASH_BASE_ADDR</ref>  + 0x02000) 			/*256bytes*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="16" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1a08e305cd78fd77e65bb5eb3737537da2" prot="public" static="no">
+        <name>SECBOOT_AREA_ADDR</name>
+        <initializer>(<ref refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" kindref="member">FLASH_BASE_ADDR</ref>  + 0x02100)         /*(32K-256)bytes*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="17" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1a16d7149509823fc0d8e65683b073ee44" prot="public" static="no">
+        <name>IMAGE_HEADER_ADDR1</name>
+        <initializer>(<ref refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" kindref="member">FLASH_BASE_ADDR</ref>  + 0x0A000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="18" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1a3eae7af388838a8602a77abee6f1c3b7" prot="public" static="no">
+        <name>IMAGE_HEADER_ADDR2</name>
+        <initializer>(<ref refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" kindref="member">FLASH_BASE_ADDR</ref>  + 0x0B000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="19" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1a0185e8d20171bbedf8e78adb897ee7f4" prot="public" static="no">
+        <name>TLS_FLASH_PARAM1_ADDR</name>
+        <initializer>(<ref refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" kindref="member">FLASH_BASE_ADDR</ref>  + 0x0C000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="20" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1a91dc8ac8bb9817fb8e357bae07d36889" prot="public" static="no">
+        <name>TLS_FLASH_PARAM2_ADDR</name>
+        <initializer>(<ref refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" kindref="member">FLASH_BASE_ADDR</ref>  + 0x0D000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="21" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1ab54eb21f70c8f83e69ecd0699b4dba03" prot="public" static="no">
+        <name>CODE_START_ADDR</name>
+        <initializer>(<ref refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" kindref="member">FLASH_BASE_ADDR</ref>  + 0x0E000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="23" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1a800719a49281db5bf889fd7617d7f689" prot="public" static="no">
+        <name>CODE_END_ADDR</name>
+        <initializer>(USER_ADDR_START  - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="24" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1adaa34bbaa66aa82aadc124048e7287ae" prot="public" static="no">
+        <name>USER_ADDR_START</name>
+        <initializer>(<ref refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" kindref="member">FLASH_BASE_ADDR</ref>  + 0xEF000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="25" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1a21e97f3d5ef21062bd2e924a7d9340ca" prot="public" static="no">
+        <name>TLS_FLASH_PARAM_DEFAULT</name>
+        <initializer>(USER_ADDR_START)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="26" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1abfe46cc09030161cbf0be2f0c14c9add" prot="public" static="no">
+        <name>TLS_BOOT_IMAGE_SIGNATURE_WORD</name>
+        <initializer>0xa0ffff9f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="29" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash__map_8h_1a48439aa39ffb27d281e87eaa91cb3243" prot="public" static="no">
+        <name>SIGNATURE_WORD</name>
+        <initializer>0xa0ffff9f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash_map.h" line="30" column="9" bodyfile="Include/Driver/wm_flash_map.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>flash zone map </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WM_FLASH_MAP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WM_FLASH_MAP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" refkind="member"><highlight class="preprocessor">#define<sp/>FLASH_BASE_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x8000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECBOOT_HEADER_ADDR<sp/><sp/><sp/><sp/><sp/>(FLASH_BASE_ADDR<sp/><sp/>+<sp/>0x02000)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*256bytes*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECBOOT_AREA_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_BASE_ADDR<sp/><sp/>+<sp/>0x02100)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*(32K-256)bytes*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGE_HEADER_ADDR1<sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_BASE_ADDR<sp/><sp/>+<sp/>0x0A000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGE_HEADER_ADDR2<sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_BASE_ADDR<sp/><sp/>+<sp/>0x0B000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLASH_PARAM1_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_BASE_ADDR<sp/><sp/>+<sp/>0x0C000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLASH_PARAM2_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_BASE_ADDR<sp/><sp/>+<sp/>0x0D000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_START_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_BASE_ADDR<sp/><sp/>+<sp/>0x0E000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CODE_END_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(USER_ADDR_START<sp/><sp/>-<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USER_ADDR_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(FLASH_BASE_ADDR<sp/><sp/>+<sp/>0xEF000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLASH_PARAM_DEFAULT<sp/><sp/>(USER_ADDR_START)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_BOOT_IMAGE_SIGNATURE_WORD<sp/><sp/><sp/><sp/><sp/><sp/>0xa0ffff9f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIGNATURE_WORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xa0ffff9f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*__WM_CONFIG_H__*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_flash_map.h"/>
+  </compounddef>
+</doxygen>

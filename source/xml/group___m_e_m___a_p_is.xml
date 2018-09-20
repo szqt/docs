@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___m_e_m___a_p_is" kind="group">
+    <compoundname>MEM_APIs</compoundname>
+    <title>MEM APIs</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gaea854575acd10477639f2a127c5fcb3c" prot="public" static="no">
+        <name>tls_mem_alloc</name>
+        <param><defname>size</defname></param>
+        <initializer>mem_alloc_debug(size)</initializer>
+        <briefdescription>
+<para>This function is called by memory allocation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>malloc failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory alloc success</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="115" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gad04d6c3d21ee42b81b10824b85069d7c" prot="public" static="no">
+        <name>tls_mem_free</name>
+        <initializer>mem_free_debug</initializer>
+        <briefdescription>
+<para>This function is used to free memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="126" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gad5e67380862b2247679821592a7a8dc7" prot="public" static="no">
+        <name>tls_mem_realloc</name>
+        <initializer>mem_realloc_debug</initializer>
+        <briefdescription>
+<para>This function is used to realloc memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc success</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="138" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gac010a5aaa39790a79698caa25b2c229b" prot="public" static="no">
+        <name>tls_mem_calloc</name>
+        <initializer>mem_calloc_debug</initializer>
+        <briefdescription>
+<para>This function is used to calloc memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc success</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="150" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gaa1dd57a66b6de8c0593e9e3e8d1411f6" prot="public" static="no">
+        <name>MEMCPY</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <param><defname>len</defname></param>
+        <initializer>memcpy(dst,src,len)</initializer>
+        <briefdescription>
+<para>This function is used to copy memory from src to dst. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to destination </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to source </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length to copy</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="163" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1ga8c6e3c1e4f74acb16376188dbf8909ec" prot="public" static="no">
+        <name>SMEMCPY</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <param><defname>len</defname></param>
+        <initializer>memcpy(dst,src,len)</initializer>
+        <briefdescription>
+<para>This function is used to copy memory from src to dst. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to destination </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to source </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length to copy</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="176" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>memory manager APIs </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

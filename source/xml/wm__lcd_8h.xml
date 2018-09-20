@@ -1,0 +1,716 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__lcd_8h" kind="file" language="C++">
+    <compoundname>wm_lcd.h</compoundname>
+    <includes refid="wm__regs_8h" local="yes">wm_regs.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <incdepgraph>
+      <node id="188">
+        <label>stdbool.h</label>
+      </node>
+      <node id="187">
+        <label>core_cm3.h</label>
+      </node>
+      <node id="185">
+        <label>Include/Driver/wm_lcd.h</label>
+        <link refid="wm__lcd_8h"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>wm_regs.h</label>
+        <link refid="wm__regs_8h"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_l_c_d___t" prot="public">LCD_T</innerclass>
+    <innerclass refid="structtls__lcd__options" prot="public">tls_lcd_options</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__lcd_8h_1abf2d80992dcfabfd1668184c3dff2733" prot="public" static="no">
+        <name>LCD</name>
+        <initializer>((<ref refid="struct_l_c_d___t" kindref="compound">LCD_T</ref> *)<ref refid="wm__regs_8h_1a910d49da8ece1dd74cb606b0ce0afa0e" kindref="member">HR_LCD_REG_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LCD base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="44" column="9" bodyfile="Include/Driver/wm_lcd.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_c_d___driver___a_p_is_1ga3da403b9b3169e693be9c9c94079990b" prot="public" static="no">
+        <name>TLS_LCD_CLK_ENABLE</name>
+        <param><defname>enable</defname></param>
+        <initializer>do { \
+			tls_bitband_write(HR_CLK_BASE_ADDR, <ref refid="wm__regs_8h_1a7a1f6475bee0fea46632b89d9dd6c4d4" kindref="member">HR_CLK_LCD_GATE_Pos</ref>, enable); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Enable or disable clock of LCD module. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When one enable the clock of LCD module, when zero disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="234" column="9" bodyfile="Include/Driver/wm_lcd.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_c_d___driver___a_p_is_1ga05ba6e6c2a076373b8491aebd7467c28" prot="public" static="no">
+        <name>TLS_LCD_ENABLE</name>
+        <param><defname>enable</defname></param>
+        <initializer>do { \
+			tls_bitband_write(HR_LCD_CR, LCD_CR_EN_Pos, enable); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Enable or disable the LCD module. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When one enable the LCD module, when zero disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="245" column="9" bodyfile="Include/Driver/wm_lcd.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_c_d___driver___a_p_is_1ga502f2dcf7e7c27f21ef63446cc7942ad" prot="public" static="no">
+        <name>TLS_LCD_POWERDOWM</name>
+        <param><defname>enable</defname></param>
+        <initializer>do { \
+			tls_bitband_write(HR_LCD_CR, LCD_CR_PD_Pos, enable); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Enable or disable the LCD module. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When one close LCD module, when zero open the LCD module </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="255" column="9" bodyfile="Include/Driver/wm_lcd.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LCD_BiasDef</name>
+        <enumvalue id="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a462d163f979e21105e6fb85f003605ea" prot="public">
+          <name>BIAS_STATIC</name>
+          <initializer>= LCD_BIAS_STATIC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Static (2 levels) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861aaa5cf488397679850f39005bcb211007" prot="public">
+          <name>BIAS_ONEHALF</name>
+          <initializer>= LCD_BIAS_ONEHALF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/2 Bias (3 levels) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a87fd3e7d44267a8a88de8d26b272731f" prot="public">
+          <name>BIAS_ONETHIRD</name>
+          <initializer>= LCD_BIAS_ONETHIRD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/3 Bias (4 levels) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861ae380b540208e2a2b869382d57094d28b" prot="public">
+          <name>BIAS_ONEFOURTH</name>
+          <initializer>= LCD_BIAS_ONEFOURTH</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/4 Bias (4 levels) </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="47" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="46" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LCD_VlcdDef</name>
+        <enumvalue id="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3af1725d22a496bb9eeeccf8757edf3bdc" prot="public">
+          <name>VLCD27</name>
+          <initializer>= LCD_VLCD_27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLCD 2.7v </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac20a8a643f18f4999984ea0b2d73a4a4" prot="public">
+          <name>VLCD28</name>
+          <initializer>= LCD_VLCD_28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLCD 2.8v </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ad4d1324ab70d3f8a7589db076b9a023e" prot="public">
+          <name>VLCD29</name>
+          <initializer>= LCD_VLCD_29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLCD 2.9v </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a27a2f3094ea03d127ae7615863a7d553" prot="public">
+          <name>VLCD30</name>
+          <initializer>= LCD_VLCD_30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLCD 3.0v </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a810dccf14199b7bbdaafb62a76aa4805" prot="public">
+          <name>VLCD31</name>
+          <initializer>= LCD_VLCD_31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLCD 3.1v </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a5f8bce6cb0c5c4f14b1da5377a41968d" prot="public">
+          <name>VLCD32</name>
+          <initializer>= LCD_VLCD_32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLCD 3.2v </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac4a665c9321a8666ab17ab9033e50381" prot="public">
+          <name>VLCD33</name>
+          <initializer>= LCD_VLCD_33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLCD 3.3v </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="59" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="58" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LCD_VddDef</name>
+        <enumvalue id="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a98fefc666c8e7ff47e8242d54c954b8a" prot="public">
+          <name>X_VDD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLCD Powered by external VDD </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a979e1c770f01792a2679249fa15cbf20" prot="public">
+          <name>I_VDD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLCD Powered by VDD </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="77" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LCD_ModeDef</name>
+        <enumvalue id="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865aeebef2e7273bc72ce837f5a3679e5819" prot="public">
+          <name>MODE8x16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>max configuration is 8x16 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865ab8bae700373a01cd0819e240d1f56091" prot="public">
+          <name>MODE4x20</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>max configuration is 4x20 </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="85" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LCD_DutyDef</name>
+        <enumvalue id="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fad44da89585a42710936d213ecd9bfef6" prot="public">
+          <name>DUTY_STATIC</name>
+          <initializer>= LCD_DUTY_STATIC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Static (segments can be multiplexed with LCD_COM[0]) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa6852c5c937f5b7f58de8da80f1daf382" prot="public">
+          <name>DUTY_ONEHALF</name>
+          <initializer>= LCD_DUTY_ONEHALF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/2 Duty cycle (segments can be multiplexed with LCD_COM[0:1]) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fab360d807b36c5932ec9fe7f211b02974" prot="public">
+          <name>DUTY_ONETHIRD</name>
+          <initializer>= LCD_DUTY_ONETHIRD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/3 Duty cycle (segments can be multiplexed with LCD_COM[0:2]) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1032fba3a4017c83d9090bb2128e6142" prot="public">
+          <name>DUTY_ONEFOURTH</name>
+          <initializer>= LCD_DUTY_ONEFOURTH</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/4 Duty cycle (segments can be multiplexed with LCD_COM[0:3]) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa2eb794ecb1a31eeed43117108db73ac7" prot="public">
+          <name>DUTY_ONEFIFTH</name>
+          <initializer>= LCD_DUTY_ONEFIFTH</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/5 Duty cycle (segments can be multiplexed with LCD_COM[0:4]) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1040d59560f67f2995cd5c088f058201" prot="public">
+          <name>DUTY_ONESIXTH</name>
+          <initializer>= LCD_DUTY_ONESIXTH</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/6 Duty cycle (segments can be multiplexed with LCD_COM[0:5]) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173faa21771e0a5ada95321ee5066462f9c68" prot="public">
+          <name>DUTY_ONESEVENTH</name>
+          <initializer>= LCD_DUTY_ONESEVENTH</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/7 Duty cycle (segments can be multiplexed with LCD_COM[0:6]) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fabcbf9f7ff891294f79d6782170259894" prot="public">
+          <name>DUTY_ONEEIGHTH</name>
+          <initializer>= LCD_DUTY_ONEEIGHTH</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1/8 Duty cycle (segments can be multiplexed with LCD_COM[0:7]) </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="93" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="92" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__lcd_8h_1a55e55f593f9dacc66b39f26fff47d7cf" prot="public" static="no">
+        <type>struct <ref refid="structtls__lcd__options" kindref="compound">tls_lcd_options</ref></type>
+        <definition>typedef struct tls_lcd_options  tls_lcd_options_t</definition>
+        <argsstring></argsstring>
+        <name>tls_lcd_options_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="128" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga2fdb5367f4716e484b96aa97d0198b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_init</definition>
+        <argsstring>(tls_lcd_options_t *opts)</argsstring>
+        <name>tls_lcd_init</name>
+        <param>
+          <type><ref refid="structtls__lcd__options" kindref="compound">tls_lcd_options_t</ref> *</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+<para>initialize the LCD module </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga6b15e6aaa9ddd3a3bcc4c7ea172ad724" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_fresh_rate</definition>
+        <argsstring>(uint16_t freq)</argsstring>
+        <name>tls_lcd_fresh_rate</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>Initialize LCD Frame Counter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LCD reference refresh frequency in Hz that will be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga3887a4019928e226fb7b6086b1bf622f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_seg_set</definition>
+        <argsstring>(int com, int bit, int on_off)</argsstring>
+        <name>tls_lcd_seg_set</name>
+        <param>
+          <type>int</type>
+          <declname>com</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>on_off</declname>
+        </param>
+        <briefdescription>
+<para>Turn on or clear a segment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">com</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which COM line to update </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit index of which field to change </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When one will set segment, when zero will clear segment </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>before this function be called, the module must have been intialized </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga968198f6b377214610e6beeb6b3c2434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_vlcd_sel</definition>
+        <argsstring>(LCD_VlcdDef vlcd)</argsstring>
+        <name>tls_lcd_vlcd_sel</name>
+        <param>
+          <type><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3" kindref="member">LCD_VlcdDef</ref></type>
+          <declname>vlcd</declname>
+        </param>
+        <briefdescription>
+<para>select the voltage of LCD module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlcd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be one of the following values:<itemizedlist>
+<listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3af1725d22a496bb9eeeccf8757edf3bdc" kindref="member">VLCD27</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac20a8a643f18f4999984ea0b2d73a4a4" kindref="member">VLCD28</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ad4d1324ab70d3f8a7589db076b9a023e" kindref="member">VLCD29</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a27a2f3094ea03d127ae7615863a7d553" kindref="member">VLCD30</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a810dccf14199b7bbdaafb62a76aa4805" kindref="member">VLCD31</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a5f8bce6cb0c5c4f14b1da5377a41968d" kindref="member">VLCD32</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac4a665c9321a8666ab17ab9033e50381" kindref="member">VLCD33</ref> </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1gab367c94d9366e091f384b5e169e036cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_duty_set</definition>
+        <argsstring>(LCD_DutyDef duty)</argsstring>
+        <name>tls_lcd_duty_set</name>
+        <param>
+          <type><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173f" kindref="member">LCD_DutyDef</ref></type>
+          <declname>duty</declname>
+        </param>
+        <briefdescription>
+<para>set the duty of LCD module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be one of the following values:<itemizedlist>
+<listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fad44da89585a42710936d213ecd9bfef6" kindref="member">DUTY_STATIC</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa6852c5c937f5b7f58de8da80f1daf382" kindref="member">DUTY_ONEHALF</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fab360d807b36c5932ec9fe7f211b02974" kindref="member">DUTY_ONETHIRD</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1032fba3a4017c83d9090bb2128e6142" kindref="member">DUTY_ONEFOURTH</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa2eb794ecb1a31eeed43117108db73ac7" kindref="member">DUTY_ONEFIFTH</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1040d59560f67f2995cd5c088f058201" kindref="member">DUTY_ONESIXTH</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173faa21771e0a5ada95321ee5066462f9c68" kindref="member">DUTY_ONESEVENTH</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fabcbf9f7ff891294f79d6782170259894" kindref="member">DUTY_ONEEIGHTH</ref> </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga74d2074678568e8f2125dc4738cd9638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_bias_set</definition>
+        <argsstring>(LCD_BiasDef bias)</argsstring>
+        <name>tls_lcd_bias_set</name>
+        <param>
+          <type><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861" kindref="member">LCD_BiasDef</ref></type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+<para>set the bias of LCD module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be one of the following values:<itemizedlist>
+<listitem><para><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a462d163f979e21105e6fb85f003605ea" kindref="member">BIAS_STATIC</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861aaa5cf488397679850f39005bcb211007" kindref="member">BIAS_ONEHALF</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a87fd3e7d44267a8a88de8d26b272731f" kindref="member">BIAS_ONETHIRD</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861ae380b540208e2a2b869382d57094d28b" kindref="member">BIAS_ONEFOURTH</ref> </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga88cf3e494c4c8a46ef6546e64c9f22ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_vdd_sel</definition>
+        <argsstring>(LCD_VddDef vdd_mode)</argsstring>
+        <name>tls_lcd_vdd_sel</name>
+        <param>
+          <type><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0" kindref="member">LCD_VddDef</ref></type>
+          <declname>vdd_mode</declname>
+        </param>
+        <briefdescription>
+<para>config the vdd mode of LCD module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be one of the following values:<itemizedlist>
+<listitem><para><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a98fefc666c8e7ff47e8242d54c954b8a" kindref="member">X_VDD</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a979e1c770f01792a2679249fa15cbf20" kindref="member">I_VDD</ref> </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1gac6289032dae222cbfba30ae6eef076b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_io_config</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>tls_lcd_io_config</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>enable or disable the LCD module gpio </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config value per bit for one LCD gpio, set enable gpio output ,clear disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="228" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LCD Driver Module. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+<simplesect kind="copyright"><para>(c) 2014 Winner Microelectronics Co., Ltd. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>__WM_LCD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WM_LCD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__regs_8h" kindref="compound">wm_regs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="struct_l_c_d___t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="struct_l_c_d___t_1ac6500d77764b649fb4621845fd416fbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/><ref refid="struct_l_c_d___t_1ac6500d77764b649fb4621845fd416fbf" kindref="member">CTRL</ref>;</highlight></codeline>
+<codeline lineno="30" refid="struct_l_c_d___t_1ada178af1c777e53b8bacb9270b2c40ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/><ref refid="struct_l_c_d___t_1ada178af1c777e53b8bacb9270b2c40ce" kindref="member">FRAMECNT</ref>;</highlight></codeline>
+<codeline lineno="32" refid="struct_l_c_d___t_1afee4cd02c588d77deb648802f54a3284" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/><ref refid="struct_l_c_d___t_1afee4cd02c588d77deb648802f54a3284" kindref="member">COM01</ref>;</highlight></codeline>
+<codeline lineno="34" refid="struct_l_c_d___t_1ac90ed2633420ff7f597a157fc0879aca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/><ref refid="struct_l_c_d___t_1ac90ed2633420ff7f597a157fc0879aca" kindref="member">COM23</ref>;</highlight></codeline>
+<codeline lineno="36" refid="struct_l_c_d___t_1ad94f09bb1b1d1c8cff7d83168dfdf281" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/><ref refid="struct_l_c_d___t_1ad94f09bb1b1d1c8cff7d83168dfdf281" kindref="member">COM45</ref>;</highlight></codeline>
+<codeline lineno="38" refid="struct_l_c_d___t_1a3361446e6a0ffd9d875623733ba81157" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/><ref refid="struct_l_c_d___t_1a3361446e6a0ffd9d875623733ba81157" kindref="member">COM67</ref>;</highlight></codeline>
+<codeline lineno="40" refid="struct_l_c_d___t_1a16d07142902971546a3deb8f50d30ade" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__IO<sp/>uint32_t<sp/><ref refid="struct_l_c_d___t_1a16d07142902971546a3deb8f50d30ade" kindref="member">IO_EN</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}<sp/><ref refid="struct_l_c_d___t" kindref="compound">LCD_T</ref>;</highlight></codeline>
+<codeline lineno="44" refid="wm__lcd_8h_1abf2d80992dcfabfd1668184c3dff2733" refkind="member"><highlight class="preprocessor">#define<sp/>LCD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LCD_T<sp/>*)HR_LCD_REG_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49" refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a462d163f979e21105e6fb85f003605ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a462d163f979e21105e6fb85f003605ea" kindref="member">BIAS_STATIC</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_BIAS_STATIC,</highlight></codeline>
+<codeline lineno="51" refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861aaa5cf488397679850f39005bcb211007" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861aaa5cf488397679850f39005bcb211007" kindref="member">BIAS_ONEHALF</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_BIAS_ONEHALF,</highlight></codeline>
+<codeline lineno="53" refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a87fd3e7d44267a8a88de8d26b272731f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a87fd3e7d44267a8a88de8d26b272731f" kindref="member">BIAS_ONETHIRD</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_BIAS_ONETHIRD,</highlight></codeline>
+<codeline lineno="55" refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861ae380b540208e2a2b869382d57094d28b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861ae380b540208e2a2b869382d57094d28b" kindref="member">BIAS_ONEFOURTH</ref><sp/><sp/>=<sp/>LCD_BIAS_ONEFOURTH,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861" kindref="member">LCD_BiasDef</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61" refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3af1725d22a496bb9eeeccf8757edf3bdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3af1725d22a496bb9eeeccf8757edf3bdc" kindref="member">VLCD27</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_VLCD_27,</highlight></codeline>
+<codeline lineno="63" refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac20a8a643f18f4999984ea0b2d73a4a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac20a8a643f18f4999984ea0b2d73a4a4" kindref="member">VLCD28</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_VLCD_28,</highlight></codeline>
+<codeline lineno="65" refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ad4d1324ab70d3f8a7589db076b9a023e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ad4d1324ab70d3f8a7589db076b9a023e" kindref="member">VLCD29</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_VLCD_29,</highlight></codeline>
+<codeline lineno="67" refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a27a2f3094ea03d127ae7615863a7d553" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a27a2f3094ea03d127ae7615863a7d553" kindref="member">VLCD30</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_VLCD_30,</highlight></codeline>
+<codeline lineno="69" refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a810dccf14199b7bbdaafb62a76aa4805" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a810dccf14199b7bbdaafb62a76aa4805" kindref="member">VLCD31</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_VLCD_31,</highlight></codeline>
+<codeline lineno="71" refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a5f8bce6cb0c5c4f14b1da5377a41968d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a5f8bce6cb0c5c4f14b1da5377a41968d" kindref="member">VLCD32</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_VLCD_32,</highlight></codeline>
+<codeline lineno="73" refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac4a665c9321a8666ab17ab9033e50381" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac4a665c9321a8666ab17ab9033e50381" kindref="member">VLCD33</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_VLCD_33,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3" kindref="member">LCD_VlcdDef</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79" refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a98fefc666c8e7ff47e8242d54c954b8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a98fefc666c8e7ff47e8242d54c954b8a" kindref="member">X_VDD</ref>,</highlight></codeline>
+<codeline lineno="81" refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a979e1c770f01792a2679249fa15cbf20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a979e1c770f01792a2679249fa15cbf20" kindref="member">I_VDD</ref>,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0" kindref="member">LCD_VddDef</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87" refid="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865aeebef2e7273bc72ce837f5a3679e5819" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865aeebef2e7273bc72ce837f5a3679e5819" kindref="member">MODE8x16</ref>,</highlight></codeline>
+<codeline lineno="89" refid="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865ab8bae700373a01cd0819e240d1f56091" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865ab8bae700373a01cd0819e240d1f56091" kindref="member">MODE4x20</ref>,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}<sp/><ref refid="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865" kindref="member">LCD_ModeDef</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95" refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fad44da89585a42710936d213ecd9bfef6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fad44da89585a42710936d213ecd9bfef6" kindref="member">DUTY_STATIC</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_DUTY_STATIC,</highlight></codeline>
+<codeline lineno="97" refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa6852c5c937f5b7f58de8da80f1daf382" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa6852c5c937f5b7f58de8da80f1daf382" kindref="member">DUTY_ONEHALF</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_DUTY_ONEHALF,</highlight></codeline>
+<codeline lineno="99" refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fab360d807b36c5932ec9fe7f211b02974" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fab360d807b36c5932ec9fe7f211b02974" kindref="member">DUTY_ONETHIRD</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_DUTY_ONETHIRD,</highlight></codeline>
+<codeline lineno="101" refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1032fba3a4017c83d9090bb2128e6142" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1032fba3a4017c83d9090bb2128e6142" kindref="member">DUTY_ONEFOURTH</ref><sp/><sp/>=<sp/>LCD_DUTY_ONEFOURTH,</highlight></codeline>
+<codeline lineno="103" refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa2eb794ecb1a31eeed43117108db73ac7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa2eb794ecb1a31eeed43117108db73ac7" kindref="member">DUTY_ONEFIFTH</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_DUTY_ONEFIFTH,</highlight></codeline>
+<codeline lineno="105" refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1040d59560f67f2995cd5c088f058201" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1040d59560f67f2995cd5c088f058201" kindref="member">DUTY_ONESIXTH</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>LCD_DUTY_ONESIXTH,</highlight></codeline>
+<codeline lineno="107" refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173faa21771e0a5ada95321ee5066462f9c68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173faa21771e0a5ada95321ee5066462f9c68" kindref="member">DUTY_ONESEVENTH</ref><sp/>=<sp/>LCD_DUTY_ONESEVENTH,</highlight></codeline>
+<codeline lineno="109" refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fabcbf9f7ff891294f79d6782170259894" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fabcbf9f7ff891294f79d6782170259894" kindref="member">DUTY_ONEEIGHTH</ref><sp/><sp/>=<sp/>LCD_DUTY_ONEEIGHTH,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}<sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173f" kindref="member">LCD_DutyDef</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="structtls__lcd__options" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__lcd__options" kindref="compound">tls_lcd_options</ref></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable;</highlight></codeline>
+<codeline lineno="117" refid="structtls__lcd__options_1a49f8cb0549cc48e44f945da7a2d5c3be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865" kindref="member">LCD_ModeDef</ref><sp/><sp/><ref refid="structtls__lcd__options_1a49f8cb0549cc48e44f945da7a2d5c3be" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="119" refid="structtls__lcd__options_1ade099772b2b84088808d58ebc36be8a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861" kindref="member">LCD_BiasDef</ref><sp/><sp/><ref refid="structtls__lcd__options_1ade099772b2b84088808d58ebc36be8a1" kindref="member">bias</ref>;</highlight></codeline>
+<codeline lineno="121" refid="structtls__lcd__options_1aab32129cc67319b227269b416fb4e9bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173f" kindref="member">LCD_DutyDef</ref><sp/><sp/><ref refid="structtls__lcd__options_1aab32129cc67319b227269b416fb4e9bd" kindref="member">duty</ref>;</highlight></codeline>
+<codeline lineno="123" refid="structtls__lcd__options_1a5b9b976d1da86726f13637435f626d02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3" kindref="member">LCD_VlcdDef</ref><sp/><sp/><ref refid="structtls__lcd__options_1a5b9b976d1da86726f13637435f626d02" kindref="member">vlcd</ref>;</highlight></codeline>
+<codeline lineno="125" refid="structtls__lcd__options_1a01924fc8446dac7e894046c6c0baa162" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0" kindref="member">LCD_VddDef</ref><sp/><sp/><ref refid="structtls__lcd__options_1a01924fc8446dac7e894046c6c0baa162" kindref="member">vdd_mode</ref>;</highlight></codeline>
+<codeline lineno="127" refid="structtls__lcd__options_1a848039701f814b7388882ea4e7be091d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><ref refid="structtls__lcd__options_1a848039701f814b7388882ea4e7be091d" kindref="member">fresh_rate</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/><ref refid="structtls__lcd__options" kindref="compound">tls_lcd_options_t</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_c_d___driver___a_p_is_1ga2fdb5367f4716e484b96aa97d0198b14" kindref="member">tls_lcd_init</ref>(<ref refid="structtls__lcd__options" kindref="compound">tls_lcd_options_t</ref><sp/>*opts);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_c_d___driver___a_p_is_1ga6b15e6aaa9ddd3a3bcc4c7ea172ad724" kindref="member">tls_lcd_fresh_rate</ref>(uint16_t<sp/>freq);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_c_d___driver___a_p_is_1ga3887a4019928e226fb7b6086b1bf622f" kindref="member">tls_lcd_seg_set</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>com,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>on_off);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_c_d___driver___a_p_is_1ga968198f6b377214610e6beeb6b3c2434" kindref="member">tls_lcd_vlcd_sel</ref>(<ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3" kindref="member">LCD_VlcdDef</ref><sp/>vlcd);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_c_d___driver___a_p_is_1gab367c94d9366e091f384b5e169e036cd" kindref="member">tls_lcd_duty_set</ref>(<ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173f" kindref="member">LCD_DutyDef</ref><sp/>duty);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_c_d___driver___a_p_is_1ga74d2074678568e8f2125dc4738cd9638" kindref="member">tls_lcd_bias_set</ref>(<ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861" kindref="member">LCD_BiasDef</ref><sp/>bias);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_c_d___driver___a_p_is_1ga88cf3e494c4c8a46ef6546e64c9f22ef" kindref="member">tls_lcd_vdd_sel</ref>(<ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0" kindref="member">LCD_VddDef</ref><sp/>vdd_mode);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_c_d___driver___a_p_is_1gac6289032dae222cbfba30ae6eef076b3" kindref="member">tls_lcd_io_config</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="group___l_c_d___driver___a_p_is_1ga3da403b9b3169e693be9c9c94079990b" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_LCD_CLK_ENABLE(enable)<sp/>\</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tls_bitband_write(HR_CLK_BASE_ADDR,<sp/>HR_CLK_LCD_GATE_Pos,<sp/>enable);<sp/>\</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="group___l_c_d___driver___a_p_is_1ga05ba6e6c2a076373b8491aebd7467c28" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_LCD_ENABLE(enable)<sp/><sp/>\</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tls_bitband_write(HR_LCD_CR,<sp/>LCD_CR_EN_Pos,<sp/>enable);<sp/>\</highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="group___l_c_d___driver___a_p_is_1ga502f2dcf7e7c27f21ef63446cc7942ad" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_LCD_POWERDOWM(enable)<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="256"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="257"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tls_bitband_write(HR_LCD_CR,<sp/>LCD_CR_PD_Pos,<sp/>enable);<sp/>\</highlight></codeline>
+<codeline lineno="258"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while(0)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">/***<sp/>(C)<sp/>COPYRIGHT<sp/>2014<sp/>Winner<sp/>Microelectronics<sp/>Co.,<sp/>Ltd.<sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_lcd.h"/>
+  </compounddef>
+</doxygen>

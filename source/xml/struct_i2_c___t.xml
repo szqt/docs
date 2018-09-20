@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_i2_c___t" kind="struct" language="C++" prot="public">
+    <compoundname>I2C_T</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i2_c___t_1a9988ce8ed0240eef247020fcf440a40a" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t I2C_T::PRER_LO</definition>
+        <argsstring></argsstring>
+        <name>PRER_LO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="21" column="1" bodyfile="Include/Driver/wm_i2c.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___t_1a7ba352e8cc0cf8d7f785ca4d07693775" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t I2C_T::PRER_HI</definition>
+        <argsstring></argsstring>
+        <name>PRER_HI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="22" column="1" bodyfile="Include/Driver/wm_i2c.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___t_1ad9c6e446284c8b889cfd57298c4b5e18" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t I2C_T::CTRL</definition>
+        <argsstring></argsstring>
+        <name>CTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="23" column="1" bodyfile="Include/Driver/wm_i2c.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___t_1a2b59e717ed3cfea36e232f46828df805" prot="public" static="no" mutable="no">
+        <type>__O uint32_t</type>
+        <definition>__O uint32_t I2C_T::TX_RX</definition>
+        <argsstring></argsstring>
+        <name>TX_RX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="24" column="1" bodyfile="Include/Driver/wm_i2c.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___t_1a22f594baf8ed531b6f4457d90296a352" prot="public" static="no" mutable="no">
+        <type>__O uint32_t</type>
+        <definition>__O uint32_t I2C_T::CR_SR</definition>
+        <argsstring></argsstring>
+        <name>CR_SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="25" column="1" bodyfile="Include/Driver/wm_i2c.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___t_1aa4c9d736dde51f9c834bc16288f0514b" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t I2C_T::TXR</definition>
+        <argsstring></argsstring>
+        <name>TXR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="26" column="1" bodyfile="Include/Driver/wm_i2c.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i2_c___t_1a37042b6eb524f7c2a4f8091b14c2e0a8" prot="public" static="no" mutable="no">
+        <type>__I uint32_t</type>
+        <definition>__I uint32_t I2C_T::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2c.h" line="27" column="1" bodyfile="Include/Driver/wm_i2c.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_i2c.h" line="20" column="1" bodyfile="Include/Driver/wm_i2c.h" bodystart="19" bodyend="28"/>
+    <listofallmembers>
+      <member refid="struct_i2_c___t_1a37042b6eb524f7c2a4f8091b14c2e0a8" prot="public" virt="non-virtual"><scope>I2C_T</scope><name>CR</name></member>
+      <member refid="struct_i2_c___t_1a22f594baf8ed531b6f4457d90296a352" prot="public" virt="non-virtual"><scope>I2C_T</scope><name>CR_SR</name></member>
+      <member refid="struct_i2_c___t_1ad9c6e446284c8b889cfd57298c4b5e18" prot="public" virt="non-virtual"><scope>I2C_T</scope><name>CTRL</name></member>
+      <member refid="struct_i2_c___t_1a7ba352e8cc0cf8d7f785ca4d07693775" prot="public" virt="non-virtual"><scope>I2C_T</scope><name>PRER_HI</name></member>
+      <member refid="struct_i2_c___t_1a9988ce8ed0240eef247020fcf440a40a" prot="public" virt="non-virtual"><scope>I2C_T</scope><name>PRER_LO</name></member>
+      <member refid="struct_i2_c___t_1a2b59e717ed3cfea36e232f46828df805" prot="public" virt="non-virtual"><scope>I2C_T</scope><name>TX_RX</name></member>
+      <member refid="struct_i2_c___t_1aa4c9d736dde51f9c834bc16288f0514b" prot="public" virt="non-virtual"><scope>I2C_T</scope><name>TXR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

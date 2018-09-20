@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__ht__cap" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_ht_cap</compoundname>
+    <includes refid="wm__ieee80211_8h" local="no">wm_ieee80211.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__ht__cap_1a0179ec56de6b59f72fb32260bdee544d" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_ht_cap::cap_info</definition>
+        <argsstring></argsstring>
+        <name>cap_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1145" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__ht__cap_1ae3e88b02e17da60547efaf48e3b7c3f5" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_ht_cap::ampdu_params_info</definition>
+        <argsstring></argsstring>
+        <name>ampdu_params_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1146" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__ht__cap_1a2319a55f8100278aab71094132137453" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structieee80211__mcs__info" kindref="compound">ieee80211_mcs_info</ref></type>
+        <definition>struct ieee80211_mcs_info ieee80211_ht_cap::mcs</definition>
+        <argsstring></argsstring>
+        <name>mcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1146" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__ht__cap_1a890337d508a688e78333895298c30dd6" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_ht_cap::extended_ht_cap_info</definition>
+        <argsstring></argsstring>
+        <name>extended_ht_cap_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1151" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__ht__cap_1a4ddd868d9100d2ae515c3b21dd3c46aa" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 ieee80211_ht_cap::tx_BF_cap_info</definition>
+        <argsstring></argsstring>
+        <name>tx_BF_cap_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1152" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__ht__cap_1a1952bc68afc8ee6a8234d3abf8178345" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_ht_cap::antenna_selection_info</definition>
+        <argsstring></argsstring>
+        <name>antenna_selection_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1153" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct <ref refid="structieee80211__ht__cap" kindref="compound">ieee80211_ht_cap</ref> - HT capabilities</para><para>This structure is the &quot;HT capabilities element&quot; as described in 802.11n D5.0 7.3.2.56 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="56">
+        <label>ieee80211_ht_cap</label>
+        <link refid="structieee80211__ht__cap"/>
+        <childnode refid="57" relation="usage">
+          <edgelabel>mcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="57">
+        <label>ieee80211_mcs_info</label>
+        <link refid="structieee80211__mcs__info"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/WiFi/wm_ieee80211.h" line="1144" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1144" bodyend="1154"/>
+    <listofallmembers>
+      <member refid="structieee80211__ht__cap_1ae3e88b02e17da60547efaf48e3b7c3f5" prot="public" virt="non-virtual"><scope>ieee80211_ht_cap</scope><name>ampdu_params_info</name></member>
+      <member refid="structieee80211__ht__cap_1a1952bc68afc8ee6a8234d3abf8178345" prot="public" virt="non-virtual"><scope>ieee80211_ht_cap</scope><name>antenna_selection_info</name></member>
+      <member refid="structieee80211__ht__cap_1a0179ec56de6b59f72fb32260bdee544d" prot="public" virt="non-virtual"><scope>ieee80211_ht_cap</scope><name>cap_info</name></member>
+      <member refid="structieee80211__ht__cap_1a890337d508a688e78333895298c30dd6" prot="public" virt="non-virtual"><scope>ieee80211_ht_cap</scope><name>extended_ht_cap_info</name></member>
+      <member refid="structieee80211__ht__cap_1a2319a55f8100278aab71094132137453" prot="public" virt="non-virtual"><scope>ieee80211_ht_cap</scope><name>mcs</name></member>
+      <member refid="structieee80211__ht__cap_1a4ddd868d9100d2ae515c3b21dd3c46aa" prot="public" virt="non-virtual"><scope>ieee80211_ht_cap</scope><name>tx_BF_cap_info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

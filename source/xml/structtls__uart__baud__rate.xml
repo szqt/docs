@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__uart__baud__rate" kind="struct" language="C++" prot="public">
+    <compoundname>tls_uart_baud_rate</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__uart__baud__rate_1aa7207bd311967117aa4bb3b1fcd75c67" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_baud_rate::baud_rate</definition>
+        <argsstring></argsstring>
+        <name>baud_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="95" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__baud__rate_1a6525db469a3ce7b64f78b57607bb0abc" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_uart_baud_rate::ubdiv</definition>
+        <argsstring></argsstring>
+        <name>ubdiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="96" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__baud__rate_1ae47bf5827f13453a01f0a18952191f39" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_uart_baud_rate::ubdiv_frac</definition>
+        <argsstring></argsstring>
+        <name>ubdiv_frac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="97" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_uart.h" line="94" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="93" bodyend="98"/>
+    <listofallmembers>
+      <member refid="structtls__uart__baud__rate_1aa7207bd311967117aa4bb3b1fcd75c67" prot="public" virt="non-virtual"><scope>tls_uart_baud_rate</scope><name>baud_rate</name></member>
+      <member refid="structtls__uart__baud__rate_1a6525db469a3ce7b64f78b57607bb0abc" prot="public" virt="non-virtual"><scope>tls_uart_baud_rate</scope><name>ubdiv</name></member>
+      <member refid="structtls__uart__baud__rate_1ae47bf5827f13453a01f0a18952191f39" prot="public" virt="non-virtual"><scope>tls_uart_baud_rate</scope><name>ubdiv_frac</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

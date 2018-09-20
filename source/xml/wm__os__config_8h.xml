@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__os__config_8h" kind="file" language="C++">
+    <compoundname>wm_os_config.h</compoundname>
+    <includedby refid="wm__config_8h" local="yes">Include/wm_config.h</includedby>
+    <invincdepgraph>
+      <node id="282">
+        <label>Include/Net/wm_sockets2.0.3.h</label>
+        <link refid="wm__sockets2_80_83_8h"/>
+      </node>
+      <node id="276">
+        <label>Include/Net/wm_socket2.0.3.h</label>
+        <link refid="wm__socket2_80_83_8h"/>
+      </node>
+      <node id="292">
+        <label>Include/Platform/wm_wl_task.h</label>
+        <link refid="wm__wl__task_8h"/>
+      </node>
+      <node id="284">
+        <label>Include/Driver/wm_flash.h</label>
+        <link refid="wm__flash_8h"/>
+      </node>
+      <node id="274">
+        <label>Include/App/wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>Include/App/wm_ssl_server.h</label>
+        <link refid="wm__ssl__server_8h_source"/>
+      </node>
+      <node id="277">
+        <label>Include/Net/wm_sockets.h</label>
+        <link refid="wm__sockets_8h"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>Include/App/wm_cloud.h</label>
+        <link refid="wm__cloud_8h"/>
+      </node>
+      <node id="288">
+        <label>Include/Driver/wm_internal_flash.h</label>
+        <link refid="wm__internal__flash_8h"/>
+      </node>
+      <node id="285">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+      </node>
+      <node id="283">
+        <label>Include/OS/wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>Include/App/wm_wifi_oneshot.h</label>
+        <link refid="wm__wifi__oneshot_8h"/>
+      </node>
+      <node id="269">
+        <label>Include/OS/wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>Include/Platform/wm_wl_timers.h</label>
+        <link refid="wm__wl__timers_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>Include/App/wm_netif2.0.3.h</label>
+        <link refid="wm__netif2_80_83_8h"/>
+      </node>
+      <node id="291">
+        <label>Include/Platform/wm_wl_mbox.h</label>
+        <link refid="wm__wl__mbox_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>Include/Platform/wm_fwup.h</label>
+        <link refid="wm__fwup_8h"/>
+      </node>
+      <node id="273">
+        <label>Include/App/wm_http_client.h</label>
+        <link refid="wm__http__client_8h"/>
+      </node>
+      <node id="286">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>Include/Net/wm_socket.h</label>
+        <link refid="wm__socket_8h"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>Include/Driver/wm_i2s.h</label>
+        <link refid="wm__i2s_8h"/>
+      </node>
+      <node id="270">
+        <label>Include/wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>Include/wm_debug.h</label>
+        <link refid="wm__debug_8h"/>
+      </node>
+      <node id="275">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+      <node id="289">
+        <label>Include/Driver/wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__os__config_8h_1aeebaa04360cb0a2a1b343e5fffb84054" prot="public" static="no">
+        <name>OS_CFG_ON</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_os_config.h" line="13" column="17" bodyfile="Include/OS/wm_os_config.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__os__config_8h_1a45571eea14d38ce162e51dc70912aa4b" prot="public" static="no">
+        <name>OS_CFG_OFF</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_os_config.h" line="14" column="9" bodyfile="Include/OS/wm_os_config.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__os__config_8h_1af093c5c15f7f0b2c8b9a8fd94bdfd5c2" prot="public" static="no">
+        <name>TLS_OS_UCOS</name>
+        <initializer>OS_CFG_OFF  /*UCOSII  need to modify wm_config.inc*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_os_config.h" line="16" column="9" bodyfile="Include/OS/wm_os_config.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__os__config_8h_1a4ff1ac7758838857df2d60a42f758044" prot="public" static="no">
+        <name>TLS_OS_FREERTOS</name>
+        <initializer>OS_CFG_ON   /*FreeRTOS need to modify wm_config.inc*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_os_config.h" line="17" column="9" bodyfile="Include/OS/wm_os_config.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WM OS select freertos or ucos. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>winnermicro</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>__WM_OS_CONFIG_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WM_OS_CONFIG_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OS_CFG_ON<sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OS_CFG_OFF<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_OS_UCOS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OS_CFG_OFF<sp/><sp/></highlight><highlight class="comment">/*UCOSII<sp/><sp/>need<sp/>to<sp/>modify<sp/>wm_config.inc*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_OS_FREERTOS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OS_CFG_ON<sp/><sp/><sp/></highlight><highlight class="comment">/*FreeRTOS<sp/>need<sp/>to<sp/>modify<sp/>wm_config.inc*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Include/OS/wm_os_config.h"/>
+  </compounddef>
+</doxygen>

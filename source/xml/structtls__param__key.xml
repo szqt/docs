@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__param__key" kind="struct" language="C++" prot="public">
+    <compoundname>tls_param_key</compoundname>
+    <includes refid="wm__params_8h" local="no">wm_params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__param__key_1ac1567eb9fa2ace453ee37e817e71ea14" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_key::psk[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>psk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="304" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__key_1af354772efb7ad03e1f0675420ae740ab" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_key::key_length</definition>
+        <argsstring></argsstring>
+        <name>key_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="305" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__key_1a9e4c6266b0c9ddb11926e29856a27e4e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_key::key_index</definition>
+        <argsstring></argsstring>
+        <name>key_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="306" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__key_1a18aa7423002e283ae26e3b62c63cd64c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_key::key_format</definition>
+        <argsstring></argsstring>
+        <name>key_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="307" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__key_1a339c6334183e07752693be138c611bff" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_key::res</definition>
+        <argsstring></argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="308" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure of KEY parameter </para>    </detaileddescription>
+    <location file="Include/Platform/wm_params.h" line="303" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="303" bodyend="309"/>
+    <listofallmembers>
+      <member refid="structtls__param__key_1a18aa7423002e283ae26e3b62c63cd64c" prot="public" virt="non-virtual"><scope>tls_param_key</scope><name>key_format</name></member>
+      <member refid="structtls__param__key_1a9e4c6266b0c9ddb11926e29856a27e4e" prot="public" virt="non-virtual"><scope>tls_param_key</scope><name>key_index</name></member>
+      <member refid="structtls__param__key_1af354772efb7ad03e1f0675420ae740ab" prot="public" virt="non-virtual"><scope>tls_param_key</scope><name>key_length</name></member>
+      <member refid="structtls__param__key_1ac1567eb9fa2ace453ee37e817e71ea14" prot="public" virt="non-virtual"><scope>tls_param_key</scope><name>psk</name></member>
+      <member refid="structtls__param__key_1a339c6334183e07752693be138c611bff" prot="public" virt="non-virtual"><scope>tls_param_key</scope><name>res</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

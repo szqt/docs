@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__rts" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_rts</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__rts_1a09603835460d6d7b6fd66f84103912e8" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_rts::frame_control</definition>
+        <argsstring></argsstring>
+        <name>frame_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1060" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1060" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__rts_1a158aaf3afc5395e2ba1c900fa31f184b" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_rts::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1061" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1061" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__rts_1a4aed391271f48605fef4f0389c129710" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_rts::ra</definition>
+        <argsstring>[6]</argsstring>
+        <name>ra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1062" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1062" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__rts_1a59f2c3c33b47b931935fd9aa2c86a16f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_rts::ta</definition>
+        <argsstring>[6]</argsstring>
+        <name>ta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1063" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1063" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/WiFi/wm_ieee80211.h" line="1059" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1059" bodyend="1064"/>
+    <listofallmembers>
+      <member refid="structieee80211__rts_1a158aaf3afc5395e2ba1c900fa31f184b" prot="public" virt="non-virtual"><scope>ieee80211_rts</scope><name>duration</name></member>
+      <member refid="structieee80211__rts_1a09603835460d6d7b6fd66f84103912e8" prot="public" virt="non-virtual"><scope>ieee80211_rts</scope><name>frame_control</name></member>
+      <member refid="structieee80211__rts_1a4aed391271f48605fef4f0389c129710" prot="public" virt="non-virtual"><scope>ieee80211_rts</scope><name>ra</name></member>
+      <member refid="structieee80211__rts_1a59f2c3c33b47b931935fd9aa2c86a16f" prot="public" virt="non-virtual"><scope>ieee80211_rts</scope><name>ta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

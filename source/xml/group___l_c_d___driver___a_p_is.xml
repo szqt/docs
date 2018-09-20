@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___l_c_d___driver___a_p_is" kind="group">
+    <compoundname>LCD_Driver_APIs</compoundname>
+    <title>LCD Driver APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga2fdb5367f4716e484b96aa97d0198b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_init</definition>
+        <argsstring>(tls_lcd_options_t *opts)</argsstring>
+        <name>tls_lcd_init</name>
+        <param>
+          <type><ref refid="structtls__lcd__options" kindref="compound">tls_lcd_options_t</ref> *</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+<para>initialize the LCD module </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga6b15e6aaa9ddd3a3bcc4c7ea172ad724" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_fresh_rate</definition>
+        <argsstring>(uint16_t freq)</argsstring>
+        <name>tls_lcd_fresh_rate</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>Initialize LCD Frame Counter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LCD reference refresh frequency in Hz that will be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga3887a4019928e226fb7b6086b1bf622f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_seg_set</definition>
+        <argsstring>(int com, int bit, int on_off)</argsstring>
+        <name>tls_lcd_seg_set</name>
+        <param>
+          <type>int</type>
+          <declname>com</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>on_off</declname>
+        </param>
+        <briefdescription>
+<para>Turn on or clear a segment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">com</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Which COM line to update </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit index of which field to change </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When one will set segment, when zero will clear segment </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>before this function be called, the module must have been intialized </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga968198f6b377214610e6beeb6b3c2434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_vlcd_sel</definition>
+        <argsstring>(LCD_VlcdDef vlcd)</argsstring>
+        <name>tls_lcd_vlcd_sel</name>
+        <param>
+          <type><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3" kindref="member">LCD_VlcdDef</ref></type>
+          <declname>vlcd</declname>
+        </param>
+        <briefdescription>
+<para>select the voltage of LCD module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlcd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be one of the following values:<itemizedlist>
+<listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3af1725d22a496bb9eeeccf8757edf3bdc" kindref="member">VLCD27</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac20a8a643f18f4999984ea0b2d73a4a4" kindref="member">VLCD28</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ad4d1324ab70d3f8a7589db076b9a023e" kindref="member">VLCD29</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a27a2f3094ea03d127ae7615863a7d553" kindref="member">VLCD30</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a810dccf14199b7bbdaafb62a76aa4805" kindref="member">VLCD31</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3a5f8bce6cb0c5c4f14b1da5377a41968d" kindref="member">VLCD32</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3ac4a665c9321a8666ab17ab9033e50381" kindref="member">VLCD33</ref> </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1gab367c94d9366e091f384b5e169e036cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_duty_set</definition>
+        <argsstring>(LCD_DutyDef duty)</argsstring>
+        <name>tls_lcd_duty_set</name>
+        <param>
+          <type><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173f" kindref="member">LCD_DutyDef</ref></type>
+          <declname>duty</declname>
+        </param>
+        <briefdescription>
+<para>set the duty of LCD module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be one of the following values:<itemizedlist>
+<listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fad44da89585a42710936d213ecd9bfef6" kindref="member">DUTY_STATIC</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa6852c5c937f5b7f58de8da80f1daf382" kindref="member">DUTY_ONEHALF</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fab360d807b36c5932ec9fe7f211b02974" kindref="member">DUTY_ONETHIRD</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1032fba3a4017c83d9090bb2128e6142" kindref="member">DUTY_ONEFOURTH</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa2eb794ecb1a31eeed43117108db73ac7" kindref="member">DUTY_ONEFIFTH</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fa1040d59560f67f2995cd5c088f058201" kindref="member">DUTY_ONESIXTH</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173faa21771e0a5ada95321ee5066462f9c68" kindref="member">DUTY_ONESEVENTH</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173fabcbf9f7ff891294f79d6782170259894" kindref="member">DUTY_ONEEIGHTH</ref> </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga74d2074678568e8f2125dc4738cd9638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_bias_set</definition>
+        <argsstring>(LCD_BiasDef bias)</argsstring>
+        <name>tls_lcd_bias_set</name>
+        <param>
+          <type><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861" kindref="member">LCD_BiasDef</ref></type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+<para>set the bias of LCD module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be one of the following values:<itemizedlist>
+<listitem><para><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a462d163f979e21105e6fb85f003605ea" kindref="member">BIAS_STATIC</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861aaa5cf488397679850f39005bcb211007" kindref="member">BIAS_ONEHALF</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861a87fd3e7d44267a8a88de8d26b272731f" kindref="member">BIAS_ONETHIRD</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861ae380b540208e2a2b869382d57094d28b" kindref="member">BIAS_ONEFOURTH</ref> </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1ga88cf3e494c4c8a46ef6546e64c9f22ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_vdd_sel</definition>
+        <argsstring>(LCD_VddDef vdd_mode)</argsstring>
+        <name>tls_lcd_vdd_sel</name>
+        <param>
+          <type><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0" kindref="member">LCD_VddDef</ref></type>
+          <declname>vdd_mode</declname>
+        </param>
+        <briefdescription>
+<para>config the vdd mode of LCD module </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">duty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This parameter can be one of the following values:<itemizedlist>
+<listitem><para><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a98fefc666c8e7ff47e8242d54c954b8a" kindref="member">X_VDD</ref></para></listitem><listitem><para><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0a979e1c770f01792a2679249fa15cbf20" kindref="member">I_VDD</ref> </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_c_d___driver___a_p_is_1gac6289032dae222cbfba30ae6eef076b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_lcd_io_config</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>tls_lcd_io_config</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>enable or disable the LCD module gpio </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config value per bit for one LCD gpio, set enable gpio output ,clear disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="228" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___l_c_d___driver___a_p_is_1ga3da403b9b3169e693be9c9c94079990b" prot="public" static="no">
+        <name>TLS_LCD_CLK_ENABLE</name>
+        <param><defname>enable</defname></param>
+        <initializer>do { \
+			tls_bitband_write(HR_CLK_BASE_ADDR, <ref refid="wm__regs_8h_1a7a1f6475bee0fea46632b89d9dd6c4d4" kindref="member">HR_CLK_LCD_GATE_Pos</ref>, enable); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Enable or disable clock of LCD module. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When one enable the clock of LCD module, when zero disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="234" column="9" bodyfile="Include/Driver/wm_lcd.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_c_d___driver___a_p_is_1ga05ba6e6c2a076373b8491aebd7467c28" prot="public" static="no">
+        <name>TLS_LCD_ENABLE</name>
+        <param><defname>enable</defname></param>
+        <initializer>do { \
+			tls_bitband_write(HR_LCD_CR, LCD_CR_EN_Pos, enable); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Enable or disable the LCD module. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When one enable the LCD module, when zero disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="245" column="9" bodyfile="Include/Driver/wm_lcd.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_c_d___driver___a_p_is_1ga502f2dcf7e7c27f21ef63446cc7942ad" prot="public" static="no">
+        <name>TLS_LCD_POWERDOWM</name>
+        <param><defname>enable</defname></param>
+        <initializer>do { \
+			tls_bitband_write(HR_LCD_CR, LCD_CR_PD_Pos, enable); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Enable or disable the LCD module. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When one close LCD module, when zero open the LCD module </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="255" column="9" bodyfile="Include/Driver/wm_lcd.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LCD driver APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_aca67ed9bb4d3da4844e2fb9b7405e83" kind="dir">
+    <compoundname>Include/Driver</compoundname>
+    <innerfile refid="_v_s10_x_x_8h">VS10XX.h</innerfile>
+    <innerfile refid="wm__7816_8h">wm_7816.h</innerfile>
+    <innerfile refid="wm__adc_8h">wm_adc.h</innerfile>
+    <innerfile refid="wm__cpu_8h">wm_cpu.h</innerfile>
+    <innerfile refid="wm__dma_8h">wm_dma.h</innerfile>
+    <innerfile refid="wm__efuse_8h">wm_efuse.h</innerfile>
+    <innerfile refid="wm__flash_8h">wm_flash.h</innerfile>
+    <innerfile refid="wm__flash__map_8h">wm_flash_map.h</innerfile>
+    <innerfile refid="wm__fls__gd25qxx_8h">wm_fls_gd25qxx.h</innerfile>
+    <innerfile refid="wm__gpio_8h">wm_gpio.h</innerfile>
+    <innerfile refid="wm__gpio__afsel_8h">wm_gpio_afsel.h</innerfile>
+    <innerfile refid="wm__hostspi_8h">wm_hostspi.h</innerfile>
+    <innerfile refid="wm__hspi_8h">wm_hspi.h</innerfile>
+    <innerfile refid="wm__i2c_8h">wm_i2c.h</innerfile>
+    <innerfile refid="wm__i2s_8h">wm_i2s.h</innerfile>
+    <innerfile refid="wm__internal__flash_8h">wm_internal_flash.h</innerfile>
+    <innerfile refid="wm__io_8h">wm_io.h</innerfile>
+    <innerfile refid="wm__irq_8h">wm_irq.h</innerfile>
+    <innerfile refid="wm__lcd_8h">wm_lcd.h</innerfile>
+    <innerfile refid="wm__pmu_8h">wm_pmu.h</innerfile>
+    <innerfile refid="wm__pwm_8h">wm_pwm.h</innerfile>
+    <innerfile refid="wm__reflector_8h">wm_reflector.h</innerfile>
+    <innerfile refid="wm__rtc_8h">wm_rtc.h</innerfile>
+    <innerfile refid="wm__timer_8h">wm_timer.h</innerfile>
+    <innerfile refid="wm__uart_8h">wm_uart.h</innerfile>
+    <innerfile refid="wm__watchdog_8h">wm_watchdog.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/"/>
+  </compounddef>
+</doxygen>

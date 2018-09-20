@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is" kind="group">
+    <compoundname>INTERNAL_FLASH_Driver_APIs</compoundname>
+    <title>INTERNAL_FLASH Driver APIs</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1gaa1cc4da14ac887fbf7f6cef19179d8ba" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 FLASH_TypeDef::ACR</definition>
+        <argsstring></argsstring>
+        <name>ACR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>offset 0x000 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="48" column="1" bodyfile="Include/Driver/wm_internal_flash.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga88e0901a9f9b6c157448a2817c4f1c7f" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 FLASH_TypeDef::KEYR</definition>
+        <argsstring></argsstring>
+        <name>KEYR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>offset 0x004 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="49" column="1" bodyfile="Include/Driver/wm_internal_flash.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga83d84997ba34fe4ddf25146c85f29d5d" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 FLASH_TypeDef::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>offset 0x008 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="50" column="1" bodyfile="Include/Driver/wm_internal_flash.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga79b1802363c3c5f33428f7b995496694" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 FLASH_TypeDef::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>offset 0x00C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="51" column="1" bodyfile="Include/Driver/wm_internal_flash.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga162fff750708bbb533576ce52f30b64f" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 FLASH_TypeDef::AR</definition>
+        <argsstring></argsstring>
+        <name>AR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>offset 0x010 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="52" column="1" bodyfile="Include/Driver/wm_internal_flash.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga4d459ebc8efa21a857237096187d2169" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> *</type>
+        <definition>tls_os_sem_t* tls_inside_fls::fls_lock</definition>
+        <argsstring></argsstring>
+        <name>fls_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="106" column="1" bodyfile="Include/Driver/wm_internal_flash.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="">
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga564b5b1f5cf6788df9100aae161fd455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_flash_unlock</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_flash_unlock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to unlock flash protect area [0x0~0x2000]. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga5170b58ea8d19e49e4fda63e691bf03b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_flash_lock</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_flash_lock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to lock flash protect area [0x0~0x2000]. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga7e989ce86eefc2d459eb54bc6709292f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_fls_sem_lock</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_fls_sem_lock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to semaphore protect. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga8aec8c5ecfd9b7544c172c0843ea449d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_fls_sem_unlock</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_fls_sem_unlock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to semaphore protect cancel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga86c476b697b54c2018c19d5e05bee2a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fls_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_fls_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to initial flash module structer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if init sucsess </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EBUSY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>already inited </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga043b0a80a72b696d21929bb3b1f16250" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fls_read</definition>
+        <argsstring>(u32 addr, u8 *buf, u32 len)</argsstring>
+        <name>tls_fls_read</name>
+        <param>
+          <type>u32</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to read data from the flash. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is byte offset addr for read from the flash. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is user for data buffer of flash read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is byte length for read.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if read sucsess </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if read fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1gab44bc108db207f9bd9080d3f5698f06f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fls_write</definition>
+        <argsstring>(u32 addr, u8 *buf, u32 len)</argsstring>
+        <name>tls_fls_write</name>
+        <param>
+          <type>u32</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to write data to the flash. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is byte offset addr for write to the flash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the data buffer want to write to flash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the byte length want to write</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if write flash success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EPERM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if flash struct point is null </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_ENODRV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if flash driver is not installed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if argument is invalid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if io error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is_1ga54b5f1d11a1400fcfc9819515165ef33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fls_erase</definition>
+        <argsstring>(u32 sector)</argsstring>
+        <name>tls_fls_erase</name>
+        <param>
+          <type>u32</type>
+          <declname>sector</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to erase the appoint sector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sector num of the flash, 4K byte a sector <linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if read sucsess </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if read fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_internal_flash.h" line="232" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>INTERNAL_FLASH driver APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

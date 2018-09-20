@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structhstm__int" kind="struct" language="C++" prot="public">
+    <compoundname>hstm_int</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhstm__int_1abf8eff49db147aea25b8b5add709fc8a" prot="public" static="no" mutable="no">
+        <type>int16</type>
+        <definition>int16 hstm_int::used</definition>
+        <argsstring></argsstring>
+        <name>used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="171" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhstm__int_1a7f13bfeafc22889deb4b225e51fd76aa" prot="public" static="no" mutable="no">
+        <type>int16</type>
+        <definition>int16 hstm_int::alloc</definition>
+        <argsstring></argsstring>
+        <name>alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="171" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhstm__int_1a5bbd9a50b6f09030b0f0db7006c0f61e" prot="public" static="no" mutable="no">
+        <type>int16</type>
+        <definition>int16 hstm_int::sign</definition>
+        <argsstring></argsstring>
+        <name>sign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="171" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhstm__int_1a266526950513422a2299cc5e311b2c17" prot="public" static="no" mutable="no">
+        <type>hstm_digit *</type>
+        <definition>hstm_digit* hstm_int::dp</definition>
+        <argsstring></argsstring>
+        <name>dp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="172" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Platform/wm_crypto_hard.h" line="170" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="170" bodyend="173"/>
+    <listofallmembers>
+      <member refid="structhstm__int_1a7f13bfeafc22889deb4b225e51fd76aa" prot="public" virt="non-virtual"><scope>hstm_int</scope><name>alloc</name></member>
+      <member refid="structhstm__int_1a266526950513422a2299cc5e311b2c17" prot="public" virt="non-virtual"><scope>hstm_int</scope><name>dp</name></member>
+      <member refid="structhstm__int_1a5bbd9a50b6f09030b0f0db7006c0f61e" prot="public" virt="non-virtual"><scope>hstm_int</scope><name>sign</name></member>
+      <member refid="structhstm__int_1abf8eff49db147aea25b8b5add709fc8a" prot="public" virt="non-virtual"><scope>hstm_int</scope><name>used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

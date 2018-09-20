@@ -1,0 +1,1289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___s_o_c_k_e_t___a_p_is" kind="group">
+    <compoundname>SOCKET_APIs</compoundname>
+    <title>SOCKET APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1gaaaf2f15c3d464ebd84caabb51920c4bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int accept</definition>
+        <argsstring>(int s, struct sockaddr *addr, socklen_t *addrlen)</argsstring>
+        <name>accept</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structsockaddr" kindref="compound">sockaddr</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__sockets_8h_1aae83a93236e01902b58ec3f197a17f7c" kindref="member">socklen_t</ref> *</type>
+          <declname>addrlen</declname>
+        </param>
+        <briefdescription>
+<para>await a connection on socket ID </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the address of the connecting </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*addrlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the address&apos;s actual length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new socket&apos;s descriptor</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="447" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga8dca0ad474f0bb98c58283c151d6e2e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bind</definition>
+        <argsstring>(int s, const struct sockaddr *name, socklen_t namelen)</argsstring>
+        <name>bind</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structsockaddr" kindref="compound">sockaddr</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__sockets_8h_1aae83a93236e01902b58ec3f197a17f7c" kindref="member">socklen_t</ref></type>
+          <declname>namelen</declname>
+        </param>
+        <briefdescription>
+<para>give the socket ID the local address </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the local address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">namelen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the local address length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="461" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga8744a596bc9132c457bcce518fb854dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int shutdown</definition>
+        <argsstring>(int s, int how)</argsstring>
+        <name>shutdown</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>how</declname>
+        </param>
+        <briefdescription>
+<para>shut down all or part of the connection open on socket ID </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">how</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HOW determines what to shut down: SHUT_RD = No more receptions; SHUT_WR = No more transmissions; SHUT_RDWR = No more receptions or transmissions.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="477" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1gacb704989306fb22b3586d14661a3f990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int closesocket</definition>
+        <argsstring>(int s)</argsstring>
+        <name>closesocket</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>destroy all or part of the connection open on socket ID </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="489" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga30a78fb09c5f8eb192eb9da70babda64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int connect</definition>
+        <argsstring>(int s, const struct sockaddr *name, socklen_t namelen)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structsockaddr" kindref="compound">sockaddr</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__sockets_8h_1aae83a93236e01902b58ec3f197a17f7c" kindref="member">socklen_t</ref></type>
+          <declname>namelen</declname>
+        </param>
+        <briefdescription>
+<para>Open a connection on socket FD to peer at name. For connectionless socket types, just set the default address to send to and the only address from which to accept transmissions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">namelen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="505" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga7bafa2b03fec4e2d4e7492269b262975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getsockname</definition>
+        <argsstring>(int s, struct sockaddr *name, socklen_t *namelen)</argsstring>
+        <name>getsockname</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structsockaddr" kindref="compound">sockaddr</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__sockets_8h_1aae83a93236e01902b58ec3f197a17f7c" kindref="member">socklen_t</ref> *</type>
+          <declname>namelen</declname>
+        </param>
+        <briefdescription>
+<para>Put the local address of ID into *name and its length in *namelen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*namelen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="519" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga4f016ffafb303902b981988fdc675940" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getpeername</definition>
+        <argsstring>(int s, struct sockaddr *name, socklen_t *namelen)</argsstring>
+        <name>getpeername</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structsockaddr" kindref="compound">sockaddr</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__sockets_8h_1aae83a93236e01902b58ec3f197a17f7c" kindref="member">socklen_t</ref> *</type>
+          <declname>namelen</declname>
+        </param>
+        <briefdescription>
+<para>Put the address of the peer connected to socket FD into *name (which is *namelen bytes long), and its actual length into *namelen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the peer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*namelen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the peer length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="534" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga3437a49823cdfa961c994aaaf661bd36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int setsockopt</definition>
+        <argsstring>(int s, int level, int optname, const void *optval, socklen_t optlen)</argsstring>
+        <name>setsockopt</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>optname</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>optval</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__sockets_8h_1aae83a93236e01902b58ec3f197a17f7c" kindref="member">socklen_t</ref></type>
+          <declname>optlen</declname>
+        </param>
+        <briefdescription>
+<para>Set socket ID&apos;s option optname at protocol level to *optval (which is optlen bytes long) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>protocol level </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">optname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*optval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">optlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option value length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="551" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1gaad5e3dc6d10cb45c3d98038a5733980c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getsockopt</definition>
+        <argsstring>(int s, int level, int optname, void *optval, socklen_t *optlen)</argsstring>
+        <name>getsockopt</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>optname</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>optval</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__sockets_8h_1aae83a93236e01902b58ec3f197a17f7c" kindref="member">socklen_t</ref> *</type>
+          <declname>optlen</declname>
+        </param>
+        <briefdescription>
+<para>Put the current value for socket ID&apos;s option optname at protocol level into optval (which is *optlen bytes long), and set *optlen to the value&apos;s actual length. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>protocol level </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">optname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*optval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*optlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option value length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="569" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1gadd5137ee4523809b8e087345ff5dae6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int listen</definition>
+        <argsstring>(int s, int backlog)</argsstring>
+        <name>listen</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>backlog</declname>
+        </param>
+        <briefdescription>
+<para>Prepare to accept connections on socket ID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">backlog</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum length to which the queue of pending connections</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>N connection requests will be queued before further requests are refused. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="583" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1gac98728e53b98f1b22474f48ce6658749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int recv</definition>
+        <argsstring>(int s, void *mem, size_t len, int flags)</argsstring>
+        <name>recv</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Read len bytes into mem from socket ID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to mem </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of Read bytes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option of read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number read actually</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="598" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga0add4d77d9f1142e0256df85c5c4d992" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int recvfrom</definition>
+        <argsstring>(int s, void *mem, size_t len, int flags, struct sockaddr *from, socklen_t *fromlen)</argsstring>
+        <name>recvfrom</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structsockaddr" kindref="compound">sockaddr</ref> *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__sockets_8h_1aae83a93236e01902b58ec3f197a17f7c" kindref="member">socklen_t</ref> *</type>
+          <declname>fromlen</declname>
+        </param>
+        <briefdescription>
+<para>Read len bytes into mem through socket ID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to mem </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of Read bytes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option of read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of sender </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*fromlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of address</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes read actually</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If from is not NULL, fill in *fromlen bytes of it with tha address of the sender, and store the actual size of the address in *fromlen. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="617" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1gab4a2874617ed0d46a44b0da20b3850d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int send</definition>
+        <argsstring>(int s, const void *data, size_t size, int flags)</argsstring>
+        <name>send</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Send size bytes of data to socket ID. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data will be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option of sent</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number sent actually</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="633" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga7d0859ad197b472a5fd930872dab8763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sendto</definition>
+        <argsstring>(int s, const void *data, size_t size, int flags, const struct sockaddr *to, socklen_t tolen)</argsstring>
+        <name>sendto</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structsockaddr" kindref="compound">sockaddr</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__sockets_8h_1aae83a93236e01902b58ec3f197a17f7c" kindref="member">socklen_t</ref></type>
+          <declname>tolen</declname>
+        </param>
+        <briefdescription>
+<para>Send size bytes of data on socket ID to peer at address to (which is tolen bytes long) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data will be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>option of sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to address of destination </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tolen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of address</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number sent actually</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="651" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1gaf4e0711877c45a41168ac677b0670ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int socket</definition>
+        <argsstring>(int domain, int type, int protocol)</argsstring>
+        <name>socket</name>
+        <param>
+          <type>int</type>
+          <declname>domain</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>protocol</declname>
+        </param>
+        <briefdescription>
+<para>Create a new socket of type type in domain domain, using protocol protocol. If protocol is zero, one is chosen automatically. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address families </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Socket protocol type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">protocol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Standard well-defined IP protocols</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new socket ID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="667" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga7697c5e2abe442fee5267ff362eff0b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int select</definition>
+        <argsstring>(int maxfdp1, fd_set *readset, fd_set *writeset, fd_set *exceptset, struct timeval *timeout)</argsstring>
+        <name>select</name>
+        <param>
+          <type>int</type>
+          <declname>maxfdp1</declname>
+        </param>
+        <param>
+          <type><ref refid="structfd__set" kindref="compound">fd_set</ref> *</type>
+          <declname>readset</declname>
+        </param>
+        <param>
+          <type><ref refid="structfd__set" kindref="compound">fd_set</ref> *</type>
+          <declname>writeset</declname>
+        </param>
+        <param>
+          <type><ref refid="structfd__set" kindref="compound">fd_set</ref> *</type>
+          <declname>exceptset</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structtimeval" kindref="compound">timeval</ref> *</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Check the first NFDS descriptors each in READFDS (if not NULL) for read readiness, in WRITEFDS (if not NULL) for write readiness, and in EXCEPTFDS (if not NULL) for exceptional conditions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">maxfdp1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the highest socket index in the sets </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*readset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set of sockets to check for read events </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*writeset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set of sockets to check for write events </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*exceptset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set of sockets to check for error events </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>waitting time value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of ready</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If TIMEOUT is not NULL, time out after waiting the interval specified therein. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="686" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga42742239f95827a7a86461d4ddaa3d47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ioctlsocket</definition>
+        <argsstring>(int s, long cmd, void *argp)</argsstring>
+        <name>ioctlsocket</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>argp</declname>
+        </param>
+        <briefdescription>
+<para>Set/Get socket ID&apos;s option by command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>socket ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">*argp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the parameters</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="701" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga636674bf9937205b85a797ee6077faa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structhostent" kindref="compound">hostent</ref> *</type>
+        <definition>struct hostent* gethostbyname</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>gethostbyname</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>get entry from host data base for host with name </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hostname</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>!NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="713" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1ga689de871afcb769240f7bf9f0d72b9a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 ipaddr_addr</definition>
+        <argsstring>(const char *cp)</argsstring>
+        <name>ipaddr_addr</name>
+        <param>
+          <type>const char *</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+<para>Ascii internet address interpretation routine. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*cp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IP address in ascii represenation (e.g. &quot;127.0.0.1&quot;)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ip address in network order</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="724" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_o_c_k_e_t___a_p_is_1gace12d28aef35bb15962e8563aea571b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* ipaddr_ntoa</definition>
+        <argsstring>(const ip_addr_t *addr)</argsstring>
+        <name>ipaddr_ntoa</name>
+        <param>
+          <type>const <ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Convert numeric IP address into decimal dotted ASCII representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>addr ip address in network order to convert</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to a global static (!) buffer that holds the ASCII represenation of addr</para></simplesect>
+<simplesect kind="note"><para>returns ptr to static buffer; not reentrant! </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="735" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SOCKET APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

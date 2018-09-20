@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__sta__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_sta_info_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__sta__info__t_1a81d63f831115ffe2bba97af91d074308" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sta_info_t::mac_addr[ETH_ALEN]</definition>
+        <argsstring>[ETH_ALEN]</argsstring>
+        <name>mac_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MAC address of station </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="258" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>station information </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_wifi.h" line="257" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="257" bodyend="259"/>
+    <listofallmembers>
+      <member refid="structtls__sta__info__t_1a81d63f831115ffe2bba97af91d074308" prot="public" virt="non-virtual"><scope>tls_sta_info_t</scope><name>mac_addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

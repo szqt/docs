@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structps_aes_cipher__t" kind="struct" language="C++" prot="public">
+    <compoundname>psAesCipher_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structps_aes_cipher__t_1a5e52036d743e93bd3c3207a31962c86f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psAesCipher_t::blocklen</definition>
+        <argsstring></argsstring>
+        <name>blocklen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="101" column="1" bodyfile="Include/Platform/aes.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structps_aes_cipher__t_1a6f01616e4a5750a5f4ab7f0b9c413310" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char psAesCipher_t::IV[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>IV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="102" column="1" bodyfile="Include/Platform/aes.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structps_aes_cipher__t_1ad259f3815b16d424058212514d45de6b" prot="public" static="no" mutable="no">
+        <type><ref refid="structps_aes_key__t" kindref="compound">psAesKey_t</ref></type>
+        <definition>psAesKey_t psAesCipher_t::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="103" column="1" bodyfile="Include/Platform/aes.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="108">
+        <label>psAesCipher_t</label>
+        <link refid="structps_aes_cipher__t"/>
+        <childnode refid="109" relation="usage">
+          <edgelabel>key</edgelabel>
+        </childnode>
+      </node>
+      <node id="109">
+        <label>psAesKey_t</label>
+        <link refid="structps_aes_key__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Platform/aes.h" line="100" column="1" bodyfile="Include/Platform/aes.h" bodystart="100" bodyend="131"/>
+    <listofallmembers>
+      <member refid="structps_aes_cipher__t_1a5e52036d743e93bd3c3207a31962c86f" prot="public" virt="non-virtual"><scope>psAesCipher_t</scope><name>blocklen</name></member>
+      <member refid="structps_aes_cipher__t_1a6f01616e4a5750a5f4ab7f0b9c413310" prot="public" virt="non-virtual"><scope>psAesCipher_t</scope><name>IV</name></member>
+      <member refid="structps_aes_cipher__t_1ad259f3815b16d424058212514d45de6b" prot="public" virt="non-virtual"><scope>psAesCipher_t</scope><name>key</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

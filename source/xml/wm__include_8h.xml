@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__include_8h" kind="file" language="C++">
+    <compoundname>wm_include.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includes refid="wm__uart_8h" local="yes">wm_uart.h</includes>
+    <includes refid="wm__gpio_8h" local="yes">wm_gpio.h</includes>
+    <includes refid="wm__hostspi_8h" local="yes">wm_hostspi.h</includes>
+    <includes refid="wm__socket_8h" local="yes">wm_socket.h</includes>
+    <includes refid="wm__sockets_8h" local="yes">wm_sockets.h</includes>
+    <includes refid="wm__wifi_8h" local="yes">wm_wifi.h</includes>
+    <includes refid="wm__hspi_8h" local="yes">wm_hspi.h</includes>
+    <includes refid="wm__pwm_8h" local="yes">wm_pwm.h</includes>
+    <includes refid="wm__params_8h" local="yes">wm_params.h</includes>
+    <includes refid="wm__osal_8h" local="yes">wm_osal.h</includes>
+    <includes refid="wm__netif_8h" local="yes">wm_netif.h</includes>
+    <includes refid="wm__efuse_8h" local="yes">wm_efuse.h</includes>
+    <includes refid="wm__mem_8h" local="yes">wm_mem.h</includes>
+    <includes refid="wm__regs_8h" local="yes">wm_regs.h</includes>
+    <includes local="yes">FreeRTOS.h</includes>
+    <incdepgraph>
+      <node id="460">
+        <label>wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="456">
+        <label>wm_io.h</label>
+        <link refid="wm__io_8h"/>
+      </node>
+      <node id="446">
+        <label>stdlib.h</label>
+      </node>
+      <node id="459">
+        <label>wm_sockets.h</label>
+        <link refid="wm__sockets_8h"/>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+      </node>
+      <node id="468">
+        <label>core_cm3.h</label>
+      </node>
+      <node id="450">
+        <label>wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>wm_gpio.h</label>
+        <link refid="wm__gpio_8h"/>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+      </node>
+      <node id="465">
+        <label>wm_efuse.h</label>
+        <link refid="wm__efuse_8h"/>
+      </node>
+      <node id="453">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="452">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="462">
+        <label>wm_params.h</label>
+        <link refid="wm__params_8h"/>
+        <childnode refid="447" relation="include">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>wm_pwm.h</label>
+        <link refid="wm__pwm_8h"/>
+        <childnode refid="447" relation="include">
+        </childnode>
+      </node>
+      <node id="457">
+        <label>wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>wm_hspi.h</label>
+        <link refid="wm__hspi_8h"/>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+      </node>
+      <node id="458">
+        <label>wm_socket.h</label>
+        <link refid="wm__socket_8h"/>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+      </node>
+      <node id="461">
+        <label>wm_wifi.h</label>
+        <link refid="wm__wifi_8h"/>
+      </node>
+      <node id="466">
+        <label>wm_mem.h</label>
+        <link refid="wm__mem_8h_source"/>
+        <childnode refid="447" relation="include">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>stdio.h</label>
+      </node>
+      <node id="469">
+        <label>FreeRTOS.h</label>
+      </node>
+      <node id="444">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>wm_regs.h</label>
+        <link refid="wm__regs_8h"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>the configuration file of sdk </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>winnermicro</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WM_INCLUDE_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WM_INCLUDE_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__uart_8h" kindref="compound">wm_uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__gpio_8h" kindref="compound">wm_gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;wm_flash.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__hostspi_8h" kindref="compound">wm_hostspi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__socket_8h" kindref="compound">wm_socket.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__sockets_8h" kindref="compound">wm_sockets.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__wifi_8h" kindref="compound">wm_wifi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__hspi_8h" kindref="compound">wm_hspi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__pwm_8h" kindref="compound">wm_pwm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__params_8h" kindref="compound">wm_params.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__osal_8h" kindref="compound">wm_osal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__netif_8h" kindref="compound">wm_netif.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__efuse_8h" kindref="compound">wm_efuse.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wm_mem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;wm_demo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__regs_8h" kindref="compound">wm_regs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;FreeRTOS.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Include/wm_include.h"/>
+  </compounddef>
+</doxygen>

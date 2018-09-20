@@ -1,0 +1,1113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__hostspi_8h" kind="file" language="C++">
+    <compoundname>wm_hostspi.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includes refid="list_8h" local="yes">list.h</includes>
+    <includes refid="wm__osal_8h" local="yes">wm_osal.h</includes>
+    <includes refid="wm__ram__config_8h" local="yes">wm_ram_config.h</includes>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <incdepgraph>
+      <node id="130">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="134">
+        <label>stdlib.h</label>
+      </node>
+      <node id="131">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="136">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="129">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>stdio.h</label>
+      </node>
+      <node id="138">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="139">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtls__spi__transfer" prot="public">tls_spi_transfer</innerclass>
+    <innerclass refid="structtls__spi__message" prot="public">tls_spi_message</innerclass>
+    <innerclass refid="structtls__spi__port" prot="public">tls_spi_port</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__hostspi_8h_1a96895897f96bc73e1dcc14eac42a7a46" prot="public" static="no">
+        <name>SPI_USE_DMA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="19" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a13bae7edc7ea0a4c71c2adf69de6a224" prot="public" static="no">
+        <name>SPI_TX_DMA_MASK</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="21" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1aa5260e6a55dcc17b0b16a576cd0d7473" prot="public" static="no">
+        <name>SPI_RX_DMA_MASK</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="22" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1ab7ff7ae23e62701ecb3b92e0bcef54c3" prot="public" static="no">
+        <name>SPI_DMA_CMD_ADDR</name>
+        <initializer>((u32)(MASTER_SPI_DMA_ADDR))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="24" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a76e4f153f7e622fc3c119575cfdee855" prot="public" static="no">
+        <name>SPI_DMA_CMD_MAX_SIZE</name>
+        <initializer>(0x20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="25" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1abb940f088a53f38200dc864e893c96c3" prot="public" static="no">
+        <name>SPI_DMA_BUF_ADDR</name>
+        <initializer>((u32)(SPI_DMA_CMD_ADDR + SPI_DMA_CMD_MAX_SIZE))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="27" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a60893c6937c5eca750484b35d04bfbe2" prot="public" static="no">
+        <name>SPI_DMA_BUF_MAX_SIZE</name>
+        <initializer>8160</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="28" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a9a4ab558c73b37c74e210f97458b7349" prot="public" static="no">
+        <name>SPI_DMA_MAX_TRANS_SIZE</name>
+        <initializer>4092</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="30" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a0e65afea16d0d9de5b95bbbf4b8a5377" prot="public" static="no">
+        <name>TLS_SPI_STATUS_OK</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>error code. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="35" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1ae52d093af14322a0e541dcdaea26691c" prot="public" static="no">
+        <name>TLS_SPI_STATUS_EINVAL</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="36" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a63555e8747f6ef679bdd6962ae34545b" prot="public" static="no">
+        <name>TLS_SPI_STATUS_ENOMEM</name>
+        <initializer>(-2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="37" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a2ea1e95837cf31522283731089861158" prot="public" static="no">
+        <name>TLS_SPI_STATUS_EBUSY</name>
+        <initializer>(-3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="38" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a4e139b0f15a5d2e1e8ab2b1c9563ba77" prot="public" static="no">
+        <name>TLS_SPI_STATUS_ESHUTDOWN</name>
+        <initializer>(-4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="39" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1aef6140fea11a66261e53f7e74e596563" prot="public" static="no">
+        <name>TLS_SPI_STATUS_EPERM</name>
+        <initializer>(-5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="40" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a337316102d844b7c3e085a69291bd582" prot="public" static="no">
+        <name>TLS_SPI_STATUS_ECLKNOSUPPORT</name>
+        <initializer>(-6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="41" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a8b65967f842b290b18ca2f4e7650701a" prot="public" static="no">
+        <name>TLS_SPI_STATUS_EMODENOSUPPORT</name>
+        <initializer>(-7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="42" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1abd7a1a64dea2f4563d70f6e98f9c7d84" prot="public" static="no">
+        <name>SPI_MASTER_FIFO_SIZE</name>
+        <initializer>(32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="44" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a49e8927a636f45641d6231ac63b9e598" prot="public" static="no">
+        <name>SPI_CPHA</name>
+        <initializer>(0x01)  /** clock phase. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the SPI master controller&apos;s configuration data.configuration data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="50" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1ad8e335b1f808bd7408d2aef2377adcb1" prot="public" static="no">
+        <name>SPI_CPOL</name>
+        <initializer>(0x02)  /** clock polarity. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="51" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a8b228aa4319e28e3a3f171d4a4e542f8" prot="public" static="no">
+        <name>TLS_SPI_MODE_0</name>
+        <initializer>(0|0)   /** motorola mode. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="52" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1adb3e84a50f005cb9d45580b96d69a1f0" prot="public" static="no">
+        <name>TLS_SPI_MODE_1</name>
+        <initializer>(0|<ref refid="wm__hostspi_8h_1a49e8927a636f45641d6231ac63b9e598" kindref="member">SPI_CPHA</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="53" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a745beb491d352fada52d0f4c230acdfc" prot="public" static="no">
+        <name>TLS_SPI_MODE_2</name>
+        <initializer>(SPI_CPOL|0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="54" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a4802f37c6d7c7db461ca2c7a134e52ab" prot="public" static="no">
+        <name>TLS_SPI_MODE_3</name>
+        <initializer>(SPI_CPOL|<ref refid="wm__hostspi_8h_1a49e8927a636f45641d6231ac63b9e598" kindref="member">SPI_CPHA</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="55" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a8d966927a76bda4666422c1cf9a27983" prot="public" static="no">
+        <name>TLS_SPI_CS_LOW</name>
+        <initializer>0x00    /** chipselect active low. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="56" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1ab513eabaa4955e9b60f7b9044638b4cf" prot="public" static="no">
+        <name>TLS_SPI_CS_HIGH</name>
+        <initializer>0x01   /** chipselect active high. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="57" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1ac7e717762e31ebaa9315330e02eeee05" prot="public" static="no">
+        <name>TLS_SPI_FCLK_MIN</name>
+        <initializer>(1000)    /** minimum work clock rate(Hz). */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="58" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1ad581da0f73fc871721e7f18441c93b27" prot="public" static="no">
+        <name>TLS_SPI_FCLK_MAX</name>
+        <initializer>(APB_CLK/2)   /** maximum work clock rate(Hz). */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="59" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a677a5a2cb49ba023b28f16a3c0d38b0e" prot="public" static="no">
+        <name>SPI_DEFAULT_SPEED</name>
+        <initializer>(2000000)    /** default clock rate is 2MHz. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default configuration data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="63" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a1bb0e7d704323efbc13aae0b62a1168e" prot="public" static="no">
+        <name>SPI_DEFAULT_MODE</name>
+        <initializer>(TLS_SPI_MODE_0)  /** default mode MODE_0. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="64" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a6955ba02a248b36aae6b9aeb109665ae" prot="public" static="no">
+        <name>SPI_CS_ACTIVE_MODE</name>
+        <initializer>(TLS_SPI_CS_LOW)    /** default chipselect mode is active low. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="65" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a24233e65a915f8ba12f9ff756e5b0f85" prot="public" static="no">
+        <name>SPI_CS_INACTIVE_MODE</name>
+        <initializer>(TLS_SPI_CS_HIGH)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="66" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1ad16194d8ef9d842f3b65cd4b562f1e2d" prot="public" static="no">
+        <name>SPI_MESSAGE_STATUS_IDLE</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI transaction message status. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="69" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1ad5a7380a22ac53d58811a3132135fe7b" prot="public" static="no">
+        <name>SPI_MESSAGE_STATUS_INPROGRESS</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="70" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a6557b66ecf840966c98a2adeca636470" prot="public" static="no">
+        <name>SPI_MESSAGE_STATUS_DONE</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="71" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1add3a50086b0b8c0270ce91a85502cbf5" prot="public" static="no">
+        <name>SPI_SLAVE_FLASH</name>
+        <initializer>0   /**flash */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>slave type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="74" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a520dd02d65a875c9f941ab5b7d52cb09" prot="public" static="no">
+        <name>SPI_SLAVE_CARD</name>
+        <initializer>1   /** SD card */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="75" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a5bde165ba677668958cde5fa01773ec3" prot="public" static="no">
+        <name>SPI_SLAVE_CONTROL_PIN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="76" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a68ef2d32f89eaf85a26fa3896fd1355c" prot="public" static="no">
+        <name>SPI_BYTE_TRANSFER</name>
+        <initializer>0   /**byte transfer*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transfer type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="78" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1ab3ba386cfa88a1f065a636b18116a16c" prot="public" static="no">
+        <name>SPI_WORD_TRANSFER</name>
+        <initializer>1   /**word transfer*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="79" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hostspi_8h_1a62d97839ddcf84e090cd2f5a1d951b2a" prot="public" static="no">
+        <name>SPI_DMA_TRANSFER</name>
+        <initializer>2   /** DMA transfer */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="80" column="9" bodyfile="Include/Driver/wm_hostspi.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___h_o_s_t_s_p_i___driver___a_p_is_1ga635f6073ca56f99d307da52a83013127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spi_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_spi_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to initialize the SPI master driver. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if initialize success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_EBUSY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if SPI is already initialized </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if malloc SPI memory fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_o_s_t_s_p_i___driver___a_p_is_1gad4ecaf515f4adc836210b2c24ac39785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spi_setup</definition>
+        <argsstring>(u8 mode, u8 cs_active, u32 fclk)</argsstring>
+        <name>tls_spi_setup</name>
+        <param>
+          <type>u8</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>cs_active</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>fclk</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to setup the spi CPOL,CPHA,cs signal and clock. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is CPOL and CPHA type defined in TLS_SPI_MODE_0 to TLS_SPI_MODE_3 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cs_active</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is cs mode, defined as TLS_SPI_CS_LOW or TLS_SPI_CS_HIGH </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fclk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is spi clock,the unit is HZ.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setup success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_EMODENOSUPPORT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if mode is not support </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if cs_active is not support </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ECLKNOSUPPORT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if fclk is not support</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_o_s_t_s_p_i___driver___a_p_is_1ga3c534b5d2120a3e21a420a9e95de05fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spi_write</definition>
+        <argsstring>(const u8 *buf, u32 len)</argsstring>
+        <name>tls_spi_write</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to synchronous write data by SPI. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the user data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the data length.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if write success. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if argument is invalid. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is no enough memory. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ESHUTDOWN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if SPI driver does not installed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_o_s_t_s_p_i___driver___a_p_is_1ga057ce408cb8dc896f9a4e007b527b76b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spi_read</definition>
+        <argsstring>(u8 *buf, u32 len)</argsstring>
+        <name>tls_spi_read</name>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to synchronous read data by SPI. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the buffer for saving SPI data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the data length.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if write success. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if argument is invalid. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is no enough memory. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ESHUTDOWN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if SPI driver does not installed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_o_s_t_s_p_i___driver___a_p_is_1gac650927a37520d2f306fe24621016119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spi_read_with_cmd</definition>
+        <argsstring>(const u8 *txbuf, u32 n_tx, u8 *rxbuf, u32 n_rx)</argsstring>
+        <name>tls_spi_read_with_cmd</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>txbuf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>n_tx</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>rxbuf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>n_rx</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to synchronous write command then read data by SPI. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the write data buffer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n_tx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the write data length. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rxbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the read data buffer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n_rx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the read data length.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if write success. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if argument is invalid. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is no enough memory. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ESHUTDOWN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if SPI driver does not installed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_o_s_t_s_p_i___driver___a_p_is_1gaf5f6be8f66a91de38a5972b091c25519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spi_write_with_cmd</definition>
+        <argsstring>(const u8 *cmd, u32 n_cmd, const u8 *txbuf, u32 n_tx)</argsstring>
+        <name>tls_spi_write_with_cmd</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>n_cmd</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>txbuf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>n_tx</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to synchronous write 32bit command then write data by SPI. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the command data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the command len,can not bigger than four </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">txbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the write data buffer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n_tx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the write data length.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if write success. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if argument is invalid. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is no enough memory. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_SPI_STATUS_ESHUTDOWN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if SPI driver does not installed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="271" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_o_s_t_s_p_i___driver___a_p_is_1ga6e780e0d8f8ea4c14f359a1e9a51c5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_spi_trans_type</definition>
+        <argsstring>(u8 type)</argsstring>
+        <name>tls_spi_trans_type</name>
+        <param>
+          <type>u8</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set SPI transfer mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the transfer type. type == SPI_BYTE_TRANSFER byte transfer type == SPI_WORD_TRANSFER word transfer type == SPI_DMA_TRANSFER DMA transfer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="286" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>host spi Driver Module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_HOST_SPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_HOST_SPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__osal_8h" kindref="compound">wm_osal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__ram__config_8h" kindref="compound">wm_ram_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_USE_DMA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_TX_DMA_MASK<sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_RX_DMA_MASK<sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DMA_CMD_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((u32)(MASTER_SPI_DMA_ADDR))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DMA_CMD_MAX_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x20)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DMA_BUF_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((u32)(SPI_DMA_CMD_ADDR<sp/>+<sp/>SPI_DMA_CMD_MAX_SIZE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DMA_BUF_MAX_SIZE<sp/><sp/><sp/><sp/>8160</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_DMA_MAX_TRANS_SIZE<sp/><sp/>4092</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="wm__hostspi_8h_1a0e65afea16d0d9de5b95bbbf4b8a5377" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_SPI_STATUS_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_STATUS_EINVAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_STATUS_ENOMEM<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_STATUS_EBUSY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_STATUS_ESHUTDOWN<sp/><sp/><sp/><sp/>(-4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_STATUS_EPERM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_STATUS_ECLKNOSUPPORT<sp/><sp/><sp/><sp/>(-6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_STATUS_EMODENOSUPPORT<sp/><sp/><sp/>(-7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_MASTER_FIFO_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="wm__hostspi_8h_1a49e8927a636f45641d6231ac63b9e598" refkind="member"><highlight class="preprocessor">#define<sp/>SPI_CPHA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01)<sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor">#define<sp/>SPI_CPOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02)<sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor">#define<sp/>TLS_SPI_MODE_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0|0)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor">#define<sp/>TLS_SPI_MODE_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0|SPI_CPHA)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_MODE_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CPOL|0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_MODE_3<sp/><sp/><sp/><sp/><sp/><sp/>(SPI_CPOL|SPI_CPHA)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_CS_LOW<sp/><sp/><sp/><sp/><sp/><sp/>0x00<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor">#define<sp/>TLS_SPI_CS_HIGH<sp/><sp/><sp/><sp/><sp/><sp/>0x01<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor">#define<sp/>TLS_SPI_FCLK_MIN<sp/><sp/><sp/><sp/><sp/><sp/>(1000)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor">#define<sp/>TLS_SPI_FCLK_MAX<sp/><sp/><sp/><sp/><sp/><sp/>(APB_CLK/2)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="wm__hostspi_8h_1a677a5a2cb49ba023b28f16a3c0d38b0e" refkind="member"><highlight class="preprocessor">#define<sp/>SPI_DEFAULT_SPEED<sp/><sp/><sp/><sp/><sp/><sp/>(2000000)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor">#define<sp/>SPI_DEFAULT_MODE<sp/><sp/><sp/><sp/><sp/><sp/>(TLS_SPI_MODE_0)<sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor">#define<sp/>SPI_CS_ACTIVE_MODE<sp/><sp/><sp/><sp/><sp/><sp/>(TLS_SPI_CS_LOW)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor">#define<sp/>SPI_CS_INACTIVE_MODE<sp/><sp/><sp/><sp/><sp/><sp/>(TLS_SPI_CS_HIGH)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="wm__hostspi_8h_1ad16194d8ef9d842f3b65cd4b562f1e2d" refkind="member"><highlight class="preprocessor">#define<sp/>SPI_MESSAGE_STATUS_IDLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_MESSAGE_STATUS_INPROGRESS<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_MESSAGE_STATUS_DONE<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="wm__hostspi_8h_1add3a50086b0b8c0270ce91a85502cbf5" refkind="member"><highlight class="preprocessor">#define<sp/>SPI_SLAVE_FLASH<sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor">#define<sp/>SPI_SLAVE_CARD<sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor">#define<sp/>SPI_SLAVE_CONTROL_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="wm__hostspi_8h_1a68ef2d32f89eaf85a26fa3896fd1355c" refkind="member"><highlight class="preprocessor">#define<sp/>SPI_BYTE_TRANSFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor">#define<sp/>SPI_WORD_TRANSFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor">#define<sp/>SPI_DMA_TRANSFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="structtls__spi__transfer" refkind="compound"><highlight class="preprocessor">struct<sp/>tls_spi_transfer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92" refid="structtls__spi__transfer_1a62f5d2cf4d55cdd2b19bc408a5cc04a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>transfer_list;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="structtls__spi__transfer_1a0689564b4eb536d81842e558c2083b26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structtls__spi__transfer_1a0689564b4eb536d81842e558c2083b26" kindref="member">tx_buf</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="structtls__spi__transfer_1a1e8b9fb0baa971226356160fe4f72016" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structtls__spi__transfer_1a1e8b9fb0baa971226356160fe4f72016" kindref="member">rx_buf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="structtls__spi__transfer_1aef762ac872e9989c57c3a4ba35ad3d1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__spi__transfer_1aef762ac872e9989c57c3a4ba35ad3d1e" kindref="member">len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="structtls__spi__transfer_1ab1a8acc80af95d220a43d30a42c5309d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__spi__transfer_1ab1a8acc80af95d220a43d30a42c5309d" kindref="member">delay_usecs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structtls__spi__message" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__spi__message" kindref="compound">tls_spi_message</ref></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112" refid="structtls__spi__message_1a252e4800db91f38c0872526e776c3bdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/><ref refid="structtls__spi__message_1a252e4800db91f38c0872526e776c3bdb" kindref="member">queue</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="structtls__spi__message_1af8645b3fca3c23ac5c99e606f2c530eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/><ref refid="structtls__spi__message_1af8645b3fca3c23ac5c99e606f2c530eb" kindref="member">transfers</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="structtls__spi__message_1adcbfba3f6ec2e3f6a576e5857df73327" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structtls__spi__message_1adcbfba3f6ec2e3f6a576e5857df73327" kindref="member">complete</ref>)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);<sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="structtls__spi__message_1a554e52c622febed6b6785c2946e789cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structtls__spi__message_1a554e52c622febed6b6785c2946e789cd" kindref="member">context</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="structtls__spi__message_1a57f2d7cffe5ebe148d832c47418c6bf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__spi__message_1a57f2d7cffe5ebe148d832c47418c6bf0" kindref="member">status</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="structtls__spi__port" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__spi__port" kindref="compound">tls_spi_port</ref></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133" refid="structtls__spi__port_1af686facb49a4cab0f49abdf0d0ad16e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__spi__port_1af686facb49a4cab0f49abdf0d0ad16e3" kindref="member">speed_hz</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="structtls__spi__port_1a21839afd2d55036ff411171dfd0ea1fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtls__spi__port_1a21839afd2d55036ff411171dfd0ea1fd" kindref="member">cs_active</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="structtls__spi__port_1a97a48081f55d1fd3abcf25ea4f8b2098" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtls__spi__port_1a97a48081f55d1fd3abcf25ea4f8b2098" kindref="member">mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>reconfig;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="structtls__spi__port_1ab7759dcf7e0d537de9787ae3aac6488e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/><ref refid="structtls__spi__port_1ab7759dcf7e0d537de9787ae3aac6488e" kindref="member">wait_queue</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref><sp/>*lock;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="structtls__spi__port_1a8e7800ac045137e7194ea83d0bc0f096" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref><sp/>*<ref refid="structtls__spi__port_1a8e7800ac045137e7194ea83d0bc0f096" kindref="member">msg_queue</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="146" refid="structtls__spi__port_1a79e5a3f4bce46df7178485d9581d5c98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__spi__message" kindref="compound">tls_spi_message</ref><sp/>*<ref refid="structtls__spi__port_1a79e5a3f4bce46df7178485d9581d5c98" kindref="member">current_message</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="structtls__spi__port_1a5b80595dc314ca7bfc36d49d528f8715" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__spi__port_1a5b80595dc314ca7bfc36d49d528f8715" kindref="member">current_remaining_transfer</ref>;<sp/></highlight></codeline>
+<codeline lineno="151" refid="structtls__spi__port_1aa639572a69029aeba531a0b11a958df3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__spi__transfer" kindref="compound">tls_spi_transfer</ref><sp/>*<ref refid="structtls__spi__port_1aa639572a69029aeba531a0b11a958df3" kindref="member">current_transfer</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="structtls__spi__port_1a686c6f5fa1bf8bd429e90ffb7068db09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__spi__port_1a686c6f5fa1bf8bd429e90ffb7068db09" kindref="member">current_remaining_bytes</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="structtls__spi__port_1a13a0ee6ba455fcf30dcc719b419ef315" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtls__spi__port_1a13a0ee6ba455fcf30dcc719b419ef315" kindref="member">transtype</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___h_o_s_t_s_p_i___driver___a_p_is_1ga635f6073ca56f99d307da52a83013127" kindref="member">tls_spi_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___h_o_s_t_s_p_i___driver___a_p_is_1gad4ecaf515f4adc836210b2c24ac39785" kindref="member">tls_spi_setup</ref>(u8<sp/>mode,<sp/>u8<sp/>cs_active,<sp/>u32<sp/>fclk);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___h_o_s_t_s_p_i___driver___a_p_is_1ga3c534b5d2120a3e21a420a9e95de05fd" kindref="member">tls_spi_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*<sp/>buf,<sp/>u32<sp/><ref refid="structtls__spi__transfer_1aef762ac872e9989c57c3a4ba35ad3d1e" kindref="member">len</ref>);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___h_o_s_t_s_p_i___driver___a_p_is_1ga057ce408cb8dc896f9a4e007b527b76b" kindref="member">tls_spi_read</ref>(u8<sp/>*<sp/>buf,<sp/>u32<sp/><ref refid="structtls__spi__transfer_1aef762ac872e9989c57c3a4ba35ad3d1e" kindref="member">len</ref>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___h_o_s_t_s_p_i___driver___a_p_is_1gac650927a37520d2f306fe24621016119" kindref="member">tls_spi_read_with_cmd</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*<sp/>txbuf,<sp/>u32<sp/>n_tx,<sp/>u8<sp/>*<sp/>rxbuf,<sp/>u32<sp/>n_rx);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___h_o_s_t_s_p_i___driver___a_p_is_1gaf5f6be8f66a91de38a5972b091c25519" kindref="member">tls_spi_write_with_cmd</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*<sp/>cmd,<sp/>u32<sp/>n_cmd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*<sp/>txbuf,<sp/>u32<sp/>n_tx);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___h_o_s_t_s_p_i___driver___a_p_is_1ga6e780e0d8f8ea4c14f359a1e9a51c5b7" kindref="member">tls_spi_trans_type</ref>(u8<sp/>type);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_HOST_SPI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_hostspi.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__quiet__ie" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_quiet_ie</compoundname>
+    <includes refid="wm__ieee80211_8h" local="no">wm_ieee80211.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__quiet__ie_1adb3c25d6f0b46d5f4f2a8d9d29b29ad8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_quiet_ie::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="853" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__quiet__ie_1a46edeea0d25c2146060b6320f8bf324c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_quiet_ie::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="854" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__quiet__ie_1aabe3648e99aa78dabf1bba0cafe115bc" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_quiet_ie::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="855" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__quiet__ie_1aced1d81ea4bfefde67728100442b365b" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_quiet_ie::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="856" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="856" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct <ref refid="structieee80211__quiet__ie" kindref="compound">ieee80211_quiet_ie</ref></para><para>This structure refers to &quot;Quiet information element&quot; </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_ieee80211.h" line="852" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="852" bodyend="857"/>
+    <listofallmembers>
+      <member refid="structieee80211__quiet__ie_1adb3c25d6f0b46d5f4f2a8d9d29b29ad8" prot="public" virt="non-virtual"><scope>ieee80211_quiet_ie</scope><name>count</name></member>
+      <member refid="structieee80211__quiet__ie_1aabe3648e99aa78dabf1bba0cafe115bc" prot="public" virt="non-virtual"><scope>ieee80211_quiet_ie</scope><name>duration</name></member>
+      <member refid="structieee80211__quiet__ie_1aced1d81ea4bfefde67728100442b365b" prot="public" virt="non-virtual"><scope>ieee80211_quiet_ie</scope><name>offset</name></member>
+      <member refid="structieee80211__quiet__ie_1a46edeea0d25c2146060b6320f8bf324c" prot="public" virt="non-virtual"><scope>ieee80211_quiet_ie</scope><name>period</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__uart__icount" kind="struct" language="C++" prot="public">
+    <compoundname>tls_uart_icount</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__uart__icount_1ae15da0d4578de908479ba8430978f77a" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::cts</definition>
+        <argsstring></argsstring>
+        <name>cts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="187" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1a434b8f98df3327d7c35dccdb95e34061" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::dsr</definition>
+        <argsstring></argsstring>
+        <name>dsr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="188" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1a69f70713cef14b1f431abdb9e069c1f4" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::rng</definition>
+        <argsstring></argsstring>
+        <name>rng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="189" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1adc5bfb728db236538f434ad4c44f84d5" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::dcd</definition>
+        <argsstring></argsstring>
+        <name>dcd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="190" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1a368a639e9e9bca9fd19c81e20431bf80" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::rx</definition>
+        <argsstring></argsstring>
+        <name>rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="191" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1a6bd49afc249336ebdc89ec1ce652a5d5" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::tx</definition>
+        <argsstring></argsstring>
+        <name>tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="192" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1a67d7ab04e101e11480bd8652df3b8f38" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="193" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1ae05fe4655e45601a729bb8a28c5c9178" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::overrun</definition>
+        <argsstring></argsstring>
+        <name>overrun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="194" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1af25619ed51f091af8e83fd303be5a238" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::parity</definition>
+        <argsstring></argsstring>
+        <name>parity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="195" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1af2d6d361b572ceeb69770dbdef0ceb94" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::brk</definition>
+        <argsstring></argsstring>
+        <name>brk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="196" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__icount_1ad806e1c9b37edcdc1b3024b9900b5f4b" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_icount::buf_overrun</definition>
+        <argsstring></argsstring>
+        <name>buf_overrun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="197" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_uart.h" line="186" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="185" bodyend="198"/>
+    <listofallmembers>
+      <member refid="structtls__uart__icount_1af2d6d361b572ceeb69770dbdef0ceb94" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>brk</name></member>
+      <member refid="structtls__uart__icount_1ad806e1c9b37edcdc1b3024b9900b5f4b" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>buf_overrun</name></member>
+      <member refid="structtls__uart__icount_1ae15da0d4578de908479ba8430978f77a" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>cts</name></member>
+      <member refid="structtls__uart__icount_1adc5bfb728db236538f434ad4c44f84d5" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>dcd</name></member>
+      <member refid="structtls__uart__icount_1a434b8f98df3327d7c35dccdb95e34061" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>dsr</name></member>
+      <member refid="structtls__uart__icount_1a67d7ab04e101e11480bd8652df3b8f38" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>frame</name></member>
+      <member refid="structtls__uart__icount_1ae05fe4655e45601a729bb8a28c5c9178" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>overrun</name></member>
+      <member refid="structtls__uart__icount_1af25619ed51f091af8e83fd303be5a238" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>parity</name></member>
+      <member refid="structtls__uart__icount_1a69f70713cef14b1f431abdb9e069c1f4" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>rng</name></member>
+      <member refid="structtls__uart__icount_1a368a639e9e9bca9fd19c81e20431bf80" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>rx</name></member>
+      <member refid="structtls__uart__icount_1a6bd49afc249336ebdc89ec1ce652a5d5" prot="public" virt="non-virtual"><scope>tls_uart_icount</scope><name>tx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

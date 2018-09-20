@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__uart__options" kind="struct" language="C++" prot="public">
+    <compoundname>tls_uart_options</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__uart__options_1a9baf44843edf027339ea7a67f4f2a75a" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_options::baudrate</definition>
+        <argsstring></argsstring>
+        <name>baudrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set baud rate of the UART </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="207" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__options_1aea2f54d44a3b3a8b6548cfc9db83e210" prot="public" static="no" mutable="no">
+        <type>TLS_UART_CHSIZE_T</type>
+        <definition>TLS_UART_CHSIZE_T tls_uart_options::charlength</definition>
+        <argsstring></argsstring>
+        <name>charlength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of bits to transmit as a character (5 to 8). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="209" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__options_1a0e60badf26cb00ebf4ea544d63af0833" prot="public" static="no" mutable="no">
+        <type>TLS_UART_PMODE_T</type>
+        <definition>TLS_UART_PMODE_T tls_uart_options::paritytype</definition>
+        <argsstring></argsstring>
+        <name>paritytype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parity type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="211" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__options_1a406e555cf9663ccfc53f9bae2beba5fb" prot="public" static="no" mutable="no">
+        <type>TLS_UART_FLOW_CTRL_MODE_T</type>
+        <definition>TLS_UART_FLOW_CTRL_MODE_T tls_uart_options::flow_ctrl</definition>
+        <argsstring></argsstring>
+        <name>flow_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flow control type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="213" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__options_1acef62e11e46cb1369f3fbc88791dc669" prot="public" static="no" mutable="no">
+        <type>TLS_UART_STOPBITS_T</type>
+        <definition>TLS_UART_STOPBITS_T tls_uart_options::stopbits</definition>
+        <argsstring></argsstring>
+        <name>stopbits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of stop bits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="215" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_uart.h" line="206" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="205" bodyend="217"/>
+    <listofallmembers>
+      <member refid="structtls__uart__options_1a9baf44843edf027339ea7a67f4f2a75a" prot="public" virt="non-virtual"><scope>tls_uart_options</scope><name>baudrate</name></member>
+      <member refid="structtls__uart__options_1aea2f54d44a3b3a8b6548cfc9db83e210" prot="public" virt="non-virtual"><scope>tls_uart_options</scope><name>charlength</name></member>
+      <member refid="structtls__uart__options_1a406e555cf9663ccfc53f9bae2beba5fb" prot="public" virt="non-virtual"><scope>tls_uart_options</scope><name>flow_ctrl</name></member>
+      <member refid="structtls__uart__options_1a0e60badf26cb00ebf4ea544d63af0833" prot="public" virt="non-virtual"><scope>tls_uart_options</scope><name>paritytype</name></member>
+      <member refid="structtls__uart__options_1acef62e11e46cb1369f3fbc88791dc669" prot="public" virt="non-virtual"><scope>tls_uart_options</scope><name>stopbits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__param__bssid" kind="struct" language="C++" prot="public">
+    <compoundname>tls_param_bssid</compoundname>
+    <includes refid="wm__params_8h" local="no">wm_params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__param__bssid_1a90eb714f821a1b733bf03df614970879" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_bssid::bssid_enable</definition>
+        <argsstring></argsstring>
+        <name>bssid_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="291" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__bssid_1a461bab7248b6920640d973bae467021e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_bssid::res</definition>
+        <argsstring></argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="292" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__bssid_1a921680fe27579c187a522040b7251134" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_bssid::bssid[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>bssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="293" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure of specified BSSID parameter </para>    </detaileddescription>
+    <location file="Include/Platform/wm_params.h" line="290" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="290" bodyend="294"/>
+    <listofallmembers>
+      <member refid="structtls__param__bssid_1a921680fe27579c187a522040b7251134" prot="public" virt="non-virtual"><scope>tls_param_bssid</scope><name>bssid</name></member>
+      <member refid="structtls__param__bssid_1a90eb714f821a1b733bf03df614970879" prot="public" virt="non-virtual"><scope>tls_param_bssid</scope><name>bssid_enable</name></member>
+      <member refid="structtls__param__bssid_1a461bab7248b6920640d973bae467021e" prot="public" virt="non-virtual"><scope>tls_param_bssid</scope><name>res</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

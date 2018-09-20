@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___t_i_m_e_r___driver___a_p_is" kind="group">
+    <compoundname>TIMER_Driver_APIs</compoundname>
+    <title>TIMER Driver APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___t_i_m_e_r___driver___a_p_is_1ga0b3986991b1c8fb4a586e192af9810d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_timer_create</definition>
+        <argsstring>(struct tls_timer_cfg *cfg)</argsstring>
+        <name>tls_timer_create</name>
+        <param>
+          <type>struct <ref refid="structtls__timer__cfg" kindref="compound">tls_timer_cfg</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to create the timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer configuration</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_TIMER_ID_INVALID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>user not need clear interrupt flag. timer callback function is called in interrupt, so can not operate the critical data in the callback fuuction, recommendation to send messages to other tasks to operate it. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_timer.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_r___driver___a_p_is_1ga253e78f64fb869474ae5ef7f0ff0dcac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_timer_start</definition>
+        <argsstring>(u8 timer_id)</argsstring>
+        <name>tls_timer_start</name>
+        <param>
+          <type>u8</type>
+          <declname>timer_id</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to start the timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_timer.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_r___driver___a_p_is_1ga414b9f30367bc4bbd9086e3662db8f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_timer_stop</definition>
+        <argsstring>(u8 timer_id)</argsstring>
+        <name>tls_timer_stop</name>
+        <param>
+          <type>u8</type>
+          <declname>timer_id</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to stop the timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_timer.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_r___driver___a_p_is_1gabe37deea69053b62d5235e29d35ab5a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_timer_destroy</definition>
+        <argsstring>(u8 timer_id)</argsstring>
+        <name>tls_timer_destroy</name>
+        <param>
+          <type>u8</type>
+          <declname>timer_id</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to delete the timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_timer.h" line="101" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>TIMER driver APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

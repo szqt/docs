@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__param__ip" kind="struct" language="C++" prot="public">
+    <compoundname>tls_param_ip</compoundname>
+    <includes refid="wm__params_8h" local="no">wm_params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__param__ip_1a1572976a0e43dba5a3d96805c751df2b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_ip::dhcp_enable</definition>
+        <argsstring></argsstring>
+        <name>dhcp_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="332" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__ip_1a7205de8024b3ca32b934885d8b2eb896" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_ip::res[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="333" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__ip_1a1d0ff3931d0cad721fa4efb94ef3f79d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_ip::ip[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="334" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__ip_1a2b5a79a8b2634ab0b3bc1ba8f2b2c9da" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_ip::netmask[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>netmask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="335" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__ip_1ab554916c31e4f16b41c69269b69b2631" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_ip::gateway[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>gateway</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="336" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__ip_1a63cf08c8d7a3f7bec1c28a91e9fa9d3d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_ip::dns1[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>dns1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="337" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__ip_1a26a29261710287f87c2af2ff792b9613" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_ip::dns2[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>dns2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="338" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure of IP parameter </para>    </detaileddescription>
+    <location file="Include/Platform/wm_params.h" line="331" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="331" bodyend="339"/>
+    <listofallmembers>
+      <member refid="structtls__param__ip_1a1572976a0e43dba5a3d96805c751df2b" prot="public" virt="non-virtual"><scope>tls_param_ip</scope><name>dhcp_enable</name></member>
+      <member refid="structtls__param__ip_1a63cf08c8d7a3f7bec1c28a91e9fa9d3d" prot="public" virt="non-virtual"><scope>tls_param_ip</scope><name>dns1</name></member>
+      <member refid="structtls__param__ip_1a26a29261710287f87c2af2ff792b9613" prot="public" virt="non-virtual"><scope>tls_param_ip</scope><name>dns2</name></member>
+      <member refid="structtls__param__ip_1ab554916c31e4f16b41c69269b69b2631" prot="public" virt="non-virtual"><scope>tls_param_ip</scope><name>gateway</name></member>
+      <member refid="structtls__param__ip_1a1d0ff3931d0cad721fa4efb94ef3f79d" prot="public" virt="non-virtual"><scope>tls_param_ip</scope><name>ip</name></member>
+      <member refid="structtls__param__ip_1a2b5a79a8b2634ab0b3bc1ba8f2b2c9da" prot="public" virt="non-virtual"><scope>tls_param_ip</scope><name>netmask</name></member>
+      <member refid="structtls__param__ip_1a7205de8024b3ca32b934885d8b2eb896" prot="public" virt="non-virtual"><scope>tls_param_ip</scope><name>res</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

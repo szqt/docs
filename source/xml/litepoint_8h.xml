@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="litepoint_8h" kind="file" language="C++">
+    <compoundname>litepoint.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <incdepgraph>
+      <node id="392">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="391">
+        <label>Include/WiFi/litepoint.h</label>
+        <link refid="litepoint_8h"/>
+        <childnode refid="392" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct__ltpt__rx__info" prot="public">_ltpt_rx_info</innerclass>
+    <innerclass refid="struct__ltpt__tx__info" prot="public">_ltpt_tx_info</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="litepoint_8h_1a137ab5333b465542a1bd00793129a57a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Rate</name>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa682fce471f863083b7c42ccb53af58e7" prot="public">
+          <name>S2M</name>
+          <initializer>= 0x0000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aad92805de4740503801b69590b8aaf354" prot="public">
+          <name>S5M5</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa0cf83a5b82d44c0a094c4af9d703972d" prot="public">
+          <name>S11M</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa271af361a54d35096e5055829b87d4f2" prot="public">
+          <name>L1M</name>
+          <initializer>= 0x0003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa6480e6461ed5d5cb248a8f46dedf8461" prot="public">
+          <name>L2M</name>
+          <initializer>= 0x0004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa97402f5f62c36b2e4c5b7a9aac3f22f2" prot="public">
+          <name>L5M5</name>
+          <initializer>= 0x0005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa96617575d93dd48b0c8456678fbd54dc" prot="public">
+          <name>L11M</name>
+          <initializer>= 0x0006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa4d1a500b894934ae7f032a49c6178a94" prot="public">
+          <name>R06M</name>
+          <initializer>= 0x0100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aac99bbcab6c0cc7e85c0c23fcecb38276" prot="public">
+          <name>R09M</name>
+          <initializer>= 0x0101</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa6d3891f09db165c90d756c5de627a35e" prot="public">
+          <name>R12M</name>
+          <initializer>= 0x0102</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa58f03324cdcc064a774925e7e77f88f1" prot="public">
+          <name>R18M</name>
+          <initializer>= 0x0103</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aaaa8436c86d9ad7f74632454defcd4e56" prot="public">
+          <name>R24M</name>
+          <initializer>= 0x0104</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa23f0ac16724741114c4cd732c890886a" prot="public">
+          <name>R36M</name>
+          <initializer>= 0x0105</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aac9c03976fd944c26f907582446f6bebf" prot="public">
+          <name>R48M</name>
+          <initializer>= 0x0106</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aac62439f4afc7d2ae67520996a63d77c6" prot="public">
+          <name>R54M</name>
+          <initializer>= 0x0107</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa13f861b9d761008f84bb25d6a9be7189" prot="public">
+          <name>MCS0</name>
+          <initializer>= 0x0200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa1a5488066c601f463cb82bdacb8a8edb" prot="public">
+          <name>MCS1</name>
+          <initializer>= 0x0201</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aab0d838d89c85f8dbc2db6297770a5ada" prot="public">
+          <name>MCS2</name>
+          <initializer>= 0x0202</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa70c5917b5a14f4a010cfcb16b36299ff" prot="public">
+          <name>MCS3</name>
+          <initializer>= 0x0203</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa6660d5ea6f752f56cb2a3274dcd18dbb" prot="public">
+          <name>MCS4</name>
+          <initializer>= 0x0204</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa9c3af009946f1dd5fef7b39934cbd20b" prot="public">
+          <name>MCS5</name>
+          <initializer>= 0x0205</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aad6be1c14e4ffeb612f646000f02e56c8" prot="public">
+          <name>MCS6</name>
+          <initializer>= 0x0206</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aaedeabe91f8f782667379bde4078c633d" prot="public">
+          <name>MCS7</name>
+          <initializer>= 0x0207</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa393e67fedb520dfb7fb5b89d6a7df6f7" prot="public">
+          <name>MCS8</name>
+          <initializer>= 0x0208</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aaf980c8b15f65e41fa9dc6e5d0b6e2515" prot="public">
+          <name>MCS9</name>
+          <initializer>= 0x0209</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aae2d331cceba80ef32df4b22278c2e522" prot="public">
+          <name>MCS10</name>
+          <initializer>= 0x0210</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa9e5af99ccb98607ac2cb4fe22dc6f97a" prot="public">
+          <name>MCS11</name>
+          <initializer>= 0x0211</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa3c461b3f3efdcc922c9b8c995da1563b" prot="public">
+          <name>MCS12</name>
+          <initializer>= 0x0212</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa8b271f03ffdf5d67286e628139efd867" prot="public">
+          <name>MCS13</name>
+          <initializer>= 0x0213</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa1db3c74d9d592933546a914e973cd9a3" prot="public">
+          <name>MCS14</name>
+          <initializer>= 0x0214</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa57af6dfdf021228fa3dce4b489e91971" prot="public">
+          <name>MCS15</name>
+          <initializer>= 0x0215</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="litepoint_8h_1a137ab5333b465542a1bd00793129a57aa64321e0f78eccc80a83891b1a732a8e8" prot="public">
+          <name>MCS32</name>
+          <initializer>= 0x0232</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="36" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="35" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="litepoint_8h_1aed7832d2fb8c80bfed1d13c76978be54" prot="public" static="no">
+        <type>struct <ref refid="struct__ltpt__rx__info" kindref="compound">_ltpt_rx_info</ref></type>
+        <definition>typedef struct _ltpt_rx_info ltpt_rx_info</definition>
+        <argsstring></argsstring>
+        <name>ltpt_rx_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="litepoint_8h_1a8ee70c7b17179416d9f1ab7fac102ee7" prot="public" static="no">
+        <type>struct <ref refid="struct__ltpt__tx__info" kindref="compound">_ltpt_tx_info</ref></type>
+        <definition>typedef struct _ltpt_tx_info ltpt_tx_info</definition>
+        <argsstring></argsstring>
+        <name>ltpt_tx_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="32" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="litepoint_8h_1a6b2461e08907d07f6baaea2645655b57" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int g_ltpt_testmode</definition>
+        <argsstring></argsstring>
+        <name>g_ltpt_testmode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="litepoint_8h_1a9d5731a58ce592c7f5d4730186ee6f12" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__ltpt__rx__info" kindref="compound">ltpt_rx_info</ref> *</type>
+        <definition>ltpt_rx_info* g_ltpt_rxinfo</definition>
+        <argsstring></argsstring>
+        <name>g_ltpt_rxinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="litepoint_8h_1a814a209a33e36331ac77ead9eb9873fd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__ltpt__tx__info" kindref="compound">ltpt_tx_info</ref> *</type>
+        <definition>ltpt_tx_info* g_ltpt_txinfo</definition>
+        <argsstring></argsstring>
+        <name>g_ltpt_txinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="litepoint_8h_1aa5a129eea289e154a4f99ef0a26d1e13" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char hed_rf_txgainmap[]</definition>
+        <argsstring>[]</argsstring>
+        <name>hed_rf_txgainmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="litepoint_8h_1a32a1be8f61598dea3185453b8217e704" prot="public" static="no" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int hed_bbp_value[]</definition>
+        <argsstring>[]</argsstring>
+        <name>hed_bbp_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="litepoint_8h_1ab0f588b4ad92b56af034100c6d12b0c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_litepoint_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_litepoint_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1ac800cade53e636df1feafac64fcd0720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_tx_send_litepoint</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_tx_send_litepoint</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1ad04c79baa0fce3f8dec6acfb1bd2611b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_set_test_channel</definition>
+        <argsstring>(u8 channel, u8 bandwidth)</argsstring>
+        <name>tls_set_test_channel</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>bandwidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1a30e58ad814a9177cff35cd866599552e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_tx_litepoint_test_start</definition>
+        <argsstring>(u32 Packetcnt, u16 Psdulen, u32 Gain, u32 TxRate, u8 GiMode, u8 Gf, u8 Rifs)</argsstring>
+        <name>tls_tx_litepoint_test_start</name>
+        <param>
+          <type>u32</type>
+          <declname>Packetcnt</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>Psdulen</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>Gain</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>TxRate</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>GiMode</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>Gf</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>Rifs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1a315de38d9e2193877041b493ab83169d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_txrx_litepoint_test_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_txrx_litepoint_test_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1a15e0dd3e5b26d2b49c9607c51db2d80f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_txrx_litepoint_clear_data</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_txrx_litepoint_clear_data</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1ac27dcf09886d3ca4ed37653e5e9fc357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_tx_litepoint_test_get_totalsnd</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_tx_litepoint_test_get_totalsnd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1aad19b3f83dc3af02ad01989c8814d373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_rx_litepoint_test_start</definition>
+        <argsstring>(u32 Channel, u32 BandWidth)</argsstring>
+        <name>tls_rx_litepoint_test_start</name>
+        <param>
+          <type>u32</type>
+          <declname>Channel</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>BandWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1a342b4000259a8d01decbb0b2c5cd55cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_rx_litepoint_test_result</definition>
+        <argsstring>(u32 *total, u32 *goodcnt, u32 *badcnt)</argsstring>
+        <name>tls_rx_litepoint_test_result</name>
+        <param>
+          <type>u32 *</type>
+          <declname>total</declname>
+        </param>
+        <param>
+          <type>u32 *</type>
+          <declname>goodcnt</declname>
+        </param>
+        <param>
+          <type>u32 *</type>
+          <declname>badcnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1a85d93d87980f258302ec578267e1ba3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_tx_litepoint_param_update</definition>
+        <argsstring>(u8 Gain, u8 TxRate)</argsstring>
+        <name>tls_tx_litepoint_param_update</name>
+        <param>
+          <type>u8</type>
+          <declname>Gain</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>TxRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1ad01830c6af626e4c5be20343c2252c6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_rx_litepoint_test_rate</definition>
+        <argsstring>(u8 rate)</argsstring>
+        <name>tls_rx_litepoint_test_rate</name>
+        <param>
+          <type>u8</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="litepoint_8h_1a7fa4bf15c2f677aa0249c02e844c08c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_rx_litepoint_pwr_result</definition>
+        <argsstring>(u32 *valid, u32 *snr, u32 *rcpi)</argsstring>
+        <name>tls_rx_litepoint_pwr_result</name>
+        <param>
+          <type>u32 *</type>
+          <declname>valid</declname>
+        </param>
+        <param>
+          <type>u32 *</type>
+          <declname>snr</declname>
+        </param>
+        <param>
+          <type>u32 *</type>
+          <declname>rcpi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="88" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__LITEPOINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__LITEPOINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="struct__ltpt__rx__info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__ltpt__rx__info" kindref="compound">_ltpt_rx_info</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cnt_total;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cnt_good;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cnt_bad;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>valid;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>snr;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>rcpi;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>rate;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>channel;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>bandwidth;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>bprocess;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<ref refid="struct__ltpt__rx__info" kindref="compound">ltpt_rx_info</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="struct__ltpt__tx__info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__ltpt__tx__info" kindref="compound">_ltpt_tx_info</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cnt_total;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>packetcount;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>psdulen;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>input<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>txgain;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>datarate;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>gimode;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>greenfield;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>rifs;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>bprocess;<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>channel;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>longpreamble;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<ref refid="struct__ltpt__tx__info" kindref="compound">ltpt_tx_info</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Rate<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>S2M<sp/>=<sp/>0x0000,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>S5M5<sp/>=<sp/>0x0001,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>S11M<sp/>=<sp/>0x0002,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>L1M<sp/>=<sp/>0x0003,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>L2M<sp/>=<sp/>0x0004,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>L5M5<sp/>=<sp/>0x0005,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>L11M<sp/>=<sp/>0x0006,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>R06M<sp/>=<sp/>0x0100,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>R09M<sp/>=<sp/>0x0101,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>R12M<sp/>=<sp/>0x0102,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>R18M<sp/>=<sp/>0x0103,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>R24M<sp/>=<sp/>0x0104,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>R36M<sp/>=<sp/>0x0105,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>R48M<sp/>=<sp/>0x0106,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>R54M<sp/>=<sp/>0x0107,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS0<sp/>=<sp/>0x0200,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS1<sp/>=<sp/>0x0201,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS2<sp/>=<sp/>0x0202,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS3<sp/>=<sp/>0x0203,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS4<sp/>=<sp/>0x0204,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS5<sp/>=<sp/>0x0205,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS6<sp/>=<sp/>0x0206,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS7<sp/>=<sp/>0x0207,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS8<sp/>=<sp/>0x0208,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS9<sp/>=<sp/>0x0209,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS10<sp/>=<sp/>0x0210,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS11<sp/>=<sp/>0x0211,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS12<sp/>=<sp/>0x0212,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS13<sp/>=<sp/>0x0213,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS14<sp/>=<sp/>0x0214,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS15<sp/>=<sp/>0x0215,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>MCS32<sp/>=<sp/>0x0232,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g_ltpt_testmode;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct__ltpt__rx__info" kindref="compound">ltpt_rx_info</ref><sp/>*g_ltpt_rxinfo;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct__ltpt__tx__info" kindref="compound">ltpt_tx_info</ref><sp/>*g_ltpt_txinfo;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>hed_rf_txgainmap[];</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hed_bbp_value[];</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_litepoint_start(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_tx_send_litepoint(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_set_test_channel(u8<sp/>channel,<sp/>u8<sp/>bandwidth);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_tx_litepoint_test_start(u32<sp/>Packetcnt,<sp/>u16<sp/>Psdulen,<sp/>u32<sp/>Gain,<sp/>u32<sp/>TxRate,<sp/>u8<sp/>GiMode,<sp/>u8<sp/>Gf,<sp/>u8<sp/>Rifs);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_txrx_litepoint_test_stop(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_txrx_litepoint_clear_data(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_tx_litepoint_test_get_totalsnd(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_rx_litepoint_test_start(u32<sp/>Channel,<sp/>u32<sp/>BandWidth);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_rx_litepoint_test_result(u32<sp/>*total,<sp/>u32<sp/>*goodcnt,<sp/>u32<sp/>*badcnt);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_tx_litepoint_param_update(u8<sp/>Gain,<sp/>u8<sp/>TxRate);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_rx_litepoint_test_rate(u8<sp/>rate);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_rx_litepoint_pwr_result(u32<sp/>*valid,<sp/>u32<sp/>*snr,<sp/>u32<sp/>*rcpi);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Include/WiFi/litepoint.h"/>
+  </compounddef>
+</doxygen>

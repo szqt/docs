@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structsockaddr" kind="struct" language="C++" prot="public">
+    <compoundname>sockaddr</compoundname>
+    <includes refid="wm__sockets_8h" local="no">wm_sockets.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsockaddr_1ace648295d8600b1564a45cdfdf4ce836" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 sockaddr::sa_len</definition>
+        <argsstring></argsstring>
+        <name>sa_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>address length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="71" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr_1a855eb400750c566f67bca1ab16bcbfe1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 sockaddr::sa_family</definition>
+        <argsstring></argsstring>
+        <name>sa_family</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>address family </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="72" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr_1a82791edaa35776a38d75182edb0f5a3d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sockaddr::sa_data</definition>
+        <argsstring>[14]</argsstring>
+        <name>sa_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="73" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr_1a7f7cd0d37129ba50965a1c54873ba044" prot="public" static="no" mutable="no">
+        <type>u8_t</type>
+        <definition>u8_t sockaddr::sa_len</definition>
+        <argsstring></argsstring>
+        <name>sa_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets2.0.3.h" line="97" column="1" bodyfile="Include/Net/wm_sockets2.0.3.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr_1ac6ef02e9a2e90a30218132ffd7b5a5c5" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__sockets2_80_83_8h_1ac1d1bf0e58741cf5e92739411d9e848f" kindref="member">sa_family_t</ref></type>
+        <definition>sa_family_t sockaddr::sa_family</definition>
+        <argsstring></argsstring>
+        <name>sa_family</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets2.0.3.h" line="98" column="1" bodyfile="Include/Net/wm_sockets2.0.3.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure describing a generic socket address </para>    </detaileddescription>
+    <location file="Include/Net/wm_sockets.h" line="70" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="70" bodyend="74"/>
+    <listofallmembers>
+      <member refid="structsockaddr_1a82791edaa35776a38d75182edb0f5a3d" prot="public" virt="non-virtual"><scope>sockaddr</scope><name>sa_data</name></member>
+      <member refid="structsockaddr_1a855eb400750c566f67bca1ab16bcbfe1" prot="public" virt="non-virtual"><scope>sockaddr</scope><name>sa_family</name></member>
+      <member refid="structsockaddr_1ac6ef02e9a2e90a30218132ffd7b5a5c5" prot="public" virt="non-virtual"><scope>sockaddr</scope><name>sa_family</name></member>
+      <member refid="structsockaddr_1ace648295d8600b1564a45cdfdf4ce836" prot="public" virt="non-virtual"><scope>sockaddr</scope><name>sa_len</name></member>
+      <member refid="structsockaddr_1a7f7cd0d37129ba50965a1c54873ba044" prot="public" virt="non-virtual"><scope>sockaddr</scope><name>sa_len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

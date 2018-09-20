@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__webs__cfg" kind="struct" language="C++" prot="public">
+    <compoundname>tls_webs_cfg</compoundname>
+    <includes refid="wm__params_8h" local="no">wm_params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__webs__cfg_1a0647d88ee07f8b389fbbf0382d09f6e2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_webs_cfg::AutoRun</definition>
+        <argsstring></argsstring>
+        <name>AutoRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="375" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__webs__cfg_1a976788d4ba11c3d2e4f1c673295f9a9b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_webs_cfg::Reserved</definition>
+        <argsstring></argsstring>
+        <name>Reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="376" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__webs__cfg_1a8574d951b6ae8338cf4d82793c295d0c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_webs_cfg::PortNum</definition>
+        <argsstring></argsstring>
+        <name>PortNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="377" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure of web server parameter </para>    </detaileddescription>
+    <location file="Include/Platform/wm_params.h" line="374" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="374" bodyend="378"/>
+    <listofallmembers>
+      <member refid="structtls__webs__cfg_1a0647d88ee07f8b389fbbf0382d09f6e2" prot="public" virt="non-virtual"><scope>tls_webs_cfg</scope><name>AutoRun</name></member>
+      <member refid="structtls__webs__cfg_1a8574d951b6ae8338cf4d82793c295d0c" prot="public" virt="non-virtual"><scope>tls_webs_cfg</scope><name>PortNum</name></member>
+      <member refid="structtls__webs__cfg_1a976788d4ba11c3d2e4f1c673295f9a9b" prot="public" virt="non-virtual"><scope>tls_webs_cfg</scope><name>Reserved</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

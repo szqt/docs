@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structsockaddr__store" kind="struct" language="C++" prot="public">
+    <compoundname>sockaddr_store</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsockaddr__store_1aaedb4cd3a5b89d1299aa9780c3f905c7" prot="public" static="no" mutable="no">
+        <type>u8_t</type>
+        <definition>u8_t sockaddr_store::s2_len</definition>
+        <argsstring></argsstring>
+        <name>s2_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets2.0.3.h" line="124" column="1" bodyfile="Include/Net/wm_sockets2.0.3.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__store_1ab2221d6069262dcc08284405067faa91" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__sockets2_80_83_8h_1ac1d1bf0e58741cf5e92739411d9e848f" kindref="member">sa_family_t</ref></type>
+        <definition>sa_family_t sockaddr_store::ss_family</definition>
+        <argsstring></argsstring>
+        <name>ss_family</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets2.0.3.h" line="125" column="1" bodyfile="Include/Net/wm_sockets2.0.3.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__store_1aae57d76c1e025f2693b9af199f21ff80" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sockaddr_store::s2_data1[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>s2_data1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets2.0.3.h" line="126" column="1" bodyfile="Include/Net/wm_sockets2.0.3.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__store_1a1e8525d37fac8ba1e88bb5a0bb41de37" prot="public" static="no" mutable="no">
+        <type>u32_t</type>
+        <definition>u32_t sockaddr_store::s2_data2[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>s2_data2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets2.0.3.h" line="127" column="1" bodyfile="Include/Net/wm_sockets2.0.3.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Net/wm_sockets2.0.3.h" line="123" column="1" bodyfile="Include/Net/wm_sockets2.0.3.h" bodystart="123" bodyend="131"/>
+    <listofallmembers>
+      <member refid="structsockaddr__store_1aae57d76c1e025f2693b9af199f21ff80" prot="public" virt="non-virtual"><scope>sockaddr_store</scope><name>s2_data1</name></member>
+      <member refid="structsockaddr__store_1a1e8525d37fac8ba1e88bb5a0bb41de37" prot="public" virt="non-virtual"><scope>sockaddr_store</scope><name>s2_data2</name></member>
+      <member refid="structsockaddr__store_1aaedb4cd3a5b89d1299aa9780c3f905c7" prot="public" virt="non-virtual"><scope>sockaddr_store</scope><name>s2_len</name></member>
+      <member refid="structsockaddr__store_1ab2221d6069262dcc08284405067faa91" prot="public" virt="non-virtual"><scope>sockaddr_store</scope><name>ss_family</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

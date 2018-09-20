@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__spi__transfer" kind="struct" language="C++" prot="public">
+    <compoundname>tls_spi_transfer</compoundname>
+    <includes refid="wm__hostspi_8h" local="no">wm_hostspi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__spi__transfer_1a62f5d2cf4d55cdd2b19bc408a5cc04a9" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref></type>
+        <definition>struct dl_list tls_spi_transfer::transfer_list</definition>
+        <argsstring></argsstring>
+        <name>transfer_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transfers are sequenced through <ref refid="structtls__spi__message_1af8645b3fca3c23ac5c99e606f2c530eb" kindref="member">tls_spi_message.transfers</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="286" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__transfer_1a0689564b4eb536d81842e558c2083b26" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* tls_spi_transfer::tx_buf</definition>
+        <argsstring></argsstring>
+        <name>tx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data to be written, or NULL. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="95" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__transfer_1a1e8b9fb0baa971226356160fe4f72016" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* tls_spi_transfer::rx_buf</definition>
+        <argsstring></argsstring>
+        <name>rx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data to be read, or NULL. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="96" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__transfer_1aef762ac872e9989c57c3a4ba35ad3d1e" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_spi_transfer::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of rx and tx buffers (in bytes). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="97" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__transfer_1ab1a8acc80af95d220a43d30a42c5309d" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_spi_transfer::delay_usecs</definition>
+        <argsstring></argsstring>
+        <name>delay_usecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>microseconds to delay after this transfer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="98" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>a read/write buffer pair</para><para>SPI transfers always write the same number of bytes as they read. If the transmit buffer is null, zeroes will be shifted out while filling rx_buf. If the receive buffer is null, the data shifted in will be discarded. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="239">
+        <label>tls_spi_transfer</label>
+        <link refid="structtls__spi__transfer"/>
+        <childnode refid="240" relation="usage">
+          <edgelabel>transfer_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="240">
+        <label>dl_list</label>
+        <link refid="structdl__list"/>
+        <childnode refid="240" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_hostspi.h" line="91" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="90" bodyend="99"/>
+    <listofallmembers>
+      <member refid="structtls__spi__transfer_1ab1a8acc80af95d220a43d30a42c5309d" prot="public" virt="non-virtual"><scope>tls_spi_transfer</scope><name>delay_usecs</name></member>
+      <member refid="structtls__spi__transfer_1aef762ac872e9989c57c3a4ba35ad3d1e" prot="public" virt="non-virtual"><scope>tls_spi_transfer</scope><name>len</name></member>
+      <member refid="structtls__spi__transfer_1a1e8b9fb0baa971226356160fe4f72016" prot="public" virt="non-virtual"><scope>tls_spi_transfer</scope><name>rx_buf</name></member>
+      <member refid="structtls__spi__transfer_1a62f5d2cf4d55cdd2b19bc408a5cc04a9" prot="public" virt="non-virtual"><scope>tls_spi_transfer</scope><name>transfer_list</name></member>
+      <member refid="structtls__spi__transfer_1a0689564b4eb536d81842e558c2083b26" prot="public" virt="non-virtual"><scope>tls_spi_transfer</scope><name>tx_buf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

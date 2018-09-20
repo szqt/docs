@@ -1,0 +1,1033 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__efuse_8h" kind="file" language="C++">
+    <compoundname>wm_efuse.h</compoundname>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <invincdepgraph>
+      <node id="91">
+        <label>Include/Driver/wm_efuse.h</label>
+        <link refid="wm__efuse_8h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__efuse_8h_1aedf509427d886caf9d770ed78c417867" prot="public" static="no">
+        <name>TLS_EFUSE_STATUS_OK</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="13" column="9" bodyfile="Include/Driver/wm_efuse.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__efuse_8h_1ae829487038b3e02a1000d04e15729fb3" prot="public" static="no">
+        <name>TLS_EFUSE_STATUS_EINVALID</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="14" column="9" bodyfile="Include/Driver/wm_efuse.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__efuse_8h_1ab21d80478fa36096d93f2e76fffb3282" prot="public" static="no">
+        <name>TLS_EFUSE_STATUS_EIO</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="15" column="9" bodyfile="Include/Driver/wm_efuse.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__efuse_8h_1a913e4bc62d89a4f4270ff5e962298ba1" prot="public" static="no">
+        <name>VCG_ADDR</name>
+        <initializer>(FT_MAGICNUM_ADDR + sizeof(FT_PARAM_ST)+4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="29" column="9" bodyfile="Include/Driver/wm_efuse.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__efuse_8h_1a8e0c73f2aefccd41f6569ebb1711070f" prot="public" static="no">
+        <name>VCG_LEN</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="30" column="9" bodyfile="Include/Driver/wm_efuse.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__efuse_8h_1a79751af881ab87e92ba0d5c6370db8ee" prot="public" static="no">
+        <name>TX_GAIN_LEN</name>
+        <initializer>(28*3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="32" column="9" bodyfile="Include/Driver/wm_efuse.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55ba12387a89428ad1112f279cc25f38886c" prot="public">
+          <name>CMD_MAC</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55bac695a3becd2713f818643f9831b0bfbd" prot="public">
+          <name>CMD_TX_DC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55ba86f42d7da6d652719463145a4a0d021f" prot="public">
+          <name>CMD_RX_DC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55bade7a531325ef34e98b7e1677737f02a4" prot="public">
+          <name>CMD_TX_IQ_GAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55ba875d404c2c4215d00a6edfd7825f1f7e" prot="public">
+          <name>CMD_RX_IQ_GAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55bad087a86e407666c9569f3b729e21bd44" prot="public">
+          <name>CMD_TX_IQ_PHASE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6d1a1fe51f607950a86bbac44b515d5a" prot="public">
+          <name>CMD_RX_IQ_PHASE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6d3181d3626a66f28f7184d4b03b60de" prot="public">
+          <name>CMD_TX_GAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6f9905a4d5a4c3db288dca0884c7cad1" prot="public">
+          <name>CMD_ALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="17" column="1" bodyfile="Include/Driver/wm_efuse.h" bodystart="17" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__efuse_8h_1ab82f03053f49ddefb5a36640127911dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_ft_param_set</definition>
+        <argsstring>(unsigned int opnum, void *data, unsigned int len)</argsstring>
+        <name>tls_ft_param_set</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>opnum</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to write ft_param. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">opnum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ft cmd </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len to write data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1a644f5cb50ba9f700fce9dea01c234cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_ft_param_get</definition>
+        <argsstring>(unsigned int opnum, void *data, unsigned int rdlen)</argsstring>
+        <name>tls_ft_param_get</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>opnum</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>rdlen</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to read ft_param. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">opnum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ft cmd </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>len to read data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1acd60a68ee7ffd08be4f5ed111d0be703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_get_mac_addr</definition>
+        <argsstring>(u8 *mac)</argsstring>
+        <name>tls_get_mac_addr</name>
+        <param>
+          <type>u8 *</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get mac addr. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mac addr,6 byte</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1af1af375fc2da6bc5d5ee577c0e1271d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_set_mac_addr</definition>
+        <argsstring>(u8 *mac)</argsstring>
+        <name>tls_set_mac_addr</name>
+        <param>
+          <type>u8 *</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set mac addr. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mac addr,6 byte</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1af1842df9b55c20c00a64c438b033b69f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_get_tx_gain</definition>
+        <argsstring>(u8 *txgain)</argsstring>
+        <name>tls_get_tx_gain</name>
+        <param>
+          <type>u8 *</type>
+          <declname>txgain</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get tx gain. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txgain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tx gain,12 byte</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1a8a64204ad73582d5131396f95e075620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_set_tx_gain</definition>
+        <argsstring>(u8 *txgain)</argsstring>
+        <name>tls_set_tx_gain</name>
+        <param>
+          <type>u8 *</type>
+          <declname>txgain</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set tx gain. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txgain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tx gain,12 byte</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1ab3bb30286008db99219c8d96bd675f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_get_tx_lo</definition>
+        <argsstring>(u8 *txlo)</argsstring>
+        <name>tls_get_tx_lo</name>
+        <param>
+          <type>u8 *</type>
+          <declname>txlo</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get tx lod. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txlo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tx lod</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1ab7dc42d07c0812e433c2a6f8144a82f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_set_tx_lo</definition>
+        <argsstring>(u8 *txlo)</argsstring>
+        <name>tls_set_tx_lo</name>
+        <param>
+          <type>u8 *</type>
+          <declname>txlo</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set tx lod. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txlo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tx lod</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1ad6b868a60441edeed565620ec3f5ceeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_get_tx_iq_gain</definition>
+        <argsstring>(u8 *txGain)</argsstring>
+        <name>tls_get_tx_iq_gain</name>
+        <param>
+          <type>u8 *</type>
+          <declname>txGain</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get tx iq gain. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txGain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1af2ad2e9791cfd16ee5f945d15fda1bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_set_tx_iq_gain</definition>
+        <argsstring>(u8 *txGain)</argsstring>
+        <name>tls_set_tx_iq_gain</name>
+        <param>
+          <type>u8 *</type>
+          <declname>txGain</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set tx iq gain. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txGain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1ad313725efb9ca8f46647414116bcfcc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_get_rx_iq_gain</definition>
+        <argsstring>(u8 *rxGain)</argsstring>
+        <name>tls_get_rx_iq_gain</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rxGain</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get rx iq gain. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rxGain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1af8619af23dd947e2c0ead6622cc3d46b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_set_rx_iq_gain</definition>
+        <argsstring>(u8 *rxGain)</argsstring>
+        <name>tls_set_rx_iq_gain</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rxGain</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get rx iq gain. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rxGain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1a2a6bd19ce1596fc63bc9297138014e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_get_tx_iq_phase</definition>
+        <argsstring>(u8 *txPhase)</argsstring>
+        <name>tls_get_tx_iq_phase</name>
+        <param>
+          <type>u8 *</type>
+          <declname>txPhase</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get tx iq phase. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txPhase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1a1816dcbded4c2ee39c0f6a8300be2337" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_set_tx_iq_phase</definition>
+        <argsstring>(u8 *txPhase)</argsstring>
+        <name>tls_set_tx_iq_phase</name>
+        <param>
+          <type>u8 *</type>
+          <declname>txPhase</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set tx iq phase. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txPhase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1acb60fb92e431889a161946e38fc5dc1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_get_rx_iq_phase</definition>
+        <argsstring>(u8 *rxPhase)</argsstring>
+        <name>tls_get_rx_iq_phase</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rxPhase</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get rx iq phase. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rxPhase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1a4ef48519c827a165e351c5b1c7087b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_set_rx_iq_phase</definition>
+        <argsstring>(u8 *rxPhase)</argsstring>
+        <name>tls_set_rx_iq_phase</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rxPhase</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set rx iq phase. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rxPhase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1a96dc9b1681ad3e17cf293b5e4b9b6eb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_freq_err_op</definition>
+        <argsstring>(u8 *freqerr, u8 flag)</argsstring>
+        <name>tls_freq_err_op</name>
+        <param>
+          <type>u8 *</type>
+          <declname>freqerr</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set/get freq err. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">freqerr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1-set 0-get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set/get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set/get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__efuse_8h_1a58041b7923295f30c6b302894f200dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_rf_vcg_ctrl_op</definition>
+        <argsstring>(u8 *vcg, u8 flag)</argsstring>
+        <name>tls_rf_vcg_ctrl_op</name>
+        <param>
+          <type>u8 *</type>
+          <declname>vcg</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set/get vcg ctrl. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vcg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1-set 0-get</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set/get success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_EFUSE_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set/get failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="220" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>virtual efuse Driver Module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_EFUSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_EFUSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_EFUSE_STATUS_OK<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_EFUSE_STATUS_EINVALID<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_EFUSE_STATUS_EIO<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>CMD_MAC<sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>CMD_TX_DC,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>CMD_RX_DC,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>CMD_TX_IQ_GAIN,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>CMD_RX_IQ_GAIN,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>CMD_TX_IQ_PHASE,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>CMD_RX_IQ_PHASE,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>CMD_TX_GAIN,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>CMD_ALL,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VCG_ADDR<sp/><sp/>(FT_MAGICNUM_ADDR<sp/>+<sp/>sizeof(FT_PARAM_ST)+4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VCG_LEN<sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TX_GAIN_NEW_ADDR<sp/>(VCG_ADDR+VCG_LEN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_GAIN_LEN<sp/><sp/><sp/>(28*3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ab82f03053f49ddefb5a36640127911dd" kindref="member">tls_ft_param_set</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opnum,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a644f5cb50ba9f700fce9dea01c234cfc" kindref="member">tls_ft_param_get</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opnum,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rdlen);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1acd60a68ee7ffd08be4f5ed111d0be703" kindref="member">tls_get_mac_addr</ref>(u8<sp/>*mac);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af1af375fc2da6bc5d5ee577c0e1271d6" kindref="member">tls_set_mac_addr</ref>(u8<sp/>*mac);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af1842df9b55c20c00a64c438b033b69f" kindref="member">tls_get_tx_gain</ref>(u8<sp/>*txgain);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a8a64204ad73582d5131396f95e075620" kindref="member">tls_set_tx_gain</ref>(u8<sp/>*txgain);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ab3bb30286008db99219c8d96bd675f2a" kindref="member">tls_get_tx_lo</ref>(u8<sp/>*txlo);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ab7dc42d07c0812e433c2a6f8144a82f1" kindref="member">tls_set_tx_lo</ref>(u8<sp/>*txlo);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ad6b868a60441edeed565620ec3f5ceeb" kindref="member">tls_get_tx_iq_gain</ref>(u8<sp/>*txGain);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af2ad2e9791cfd16ee5f945d15fda1bfa" kindref="member">tls_set_tx_iq_gain</ref>(u8<sp/>*txGain);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ad313725efb9ca8f46647414116bcfcc4" kindref="member">tls_get_rx_iq_gain</ref>(u8<sp/>*rxGain);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af8619af23dd947e2c0ead6622cc3d46b" kindref="member">tls_set_rx_iq_gain</ref>(u8<sp/>*rxGain);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a2a6bd19ce1596fc63bc9297138014e75" kindref="member">tls_get_tx_iq_phase</ref>(u8<sp/>*txPhase);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a1816dcbded4c2ee39c0f6a8300be2337" kindref="member">tls_set_tx_iq_phase</ref>(u8<sp/>*txPhase);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1acb60fb92e431889a161946e38fc5dc1d" kindref="member">tls_get_rx_iq_phase</ref>(u8<sp/>*rxPhase);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a4ef48519c827a165e351c5b1c7087b8a" kindref="member">tls_set_rx_iq_phase</ref>(u8<sp/>*rxPhase);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a96dc9b1681ad3e17cf293b5e4b9b6eb4" kindref="member">tls_freq_err_op</ref>(u8<sp/>*freqerr,<sp/>u8<sp/>flag);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a58041b7923295f30c6b302894f200dcd" kindref="member">tls_rf_vcg_ctrl_op</ref>(u8<sp/>*vcg,<sp/>u8<sp/>flag);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_EFUSE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_efuse.h"/>
+  </compounddef>
+</doxygen>

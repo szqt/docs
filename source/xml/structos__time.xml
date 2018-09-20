@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structos__time" kind="struct" language="C++" prot="public">
+    <compoundname>os_time</compoundname>
+    <includes refid="wm__osal_8h" local="no">wm_osal.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structos__time_1aa70de2af7e180b82c14fd5301595cb99" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__osal_8h_1ac6ac05f7879dc24bc9cc5f75f93eb79c" kindref="member">os_time_t</ref></type>
+        <definition>os_time_t os_time::sec</definition>
+        <argsstring></argsstring>
+        <name>sec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="26" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structos__time_1a497def912c245065ca66e4802bf4f5b2" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__osal_8h_1ac6ac05f7879dc24bc9cc5f75f93eb79c" kindref="member">os_time_t</ref></type>
+        <definition>os_time_t os_time::usec</definition>
+        <argsstring></argsstring>
+        <name>usec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="27" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure definition of <ref refid="structos__time" kindref="compound">os_time</ref> </para>    </detaileddescription>
+    <location file="Include/OS/wm_osal.h" line="25" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="25" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structos__time_1aa70de2af7e180b82c14fd5301595cb99" prot="public" virt="non-virtual"><scope>os_time</scope><name>sec</name></member>
+      <member refid="structos__time_1a497def912c245065ca66e4802bf4f5b2" prot="public" virt="non-virtual"><scope>os_time</scope><name>usec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

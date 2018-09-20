@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__softap__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_softap_info_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__softap__info__t_1aabb71604b9d2283c003b6d9c61e238da" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_softap_info_t::ssid[33]</definition>
+        <argsstring>[33]</argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSID of softap </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="200" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__softap__info__t_1ac7cf939c024793a662559034abc5ec2d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_softap_info_t::encrypt</definition>
+        <argsstring></argsstring>
+        <name>encrypt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>encryption mode of softap, value is: IEEE80211_ENCRYT_NONE, IEEE80211_ENCRYT_WEP40, IEEE80211_ENCRYT_WEP104, IEEE80211_ENCRYT_TKIP_WPA, IEEE80211_ENCRYT_CCMP_WPA, IEEE80211_ENCRYT_TKIP_WPA2, IEEE80211_ENCRYT_CCMP_WPA2, IEEE80211_ENCRYT_AUTO_WPA, IEEE80211_ENCRYT_AUTO_WPA2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="201" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__softap__info__t_1a75957b394336622b9bb5e04740f19079" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_softap_info_t::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>channel of softap </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="206" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__softap__info__t_1a6bc97db8a637a268e000c4b75e4f487e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__key__info__t" kindref="compound">tls_key_info_t</ref></type>
+        <definition>struct tls_key_info_t tls_softap_info_t::keyinfo</definition>
+        <argsstring></argsstring>
+        <name>keyinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Password (key) of softap </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="206" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Wi-Fi configuration of softap </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="228">
+        <label>tls_softap_info_t</label>
+        <link refid="structtls__softap__info__t"/>
+        <childnode refid="229" relation="usage">
+          <edgelabel>keyinfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="229">
+        <label>tls_key_info_t</label>
+        <link refid="structtls__key__info__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/WiFi/wm_wifi.h" line="199" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="199" bodyend="208"/>
+    <listofallmembers>
+      <member refid="structtls__softap__info__t_1a75957b394336622b9bb5e04740f19079" prot="public" virt="non-virtual"><scope>tls_softap_info_t</scope><name>channel</name></member>
+      <member refid="structtls__softap__info__t_1ac7cf939c024793a662559034abc5ec2d" prot="public" virt="non-virtual"><scope>tls_softap_info_t</scope><name>encrypt</name></member>
+      <member refid="structtls__softap__info__t_1a6bc97db8a637a268e000c4b75e4f487e" prot="public" virt="non-virtual"><scope>tls_softap_info_t</scope><name>keyinfo</name></member>
+      <member refid="structtls__softap__info__t_1aabb71604b9d2283c003b6d9c61e238da" prot="public" virt="non-virtual"><scope>tls_softap_info_t</scope><name>ssid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

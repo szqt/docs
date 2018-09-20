@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__fls__gd25qxx_8h" kind="file" language="C++">
+    <compoundname>wm_fls_gd25qxx.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1aefec442ab2dbec4785b387b3e88faa66" prot="public" static="no">
+        <name>SPI_SCLK</name>
+        <initializer>(10000000)  /** 10MHz. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="14" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a15bbf2368d6f29eee64ccf24f52f6b10" prot="public" static="no">
+        <name>FLASH_TOTAL_SIZE</name>
+        <initializer>(1024*1024)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="15" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a7d467c1d283fdfa1f2081ba1e0d01b6e" prot="public" static="no">
+        <name>PAGE_SIZE</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="16" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a3859a6e7100a3bc3621e530192d2b5a6" prot="public" static="no">
+        <name>PROGRAM_SIZE</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="17" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a48d5a7d8c7488c21c65255f13c164366" prot="public" static="no">
+        <name>PAGE_ADDR_OFFSET</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="18" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1aa35bad1e92008da628f27b2f6bb270aa" prot="public" static="no">
+        <name>SECTOR_SIZE</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="19" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a2f84806fed737e3952effa277196f9ba" prot="public" static="no">
+        <name>EXSPIFLASH_WRITE_ENABLE</name>
+        <initializer>(0x06)    /** Global write enable */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>command code define. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="25" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1aa43d497176504c4eb03075b5c3448669" prot="public" static="no">
+        <name>EXSPIFLASH_WRITE_DISABLE</name>
+        <initializer>(0x04)   /** Global write disable */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="26" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a27086f45d3a1d65ef9cf557e62ba49cf" prot="public" static="no">
+        <name>EXSPIFLASH_READ_SR1</name>
+        <initializer>(0x05)    /** Read flash status register s0~s7 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="27" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1ae02e6070ec7820473a9b179aecb28f12" prot="public" static="no">
+        <name>EXSPIFLASH_READ_SR2</name>
+        <initializer>(0x35)    /** Read flash status register s8~s15 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="28" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1aebe1e782c1e6a656ec75618e6e38b156" prot="public" static="no">
+        <name>EXSPIFLASH_WRITE_SR</name>
+        <initializer>(0x01)    /** Write flash status register s0~s15 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="29" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a314084e0d3310a2e4f69f7423b19e90e" prot="public" static="no">
+        <name>EXSPIFLASH_PAGE_PROGRAM</name>
+        <initializer>(0x02)    /** program one page */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="30" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a631cdf93a5d89a62ff596fe59f89c73a" prot="public" static="no">
+        <name>EXSPIFLASH_DATA_READ</name>
+        <initializer>(0x03)   /** read data from specified address */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="31" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1aa063546036e43774ff951f853005050e" prot="public" static="no">
+        <name>EXSPIFLASH_DATA_FAST_READ</name>
+        <initializer>(0x0b)  /** fast read data from specified address */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="32" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a84ab98c9ebf45bd5889ac4b4f23974ae" prot="public" static="no">
+        <name>EXSPIFLASH_SECTOR_ERASE</name>
+        <initializer>(0x20)    /** Sector erase */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="33" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a8845e5789f56886824b370f584b00897" prot="public" static="no">
+        <name>EXSPIFLASH_BLOCK32_ERASE</name>
+        <initializer>(0x52)   /** 32KB Block erase(128 pages) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="34" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a9633abb79fdba21cb698d16e052fecca" prot="public" static="no">
+        <name>EXSPIFLASH_BLOCK64_ERASE</name>
+        <initializer>(0xd8)   /** 64kb Block erase(256 pages) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="35" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1ac32b47864652824addd7dc8bc1c0eaf9" prot="public" static="no">
+        <name>EXSPIFLASH_CHIP_ERASE</name>
+        <initializer>(0xc7)  /** Chip erase */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="36" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a2bdfa9c16a83886aedd91705afdda995" prot="public" static="no">
+        <name>EXSPIFLASH_FLASH_DEVICEID</name>
+        <initializer>(0x90)  /** Read flash manufacturer/device ID */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="37" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1aa1fc4738f59849d23eb9544c7ae55c18" prot="public" static="no">
+        <name>EXSPIFLASH_FLASH_ID</name>
+        <initializer>(0x9f)    /** Read flash ID */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="38" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a06928c85e0ae1e3b2b9250de78a5c2ff" prot="public" static="no">
+        <name>FLASH_STATUS_BUSY</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="41" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fls__gd25qxx_8h_1a60da599ca2866e978cc2ba0a3144b07d" prot="public" static="no">
+        <name>FLASH_STATUS_WEL</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="42" column="9" bodyfile="Include/Driver/wm_fls_gd25qxx.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__fls__gd25qxx_8h_1a73569bea22c9c94c728398e7bfe85c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spifls_drv_install</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_spifls_drv_install</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to install gd25qxx driver. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if write flash success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EPERM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if flash struct point is null </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_ENODRV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if flash driver is not installed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if argument is invalid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if io error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EEXIST</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if driver is already existed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_fls_gd25qxx.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>wm gd25qxx flash driver </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+<simplesect kind="copyright"><para>(c) 2015 Winner Microelectronics Co., Ltd. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>TLS_EXSPIFLS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_EXSPIFLS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_SCLK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10000000)<sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor">#define<sp/>FLASH_TOTAL_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1024*1024)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAGE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROGRAM_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAGE_ADDR_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECTOR_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4096</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="wm__fls__gd25qxx_8h_1a2f84806fed737e3952effa277196f9ba" refkind="member"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_WRITE_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0x06)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_WRITE_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0x04)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_READ_SR1<sp/><sp/><sp/><sp/><sp/><sp/>(0x05)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_READ_SR2<sp/><sp/><sp/><sp/><sp/><sp/>(0x35)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_WRITE_SR<sp/><sp/><sp/><sp/><sp/><sp/>(0x01)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_PAGE_PROGRAM<sp/><sp/><sp/><sp/><sp/><sp/>(0x02)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_DATA_READ<sp/><sp/><sp/><sp/><sp/><sp/>(0x03)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_DATA_FAST_READ<sp/><sp/><sp/><sp/><sp/><sp/>(0x0b)<sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_SECTOR_ERASE<sp/><sp/><sp/><sp/><sp/><sp/>(0x20)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_BLOCK32_ERASE<sp/><sp/><sp/><sp/><sp/><sp/>(0x52)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_BLOCK64_ERASE<sp/><sp/><sp/><sp/><sp/><sp/>(0xd8)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_CHIP_ERASE<sp/><sp/><sp/><sp/><sp/><sp/>(0xc7)<sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_FLASH_DEVICEID<sp/><sp/><sp/><sp/><sp/><sp/>(0x90)<sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor">#define<sp/>EXSPIFLASH_FLASH_ID<sp/><sp/><sp/><sp/><sp/><sp/>(0x9f)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor">#define<sp/>FLASH_STATUS_BUSY<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_STATUS_WEL<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__fls__gd25qxx_8h_1a73569bea22c9c94c728398e7bfe85c4d" kindref="member">tls_spifls_drv_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TLS_FLS_GD25QXX_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_fls_gd25qxx.h"/>
+  </compounddef>
+</doxygen>

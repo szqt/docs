@@ -1,0 +1,1032 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__hspi_8h" kind="file" language="C++">
+    <compoundname>wm_hspi.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includes refid="wm__ram__config_8h" local="yes">wm_ram_config.h</includes>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <incdepgraph>
+      <node id="142">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="141">
+        <label>Include/Driver/wm_hspi.h</label>
+        <link refid="wm__hspi_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="144">
+        <label>Include/Driver/wm_hspi.h</label>
+        <link refid="wm__hspi_8h"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtls__hspi__tx__desc" prot="public">tls_hspi_tx_desc</innerclass>
+    <innerclass refid="structtls__hspi__rx__desc" prot="public">tls_hspi_rx_desc</innerclass>
+    <innerclass refid="structtls__slave__hspi" prot="public">tls_slave_hspi</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__hspi_8h_1a33549c9f1e871c36599fc5a60a7aefa1" prot="public" static="no">
+        <name>HSPI_TX_MEM_MALLOC</name>
+        <initializer>0		/** tx mem dynamic malloc*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="18" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ad3a0f38f11b22dab2165ae5f36275ccf" prot="public" static="no">
+        <name>HSPI_IO_REUSE_NUM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="20" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a033e6d0efe03156ab5c82783c00c7dfb" prot="public" static="no">
+        <name>SDIO_IO_REUSE_NUM</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="21" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1aef5f99e8a9ab2147cbc9a934f236ba12" prot="public" static="no">
+        <name>HSPI_INTERFACE_SPI</name>
+        <initializer>2		/** spi interface*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="22" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a8cf7c461a19b52ce51125f3753e57d7b" prot="public" static="no">
+        <name>HSPI_INTERFACE_SDIO</name>
+        <initializer>3		/** sdio interface*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="23" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a89df61c75bda53ac5dac262b47311fc0" prot="public" static="no">
+        <name>HSPI_RX_CMD_MSG</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>rx message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="26" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a464c7114d7b5d0597154817b4934ebcc" prot="public" static="no">
+        <name>HSPI_RX_DATA_MSG</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="27" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a14c345fabf0c37544615a0f5edb0f36a" prot="public" static="no">
+        <name>HSPI_TXBUF_NUM</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>spi/sdio buffer??Wraper controller can only access the address after the 0x60000 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="30" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1aabf8c633847717419560b0f65243b08e" prot="public" static="no">
+        <name>HSPI_TX_DESC_NUM</name>
+        <initializer><ref refid="wm__hspi_8h_1a14c345fabf0c37544615a0f5edb0f36a" kindref="member">HSPI_TXBUF_NUM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="31" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a7e439daedad87b2ea30a450ee2cefaf3" prot="public" static="no">
+        <name>HSPI_RXBUF_NUM</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="32" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a3b151e9d491180ee87fe4473ecd1fa98" prot="public" static="no">
+        <name>HSPI_RX_DESC_NUM</name>
+        <initializer>HSPI_RXBUF_NUM</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="33" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ac94a9ec3d6ffadeacdb464d9296c4809" prot="public" static="no">
+        <name>HSPI_TXBUF_SIZE</name>
+        <initializer>1500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="34" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a53d2d0cc02a79a1ecbb581588811526d" prot="public" static="no">
+        <name>HSPI_RXBUF_SIZE</name>
+        <initializer>1500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="35" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a61992bfedb8df2ba24fb6bf572bd1f51" prot="public" static="no">
+        <name>HSPI_TX_DESC_SIZE</name>
+        <initializer>sizeof(struct <ref refid="structtls__hspi__tx__desc" kindref="compound">tls_hspi_tx_desc</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="37" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1acd5fecc625344df57603d6bb7731ccf0" prot="public" static="no">
+        <name>HSPI_RX_DESC_SIZE</name>
+        <initializer>sizeof(struct <ref refid="structtls__hspi__rx__desc" kindref="compound">tls_hspi_rx_desc</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="38" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a2e99c3056f9fe96bccbdbb9017edb5f2" prot="public" static="no">
+        <name>HSPI_TXBUF_BASE_ADDR</name>
+        <initializer>((u32)(SLAVE_HSPI_SDIO_ADDR))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="45" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1acf8e8457de7883606aeb52b7c651b4f9" prot="public" static="no">
+        <name>HSPI_TXBUF_TOTAL_SIZE</name>
+        <initializer>(HSPI_TXBUF_SIZE * <ref refid="wm__hspi_8h_1a14c345fabf0c37544615a0f5edb0f36a" kindref="member">HSPI_TXBUF_NUM</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="50" column="10" bodyfile="Include/Driver/wm_hspi.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a8ece2f82afa0af1f6e775318de8d85ba" prot="public" static="no">
+        <name>HSPI_TX_DESC_BASE_ADDR</name>
+        <initializer>((u32)(HSPI_TXBUF_BASE_ADDR + HSPI_TXBUF_TOTAL_SIZE))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HSPI tx desc zone </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="53" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a12314bae727330b3fffab49d32907d30" prot="public" static="no">
+        <name>HSPI_TX_DESC_TOTAL_SIZE</name>
+        <initializer>(HSPI_TX_DESC_SIZE * HSPI_TX_DESC_NUM)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="54" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a35922d6c82c5ce862c2b60d9992ee248" prot="public" static="no">
+        <name>HSPI_RXBUF_BASE_ADDR</name>
+        <initializer>((u32)(<ref refid="wm__hspi_8h_1a8ece2f82afa0af1f6e775318de8d85ba" kindref="member">HSPI_TX_DESC_BASE_ADDR</ref> + HSPI_TX_DESC_TOTAL_SIZE))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HSPI rxbuf zone </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="56" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a9283517c18b1a79dc9e18039f53acf63" prot="public" static="no">
+        <name>HSPI_RXBUF_TOTAL_SIZE</name>
+        <initializer>(HSPI_RXBUF_NUM * HSPI_RXBUF_SIZE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="57" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a86e7b835de8fd9fa8d98d711a4f143d7" prot="public" static="no">
+        <name>HSPI_RX_DESC_BASE_ADDR</name>
+        <initializer>((u32)(<ref refid="wm__hspi_8h_1a35922d6c82c5ce862c2b60d9992ee248" kindref="member">HSPI_RXBUF_BASE_ADDR</ref> + HSPI_RXBUF_TOTAL_SIZE))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HSPI rx desc zone </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="59" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a76a5ca1839cb6a0554f6caa5153cc752" prot="public" static="no">
+        <name>HSPI_RX_DESC_TOTAL_SIZE</name>
+        <initializer>(HSPI_RX_DESC_SIZE * HSPI_RX_DESC_NUM)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="60" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ac992ff83b6ad95be39e202f36c4889a9" prot="public" static="no">
+        <name>SDIO_CIS0_ADDR</name>
+        <initializer>(<ref refid="wm__hspi_8h_1a86e7b835de8fd9fa8d98d711a4f143d7" kindref="member">HSPI_RX_DESC_BASE_ADDR</ref> + HSPI_RX_DESC_TOTAL_SIZE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="68" column="10" bodyfile="Include/Driver/wm_hspi.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1affc03f5eb769670d06dd5add0105f229" prot="public" static="no">
+        <name>SDIO_CIS1_ADDR</name>
+        <initializer>(SDIO_CIS0_ADDR + 0x80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="69" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1abe2ce1cc8607b1b0ca8631a2847e6a91" prot="public" static="no">
+        <name>SDIO_CMD_RXBUF_ADDR</name>
+        <initializer>(SDIO_CIS1_ADDR + 0x80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="70" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a1255e5d7cec88e0961da9eac93b5e640" prot="public" static="no">
+        <name>SDIO_CMD_RXBUF_SIZE</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="71" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a8df000369319fb6dd7ae40435f02837e" prot="public" static="no">
+        <name>CIS_FUN0_ADDR</name>
+        <initializer>SDIO_CIS0_ADDR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="73" column="10" bodyfile="Include/Driver/wm_hspi.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a7d1ec1366fd14dd91336d7f53e31d6f0" prot="public" static="no">
+        <name>CIS_FUN1_ADDR</name>
+        <initializer>SDIO_CIS1_ADDR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="74" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a39f18772d50fbb834892ff6c0c0ccadd" prot="public" static="no">
+        <name>FN0_TPL_FUNCID</name>
+        <initializer>(CIS_FUN0_ADDR + 0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="76" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ad1695cd0a9b3253f2c83aad8cb09c18d" prot="public" static="no">
+        <name>FN0_TPL_FUNCE</name>
+        <initializer>(CIS_FUN0_ADDR + 0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="77" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ac338a7c842932e0ebc2c3ccdfae0914d" prot="public" static="no">
+        <name>FN0_TPL_FUNCE_MAXBLK</name>
+        <initializer>(CIS_FUN0_ADDR + 0x08)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="78" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1aca0fb135dd76e1f1ed932ff7a76d977b" prot="public" static="no">
+        <name>FN0_TPL_MANFID_MID</name>
+        <initializer>(CIS_FUN0_ADDR + 0x0C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="79" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1aba90cfd9a898d7ab9634a3d04e86b86c" prot="public" static="no">
+        <name>FN0_TPL_END</name>
+        <initializer>(CIS_FUN0_ADDR + 0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="80" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1af4a0176e18aabb00b306b988e56342d7" prot="public" static="no">
+        <name>FN1_TPL_FUNCID</name>
+        <initializer>(CIS_FUN1_ADDR + 0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="82" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a1ac92a8f46f06e1705072c5a46fb10cd" prot="public" static="no">
+        <name>FN1_TPL_FUNCE</name>
+        <initializer>(CIS_FUN1_ADDR + 0x04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="83" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a3b1a8d7ca8fa3fce2bb7d632e2ccbc11" prot="public" static="no">
+        <name>FN1_TPL_FUNCE_VER</name>
+        <initializer>(CIS_FUN1_ADDR + 0x08)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="84" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ac99678f15f6a0b61f4869cbdb4d88272" prot="public" static="no">
+        <name>FN1_TPL_FUNCE_NSN</name>
+        <initializer>(CIS_FUN1_ADDR + 0x0C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="85" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a3bf552f4f6de931135a68b681ce25d41" prot="public" static="no">
+        <name>FN1_TPL_FUNCE_CSASIZE</name>
+        <initializer>(CIS_FUN1_ADDR + 0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="86" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1aa095182bdc639c373fb103d4d02f4b9f" prot="public" static="no">
+        <name>FN1_TPL_FUNCE_OCR</name>
+        <initializer>(CIS_FUN1_ADDR + 0x14)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="87" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a73e992d3d3e3c88d7b45f09ca2395ae1" prot="public" static="no">
+        <name>FN1_TPL_FUNCE_MINPWR</name>
+        <initializer>(CIS_FUN1_ADDR + 0x18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="88" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1aeab8400f023192d123c8a397cbd509a0" prot="public" static="no">
+        <name>FN1_TPL_FUNCE_STANDBY</name>
+        <initializer>(CIS_FUN1_ADDR + 0x1C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="89" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ae89d1b024b21ff0d44a256815e076c4a" prot="public" static="no">
+        <name>FN1_TPL_FUNCE_OPTBW</name>
+        <initializer>(CIS_FUN1_ADDR + 0x20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="90" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a0d2bed75459bfb10b0ce3e21d2cf77f4" prot="public" static="no">
+        <name>FN1_TPL_FUNCE_NTIMEOUT</name>
+        <initializer>(CIS_FUN1_ADDR + 0x24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="91" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a9cce1c084e7043d4beecdf4c9a7aa141" prot="public" static="no">
+        <name>FN1_TPL_FUNCE_AVGPWR</name>
+        <initializer>(CIS_FUN1_ADDR + 0x28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="92" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1acb70ad17462d2fd77fb9ed376bc2dcf9" prot="public" static="no">
+        <name>FN1_TPL_END</name>
+        <initializer>(CIS_FUN1_ADDR + 0x30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="93" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ae0c3ca9964cd546dd1079bf2c81d1f5f" prot="public" static="no">
+        <name>SDIO_RX_DATA_INT</name>
+        <initializer>(0UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Definition of SDIO interrupt in the system </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="96" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ac61203ddf68953707518d335b31aeeeb" prot="public" static="no">
+        <name>SDIO_TX_DATA_INT</name>
+        <initializer>(1UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="97" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a18bb81ec1d74c15fd4565a8119f52d73" prot="public" static="no">
+        <name>SDIO_RX_CMD_INT</name>
+        <initializer>(2UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="98" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1afc54986153532799b173d057489721c7" prot="public" static="no">
+        <name>SDIO_TX_CMD_INT</name>
+        <initializer>(3UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="99" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1aa512724fa2622c39a33415c6e40e8029" prot="public" static="no">
+        <name>HR_IOCTL_GP_SDIO</name>
+        <initializer>HR_IOCTL_GP_SDIO_I2C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IO control register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="102" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1ac4524383d91b34a15a8101da09b3cf9c" prot="public" static="no">
+        <name>SDIO_WP_INT_SRC_CMD_DOWN</name>
+        <initializer>(1UL&lt;&lt;3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDIO interrupt bit definition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="106" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1af2586c84c3c476e782bcd347b3efe0ea" prot="public" static="no">
+        <name>SDIO_WP_INT_SRC_CMD_UP</name>
+        <initializer>(1UL&lt;&lt;2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="107" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a706d86a60cb0b081361a1e3074bb687b" prot="public" static="no">
+        <name>SDIO_WP_INT_SRC_DATA_DOWN</name>
+        <initializer>(1UL&lt;&lt;1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="108" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__hspi_8h_1a37a6142025bb9889186a3e35393564b4" prot="public" static="no">
+        <name>SDIO_WP_INT_SRC_DATA_UP</name>
+        <initializer>(1UL&lt;&lt;0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="109" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___h_s_p_i___driver___a_p_is_1gae22691c22991b8031c0e98bb35be5e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_slave_spi_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_slave_spi_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to initial HSPI register. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>When the system is initialized, the function has been called, so users can not call the function. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_s_p_i___driver___a_p_is_1ga5631fde99cd4f4c7018dcf7117dee9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_set_hspi_user_mode</definition>
+        <argsstring>(u8 ifenable)</argsstring>
+        <name>tls_set_hspi_user_mode</name>
+        <param>
+          <type>u8</type>
+          <declname>ifenable</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to enable or disable user mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ifenable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TRUE or FALSE</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>If the user enables the user mode, RICM instruction in the system will not be used by SPI. If the user wants to use the SPI interface as other use, need to enable the user mode. This function must be called before the register function. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_s_p_i___driver___a_p_is_1ga6bda6f3bb112b56fbe596631ab8d7a88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_set_high_speed_interface_type</definition>
+        <argsstring>(int type)</argsstring>
+        <name>tls_set_high_speed_interface_type</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set high speed interface type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the interface type. HSPI_INTERFACE_SPI or HSPI_INTERFACE_SDIO</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_s_p_i___driver___a_p_is_1gac62be6970bbeb3622d5362fd70f8532b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_hspi_rx_cmd_callback_register</definition>
+        <argsstring>(s16(*rx_cmd_callback)(char *buf))</argsstring>
+        <name>tls_hspi_rx_cmd_callback_register</name>
+        <param>
+          <type>s16(*)(char *buf)</type>
+          <declname>rx_cmd_callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register hspi rx command interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rx_cmd_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the hspi rx interrupt call back function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_s_p_i___driver___a_p_is_1gadfffcead3f35c2ab80d28536b6ad1a55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_hspi_rx_data_callback_register</definition>
+        <argsstring>(s16(*rx_data_callback)(char *buf))</argsstring>
+        <name>tls_hspi_rx_data_callback_register</name>
+        <param>
+          <type>s16(*)(char *buf)</type>
+          <declname>rx_data_callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register hspi rx data interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rx_data_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the hspi rx interrupt call back function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_s_p_i___driver___a_p_is_1ga25142c696a9978707bd0a80a68106786" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_hspi_tx_data_callback_register</definition>
+        <argsstring>(s16(*tx_data_callback)(char *buf))</argsstring>
+        <name>tls_hspi_tx_data_callback_register</name>
+        <param>
+          <type>s16(*)(char *buf)</type>
+          <declname>tx_data_callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register hspi tx data interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tx_data_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the hspi tx interrupt call back function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_s_p_i___driver___a_p_is_1ga97d2935be7a958c4b19fd4dd3e5460c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_hspi_tx_data</definition>
+        <argsstring>(char *txbuf, int len)</argsstring>
+        <name>tls_hspi_tx_data</name>
+        <param>
+          <type>char *</type>
+          <declname>txbuf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to transfer data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">txbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a buf for saving user data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the data length.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>transfer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data len success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="254" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>High speed spi slave Module. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>WM_HSPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_HSPI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__ram__config_8h" kindref="compound">wm_ram_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_TX_MEM_MALLOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor">#define<sp/>HSPI_IO_REUSE_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_IO_REUSE_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_INTERFACE_SPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor">#define<sp/>HSPI_INTERFACE_SDIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="wm__hspi_8h_1a89df61c75bda53ac5dac262b47311fc0" refkind="member"><highlight class="preprocessor">#define<sp/>HSPI_RX_CMD_MSG<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_RX_DATA_MSG<sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="wm__hspi_8h_1a14c345fabf0c37544615a0f5edb0f36a" refkind="member"><highlight class="preprocessor">#define<sp/>HSPI_TXBUF_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_TX_DESC_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HSPI_TXBUF_NUM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_RXBUF_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3//10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_RX_DESC_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HSPI_RXBUF_NUM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_TXBUF_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_RXBUF_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_TX_DESC_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizeof(struct<sp/>tls_hspi_tx_desc)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_RX_DESC_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizeof(struct<sp/>tls_hspi_rx_desc)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>sdio/hspi<sp/>sram<sp/>partition</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>total<sp/>size<sp/>:<sp/>0x61800<sp/>-<sp/>0x67FFFF<sp/><sp/><sp/>(26KB)</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>HSPI<sp/>txbuf<sp/>zone<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_TXBUF_BASE_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((u32)(SLAVE_HSPI_SDIO_ADDR))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>HSPI_TX_MEM_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_TXBUF_TOTAL_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_TXBUF_TOTAL_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HSPI_TXBUF_SIZE<sp/>*<sp/>HSPI_TXBUF_NUM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="wm__hspi_8h_1a8ece2f82afa0af1f6e775318de8d85ba" refkind="member"><highlight class="preprocessor">#define<sp/>HSPI_TX_DESC_BASE_ADDR<sp/><sp/><sp/><sp/><sp/><sp/>((u32)(HSPI_TXBUF_BASE_ADDR<sp/>+<sp/>HSPI_TXBUF_TOTAL_SIZE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_TX_DESC_TOTAL_SIZE<sp/><sp/><sp/><sp/><sp/>(HSPI_TX_DESC_SIZE<sp/>*<sp/>HSPI_TX_DESC_NUM)<sp/><sp/>//28*3=84</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="wm__hspi_8h_1a35922d6c82c5ce862c2b60d9992ee248" refkind="member"><highlight class="preprocessor">#define<sp/>HSPI_RXBUF_BASE_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((u32)(HSPI_TX_DESC_BASE_ADDR<sp/>+<sp/>HSPI_TX_DESC_TOTAL_SIZE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_RXBUF_TOTAL_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HSPI_RXBUF_NUM<sp/>*<sp/>HSPI_RXBUF_SIZE)<sp/><sp/>//4500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="wm__hspi_8h_1a86e7b835de8fd9fa8d98d711a4f143d7" refkind="member"><highlight class="preprocessor">#define<sp/>HSPI_RX_DESC_BASE_ADDR<sp/><sp/><sp/><sp/><sp/><sp/>((u32)(HSPI_RXBUF_BASE_ADDR<sp/>+<sp/>HSPI_RXBUF_TOTAL_SIZE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HSPI_RX_DESC_TOTAL_SIZE<sp/><sp/><sp/><sp/><sp/>(HSPI_RX_DESC_SIZE<sp/>*<sp/>HSPI_RX_DESC_NUM)<sp/><sp/>//36</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_CMD_RXBUF_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_CMD_RXBUF_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00068000<sp/>-<sp/><sp/>SDIO_CMD_RXBUF_SIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_CIS1_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SDIO_CMD_RXBUF_ADDR<sp/>-<sp/>0x80)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_CIS0_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SDIO_CIS1_ADDR<sp/>-<sp/>0x80)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_CIS0_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HSPI_RX_DESC_BASE_ADDR<sp/>+<sp/>HSPI_RX_DESC_TOTAL_SIZE)<sp/><sp/>//128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_CIS1_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SDIO_CIS0_ADDR<sp/>+<sp/>0x80)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_CMD_RXBUF_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SDIO_CIS1_ADDR<sp/>+<sp/>0x80)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_CMD_RXBUF_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>256//(1500)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CIS_FUN0_ADDR<sp/><sp/><sp/>SDIO_CIS0_ADDR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CIS_FUN1_ADDR<sp/><sp/><sp/>SDIO_CIS1_ADDR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN0_TPL_FUNCID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN0_ADDR<sp/>+<sp/>0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN0_TPL_FUNCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN0_ADDR<sp/>+<sp/>0x04)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN0_TPL_FUNCE_MAXBLK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN0_ADDR<sp/>+<sp/>0x08)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN0_TPL_MANFID_MID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN0_ADDR<sp/>+<sp/>0x0C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN0_TPL_END<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN0_ADDR<sp/>+<sp/>0x10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x04)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE_VER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x08)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE_NSN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x0C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE_CSASIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE_OCR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x14)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE_MINPWR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x18)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE_STANDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x1C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE_OPTBW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x20)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE_NTIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_FUNCE_AVGPWR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x28)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FN1_TPL_END<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CIS_FUN1_ADDR<sp/>+<sp/>0x30)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="wm__hspi_8h_1ae0c3ca9964cd546dd1079bf2c81d1f5f" refkind="member"><highlight class="preprocessor">#define<sp/>SDIO_RX_DATA_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_TX_DATA_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_RX_CMD_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_TX_CMD_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(3UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="wm__hspi_8h_1aa512724fa2622c39a33415c6e40e8029" refkind="member"><highlight class="preprocessor">#define<sp/>HR_IOCTL_GP_SDIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/>HR_IOCTL_GP_SDIO_I2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="wm__hspi_8h_1ac4524383d91b34a15a8101da09b3cf9c" refkind="member"><highlight class="preprocessor">#define<sp/>SDIO_WP_INT_SRC_CMD_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1UL&lt;&lt;3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_WP_INT_SRC_CMD_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1UL&lt;&lt;2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_WP_INT_SRC_DATA_DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1UL&lt;&lt;1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_WP_INT_SRC_DATA_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1UL&lt;&lt;0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="structtls__hspi__tx__desc" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__hspi__tx__desc" kindref="compound">tls_hspi_tx_desc</ref><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>valid_ctrl;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>buf_info;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>buf_addr[3];</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>next_desc_addr;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>HSPI_TX_MEM_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>txbuf_addr;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="structtls__hspi__rx__desc" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__hspi__rx__desc" kindref="compound">tls_hspi_rx_desc</ref><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>valid_ctrl;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>buf_addr;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>next_desc_addr;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="structtls__slave__hspi" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__slave__hspi" kindref="compound">tls_slave_hspi</ref><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>ifusermode;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>s16<sp/>(*rx_cmd_callback)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>s16<sp/>(*rx_data_callback)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>s16<sp/>(*tx_data_callback)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="structtls__slave__hspi_1a53ee3ea9a81a4da9cf26aeb1de7fa76c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__hspi__tx__desc" kindref="compound">tls_hspi_tx_desc</ref><sp/>*<ref refid="structtls__slave__hspi_1a53ee3ea9a81a4da9cf26aeb1de7fa76c" kindref="member">curr_tx_desc</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="structtls__slave__hspi_1a2185c20d041068789d112fb31ed4f93a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__hspi__rx__desc" kindref="compound">tls_hspi_rx_desc</ref><sp/><sp/><sp/>*<ref refid="structtls__slave__hspi_1a2185c20d041068789d112fb31ed4f93a" kindref="member">curr_rx_desc</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor">#if<sp/>HSPI_TX_MEM_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>txdoneflag;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___h_s_p_i___driver___a_p_is_1gae22691c22991b8031c0e98bb35be5e42" kindref="member">tls_slave_spi_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___h_s_p_i___driver___a_p_is_1ga5631fde99cd4f4c7018dcf7117dee9a2" kindref="member">tls_set_hspi_user_mode</ref>(u8<sp/>ifenable);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___h_s_p_i___driver___a_p_is_1ga6bda6f3bb112b56fbe596631ab8d7a88" kindref="member">tls_set_high_speed_interface_type</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___h_s_p_i___driver___a_p_is_1gac62be6970bbeb3622d5362fd70f8532b" kindref="member">tls_hspi_rx_cmd_callback_register</ref>(s16<sp/>(*rx_cmd_callback)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___h_s_p_i___driver___a_p_is_1gadfffcead3f35c2ab80d28536b6ad1a55" kindref="member">tls_hspi_rx_data_callback_register</ref>(s16<sp/>(*rx_data_callback)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf));</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___h_s_p_i___driver___a_p_is_1ga25142c696a9978707bd0a80a68106786" kindref="member">tls_hspi_tx_data_callback_register</ref>(s16<sp/>(*tx_data_callback)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf));</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___h_s_p_i___driver___a_p_is_1ga97d2935be7a958c4b19fd4dd3e5460c4" kindref="member">tls_hspi_tx_data</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*txbuf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_HSPI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_hspi.h"/>
+  </compounddef>
+</doxygen>

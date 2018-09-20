@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__uart__circ__buf" kind="struct" language="C++" prot="public">
+    <compoundname>tls_uart_circ_buf</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__uart__circ__buf_1a0ab4d8702644542a0a4176f84430070b" prot="public" static="no" mutable="no">
+        <type>u8 *</type>
+        <definition>u8* tls_uart_circ_buf::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="225" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__circ__buf_1a2c1a72e048f7293c63058b7ec52bf2ae" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_circ_buf::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="226" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__circ__buf_1a117dc0def70a87eca51c4e97ee46da62" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_circ_buf::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="227" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_uart.h" line="224" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="223" bodyend="228"/>
+    <listofallmembers>
+      <member refid="structtls__uart__circ__buf_1a0ab4d8702644542a0a4176f84430070b" prot="public" virt="non-virtual"><scope>tls_uart_circ_buf</scope><name>buf</name></member>
+      <member refid="structtls__uart__circ__buf_1a2c1a72e048f7293c63058b7ec52bf2ae" prot="public" virt="non-virtual"><scope>tls_uart_circ_buf</scope><name>head</name></member>
+      <member refid="structtls__uart__circ__buf_1a117dc0def70a87eca51c4e97ee46da62" prot="public" virt="non-virtual"><scope>tls_uart_circ_buf</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

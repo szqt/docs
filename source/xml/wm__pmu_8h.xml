@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__pmu_8h" kind="file" language="C++">
+    <compoundname>wm_pmu.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <incdepgraph>
+      <node id="190">
+        <label>Include/Driver/wm_pmu.h</label>
+        <link refid="wm__pmu_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__pmu_8h_1a02919571fc0abd851518b87705108357" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* tls_pmu_irq_callback) (void *arg)</definition>
+        <argsstring>)(void *arg)</argsstring>
+        <name>tls_pmu_irq_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="16" column="1" bodyfile="Include/Driver/wm_pmu.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__pmu_8h_1ab692fe990980477b38a03b9329ee1e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_timer1_isr_register</definition>
+        <argsstring>(tls_pmu_irq_callback callback, void *arg)</argsstring>
+        <name>tls_pmu_timer1_isr_register</name>
+        <param>
+          <type>tls_pmu_irq_callback</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register pmu timer1 interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pmu timer1 interrupt call back function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of call back function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>user not need clear interrupt flag. pmu timer1 callback function is called in interrupt, so can not operate the critical data in the callback fuuction, recommendation to send messages to other tasks to operate it. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__pmu_8h_1a84f3aa1a6a7c3a18e7ff8bc967c33c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_timer0_isr_register</definition>
+        <argsstring>(tls_pmu_irq_callback callback, void *arg)</argsstring>
+        <name>tls_pmu_timer0_isr_register</name>
+        <param>
+          <type>tls_pmu_irq_callback</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register pmu timer0 interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pmu timer0 interrupt call back function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of call back function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>user not need clear interrupt flag. pmu timer0 callback function is called in interrupt, so can not operate the critical data in the callback fuuction, recommendation to send messages to other tasks to operate it. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__pmu_8h_1ab05050a0f9b1bdec09b7a8d4dcaa9ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_gpio_isr_register</definition>
+        <argsstring>(tls_pmu_irq_callback callback, void *arg)</argsstring>
+        <name>tls_pmu_gpio_isr_register</name>
+        <param>
+          <type>tls_pmu_irq_callback</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register pmu gpio interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pmu gpio interrupt call back function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of call back function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>user not need clear interrupt flag. pmu gpio callback function is called in interrupt, so can not operate the critical data in the callback fuuction, recommendation to send messages to other tasks to operate it. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__pmu_8h_1a3a3b174914d113ef91f5a150216d8a5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_sdio_isr_register</definition>
+        <argsstring>(tls_pmu_irq_callback callback, void *arg)</argsstring>
+        <name>tls_pmu_sdio_isr_register</name>
+        <param>
+          <type>tls_pmu_irq_callback</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register pmu sdio interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pmu sdio interrupt call back function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of call back function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>user not need clear interrupt flag. pmu sdio callback function is called in interrupt, so can not operate the critical data in the callback fuuction, recommendation to send messages to other tasks to operate it. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__pmu_8h_1a6f3e8b1d59a5e1e5600206a7a85e321a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_clk_select</definition>
+        <argsstring>(u8 bypass)</argsstring>
+        <name>tls_pmu_clk_select</name>
+        <param>
+          <type>u8</type>
+          <declname>bypass</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to select pmu clk. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bypass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pmu clk whether or not use bypass mode 1 pmu clk use 32K by 40MHZ other pmu clk 32K by calibration circuit</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__pmu_8h_1a54859c0369ba307bf68aa7b463a14c42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_timer0_start</definition>
+        <argsstring>(u16 second)</argsstring>
+        <name>tls_pmu_timer0_start</name>
+        <param>
+          <type>u16</type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to start pmu timer0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vlaue of timer0 count[s]</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__pmu_8h_1a2955d236a4baf01c1d8d1f3da40a43a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_timer0_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_pmu_timer0_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop pmu timer0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__pmu_8h_1af4d5cdece68843b1570a2102e01a56da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_timer1_start</definition>
+        <argsstring>(u16 msec)</argsstring>
+        <name>tls_pmu_timer1_start</name>
+        <param>
+          <type>u16</type>
+          <declname>msec</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to start pmu timer1. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vlaue of timer1 count[ms]</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__pmu_8h_1ad9c770b5b607bce32013adfe49233cfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_timer1_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_pmu_timer1_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop pmu timer1. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__pmu_8h_1a301b289b97605d5b09e63f88aea677c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_pmu_standby_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_pmu_standby_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to start pmu goto standby. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pmu.h" line="161" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>pmu driver module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_PMU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_PMU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*tls_pmu_irq_callback)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1ab692fe990980477b38a03b9329ee1e3e" kindref="member">tls_pmu_timer1_isr_register</ref>(tls_pmu_irq_callback<sp/>callback,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1a84f3aa1a6a7c3a18e7ff8bc967c33c84" kindref="member">tls_pmu_timer0_isr_register</ref>(tls_pmu_irq_callback<sp/>callback,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1ab05050a0f9b1bdec09b7a8d4dcaa9ce1" kindref="member">tls_pmu_gpio_isr_register</ref>(tls_pmu_irq_callback<sp/>callback,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1a3a3b174914d113ef91f5a150216d8a5d" kindref="member">tls_pmu_sdio_isr_register</ref>(tls_pmu_irq_callback<sp/>callback,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1a6f3e8b1d59a5e1e5600206a7a85e321a" kindref="member">tls_pmu_clk_select</ref>(u8<sp/>bypass);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1a54859c0369ba307bf68aa7b463a14c42" kindref="member">tls_pmu_timer0_start</ref>(u16<sp/>second);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1a2955d236a4baf01c1d8d1f3da40a43a7" kindref="member">tls_pmu_timer0_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1af4d5cdece68843b1570a2102e01a56da" kindref="member">tls_pmu_timer1_start</ref>(u16<sp/>msec);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1ad9c770b5b607bce32013adfe49233cfd" kindref="member">tls_pmu_timer1_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__pmu_8h_1a301b289b97605d5b09e63f88aea677c3" kindref="member">tls_pmu_standby_start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_pmu.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___m_b_o_x___a_p_is" kind="group">
+    <compoundname>MBOX_APIs</compoundname>
+    <title>MBOX APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___m_b_o_x___a_p_is_1ga79639d566d14fbe917455c134f5eeeba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_mbox_new</definition>
+        <argsstring>(tls_mbox_t *mbox, int size)</argsstring>
+        <name>tls_mbox_new</name>
+        <param>
+          <type><ref refid="wm__wl__mbox_8h_1aadd56e2d5afa81a5676f205f6c5534ff" kindref="member">tls_mbox_t</ref> *</type>
+          <declname>mbox</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>create a malibox </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">*mbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the mailbox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of mailbox</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_mbox.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_b_o_x___a_p_is_1gae02e7ee0b1240b4e4c65cafeef6a57de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_mbox_valid</definition>
+        <argsstring>(tls_mbox_t mbox)</argsstring>
+        <name>tls_mbox_valid</name>
+        <param>
+          <type><ref refid="wm__wl__mbox_8h_1aadd56e2d5afa81a5676f205f6c5534ff" kindref="member">tls_mbox_t</ref></type>
+          <declname>mbox</declname>
+        </param>
+        <briefdescription>
+<para>check if an mbox is valid/allocated </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the mailbox</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valid</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_mbox.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_b_o_x___a_p_is_1ga7d7b0820defa9e0005b8bd83dd6dc349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_mbox_post</definition>
+        <argsstring>(tls_mbox_t mbox, void *msg)</argsstring>
+        <name>tls_mbox_post</name>
+        <param>
+          <type><ref refid="wm__wl__mbox_8h_1aadd56e2d5afa81a5676f205f6c5534ff" kindref="member">tls_mbox_t</ref></type>
+          <declname>mbox</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>sends a message to a mailbox </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the mailbox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message to be post</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_mbox.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_b_o_x___a_p_is_1gacf267921248665e5fc53fc7f9bd0ab6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_mbox_trypost</definition>
+        <argsstring>(tls_mbox_t mbox, void *msg)</argsstring>
+        <name>tls_mbox_trypost</name>
+        <param>
+          <type><ref refid="wm__wl__mbox_8h_1aadd56e2d5afa81a5676f205f6c5534ff" kindref="member">tls_mbox_t</ref></type>
+          <declname>mbox</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>posts the &quot;msg&quot; to the mailbox. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the mailbox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message to be post</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>this function have to block until the &quot;msg&quot; is really posted. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_mbox.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_b_o_x___a_p_is_1gaceb0ae2f278494f00c370fa6ad1b227b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 tls_arch_mbox_fetch</definition>
+        <argsstring>(tls_mbox_t mbox, void **msg, u32 timeout)</argsstring>
+        <name>tls_arch_mbox_fetch</name>
+        <param>
+          <type><ref refid="wm__wl__mbox_8h_1aadd56e2d5afa81a5676f205f6c5534ff" kindref="member">tls_mbox_t</ref></type>
+          <declname>mbox</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>waits for a message within the specified time </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the mailbox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">**msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message to be received </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the specified time</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>SYS_ARCH_TIMEOUT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time out </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time of elapsed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_mbox.h" line="104" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Software mailbox APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

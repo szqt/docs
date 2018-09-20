@@ -1,0 +1,714 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="aes_8h" kind="file" language="C++">
+    <compoundname>aes.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <incdepgraph>
+      <node id="319">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="318">
+        <label>stddef.h</label>
+      </node>
+      <node id="317">
+        <label>Include/Platform/aes.h</label>
+        <link refid="aes_8h"/>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structps_aes_key__t" prot="public">psAesKey_t</innerclass>
+    <innerclass refid="structps_aes_cipher__t" prot="public">psAesCipher_t</innerclass>
+    <innerclass refid="unionps_aes_cipher_context__t" prot="public">psAesCipherContext_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="aes_8h_1af0764ae836719cd84a09939276875cee" prot="public" static="no">
+        <name>USE_AES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="21" column="12" bodyfile="Include/Platform/aes.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1acffad38477b11bab97a53a7ec7f118c0" prot="public" static="no">
+        <name>PSPUBLIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="22" column="9" bodyfile="Include/Platform/aes.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a6c9266459d6ef2b0003d0564a2c1c9a2" prot="public" static="no">
+        <name>CRYPT_INVALID_KEYSIZE</name>
+        <initializer>-21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="24" column="9" bodyfile="Include/Platform/aes.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1ab59933beebb2b857c992b93cf53f0d10" prot="public" static="no">
+        <name>MAXBLOCKSIZE</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="27" column="9" bodyfile="Include/Platform/aes.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a07eabac0fbcd110e8a4a40bbc96ab283" prot="public" static="no">
+        <name>STORE32H</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>{ \
+(y)[0] = (unsigned char)(((x)&gt;&gt;24)&amp;255); \
+(y)[1] = (unsigned char)(((x)&gt;&gt;16)&amp;255); \
+(y)[2] = (unsigned char)(((x)&gt;&gt;8)&amp;255); \
+(y)[3] = (unsigned char)((x)&amp;255); \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="30" column="9" bodyfile="Include/Platform/aes.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1adfc63f1dc9ae6bed655becd332d7047f" prot="public" static="no">
+        <name>LOAD32H</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>{ \
+x = ((unsigned long)((y)[0] &amp; 255)&lt;&lt;24) | \
+((unsigned long)((y)[1] &amp; 255)&lt;&lt;16) | \
+((unsigned long)((y)[2] &amp; 255)&lt;&lt;8)  | \
+((unsigned long)((y)[3] &amp; 255)); \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="37" column="9" bodyfile="Include/Platform/aes.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a76134035baa59a42ca0b5b8fb99d9d53" prot="public" static="no">
+        <name>byte</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>(((x) &gt;&gt; (8 * (n))) &amp; 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="44" column="9" bodyfile="Include/Platform/aes.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a77e6e81d8ff86d6c17b9bd73658fb393" prot="public" static="no">
+        <name>ROR</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>( ((((unsigned long)(x)&amp;0xFFFFFFFFUL)&gt;&gt;(unsigned long)((y)&amp;31)) | \
+	((unsigned long)(x)&lt;&lt;(unsigned long)(32-((y)&amp;31)))) &amp; 0xFFFFFFFFUL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="46" column="9" bodyfile="Include/Platform/aes.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a01f2523bcfd005138407962012c34bb6" prot="public" static="no">
+        <name>psTraceCrypto</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="50" column="9" bodyfile="Include/Platform/aes.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1aeb5c8e18f4b5a8174da7f8a04d1fcbe3" prot="public" static="no">
+        <name>PS_SUCCESS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="56" column="9" bodyfile="Include/Platform/aes.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a56b4912fc85d2485f57cd926774e6659" prot="public" static="no">
+        <name>PS_FAILURE</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="57" column="9" bodyfile="Include/Platform/aes.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1aafd338c7dbc10ebe0722ad858fd26e07" prot="public" static="no">
+        <name>PS_ARG_FAIL</name>
+        <initializer>-6	/* Failure due to bad function param */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="61" column="9" bodyfile="Include/Platform/aes.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1adb9c53889727a685987bf15b4f77e5fb" prot="public" static="no">
+        <name>PS_PLATFORM_FAIL</name>
+        <initializer>-7	/* Failure as a result of system call error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="62" column="9" bodyfile="Include/Platform/aes.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a14dc14b40e81c80f61f45e7beb0ae828" prot="public" static="no">
+        <name>PS_MEM_FAIL</name>
+        <initializer>-8	/* Failure to allocate requested memory */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="63" column="9" bodyfile="Include/Platform/aes.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a2f5a21304be2304cfff803305d6612fd" prot="public" static="no">
+        <name>PS_LIMIT_FAIL</name>
+        <initializer>-9	/* Failure on sanity/limit tests */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="64" column="9" bodyfile="Include/Platform/aes.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1aa05b34f94e32db2b1d0f2c2835037537" prot="public" static="no">
+        <name>PS_UNSUPPORTED_FAIL</name>
+        <initializer>-10 /* Unimplemented feature error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="65" column="9" bodyfile="Include/Platform/aes.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a69b84ca8846989354d08fe9cae2b8f5f" prot="public" static="no">
+        <name>PS_DISABLED_FEATURE_FAIL</name>
+        <initializer>-11 /* Incorrect #define toggle for feature */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="66" column="9" bodyfile="Include/Platform/aes.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1af64869a5d48718f93a3699b640ec3eed" prot="public" static="no">
+        <name>PS_PROTOCOL_FAIL</name>
+        <initializer>-12 /* A protocol error occurred */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="67" column="9" bodyfile="Include/Platform/aes.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a3ff7269405a74236568d9e9c76775798" prot="public" static="no">
+        <name>PS_TIMEOUT_FAIL</name>
+        <initializer>-13 /* A timeout occurred and MAY be an error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="68" column="9" bodyfile="Include/Platform/aes.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1afcdaa294620f513d74df71d352a5d8da" prot="public" static="no">
+        <name>PS_INTERRUPT_FAIL</name>
+        <initializer>-14 /* An interrupt occurred and MAY be an error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="69" column="9" bodyfile="Include/Platform/aes.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1acbf2841adc061774f5312eb7fc08fa6a" prot="public" static="no">
+        <name>PS_PENDING</name>
+        <initializer>-15 /* In process. Not necessarily an error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="70" column="9" bodyfile="Include/Platform/aes.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a7b8decd560b1668740fac59d2c25ae9c" prot="public" static="no">
+        <name>PS_EAGAIN</name>
+        <initializer>-16 /* Try again later. Not necessarily an error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="71" column="9" bodyfile="Include/Platform/aes.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1a6f7d525234ca5230ef5f25f5b5a5a4d4" prot="public" static="no">
+        <name>PS_TRUE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="73" column="9" bodyfile="Include/Platform/aes.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="aes_8h_1af4aaffb94070261ba2fe556eb515c5ef" prot="public" static="no">
+        <name>PS_FALSE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="74" column="9" bodyfile="Include/Platform/aes.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="aes_8h_1ad642b3da8c0fc4d42f00837305aa0bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PSPUBLIC int</type>
+        <definition>PSPUBLIC int psAesInit</definition>
+        <argsstring>(psAesCipherContext_t *ctx, unsigned char *IV, unsigned char *key, unsigned int keylen)</argsstring>
+        <name>psAesInit</name>
+        <param>
+          <type><ref refid="unionps_aes_cipher_context__t" kindref="compound">psAesCipherContext_t</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>IV</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>keylen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="aes_8h_1ace939d918781b13231ca92bdda01f754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PSPUBLIC int</type>
+        <definition>PSPUBLIC int psAesDecrypt</definition>
+        <argsstring>(psAesCipherContext_t *ctx, unsigned char *ct, unsigned char *pt, unsigned int len)</argsstring>
+        <name>psAesDecrypt</name>
+        <param>
+          <type><ref refid="unionps_aes_cipher_context__t" kindref="compound">psAesCipherContext_t</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>ct</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="aes_8h_1abcc90f84da49318a82ce27b9d808b95e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PSPUBLIC int</type>
+        <definition>PSPUBLIC int psAesEncrypt</definition>
+        <argsstring>(psAesCipherContext_t *ctx, unsigned char *pt, unsigned char *ct, unsigned int len)</argsstring>
+        <name>psAesEncrypt</name>
+        <param>
+          <type><ref refid="unionps_aes_cipher_context__t" kindref="compound">psAesCipherContext_t</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>ct</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="aes_8h_1ae8087cf0d8a61d8f01ea5fd61869929c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PSPUBLIC int</type>
+        <definition>PSPUBLIC int psAesInitKey</definition>
+        <argsstring>(const unsigned char *key, unsigned int keylen, psAesKey_t *skey)</argsstring>
+        <name>psAesInitKey</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>keylen</declname>
+        </param>
+        <param>
+          <type><ref refid="structps_aes_key__t" kindref="compound">psAesKey_t</ref> *</type>
+          <declname>skey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="aes_8h_1aac745951561e7f0d25065380f2be2771" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PSPUBLIC void</type>
+        <definition>PSPUBLIC void psAesEncryptBlock</definition>
+        <argsstring>(const unsigned char *pt, unsigned char *ct, psAesKey_t *skey)</argsstring>
+        <name>psAesEncryptBlock</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>ct</declname>
+        </param>
+        <param>
+          <type><ref refid="structps_aes_key__t" kindref="compound">psAesKey_t</ref> *</type>
+          <declname>skey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="aes_8h_1aa09fccc17cea7e7a964a1ffdac6fa2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PSPUBLIC void</type>
+        <definition>PSPUBLIC void psAesDecryptBlock</definition>
+        <argsstring>(const unsigned char *ct, unsigned char *pt, psAesKey_t *skey)</argsstring>
+        <name>psAesDecryptBlock</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>ct</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type><ref refid="structps_aes_key__t" kindref="compound">psAesKey_t</ref> *</type>
+          <declname>skey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="aes_8h_1a5199c89739ee00a4ae8515865479824f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aes_128_cbc_encrypt</definition>
+        <argsstring>(const u8 *key, const u8 *iv, u8 *data, size_t data_len)</argsstring>
+        <name>aes_128_cbc_encrypt</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="aes_8h_1abf2c6fa780ae8b40fa8b568db7a5926d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aes_128_cbc_decrypt</definition>
+        <argsstring>(const u8 *key, const u8 *iv, u8 *data, size_t data_len)</argsstring>
+        <name>aes_128_cbc_decrypt</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="181" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AES functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="copyright"><para>(c) 2003-2006, Jouni Malinen <ulink url="mailto:jkmaline@cc.hut.fi">jkmaline@cc.hut.fi</ulink></para></simplesect>
+<simplesect kind="note"><para>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 2 as published by the Free Software Foundation.</para></simplesect>
+Alternatively, this software may be distributed under the terms of BSD license.</para><para>See README and COPYING for more details. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#ifndef<sp/>AES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;crypto/cryptoApi.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>USE_AES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PSPUBLIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CRYPT_INVALID_KEYSIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRYPT_INVALID_KEYSIZE<sp/><sp/><sp/>-21<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MAXBLOCKSIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXBLOCKSIZE<sp/><sp/><sp/><sp/>24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STORE32H(x,<sp/>y)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor">(y)[0]<sp/>=<sp/>(unsigned<sp/>char)(((x)&gt;&gt;24)&amp;255);<sp/>\</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">(y)[1]<sp/>=<sp/>(unsigned<sp/>char)(((x)&gt;&gt;16)&amp;255);<sp/>\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">(y)[2]<sp/>=<sp/>(unsigned<sp/>char)(((x)&gt;&gt;8)&amp;255);<sp/>\</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">(y)[3]<sp/>=<sp/>(unsigned<sp/>char)((x)&amp;255);<sp/>\</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOAD32H(x,<sp/>y)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor">x<sp/>=<sp/>((unsigned<sp/>long)((y)[0]<sp/>&amp;<sp/>255)&lt;&lt;24)<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor">((unsigned<sp/>long)((y)[1]<sp/>&amp;<sp/>255)&lt;&lt;16)<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor">((unsigned<sp/>long)((y)[2]<sp/>&amp;<sp/>255)&lt;&lt;8)<sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor">((unsigned<sp/>long)((y)[3]<sp/>&amp;<sp/>255));<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>byte(x,<sp/>n)<sp/>(((x)<sp/>&gt;&gt;<sp/>(8<sp/>*<sp/>(n)))<sp/>&amp;<sp/>255)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROR(x,<sp/>y)<sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(<sp/>((((unsigned<sp/>long)(x)&amp;0xFFFFFFFFUL)&gt;&gt;(unsigned<sp/>long)((y)&amp;31))<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((unsigned<sp/>long)(x)&lt;&lt;(unsigned<sp/>long)(32-((y)&amp;31))))<sp/>&amp;<sp/>0xFFFFFFFFUL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>psTraceCrypto(x)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>Universal<sp/>return<sp/>codes</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>NOTE:<sp/>Failure<sp/>return<sp/>codes<sp/>MUST<sp/>be<sp/>&lt;<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>NOTE:<sp/>The<sp/>range<sp/>for<sp/>core<sp/>error<sp/>codes<sp/>should<sp/>be<sp/>between<sp/>-2<sp/>and<sp/>-29<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_ARG_FAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-6<sp/><sp/></highlight><highlight class="comment">/*<sp/>Failure<sp/>due<sp/>to<sp/>bad<sp/>function<sp/>param<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_PLATFORM_FAIL<sp/><sp/><sp/><sp/>-7<sp/><sp/></highlight><highlight class="comment">/*<sp/>Failure<sp/>as<sp/>a<sp/>result<sp/>of<sp/>system<sp/>call<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_MEM_FAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-8<sp/><sp/></highlight><highlight class="comment">/*<sp/>Failure<sp/>to<sp/>allocate<sp/>requested<sp/>memory<sp/>*/</highlight><highlight class="preprocessor"><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_LIMIT_FAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-9<sp/><sp/></highlight><highlight class="comment">/*<sp/>Failure<sp/>on<sp/>sanity/limit<sp/>tests<sp/>*/</highlight><highlight class="preprocessor"><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_UNSUPPORTED_FAIL<sp/>-10<sp/></highlight><highlight class="comment">/*<sp/>Unimplemented<sp/>feature<sp/>error<sp/>*/</highlight><highlight class="preprocessor"><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_DISABLED_FEATURE_FAIL<sp/>-11<sp/></highlight><highlight class="comment">/*<sp/>Incorrect<sp/>#define<sp/>toggle<sp/>for<sp/>feature<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_PROTOCOL_FAIL<sp/><sp/><sp/><sp/>-12<sp/></highlight><highlight class="comment">/*<sp/>A<sp/>protocol<sp/>error<sp/>occurred<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_TIMEOUT_FAIL<sp/><sp/><sp/><sp/><sp/>-13<sp/></highlight><highlight class="comment">/*<sp/>A<sp/>timeout<sp/>occurred<sp/>and<sp/>MAY<sp/>be<sp/>an<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_INTERRUPT_FAIL<sp/><sp/><sp/>-14<sp/></highlight><highlight class="comment">/*<sp/>An<sp/>interrupt<sp/>occurred<sp/>and<sp/>MAY<sp/>be<sp/>an<sp/>error<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_PENDING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-15<sp/></highlight><highlight class="comment">/*<sp/>In<sp/>process.<sp/>Not<sp/>necessarily<sp/>an<sp/>error<sp/>*/</highlight><highlight class="preprocessor"><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_EAGAIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-16<sp/></highlight><highlight class="comment">/*<sp/>Try<sp/>again<sp/>later.<sp/>Not<sp/>necessarily<sp/>an<sp/>error<sp/>*/</highlight><highlight class="preprocessor"><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_TRUE<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_FALSE<sp/><sp/><sp/><sp/>0<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>int<sp/><sp/>int32;<sp/><sp/><sp/>//调用wm_type_def.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>unsigned<sp/>int<sp/><sp/>uint32;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>short<sp/><sp/>int16;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>unsigned<sp/>short<sp/><sp/>uint16;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>unsigned<sp/>char<sp/>uint8;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>long<sp/>long<sp/>int64;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>unsigned<sp/>long<sp/>long<sp/>uint64;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//#if<sp/>(GCC_COMPILE==0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>unsigned<sp/>int<sp/>size_t;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_AES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USE_AES_CBC_EXTERNAL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="structps_aes_key__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eK[64],<sp/>dK[64];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Nr;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}<sp/><ref refid="structps_aes_key__t" kindref="compound">psAesKey_t</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="structps_aes_cipher__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blocklen;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/>IV[16];</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structps_aes_key__t" kindref="compound">psAesKey_t</ref><sp/><sp/><sp/><sp/><sp/><sp/>key;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USE_AES_GCM)<sp/>||<sp/>defined(USE_AES_CCM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/>EncCtr[16];</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/>CtrBlock[16];</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_AES_GCM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/>gInit[16];</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TagTemp[4];</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/>Hash_SubKey[16];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProcessedBitCount[4];</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputBufferCount;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutputBufferCount;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Buffer[128];</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BufferAlignment;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>Input;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_AES_GCM<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_AES_CCM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ccmTagTemp[16<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)];<sp/></highlight><highlight class="comment">/*<sp/>32<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Used<sp/>for<sp/>formatting<sp/>IV.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Temporary[16];</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Used<sp/>for<sp/>processing<sp/>Mac.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Y0[16];</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>u;<sp/></highlight><highlight class="comment">/*<sp/>48<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_AES_CCM<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}<sp/><ref refid="structps_aes_cipher__t" kindref="compound">psAesCipher_t</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="unionps_aes_cipher_context__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_AES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structps_aes_cipher__t" kindref="compound">psAesCipher_t</ref><sp/><sp/><sp/>aes;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}<sp/><ref refid="unionps_aes_cipher_context__t" kindref="compound">psAesCipherContext_t</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_AES_CBC_EXTERNAL<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_AES<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>aes_encrypt_init(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*key,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>aes_encrypt(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*plain,<sp/>u8<sp/>*crypt);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>aes_encrypt_deinit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>aes_decrypt_init(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*key,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>aes_decrypt(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*crypt,<sp/>u8<sp/>*plain);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>aes_decrypt_deinit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USE_AES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;Must<sp/>Enable<sp/>USE_AES<sp/>in<sp/>cryptoConfig.h!&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_AES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/><sp/><sp/><sp/>CBC<sp/>Mode<sp/>AES</highlight></codeline>
+<codeline lineno="160"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">PSPUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>psAesInit(<ref refid="unionps_aes_cipher_context__t" kindref="compound">psAesCipherContext_t</ref><sp/>*ctx,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*IV,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>keylen);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">PSPUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>psAesDecrypt(<ref refid="unionps_aes_cipher_context__t" kindref="compound">psAesCipherContext_t</ref><sp/>*ctx,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ct,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pt,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">PSPUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>psAesEncrypt(<ref refid="unionps_aes_cipher_context__t" kindref="compound">psAesCipherContext_t</ref><sp/>*ctx,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pt,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ct,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/><sp/><sp/><sp/>Block<sp/>Mode<sp/>AES</highlight></codeline>
+<codeline lineno="169"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">PSPUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>psAesInitKey(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>keylen,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structps_aes_key__t" kindref="compound">psAesKey_t</ref><sp/>*skey);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">PSPUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>psAesEncryptBlock(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pt,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ct,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structps_aes_key__t" kindref="compound">psAesKey_t</ref><sp/>*skey);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">PSPUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>psAesDecryptBlock(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ct,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pt,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structps_aes_key__t" kindref="compound">psAesKey_t</ref><sp/>*skey);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="wm__crypto_8h_1a5199c89739ee00a4ae8515865479824f" kindref="member">aes_128_cbc_encrypt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*iv,<sp/>u8<sp/>*data,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>data_len);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="wm__crypto_8h_1abf2c6fa780ae8b40fa8b568db7a5926d" kindref="member">aes_128_cbc_decrypt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*iv,<sp/>u8<sp/>*data,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>data_len);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>AES_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Platform/aes.h"/>
+  </compounddef>
+</doxygen>

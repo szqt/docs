@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="unionps_aes_cipher_context__t" kind="union" language="C++" prot="public">
+    <compoundname>psAesCipherContext_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionps_aes_cipher_context__t_1a449e715b43273fab99487176fe2eae60" prot="public" static="no" mutable="no">
+        <type><ref refid="structps_aes_cipher__t" kindref="compound">psAesCipher_t</ref></type>
+        <definition>psAesCipher_t psAesCipherContext_t::aes</definition>
+        <argsstring></argsstring>
+        <name>aes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="135" column="1" bodyfile="Include/Platform/aes.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="111">
+        <label>psAesCipherContext_t</label>
+        <link refid="unionps_aes_cipher_context__t"/>
+        <childnode refid="112" relation="usage">
+          <edgelabel>aes</edgelabel>
+        </childnode>
+      </node>
+      <node id="112">
+        <label>psAesCipher_t</label>
+        <link refid="structps_aes_cipher__t"/>
+        <childnode refid="113" relation="usage">
+          <edgelabel>key</edgelabel>
+        </childnode>
+      </node>
+      <node id="113">
+        <label>psAesKey_t</label>
+        <link refid="structps_aes_key__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Platform/aes.h" line="133" column="1" bodyfile="Include/Platform/aes.h" bodystart="133" bodyend="137"/>
+    <listofallmembers>
+      <member refid="unionps_aes_cipher_context__t_1a449e715b43273fab99487176fe2eae60" prot="public" virt="non-virtual"><scope>psAesCipherContext_t</scope><name>aes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

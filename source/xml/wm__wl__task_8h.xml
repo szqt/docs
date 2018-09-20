@@ -1,0 +1,1134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__wl__task_8h" kind="file" language="C++">
+    <compoundname>wm_wl_task.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includes refid="wm__wl__mbox_8h" local="yes">wm_wl_mbox.h</includes>
+    <includes refid="wm__wl__timers_8h" local="yes">wm_wl_timers.h</includes>
+    <incdepgraph>
+      <node id="365">
+        <label>Include/Platform/wm_wl_task.h</label>
+        <link refid="wm__wl__task_8h"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+      </node>
+      <node id="366">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="370">
+        <label>stdlib.h</label>
+      </node>
+      <node id="368">
+        <label>wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="372">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="375">
+        <label>wm_wl_timers.h</label>
+        <link refid="wm__wl__timers_8h"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+      </node>
+      <node id="367">
+        <label>wm_wl_mbox.h</label>
+        <link refid="wm__wl__mbox_8h"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>stdio.h</label>
+      </node>
+      <node id="374">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structtask__msg" prot="public">task_msg</innerclass>
+    <innerclass refid="structtask__parameter" prot="public">task_parameter</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__wl__task_8h_1af8702226795804b423d625215d40f7bd" prot="public" static="no">
+        <name>TLS_TASK_START_PRIO</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="18" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1ab03ffbd60ee1fed81004ebddef1fa1d9" prot="public" static="no">
+        <name>TASK_WL_PRIO</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="19" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a2c8df2964bd1725de6348b54a2549dd3" prot="public" static="no">
+        <name>TASK_WL_PRIO_MAX</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="20" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a3a04eb4866c07d290e13ad10b385e7c6" prot="public" static="no">
+        <name>TLS_SUPPLICANT_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="21" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1aa63e9b02016f03627d0868f50cdc7a24" prot="public" static="no">
+        <name>TLS_SUPPLICANT_TIMER_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="22" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a0cc2062d8351009294a42a95967d34d7" prot="public" static="no">
+        <name>TLS_LWIP_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="23" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a50a0703cbecbaf9a0272315781cdc583" prot="public" static="no">
+        <name>TLS_SYS_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="24" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a8c0f4ef24441634c3dd2c9ad0a1d4c9a" prot="public" static="no">
+        <name>TLS_HOSTIF_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="25" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a69c1c11cabe98308dbee817f27a984db" prot="public" static="no">
+        <name>TLS_SPI_SCHEDULER_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="26" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1ac56fe5c674b009fb9efc87ef0a30bf87" prot="public" static="no">
+        <name>TLS_FWUP_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="27" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1ad13c6af4e30428ddc5c36e1be11bbb19" prot="public" static="no">
+        <name>TLS_HTTP_CLIENT_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="28" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1ac0ef3be3673d9ff3ff24be20b312efda" prot="public" static="no">
+        <name>AP_SOCKET_S_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="29" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a0163340b6f7577c010f58bad683a7691" prot="public" static="no">
+        <name>TLS_UPNP_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="30" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a34097dcdec5ba96211f9031e430aede1" prot="public" static="no">
+        <name>TLS_ONESHOT_TASK_PRIO</name>
+        <initializer>(TASK_WL_PRIO_MAX + 15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="31" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a02e646c238f0ac4efb0af1bd4bf301e9" prot="public" static="no">
+        <name>TLS_MBOX_ALL_COUNT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="33" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1aa916eaaa68fbb00e12f1be76dc923fa5" prot="public" static="no">
+        <name>TLS_MBOX_ID_WL_TASK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="34" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a6a972f3d94eddb512208602068ac7c9b" prot="public" static="no">
+        <name>TLS_MBOX_ID_HOSTIF_TASK</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="35" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a431c805ec362d2e30a02eb0b53a17a98" prot="public" static="no">
+        <name>TLS_MBOX_ID_JDCLOUD_SERVER</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="36" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a49843776d6a5a66eeeb2e5fdfea4ba63" prot="public" static="no">
+        <name>TLS_MBOX_ID_JDCLOUD_DATA</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="37" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a7b0c2731fe4ca96db2cfd3f6832d59e2" prot="public" static="no">
+        <name>TLS_MBOX_ID_UPNP_HD</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="38" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a36c807ab06d08c7309e41b2eeec1e8a1" prot="public" static="no">
+        <name>TLS_MBOX_ID_UPNP_COMMON</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="39" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a756e2aa6ee3b13fd595c98d5f0d47a12" prot="public" static="no">
+        <name>TLS_MBOX_ID_UPNP_GENA</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="40" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a4e3340b6ced0d5a171f9043d2bc2d0cf" prot="public" static="no">
+        <name>TLS_MBOX_ID_UPNP_MINISERVER</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="41" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a94fb22716d865e9ae5efe9e514aaf483" prot="public" static="no">
+        <name>TLS_TIMEO_ALL_COUONT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="43" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1ab09bb87b826770ed60e9f69ad96de5a1" prot="public" static="no">
+        <name>TLS_TIMEO_ID_NULL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="44" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1af1821d093d24551c1237f85cc41e26b6" prot="public" static="no">
+        <name>TLS_TIMEO_ID_WL_TASK</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="45" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a456191552c7496c5726e15ffdaf09e78" prot="public" static="no">
+        <name>TLS_TIMEO_ID_HOSTIF_TASK</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="46" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a3b3e891e8af2252011616bdf971bcae4" prot="public" static="no">
+        <name>TLS_TIMEO_ID_JDCLOUD_SERVER</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="47" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a90a5a61a6600c02cf82cbbfb31a4bc51" prot="public" static="no">
+        <name>TLS_TIMEO_ID_JDCLOUD_DATA</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="48" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1acd88768783881d57a30b5d8f283819b2" prot="public" static="no">
+        <name>TLS_TIMEO_ID_UPNP_HD</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="49" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a32c138186dc686415a3737a041820d5a" prot="public" static="no">
+        <name>TLS_TIMEO_ID_UPNP_COMMON</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="50" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1ab9497cfd22408d2216d25d9e2aa62909" prot="public" static="no">
+        <name>TLS_TIMEO_ID_UPNP_GENA</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="51" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a7b04194c6ae45d5047ff0ee61eeebc02" prot="public" static="no">
+        <name>TLS_TIMEO_ID_UPNP_MINISERVER</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="52" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1aecdbdd9068dbf2968af2efe94643d84e" prot="public" static="no">
+        <name>TLS_MSG_ALL_COUONT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="54" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1ab486d26becdb506fdb41e52512e9ad7e" prot="public" static="no">
+        <name>TLS_MSG_ID_TX_MGMT_CMPLT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="55" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1aff12a9050abaadfeb3c12a7d64280be3" prot="public" static="no">
+        <name>TLS_MSG_ID_MLME_TASK</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="56" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1aa6a1642ee57a2643305ea3123bcb7ee7" prot="public" static="no">
+        <name>TLS_MSG_ID_UART_SENT_FREE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="57" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1af7e4f939c73219f4c3976938c6770cad" prot="public" static="no">
+        <name>TLS_MSG_ID_UART_RX</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="58" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a1cd641e7dfb0d46e9a284fb032029cd6" prot="public" static="no">
+        <name>TLS_MSG_ID_HSPI_RX_CMD</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="59" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a447ea25d2a383127425018a23587fd69" prot="public" static="no">
+        <name>TLS_MSG_ID_HSPI_RX_DATA</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="60" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1af52ca7c59aa1510bca9eef9a37febf2f" prot="public" static="no">
+        <name>TLS_MSG_ID_HSPI_TX_DATA</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="61" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wl__task_8h_1a6c14ace31f572aeb2001b28ac7bbdf45" prot="public" static="no">
+        <name>TLS_MSG_ID_TX_DATA_CMPLT</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="62" column="9" bodyfile="Include/Platform/wm_wl_task.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>task_msg_type</name>
+        <enumvalue id="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02aa9e2760bc66a3f146ef9558f48f9d3de0" prot="public">
+          <name>TASK_MSG_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02aa18c7f04bf6bf843a0fa6791824befa75" prot="public">
+          <name>TASK_MSG_UNTIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02aa98e214d0ba9584d5f43e147991cbbcf4" prot="public">
+          <name>TASK_MSG_CALLBACK_WITH_BLOCK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02aa98ded57cfad723fa9b7cc456d1f230e8" prot="public">
+          <name>TASK_MSG_CALLBACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02aa0c54680b75d59dc3775aee979128dee7" prot="public">
+          <name>TASK_MSG_CALLBACK_STATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02aab9310cf5977f45f8eb354ddda744d5aa" prot="public">
+          <name>TASK_MSG_NULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>message type of task </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="71" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="71" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__wl__task_8h_1a432c791edd563702d1d4bfcd1031f35f" prot="public" static="no">
+        <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> *</type>
+        <definition>typedef tls_os_sem_t* tls_sem_t</definition>
+        <argsstring></argsstring>
+        <name>tls_sem_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointer to the semaphore </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="65" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" prot="public" static="no">
+        <type>void *(*</type>
+        <definition>typedef void*(* start_routine) (void *arg)</definition>
+        <argsstring>)(void *arg)</argsstring>
+        <name>start_routine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Thread start routine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="68" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___task___a_p_is_1gafcd1f1f8711d3bad3869a20967bf05b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wl_task_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>task initialized </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1ga3123df4ab17dcd2872a04d8c8598de94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_run</definition>
+        <argsstring>(struct task_parameter *task_param)</argsstring>
+        <name>tls_wl_task_run</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <briefdescription>
+<para>running the task </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1gaf39105749769ea398ec3606dfa022928" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_callback_static</definition>
+        <argsstring>(struct task_parameter *task_param, start_routine function, void *ctx, u8 block, u8 msg_id)</argsstring>
+        <name>tls_wl_task_callback_static</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref></type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>msg_id</declname>
+        </param>
+        <briefdescription>
+<para>running the callback function </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msg_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1gaa9015aa23db873494a482e4c891d56f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_callback</definition>
+        <argsstring>(struct task_parameter *task_param, start_routine function, void *ctx, u8 block)</argsstring>
+        <name>tls_wl_task_callback</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref></type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+<para>running the callback function </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1ga085d796fbd8199146b1b1304a23ba5cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_add_timeout</definition>
+        <argsstring>(struct task_parameter *task_param, u32 msecs, tls_timeout_handler h, void *arg)</argsstring>
+        <name>tls_wl_task_add_timeout</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>msecs</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref></type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>add a timer to the task </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msecs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of the callback function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1ga66067de7784d05119b158fc09c5b5b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_untimeout</definition>
+        <argsstring>(struct task_parameter *task_param, tls_timeout_handler h, void *arg)</argsstring>
+        <name>tls_wl_task_untimeout</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref></type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of the callback function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="218" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>task APIs </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__TLS_WL_TASK_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TLS_WL_TASK_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__wl__mbox_8h" kindref="compound">wm_wl_mbox.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__wl__timers_8h" kindref="compound">wm_wl_timers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;ithread.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TASK_START_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TASK_WL_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TASK_WL_PRIO_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SUPPLICANT_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SUPPLICANT_TIMER_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_LWIP_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SYS_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_HOSTIF_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_SPI_SCHEDULER_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_HTTP_CLIENT_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AP_SOCKET_S_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_UPNP_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>11)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_ONESHOT_TASK_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TASK_WL_PRIO_MAX<sp/>+<sp/>15)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MBOX_ALL_COUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MBOX_ID_WL_TASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MBOX_ID_HOSTIF_TASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MBOX_ID_JDCLOUD_SERVER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MBOX_ID_JDCLOUD_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MBOX_ID_UPNP_HD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MBOX_ID_UPNP_COMMON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MBOX_ID_UPNP_GENA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MBOX_ID_UPNP_MINISERVER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ALL_COUONT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ID_NULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ID_WL_TASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ID_HOSTIF_TASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ID_JDCLOUD_SERVER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ID_JDCLOUD_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ID_UPNP_HD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ID_UPNP_COMMON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ID_UPNP_GENA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_TIMEO_ID_UPNP_MINISERVER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MSG_ALL_COUONT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MSG_ID_TX_MGMT_CMPLT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MSG_ID_MLME_TASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MSG_ID_UART_SENT_FREE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MSG_ID_UART_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MSG_ID_HSPI_RX_CMD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MSG_ID_HSPI_RX_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MSG_ID_HSPI_TX_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MSG_ID_TX_DATA_CMPLT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="wm__wl__task_8h_1a432c791edd563702d1d4bfcd1031f35f" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref><sp/>*<sp/><ref refid="wm__wl__task_8h_1a432c791edd563702d1d4bfcd1031f35f" kindref="member">tls_sem_t</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*(*start_routine)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02a" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02a" kindref="member">task_msg_type</ref><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>TASK_MSG_TIMEOUT,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>TASK_MSG_UNTIMEOUT,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>TASK_MSG_CALLBACK_WITH_BLOCK,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>TASK_MSG_CALLBACK,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>TASK_MSG_CALLBACK_STATIC,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>TASK_MSG_NULL</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structtask__msg" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtask__msg" kindref="compound">task_msg</ref><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02a" kindref="member">task_msg_type</ref><sp/>type;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="wm__wl__task_8h_1a432c791edd563702d1d4bfcd1031f35f" kindref="member">tls_sem_t</ref><sp/>*sem;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>cb;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/>cnt;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>cbs;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>msecs;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref><sp/>h;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>tmo;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>}<sp/>msg;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="structtask__parameter" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtask__parameter" kindref="compound">task_parameter</ref>{</highlight></codeline>
+<codeline lineno="104" refid="structtask__parameter_1a61e1a50d55869cf0a8484e82bf1da08f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtask__parameter_1a61e1a50d55869cf0a8484e82bf1da08f" kindref="member">task_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="structtask__parameter_1aeea9112dee514c6a9717c782750d7e98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="structtask__parameter_1aeea9112dee514c6a9717c782750d7e98" kindref="member">name</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="structtask__parameter_1a0d83c9d91dc1402fec404e9bf2d06c07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>*<ref refid="structtask__parameter_1a0d83c9d91dc1402fec404e9bf2d06c07" kindref="member">stk_start</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="structtask__parameter_1aea5e915719380b6c6e9fb91cd065761a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtask__parameter_1aea5e915719380b6c6e9fb91cd065761a" kindref="member">stk_size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="structtask__parameter_1a0ab8abc941f0d0bcda24323125d77b98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtask__parameter_1a0ab8abc941f0d0bcda24323125d77b98" kindref="member">mbox_size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="structtask__parameter_1a07bde9214225a299722d6d6b1df4959e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtask__parameter_1a07bde9214225a299722d6d6b1df4959e" kindref="member">mbox_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="structtask__parameter_1a97c6bc0dfb736326f25d838023ffb375" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtask__parameter_1a97c6bc0dfb736326f25d838023ffb375" kindref="member">timeo_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">s8<sp/><ref refid="group___task___a_p_is_1gafcd1f1f8711d3bad3869a20967bf05b6" kindref="member">tls_wl_task_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">s8<sp/><ref refid="group___task___a_p_is_1ga3123df4ab17dcd2872a04d8c8598de94" kindref="member">tls_wl_task_run</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtask__parameter" kindref="compound">task_parameter</ref><sp/>*task_param);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">s8<sp/><ref refid="group___task___a_p_is_1gaf39105749769ea398ec3606dfa022928" kindref="member">tls_wl_task_callback_static</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtask__parameter" kindref="compound">task_parameter</ref><sp/>*task_param,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,<sp/>u8<sp/>block,<sp/>u8<sp/>msg_id);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">s8<sp/><ref refid="group___task___a_p_is_1gaa9015aa23db873494a482e4c891d56f9" kindref="member">tls_wl_task_callback</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtask__parameter" kindref="compound">task_parameter</ref><sp/>*task_param,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,<sp/>u8<sp/>block);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">s8<sp/><ref refid="group___task___a_p_is_1ga085d796fbd8199146b1b1304a23ba5cc" kindref="member">tls_wl_task_add_timeout</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtask__parameter" kindref="compound">task_parameter</ref><sp/>*task_param,<sp/>u32<sp/>msecs,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref><sp/>h,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">s8<sp/><ref refid="group___task___a_p_is_1ga66067de7784d05119b158fc09c5b5b3c" kindref="member">tls_wl_task_untimeout</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtask__parameter" kindref="compound">task_parameter</ref><sp/>*task_param,</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref><sp/>h,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Platform/wm_wl_task.h"/>
+  </compounddef>
+</doxygen>

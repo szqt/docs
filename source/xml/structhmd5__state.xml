@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structhmd5__state" kind="struct" language="C++" prot="public">
+    <compoundname>hmd5_state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhmd5__state_1a4836d8c34f136df463233c9b2689a1be" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hmd5_state::lengthHi</definition>
+        <argsstring></argsstring>
+        <name>lengthHi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="157" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhmd5__state_1a9606c22ee6f8c72a8fab474e99dbe348" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hmd5_state::lengthLo</definition>
+        <argsstring></argsstring>
+        <name>lengthLo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="158" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhmd5__state_1af44217ca8e696896f0f2f661a46537c6" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hmd5_state::state[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="160" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhmd5__state_1a00a913973109aadf0f9913f7176fa1a1" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hmd5_state::curlen</definition>
+        <argsstring></argsstring>
+        <name>curlen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="160" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhmd5__state_1a41d031d93084a194e8169fefa64dd8e5" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char hmd5_state::buf[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="161" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Platform/wm_crypto_hard.h" line="153" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="153" bodyend="162"/>
+    <listofallmembers>
+      <member refid="structhmd5__state_1a41d031d93084a194e8169fefa64dd8e5" prot="public" virt="non-virtual"><scope>hmd5_state</scope><name>buf</name></member>
+      <member refid="structhmd5__state_1a00a913973109aadf0f9913f7176fa1a1" prot="public" virt="non-virtual"><scope>hmd5_state</scope><name>curlen</name></member>
+      <member refid="structhmd5__state_1a4836d8c34f136df463233c9b2689a1be" prot="public" virt="non-virtual"><scope>hmd5_state</scope><name>lengthHi</name></member>
+      <member refid="structhmd5__state_1a9606c22ee6f8c72a8fab474e99dbe348" prot="public" virt="non-virtual"><scope>hmd5_state</scope><name>lengthLo</name></member>
+      <member refid="structhmd5__state_1af44217ca8e696896f0f2f661a46537c6" prot="public" virt="non-virtual"><scope>hmd5_state</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

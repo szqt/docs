@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structhostent" kind="struct" language="C++" prot="public">
+    <compoundname>hostent</compoundname>
+    <includes refid="wm__sockets_8h" local="no">wm_sockets.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhostent_1a2673b3effc9688880551140d4d683454" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * hostent::h_name</definition>
+        <argsstring></argsstring>
+        <name>h_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Official name of the host. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="78" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhostent_1a4531fae316926d6a9f9ea3c5c9c673ec" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char ** hostent::h_aliases</definition>
+        <argsstring></argsstring>
+        <name>h_aliases</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to an array of pointers to alternative host names, terminated by a null pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="79" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhostent_1a405ebb31a6922898809635b03f0faf06" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hostent::h_addrtype</definition>
+        <argsstring></argsstring>
+        <name>h_addrtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="81" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhostent_1ab9db18bfcc6adfc9c944b0c06ec2dccc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hostent::h_length</definition>
+        <argsstring></argsstring>
+        <name>h_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The length, in bytes, of the address. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="82" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhostent_1a724d319362cb1558e899960ba17ad953" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char ** hostent::h_addr_list</definition>
+        <argsstring></argsstring>
+        <name>h_addr_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to an array of pointers to network addresses (in network byte order) for the host, terminated by a null pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="83" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure describing a host entry </para>    </detaileddescription>
+    <location file="Include/Net/wm_sockets.h" line="77" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="77" bodyend="86"/>
+    <listofallmembers>
+      <member refid="structhostent_1a724d319362cb1558e899960ba17ad953" prot="public" virt="non-virtual"><scope>hostent</scope><name>h_addr_list</name></member>
+      <member refid="structhostent_1a405ebb31a6922898809635b03f0faf06" prot="public" virt="non-virtual"><scope>hostent</scope><name>h_addrtype</name></member>
+      <member refid="structhostent_1a4531fae316926d6a9f9ea3c5c9c673ec" prot="public" virt="non-virtual"><scope>hostent</scope><name>h_aliases</name></member>
+      <member refid="structhostent_1ab9db18bfcc6adfc9c944b0c06ec2dccc" prot="public" virt="non-virtual"><scope>hostent</scope><name>h_length</name></member>
+      <member refid="structhostent_1a2673b3effc9688880551140d4d683454" prot="public" virt="non-virtual"><scope>hostent</scope><name>h_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

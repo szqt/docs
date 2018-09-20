@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___task___a_p_is" kind="group">
+    <compoundname>Task_APIs</compoundname>
+    <title>Task APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___task___a_p_is_1gafcd1f1f8711d3bad3869a20967bf05b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wl_task_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>task initialized </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1ga3123df4ab17dcd2872a04d8c8598de94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_run</definition>
+        <argsstring>(struct task_parameter *task_param)</argsstring>
+        <name>tls_wl_task_run</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <briefdescription>
+<para>running the task </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1gaf39105749769ea398ec3606dfa022928" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_callback_static</definition>
+        <argsstring>(struct task_parameter *task_param, start_routine function, void *ctx, u8 block, u8 msg_id)</argsstring>
+        <name>tls_wl_task_callback_static</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref></type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>msg_id</declname>
+        </param>
+        <briefdescription>
+<para>running the callback function </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msg_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1gaa9015aa23db873494a482e4c891d56f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_callback</definition>
+        <argsstring>(struct task_parameter *task_param, start_routine function, void *ctx, u8 block)</argsstring>
+        <name>tls_wl_task_callback</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref></type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+<para>running the callback function </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1ga085d796fbd8199146b1b1304a23ba5cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_add_timeout</definition>
+        <argsstring>(struct task_parameter *task_param, u32 msecs, tls_timeout_handler h, void *arg)</argsstring>
+        <name>tls_wl_task_add_timeout</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>msecs</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref></type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>add a timer to the task </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msecs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of the callback function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___task___a_p_is_1ga66067de7784d05119b158fc09c5b5b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_wl_task_untimeout</definition>
+        <argsstring>(struct task_parameter *task_param, tls_timeout_handler h, void *arg)</argsstring>
+        <name>tls_wl_task_untimeout</name>
+        <param>
+          <type>struct <ref refid="structtask__parameter" kindref="compound">task_parameter</ref> *</type>
+          <declname>task_param</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref></type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the callback function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter of the callback function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="218" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Software task APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

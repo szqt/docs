@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__mem_8h" kind="file" language="C++">
+    <compoundname>wm_mem.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <incdepgraph>
+      <node id="342">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="341">
+        <label>Include/Platform/wm_mem.h</label>
+        <link refid="wm__mem_8h"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="343">
+        <label>Include/Platform/wm_mem.h</label>
+        <link refid="wm__mem_8h"/>
+        <childnode refid="344" relation="include">
+        </childnode>
+      </node>
+      <node id="344">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gaea854575acd10477639f2a127c5fcb3c" prot="public" static="no">
+        <name>tls_mem_alloc</name>
+        <param><defname>size</defname></param>
+        <initializer>mem_alloc_debug(size)</initializer>
+        <briefdescription>
+<para>This function is called by memory allocation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>malloc failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory alloc success</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="115" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gad04d6c3d21ee42b81b10824b85069d7c" prot="public" static="no">
+        <name>tls_mem_free</name>
+        <initializer>mem_free_debug</initializer>
+        <briefdescription>
+<para>This function is used to free memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="126" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gad5e67380862b2247679821592a7a8dc7" prot="public" static="no">
+        <name>tls_mem_realloc</name>
+        <initializer>mem_realloc_debug</initializer>
+        <briefdescription>
+<para>This function is used to realloc memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc success</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="138" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gac010a5aaa39790a79698caa25b2c229b" prot="public" static="no">
+        <name>tls_mem_calloc</name>
+        <initializer>mem_calloc_debug</initializer>
+        <briefdescription>
+<para>This function is used to calloc memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>realloc success</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="150" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1gaa1dd57a66b6de8c0593e9e3e8d1411f6" prot="public" static="no">
+        <name>MEMCPY</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <param><defname>len</defname></param>
+        <initializer>memcpy(dst,src,len)</initializer>
+        <briefdescription>
+<para>This function is used to copy memory from src to dst. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to destination </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to source </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length to copy</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="163" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_e_m___a_p_is_1ga8c6e3c1e4f74acb16376188dbf8909ec" prot="public" static="no">
+        <name>SMEMCPY</name>
+        <param><defname>dst</defname></param>
+        <param><defname>src</defname></param>
+        <param><defname>len</defname></param>
+        <initializer>memcpy(dst,src,len)</initializer>
+        <briefdescription>
+<para>This function is used to copy memory from src to dst. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to destination </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to source </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length to copy</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="176" column="9" bodyfile="Include/Platform/wm_mem.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__mem_8h_1a3ea833f7c4d192954eedf21c497b16d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* mem_alloc_debug</definition>
+        <argsstring>(u32 size)</argsstring>
+        <name>mem_alloc_debug</name>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__mem_8h_1ae56161be90b721a5af02172318cfa3c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mem_free_debug</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>mem_free_debug</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__mem_8h_1ae03f0695e7accbba2beb580e96fadbd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* mem_realloc_debug</definition>
+        <argsstring>(void *mem_address, u32 size)</argsstring>
+        <name>mem_realloc_debug</name>
+        <param>
+          <type>void *</type>
+          <declname>mem_address</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__mem_8h_1a4c230080060a879d99817b0df3c290b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* mem_calloc_debug</definition>
+        <argsstring>(u32 length, u32 size)</argsstring>
+        <name>mem_calloc_debug</name>
+        <param>
+          <type>u32</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_mem.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*****************************************************************************<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>File<sp/>Name<sp/>:<sp/>wm_mem.h</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/>Description:<sp/>memory<sp/>manager<sp/>Module<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Winner<sp/>Micro<sp/>Electronic<sp/>Design<sp/>Co.,<sp/>Ltd.<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/>Author<sp/>:<sp/>dave</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/>Date<sp/>:<sp/>2014-6-12<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*****************************************************************************/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WM_MEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_MEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>WM_MEM_DEBUG<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>WM_MEM_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MEM_HEADER_PATTERN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x76028412</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MEM_TAILER_PATTERN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x83395627</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MEM_FREED_PATTERN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x82962503</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>u32<sp/>alloc_heap_mem_bytes;<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>u32<sp/>alloc_heap_mem_blk_cnt;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>u32<sp/>alloc_heap_mem_max_size;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Note:<sp/>it&apos;s<sp/>important<sp/>that<sp/>the<sp/>size<sp/>of<sp/>MP_MEMORY_BLOCK<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>be<sp/>multiple<sp/>of<sp/>16<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_MEMORY_BLOCK<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/><sp/>list;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*file;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/>pad;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/>line;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/>length;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/>header_pattern;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<sp/>MEMORY_BLOCK,<sp/>*PMEMORY_BLOCK;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_MEMORY_PATTERN{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>pattern0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//u32<sp/>pattern1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//u32<sp/>pattern2;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//u32<sp/>pattern3;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}MEMORY_PATTERN,<sp/>*PMEMORY_PATTERN;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mem_free_debug(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>tls_mem_free(p)<sp/><sp/><sp/>mem_free_debug(<sp/>p,<sp/>__FILE__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem_alloc_debug(u32<sp/>size,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mem_free_allocated_blocks(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>tls_mem_alloc(size)<sp/><sp/><sp/>mem_alloc_debug(size,<sp/>__FILE__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>mem_realloc_debug(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem_address,<sp/>u32<sp/>size,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>tls_mem_realloc(mem_address,<sp/>size)<sp/><sp/><sp/>mem_realloc_debug(mem_address,<sp/>size,<sp/>__FILE__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem_calloc_debug(u32<sp/>n,u32<sp/>size,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>tls_mem_calloc(n,<sp/>size)<sp/>mem_calloc_debug(n,<sp/>size,<sp/>__FILE__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_mem_alloc_info(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>is_safe_addr_debug(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p,<sp/>u32<sp/>len,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>tls_is_safe_addr(p,<sp/>len)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is_safe_addr_debug(p,<sp/>len,<sp/>__FILE__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEMCPY<sp/>memcpy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SMEMCPY<sp/>MEMCPY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEMCPY(dst,src,len)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(tls_is_safe_addr(dst,<sp/>len)){<sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>memcpy(dst,src,len);}}while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SMEMCPY(dst,src,len)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(tls_is_safe_addr(dst,<sp/>len)){<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>memcpy(dst,src,len);}}while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>WM_MEM_DEBUG<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>mem_alloc_debug(u32<sp/>size);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mem_free_debug(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>mem_realloc_debug(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem_address,<sp/>u32<sp/>size);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*mem_calloc_debug(u32<sp/>length,<sp/>u32<sp/>size);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="group___m_e_m___a_p_is_1gaea854575acd10477639f2a127c5fcb3c" refkind="member"><highlight class="preprocessor">#define<sp/>tls_mem_alloc(size)<sp/><sp/><sp/>mem_alloc_debug(size)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="group___m_e_m___a_p_is_1gad04d6c3d21ee42b81b10824b85069d7c" refkind="member"><highlight class="preprocessor">#define<sp/>tls_mem_free<sp/><sp/><sp/><sp/><sp/><sp/><sp/>mem_free_debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="group___m_e_m___a_p_is_1gad5e67380862b2247679821592a7a8dc7" refkind="member"><highlight class="preprocessor">#define<sp/>tls_mem_realloc<sp/><sp/><sp/>mem_realloc_debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="group___m_e_m___a_p_is_1gac010a5aaa39790a79698caa25b2c229b" refkind="member"><highlight class="preprocessor">#define<sp/>tls_mem_calloc<sp/><sp/><sp/><sp/>mem_calloc_debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="group___m_e_m___a_p_is_1gaa1dd57a66b6de8c0593e9e3e8d1411f6" refkind="member"><highlight class="preprocessor">#define<sp/>MEMCPY(dst,src,len)<sp/><sp/><sp/><sp/><sp/><sp/>memcpy(dst,src,len)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="group___m_e_m___a_p_is_1ga8c6e3c1e4f74acb16376188dbf8909ec" refkind="member"><highlight class="preprocessor">#define<sp/>SMEMCPY(dst,src,len)<sp/><sp/><sp/><sp/>memcpy(dst,src,len)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_MEM_DEBUG<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TLS_MEM_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Platform/wm_mem.h"/>
+  </compounddef>
+</doxygen>

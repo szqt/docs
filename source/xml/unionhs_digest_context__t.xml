@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="unionhs_digest_context__t" kind="union" language="C++" prot="public">
+    <compoundname>hsDigestContext_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionhs_digest_context__t_1a067f684f01f65484aff8e76357116761" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhsha1__state" kindref="compound">hsha1_state</ref></type>
+        <definition>struct hsha1_state hsDigestContext_t::sha1</definition>
+        <argsstring></argsstring>
+        <name>sha1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="161" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionhs_digest_context__t_1a90663152dda27a11613f88444f9fbebf" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhmd5__state" kindref="compound">hmd5_state</ref></type>
+        <definition>struct hmd5_state hsDigestContext_t::md5</definition>
+        <argsstring></argsstring>
+        <name>md5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="161" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="34">
+        <label>hmd5_state</label>
+        <link refid="structhmd5__state"/>
+      </node>
+      <node id="33">
+        <label>hsha1_state</label>
+        <link refid="structhsha1__state"/>
+      </node>
+      <node id="32">
+        <label>hsDigestContext_t</label>
+        <link refid="unionhs_digest_context__t"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>sha1</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>md5</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Platform/wm_crypto_hard.h" line="164" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="164" bodyend="167"/>
+    <listofallmembers>
+      <member refid="unionhs_digest_context__t_1a90663152dda27a11613f88444f9fbebf" prot="public" virt="non-virtual"><scope>hsDigestContext_t</scope><name>md5</name></member>
+      <member refid="unionhs_digest_context__t_1a067f684f01f65484aff8e76357116761" prot="public" virt="non-virtual"><scope>hsDigestContext_t</scope><name>sha1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

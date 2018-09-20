@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__skt__status__ext__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_skt_status_ext_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__skt__status__ext__t_1ad159c43655af54c2e7b746575f461df1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_skt_status_ext_t::socket</definition>
+        <argsstring></argsstring>
+        <name>socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="263" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__skt__status__ext__t_1ae20144c58d0ddb2cf8648cb09c458821" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_skt_status_ext_t::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="264" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__skt__status__ext__t_1a0d70466b34dc16fb8e9af479bb137fd0" prot="public" static="no" mutable="no">
+        <type>enum tls_socket_protocol</type>
+        <definition>enum tls_socket_protocol tls_skt_status_ext_t::protocol</definition>
+        <argsstring></argsstring>
+        <name>protocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="264" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__skt__status__ext__t_1ac010d85aaae98fdb63483f068d70afcf" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_skt_status_ext_t::host_ipaddr</definition>
+        <argsstring>[4]</argsstring>
+        <name>host_ipaddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="266" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__skt__status__ext__t_1a997b4c16d20d06b5b92dc595f1e68609" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_skt_status_ext_t::remote_port</definition>
+        <argsstring></argsstring>
+        <name>remote_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="267" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__skt__status__ext__t_1a77f5a79ce43cd2b2d897a5771d727d67" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_skt_status_ext_t::local_port</definition>
+        <argsstring></argsstring>
+        <name>local_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="268" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Net/wm_socket.h" line="262" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="262" bodyend="269"/>
+    <listofallmembers>
+      <member refid="structtls__skt__status__ext__t_1ac010d85aaae98fdb63483f068d70afcf" prot="public" virt="non-virtual"><scope>tls_skt_status_ext_t</scope><name>host_ipaddr</name></member>
+      <member refid="structtls__skt__status__ext__t_1a77f5a79ce43cd2b2d897a5771d727d67" prot="public" virt="non-virtual"><scope>tls_skt_status_ext_t</scope><name>local_port</name></member>
+      <member refid="structtls__skt__status__ext__t_1a0d70466b34dc16fb8e9af479bb137fd0" prot="public" virt="non-virtual"><scope>tls_skt_status_ext_t</scope><name>protocol</name></member>
+      <member refid="structtls__skt__status__ext__t_1a997b4c16d20d06b5b92dc595f1e68609" prot="public" virt="non-virtual"><scope>tls_skt_status_ext_t</scope><name>remote_port</name></member>
+      <member refid="structtls__skt__status__ext__t_1ad159c43655af54c2e7b746575f461df1" prot="public" virt="non-virtual"><scope>tls_skt_status_ext_t</scope><name>socket</name></member>
+      <member refid="structtls__skt__status__ext__t_1ae20144c58d0ddb2cf8648cb09c458821" prot="public" virt="non-virtual"><scope>tls_skt_status_ext_t</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__spi__port" kind="struct" language="C++" prot="public">
+    <compoundname>tls_spi_port</compoundname>
+    <includes refid="wm__hostspi_8h" local="no">wm_hostspi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__spi__port_1af686facb49a4cab0f49abdf0d0ad16e3" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_spi_port::speed_hz</definition>
+        <argsstring></argsstring>
+        <name>speed_hz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clock rate to be used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="133" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1a21839afd2d55036ff411171dfd0ea1fd" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_spi_port::cs_active</definition>
+        <argsstring></argsstring>
+        <name>cs_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>chipselect mode, maybe active low or active high. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="134" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1a97a48081f55d1fd3abcf25ea4f8b2098" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_spi_port::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SPI transfer mode: mode_0(CPHA=0, CHOL=0), mode_1(CPHA=0, CHOL=1), mode_2(CPHA=1, CHOL=0), mode_3(CPHA=1, CHOL=1). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="136" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1ab39e127f720a0c6fba200f7594d8154e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_spi_port::reconfig</definition>
+        <argsstring></argsstring>
+        <name>reconfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="139" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1ab7759dcf7e0d537de9787ae3aac6488e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref></type>
+        <definition>struct dl_list tls_spi_port::wait_queue</definition>
+        <argsstring></argsstring>
+        <name>wait_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>wait list of transaction messages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="139" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1aea6a1b89ad70a3f0e388552cb77d7685" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref> *</type>
+        <definition>tls_os_queue_t* tls_spi_port::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="142" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1a8e7800ac045137e7194ea83d0bc0f096" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref> *</type>
+        <definition>tls_os_queue_t* tls_spi_port::msg_queue</definition>
+        <argsstring></argsstring>
+        <name>msg_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>notify the schedule thread that there&apos;s transaction message queued. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="144" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1a79e5a3f4bce46df7178485d9581d5c98" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__spi__message" kindref="compound">tls_spi_message</ref> *</type>
+        <definition>struct tls_spi_message* tls_spi_port::current_message</definition>
+        <argsstring></argsstring>
+        <name>current_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current transaction message in-progressing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="146" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1a5b80595dc314ca7bfc36d49d528f8715" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_spi_port::current_remaining_transfer</definition>
+        <argsstring></argsstring>
+        <name>current_remaining_transfer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>remaining transfer segments count in current transaction message. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="148" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1aa639572a69029aeba531a0b11a958df3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__spi__transfer" kindref="compound">tls_spi_transfer</ref> *</type>
+        <definition>struct tls_spi_transfer* tls_spi_port::current_transfer</definition>
+        <argsstring></argsstring>
+        <name>current_transfer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current transfer segment in-progressing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="151" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1a686c6f5fa1bf8bd429e90ffb7068db09" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_spi_port::current_remaining_bytes</definition>
+        <argsstring></argsstring>
+        <name>current_remaining_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>remaining data length in current transfer segment. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="153" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__port_1a13a0ee6ba455fcf30dcc719b419ef315" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_spi_port::transtype</definition>
+        <argsstring></argsstring>
+        <name>transtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transfer type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="156" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>driver structure to SPI master controller</para><para>This data structure presents the SPI master controller&apos;s configuration data. The device attached to this SPI master controller share the same transfer mode, chipselect mode and clock rate. And this structure maintains a queue of <ref refid="structtls__spi__message" kindref="compound">tls_spi_message</ref> transactions and uses this <ref refid="structtls__spi__message" kindref="compound">tls_spi_message</ref> transaction to access to the SPI device. For each such message it queues, it calls the message&apos;s completion function when the transaction completes. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="235">
+        <label>tls_spi_transfer</label>
+        <link refid="structtls__spi__transfer"/>
+        <childnode refid="236" relation="usage">
+          <edgelabel>transfer_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="234">
+        <label>tls_spi_port</label>
+        <link refid="structtls__spi__port"/>
+        <childnode refid="235" relation="usage">
+          <edgelabel>current_transfer</edgelabel>
+        </childnode>
+        <childnode refid="236" relation="usage">
+          <edgelabel>wait_queue</edgelabel>
+        </childnode>
+        <childnode refid="237" relation="usage">
+          <edgelabel>current_message</edgelabel>
+        </childnode>
+      </node>
+      <node id="236">
+        <label>dl_list</label>
+        <link refid="structdl__list"/>
+        <childnode refid="236" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="237">
+        <label>tls_spi_message</label>
+        <link refid="structtls__spi__message"/>
+        <childnode refid="236" relation="usage">
+          <edgelabel>transfers</edgelabel>
+          <edgelabel>queue</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_hostspi.h" line="132" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="131" bodyend="157"/>
+    <listofallmembers>
+      <member refid="structtls__spi__port_1a21839afd2d55036ff411171dfd0ea1fd" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>cs_active</name></member>
+      <member refid="structtls__spi__port_1a79e5a3f4bce46df7178485d9581d5c98" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>current_message</name></member>
+      <member refid="structtls__spi__port_1a686c6f5fa1bf8bd429e90ffb7068db09" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>current_remaining_bytes</name></member>
+      <member refid="structtls__spi__port_1a5b80595dc314ca7bfc36d49d528f8715" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>current_remaining_transfer</name></member>
+      <member refid="structtls__spi__port_1aa639572a69029aeba531a0b11a958df3" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>current_transfer</name></member>
+      <member refid="structtls__spi__port_1aea6a1b89ad70a3f0e388552cb77d7685" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>lock</name></member>
+      <member refid="structtls__spi__port_1a97a48081f55d1fd3abcf25ea4f8b2098" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>mode</name></member>
+      <member refid="structtls__spi__port_1a8e7800ac045137e7194ea83d0bc0f096" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>msg_queue</name></member>
+      <member refid="structtls__spi__port_1ab39e127f720a0c6fba200f7594d8154e" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>reconfig</name></member>
+      <member refid="structtls__spi__port_1af686facb49a4cab0f49abdf0d0ad16e3" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>speed_hz</name></member>
+      <member refid="structtls__spi__port_1a13a0ee6ba455fcf30dcc719b419ef315" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>transtype</name></member>
+      <member refid="structtls__spi__port_1ab7759dcf7e0d537de9787ae3aac6488e" prot="public" virt="non-virtual"><scope>tls_spi_port</scope><name>wait_queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

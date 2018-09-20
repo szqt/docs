@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__config_8h" kind="file" language="C++">
+    <compoundname>wm_config.h</compoundname>
+    <includes refid="wm__os__config_8h" local="yes">wm_os_config.h</includes>
+    <includes refid="wm__wifi__config_8h" local="yes">wm_wifi_config.h</includes>
+    <includes refid="wm__ram__config_8h" local="yes">wm_ram_config.h</includes>
+    <includedby refid="wm__debug_8h" local="yes">Include/wm_debug.h</includedby>
+    <includedby refid="wm__cloud_8h" local="yes">Include/App/wm_cloud.h</includedby>
+    <includedby refid="wm__http__client_8h" local="yes">Include/App/wm_http_client.h</includedby>
+    <includedby refid="wm__netif_8h" local="yes">Include/App/wm_netif.h</includedby>
+    <includedby refid="wm__netif2_80_83_8h" local="yes">Include/App/wm_netif2.0.3.h</includedby>
+    <includedby refid="wm__ssl__server_8h" local="yes">Include/App/wm_ssl_server.h</includedby>
+    <includedby refid="wm__wifi__oneshot_8h" local="yes">Include/App/wm_wifi_oneshot.h</includedby>
+    <includedby refid="wm__socket_8h" local="yes">Include/Net/wm_socket.h</includedby>
+    <includedby refid="wm__sockets_8h" local="yes">Include/Net/wm_sockets.h</includedby>
+    <includedby refid="wm__sockets2_80_83_8h" local="yes">Include/Net/wm_sockets2.0.3.h</includedby>
+    <includedby refid="wm__osal_8h" local="yes">Include/OS/wm_osal.h</includedby>
+    <incdepgraph>
+      <node id="408">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="407">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="406">
+        <label>Include/wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="407" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+      </node>
+      <node id="409">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="422">
+        <label>Include/Net/wm_sockets2.0.3.h</label>
+        <link refid="wm__sockets2_80_83_8h"/>
+      </node>
+      <node id="416">
+        <label>Include/Net/wm_socket2.0.3.h</label>
+        <link refid="wm__socket2_80_83_8h"/>
+      </node>
+      <node id="432">
+        <label>Include/Platform/wm_wl_task.h</label>
+        <link refid="wm__wl__task_8h"/>
+      </node>
+      <node id="424">
+        <label>Include/Driver/wm_flash.h</label>
+        <link refid="wm__flash_8h"/>
+      </node>
+      <node id="414">
+        <label>Include/App/wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>Include/App/wm_ssl_server.h</label>
+        <link refid="wm__ssl__server_8h_source"/>
+      </node>
+      <node id="417">
+        <label>Include/Net/wm_sockets.h</label>
+        <link refid="wm__sockets_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>Include/App/wm_cloud.h</label>
+        <link refid="wm__cloud_8h"/>
+      </node>
+      <node id="428">
+        <label>Include/Driver/wm_internal_flash.h</label>
+        <link refid="wm__internal__flash_8h"/>
+      </node>
+      <node id="425">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+      </node>
+      <node id="423">
+        <label>Include/OS/wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>Include/App/wm_wifi_oneshot.h</label>
+        <link refid="wm__wifi__oneshot_8h"/>
+      </node>
+      <node id="433">
+        <label>Include/Platform/wm_wl_timers.h</label>
+        <link refid="wm__wl__timers_8h"/>
+        <childnode refid="432" relation="include">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>Include/App/wm_netif2.0.3.h</label>
+        <link refid="wm__netif2_80_83_8h"/>
+      </node>
+      <node id="431">
+        <label>Include/Platform/wm_wl_mbox.h</label>
+        <link refid="wm__wl__mbox_8h"/>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>Include/Platform/wm_fwup.h</label>
+        <link refid="wm__fwup_8h"/>
+      </node>
+      <node id="413">
+        <label>Include/App/wm_http_client.h</label>
+        <link refid="wm__http__client_8h"/>
+      </node>
+      <node id="426">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>Include/Net/wm_socket.h</label>
+        <link refid="wm__socket_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>Include/Driver/wm_i2s.h</label>
+        <link refid="wm__i2s_8h"/>
+      </node>
+      <node id="410">
+        <label>Include/wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>Include/wm_debug.h</label>
+        <link refid="wm__debug_8h"/>
+      </node>
+      <node id="415">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+      <node id="429">
+        <label>Include/Driver/wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__config_8h_1aa79085bd41a41cc0999040ca28ad8b63" prot="public" static="no">
+        <name>CFG_ON</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="13" column="9" bodyfile="Include/wm_config.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a3648a9e0f5b9c44bc900b431a9976843" prot="public" static="no">
+        <name>CFG_OFF</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="14" column="9" bodyfile="Include/wm_config.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a4b9328c9460a59b162cc630ee56547cd" prot="public" static="no">
+        <name>TLS_CONFIG_HS_SPI</name>
+        <initializer>CFG_OFF /*High Speed SPI*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Driver Support </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="17" column="9" bodyfile="Include/wm_config.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1aa300ad2c573053361ab864104c8fb464" prot="public" static="no">
+        <name>TLS_CONFIG_LS_SPI</name>
+        <initializer>CFG_OFF /*Low Speed SPI*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="18" column="9" bodyfile="Include/wm_config.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a2ff0dcfdc87547d9d42b9a099a30b0d6" prot="public" static="no">
+        <name>TLS_CONFIG_UART</name>
+        <initializer>CFG_ON  /*UART*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="19" column="9" bodyfile="Include/wm_config.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a0ed39d1309fd3b1a1b246d1f689bb279" prot="public" static="no">
+        <name>TLS_CONFIG_HOSTIF</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Host Interface&amp;Command </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="22" column="9" bodyfile="Include/wm_config.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1ac3888737b89bd4885fd7020718e845ca" prot="public" static="no">
+        <name>TLS_CONFIG_AT_CMD</name>
+        <initializer>(CFG_ON &amp;&amp; <ref refid="wm__config_8h_1a0ed39d1309fd3b1a1b246d1f689bb279" kindref="member">TLS_CONFIG_HOSTIF</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="23" column="9" bodyfile="Include/wm_config.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1aba41f557f3d2725d2baf9f281d9a977a" prot="public" static="no">
+        <name>TLS_CONFIG_RI_CMD</name>
+        <initializer>(CFG_OFF &amp;&amp; <ref refid="wm__config_8h_1a0ed39d1309fd3b1a1b246d1f689bb279" kindref="member">TLS_CONFIG_HOSTIF</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="24" column="9" bodyfile="Include/wm_config.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1af8b91e057548f75dd3da850a7972b6b6" prot="public" static="no">
+        <name>TLS_CONFIG_RMMS</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="25" column="9" bodyfile="Include/wm_config.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a89508e6bc00d7fc7517deb8310330c3e" prot="public" static="no">
+        <name>TLS_CONFIG_LWIP_VER2_0_3</name>
+        <initializer>CFG_ON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="28" column="9" bodyfile="Include/wm_config.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a58e8242300653e35c4a6835947332a7d" prot="public" static="no">
+        <name>TLS_CONFIG_IPV4</name>
+        <initializer>CFG_ON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="29" column="9" bodyfile="Include/wm_config.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a921ba2dee8684243af4144a557e34319" prot="public" static="no">
+        <name>TLS_CONFIG_IPV6</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="30" column="9" bodyfile="Include/wm_config.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1ac420d566668d8fe20f67795517f930bf" prot="public" static="no">
+        <name>TLS_CONFIG_DHCP_OPTION60</name>
+        <initializer>&quot;Winnermicro:W600_01&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="31" column="9" bodyfile="Include/wm_config.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a176288795abde600fa618f597883a40a" prot="public" static="no">
+        <name>TLS_CONFIG_SOCKET_STD</name>
+        <initializer>CFG_ON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SOCKET CONFIG </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="34" column="9" bodyfile="Include/wm_config.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a54e90e54ab9664d2cf4a9113d2885422" prot="public" static="no">
+        <name>TLS_CONFIG_SOCKET_RAW</name>
+        <initializer>CFG_ON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="35" column="9" bodyfile="Include/wm_config.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a46f20e78b9fa59710e721be6e5b011ff" prot="public" static="no">
+        <name>TLS_CONFIG_HARD_CRYPTO</name>
+        <initializer>CFG_ON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="38" column="9" bodyfile="Include/wm_config.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a69aab86cf7555e0a60bb49ef2a7f24a5" prot="public" static="no">
+        <name>TLS_CONFIG_USE_POLARSSL</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="40" column="9" bodyfile="Include/wm_config.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a4d7346c0b31b1f88258ebb6b5af0d981" prot="public" static="no">
+        <name>TLS_CONFIG_SERVER_SIDE_SSL</name>
+        <initializer>(CFG_OFF &amp;&amp; TLS_CONFIG_HTTP_CLIENT_SECURE)         /*MUST configure TLS_CONFIG_HTTP_CLIENT_SECURE CFG_ON */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="41" column="9" bodyfile="Include/wm_config.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a7cfda3c1636a0e7614c066f79a9d4621" prot="public" static="no">
+        <name>TLS_CONFIG_HTTP_CLIENT</name>
+        <initializer>(CFG_OFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HTTP CLIENT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="51" column="9" bodyfile="Include/wm_config.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a5e2ec1917bbddc52e949942fc61d338b" prot="public" static="no">
+        <name>TLS_CONFIG_HTTP_CLIENT_PROXY</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="52" column="9" bodyfile="Include/wm_config.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a9ec129ef012b96221e301307a8c893d5" prot="public" static="no">
+        <name>TLS_CONFIG_HTTP_CLIENT_AUTH_BASIC</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="53" column="9" bodyfile="Include/wm_config.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a4d1c9d68bd0e2419220350a149c6b54d" prot="public" static="no">
+        <name>TLS_CONFIG_HTTP_CLIENT_AUTH_DIGEST</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="54" column="9" bodyfile="Include/wm_config.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a494aa9063dd12ef6e06a9f42566d374e" prot="public" static="no">
+        <name>TLS_CONFIG_HTTP_CLIENT_AUTH</name>
+        <initializer>(TLS_CONFIG_HTTP_CLIENT_AUTH_BASIC || TLS_CONFIG_HTTP_CLIENT_AUTH_DIGEST)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="55" column="9" bodyfile="Include/wm_config.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1ad89f83741ed1325676325f8d956033f7" prot="public" static="no">
+        <name>TLS_CONFIG_HTTP_CLIENT_SECURE</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="56" column="9" bodyfile="Include/wm_config.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a1e28b294475cb02b1fd09378ebffb449" prot="public" static="no">
+        <name>TLS_CONFIG_HTTP_CLIENT_TASK</name>
+        <initializer>(CFG_OFF &amp;&amp; <ref refid="wm__config_8h_1a7cfda3c1636a0e7614c066f79a9d4621" kindref="member">TLS_CONFIG_HTTP_CLIENT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="57" column="9" bodyfile="Include/wm_config.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1af646c39d98c77c6cebf098e372a90bc8" prot="public" static="no">
+        <name>TLS_CONFIG_WEB_SERVER</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WEB SERVER *Lib </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="60" column="9" bodyfile="Include/wm_config.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a49e3523aac1c60efbbf4a31bd708f375" prot="public" static="no">
+        <name>TLS_CONFIG_IGMP</name>
+        <initializer>CFG_ON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IGMP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="63" column="9" bodyfile="Include/wm_config.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a2080230ea3a7b3fc2a8d3027d93cb222" prot="public" static="no">
+        <name>TLS_CONFIG_UPNP</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UPNP AND DLNA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="66" column="9" bodyfile="Include/wm_config.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1adf5027063da634893a9a8980bcd4a893" prot="public" static="no">
+        <name>TLS_CONFIG_DLNA</name>
+        <initializer>CFG_OFF &amp;&amp; <ref refid="wm__config_8h_1a2080230ea3a7b3fc2a8d3027d93cb222" kindref="member">TLS_CONFIG_UPNP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="67" column="9" bodyfile="Include/wm_config.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1aae0df19fac118e0635ee8f11af1094ff" prot="public" static="no">
+        <name>TLS_CONFIG_NTP</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="70" column="9" bodyfile="Include/wm_config.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1a87a1549ff8800985ebf268f6a802662d" prot="public" static="no">
+        <name>TLS_CONFIG_TEM</name>
+        <initializer>CFG_OFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="73" column="9" bodyfile="Include/wm_config.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1abd71a49cafe4aabc427bb7034b04f4a7" prot="public" static="no">
+        <name>VERC_DNS_OPT</name>
+        <initializer>CFG_ON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="75" column="10" bodyfile="Include/wm_config.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__config_8h_1ab0a2ccfb5c72e7651ba7a4320124a563" prot="public" static="no">
+        <name>VERC_LWIP_OPT</name>
+        <initializer>CFG_ON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_config.h" line="76" column="10" bodyfile="Include/wm_config.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>w600 chip inferface configure </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+<simplesect kind="copyright"><para>(c) 2014 Winner Microelectronics Co., Ltd. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WM_CONFIG_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WM_CONFIG_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CFG_ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CFG_OFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="wm__config_8h_1a4b9328c9460a59b162cc630ee56547cd" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HS_SPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF<sp/></highlight><highlight class="comment">/*High<sp/>Speed<sp/>SPI*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_LS_SPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF<sp/></highlight><highlight class="comment">/*Low<sp/>Speed<sp/>SPI*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_UART<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_ON<sp/><sp/></highlight><highlight class="comment">/*UART*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="wm__config_8h_1a0ed39d1309fd3b1a1b246d1f689bb279" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HOSTIF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_AT_CMD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CFG_ON<sp/>&amp;&amp;<sp/>TLS_CONFIG_HOSTIF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_RI_CMD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CFG_OFF<sp/>&amp;&amp;<sp/>TLS_CONFIG_HOSTIF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_RMMS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//LWIP<sp/>CONFIG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_LWIP_VER2_0_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_ON<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_IPV4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_ON<sp/><sp/><sp/><sp/><sp/><sp/>//must<sp/>ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_IPV6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_DHCP_OPTION60<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;Winnermicro:W600_01&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="wm__config_8h_1a176288795abde600fa618f597883a40a" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_SOCKET_STD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_SOCKET_RAW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HARD_CRYPTO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_USE_POLARSSL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_SERVER_SIDE_SSL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CFG_OFF<sp/>&amp;&amp;<sp/>TLS_CONFIG_HTTP_CLIENT_SECURE)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*MUST<sp/>configure<sp/>TLS_CONFIG_HTTP_CLIENT_SECURE<sp/>CFG_ON<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">HTTP<sp/>Lib</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">HTTPS<sp/>Lib</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">SSL<sp/>LIB</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">CRYPTO</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="wm__config_8h_1a7cfda3c1636a0e7614c066f79a9d4621" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HTTP_CLIENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CFG_OFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HTTP_CLIENT_PROXY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HTTP_CLIENT_AUTH_BASIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HTTP_CLIENT_AUTH_DIGEST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HTTP_CLIENT_AUTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TLS_CONFIG_HTTP_CLIENT_AUTH_BASIC<sp/>||<sp/>TLS_CONFIG_HTTP_CLIENT_AUTH_DIGEST)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HTTP_CLIENT_SECURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_HTTP_CLIENT_TASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CFG_OFF<sp/>&amp;&amp;<sp/>TLS_CONFIG_HTTP_CLIENT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="wm__config_8h_1af646c39d98c77c6cebf098e372a90bc8" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_WEB_SERVER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="wm__config_8h_1a49e3523aac1c60efbbf4a31bd708f375" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_IGMP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="wm__config_8h_1a2080230ea3a7b3fc2a8d3027d93cb222" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_UPNP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_DLNA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF<sp/>&amp;&amp;<sp/>TLS_CONFIG_UPNP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_NTP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*using<sp/>temperature<sp/>adc<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_CONFIG_TEM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VERC_DNS_OPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>VERC_LWIP_OPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFG_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__os__config_8h" kindref="compound">wm_os_config.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//if<sp/>you<sp/>want<sp/>to<sp/>use<sp/>source<sp/>code,please<sp/>open</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__wifi__config_8h" kindref="compound">wm_wifi_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__ram__config_8h" kindref="compound">wm_ram_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*__WM_CONFIG_H__*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/wm_config.h"/>
+  </compounddef>
+</doxygen>

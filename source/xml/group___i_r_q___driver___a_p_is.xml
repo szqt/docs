@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___i_r_q___driver___a_p_is" kind="group">
+    <compoundname>IRQ_Driver_APIs</compoundname>
+    <title>IRQ Driver APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1ga682424056f3549c9b1ff6405f5f8c50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_irq_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_irq_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to initial system interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1ga502a923ecc04a1cd2ac5df4d3b4ecdf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_irq_register_handler</definition>
+        <argsstring>(u8 vec_no, intr_handler_func handler, void *data)</argsstring>
+        <name>tls_irq_register_handler</name>
+        <param>
+          <type>u8</type>
+          <declname>vec_no</declname>
+        </param>
+        <param>
+          <type>intr_handler_func</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vec_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt no </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1gae83a39ae9c7da806258e145e34fe1185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_irq_enable</definition>
+        <argsstring>(u8 vec_no)</argsstring>
+        <name>tls_irq_enable</name>
+        <param>
+          <type>u8</type>
+          <declname>vec_no</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to enable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vec_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1gafc84c58344dbbcb06be83f89332c3189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_irq_disable</definition>
+        <argsstring>(u8 vec_no)</argsstring>
+        <name>tls_irq_disable</name>
+        <param>
+          <type>u8</type>
+          <declname>vec_no</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to disable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vec_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1ga8c86a136a1e884a8c37779ed00086904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_get_isr_count</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_get_isr_count</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>get isr count </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="153" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>IRQ driver APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_l_c_d___t" kind="struct" language="C++" prot="public">
+    <compoundname>LCD_T</compoundname>
+    <includes refid="wm__lcd_8h" local="no">wm_lcd.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_l_c_d___t_1ac6500d77764b649fb4621845fd416fbf" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t LCD_T::CTRL</definition>
+        <argsstring></argsstring>
+        <name>CTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="28" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_c_d___t_1ada178af1c777e53b8bacb9270b2c40ce" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t LCD_T::FRAMECNT</definition>
+        <argsstring></argsstring>
+        <name>FRAMECNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Refresh Rate Prescaler Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="30" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_c_d___t_1afee4cd02c588d77deb648802f54a3284" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t LCD_T::COM01</definition>
+        <argsstring></argsstring>
+        <name>COM01</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="32" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_c_d___t_1ac90ed2633420ff7f597a157fc0879aca" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t LCD_T::COM23</definition>
+        <argsstring></argsstring>
+        <name>COM23</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="34" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_c_d___t_1ad94f09bb1b1d1c8cff7d83168dfdf281" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t LCD_T::COM45</definition>
+        <argsstring></argsstring>
+        <name>COM45</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="36" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_c_d___t_1a3361446e6a0ffd9d875623733ba81157" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t LCD_T::COM67</definition>
+        <argsstring></argsstring>
+        <name>COM67</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="38" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_c_d___t_1a16d07142902971546a3deb8f50d30ade" prot="public" static="no" mutable="no">
+        <type>__IO uint32_t</type>
+        <definition>__IO uint32_t LCD_T::IO_EN</definition>
+        <argsstring></argsstring>
+        <name>IO_EN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LCD IO Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="40" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LCD Register Declaration. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_lcd.h" line="26" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="25" bodyend="42"/>
+    <listofallmembers>
+      <member refid="struct_l_c_d___t_1afee4cd02c588d77deb648802f54a3284" prot="public" virt="non-virtual"><scope>LCD_T</scope><name>COM01</name></member>
+      <member refid="struct_l_c_d___t_1ac90ed2633420ff7f597a157fc0879aca" prot="public" virt="non-virtual"><scope>LCD_T</scope><name>COM23</name></member>
+      <member refid="struct_l_c_d___t_1ad94f09bb1b1d1c8cff7d83168dfdf281" prot="public" virt="non-virtual"><scope>LCD_T</scope><name>COM45</name></member>
+      <member refid="struct_l_c_d___t_1a3361446e6a0ffd9d875623733ba81157" prot="public" virt="non-virtual"><scope>LCD_T</scope><name>COM67</name></member>
+      <member refid="struct_l_c_d___t_1ac6500d77764b649fb4621845fd416fbf" prot="public" virt="non-virtual"><scope>LCD_T</scope><name>CTRL</name></member>
+      <member refid="struct_l_c_d___t_1ada178af1c777e53b8bacb9270b2c40ce" prot="public" virt="non-virtual"><scope>LCD_T</scope><name>FRAMECNT</name></member>
+      <member refid="struct_l_c_d___t_1a16d07142902971546a3deb8f50d30ade" prot="public" virt="non-virtual"><scope>LCD_T</scope><name>IO_EN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

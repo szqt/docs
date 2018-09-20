@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__skt__status__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_skt_status_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__skt__status__t_1a9245e1546ad4e4d83920e6354878128e" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_skt_status_t::socket_cnt</definition>
+        <argsstring></argsstring>
+        <name>socket_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="272" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__skt__status__t_1a9b2d951683b9ed26c067a978d9ec2b48" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__skt__status__ext__t" kindref="compound">tls_skt_status_ext_t</ref></type>
+        <definition>struct tls_skt_status_ext_t tls_skt_status_t::skts_ext</definition>
+        <argsstring>[1]</argsstring>
+        <name>skts_ext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="272" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="217">
+        <label>tls_skt_status_t</label>
+        <link refid="structtls__skt__status__t"/>
+        <childnode refid="218" relation="usage">
+          <edgelabel>skts_ext</edgelabel>
+        </childnode>
+      </node>
+      <node id="218">
+        <label>tls_skt_status_ext_t</label>
+        <link refid="structtls__skt__status__ext__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Net/wm_socket.h" line="271" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="271" bodyend="274"/>
+    <listofallmembers>
+      <member refid="structtls__skt__status__t_1a9b2d951683b9ed26c067a978d9ec2b48" prot="public" virt="non-virtual"><scope>tls_skt_status_t</scope><name>skts_ext</name></member>
+      <member refid="structtls__skt__status__t_1a9245e1546ad4e4d83920e6354878128e" prot="public" virt="non-virtual"><scope>tls_skt_status_t</scope><name>socket_cnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

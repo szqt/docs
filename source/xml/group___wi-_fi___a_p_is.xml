@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___wi-_fi___a_p_is" kind="group">
+    <compoundname>Wi-Fi_APIs</compoundname>
+    <title>Wi-Fi APIs</title>
+    <innergroup refid="group___i_e_e_e80211___a_p_is">IEEE80211 APIs</innergroup>
+    <innergroup refid="group___w_m___wi-_fi___a_p_is">WM_Wi-Fi APIs</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___wi-_fi___a_p_is_1ga78bd6082218b88ead9c4b8f24dc99d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_set_opmode</definition>
+        <argsstring>(u8 mode)</argsstring>
+        <name>tls_wifi_set_opmode</name>
+        <param>
+          <type>u8</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="941" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wi-Fi related APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

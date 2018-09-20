@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__socket__desc" kind="struct" language="C++" prot="public">
+    <compoundname>tls_socket_desc</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__socket__desc_1a59ec63512df5af926f37aaf5a5478428" prot="public" static="no" mutable="no">
+        <type>enum tls_socket_cs_mode</type>
+        <definition>enum tls_socket_cs_mode tls_socket_desc::cs_mode</definition>
+        <argsstring></argsstring>
+        <name>cs_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="67" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a603b9947b797f6f664f9df6f4705e852" prot="public" static="no" mutable="no">
+        <type>enum tls_socket_protocol</type>
+        <definition>enum tls_socket_protocol tls_socket_desc::protocol</definition>
+        <argsstring></argsstring>
+        <name>protocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="67" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a92427902a2a5ccc44aaa085dea27480a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_socket_desc::ip_addr[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>ip_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="211" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a4fa0a5955b7cc2613c65b89ead417e5e" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_socket_desc::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="213" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1abf7856c28c9671b6e7c75878a6ebcb46" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_socket_desc::localport</definition>
+        <argsstring></argsstring>
+        <name>localport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="215" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1aa5f2c6675a0f2c3c5dd07ad0fc09b096" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char tls_socket_desc::host_name</definition>
+        <argsstring>[32]</argsstring>
+        <name>host_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="216" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a425219e2c63350ce1d27f0d3c04e1b74" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_socket_desc::host_len</definition>
+        <argsstring></argsstring>
+        <name>host_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="217" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1ad59371de463b591380ad9aee2f5f66d4" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_socket_desc::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="218" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a0d177d361c0f5f2fe7ce950ff5c21a0c" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__socket2_80_83_8h_1a3fcc617c7c95ed07df10277c5833a1b7" kindref="member">socket_err_fn</ref></type>
+        <definition>socket_err_fn tls_socket_desc::errf</definition>
+        <argsstring></argsstring>
+        <name>errf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="219" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a03c83437609d679e7cedd823d1a16fe6" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__socket2_80_83_8h_1aa68e71d5ebd2c86f4869506e47dfa484" kindref="member">socket_recv_fn</ref></type>
+        <definition>socket_recv_fn tls_socket_desc::recvf</definition>
+        <argsstring></argsstring>
+        <name>recvf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="220" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1ae3cf8c879aea492aafdf059edcf0f5c1" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__socket2_80_83_8h_1ae6fd05ed74d5db8e7d9fcc19d3856284" kindref="member">socket_connected_fn</ref></type>
+        <definition>socket_connected_fn tls_socket_desc::connf</definition>
+        <argsstring></argsstring>
+        <name>connf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="221" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a1172c0df67109b2baa6ee78730b9073f" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__socket2_80_83_8h_1ae271666c34ac88d501fe6d6b0b026239" kindref="member">socket_poll_fn</ref></type>
+        <definition>socket_poll_fn tls_socket_desc::pollf</definition>
+        <argsstring></argsstring>
+        <name>pollf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="222" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a98414246ecf33964fa3ec6873b37e21c" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__socket2_80_83_8h_1aeb3b061fe2017bab68e11ab632d355fe" kindref="member">socket_accept_fn</ref></type>
+        <definition>socket_accept_fn tls_socket_desc::acceptf</definition>
+        <argsstring></argsstring>
+        <name>acceptf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="223" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a4ac3ccdde505f9fb96b73d457d5929d5" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__socket2_80_83_8h_1a83c4e1f5f01e54fec567b2452d3d1e15" kindref="member">socket_state_changed_fn</ref></type>
+        <definition>socket_state_changed_fn tls_socket_desc::state_changed</definition>
+        <argsstring></argsstring>
+        <name>state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="224" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a52ca38af0522bcf2f64b79eb349cc735" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__socket2_80_83_8h_1a570176239c5693ae44cc8324cb30818c" kindref="member">socket_recv_ip_rpt_fn</ref></type>
+        <definition>socket_recv_ip_rpt_fn tls_socket_desc::recvwithipf</definition>
+        <argsstring></argsstring>
+        <name>recvwithipf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="225" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__socket__desc_1a25926b4968bf80a518eccf76bbaf6a36" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref></type>
+        <definition>ip_addr_t tls_socket_desc::ip_addr</definition>
+        <argsstring></argsstring>
+        <name>ip_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket2.0.3.h" line="224" column="1" bodyfile="Include/Net/wm_socket2.0.3.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="224">
+        <label>tls_socket_desc</label>
+        <link refid="structtls__socket__desc"/>
+        <childnode refid="225" relation="usage">
+          <edgelabel>recvf</edgelabel>
+        </childnode>
+        <childnode refid="226" relation="usage">
+          <edgelabel>ip_addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="226">
+        <label>ip_addr</label>
+        <link refid="structip__addr"/>
+      </node>
+      <node id="225">
+        <label>pbuf</label>
+        <link refid="structpbuf"/>
+        <childnode refid="225" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Net/wm_socket.h" line="208" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="208" bodyend="226"/>
+    <listofallmembers>
+      <member refid="structtls__socket__desc_1a98414246ecf33964fa3ec6873b37e21c" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>acceptf</name></member>
+      <member refid="structtls__socket__desc_1ae3cf8c879aea492aafdf059edcf0f5c1" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>connf</name></member>
+      <member refid="structtls__socket__desc_1a59ec63512df5af926f37aaf5a5478428" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>cs_mode</name></member>
+      <member refid="structtls__socket__desc_1a0d177d361c0f5f2fe7ce950ff5c21a0c" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>errf</name></member>
+      <member refid="structtls__socket__desc_1a425219e2c63350ce1d27f0d3c04e1b74" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>host_len</name></member>
+      <member refid="structtls__socket__desc_1aa5f2c6675a0f2c3c5dd07ad0fc09b096" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>host_name</name></member>
+      <member refid="structtls__socket__desc_1a92427902a2a5ccc44aaa085dea27480a" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>ip_addr</name></member>
+      <member refid="structtls__socket__desc_1a25926b4968bf80a518eccf76bbaf6a36" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>ip_addr</name></member>
+      <member refid="structtls__socket__desc_1abf7856c28c9671b6e7c75878a6ebcb46" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>localport</name></member>
+      <member refid="structtls__socket__desc_1a1172c0df67109b2baa6ee78730b9073f" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>pollf</name></member>
+      <member refid="structtls__socket__desc_1a4fa0a5955b7cc2613c65b89ead417e5e" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>port</name></member>
+      <member refid="structtls__socket__desc_1a603b9947b797f6f664f9df6f4705e852" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>protocol</name></member>
+      <member refid="structtls__socket__desc_1a03c83437609d679e7cedd823d1a16fe6" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>recvf</name></member>
+      <member refid="structtls__socket__desc_1a52ca38af0522bcf2f64b79eb349cc735" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>recvwithipf</name></member>
+      <member refid="structtls__socket__desc_1a4ac3ccdde505f9fb96b73d457d5929d5" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>state_changed</name></member>
+      <member refid="structtls__socket__desc_1ad59371de463b591380ad9aee2f5f66d4" prot="public" virt="non-virtual"><scope>tls_socket_desc</scope><name>timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

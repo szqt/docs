@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__sys__clk" kind="struct" language="C++" prot="public">
+    <compoundname>tls_sys_clk</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__sys__clk_1afbf667e5328b99d190e7b1a0da919f63" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_sys_clk::apbclk</definition>
+        <argsstring></argsstring>
+        <name>apbclk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_cpu.h" line="27" column="1" bodyfile="Include/Driver/wm_cpu.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__clk_1a888032fb54bdcc570484295cd8f13a21" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_sys_clk::cpuclk</definition>
+        <argsstring></argsstring>
+        <name>cpuclk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_cpu.h" line="28" column="1" bodyfile="Include/Driver/wm_cpu.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__clk_1a8d2a46f3235a26db234f18044fb7972d" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_sys_clk::wlanclk</definition>
+        <argsstring></argsstring>
+        <name>wlanclk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_cpu.h" line="29" column="1" bodyfile="Include/Driver/wm_cpu.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_cpu.h" line="26" column="1" bodyfile="Include/Driver/wm_cpu.h" bodystart="26" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structtls__sys__clk_1afbf667e5328b99d190e7b1a0da919f63" prot="public" virt="non-virtual"><scope>tls_sys_clk</scope><name>apbclk</name></member>
+      <member refid="structtls__sys__clk_1a888032fb54bdcc570484295cd8f13a21" prot="public" virt="non-virtual"><scope>tls_sys_clk</scope><name>cpuclk</name></member>
+      <member refid="structtls__sys__clk_1a8d2a46f3235a26db234f18044fb7972d" prot="public" virt="non-virtual"><scope>tls_sys_clk</scope><name>wlanclk</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

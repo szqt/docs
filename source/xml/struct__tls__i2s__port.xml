@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct__tls__i2s__port" kind="struct" language="C++" prot="public">
+    <compoundname>_tls_i2s_port</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__tls__i2s__port_1a9b7cfe1fa938249259b59a44b4453a15" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__i2s__options" kindref="compound">tls_i2s_options</ref></type>
+        <definition>struct tls_i2s_options _tls_i2s_port::opts</definition>
+        <argsstring></argsstring>
+        <name>opts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>i2s config params </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="195" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__tls__i2s__port_1a607826212b692df8f8b87ec6c0dab36f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_i2_s___t" kindref="compound">I2S_T</ref> *</type>
+        <definition>I2S_T* _tls_i2s_port::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointer to the I2S registers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="203" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__tls__i2s__port_1a338d5d672b5f6c8b3840dbe829d616b0" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> *</type>
+        <definition>tls_os_sem_t* _tls_i2s_port::tx_sem</definition>
+        <argsstring></argsstring>
+        <name>tx_sem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the semaphore used to synchronous transmission </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="205" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__tls__i2s__port_1a89a20da68922320d966728f76101c14a" prot="public" static="no" mutable="no">
+        <type><ref refid="structtls__i2s__buf__t" kindref="compound">tls_i2s_buf</ref></type>
+        <definition>tls_i2s_buf _tls_i2s_port::rx_buf</definition>
+        <argsstring></argsstring>
+        <name>rx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>instance of tls_i2s_buf struct for data receive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="207" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__tls__i2s__port_1a95d7a0c493ea0c341bd27f91393f74b2" prot="public" static="no" mutable="no">
+        <type><ref refid="structtls__i2s__buf__t" kindref="compound">tls_i2s_buf</ref></type>
+        <definition>tls_i2s_buf _tls_i2s_port::tx_buf</definition>
+        <argsstring></argsstring>
+        <name>tx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>instance of tls_i2s_buf struct for data receive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="209" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__tls__i2s__port_1a06974d7b303d3b3065387d99d84c85ed" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _tls_i2s_port::rx_callback) ()</definition>
+        <argsstring>)()</argsstring>
+        <name>rx_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function pointer for data receiver when in interrupt mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="211" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__tls__i2s__port_1a0dc08731eff40c9c557a49115fbcfd19" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _tls_i2s_port::tx_callback) ()</definition>
+        <argsstring>)()</argsstring>
+        <name>tx_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function pointer for data transmit when in interrupt mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="213" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="16">
+        <label>I2S_T</label>
+        <link refid="struct_i2_s___t"/>
+      </node>
+      <node id="14">
+        <label>tls_i2s_options</label>
+        <link refid="structtls__i2s__options"/>
+      </node>
+      <node id="15">
+        <label>tls_i2s_buf_t</label>
+        <link refid="structtls__i2s__buf__t"/>
+      </node>
+      <node id="13">
+        <label>_tls_i2s_port</label>
+        <link refid="struct__tls__i2s__port"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>opts</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>tx_buf</edgelabel>
+          <edgelabel>rx_buf</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_i2s.h" line="199" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="198" bodyend="215"/>
+    <listofallmembers>
+      <member refid="struct__tls__i2s__port_1a9b7cfe1fa938249259b59a44b4453a15" prot="public" virt="non-virtual"><scope>_tls_i2s_port</scope><name>opts</name></member>
+      <member refid="struct__tls__i2s__port_1a607826212b692df8f8b87ec6c0dab36f" prot="public" virt="non-virtual"><scope>_tls_i2s_port</scope><name>regs</name></member>
+      <member refid="struct__tls__i2s__port_1a89a20da68922320d966728f76101c14a" prot="public" virt="non-virtual"><scope>_tls_i2s_port</scope><name>rx_buf</name></member>
+      <member refid="struct__tls__i2s__port_1a06974d7b303d3b3065387d99d84c85ed" prot="public" virt="non-virtual"><scope>_tls_i2s_port</scope><name>rx_callback</name></member>
+      <member refid="struct__tls__i2s__port_1a95d7a0c493ea0c341bd27f91393f74b2" prot="public" virt="non-virtual"><scope>_tls_i2s_port</scope><name>tx_buf</name></member>
+      <member refid="struct__tls__i2s__port_1a0dc08731eff40c9c557a49115fbcfd19" prot="public" virt="non-virtual"><scope>_tls_i2s_port</scope><name>tx_callback</name></member>
+      <member refid="struct__tls__i2s__port_1a338d5d672b5f6c8b3840dbe829d616b0" prot="public" virt="non-virtual"><scope>_tls_i2s_port</scope><name>tx_sem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

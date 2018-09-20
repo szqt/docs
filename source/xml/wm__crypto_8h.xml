@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__crypto_8h" kind="file" language="C++">
+    <compoundname>wm_crypto.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__crypto_8h_1a5199c89739ee00a4ae8515865479824f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aes_128_cbc_encrypt</definition>
+        <argsstring>(const u8 *key, const u8 *iv, u8 *data, size_t data_len)</argsstring>
+        <name>aes_128_cbc_encrypt</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Encrypt plain data by 128 AES crypto. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key for encryption </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">iv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the IV value for encryption </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where the plain data stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the plain data to be encrypted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>finish Encryption successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Encrypted data will be placed into the plain  area </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_crypto.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__crypto_8h_1abf2c6fa780ae8b40fa8b568db7a5926d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int aes_128_cbc_decrypt</definition>
+        <argsstring>(const u8 *key, const u8 *iv, u8 *data, size_t data_len)</argsstring>
+        <name>aes_128_cbc_decrypt</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>iv</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>Decrypt data by 128 AES crypto. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key for encryption </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">iv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the IV value for encryption </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>where the plain data stored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the plain data to be decrypted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>finish Decryption successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>plain data will be placed into the encrypted  area </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_crypto.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__crypto_8h_1a2dbd0089d2ab27a663de4eaf43ccee28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rc4</definition>
+        <argsstring>(const u8 *key, size_t keylen, u8 *data, size_t data_len)</argsstring>
+        <name>rc4</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>keylen</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>XOR RC4 stream to given data with skip-stream-start. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RC4 key </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">keylen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RC4 key length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to be XOR&apos;ed with RC4 stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the plain data to be encrypted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>finish Encryption/Decryption successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>this function should be used for Encryption &amp; Decryption both For the Encryption, the plain  will be replaced by the encrypted output, and vice versa; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_crypto.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__crypto_8h_1aff8ec52500cfccf50e9ac2feabfc6e7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int md5</definition>
+        <argsstring>(const u8 *addr, int len, u8 *mac)</argsstring>
+        <name>md5</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+<para>MD5 hash for data vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to the data area </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lengths of the data block </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer for the hash (16 bytes) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>finish caculation successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_crypto.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__crypto_8h_1abf27870c02ecc1f2071d7bea88b665c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hmac_md5</definition>
+        <argsstring>(const u8 *key, size_t key_len, const u8 *data, size_t data_len, u8 *mac)</argsstring>
+        <name>hmac_md5</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>key_len</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>data_len</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+<para>HMAC-MD5 over data buffer (RFC 2104) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key for HMAC operations </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">keylen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the key in bytes <linebreak/>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to be caculated <linebreak/>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lengths of the data block </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer for the hash (16 bytes) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>finish caculation successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_crypto.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__crypto_8h_1a5a33fe2f1a4b55725de3c26edd3f905b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sha1</definition>
+        <argsstring>(const u8 *addr, int len, u8 *mac)</argsstring>
+        <name>sha1</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+<para>SHA1 hash for data vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to the data area </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lengths of the data block </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer for the hash (16 bytes) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>finish caculation successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_crypto.h" line="88" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>crypto driver module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_CRYPTO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_CRYPTO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="wm__crypto_8h_1a5199c89739ee00a4ae8515865479824f" kindref="member">aes_128_cbc_encrypt</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*iv,<sp/>u8<sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>data_len)<sp/>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="wm__crypto_8h_1abf2c6fa780ae8b40fa8b568db7a5926d" kindref="member">aes_128_cbc_decrypt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*iv,<sp/>u8<sp/>*data,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>data_len);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__crypto_8h_1a2dbd0089d2ab27a663de4eaf43ccee28" kindref="member">rc4</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*key,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>keylen,<sp/>u8<sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>data_len);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__crypto_8h_1aff8ec52500cfccf50e9ac2feabfc6e7c" kindref="member">md5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/>u8<sp/>*mac);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__crypto_8h_1abf27870c02ecc1f2071d7bea88b665c2" kindref="member">hmac_md5</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*key,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>key_len,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>data_len,<sp/>u8<sp/>*mac);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__crypto_8h_1a5a33fe2f1a4b55725de3c26edd3f905b" kindref="member">sha1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/>u8<sp/>*mac);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/App/wm_crypto.h"/>
+  </compounddef>
+</doxygen>

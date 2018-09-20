@@ -1,0 +1,1610 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__uart_8h" kind="file" language="C++">
+    <compoundname>wm_uart.h</compoundname>
+    <includes refid="list_8h" local="yes">list.h</includes>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includes refid="wm__osal_8h" local="yes">wm_osal.h</includes>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <incdepgraph>
+      <node id="209">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="211">
+        <label>stdlib.h</label>
+      </node>
+      <node id="207">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="213">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="212">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>stdio.h</label>
+      </node>
+      <node id="206">
+        <label>Include/Driver/wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="217">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+      <node id="216">
+        <label>Include/Driver/wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="217" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtls__uart__baud__rate" prot="public">tls_uart_baud_rate</innerclass>
+    <innerclass refid="structtls__uart__icount" prot="public">tls_uart_icount</innerclass>
+    <innerclass refid="structtls__uart__options" prot="public">tls_uart_options</innerclass>
+    <innerclass refid="structtls__uart__circ__buf" prot="public">tls_uart_circ_buf</innerclass>
+    <innerclass refid="struct_t_l_s___u_a_r_t___r_e_g_s" prot="public">TLS_UART_REGS</innerclass>
+    <innerclass refid="structtls__uart__port" prot="public">tls_uart_port</innerclass>
+    <innerclass refid="structtls__uart__tx__msg" prot="public">tls_uart_tx_msg</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__uart_8h_1acc24e16f8c146abd5834c480eb087d62" prot="public" static="no">
+        <name>TLS_UART_RX_BUF_SIZE</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="17" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1ae41f4378f6355ea4cb1e3f1d7f3eab44" prot="public" static="no">
+        <name>TLS_UART_TX_BUF_SIZE</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="18" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a3cd9b56324055c0f9300cceefee2affd" prot="public" static="no">
+        <name>WAKEUP_CHARS</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="19" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a3cac80093bae29d59707c5b02397c360" prot="public" static="no">
+        <name>MBOX_MSG_UART_RX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="21" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a4ba95ea19c4888072f640e162847a50d" prot="public" static="no">
+        <name>MBOX_MSG_UART_TX</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="22" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a7ea56890c6d1322130114d22897fa99f" prot="public" static="no">
+        <name>UART_BAUDRATE_B600</name>
+        <initializer>600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>baud rate definition </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="26" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a798bcb18373ff2b5deef96c8f00b9314" prot="public" static="no">
+        <name>UART_BAUDRATE_B1200</name>
+        <initializer>1200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="27" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a6a5466a68f3365d54e3f47703cf1468c" prot="public" static="no">
+        <name>UART_BAUDRATE_B1800</name>
+        <initializer>1800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="28" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a77c04726cf388238f48512d47652c926" prot="public" static="no">
+        <name>UART_BAUDRATE_B2400</name>
+        <initializer>2400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="29" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a80c56a603fbcaf616646ceda35b269bd" prot="public" static="no">
+        <name>UART_BAUDRATE_B4800</name>
+        <initializer>4800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="30" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1ae07a5c09df11d6bca03e877cab613103" prot="public" static="no">
+        <name>UART_BAUDRATE_B9600</name>
+        <initializer>9600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="31" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a2224255638aab4e9a3e366b8f5845968" prot="public" static="no">
+        <name>UART_BAUDRATE_B19200</name>
+        <initializer>19200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="32" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a1b5087991cb75cc3d299cb82464fb8d7" prot="public" static="no">
+        <name>UART_BAUDRATE_B38400</name>
+        <initializer>38400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="33" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a3fb9f1fd4bb299bb7dcdb6751cde132a" prot="public" static="no">
+        <name>UART_BAUDRATE_B57600</name>
+        <initializer>57600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="34" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a788f0a9381f97f55b9efa86469ffe376" prot="public" static="no">
+        <name>UART_BAUDRATE_B115200</name>
+        <initializer>115200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="35" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a109cb40a43c7369e1db9318b197f846d" prot="public" static="no">
+        <name>UART_BAUDRATE_B230400</name>
+        <initializer>230400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="36" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a1dd4917f0f5cef12ab62c4d05d236638" prot="public" static="no">
+        <name>UART_BAUDRATE_B460800</name>
+        <initializer>460800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="37" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a66f8b71cf442d9d6ac234b1db11a1d65" prot="public" static="no">
+        <name>UART_BAUDRATE_B921600</name>
+        <initializer>921600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="38" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1ad5e5b36948ca5b7098bdd501532b6593" prot="public" static="no">
+        <name>UART_BAUDRATE_B1000000</name>
+        <initializer>1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="39" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1aa841b35ab91c94a8bff8c6e7bc9f20c2" prot="public" static="no">
+        <name>UART_BAUDRATE_B1250000</name>
+        <initializer>1250000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="40" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1aaf166e79171bfe6685b68951f4d6c248" prot="public" static="no">
+        <name>UART_BAUDRATE_B1500000</name>
+        <initializer>1500000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="41" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1ae2a2dbc3bd0a817979808e92fe32c60a" prot="public" static="no">
+        <name>UART_BAUDRATE_B2000000</name>
+        <initializer>2000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="42" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a2d539cb0a967db0e8b161fc01eea26c3" prot="public" static="no">
+        <name>UART_RX_INT_FLAG</name>
+        <initializer>(UIS_RX_FIFO | UIS_RX_FIFO_TIMEOUT | UIS_BREAK |\
+        UIS_OVERRUN | UIS_FRM_ERR | UIS_PARITY_ERR)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="44" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1abb4066c7e9b2fcd9134e257ef75e290c" prot="public" static="no">
+        <name>UART_RX_ERR_INT_FLAG</name>
+        <initializer>(UIS_BREAK | UIS_FRM_ERR | \
+        UIS_PARITY_ERR)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="46" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a0a8315f55335ca4a164fd41574915b8c" prot="public" static="no">
+        <name>UART_TX_INT_FLAG</name>
+        <initializer>(UIS_TX_FIFO | UIS_TX_FIFO_EMPTY)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="49" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a0e7c03deb83897db30fe15611be5f114" prot="public" static="no">
+        <name>UART0_INT</name>
+        <initializer>(23UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="53" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a1fac2ce5b598f451cdf7e76103641c17" prot="public" static="no">
+        <name>UART1_INT</name>
+        <initializer>(24UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="56" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a652a409f54868986f0ba36094f16ae25" prot="public" static="no">
+        <name>CIRC_CNT</name>
+        <param><defname>head</defname></param>
+        <param><defname>tail</defname></param>
+        <param><defname>size</defname></param>
+        <initializer>(((head) - (tail)) &amp; ((size)-1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return count in buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="60" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1ab1fa62ef974b01d1d9b6faf6be3f8cf6" prot="public" static="no">
+        <name>CIRC_SPACE</name>
+        <param><defname>head</defname></param>
+        <param><defname>tail</defname></param>
+        <param><defname>size</defname></param>
+        <initializer><ref refid="wm__uart_8h_1a652a409f54868986f0ba36094f16ae25" kindref="member">CIRC_CNT</ref>((tail),((head)+1),(size))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return space available, 0..size-1. We always leave one free char as a completely full buffer has head == tail, which is the same as empty. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="65" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1aabebb37f7261e8e86e6a77d7d0352707" prot="public" static="no">
+        <name>CIRC_CNT_TO_END</name>
+        <param><defname>head</defname></param>
+        <param><defname>tail</defname></param>
+        <param><defname>size</defname></param>
+        <initializer>({int end = (size) - (tail); \
+	  int n = ((head) + end) &amp; ((size)-1); \
+	  n &lt; end ? n : end;})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return count up to the end of the buffer. Carefully avoid accessing head and tail more than once, so they can change underneath us without returning inconsistent results. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="70" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a63666b33c1e3d60ea1a7a7601cdbbac8" prot="public" static="no">
+        <name>CIRC_SPACE_TO_END</name>
+        <param><defname>head</defname></param>
+        <param><defname>tail</defname></param>
+        <param><defname>size</defname></param>
+        <initializer>({int end = (size) - 1 - (head); \
+	  int n = (end + (tail)) &amp; ((size)-1); \
+	  n &lt;= end ? n : end+1;})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return space available up to the end of the buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="76" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a996a49c27dc92fd68e78db08890dd646" prot="public" static="no">
+        <name>CIRC_SPACE_TO_END_FULL</name>
+        <param><defname>head</defname></param>
+        <param><defname>tail</defname></param>
+        <param><defname>size</defname></param>
+        <initializer>({int end = (size) - 1 - (head); \
+	  int n = (end + (tail)) &amp; ((size)-1); \
+	  n &lt; end ? n : end+1;})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="81" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a74704510502fb37d026a7cfd0d1ceaed" prot="public" static="no">
+        <name>uart_circ_empty</name>
+        <param><defname>circ</defname></param>
+        <initializer>((circ)-&gt;head == (circ)-&gt;tail)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="86" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__uart_8h_1a2d2745553d0b8368bde35739231e6df1" prot="public" static="no">
+        <name>uart_circ_chars_pending</name>
+        <param><defname>circ</defname></param>
+        <initializer>(<ref refid="wm__uart_8h_1a652a409f54868986f0ba36094f16ae25" kindref="member">CIRC_CNT</ref>((circ)-&gt;head, (circ)-&gt;tail, TLS_UART_TX_BUF_SIZE))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="87" column="9" bodyfile="Include/Driver/wm_uart.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__uart_8h_1adf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="wm__uart_8h_1adf764cbdea00d65edcd07bb9953ad2b7a2962617e0635c54610ba6f15eb64f928" prot="public">
+          <name>TLS_UART_0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1adf764cbdea00d65edcd07bb9953ad2b7a047212e68993bad167c3f2e5e6337386" prot="public">
+          <name>TLS_UART_1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1adf764cbdea00d65edcd07bb9953ad2b7a124842cd3fc752ede7517ddf47a786d9" prot="public">
+          <name>TLS_UART_2</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="105" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TLS_UART_PMODE</name>
+        <enumvalue id="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5a029fdb8becfe0573855a5b74c5f208f0" prot="public">
+          <name>TLS_UART_PMODE_DISABLED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No Parity </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5aced5227d86b7e0dc4d63cfde7dc17140" prot="public">
+          <name>TLS_UART_PMODE_ODD</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Odd Parity </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5ab45ee7fa68cdc08f60250d2274c8eeb1" prot="public">
+          <name>TLS_UART_PMODE_EVEN</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Even Parity </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5a43883628fbe0382a7d0844d5103f5f31" prot="public">
+          <name>TLS_UART_PMODE_MARK</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The parity bit is always 1. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5a0a1f7fd5d75ea2346fb85f343f8d67cd" prot="public">
+          <name>TLS_UART_PMODE_SPACE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The parity bit is always 0. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="116" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="115" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TLS_UART_CHSIZE</name>
+        <enumvalue id="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca620952f225bc2f4bf43ced5603e76ee8" prot="public">
+          <name>TLS_UART_CHSIZE_5BIT</name>
+          <initializer>= (0x00 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Character size: 5 bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca606cb2be686fd09d28620154f3249dc4" prot="public">
+          <name>TLS_UART_CHSIZE_6BIT</name>
+          <initializer>= (0x01 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Character size: 6 bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca7607dea4c759f03f9f9207c6c8c6f285" prot="public">
+          <name>TLS_UART_CHSIZE_7BIT</name>
+          <initializer>= (0x02 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Character size: 7 bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca549e7dd6a70cffeae1e26aa3a4710c23" prot="public">
+          <name>TLS_UART_CHSIZE_8BIT</name>
+          <initializer>= (0x03 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Character size: 8 bit </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="128" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="127" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__uart_8h_1aafa4f797d29d5448ced83888b1487ca2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TLS_UART_FLOW_CTRL_MODE</name>
+        <enumvalue id="wm__uart_8h_1aafa4f797d29d5448ced83888b1487ca2a5a139e5c37fd45124af5534faad6da05" prot="public">
+          <name>TLS_UART_FLOW_CTRL_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1aafa4f797d29d5448ced83888b1487ca2a77c35f7738b88b4a54436573bdf9a155" prot="public">
+          <name>TLS_UART_FLOW_CTRL_HARDWARE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="139" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__uart_8h_1af4f2c6657240d5985d8edfa65d9d4a68" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TLS_UART_RX_FLOW_CTRL_FLAG</name>
+        <enumvalue id="wm__uart_8h_1af4f2c6657240d5985d8edfa65d9d4a68a513604865468d218ec6ee7d40adbdafa" prot="public">
+          <name>TLS_UART_RX_DISABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1af4f2c6657240d5985d8edfa65d9d4a68a2fafa36e22959e9a908b0944b63f9d94" prot="public">
+          <name>TLS_UART_RX_ENABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="148" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="147" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__uart_8h_1a08368b89f09e5d091cb5d9ff2c122ca4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TLS_UART_STOPBITS</name>
+        <enumvalue id="wm__uart_8h_1a08368b89f09e5d091cb5d9ff2c122ca4a95a1169b32d7600bdccf461ea2c60cd6" prot="public">
+          <name>TLS_UART_ONE_STOPBITS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1a08368b89f09e5d091cb5d9ff2c122ca4a2e7fd7f9be7f4891dadb5cc975e92e20" prot="public">
+          <name>TLS_UART_TWO_STOPBITS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="157" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__uart_8h_1a3842567700928b9f347194f6f1c4c6fa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TLS_UART_STATUS</name>
+        <enumvalue id="wm__uart_8h_1a3842567700928b9f347194f6f1c4c6faaedc36339030198ebe38e5d3dbf9f874f" prot="public">
+          <name>TLS_UART_STATUS_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1a3842567700928b9f347194f6f1c4c6faa4cdbd2029374ff1bfcfae41526096318" prot="public">
+          <name>TLS_UART_STATUS_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="167" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="166" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TLS_UART_MODE</name>
+        <enumvalue id="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9a910ab6c84a6ccd5a93bafe0ccf35b176" prot="public">
+          <name>TLS_UART_MODE_POLL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>uart operation mode: poll </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9ab9b18ab29b58d64d5b8e91de57b5efaf" prot="public">
+          <name>TLS_UART_MODE_INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>uart operation mode: interrupt mode </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="177" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="176" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__uart_8h_1ae8439b28e50bf44095eab907c711bca5" prot="public" static="no">
+        <type>enum <ref refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5" kindref="member">TLS_UART_PMODE</ref></type>
+        <definition>typedef enum TLS_UART_PMODE  TLS_UART_PMODE_T</definition>
+        <argsstring></argsstring>
+        <name>TLS_UART_PMODE_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1ae14ba9f61a01baf0c876868a117a9a92" prot="public" static="no">
+        <type>enum <ref refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34c" kindref="member">TLS_UART_CHSIZE</ref></type>
+        <definition>typedef enum TLS_UART_CHSIZE  TLS_UART_CHSIZE_T</definition>
+        <argsstring></argsstring>
+        <name>TLS_UART_CHSIZE_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1a4fa36c78ca5f0fec1ac90e2451c621b6" prot="public" static="no">
+        <type>enum TLS_UART_FLOW_CTRL_MODE</type>
+        <definition>typedef enum TLS_UART_FLOW_CTRL_MODE  TLS_UART_FLOW_CTRL_MODE_T</definition>
+        <argsstring></argsstring>
+        <name>TLS_UART_FLOW_CTRL_MODE_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1aa91bb0f34cb96dff1a68a1d123361a06" prot="public" static="no">
+        <type>enum TLS_UART_RX_FLOW_CTRL_FLAG</type>
+        <definition>typedef enum TLS_UART_RX_FLOW_CTRL_FLAG  TLS_UART_RX_FLOW_CTRL_FLAG_T</definition>
+        <argsstring></argsstring>
+        <name>TLS_UART_RX_FLOW_CTRL_FLAG_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1aa662a09aadb70dc7137bbe8fd9514e10" prot="public" static="no">
+        <type>enum TLS_UART_STOPBITS</type>
+        <definition>typedef enum TLS_UART_STOPBITS  TLS_UART_STOPBITS_T</definition>
+        <argsstring></argsstring>
+        <name>TLS_UART_STOPBITS_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1ab5efd38c2a457b1b9346b699a21e0612" prot="public" static="no">
+        <type>enum TLS_UART_STATUS</type>
+        <definition>typedef enum TLS_UART_STATUS  TLS_UART_STATUS_T</definition>
+        <argsstring></argsstring>
+        <name>TLS_UART_STATUS_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1a9fb77133b6bafda952df09739de30cbd" prot="public" static="no">
+        <type>enum <ref refid="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9" kindref="member">TLS_UART_MODE</ref></type>
+        <definition>typedef enum TLS_UART_MODE  TLS_UART_MODE_T</definition>
+        <argsstring></argsstring>
+        <name>TLS_UART_MODE_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1afcc98f29b688714a0536865d201354d2" prot="public" static="no">
+        <type>struct <ref refid="structtls__uart__options" kindref="compound">tls_uart_options</ref></type>
+        <definition>typedef struct tls_uart_options  tls_uart_options_t</definition>
+        <argsstring></argsstring>
+        <name>tls_uart_options_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1ae06826d88d2f7736b227856ab85b658d" prot="public" static="no">
+        <type>struct <ref refid="structtls__uart__circ__buf" kindref="compound">tls_uart_circ_buf</ref></type>
+        <definition>typedef struct tls_uart_circ_buf  tls_uart_circ_buf_t</definition>
+        <argsstring></argsstring>
+        <name>tls_uart_circ_buf_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1a456becf9ce06e0fbac34019c70dfe525" prot="public" static="no">
+        <type>struct <ref refid="struct_t_l_s___u_a_r_t___r_e_g_s" kindref="compound">TLS_UART_REGS</ref></type>
+        <definition>typedef struct TLS_UART_REGS  TLS_UART_REGS_T</definition>
+        <argsstring></argsstring>
+        <name>TLS_UART_REGS_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1a956baa0bf1d858bb6caa688490340ef8" prot="public" static="no">
+        <type>struct <ref refid="structtls__uart__port" kindref="compound">tls_uart_port</ref></type>
+        <definition>typedef struct tls_uart_port  tls_uart_port_t</definition>
+        <argsstring></argsstring>
+        <name>tls_uart_port_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="297" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__uart_8h_1a3274b3b1e04c4ddb72249966d1f0875d" prot="public" static="no">
+        <type>struct <ref refid="structtls__uart__tx__msg" kindref="compound">tls_uart_tx_msg</ref></type>
+        <definition>typedef struct tls_uart_tx_msg  tls_uart_tx_msg_t</definition>
+        <argsstring></argsstring>
+        <name>tls_uart_tx_msg_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="310" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1gaae7c8cad9a5c23dc055c8f099e66c74a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_port_init</definition>
+        <argsstring>(u16 uart_no, tls_uart_options_t *opts, u8 modeChoose)</argsstring>
+        <name>tls_uart_port_init</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type><ref refid="structtls__uart__options" kindref="compound">tls_uart_options_t</ref> *</type>
+          <declname>opts</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>modeChoose</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to initial uart port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number. TLS_UART_0 or TLS_UART_1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart setting options,if this param is NULL,this function will use the default options.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>When the system is initialized, the function has been called, so users can not call the function. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1gaa5aa29f8a6c29f9902a89d1ddd0ae850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_uart_rx_callback_register</definition>
+        <argsstring>(u16 uart_no, s16(*rx_callback)(u16 len))</argsstring>
+        <name>tls_uart_rx_callback_register</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>s16(*)(u16 len)</type>
+          <declname>rx_callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register uart rx interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TLS_UART_0 or TLS_UART_1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rx_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart rx interrupt call back function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="356" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1gacccc57fac826742a6e3a3790792ef7eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_read</definition>
+        <argsstring>(u16 uart_no, u8 *buf, u16 readsize)</argsstring>
+        <name>tls_uart_read</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>readsize</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to copy circular buffer data to user buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart numer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the user buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">readsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the user read size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="370" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1ga3c976c140167b2343e3b1e88eb98ea04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_write</definition>
+        <argsstring>(u16 uart_no, char *buf, u16 writesize)</argsstring>
+        <name>tls_uart_write</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>writesize</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to transfer data synchronous. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a buf for saving user data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">writesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the user data length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tx success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tx failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="385" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1ga66c0d355b006c604528b78f485595e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_dma_write</definition>
+        <argsstring>(char *buf, u16 writesize, void(*cmpl_callback)(void *p), u16 uart_no)</argsstring>
+        <name>tls_uart_dma_write</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>writesize</declname>
+        </param>
+        <param>
+          <type>void(*)(void *p)</type>
+          <declname>cmpl_callback</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to transfer data throuth DMA. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a buf for saving user data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">writesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the user data length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cmpl_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function point,when the transfer is completed, the function will be called.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Only uart1 support DMA transfer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="400" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1ga3e59dbe73524a985d8e69ed7bdbb6641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_set_parity</definition>
+        <argsstring>(u16 uart_no, TLS_UART_PMODE_T paritytype)</argsstring>
+        <name>tls_uart_set_parity</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>TLS_UART_PMODE_T</type>
+          <declname>paritytype</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set uart parity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">paritytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a parity type defined in TLS_UART_PMODE_T</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="414" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1ga0af97723f000949265f6e159fc23a6c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_set_baud_rate</definition>
+        <argsstring>(u16 uart_no, u32 baudrate)</argsstring>
+        <name>tls_uart_set_baud_rate</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>baudrate</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set uart baudrate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">baudrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the baudrate user want used,the unit is HZ.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1gaec723b888d61f11f0426e990b3dcaf1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_set_stop_bits</definition>
+        <argsstring>(u16 uart_no, TLS_UART_STOPBITS_T stopbits)</argsstring>
+        <name>tls_uart_set_stop_bits</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>TLS_UART_STOPBITS_T</type>
+          <declname>stopbits</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set uart stop bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stopbits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a stop bit type defined in TLS_UART_STOPBITS_T</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="441" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>uart Driver Module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_UART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_UART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;wm_regs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__osal_8h" kindref="compound">wm_osal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_UART_RX_BUF_SIZE<sp/><sp/><sp/>4096</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_UART_TX_BUF_SIZE<sp/><sp/><sp/>4096</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WAKEUP_CHARS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MBOX_MSG_UART_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MBOX_MSG_UART_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="wm__uart_8h_1a7ea56890c6d1322130114d22897fa99f" refkind="member"><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B600<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B1200<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B1800<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B2400<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B4800<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B9600<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B19200<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>19200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B38400<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>38400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B57600<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>57600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B115200<sp/><sp/><sp/><sp/><sp/><sp/><sp/>115200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B230400<sp/><sp/><sp/><sp/><sp/><sp/><sp/>230400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B460800<sp/><sp/><sp/><sp/><sp/><sp/><sp/>460800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B921600<sp/><sp/><sp/><sp/><sp/><sp/>921600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B1000000<sp/><sp/><sp/><sp/><sp/><sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B1250000<sp/><sp/><sp/><sp/><sp/><sp/>1250000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B1500000<sp/><sp/><sp/><sp/><sp/><sp/>1500000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_BAUDRATE_B2000000<sp/><sp/><sp/><sp/><sp/><sp/>2000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_RX_INT_FLAG<sp/>(UIS_RX_FIFO<sp/>|<sp/>UIS_RX_FIFO_TIMEOUT<sp/>|<sp/>UIS_BREAK<sp/>|\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UIS_OVERRUN<sp/>|<sp/>UIS_FRM_ERR<sp/>|<sp/>UIS_PARITY_ERR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_RX_ERR_INT_FLAG<sp/>(UIS_BREAK<sp/>|<sp/>UIS_FRM_ERR<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UIS_PARITY_ERR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_TX_INT_FLAG<sp/>(UIS_TX_FIFO<sp/>|<sp/>UIS_TX_FIFO_EMPTY)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UART0_INT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART0_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(23UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UART1_INT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART1_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(24UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="wm__uart_8h_1a652a409f54868986f0ba36094f16ae25" refkind="member"><highlight class="preprocessor">#define<sp/>CIRC_CNT(head,tail,size)<sp/>(((head)<sp/>-<sp/>(tail))<sp/>&amp;<sp/>((size)-1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="wm__uart_8h_1ab1fa62ef974b01d1d9b6faf6be3f8cf6" refkind="member"><highlight class="preprocessor">#define<sp/>CIRC_SPACE(head,tail,size)<sp/>CIRC_CNT((tail),((head)+1),(size))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="wm__uart_8h_1aabebb37f7261e8e86e6a77d7d0352707" refkind="member"><highlight class="preprocessor">#define<sp/>CIRC_CNT_TO_END(head,tail,size)<sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>({int<sp/>end<sp/>=<sp/>(size)<sp/>-<sp/>(tail);<sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>n<sp/>=<sp/>((head)<sp/>+<sp/>end)<sp/>&amp;<sp/>((size)-1);<sp/>\</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>&lt;<sp/>end<sp/>?<sp/>n<sp/>:<sp/>end;})</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="wm__uart_8h_1a63666b33c1e3d60ea1a7a7601cdbbac8" refkind="member"><highlight class="preprocessor">#define<sp/>CIRC_SPACE_TO_END(head,tail,size)<sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>({int<sp/>end<sp/>=<sp/>(size)<sp/>-<sp/>1<sp/>-<sp/>(head);<sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>n<sp/>=<sp/>(end<sp/>+<sp/>(tail))<sp/>&amp;<sp/>((size)-1);<sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>&lt;=<sp/>end<sp/>?<sp/>n<sp/>:<sp/>end+1;})</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CIRC_SPACE_TO_END_FULL(head,tail,size)<sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>({int<sp/>end<sp/>=<sp/>(size)<sp/>-<sp/>1<sp/>-<sp/>(head);<sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>n<sp/>=<sp/>(end<sp/>+<sp/>(tail))<sp/>&amp;<sp/>((size)-1);<sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>&lt;<sp/>end<sp/>?<sp/>n<sp/>:<sp/>end+1;})</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>uart_circ_empty(circ)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((circ)-&gt;head<sp/>==<sp/>(circ)-&gt;tail)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>uart_circ_chars_pending(circ)<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(CIRC_CNT((circ)-&gt;head,<sp/>(circ)-&gt;tail,<sp/>TLS_UART_TX_BUF_SIZE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="structtls__uart__baud__rate" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__baud__rate" kindref="compound">tls_uart_baud_rate</ref></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>baud_rate;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>ubdiv;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>ubdiv_frac;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_0<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_1<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_2<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5" kindref="member">TLS_UART_PMODE</ref></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117" refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5a029fdb8becfe0573855a5b74c5f208f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5a029fdb8becfe0573855a5b74c5f208f0" kindref="member">TLS_UART_PMODE_DISABLED</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5aced5227d86b7e0dc4d63cfde7dc17140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5aced5227d86b7e0dc4d63cfde7dc17140" kindref="member">TLS_UART_PMODE_ODD</ref><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5ab45ee7fa68cdc08f60250d2274c8eeb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5ab45ee7fa68cdc08f60250d2274c8eeb1" kindref="member">TLS_UART_PMODE_EVEN</ref><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5a43883628fbe0382a7d0844d5103f5f31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5a43883628fbe0382a7d0844d5103f5f31" kindref="member">TLS_UART_PMODE_MARK</ref><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5a0a1f7fd5d75ea2346fb85f343f8d67cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1a414bb03f4bc27b976d06a5fdccd751b5a0a1f7fd5d75ea2346fb85f343f8d67cd" kindref="member">TLS_UART_PMODE_SPACE</ref><sp/>=<sp/>4,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}<sp/>TLS_UART_PMODE_T;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34c" kindref="member">TLS_UART_CHSIZE</ref></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129" refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca620952f225bc2f4bf43ced5603e76ee8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca620952f225bc2f4bf43ced5603e76ee8" kindref="member">TLS_UART_CHSIZE_5BIT</ref><sp/>=<sp/>(0x00<sp/>&lt;&lt;<sp/>0),<sp/></highlight></codeline>
+<codeline lineno="130" refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca606cb2be686fd09d28620154f3249dc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca606cb2be686fd09d28620154f3249dc4" kindref="member">TLS_UART_CHSIZE_6BIT</ref><sp/>=<sp/>(0x01<sp/>&lt;&lt;<sp/>0),<sp/></highlight></codeline>
+<codeline lineno="131" refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca7607dea4c759f03f9f9207c6c8c6f285" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca7607dea4c759f03f9f9207c6c8c6f285" kindref="member">TLS_UART_CHSIZE_7BIT</ref><sp/>=<sp/>(0x02<sp/>&lt;&lt;<sp/>0),<sp/></highlight></codeline>
+<codeline lineno="132" refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca549e7dd6a70cffeae1e26aa3a4710c23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1a20bf30840db82b5b132a480f9bafb34ca549e7dd6a70cffeae1e26aa3a4710c23" kindref="member">TLS_UART_CHSIZE_8BIT</ref><sp/>=<sp/>(0x03<sp/>&lt;&lt;<sp/>0),<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}<sp/>TLS_UART_CHSIZE_T;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TLS_UART_FLOW_CTRL_MODE</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_FLOW_CTRL_NONE,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_FLOW_CTRL_HARDWARE,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}<sp/>TLS_UART_FLOW_CTRL_MODE_T;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TLS_UART_RX_FLOW_CTRL_FLAG</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_RX_DISABLE,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_RX_ENABLE,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}<sp/>TLS_UART_RX_FLOW_CTRL_FLAG_T;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TLS_UART_STOPBITS</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_ONE_STOPBITS,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_TWO_STOPBITS,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}<sp/>TLS_UART_STOPBITS_T;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TLS_UART_STATUS</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_STATUS_OK,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_STATUS_ERROR,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}<sp/>TLS_UART_STATUS_T;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9" kindref="member">TLS_UART_MODE</ref></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178" refid="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9a910ab6c84a6ccd5a93bafe0ccf35b176" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9a910ab6c84a6ccd5a93bafe0ccf35b176" kindref="member">TLS_UART_MODE_POLL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179" refid="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9ab9b18ab29b58d64d5b8e91de57b5efaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__uart_8h_1aef830df3462f7ab27aaa7be47369d1d9ab9b18ab29b58d64d5b8e91de57b5efaf" kindref="member">TLS_UART_MODE_INT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}<sp/>TLS_UART_MODE_T;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="structtls__uart__icount" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__icount" kindref="compound">tls_uart_icount</ref></highlight></codeline>
+<codeline lineno="186"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>cts;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>dsr;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>rng;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>dcd;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>rx;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>tx;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>frame;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>overrun;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>parity;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>brk;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>buf_overrun;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="structtls__uart__options" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__options" kindref="compound">tls_uart_options</ref></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="207" refid="structtls__uart__options_1a9baf44843edf027339ea7a67f4f2a75a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__uart__options_1a9baf44843edf027339ea7a67f4f2a75a" kindref="member">baudrate</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="209" refid="structtls__uart__options_1aea2f54d44a3b3a8b6548cfc9db83e210" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_CHSIZE_T<sp/><ref refid="structtls__uart__options_1aea2f54d44a3b3a8b6548cfc9db83e210" kindref="member">charlength</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211" refid="structtls__uart__options_1a0e60badf26cb00ebf4ea544d63af0833" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_PMODE_T<sp/><ref refid="structtls__uart__options_1a0e60badf26cb00ebf4ea544d63af0833" kindref="member">paritytype</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213" refid="structtls__uart__options_1a406e555cf9663ccfc53f9bae2beba5fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_FLOW_CTRL_MODE_T<sp/><ref refid="structtls__uart__options_1a406e555cf9663ccfc53f9bae2beba5fb" kindref="member">flow_ctrl</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="215" refid="structtls__uart__options_1acef62e11e46cb1369f3fbc88791dc669" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_STOPBITS_T<sp/><ref refid="structtls__uart__options_1acef62e11e46cb1369f3fbc88791dc669" kindref="member">stopbits</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}<sp/><ref refid="structtls__uart__options" kindref="compound">tls_uart_options_t</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="structtls__uart__circ__buf" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__circ__buf" kindref="compound">tls_uart_circ_buf</ref></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>*buf;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>head;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>tail;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}<sp/><ref refid="structtls__uart__circ__buf" kindref="compound">tls_uart_circ_buf_t</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="struct_t_l_s___u_a_r_t___r_e_g_s" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s" kindref="compound">TLS_UART_REGS</ref></highlight></codeline>
+<codeline lineno="234"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="235" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1aab5259bbe7a0619c3805bb3a282fc165" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1aab5259bbe7a0619c3805bb3a282fc165" kindref="member">UR_LC</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a68b46c91e2db76807015a3eeb2c3654a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a68b46c91e2db76807015a3eeb2c3654a" kindref="member">UR_FC</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="237" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a4d79a754e72816a18b1342a93e84ed17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a4d79a754e72816a18b1342a93e84ed17" kindref="member">UR_DMAC</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a52170ffee3af164731aca4171889771e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a52170ffee3af164731aca4171889771e" kindref="member">UR_FIFOC</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1addadf5ba8b7f6d46a4b0320a23012ff3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1addadf5ba8b7f6d46a4b0320a23012ff3" kindref="member">UR_BD</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a897b84f50669162b4c2fa92fde9d3b0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a897b84f50669162b4c2fa92fde9d3b0d" kindref="member">UR_INTM</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a1d44659a59bb48cf2befc5c56202282a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a1d44659a59bb48cf2befc5c56202282a" kindref="member">UR_INTS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a871a4d7d6569ca6dea95019910d8946f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a871a4d7d6569ca6dea95019910d8946f" kindref="member">UR_FIFOS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="243" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a86a5869aff90e2a38b682ba3f8659fba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a86a5869aff90e2a38b682ba3f8659fba" kindref="member">UR_TXW</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>UR_RES0;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>UR_RES1;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>UR_RES2;</highlight></codeline>
+<codeline lineno="247" refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a71f19161f5aab1874d4a466377bfc8a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a71f19161f5aab1874d4a466377bfc8a2" kindref="member">UR_RXW</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}<sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s" kindref="compound">TLS_UART_REGS_T</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="structtls__uart__port" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__port" kindref="compound">tls_uart_port</ref></highlight></codeline>
+<codeline lineno="255"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256" refid="structtls__uart__port_1a319ec4ec80e294dd94dd7cd713afbc10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__uart__port_1a319ec4ec80e294dd94dd7cd713afbc10" kindref="member">uart_no</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="258" refid="structtls__uart__port_1aec83573cae77ad0fa9a5ea3e7fd24f01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__uart__port_1aec83573cae77ad0fa9a5ea3e7fd24f01" kindref="member">uart_irq_no</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>plus_char_cnt;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="structtls__uart__port_1a82d7377e4f5f9ad4f83b9f19815c73df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_UART_MODE_T<sp/><ref refid="structtls__uart__port_1a82d7377e4f5f9ad4f83b9f19815c73df" kindref="member">uart_mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="264" refid="structtls__uart__port_1a0d7a51cc84d1f7963bfd14ae826211ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__options" kindref="compound">tls_uart_options</ref><sp/><ref refid="structtls__uart__port_1a0d7a51cc84d1f7963bfd14ae826211ba" kindref="member">opts</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="266" refid="structtls__uart__port_1a113edcf7707f6c21eabf0f7ae1e9b033" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtls__uart__port_1a113edcf7707f6c21eabf0f7ae1e9b033" kindref="member">fcStatus</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TLS_UART_RX_FLOW_CTRL_FLAG<sp/>rxstatus;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="structtls__uart__port_1a5bc5227f080597f1b01a782fc342ec31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtls__uart__port_1a5bc5227f080597f1b01a782fc342ec31" kindref="member">tx_fifofull</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="272" refid="structtls__uart__port_1a3769a19b58e3a31d52ffd294d97e0b7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s" kindref="compound">TLS_UART_REGS_T</ref><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>*<ref refid="structtls__uart__port_1a3769a19b58e3a31d52ffd294d97e0b7a" kindref="member">regs</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="274" refid="structtls__uart__port_1ab9e3c400df43299c569bbf2cec558f8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__icount" kindref="compound">tls_uart_icount</ref><sp/><ref refid="structtls__uart__port_1ab9e3c400df43299c569bbf2cec558f8c" kindref="member">icount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="276" refid="structtls__uart__port_1a4529f3bd936123d8c545ca43b2f1506c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__circ__buf" kindref="compound">tls_uart_circ_buf</ref><sp/><ref refid="structtls__uart__port_1a4529f3bd936123d8c545ca43b2f1506c" kindref="member">recv</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="278"><highlight class="comment">//<sp/>struct<sp/>tls_uart_circ_buf<sp/>xmit;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>tx_msg_pending_list;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>tx_msg_to_be_freed_list;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>hw_stopped;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref><sp/>*tx_sem;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf_ptr;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>buf_len;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>s16(*rx_callback)<sp/>(u16<sp/>len);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>s16(*tx_callback)<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__port" kindref="compound">tls_uart_port</ref><sp/>*<sp/>port);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tx_dma_on;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">}<sp/><ref refid="structtls__uart__port" kindref="compound">tls_uart_port_t</ref>;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="structtls__uart__tx__msg" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__uart__tx__msg" kindref="compound">tls_uart_tx_msg</ref></highlight></codeline>
+<codeline lineno="303"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>list;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>buflen;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>offset;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*finish_callback)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*callback_arg;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">}<sp/><ref refid="structtls__uart__tx__msg" kindref="compound">tls_uart_tx_msg_t</ref>;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___driver___a_p_is_1gaae7c8cad9a5c23dc055c8f099e66c74a" kindref="member">tls_uart_port_init</ref>(u16<sp/>uart_no,<sp/><ref refid="structtls__uart__options" kindref="compound">tls_uart_options_t</ref><sp/>*<sp/>opts,<sp/>u8<sp/>modeChoose);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___driver___a_p_is_1gaa5aa29f8a6c29f9902a89d1ddd0ae850" kindref="member">tls_uart_rx_callback_register</ref>(u16<sp/>uart_no,<sp/>s16(*rx_callback)<sp/>(u16<sp/>len));</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___driver___a_p_is_1gacccc57fac826742a6e3a3790792ef7eb" kindref="member">tls_uart_read</ref>(u16<sp/>uart_no,<sp/>u8<sp/>*<sp/>buf,<sp/>u16<sp/>readsize);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___driver___a_p_is_1ga3c976c140167b2343e3b1e88eb98ea04" kindref="member">tls_uart_write</ref>(u16<sp/>uart_no,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/>u16<sp/>writesize);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___driver___a_p_is_1ga66c0d355b006c604528b78f485595e0b" kindref="member">tls_uart_dma_write</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/>u16<sp/>writesize,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*cmpl_callback)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p),<sp/>u16<sp/>uart_no);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___driver___a_p_is_1ga3e59dbe73524a985d8e69ed7bdbb6641" kindref="member">tls_uart_set_parity</ref>(u16<sp/>uart_no,<sp/>TLS_UART_PMODE_T<sp/>paritytype);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___driver___a_p_is_1ga0af97723f000949265f6e159fc23a6c3" kindref="member">tls_uart_set_baud_rate</ref>(u16<sp/>uart_no,<sp/>u32<sp/>baudrate);</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t___driver___a_p_is_1gaec723b888d61f11f0426e990b3dcaf1e" kindref="member">tls_uart_set_stop_bits</ref>(u16<sp/>uart_no,<sp/>TLS_UART_STOPBITS_T<sp/>stopbits);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_UART_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_uart.h"/>
+  </compounddef>
+</doxygen>

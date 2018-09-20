@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structip__addr" kind="struct" language="C++" prot="public">
+    <compoundname>ip_addr</compoundname>
+    <includes refid="wm__netif_8h" local="no">wm_netif.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structip__addr_1a10b54af9e4e97601808a35b94e3b5402" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 ip_addr::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="39" column="1" bodyfile="Include/App/wm_netif.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure for IP address </para>    </detaileddescription>
+    <location file="Include/App/wm_netif.h" line="38" column="1" bodyfile="Include/App/wm_netif.h" bodystart="37" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structip__addr_1a10b54af9e4e97601808a35b94e3b5402" prot="public" virt="non-virtual"><scope>ip_addr</scope><name>addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

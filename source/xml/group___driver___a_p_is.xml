@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___driver___a_p_is" kind="group">
+    <compoundname>Driver_APIs</compoundname>
+    <title>Driver APIs</title>
+    <innergroup refid="group___f_l_a_s_h___driver___a_p_is">FLASH Driver APIs</innergroup>
+    <innergroup refid="group___h_o_s_t_s_p_i___driver___a_p_is">HOSTSPI Driver APIs</innergroup>
+    <innergroup refid="group___h_s_p_i___driver___a_p_is">HSPI Driver APIs</innergroup>
+    <innergroup refid="group___i2_c___driver___a_p_is">I2C Driver APIs</innergroup>
+    <innergroup refid="group___i2_s___driver___a_p_is">I2S Driver APIs</innergroup>
+    <innergroup refid="group___i_n_t_e_r_n_a_l___f_l_a_s_h___driver___a_p_is">INTERNAL_FLASH Driver APIs</innergroup>
+    <innergroup refid="group___i_r_q___driver___a_p_is">IRQ Driver APIs</innergroup>
+    <innergroup refid="group___l_c_d___driver___a_p_is">LCD Driver APIs</innergroup>
+    <innergroup refid="group___p_w_m___driver___a_p_is">PWM Driver APIs</innergroup>
+    <innergroup refid="group___r_t_c___driver___a_p_is">RTC Driver APIs</innergroup>
+    <innergroup refid="group___t_i_m_e_r___driver___a_p_is">TIMER Driver APIs</innergroup>
+    <innergroup refid="group___u_a_r_t___driver___a_p_is">UART Driver APIs</innergroup>
+    <innergroup refid="group___w_d_g___driver___a_p_is">WDG Driver APIs</innergroup>
+    <briefdescription>
+<para>Driver APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

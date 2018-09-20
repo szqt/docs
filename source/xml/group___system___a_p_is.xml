@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___system___a_p_is" kind="group">
+    <compoundname>System_APIs</compoundname>
+    <title>System APIs</title>
+    <innergroup refid="group___d_l_i_s_t___a_p_is">DLIST APIs</innergroup>
+    <innergroup refid="group___random___a_p_is">Random APIs</innergroup>
+    <innergroup refid="group___d_e_b_u_g___a_p_is">DEBUG APIs</innergroup>
+    <innergroup refid="group___r_e_g___a_p_is">REG APIs</innergroup>
+    <innergroup refid="group___o_s___a_p_is">OS APIs</innergroup>
+    <innergroup refid="group___f_w_u_p___a_p_is">FWUP APIs</innergroup>
+    <innergroup refid="group___m_e_m___a_p_is">MEM APIs</innergroup>
+    <innergroup refid="group___param___a_p_is">Param APIs</innergroup>
+    <innergroup refid="group___m_b_o_x___a_p_is">MBOX APIs</innergroup>
+    <innergroup refid="group___task___a_p_is">Task APIs</innergroup>
+    <innergroup refid="group___timer___a_p_is">Timer APIs</innergroup>
+    <briefdescription>
+<para>System APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

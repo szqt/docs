@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___u_a_r_t___driver___a_p_is" kind="group">
+    <compoundname>UART_Driver_APIs</compoundname>
+    <title>UART Driver APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1gaae7c8cad9a5c23dc055c8f099e66c74a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_port_init</definition>
+        <argsstring>(u16 uart_no, tls_uart_options_t *opts, u8 modeChoose)</argsstring>
+        <name>tls_uart_port_init</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type><ref refid="structtls__uart__options" kindref="compound">tls_uart_options_t</ref> *</type>
+          <declname>opts</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>modeChoose</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to initial uart port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number. TLS_UART_0 or TLS_UART_1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">opts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart setting options,if this param is NULL,this function will use the default options.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>When the system is initialized, the function has been called, so users can not call the function. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1gaa5aa29f8a6c29f9902a89d1ddd0ae850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_uart_rx_callback_register</definition>
+        <argsstring>(u16 uart_no, s16(*rx_callback)(u16 len))</argsstring>
+        <name>tls_uart_rx_callback_register</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>s16(*)(u16 len)</type>
+          <declname>rx_callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register uart rx interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TLS_UART_0 or TLS_UART_1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rx_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart rx interrupt call back function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="356" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1gacccc57fac826742a6e3a3790792ef7eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_read</definition>
+        <argsstring>(u16 uart_no, u8 *buf, u16 readsize)</argsstring>
+        <name>tls_uart_read</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>readsize</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to copy circular buffer data to user buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart numer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the user buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">readsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the user read size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="370" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1ga3c976c140167b2343e3b1e88eb98ea04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_write</definition>
+        <argsstring>(u16 uart_no, char *buf, u16 writesize)</argsstring>
+        <name>tls_uart_write</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>writesize</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to transfer data synchronous. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a buf for saving user data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">writesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the user data length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tx success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tx failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="385" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1ga66c0d355b006c604528b78f485595e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_dma_write</definition>
+        <argsstring>(char *buf, u16 writesize, void(*cmpl_callback)(void *p), u16 uart_no)</argsstring>
+        <name>tls_uart_dma_write</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>writesize</declname>
+        </param>
+        <param>
+          <type>void(*)(void *p)</type>
+          <declname>cmpl_callback</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to transfer data throuth DMA. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a buf for saving user data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">writesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the user data length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cmpl_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function point,when the transfer is completed, the function will be called.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Only uart1 support DMA transfer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="400" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1ga3e59dbe73524a985d8e69ed7bdbb6641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_set_parity</definition>
+        <argsstring>(u16 uart_no, TLS_UART_PMODE_T paritytype)</argsstring>
+        <name>tls_uart_set_parity</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>TLS_UART_PMODE_T</type>
+          <declname>paritytype</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set uart parity. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">paritytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a parity type defined in TLS_UART_PMODE_T</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="414" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1ga0af97723f000949265f6e159fc23a6c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_set_baud_rate</definition>
+        <argsstring>(u16 uart_no, u32 baudrate)</argsstring>
+        <name>tls_uart_set_baud_rate</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>baudrate</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set uart baudrate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">baudrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the baudrate user want used,the unit is HZ.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t___driver___a_p_is_1gaec723b888d61f11f0426e990b3dcaf1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_uart_set_stop_bits</definition>
+        <argsstring>(u16 uart_no, TLS_UART_STOPBITS_T stopbits)</argsstring>
+        <name>tls_uart_set_stop_bits</name>
+        <param>
+          <type>u16</type>
+          <declname>uart_no</declname>
+        </param>
+        <param>
+          <type>TLS_UART_STOPBITS_T</type>
+          <declname>stopbits</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set uart stop bits. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">uart_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the uart number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stopbits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a stop bit type defined in TLS_UART_STOPBITS_T</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if setting fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="441" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UART driver APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

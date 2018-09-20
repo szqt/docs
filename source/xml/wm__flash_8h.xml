@@ -1,0 +1,578 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__flash_8h" kind="file" language="C++">
+    <compoundname>wm_flash.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includes refid="wm__osal_8h" local="yes">wm_osal.h</includes>
+    <incdepgraph>
+      <node id="93">
+        <label>Include/Driver/wm_flash.h</label>
+        <link refid="wm__flash_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="97">
+        <label>stdlib.h</label>
+      </node>
+      <node id="95">
+        <label>wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="99">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="98">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>stdio.h</label>
+      </node>
+      <node id="101">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structfls__list" prot="public">fls_list</innerclass>
+    <innerclass refid="structtls__fls__drv" prot="public">tls_fls_drv</innerclass>
+    <innerclass refid="structtls__fls" prot="public">tls_fls</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__flash_8h_1a5369322f74a0a47491f6ea5ee5829e99" prot="public" static="no">
+        <name>TLS_FLS_STATUS_OK</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="16" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a22bded5eedec730def693d39dc835ef2" prot="public" static="no">
+        <name>TLS_FLS_STATUS_EINVAL</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="17" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a0940a311936b586d32190ddbb50533a2" prot="public" static="no">
+        <name>TLS_FLS_STATUS_EBUSY</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="18" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a1b74ba10e2366326fd81ac931af68872" prot="public" static="no">
+        <name>TLS_FLS_STATUS_EPERM</name>
+        <initializer>(3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="19" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1afc007d246bd8225ba0ed1b7753461d91" prot="public" static="no">
+        <name>TLS_FLS_STATUS_ENOSUPPORT</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="20" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a4f7aff55ae159444b526570318336f04" prot="public" static="no">
+        <name>TLS_FLS_STATUS_EEXIST</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="21" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a14b350d59fd44913dbb232f689e713c0" prot="public" static="no">
+        <name>TLS_FLS_STATUS_ENOMEM</name>
+        <initializer>(6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="22" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a0888936603f54d8e2f401e29163e4cb0" prot="public" static="no">
+        <name>TLS_FLS_STATUS_EOVERFLOW</name>
+        <initializer>(7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="23" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a245e1e5074de456a13769c3052708f76" prot="public" static="no">
+        <name>TLS_FLS_STATUS_ENODEV</name>
+        <initializer>(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="24" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a1f15144d43f7663f4724118e0ad24764" prot="public" static="no">
+        <name>TLS_FLS_STATUS_EDEV</name>
+        <initializer>(9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="25" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a0dc99d89146330ba0228f3057917c163" prot="public" static="no">
+        <name>TLS_FLS_STATUS_EIO</name>
+        <initializer>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="26" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a4ab9ae04cddb5485c0b3d9d6acf995c6" prot="public" static="no">
+        <name>TLS_FLS_STATUS_ENODRV</name>
+        <initializer>(11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="27" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a959855356369f33b958d2f9d70b44661" prot="public" static="no">
+        <name>TLS_FLS_PARAM_TYPE_ID</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="29" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1ae626532bb1ab364fc516a02135e8db94" prot="public" static="no">
+        <name>TLS_FLS_PARAM_TYPE_SIZE</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="30" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a677581a042a822bfc556d7facd0ddb61" prot="public" static="no">
+        <name>TLS_FLS_PARAM_TYPE_PAGE_SIZE</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="31" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a3057a5c7d35b8413d59c68981079abfc" prot="public" static="no">
+        <name>TLS_FLS_PARAM_TYPE_PROG_SIZE</name>
+        <initializer>(3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="32" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1accea6919e3a17813f8f4433c9c79feec" prot="public" static="no">
+        <name>TLS_FLS_PARAM_TYPE_SECTOR_SIZE</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="33" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1ad4ce028c2e4a1b147de71e97c918858b" prot="public" static="no">
+        <name>TLS_FLS_FLAG_UNDER_PROTECT</name>
+        <initializer>(1&lt;&lt;0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="35" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a05b9f08a66f21fa1dc47464508e160ab" prot="public" static="no">
+        <name>TLS_FLS_FLAG_FAST_READ</name>
+        <initializer>(1&lt;&lt;1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="36" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1ad5f397f8dac7044be5680db64a25c3b0" prot="public" static="no">
+        <name>TLS_FLS_FLAG_AAAI</name>
+        <initializer>(1&lt;&lt;2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="37" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__flash_8h_1a7c6abe89029bb3a9553391d894fe16e5" prot="public" static="no">
+        <name>FLS_CMD_READ_DEV_ID</name>
+        <initializer>(0x9F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="39" column="9" bodyfile="Include/Driver/wm_flash.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___f_l_a_s_h___driver___a_p_is_1gab81c9ee3868591f8b896b5dc807cf62b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spifls_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_spifls_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to initial flash module structer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if init sucsess </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EBUSY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>already inited </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___driver___a_p_is_1ga24282493f16f4b030cace5c15cdd1e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spifls_read</definition>
+        <argsstring>(u32 addr, u8 *buf, u32 len)</argsstring>
+        <name>tls_spifls_read</name>
+        <param>
+          <type>u32</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to read data from the flash. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is byte offset addr for read from the flash. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is user for data buffer of flash read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is byte length for read.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if read sucsess </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if read fail</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_l_a_s_h___driver___a_p_is_1gaaba4857de6714daf78a779d66f8c5c12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_spifls_write</definition>
+        <argsstring>(u32 addr, u8 *buf, u32 len)</argsstring>
+        <name>tls_spifls_write</name>
+        <param>
+          <type>u32</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to write data to the flash. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is byte offset addr for write to the flash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the data buffer want to write to flash </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the byte length want to write</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if write flash success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EPERM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if flash struct point is null </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_ENODRV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if flash driver is not installed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if argument is invalid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FLS_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if io error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="149" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>flash Driver module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_FLASH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_FLASH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__osal_8h" kindref="compound">wm_osal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_OK<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_EINVAL<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_EBUSY<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_EPERM<sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_ENOSUPPORT<sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_EEXIST<sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_ENOMEM<sp/><sp/><sp/><sp/><sp/><sp/>(6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_EOVERFLOW<sp/><sp/><sp/><sp/><sp/><sp/>(7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_ENODEV<sp/><sp/><sp/><sp/><sp/><sp/>(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_EDEV<sp/><sp/><sp/><sp/><sp/><sp/>(9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_EIO<sp/><sp/><sp/><sp/><sp/><sp/>(10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_STATUS_ENODRV<sp/><sp/><sp/><sp/><sp/><sp/>(11)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_PARAM_TYPE_ID<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_PARAM_TYPE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_PARAM_TYPE_PAGE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_PARAM_TYPE_PROG_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_PARAM_TYPE_SECTOR_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_FLAG_UNDER_PROTECT<sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_FLAG_FAST_READ<sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FLS_FLAG_AAAI<sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLS_CMD_READ_DEV_ID<sp/><sp/><sp/><sp/><sp/>(0x9F)<sp/><sp/>//<sp/>read<sp/>device<sp/>id<sp/>//(0x9f)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structfls__list" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfls__list" kindref="compound">fls_list</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfls__list" kindref="compound">fls_list</ref><sp/>*next;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfls__list" kindref="compound">fls_list</ref><sp/>*prev;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structtls__fls__drv" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__fls__drv" kindref="compound">tls_fls_drv</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfls__list" kindref="compound">fls_list</ref><sp/>drv_list;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>id;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>total_size;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>page_size;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>program_size;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>sector_size;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>clock;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>mode;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>cs_active;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>flags;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="wm__sockets2_80_83_8h_1a822040573319cf87bfe6758d511be57f" kindref="member">read</ref>)<sp/>(u32,<sp/>u8<sp/>*,<sp/>u32);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*fast_read)<sp/>(u32,<sp/>u8<sp/>*,<sp/>u32);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*page_write)<sp/>(u32,<sp/>u8<sp/>*);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*erase)<sp/>(u32);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*chip_erase)<sp/>(void);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*probe)(u32<sp/>id);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*</highlight><highlight class="keyword">remove</highlight><highlight class="normal">)<sp/>(void);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structtls__fls" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__fls" kindref="compound">tls_fls</ref></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfls__list" kindref="compound">fls_list</ref><sp/>fls_drvs;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__fls__drv" kindref="compound">tls_fls_drv</ref><sp/>*current_drv;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref><sp/>*fls_lock;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_l_a_s_h___driver___a_p_is_1gab81c9ee3868591f8b896b5dc807cf62b" kindref="member">tls_spifls_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_l_a_s_h___driver___a_p_is_1ga24282493f16f4b030cace5c15cdd1e9f" kindref="member">tls_spifls_read</ref>(u32<sp/>addr,<sp/>u8<sp/>*<sp/>buf,<sp/>u32<sp/>len);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_l_a_s_h___driver___a_p_is_1gaaba4857de6714daf78a779d66f8c5c12" kindref="member">tls_spifls_write</ref>(u32<sp/>addr,<sp/>u8<sp/>*<sp/>buf,<sp/>u32<sp/>len);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_FLASH_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_flash.h"/>
+  </compounddef>
+</doxygen>

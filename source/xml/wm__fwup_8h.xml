@@ -1,0 +1,1271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__fwup_8h" kind="file" language="C++">
+    <compoundname>wm_fwup.h</compoundname>
+    <includes refid="wm__osal_8h" local="yes">wm_osal.h</includes>
+    <includes refid="list_8h" local="yes">list.h</includes>
+    <incdepgraph>
+      <node id="338">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="333">
+        <label>stdlib.h</label>
+      </node>
+      <node id="339">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="332" relation="include">
+        </childnode>
+      </node>
+      <node id="331">
+        <label>wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="335">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="330">
+        <label>Include/Platform/wm_fwup.h</label>
+        <link refid="wm__fwup_8h"/>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>stdio.h</label>
+      </node>
+      <node id="337">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_____t___b_o_o_t_e_r" prot="public">__T_BOOTER</innerclass>
+    <innerclass refid="structtls__fwup__image__hdr" prot="public">tls_fwup_image_hdr</innerclass>
+    <innerclass refid="structtls__fwup__block" prot="public">tls_fwup_block</innerclass>
+    <innerclass refid="structtls__fwup__request" prot="public">tls_fwup_request</innerclass>
+    <innerclass refid="structtls__fwup" prot="public">tls_fwup</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__fwup_8h_1ac13ef7aaa2ff3000fda3680d7fbfdef6" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_OK</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>firmware update status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="17" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a501e8facdce737c4b75379b2d25c6470" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_EINVALID</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="18" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1ae7dc9a5838d4b2321a318cbb6584a648" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_EMEM</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="19" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a28c08f6c4e6376f7337192ab9f70b5c2" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_EPERM</name>
+        <initializer>(3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="20" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a2668ed1cb7a346ba6e500f5c3670eb17" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_EBUSY</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="21" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a2a62659bac9d76f1d7b296764a1d78b1" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_ESESSIONID</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="22" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a358fe17129981a398c54c0c55dc48cb5" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_EIO</name>
+        <initializer>(6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="23" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a95df0a6d2a8c07ca8a4d82c41ece6ba6" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_ESIGNATURE</name>
+        <initializer>(7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="24" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a92cfa7ab8892fa5fed188ce499f947a5" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_ECRC</name>
+        <initializer>(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="25" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a84af81d245eb09b6d46385a7a7697ccb" prot="public" static="no">
+        <name>TLS_FWUP_STATUS_EUNDEF</name>
+        <initializer>(9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="26" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a707b09bab7535b35759a7abe386908e1" prot="public" static="no">
+        <name>TLS_FWUP_IMAGE_SIGNATURE_WORD</name>
+        <initializer>0x64365577</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>firmware signature </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="29" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a8495e5a790526f7306f99015010f6db2" prot="public" static="no">
+        <name>TLS_FWUP_IMAGE_SIGNATURE_WORD_B</name>
+        <initializer>0x62161900</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="30" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a14f8c2e2b1b6022743992bc510d3c263" prot="public" static="no">
+        <name>TLS_FWUP_BLK_SIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>firmware block size for one time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="33" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1aff447eca1ca71c43b11037ff3214e07c" prot="public" static="no">
+        <name>TLS_FWUP_REQ_STATUS_IDLE</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>firmware update request status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="36" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a3c52727e9932d489858050ec9874e2b1" prot="public" static="no">
+        <name>TLS_FWUP_REQ_STATUS_BUSY</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="37" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a7f66779057b8dfcd62579e51770a7519" prot="public" static="no">
+        <name>TLS_FWUP_REQ_STATUS_SUCCESS</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="38" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a50e8764cb46ce835183ab78f23d21980" prot="public" static="no">
+        <name>TLS_FWUP_REQ_STATUS_FIO</name>
+        <initializer>(3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="39" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1ac92bbc23ade530a3233c48913ebe16e6" prot="public" static="no">
+        <name>TLS_FWUP_REQ_STATUS_FSIGNATURE</name>
+        <initializer>(4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="40" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a6819918a66e01c4fa1b9aa3845fa587b" prot="public" static="no">
+        <name>TLS_FWUP_REQ_STATUS_FMEM</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="41" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a2c61490a1d608a1c5ee608208ba8ef1e" prot="public" static="no">
+        <name>TLS_FWUP_REQ_STATUS_FCRC</name>
+        <initializer>(6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="42" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a8c5a784b809d7e1ddbcd0019e50f5077" prot="public" static="no">
+        <name>TLS_FWUP_REQ_STATUS_FCOMPLETE</name>
+        <initializer>(7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="43" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a83cda2fab016685008f40656d4a7763a" prot="public" static="no">
+        <name>TLS_FWUP_STATE_UNDEF</name>
+        <initializer>(0xffff)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>firmware update state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="46" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1ab3c2e2632158023628442af412a4eb5f" prot="public" static="no">
+        <name>TLS_FWUP_STATE_BUSY</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="47" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a57822bac5c1aa0a5fa763b03417b31a5" prot="public" static="no">
+        <name>TLS_FWUP_STATE_COMPLETE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="48" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1ab8ffe3d0fa1194bc2b55777b197bfb57" prot="public" static="no">
+        <name>TLS_FWUP_STATE_ERROR_IO</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="49" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1ab268c1c6ede04592ec123c9837f34b41" prot="public" static="no">
+        <name>TLS_FWUP_STATE_ERROR_SIGNATURE</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="50" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a49b952e62b4e8edebe599a5c196246b8" prot="public" static="no">
+        <name>TLS_FWUP_STATE_ERROR_MEM</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="51" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1aeb4ff1ca265ad9566d922ff9b432b6d7" prot="public" static="no">
+        <name>TLS_FWUP_STATE_ERROR_CRC</name>
+        <initializer>(1 &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="52" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a2863edbb70c2611fb71de790a1a4cde6" prot="public" static="no">
+        <name>TLS_FWUP_STATE_ERROR</name>
+        <initializer>(TLS_FWUP_STATE_ERROR_IO | TLS_FWUP_STATE_ERROR_SIGNATURE | TLS_FWUP_STATE_ERROR_MEM | TLS_FWUP_STATE_ERROR_CRC)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="54" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1ae11713052c724f3b5b75bf520ea175c5" prot="public" static="no">
+        <name>TLS_FWUP_DEST_SPECIFIC_FIRMWARE</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>update type 0:firmware, 1: data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="57" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__fwup_8h_1a413f25f8e0af1e597d4f0c1ca869080f" prot="public" static="no">
+        <name>TLS_FWUP_DEST_SPECIFIC_DATA</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="58" column="9" bodyfile="Include/Platform/wm_fwup.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__fwup_8h_1abe0754173a6950f3756fa48d523a6f75" prot="public" static="no" strong="no">
+        <type></type>
+        <name>IMAGE_TYPE_ENUM</name>
+        <enumvalue id="wm__fwup_8h_1abe0754173a6950f3756fa48d523a6f75a55a41ad92d65a008fc377ed9d145b4a6" prot="public">
+          <name>IMG_TYPE_PLAIN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__fwup_8h_1abe0754173a6950f3756fa48d523a6f75a424af3ee31e6931b970a8b5908786a10" prot="public">
+          <name>IMG_TYPE_FLASHBIN</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__fwup_8h_1abe0754173a6950f3756fa48d523a6f75ad449ab3475249d497f624ccd99e96079" prot="public">
+          <name>IMG_TYPE_SECBOOT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="60" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__fwup_8h_1adc29c2ff13d900c2f185ee95427fb06c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@4</name>
+        <enumvalue id="wm__fwup_8h_1adc29c2ff13d900c2f185ee95427fb06ca175d0d170d28baf729f707951cdb0093" prot="public">
+          <name>NOT_ZIP_FILE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__fwup_8h_1adc29c2ff13d900c2f185ee95427fb06cabbad917fa51ac1695aa1b441ec65378d" prot="public">
+          <name>ZIP_FILE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="65" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_fwup_image_src</name>
+        <enumvalue id="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808ac767e0b5be3b8b44482bc788980ad261" prot="public">
+          <name>TLS_FWUP_IMAGE_SRC_LUART</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>LOW SPEED UART </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808aa3e1a2fb1508dcd3451748fade3fd9c1" prot="public">
+          <name>TLS_FWUP_IMAGE_SRC_HUART</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>HIGH SPEED UART </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808a2fc9f9a1039e24e78f9b5263978b0223" prot="public">
+          <name>TLS_FWUP_IMAGE_SRC_HSPI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>HIGH SPEED SPI </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808ab12515a4f7035df6cab976c585469f4e" prot="public">
+          <name>TLS_FWUP_IMAGE_SRC_WEB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>WEB SERVER </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration for image soure when firmware update </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="105" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="105" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__fwup_8h_1ad23ff828c6643a1b6a92abd66cbc602e" prot="public" static="no">
+        <type>struct <ref refid="struct_____t___b_o_o_t_e_r" kindref="compound">__T_BOOTER</ref></type>
+        <definition>typedef struct __T_BOOTER  T_BOOTER</definition>
+        <argsstring></argsstring>
+        <name>T_BOOTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1gad5d70b016505b51f6ef9a53447fe28e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_fwup_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to initialize firmware update task. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initial success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EBUSY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>already initialed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1ga8d0283f782694040144ba09f99d5a02e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 tls_fwup_enter</definition>
+        <argsstring>(enum tls_fwup_image_src image_src)</argsstring>
+        <name>tls_fwup_enter</name>
+        <param>
+          <type>enum <ref refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808" kindref="member">tls_fwup_image_src</ref></type>
+          <declname>image_src</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to enter firmware update. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image_src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>image file&apos;s source, from TLS_FWUP_IMAGE_SRC_LUART, TLS_FWUP_IMAGE_SRC_WEB,TLS_FWUP_IMAGE_SRC_HUART, TLS_FWUP_IMAGE_SRC_HSPI</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>non-zero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>successfully, return session id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1gadaffef618f30c61cbc4cb4b8385827c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_exit</definition>
+        <argsstring>(u32 session_id)</argsstring>
+        <name>tls_fwup_exit</name>
+        <param>
+          <type>u32</type>
+          <declname>session_id</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to exit firmware update. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>session identity of firmware update</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>exit success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EPERM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>globle param is not initialed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_ESESSIONID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error session id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EBUSY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>update state is busy</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1ga13696ea4bf4660950fe7d005a15c39a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_request_sync</definition>
+        <argsstring>(u32 session_id, u8 *data, u32 data_len)</argsstring>
+        <name>tls_fwup_request_sync</name>
+        <param>
+          <type>u32</type>
+          <declname>session_id</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to start update. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current sessin id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data want to update </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>updade success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EPERM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>globle param is not initialed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_ESESSIONID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error session id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EINVALID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid param </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>write flash error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_ECRC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>crc error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_ESIGNATURE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>signature error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EUNDEF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>other error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1gab355ee5e78a75ca42ee723d4c3a5e040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u16</type>
+        <definition>u16 tls_fwup_current_state</definition>
+        <argsstring>(u32 session_id)</argsstring>
+        <name>tls_fwup_current_state</name>
+        <param>
+          <type>u32</type>
+          <declname>session_id</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get current update status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current sessin id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state TLS_FWUP_STATUS_OK to TLS_FWUP_STATUS_EUNDEF</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1gae41bd227f4f0beeb1b22c07b6798f2d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_reset</definition>
+        <argsstring>(u32 session_id)</argsstring>
+        <name>tls_fwup_reset</name>
+        <param>
+          <type>u32</type>
+          <declname>session_id</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to reset update information. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current sessin id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reset success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EPERM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>globle param is not initialed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_ESESSIONID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error session id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EBUSY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>update state is busy</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1ga4b343c6a8ae4584482c13ec4df04ddb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_clear_error</definition>
+        <argsstring>(u32 session_id)</argsstring>
+        <name>tls_fwup_clear_error</name>
+        <param>
+          <type>u32</type>
+          <declname>session_id</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to clear error update state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current sessin id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reset success</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1gae8d7cfc9cfc13b9e18ff4a6fcbf3fafc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_set_crc_error</definition>
+        <argsstring>(u32 session_id)</argsstring>
+        <name>tls_fwup_set_crc_error</name>
+        <param>
+          <type>u32</type>
+          <declname>session_id</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set update state to TLS_FWUP_STATE_ERROR_CRC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current sessin id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_EPERM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>globle param is not initialed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_ESESSIONID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error session id</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1ga6eb5e6967661144ca92d721c09911e79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_get_status</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_fwup_get_status</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get busy status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TRUE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>busy </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FALSE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>idle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1gac8777425474bdfdc1d9c96031f366e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_set_update_numer</definition>
+        <argsstring>(int number)</argsstring>
+        <name>tls_fwup_set_update_numer</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set update packet number. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_FWUP_STATE_UNDEF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1ga8740fa07bf662124ab34be88ee5cb73f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_get_current_update_numer</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_fwup_get_current_update_numer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get received update packet number. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>return</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current packet number</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="306" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_w_u_p___a_p_is_1gadc4ca0ef5d4206b341cb437c4a0e148c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_fwup_get_current_session_id</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_fwup_get_current_session_id</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get current session id. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>non-zoro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>session id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_fwup.h" line="319" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Firmware upgrade. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>winnermicro</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>WM_FWUP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_FWUP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__osal_8h" kindref="compound">wm_osal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="wm__fwup_8h_1ac13ef7aaa2ff3000fda3680d7fbfdef6" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_OK<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_EINVALID<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_EMEM<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_EPERM<sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_EBUSY<sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_ESESSIONID<sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_EIO<sp/><sp/><sp/><sp/><sp/><sp/>(6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_ESIGNATURE<sp/><sp/><sp/><sp/><sp/><sp/>(7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_ECRC<sp/><sp/><sp/><sp/><sp/><sp/>(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATUS_EUNDEF<sp/><sp/><sp/><sp/><sp/><sp/>(9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="wm__fwup_8h_1a707b09bab7535b35759a7abe386908e1" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_FWUP_IMAGE_SIGNATURE_WORD<sp/><sp/><sp/><sp/><sp/><sp/>0x64365577</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_IMAGE_SIGNATURE_WORD_B<sp/><sp/><sp/><sp/><sp/><sp/>0x62161900</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="wm__fwup_8h_1a14f8c2e2b1b6022743992bc510d3c263" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_FWUP_BLK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="wm__fwup_8h_1aff447eca1ca71c43b11037ff3214e07c" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_FWUP_REQ_STATUS_IDLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_REQ_STATUS_BUSY<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_REQ_STATUS_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_REQ_STATUS_FIO<sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_REQ_STATUS_FSIGNATURE<sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_REQ_STATUS_FMEM<sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_REQ_STATUS_FCRC<sp/><sp/><sp/><sp/><sp/><sp/>(6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_REQ_STATUS_FCOMPLETE<sp/><sp/><sp/><sp/><sp/><sp/>(7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="wm__fwup_8h_1a83cda2fab016685008f40656d4a7763a" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATE_UNDEF<sp/><sp/><sp/><sp/><sp/><sp/>(0xffff)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATE_BUSY<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATE_COMPLETE<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATE_ERROR_IO<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATE_ERROR_SIGNATURE<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATE_ERROR_MEM<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATE_ERROR_CRC<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_STATE_ERROR<sp/><sp/><sp/><sp/><sp/><sp/>(TLS_FWUP_STATE_ERROR_IO<sp/>|<sp/>TLS_FWUP_STATE_ERROR_SIGNATURE<sp/>|<sp/>TLS_FWUP_STATE_ERROR_MEM<sp/>|<sp/>TLS_FWUP_STATE_ERROR_CRC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="wm__fwup_8h_1ae11713052c724f3b5b75bf520ea175c5" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_FWUP_DEST_SPECIFIC_FIRMWARE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_FWUP_DEST_SPECIFIC_DATA<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>IMAGE_TYPE_ENUM{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>IMG_TYPE_PLAIN<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>IMG_TYPE_FLASHBIN<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>IMG_TYPE_SECBOOT<sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>NOT_ZIP_FILE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ZIP_FILE<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69" refid="struct_____t___b_o_o_t_e_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____t___b_o_o_t_e_r" kindref="compound">__T_BOOTER</ref></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>magic_no;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/>img_type;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/>zip_type;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>img_addr;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>img_len;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>org_checksum;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>zip_img_addr;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>zip_img_len;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>zip_checksum;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>upd_no;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/>ver[16];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>hd_checksum;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}<sp/><ref refid="struct_____t___b_o_o_t_e_r" kindref="compound">T_BOOTER</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structtls__fwup__image__hdr" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__fwup__image__hdr" kindref="compound">tls_fwup_image_hdr</ref><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>magic;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>crc8;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dest_specific;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>dest_offset;<sp/><sp/></highlight><highlight class="comment">//<sp/>unit:<sp/>4KB,<sp/>valid<sp/>when<sp/>dest_specific<sp/>is<sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>file_len;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>time[4];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="structtls__fwup__block" refkind="compound"><highlight class="keyword">struct<sp/><sp/></highlight><highlight class="normal"><ref refid="structtls__fwup__block" kindref="compound">tls_fwup_block</ref><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>number;<sp/></highlight><highlight class="comment">//0~Sum-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>sum;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>data[<ref refid="wm__fwup_8h_1a14f8c2e2b1b6022743992bc510d3c263" kindref="member">TLS_FWUP_BLK_SIZE</ref>];</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>crc32;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>pad[8];</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808" kindref="member">tls_fwup_image_src</ref><sp/>{</highlight></codeline>
+<codeline lineno="106" refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808ac767e0b5be3b8b44482bc788980ad261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808ac767e0b5be3b8b44482bc788980ad261" kindref="member">TLS_FWUP_IMAGE_SRC_LUART</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808aa3e1a2fb1508dcd3451748fade3fd9c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808aa3e1a2fb1508dcd3451748fade3fd9c1" kindref="member">TLS_FWUP_IMAGE_SRC_HUART</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808a2fc9f9a1039e24e78f9b5263978b0223" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808a2fc9f9a1039e24e78f9b5263978b0223" kindref="member">TLS_FWUP_IMAGE_SRC_HSPI</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808ab12515a4f7035df6cab976c585469f4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808ab12515a4f7035df6cab976c585469f4e" kindref="member">TLS_FWUP_IMAGE_SRC_WEB</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="structtls__fwup__request" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__fwup__request" kindref="compound">tls_fwup_request</ref><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>list;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>*data;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>data_len;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*complete)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__fwup__request" kindref="compound">tls_fwup_request</ref><sp/>*request,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="structtls__fwup" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__fwup" kindref="compound">tls_fwup</ref><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>wait_list;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref><sp/>*list_lock;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>busy;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808" kindref="member">tls_fwup_image_src</ref><sp/>current_image_src;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>current_state;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>current_session_id;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>received_len;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>total_len;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>updated_len;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>program_base;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>program_offset;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>s32<sp/>received_number;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1gad5d70b016505b51f6ef9a53447fe28e4" kindref="member">tls_fwup_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">u32<sp/><ref refid="group___f_w_u_p___a_p_is_1ga8d0283f782694040144ba09f99d5a02e" kindref="member">tls_fwup_enter</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__fwup_8h_1a979cd6a8a8989b31b67ddff3d87a5808" kindref="member">tls_fwup_image_src</ref><sp/>image_src);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1gadaffef618f30c61cbc4cb4b8385827c2" kindref="member">tls_fwup_exit</ref>(u32<sp/>session_id);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1ga13696ea4bf4660950fe7d005a15c39a3" kindref="member">tls_fwup_request_sync</ref>(u32<sp/>session_id,<sp/>u8<sp/>*data,<sp/>u32<sp/>data_len);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">u16<sp/><ref refid="group___f_w_u_p___a_p_is_1gab355ee5e78a75ca42ee723d4c3a5e040" kindref="member">tls_fwup_current_state</ref>(u32<sp/>session_id);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1gae41bd227f4f0beeb1b22c07b6798f2d5" kindref="member">tls_fwup_reset</ref>(u32<sp/>session_id);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1ga4b343c6a8ae4584482c13ec4df04ddb8" kindref="member">tls_fwup_clear_error</ref>(u32<sp/>session_id);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1gae8d7cfc9cfc13b9e18ff4a6fcbf3fafc" kindref="member">tls_fwup_set_crc_error</ref>(u32<sp/>session_id);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1ga6eb5e6967661144ca92d721c09911e79" kindref="member">tls_fwup_get_status</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1gac8777425474bdfdc1d9c96031f366e97" kindref="member">tls_fwup_set_update_numer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1ga8740fa07bf662124ab34be88ee5cb73f" kindref="member">tls_fwup_get_current_update_numer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___f_w_u_p___a_p_is_1gadc4ca0ef5d4206b341cb437c4a0e148c" kindref="member">tls_fwup_get_current_session_id</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_FWUP_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Platform/wm_fwup.h"/>
+  </compounddef>
+</doxygen>

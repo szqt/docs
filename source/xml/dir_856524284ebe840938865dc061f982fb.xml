@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_856524284ebe840938865dc061f982fb" kind="dir">
+    <compoundname>Include</compoundname>
+    <innerdir refid="dir_d374840edaa1ef87f7b9fc8fa2802801">Include/App</innerdir>
+    <innerdir refid="dir_aca67ed9bb4d3da4844e2fb9b7405e83">Include/Driver</innerdir>
+    <innerdir refid="dir_8548544a6858e704e37f892434118e19">Include/Net</innerdir>
+    <innerdir refid="dir_1cf9aa8261bda43c851ca9801034dced">Include/OS</innerdir>
+    <innerdir refid="dir_5b9acf90d48ec4b1765d1bc4d04cd6ee">Include/Platform</innerdir>
+    <innerdir refid="dir_073733b627d995c5167099e23cfd755f">Include/WiFi</innerdir>
+    <innerfile refid="list_8h">list.h</innerfile>
+    <innerfile refid="random_8h">random.h</innerfile>
+    <innerfile refid="wm__config_8h">wm_config.h</innerfile>
+    <innerfile refid="wm__debug_8h">wm_debug.h</innerfile>
+    <innerfile refid="wm__include_8h">wm_include.h</innerfile>
+    <innerfile refid="wm__ram__config_8h">wm_ram_config.h</innerfile>
+    <innerfile refid="wm__regs_8h">wm_regs.h</innerfile>
+    <innerfile refid="wm__type__def_8h">wm_type_def.h</innerfile>
+    <innerfile refid="wm__wifi__config_8h">wm_wifi_config.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/"/>
+  </compounddef>
+</doxygen>

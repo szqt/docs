@@ -1,0 +1,854 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__dma_8h" kind="file" language="C++">
+    <compoundname>wm_dma.h</compoundname>
+    <includedby refid="wm__i2s_8h" local="yes">Include/Driver/wm_i2s.h</includedby>
+    <invincdepgraph>
+      <node id="88">
+        <label>Include/Driver/wm_dma.h</label>
+        <link refid="wm__dma_8h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>Include/Driver/wm_i2s.h</label>
+        <link refid="wm__i2s_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtls__dma__descriptor" prot="public">tls_dma_descriptor</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__dma_8h_1a67da08eb1e8dfff6ef61b3e7acb081b2" prot="public" static="no">
+        <name>TLS_DMA_SEL_UART_RX</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="13" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1addaebb42dc77a6fe8fde60e63fb51a2f" prot="public" static="no">
+        <name>TLS_DMA_SEL_UART_TX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="14" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1ad5e4936ad8390857adfc41cbe17d9e78" prot="public" static="no">
+        <name>TLS_DMA_SEL_PWM_CAP0</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="15" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a6a08c627cd020e2c2618c4e1dffb646e" prot="public" static="no">
+        <name>TLS_DMA_SEL_PWM_CAP1</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="16" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a4932cdd9c391bbb95ad1897c35fe16a1" prot="public" static="no">
+        <name>TLS_DMA_SEL_LSSPI_RX</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="17" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a5dbb12aaf205191ed8e0012f30ae3b80" prot="public" static="no">
+        <name>TLS_DMA_SEL_LSSPI_TX</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="18" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1ae91c64e3f4923818b008b3c9b3d9ecd7" prot="public" static="no">
+        <name>TLS_DMA_SEL_SDADC_CH0</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="19" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1ac01a33ed8d4aaee61fdbf9c418a22359" prot="public" static="no">
+        <name>TLS_DMA_SEL_SDADC_CH1</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="20" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a4dd76fbd51f5f49adc886a4ed0027df5" prot="public" static="no">
+        <name>TLS_DMA_SEL_SDADC_CH2</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="21" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a703d8e2548c398206bd7ff3f3a4bc3e6" prot="public" static="no">
+        <name>TLS_DMA_SEL_SDADC_CH3</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="22" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a2a7da9e77ec818a2fcbd86a333ba7d4e" prot="public" static="no">
+        <name>TLS_DMA_SEL_SDADC_CH4</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="23" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1af622406f083a04f40c9d0b23f397c49d" prot="public" static="no">
+        <name>TLS_DMA_SEL_SDADC_CH5</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="24" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a88f46ae9c830eb37f35cdc1cca67c688" prot="public" static="no">
+        <name>TLS_DMA_SEL_SDADC_CH6</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="25" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a364dcad36988110279fbe5689b0aa7ac" prot="public" static="no">
+        <name>TLS_DMA_SEL_SDADC_CH7</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="26" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a053620ed74acd9c8dde3403f35629688" prot="public" static="no">
+        <name>TLS_DMA_SEL_I2S_RX</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="27" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1aa4ebe3e7475ad2b91ed0e13302c7522e" prot="public" static="no">
+        <name>TLS_DMA_SEL_I2S_TX</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="28" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1aa229108f1fe481777b04ae6b12f6b09a" prot="public" static="no">
+        <name>TLS_DMA_FLAGS_HARD_MODE</name>
+        <initializer>(1   &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="31" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a8a8acd27095fbe932131253bad5a8e9d" prot="public" static="no">
+        <name>TLS_DMA_FLAGS_CHAIN_MODE</name>
+        <initializer>(1   &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="32" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a1d2c4337d3f2d57f2dfab09c0e875e07" prot="public" static="no">
+        <name>TLS_DMA_FLAGS_CHANNEL_SEL</name>
+        <param><defname>n</defname></param>
+        <initializer>((n) &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="33" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1aa18f8ba6e378dc1159843c56220e80dc" prot="public" static="no">
+        <name>TLS_DMA_FLAGS_CHAIN_LINK_EN</name>
+        <initializer>(1   &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="34" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1af2548e1c17122f95eaac2b5411ee3ab2" prot="public" static="no">
+        <name>TLS_DMA_FLAGS_CHANNEL_VALID</name>
+        <initializer>(1   &lt;&lt; 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="35" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a97d03134d66a840ba06129db30453b55" prot="public" static="no">
+        <name>TLS_DMA_DESC_VALID</name>
+        <initializer>(1U  &lt;&lt; 31)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="38" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a03dd7b1da67ca8e200c65120c24ff19e" prot="public" static="no">
+        <name>TLS_DMA_DESC_CTRL_SRC_ADD_INC</name>
+        <initializer>(1   &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="39" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a610010d7521a6fcb8b4f492e6c13d7bf" prot="public" static="no">
+        <name>TLS_DMA_DESC_CTRL_DEST_ADD_INC</name>
+        <initializer>(1   &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="40" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1adc90a75fd5e61eed60954e5deca06d86" prot="public" static="no">
+        <name>TLS_DMA_DESC_CTRL_DATA_SIZE_BYTE</name>
+        <initializer>(0   &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="41" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1ac581a9e6bc179648c50e4cf698b300f6" prot="public" static="no">
+        <name>TLS_DMA_DESC_CTRL_DATA_SIZE_SHORT</name>
+        <initializer>(1   &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="42" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1ad3f391940b82384dc93f36bf23a50f0c" prot="public" static="no">
+        <name>TLS_DMA_DESC_CTRL_DATA_SIZE_WORD</name>
+        <initializer>(2   &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="43" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1acde4b09c946035100c0bcabc4e66c397" prot="public" static="no">
+        <name>TLS_DMA_DESC_CTRL_BURST_SIZE1</name>
+        <initializer>(0   &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="44" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a30ee8b6cb82beea76a4ccd18e36d2400" prot="public" static="no">
+        <name>TLS_DMA_DESC_CTRL_BURST_SIZE4</name>
+        <initializer>(1   &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="45" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a77b2376196a2d900072caa9c4ab689c7" prot="public" static="no">
+        <name>TLS_DMA_DESC_CTRL_TOTAL_BYTES</name>
+        <param><defname>n</defname></param>
+        <initializer>((n) &lt;&lt; 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="46" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1ae8eeb302ae5d0baf8089e433b03f1d9e" prot="public" static="no">
+        <name>TLS_DMA_IRQ_BURST_DONE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="50" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a002d1a34853362b9f01861d6b6fa8316" prot="public" static="no">
+        <name>TLS_DMA_IRQ_TRANSFER_DONE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="51" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__dma_8h_1a7a82791ec4d81be2169e017dd205a8d9" prot="public" static="no">
+        <name>TLS_DMA_IRQ_BOTH_DONE</name>
+        <initializer>(TLS_DMA_IRQ_BURST_DONE | TLS_DMA_IRQ_TRANSFER_DONE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="52" column="9" bodyfile="Include/Driver/wm_dma.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__dma_8h_1a9ef6ce7a04532e951c4219c99b9ca8ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_dma_irq_clr</definition>
+        <argsstring>(unsigned char ch, unsigned char flags)</argsstring>
+        <name>tls_dma_irq_clr</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to clear dma interrupt flag. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel no.[0~7] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flags setted to TLS_DMA_IRQ_BURST_DONE, TLS_DMA_IRQ_TRANSFER_DONE, TLS_DMA_IRQ_BOTH_DONE.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__dma_8h_1aabcfe0908dd0d43ac3d67ca128962b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_dma_irq_register</definition>
+        <argsstring>(unsigned char ch, void(*callback)(void *p), void *arg, unsigned char flags)</argsstring>
+        <name>tls_dma_irq_register</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>void(*)(void *p)</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register dma interrupt callback function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel no.[0~7] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the dma interrupt call back function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the param of the callback function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flags setted to TLS_DMA_IRQ_BURST_DONE, TLS_DMA_IRQ_TRANSFER_DONE, TLS_DMA_IRQ_BOTH_DONE.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__dma_8h_1aa329fb1a2e9897083841d7968dbcb874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_dma_wait_complt</definition>
+        <argsstring>(unsigned char ch)</argsstring>
+        <name>tls_dma_wait_complt</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register dma interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA channel no.[0~7]</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__dma_8h_1a8f9bd0e8096d9b7e69230922b4b557a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char tls_dma_start_by_wrap</definition>
+        <argsstring>(unsigned char ch, struct tls_dma_descriptor *dma_desc, unsigned char auto_reload, unsigned short src_zize, unsigned short dest_zize)</argsstring>
+        <name>tls_dma_start_by_wrap</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structtls__dma__descriptor" kindref="compound">tls_dma_descriptor</ref> *</type>
+          <declname>dma_desc</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>auto_reload</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>src_zize</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>dest_zize</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to Start the DMA controller by Wrap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">autoReload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Does restart when current transfer complete? <linebreak/>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel no.[0~7] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pDmaDesc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to DMA channel descriptor structure.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Always</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STATUS_SUCCESS. <linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>DMA Descriptor: +-----------------------------------------------------------<mdash/>+ |Vld[31] | RSV | +-----------------------------------------------------------<mdash/>+ | RSV | Dma_Ctrl[16:0] | +-----------------------------------------------------------<mdash/>+ | Src_Addr[31:0] | +-----------------------------------------------------------<mdash/>+ | Dest_Addr[31:0] | +-----------------------------------------------------------<mdash/>+ | Next_Desc_Add[31:0] | +-----------------------------------------------------------<mdash/>+ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__dma_8h_1a39c37c4cb947205b76061366f615a04a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char tls_dma_start</definition>
+        <argsstring>(unsigned char ch, struct tls_dma_descriptor *dma_desc, unsigned char auto_reload)</argsstring>
+        <name>tls_dma_start</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structtls__dma__descriptor" kindref="compound">tls_dma_descriptor</ref> *</type>
+          <declname>dma_desc</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>auto_reload</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to Wait until DMA operation completes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">autoReload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Does restart when current transfer complete? <linebreak/>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel no.[0~7] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pDmaDesc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to DMA channel descriptor structure.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Always</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STATUS_SUCCESS.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>DMA Descriptor: +-----------------------------------------------------------<mdash/>+ |Vld[31] | RSV | +-----------------------------------------------------------<mdash/>+ | RSV | Dma_Ctrl[16:0] | +-----------------------------------------------------------<mdash/>+ | Src_Addr[31:0] | +-----------------------------------------------------------<mdash/>+ | Dest_Addr[31:0] | +-----------------------------------------------------------<mdash/>+ | Next_Desc_Add[31:0] | +-----------------------------------------------------------<mdash/>+ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__dma_8h_1a6d99397a25e7d90fab7f035b59f1d637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char tls_dma_stop</definition>
+        <argsstring>(unsigned char ch)</argsstring>
+        <name>tls_dma_stop</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to To stop current DMA channel transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel no. to be stopped</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Always</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STATUS_SUCCESS</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If channel stop, DMA_CHNL_CTRL_CHNL_ON bit in DMA_CHNLCTRL_REG is cleared. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__dma_8h_1a61181292b62d542ebfb8e2de5a3c19dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char tls_dma_request</definition>
+        <argsstring>(unsigned char ch, unsigned char flags)</argsstring>
+        <name>tls_dma_request</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to Request a free dma channel. If ch is 0, the function will select a random free channel, else return the selected channel no. if free. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel no. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flags setted to selected channel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Channel no. that is free now</para></simplesect>
+<simplesect kind="note"><para>Channel no. that is free now </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__dma_8h_1a69e9917a4d57449fd4227bb893ebdbae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_dma_free</definition>
+        <argsstring>(unsigned char ch)</argsstring>
+        <name>tls_dma_free</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to Free the DMA channel when not use. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel no. that is ready to free</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__dma_8h_1a53cb14f1a82284015428b941c72949f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_dma_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_dma_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to Initialize DMA Control. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="205" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DMA Driver Module. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WM_DMA_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WM_DMA_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_UART_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_UART_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_PWM_CAP0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_PWM_CAP1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_LSSPI_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_LSSPI_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_SDADC_CH0<sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_SDADC_CH1<sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_SDADC_CH2<sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_SDADC_CH3<sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_SDADC_CH4<sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_SDADC_CH5<sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_SDADC_CH6<sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_SDADC_CH7<sp/><sp/><sp/><sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_I2S_RX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_SEL_I2S_TX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_FLAGS_HARD_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/><sp/><sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_FLAGS_CHAIN_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/><sp/><sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_FLAGS_CHANNEL_SEL(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((n)<sp/>&lt;&lt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_FLAGS_CHAIN_LINK_EN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/><sp/><sp/>&lt;&lt;<sp/>6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_FLAGS_CHANNEL_VALID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/><sp/><sp/>&lt;&lt;<sp/>7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_DESC_VALID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1U<sp/><sp/>&lt;&lt;<sp/>31)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_DESC_CTRL_SRC_ADD_INC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/><sp/><sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_DESC_CTRL_DEST_ADD_INC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/><sp/><sp/>&lt;&lt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_DESC_CTRL_DATA_SIZE_BYTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0<sp/><sp/><sp/>&lt;&lt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_DESC_CTRL_DATA_SIZE_SHORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/><sp/><sp/>&lt;&lt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_DESC_CTRL_DATA_SIZE_WORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2<sp/><sp/><sp/>&lt;&lt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_DESC_CTRL_BURST_SIZE1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0<sp/><sp/><sp/>&lt;&lt;<sp/>6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_DESC_CTRL_BURST_SIZE4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/><sp/><sp/>&lt;&lt;<sp/>6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_DESC_CTRL_TOTAL_BYTES(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((n)<sp/>&lt;&lt;<sp/>7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>dma<sp/>interrupt<sp/>flags<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_IRQ_BURST_DONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_IRQ_TRANSFER_DONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_DMA_IRQ_BOTH_DONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(TLS_DMA_IRQ_BURST_DONE<sp/>|<sp/>TLS_DMA_IRQ_TRANSFER_DONE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structtls__dma__descriptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__dma__descriptor" kindref="compound">tls_dma_descriptor</ref><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valid;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dma_ctrl;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_addr;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dest_addr;</highlight></codeline>
+<codeline lineno="59" refid="structtls__dma__descriptor_1a1db61cdba6cd69e2146eac0749545404" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__dma__descriptor" kindref="compound">tls_dma_descriptor</ref><sp/>*<ref refid="structtls__dma__descriptor_1a1db61cdba6cd69e2146eac0749545404" kindref="member">next</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__dma_8h_1a9ef6ce7a04532e951c4219c99b9ca8ce" kindref="member">tls_dma_irq_clr</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__dma_8h_1aabcfe0908dd0d43ac3d67ca128962b0f" kindref="member">tls_dma_irq_register</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*callback)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__dma_8h_1aa329fb1a2e9897083841d7968dbcb874" kindref="member">tls_dma_wait_complt</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="wm__dma_8h_1a8f9bd0e8096d9b7e69230922b4b557a0" kindref="member">tls_dma_start_by_wrap</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__dma__descriptor" kindref="compound">tls_dma_descriptor</ref><sp/>*dma_desc,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>auto_reload,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>src_zize,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>dest_zize);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="wm__dma_8h_1a39c37c4cb947205b76061366f615a04a" kindref="member">tls_dma_start</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__dma__descriptor" kindref="compound">tls_dma_descriptor</ref><sp/>*dma_desc,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>auto_reload);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="wm__dma_8h_1a6d99397a25e7d90fab7f035b59f1d637" kindref="member">tls_dma_stop</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="wm__dma_8h_1a61181292b62d542ebfb8e2de5a3c19dd" kindref="member">tls_dma_request</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>flags);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__dma_8h_1a69e9917a4d57449fd4227bb893ebdbae" kindref="member">tls_dma_free</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__dma_8h_1a53cb14f1a82284015428b941c72949f6" kindref="member">tls_dma_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__TLS_DMA_H_151606__<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_dma.h"/>
+  </compounddef>
+</doxygen>

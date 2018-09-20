@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__bss__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_bss_info_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__bss__info__t_1a146aa8cdabb9647b6bdb41a5054c5c2f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_bss_info_t::bssid[ETH_ALEN]</definition>
+        <argsstring>[ETH_ALEN]</argsstring>
+        <name>bssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MAC address of AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="240" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__bss__info__t_1aeb22cbd2a7f2786b4068c0ff1e71c756" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_bss_info_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AP type, value is: 1-ibss, 2-ess </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="241" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__bss__info__t_1a8fe1a0210811f4a827b1ca6a59856c91" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_bss_info_t::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>channel of AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="242" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__bss__info__t_1a356307d906002cb6806103940ee507fa" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_bss_info_t::privacy</definition>
+        <argsstring></argsstring>
+        <name>privacy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>whether is encrypted </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="243" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__bss__info__t_1a7893006dea5adce150c7a850a1cc91bf" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_bss_info_t::ssid_len</definition>
+        <argsstring></argsstring>
+        <name>ssid_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSID length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="244" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__bss__info__t_1a0a34967e9c3805dd87a3b43e306f1a87" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_bss_info_t::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>single strength of AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="245" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__bss__info__t_1a41ffbef17f2f42f9653f1b2e177ccdd0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_bss_info_t::ssid[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSID of AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="246" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>bss information </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_wifi.h" line="239" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="239" bodyend="247"/>
+    <listofallmembers>
+      <member refid="structtls__bss__info__t_1a146aa8cdabb9647b6bdb41a5054c5c2f" prot="public" virt="non-virtual"><scope>tls_bss_info_t</scope><name>bssid</name></member>
+      <member refid="structtls__bss__info__t_1a8fe1a0210811f4a827b1ca6a59856c91" prot="public" virt="non-virtual"><scope>tls_bss_info_t</scope><name>channel</name></member>
+      <member refid="structtls__bss__info__t_1aeb22cbd2a7f2786b4068c0ff1e71c756" prot="public" virt="non-virtual"><scope>tls_bss_info_t</scope><name>mode</name></member>
+      <member refid="structtls__bss__info__t_1a356307d906002cb6806103940ee507fa" prot="public" virt="non-virtual"><scope>tls_bss_info_t</scope><name>privacy</name></member>
+      <member refid="structtls__bss__info__t_1a0a34967e9c3805dd87a3b43e306f1a87" prot="public" virt="non-virtual"><scope>tls_bss_info_t</scope><name>rssi</name></member>
+      <member refid="structtls__bss__info__t_1a41ffbef17f2f42f9653f1b2e177ccdd0" prot="public" virt="non-virtual"><scope>tls_bss_info_t</scope><name>ssid</name></member>
+      <member refid="structtls__bss__info__t_1a7893006dea5adce150c7a850a1cc91bf" prot="public" virt="non-virtual"><scope>tls_bss_info_t</scope><name>ssid_len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_8548544a6858e704e37f892434118e19" kind="dir">
+    <compoundname>Include/Net</compoundname>
+    <innerfile refid="wm__socket_8h">wm_socket.h</innerfile>
+    <innerfile refid="wm__socket2_80_83_8h">wm_socket2.0.3.h</innerfile>
+    <innerfile refid="wm__sockets_8h">wm_sockets.h</innerfile>
+    <innerfile refid="wm__sockets2_80_83_8h">wm_sockets2.0.3.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Net/"/>
+  </compounddef>
+</doxygen>

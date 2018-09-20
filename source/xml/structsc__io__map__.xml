@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structsc__io__map__" kind="struct" language="C++" prot="public">
+    <compoundname>sc_io_map_</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsc__io__map___1a3134e7ce21481e6dfa1f6126b1e14bd8" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+        <definition>enum tls_io_name sc_io_map_::clk_pin_num</definition>
+        <argsstring></argsstring>
+        <name>clk_pin_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="233" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__io__map___1af980a972769b9d4e2a67866542ad61d7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sc_io_map_::clk_opt</definition>
+        <argsstring></argsstring>
+        <name>clk_opt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="29" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__io__map___1a18a6f156b3d030692915d38e8e34a98a" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+        <definition>enum tls_io_name sc_io_map_::io_pin_num</definition>
+        <argsstring></argsstring>
+        <name>io_pin_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="29" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__io__map___1a49ff373dd991ae0560a28350d58ee784" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sc_io_map_::io_opt</definition>
+        <argsstring></argsstring>
+        <name>io_opt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="31" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__io__map___1a1d3b490d2f06193b0cf1fa459d973f36" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sc_io_map_::initialed</definition>
+        <argsstring></argsstring>
+        <name>initialed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="32" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_7816.h" line="27" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structsc__io__map___1af980a972769b9d4e2a67866542ad61d7" prot="public" virt="non-virtual"><scope>sc_io_map_</scope><name>clk_opt</name></member>
+      <member refid="structsc__io__map___1a3134e7ce21481e6dfa1f6126b1e14bd8" prot="public" virt="non-virtual"><scope>sc_io_map_</scope><name>clk_pin_num</name></member>
+      <member refid="structsc__io__map___1a1d3b490d2f06193b0cf1fa459d973f36" prot="public" virt="non-virtual"><scope>sc_io_map_</scope><name>initialed</name></member>
+      <member refid="structsc__io__map___1a49ff373dd991ae0560a28350d58ee784" prot="public" virt="non-virtual"><scope>sc_io_map_</scope><name>io_opt</name></member>
+      <member refid="structsc__io__map___1a18a6f156b3d030692915d38e8e34a98a" prot="public" virt="non-virtual"><scope>sc_io_map_</scope><name>io_pin_num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

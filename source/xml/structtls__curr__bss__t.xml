@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__curr__bss__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_curr_bss_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__curr__bss__t_1a3549b1ab37c59c29e924d13c855277eb" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_curr_bss_t::bssid[ETH_ALEN]</definition>
+        <argsstring>[ETH_ALEN]</argsstring>
+        <name>bssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BSSID of connected AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="175" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__curr__bss__t_1ae7237dadb8fcbd400de05330fc02cf98" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_curr_bss_t::ssid[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSID of connected AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="176" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__curr__bss__t_1a1c658fe6a412f5090d6f8707b6a8148e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_curr_bss_t::ssid_len</definition>
+        <argsstring></argsstring>
+        <name>ssid_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SSID length of connected AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="177" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__curr__bss__t_1a0c7131c244970197afc5e71ce87e2948" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_curr_bss_t::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>channel of connected AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="178" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__curr__bss__t_1a15b6471b92975c9dbe2aa30ca61c80fb" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_curr_bss_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BSS&apos;s type of connected AP, value is: IEEE80211_MODE_INFRA, IEEE80211_MODE_IBSS, IEEE80211_MODE_AP, IEEE80211_MODE_APSTA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="179" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__curr__bss__t_1a87eafed35941fb790789e49ca1336503" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_curr_bss_t::encryptype</definition>
+        <argsstring></argsstring>
+        <name>encryptype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BSS&apos;s encryption type of connected AP, value is: IEEE80211_ENCRYT_NONE, IEEE80211_ENCRYT_WEP40, IEEE80211_ENCRYT_WEP104, IEEE80211_ENCRYT_TKIP_WPA, IEEE80211_ENCRYT_CCMP_WPA, IEEE80211_ENCRYT_TKIP_WPA2, IEEE80211_ENCRYT_CCMP_WPA2, IEEE80211_ENCRYT_AUTO_WPA, IEEE80211_ENCRYT_AUTO_WPA2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="182" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__curr__bss__t_1ac1600586563947be4f44c03e7b1ff182" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_curr_bss_t::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>single strength of AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="187" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>current bss information </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_wifi.h" line="174" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="174" bodyend="188"/>
+    <listofallmembers>
+      <member refid="structtls__curr__bss__t_1a3549b1ab37c59c29e924d13c855277eb" prot="public" virt="non-virtual"><scope>tls_curr_bss_t</scope><name>bssid</name></member>
+      <member refid="structtls__curr__bss__t_1a0c7131c244970197afc5e71ce87e2948" prot="public" virt="non-virtual"><scope>tls_curr_bss_t</scope><name>channel</name></member>
+      <member refid="structtls__curr__bss__t_1a87eafed35941fb790789e49ca1336503" prot="public" virt="non-virtual"><scope>tls_curr_bss_t</scope><name>encryptype</name></member>
+      <member refid="structtls__curr__bss__t_1ac1600586563947be4f44c03e7b1ff182" prot="public" virt="non-virtual"><scope>tls_curr_bss_t</scope><name>rssi</name></member>
+      <member refid="structtls__curr__bss__t_1ae7237dadb8fcbd400de05330fc02cf98" prot="public" virt="non-virtual"><scope>tls_curr_bss_t</scope><name>ssid</name></member>
+      <member refid="structtls__curr__bss__t_1a1c658fe6a412f5090d6f8707b6a8148e" prot="public" virt="non-virtual"><scope>tls_curr_bss_t</scope><name>ssid_len</name></member>
+      <member refid="structtls__curr__bss__t_1a15b6471b92975c9dbe2aa30ca61c80fb" prot="public" virt="non-virtual"><scope>tls_curr_bss_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

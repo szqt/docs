@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__dma__descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>tls_dma_descriptor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__dma__descriptor_1ab6ad2f104c10cff8d0e209b7309c2c08" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int tls_dma_descriptor::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="55" column="1" bodyfile="Include/Driver/wm_dma.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__dma__descriptor_1a7467b7d0d7231952a2d65b21fc4fc6a1" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int tls_dma_descriptor::dma_ctrl</definition>
+        <argsstring></argsstring>
+        <name>dma_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="56" column="1" bodyfile="Include/Driver/wm_dma.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__dma__descriptor_1a711dce4611cf2085af892d9f613cad68" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int tls_dma_descriptor::src_addr</definition>
+        <argsstring></argsstring>
+        <name>src_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="57" column="1" bodyfile="Include/Driver/wm_dma.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__dma__descriptor_1a3c0429fc587ec8c7599d60ac89932cb4" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int tls_dma_descriptor::dest_addr</definition>
+        <argsstring></argsstring>
+        <name>dest_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="58" column="1" bodyfile="Include/Driver/wm_dma.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__dma__descriptor_1a1db61cdba6cd69e2146eac0749545404" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__dma__descriptor" kindref="compound">tls_dma_descriptor</ref> *</type>
+        <definition>struct tls_dma_descriptor* tls_dma_descriptor::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>next dms descriptor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_dma.h" line="59" column="1" bodyfile="Include/Driver/wm_dma.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="143">
+        <label>tls_dma_descriptor</label>
+        <link refid="structtls__dma__descriptor"/>
+        <childnode refid="143" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_dma.h" line="54" column="1" bodyfile="Include/Driver/wm_dma.h" bodystart="54" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structtls__dma__descriptor_1a3c0429fc587ec8c7599d60ac89932cb4" prot="public" virt="non-virtual"><scope>tls_dma_descriptor</scope><name>dest_addr</name></member>
+      <member refid="structtls__dma__descriptor_1a7467b7d0d7231952a2d65b21fc4fc6a1" prot="public" virt="non-virtual"><scope>tls_dma_descriptor</scope><name>dma_ctrl</name></member>
+      <member refid="structtls__dma__descriptor_1a1db61cdba6cd69e2146eac0749545404" prot="public" virt="non-virtual"><scope>tls_dma_descriptor</scope><name>next</name></member>
+      <member refid="structtls__dma__descriptor_1a711dce4611cf2085af892d9f613cad68" prot="public" virt="non-virtual"><scope>tls_dma_descriptor</scope><name>src_addr</name></member>
+      <member refid="structtls__dma__descriptor_1ab6ad2f104c10cff8d0e209b7309c2c08" prot="public" virt="non-virtual"><scope>tls_dma_descriptor</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

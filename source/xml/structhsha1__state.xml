@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structhsha1__state" kind="struct" language="C++" prot="public">
+    <compoundname>hsha1_state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhsha1__state_1ab97f11756392655c354a2e3102cf9169" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hsha1_state::lengthHi</definition>
+        <argsstring></argsstring>
+        <name>lengthHi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="147" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhsha1__state_1a97c1a4e6665aec39333f76a97f6b6f56" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hsha1_state::lengthLo</definition>
+        <argsstring></argsstring>
+        <name>lengthLo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="148" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhsha1__state_1a5d5db7bebb37fe6e854e68aee02fd554" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hsha1_state::state[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="150" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhsha1__state_1a87ab471bc6ea4fc1e7372ac6d35691a9" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hsha1_state::curlen</definition>
+        <argsstring></argsstring>
+        <name>curlen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="150" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhsha1__state_1a2d3c6ef69a424452e67c1f5e73fe609d" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char hsha1_state::buf[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="151" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Platform/wm_crypto_hard.h" line="143" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="143" bodyend="152"/>
+    <listofallmembers>
+      <member refid="structhsha1__state_1a2d3c6ef69a424452e67c1f5e73fe609d" prot="public" virt="non-virtual"><scope>hsha1_state</scope><name>buf</name></member>
+      <member refid="structhsha1__state_1a87ab471bc6ea4fc1e7372ac6d35691a9" prot="public" virt="non-virtual"><scope>hsha1_state</scope><name>curlen</name></member>
+      <member refid="structhsha1__state_1ab97f11756392655c354a2e3102cf9169" prot="public" virt="non-virtual"><scope>hsha1_state</scope><name>lengthHi</name></member>
+      <member refid="structhsha1__state_1a97c1a4e6665aec39333f76a97f6b6f56" prot="public" virt="non-virtual"><scope>hsha1_state</scope><name>lengthLo</name></member>
+      <member refid="structhsha1__state_1a5d5db7bebb37fe6e854e68aee02fd554" prot="public" virt="non-virtual"><scope>hsha1_state</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

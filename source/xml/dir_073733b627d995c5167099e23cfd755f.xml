@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_073733b627d995c5167099e23cfd755f" kind="dir">
+    <compoundname>Include/WiFi</compoundname>
+    <innerfile refid="litepoint_8h">litepoint.h</innerfile>
+    <innerfile refid="wm__ieee80211_8h">wm_ieee80211.h</innerfile>
+    <innerfile refid="wm__ieee80211__gcc_8h">wm_ieee80211_gcc.h</innerfile>
+    <innerfile refid="wm__wifi_8h">wm_wifi.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/WiFi/"/>
+  </compounddef>
+</doxygen>

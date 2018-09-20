@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__ethif" kind="struct" language="C++" prot="public">
+    <compoundname>tls_ethif</compoundname>
+    <includes refid="wm__netif_8h" local="no">wm_netif.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__ethif_1aed38077ce7dd22b54c2d637e3478a4bd" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structip__addr" kindref="compound">ip_addr</ref></type>
+        <definition>struct ip_addr tls_ethif::ip_addr</definition>
+        <argsstring></argsstring>
+        <name>ip_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IP Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="39" column="1" bodyfile="Include/App/wm_netif.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1a30438db023995aa5eb91ed62ab93d042" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structip__addr" kindref="compound">ip_addr</ref></type>
+        <definition>struct ip_addr tls_ethif::netmask</definition>
+        <argsstring></argsstring>
+        <name>netmask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NETMASK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="39" column="1" bodyfile="Include/App/wm_netif.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1a2d85e35b1231528f942388a792f71eab" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structip__addr" kindref="compound">ip_addr</ref></type>
+        <definition>struct ip_addr tls_ethif::gw</definition>
+        <argsstring></argsstring>
+        <name>gw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gateway </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="39" column="1" bodyfile="Include/App/wm_netif.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1aad642411246e9bf749dafd895dc02957" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structip__addr" kindref="compound">ip_addr</ref></type>
+        <definition>struct ip_addr tls_ethif::dns1</definition>
+        <argsstring></argsstring>
+        <name>dns1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>first DNS </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="39" column="1" bodyfile="Include/App/wm_netif.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1abb4fa35f2f1692f081686065b6fab949" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structip__addr" kindref="compound">ip_addr</ref></type>
+        <definition>struct ip_addr tls_ethif::dns2</definition>
+        <argsstring></argsstring>
+        <name>dns2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>second DNS </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="39" column="1" bodyfile="Include/App/wm_netif.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1a980e87ecefd4b1e5200317b8250d91fe" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_ethif::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Net Status 0:net down,1:net up </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="50" column="1" bodyfile="Include/App/wm_netif.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1aa33c6185d11ad7493c26b5b44575b375" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref></type>
+        <definition>ip_addr_t tls_ethif::ip_addr</definition>
+        <argsstring></argsstring>
+        <name>ip_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif2.0.3.h" line="81" column="1" bodyfile="Include/App/wm_netif2.0.3.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1a9474efe360c61c44dc08019587ec7fa0" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref></type>
+        <definition>ip_addr_t tls_ethif::netmask</definition>
+        <argsstring></argsstring>
+        <name>netmask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif2.0.3.h" line="82" column="1" bodyfile="Include/App/wm_netif2.0.3.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1a4eeb99a3e5b81c1e6f0be8ffcfb12f6d" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref></type>
+        <definition>ip_addr_t tls_ethif::gw</definition>
+        <argsstring></argsstring>
+        <name>gw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif2.0.3.h" line="83" column="1" bodyfile="Include/App/wm_netif2.0.3.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1a901ecdbc752d9fbb9cc30f77d0030207" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref></type>
+        <definition>ip_addr_t tls_ethif::dns1</definition>
+        <argsstring></argsstring>
+        <name>dns1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif2.0.3.h" line="87" column="1" bodyfile="Include/App/wm_netif2.0.3.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__ethif_1a9207390b5ffd08e6836da034517d58d8" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref></type>
+        <definition>ip_addr_t tls_ethif::dns2</definition>
+        <argsstring></argsstring>
+        <name>dns2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif2.0.3.h" line="88" column="1" bodyfile="Include/App/wm_netif2.0.3.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure to save net info </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="146">
+        <label>ip_addr</label>
+        <link refid="structip__addr"/>
+      </node>
+      <node id="145">
+        <label>tls_ethif</label>
+        <link refid="structtls__ethif"/>
+        <childnode refid="146" relation="usage">
+          <edgelabel>netmask</edgelabel>
+          <edgelabel>ip_addr</edgelabel>
+          <edgelabel>dns1</edgelabel>
+          <edgelabel>dns2</edgelabel>
+          <edgelabel>gw</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/App/wm_netif.h" line="44" column="1" bodyfile="Include/App/wm_netif.h" bodystart="43" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structtls__ethif_1aad642411246e9bf749dafd895dc02957" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>dns1</name></member>
+      <member refid="structtls__ethif_1a901ecdbc752d9fbb9cc30f77d0030207" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>dns1</name></member>
+      <member refid="structtls__ethif_1abb4fa35f2f1692f081686065b6fab949" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>dns2</name></member>
+      <member refid="structtls__ethif_1a9207390b5ffd08e6836da034517d58d8" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>dns2</name></member>
+      <member refid="structtls__ethif_1a2d85e35b1231528f942388a792f71eab" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>gw</name></member>
+      <member refid="structtls__ethif_1a4eeb99a3e5b81c1e6f0be8ffcfb12f6d" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>gw</name></member>
+      <member refid="structtls__ethif_1aed38077ce7dd22b54c2d637e3478a4bd" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>ip_addr</name></member>
+      <member refid="structtls__ethif_1aa33c6185d11ad7493c26b5b44575b375" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>ip_addr</name></member>
+      <member refid="structtls__ethif_1a30438db023995aa5eb91ed62ab93d042" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>netmask</name></member>
+      <member refid="structtls__ethif_1a9474efe360c61c44dc08019587ec7fa0" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>netmask</name></member>
+      <member refid="structtls__ethif_1a980e87ecefd4b1e5200317b8250d91fe" prot="public" virt="non-virtual"><scope>tls_ethif</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

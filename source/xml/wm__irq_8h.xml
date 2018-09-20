@@ -1,0 +1,773 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__irq_8h" kind="file" language="C++">
+    <compoundname>wm_irq.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includedby refid="wm__gpio__afsel_8h" local="yes">Include/Driver/wm_gpio_afsel.h</includedby>
+    <incdepgraph>
+      <node id="182">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="181">
+        <label>Include/Driver/wm_irq.h</label>
+        <link refid="wm__irq_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="183">
+        <label>Include/Driver/wm_irq.h</label>
+        <link refid="wm__irq_8h"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtls__irq__handler" prot="public">tls_irq_handler</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__irq_8h_1af7f76dfefd450f2e627e79ed5293a4a7" prot="public" static="no">
+        <name>INTR_CNT</name>
+        <initializer>41</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="18" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a96a7b8deefdce8ab89390e5ca56a44a7" prot="public" static="no">
+        <name>SDIO_UP_DATA_INT</name>
+        <initializer>(0UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="20" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a6942e9a9101dc5bf663a30601c891cfb" prot="public" static="no">
+        <name>SDIO_DOWN_DATA_INT</name>
+        <initializer>(1UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="21" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1aad9985afa7edd004e5ed0b84ce03e90d" prot="public" static="no">
+        <name>SDIO_UP_CMD_INT</name>
+        <initializer>(2UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="22" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a23a7715224a627fb40f756bf5ad5a57c" prot="public" static="no">
+        <name>SDIO_DOWN_CMD_INT</name>
+        <initializer>(3UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="23" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a9d766e5999757beac561f8b88f8790dc" prot="public" static="no">
+        <name>MAC_INT</name>
+        <initializer>(4UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="24" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a7f5419835e5f9a2d7ae9ce772d231e51" prot="public" static="no">
+        <name>RX_INT</name>
+        <initializer>(6UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="26" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a7f2894fe05060d177fdebab2b99a6f94" prot="public" static="no">
+        <name>TX_MGMT_COMPLETE_INT</name>
+        <initializer>(7UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="27" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1ac14ae96b5469267403208ac7816e51ba" prot="public" static="no">
+        <name>TX_DATA_COMPLETE_INT</name>
+        <initializer>(8UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="28" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a3d6b917c52861e34e4d76c219bfd50c0" prot="public" static="no">
+        <name>PMU_TIMER1_INT</name>
+        <initializer>(9UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="29" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1ac7ce7aa317bc79195943a7c6ca456c0d" prot="public" static="no">
+        <name>PMU_TIMER0_INT</name>
+        <initializer>(10UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="30" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a3a26353ff50ad50e9fdd4fd7b996569a" prot="public" static="no">
+        <name>PMU_GPIO_WAKEUP_INT</name>
+        <initializer>(11UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="31" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a5c4b6c2da5e3c5a4c1b9911ae57e7ce1" prot="public" static="no">
+        <name>PMU_SDIO_WAKEUP_INT</name>
+        <initializer>(12UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="32" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a488b6435f17b6b01d75ca383ccf0eb9c" prot="public" static="no">
+        <name>DMA0_INT</name>
+        <initializer>(13UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="33" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1ad357eb34538a37df88407ad8f4baa973" prot="public" static="no">
+        <name>DMA1_INT</name>
+        <initializer>(14UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="34" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a3c3f77dc38ec52d03e711684b37b57e2" prot="public" static="no">
+        <name>DMA2_INT</name>
+        <initializer>(15UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="35" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1aa524d10d1d2f4ccb7e4f22187251bc07" prot="public" static="no">
+        <name>DMA3_INT</name>
+        <initializer>(16UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="36" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a4fe436ed7afe55367cf056baceedaab1" prot="public" static="no">
+        <name>DMA4_INT</name>
+        <initializer>(17UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="37" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a23e6b78fd15f4110a93a1f3943d63834" prot="public" static="no">
+        <name>DMA_BURST_INT</name>
+        <initializer>(18UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="38" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a34365ea66f2e866d8304b2a3a408c1e6" prot="public" static="no">
+        <name>I2C_INT</name>
+        <initializer>(19UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="39" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1ae19ae26fb5206ab6d949596d972ca430" prot="public" static="no">
+        <name>ADC_INT</name>
+        <initializer>(20UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="40" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a0c160c6213a133086aebb6b3321078ae" prot="public" static="no">
+        <name>SPI0_INT</name>
+        <initializer>(21UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="41" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a23a91ffdaac3f655f004ab79d8a9b774" prot="public" static="no">
+        <name>SPI1_INT</name>
+        <initializer>(22UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="42" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a0e7c03deb83897db30fe15611be5f114" prot="public" static="no">
+        <name>UART0_INT</name>
+        <initializer>(23UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="43" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a1fac2ce5b598f451cdf7e76103641c17" prot="public" static="no">
+        <name>UART1_INT</name>
+        <initializer>(24UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="44" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a30d5c0f4b2a4725ac8f2d14f8755da2b" prot="public" static="no">
+        <name>GPIO_INT</name>
+        <initializer>(25UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="45" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1abf530d8bf3a571669a1303541672faf2" prot="public" static="no">
+        <name>TIMER0_INT</name>
+        <initializer>(26UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="46" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a8b9423f4525b671a1f01e0bc82202017" prot="public" static="no">
+        <name>TIMER1_INT</name>
+        <initializer>(27UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="47" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1acd0d41a1bb5a21d23c4e97a84d1133d4" prot="public" static="no">
+        <name>TIMER2_INT</name>
+        <initializer>(28UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="48" column="9" bodyfile="Include/Driver/wm_irq.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a01dd78a5377372b04beaa50e785fea8f" prot="public" static="no">
+        <name>TIMER3_INT</name>
+        <initializer>(29UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="49" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a6c7f1524fcabf21245dccbda8e3e6dcb" prot="public" static="no">
+        <name>TIMER4_INT</name>
+        <initializer>(30UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="50" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1aeb1e35b9b1b9a99a3591eebe53a357ac" prot="public" static="no">
+        <name>TIMER5_INT</name>
+        <initializer>(31UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="51" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a6d6e1895b98931f179b51720b30c8e61" prot="public" static="no">
+        <name>WATCHDOG_INT</name>
+        <initializer>(32UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="52" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1afe0c38d3eace2bb93911e000c65c9d99" prot="public" static="no">
+        <name>PMU_BOD_INT</name>
+        <initializer>(33UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="53" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a1ccbe9ff8531eba9580c0adb48b20e46" prot="public" static="no">
+        <name>FLASH_INT</name>
+        <initializer>(34UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="54" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1acb770463da8ba308b517cd7e35171837" prot="public" static="no">
+        <name>PWM_INT</name>
+        <initializer>(35UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="55" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a36562e83c4f86230f66b342d612b7582" prot="public" static="no">
+        <name>I2S_INT</name>
+        <initializer>(36UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="56" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1adc12cecb2d550257f1affdd4f1bcb7fa" prot="public" static="no">
+        <name>PMU_RTC_INT</name>
+        <initializer>(37UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="57" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a75c449ba853661a65c9dcebe75033d15" prot="public" static="no">
+        <name>RSA_INT</name>
+        <initializer>(38UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="58" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1ab5fd3f13ea577c1cad7348d5c2689981" prot="public" static="no">
+        <name>CRYPTION_INT</name>
+        <initializer>(39UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="59" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a05d716aa57e532e4612d44c6ecbdc98e" prot="public" static="no">
+        <name>GPIOB_INT</name>
+        <initializer>(40UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="60" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__irq_8h_1a9d406c193d4a4138cc7a7bb563ef1a0c" prot="public" static="no">
+        <name>UART2_INT</name>
+        <initializer>(41UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="61" column="11" bodyfile="Include/Driver/wm_irq.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__irq_8h_1af9582bd4724fbce62256d9a4555a4f26" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* intr_handler_func) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>intr_handler_func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="63" column="1" bodyfile="Include/Driver/wm_irq.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__irq_8h_1aa4f5084c0fafd6aa76f4519f2361e066" prot="public" static="no">
+        <type>struct <ref refid="structtls__irq__handler" kindref="compound">tls_irq_handler</ref></type>
+        <definition>typedef struct tls_irq_handler  tls_irq_handler_t</definition>
+        <argsstring></argsstring>
+        <name>tls_irq_handler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="74" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1ga682424056f3549c9b1ff6405f5f8c50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_irq_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_irq_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to initial system interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1ga502a923ecc04a1cd2ac5df4d3b4ecdf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_irq_register_handler</definition>
+        <argsstring>(u8 vec_no, intr_handler_func handler, void *data)</argsstring>
+        <name>tls_irq_register_handler</name>
+        <param>
+          <type>u8</type>
+          <declname>vec_no</declname>
+        </param>
+        <param>
+          <type>intr_handler_func</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vec_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt no </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1gae83a39ae9c7da806258e145e34fe1185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_irq_enable</definition>
+        <argsstring>(u8 vec_no)</argsstring>
+        <name>tls_irq_enable</name>
+        <param>
+          <type>u8</type>
+          <declname>vec_no</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to enable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vec_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1gafc84c58344dbbcb06be83f89332c3189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_irq_disable</definition>
+        <argsstring>(u8 vec_no)</argsstring>
+        <name>tls_irq_disable</name>
+        <param>
+          <type>u8</type>
+          <declname>vec_no</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to disable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vec_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_r_q___driver___a_p_is_1ga8c86a136a1e884a8c37779ed00086904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_get_isr_count</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_get_isr_count</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>get isr count </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_irq.h" line="153" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>interupt driver module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>WM_IRQ_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IRQ_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>interrupts.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTR_CNT<sp/>41</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_UP_DATA_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_DOWN_DATA_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_UP_CMD_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDIO_DOWN_CMD_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(3UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAC_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(4UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RX_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(6UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_MGMT_COMPLETE_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(7UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_DATA_COMPLETE_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(8UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PMU_TIMER1_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(9UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PMU_TIMER0_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PMU_GPIO_WAKEUP_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(11UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PMU_SDIO_WAKEUP_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(12UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA0_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(13UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA1_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(14UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA2_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(15UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA3_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(16UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA4_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(17UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMA_BURST_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(18UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(19UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(20UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI0_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(21UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI1_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(22UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART0_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(23UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART1_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(24UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(25UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER0_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(26UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER1_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(27UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER2_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(28UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>TIMER3_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(29UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>TIMER4_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(30UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>TIMER5_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(31UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>WATCHDOG_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(32UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PMU_BOD_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(33UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>FLASH_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(34UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PWM_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(35UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>I2S_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(36UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>PMU_RTC_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(37UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>RSA_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(38UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>CRYPTION_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(39UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>GPIOB_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(40UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/><sp/>UART2_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(41UL)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*intr_handler_func)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structtls__irq__handler" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__irq__handler" kindref="compound">tls_irq_handler</ref></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*handler)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>const<sp/>char<sp/><sp/>*name;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>counter;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/><ref refid="structtls__irq__handler" kindref="compound">tls_irq_handler_t</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i_r_q___driver___a_p_is_1ga682424056f3549c9b1ff6405f5f8c50a" kindref="member">tls_irq_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i_r_q___driver___a_p_is_1ga502a923ecc04a1cd2ac5df4d3b4ecdf0" kindref="member">tls_irq_register_handler</ref>(u8<sp/>vec_no,<sp/>intr_handler_func<sp/>handler,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i_r_q___driver___a_p_is_1gae83a39ae9c7da806258e145e34fe1185" kindref="member">tls_irq_enable</ref>(u8<sp/>vec_no);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i_r_q___driver___a_p_is_1gafc84c58344dbbcb06be83f89332c3189" kindref="member">tls_irq_disable</ref>(u8<sp/>vec_no);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">u8<sp/><ref refid="group___i_r_q___driver___a_p_is_1ga8c86a136a1e884a8c37779ed00086904" kindref="member">tls_get_isr_count</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_IRQ_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_irq.h"/>
+  </compounddef>
+</doxygen>

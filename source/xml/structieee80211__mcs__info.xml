@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__mcs__info" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_mcs_info</compoundname>
+    <includes refid="wm__ieee80211_8h" local="no">wm_ieee80211.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__mcs__info_1ae21bbe8d8c8437994d4a03ead19e5f75" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_mcs_info::rx_mask</definition>
+        <argsstring>[IEEE80211_HT_MCS_MASK_LEN]</argsstring>
+        <name>rx_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1111" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__mcs__info_1ae0f11fddabdb6d20a1eca10edf2fe6d9" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_mcs_info::rx_highest</definition>
+        <argsstring></argsstring>
+        <name>rx_highest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1112" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__mcs__info_1a3bf519900a16768b26cb398360df6180" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_mcs_info::tx_params</definition>
+        <argsstring></argsstring>
+        <name>tx_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1113" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__mcs__info_1aac0079d11e956d8810e7f54c5ef2d022" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_mcs_info::reserved</definition>
+        <argsstring>[3]</argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1114" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct <ref refid="structieee80211__mcs__info" kindref="compound">ieee80211_mcs_info</ref> - MCS information : RX mask : highest supported RX rate. If set represents the highest supported RX data rate in units of 1 Mbps. If this field is 0 this value should not be used to consider the highest RX data rate supported. : TX parameters </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_ieee80211.h" line="1110" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1110" bodyend="1115"/>
+    <listofallmembers>
+      <member refid="structieee80211__mcs__info_1aac0079d11e956d8810e7f54c5ef2d022" prot="public" virt="non-virtual"><scope>ieee80211_mcs_info</scope><name>reserved</name></member>
+      <member refid="structieee80211__mcs__info_1ae0f11fddabdb6d20a1eca10edf2fe6d9" prot="public" virt="non-virtual"><scope>ieee80211_mcs_info</scope><name>rx_highest</name></member>
+      <member refid="structieee80211__mcs__info_1ae21bbe8d8c8437994d4a03ead19e5f75" prot="public" virt="non-virtual"><scope>ieee80211_mcs_info</scope><name>rx_mask</name></member>
+      <member refid="structieee80211__mcs__info_1a3bf519900a16768b26cb398360df6180" prot="public" virt="non-virtual"><scope>ieee80211_mcs_info</scope><name>tx_params</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

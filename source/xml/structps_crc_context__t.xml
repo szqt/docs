@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structps_crc_context__t" kind="struct" language="C++" prot="public">
+    <compoundname>psCrcContext_t</compoundname>
+    <includes refid="wm__crypto__hard_8h" local="no">wm_crypto_hard.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structps_crc_context__t_1a29c57beacdd4dc76a47df78c5f634f9b" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 psCrcContext_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>The initial value input and result value output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="136" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structps_crc_context__t_1a48f51eab5004d37c15969d557b4c1dd8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 psCrcContext_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>The type of CRC, refernec the CRYPTO_CRC_TYPE enum. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="137" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structps_crc_context__t_1a40bb73e12a4d686cc79ac2d030428229" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 psCrcContext_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+<para>The mode of CRC, bit0 means output reflection and bit1 means input reflection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_crypto_hard.h" line="138" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The struct of the CRC context. </para>    </detaileddescription>
+    <location file="Include/Platform/wm_crypto_hard.h" line="135" column="1" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="135" bodyend="139"/>
+    <listofallmembers>
+      <member refid="structps_crc_context__t_1a40bb73e12a4d686cc79ac2d030428229" prot="public" virt="non-virtual"><scope>psCrcContext_t</scope><name>mode</name></member>
+      <member refid="structps_crc_context__t_1a29c57beacdd4dc76a47df78c5f634f9b" prot="public" virt="non-virtual"><scope>psCrcContext_t</scope><name>state</name></member>
+      <member refid="structps_crc_context__t_1a48f51eab5004d37c15969d557b4c1dd8" prot="public" virt="non-virtual"><scope>psCrcContext_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

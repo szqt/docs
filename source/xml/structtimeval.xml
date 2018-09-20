@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtimeval" kind="struct" language="C++" prot="public">
+    <compoundname>timeval</compoundname>
+    <includes refid="wm__sockets_8h" local="no">wm_sockets.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtimeval_1a3599199839a89e99a2ce29d45312b5cf" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long timeval::tv_sec</definition>
+        <argsstring></argsstring>
+        <name>tv_sec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>seconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="408" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimeval_1aa8396731f2914f9ed2a457d3da602b80" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long timeval::tv_usec</definition>
+        <argsstring></argsstring>
+        <name>tv_usec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>and microseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="409" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A time value that is accurate to the nearest microsecond but also has a range of years </para>    </detaileddescription>
+    <location file="Include/Net/wm_sockets.h" line="407" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="407" bodyend="410"/>
+    <listofallmembers>
+      <member refid="structtimeval_1a3599199839a89e99a2ce29d45312b5cf" prot="public" virt="non-virtual"><scope>timeval</scope><name>tv_sec</name></member>
+      <member refid="structtimeval_1aa8396731f2914f9ed2a457d3da602b80" prot="public" virt="non-virtual"><scope>timeval</scope><name>tv_usec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__fls" kind="struct" language="C++" prot="public">
+    <compoundname>tls_fls</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__fls_1a98c465aed2d766d6e04b22cb3a59b2b9" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structfls__list" kindref="compound">fls_list</ref></type>
+        <definition>struct fls_list tls_fls::fls_drvs</definition>
+        <argsstring></argsstring>
+        <name>fls_drvs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="72" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls_1a9c9a3b72188c60f0a46556f7db37d893" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__fls__drv" kindref="compound">tls_fls_drv</ref> *</type>
+        <definition>struct tls_fls_drv* tls_fls::current_drv</definition>
+        <argsstring></argsstring>
+        <name>current_drv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="81" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__fls_1a353d2d8c82a7fc7c820e12bc66e1b8a5" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> *</type>
+        <definition>tls_os_sem_t* tls_fls::fls_lock</definition>
+        <argsstring></argsstring>
+        <name>fls_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_flash.h" line="82" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="150">
+        <label>tls_fls_drv</label>
+        <link refid="structtls__fls__drv"/>
+        <childnode refid="149" relation="usage">
+          <edgelabel>drv_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="148">
+        <label>tls_fls</label>
+        <link refid="structtls__fls"/>
+        <childnode refid="149" relation="usage">
+          <edgelabel>fls_drvs</edgelabel>
+        </childnode>
+        <childnode refid="150" relation="usage">
+          <edgelabel>current_drv</edgelabel>
+        </childnode>
+      </node>
+      <node id="149">
+        <label>fls_list</label>
+        <link refid="structfls__list"/>
+        <childnode refid="149" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_flash.h" line="79" column="1" bodyfile="Include/Driver/wm_flash.h" bodystart="78" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structtls__fls_1a9c9a3b72188c60f0a46556f7db37d893" prot="public" virt="non-virtual"><scope>tls_fls</scope><name>current_drv</name></member>
+      <member refid="structtls__fls_1a98c465aed2d766d6e04b22cb3a59b2b9" prot="public" virt="non-virtual"><scope>tls_fls</scope><name>fls_drvs</name></member>
+      <member refid="structtls__fls_1a353d2d8c82a7fc7c820e12bc66e1b8a5" prot="public" virt="non-virtual"><scope>tls_fls</scope><name>fls_lock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

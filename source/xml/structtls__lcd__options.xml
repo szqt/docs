@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__lcd__options" kind="struct" language="C++" prot="public">
+    <compoundname>tls_lcd_options</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__lcd__options_1a78e0521fce1c135f320f40ed854277f5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tls_lcd_options::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="115" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__lcd__options_1a49f8cb0549cc48e44f945da7a2d5c3be" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__lcd_8h_1ace6f24edc87b87aba5a2beb8ba5f3865" kindref="member">LCD_ModeDef</ref></type>
+        <definition>LCD_ModeDef tls_lcd_options::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>8x16 or 4x20 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="117" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__lcd__options_1ade099772b2b84088808d58ebc36be8a1" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__lcd_8h_1a918bc4a5a0d1b0615e88f6eac5d1a861" kindref="member">LCD_BiasDef</ref></type>
+        <definition>LCD_BiasDef tls_lcd_options::bias</definition>
+        <argsstring></argsstring>
+        <name>bias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bias configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="119" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__lcd__options_1aab32129cc67319b227269b416fb4e9bd" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__lcd_8h_1a151a2a9f1b80511ab62a097f41e7173f" kindref="member">LCD_DutyDef</ref></type>
+        <definition>LCD_DutyDef tls_lcd_options::duty</definition>
+        <argsstring></argsstring>
+        <name>duty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duty configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="121" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__lcd__options_1a5b9b976d1da86726f13637435f626d02" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__lcd_8h_1aba93e5107f100dc0925217ce03085ca3" kindref="member">LCD_VlcdDef</ref></type>
+        <definition>LCD_VlcdDef tls_lcd_options::vlcd</definition>
+        <argsstring></argsstring>
+        <name>vlcd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vlcd configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="123" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__lcd__options_1a01924fc8446dac7e894046c6c0baa162" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__lcd_8h_1a88f1d632b316b318c2d99516f2df01c0" kindref="member">LCD_VddDef</ref></type>
+        <definition>LCD_VddDef tls_lcd_options::vdd_mode</definition>
+        <argsstring></argsstring>
+        <name>vdd_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vdd configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="125" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__lcd__options_1a848039701f814b7388882ea4e7be091d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t tls_lcd_options::fresh_rate</definition>
+        <argsstring></argsstring>
+        <name>fresh_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fresh rate configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_lcd.h" line="127" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_lcd.h" line="113" column="1" bodyfile="Include/Driver/wm_lcd.h" bodystart="112" bodyend="128"/>
+    <listofallmembers>
+      <member refid="structtls__lcd__options_1ade099772b2b84088808d58ebc36be8a1" prot="public" virt="non-virtual"><scope>tls_lcd_options</scope><name>bias</name></member>
+      <member refid="structtls__lcd__options_1aab32129cc67319b227269b416fb4e9bd" prot="public" virt="non-virtual"><scope>tls_lcd_options</scope><name>duty</name></member>
+      <member refid="structtls__lcd__options_1a78e0521fce1c135f320f40ed854277f5" prot="public" virt="non-virtual"><scope>tls_lcd_options</scope><name>enable</name></member>
+      <member refid="structtls__lcd__options_1a848039701f814b7388882ea4e7be091d" prot="public" virt="non-virtual"><scope>tls_lcd_options</scope><name>fresh_rate</name></member>
+      <member refid="structtls__lcd__options_1a49f8cb0549cc48e44f945da7a2d5c3be" prot="public" virt="non-virtual"><scope>tls_lcd_options</scope><name>mode</name></member>
+      <member refid="structtls__lcd__options_1a01924fc8446dac7e894046c6c0baa162" prot="public" virt="non-virtual"><scope>tls_lcd_options</scope><name>vdd_mode</name></member>
+      <member refid="structtls__lcd__options_1a5b9b976d1da86726f13637435f626d02" prot="public" virt="non-virtual"><scope>tls_lcd_options</scope><name>vlcd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

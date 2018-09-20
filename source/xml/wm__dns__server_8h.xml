@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__dns__server_8h" kind="file" language="C++">
+    <compoundname>wm_dns_server.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_n_s_s___a_p_is_1ga8254355cb4fe29f35f2f95885624158c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_dnss_start</definition>
+        <argsstring>(u8 *dnsname)</argsstring>
+        <name>tls_dnss_start</name>
+        <param>
+          <type>u8 *</type>
+          <declname>dnsname</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to start DNS service. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*dnsname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify the server&apos;s dns name</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_dns_server.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_n_s_s___a_p_is_1ga03a5a20f75ef612c1464bfb7096fa35d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_dnss_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_dnss_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop DNS service. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_dns_server.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DNS SERVER. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>winnermicro</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>WM_DNS_SERVER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_DNS_SERVER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">s8<sp/><ref refid="group___d_n_s_s___a_p_is_1ga8254355cb4fe29f35f2f95885624158c" kindref="member">tls_dnss_start</ref>(u8<sp/>*dnsname);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___d_n_s_s___a_p_is_1ga03a5a20f75ef612c1464bfb7096fa35d" kindref="member">tls_dnss_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_DNS_SERVER_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/App/wm_dns_server.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___d_h_c_p_s___a_p_is" kind="group">
+    <compoundname>DHCPS_APIs</compoundname>
+    <title>DHCPS APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_h_c_p_s___a_p_is_1ga6c30564ffa3f42bdf627c56b4b93ada0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_dhcps_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_dhcps_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to start DHCP Server for a network interface. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_dhcp_server.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_h_c_p_s___a_p_is_1ga5a04f88354571f5a2615192fc5548d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_dhcps_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_dhcps_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop DHCP server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_dhcp_server.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_h_c_p_s___a_p_is_1ga55b796e51357b3d080bd0f55420966a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref> *</type>
+        <definition>ip_addr_t* tls_dhcps_getip</definition>
+        <argsstring>(const u8 *mac)</argsstring>
+        <name>tls_dhcps_getip</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get station&apos;s IP address by MAC address. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STA&apos;s MAC address</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structip__addr" kindref="compound">ip_addr</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STA&apos;s IP address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NULL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Not found match IP with MAC address</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_dhcp_server.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_h_c_p_s___a_p_is_1ga3355424f09852a61aeeb59bcce599b31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_dhcps_setdns</definition>
+        <argsstring>(u8 numdns)</argsstring>
+        <name>tls_dhcps_setdns</name>
+        <param>
+          <type>u8</type>
+          <declname>numdns</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set DHCP server&apos;s DNS address. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">numdns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the DNS server to set must be 0 or 1</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_dhcp_server.h" line="80" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DHCP server APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

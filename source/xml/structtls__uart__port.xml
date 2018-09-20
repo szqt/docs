@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__uart__port" kind="struct" language="C++" prot="public">
+    <compoundname>tls_uart_port</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__uart__port_1a319ec4ec80e294dd94dd7cd713afbc10" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_port::uart_no</definition>
+        <argsstring></argsstring>
+        <name>uart_no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart number: 0 or 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="256" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1aec83573cae77ad0fa9a5ea3e7fd24f01" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_port::uart_irq_no</definition>
+        <argsstring></argsstring>
+        <name>uart_irq_no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart interrupt number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="258" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1af813627fc1abf44101f43c4a23195fdb" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_port::plus_char_cnt</definition>
+        <argsstring></argsstring>
+        <name>plus_char_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="260" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a82d7377e4f5f9ad4f83b9f19815c73df" prot="public" static="no" mutable="no">
+        <type>TLS_UART_MODE_T</type>
+        <definition>TLS_UART_MODE_T tls_uart_port::uart_mode</definition>
+        <argsstring></argsstring>
+        <name>uart_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart work mode: interrupt mode or poll mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="262" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a0d7a51cc84d1f7963bfd14ae826211ba" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__uart__options" kindref="compound">tls_uart_options</ref></type>
+        <definition>struct tls_uart_options tls_uart_port::opts</definition>
+        <argsstring></argsstring>
+        <name>opts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart config parameters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="262" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a113edcf7707f6c21eabf0f7ae1e9b033" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tls_uart_port::fcStatus</definition>
+        <argsstring></argsstring>
+        <name>fcStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flow ctrl status,0 closed ,1 opened </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="266" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a06046b4b2176f14ddf66fe1f17386317" prot="public" static="no" mutable="no">
+        <type>enum TLS_UART_RX_FLOW_CTRL_FLAG</type>
+        <definition>enum TLS_UART_RX_FLOW_CTRL_FLAG tls_uart_port::rxstatus</definition>
+        <argsstring></argsstring>
+        <name>rxstatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="266" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a5bc5227f080597f1b01a782fc342ec31" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_uart_port::tx_fifofull</definition>
+        <argsstring></argsstring>
+        <name>tx_fifofull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart tx fifo trigger level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="270" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a3769a19b58e3a31d52ffd294d97e0b7a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_t_l_s___u_a_r_t___r_e_g_s" kindref="compound">TLS_UART_REGS_T</ref> volatile *</type>
+        <definition>TLS_UART_REGS_T volatile* tls_uart_port::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart registers struct pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="272" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1ab9e3c400df43299c569bbf2cec558f8c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__uart__icount" kindref="compound">tls_uart_icount</ref></type>
+        <definition>struct tls_uart_icount tls_uart_port::icount</definition>
+        <argsstring></argsstring>
+        <name>icount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart statistics information </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="272" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a4529f3bd936123d8c545ca43b2f1506c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__uart__circ__buf" kindref="compound">tls_uart_circ_buf</ref></type>
+        <definition>struct tls_uart_circ_buf tls_uart_port::recv</definition>
+        <argsstring></argsstring>
+        <name>recv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uart ring buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="272" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a255561ffaf2c99f9bc5a3626bd73ed2b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref></type>
+        <definition>struct dl_list tls_uart_port::tx_msg_pending_list</definition>
+        <argsstring></argsstring>
+        <name>tx_msg_pending_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="272" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1ab1424bd94255ed435592b764476372b0" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref></type>
+        <definition>struct dl_list tls_uart_port::tx_msg_to_be_freed_list</definition>
+        <argsstring></argsstring>
+        <name>tx_msg_to_be_freed_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="272" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a7123f4ac8ee6ba0970205b18de2df6f0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_uart_port::hw_stopped</definition>
+        <argsstring></argsstring>
+        <name>hw_stopped</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="284" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a4939dc878601929a5a9f5df7df34f45a" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> *</type>
+        <definition>tls_os_sem_t* tls_uart_port::tx_sem</definition>
+        <argsstring></argsstring>
+        <name>tx_sem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="286" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a95f336052f16bee18a94364683f71642" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* tls_uart_port::buf_ptr</definition>
+        <argsstring></argsstring>
+        <name>buf_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="288" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1acd7cfea012ff5e3d996b153aaa7ef31b" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_uart_port::buf_len</definition>
+        <argsstring></argsstring>
+        <name>buf_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="290" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1ad5cc8f39e901cf67b630d0b4f725a1ef" prot="public" static="no" mutable="no">
+        <type>s16(*</type>
+        <definition>s16(* tls_uart_port::rx_callback) (u16 len)</definition>
+        <argsstring>)(u16 len)</argsstring>
+        <name>rx_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="292" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a6dbac9c45bbfac7bb49227cc463710eb" prot="public" static="no" mutable="no">
+        <type>s16(*</type>
+        <definition>s16(* tls_uart_port::tx_callback) (struct tls_uart_port *port)</definition>
+        <argsstring>)(struct tls_uart_port *port)</argsstring>
+        <name>tx_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="294" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__port_1a2c9046888fce6732306d93aaf2674d88" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tls_uart_port::tx_dma_on</definition>
+        <argsstring></argsstring>
+        <name>tx_dma_on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="296" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="260">
+        <label>tls_uart_options</label>
+        <link refid="structtls__uart__options"/>
+      </node>
+      <node id="257">
+        <label>tls_uart_circ_buf</label>
+        <link refid="structtls__uart__circ__buf"/>
+      </node>
+      <node id="256">
+        <label>tls_uart_port</label>
+        <link refid="structtls__uart__port"/>
+        <childnode refid="257" relation="usage">
+          <edgelabel>recv</edgelabel>
+        </childnode>
+        <childnode refid="258" relation="usage">
+          <edgelabel>tx_msg_pending_list</edgelabel>
+          <edgelabel>tx_msg_to_be_freed_list</edgelabel>
+        </childnode>
+        <childnode refid="259" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+        <childnode refid="260" relation="usage">
+          <edgelabel>opts</edgelabel>
+        </childnode>
+        <childnode refid="261" relation="usage">
+          <edgelabel>icount</edgelabel>
+        </childnode>
+      </node>
+      <node id="259">
+        <label>TLS_UART_REGS</label>
+        <link refid="struct_t_l_s___u_a_r_t___r_e_g_s"/>
+      </node>
+      <node id="258">
+        <label>dl_list</label>
+        <link refid="structdl__list"/>
+        <childnode refid="258" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="261">
+        <label>tls_uart_icount</label>
+        <link refid="structtls__uart__icount"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_uart.h" line="255" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="254" bodyend="297"/>
+    <listofallmembers>
+      <member refid="structtls__uart__port_1acd7cfea012ff5e3d996b153aaa7ef31b" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>buf_len</name></member>
+      <member refid="structtls__uart__port_1a95f336052f16bee18a94364683f71642" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>buf_ptr</name></member>
+      <member refid="structtls__uart__port_1a113edcf7707f6c21eabf0f7ae1e9b033" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>fcStatus</name></member>
+      <member refid="structtls__uart__port_1a7123f4ac8ee6ba0970205b18de2df6f0" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>hw_stopped</name></member>
+      <member refid="structtls__uart__port_1ab9e3c400df43299c569bbf2cec558f8c" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>icount</name></member>
+      <member refid="structtls__uart__port_1a0d7a51cc84d1f7963bfd14ae826211ba" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>opts</name></member>
+      <member refid="structtls__uart__port_1af813627fc1abf44101f43c4a23195fdb" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>plus_char_cnt</name></member>
+      <member refid="structtls__uart__port_1a4529f3bd936123d8c545ca43b2f1506c" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>recv</name></member>
+      <member refid="structtls__uart__port_1a3769a19b58e3a31d52ffd294d97e0b7a" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>regs</name></member>
+      <member refid="structtls__uart__port_1ad5cc8f39e901cf67b630d0b4f725a1ef" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>rx_callback</name></member>
+      <member refid="structtls__uart__port_1a06046b4b2176f14ddf66fe1f17386317" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>rxstatus</name></member>
+      <member refid="structtls__uart__port_1a6dbac9c45bbfac7bb49227cc463710eb" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>tx_callback</name></member>
+      <member refid="structtls__uart__port_1a2c9046888fce6732306d93aaf2674d88" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>tx_dma_on</name></member>
+      <member refid="structtls__uart__port_1a5bc5227f080597f1b01a782fc342ec31" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>tx_fifofull</name></member>
+      <member refid="structtls__uart__port_1a255561ffaf2c99f9bc5a3626bd73ed2b" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>tx_msg_pending_list</name></member>
+      <member refid="structtls__uart__port_1ab1424bd94255ed435592b764476372b0" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>tx_msg_to_be_freed_list</name></member>
+      <member refid="structtls__uart__port_1a4939dc878601929a5a9f5df7df34f45a" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>tx_sem</name></member>
+      <member refid="structtls__uart__port_1aec83573cae77ad0fa9a5ea3e7fd24f01" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>uart_irq_no</name></member>
+      <member refid="structtls__uart__port_1a82d7377e4f5f9ad4f83b9f19815c73df" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>uart_mode</name></member>
+      <member refid="structtls__uart__port_1a319ec4ec80e294dd94dd7cd713afbc10" prot="public" virt="non-virtual"><scope>tls_uart_port</scope><name>uart_no</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

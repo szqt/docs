@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>winnermicro venus sdk</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="index_1intro_sec">
+<title>winnermicro venus sdk APIs.</title>
+<para>This library provides easy to use APIs to use by hiding all details.</para></sect1>
+<sect1 id="index_1usage_sec">
+<title>How to use the sdk</title>
+<sect2 id="index_1source">
+<title>how to code</title>
+<para>void UserMain(void) is the entrance function of the application: <programlisting><codeline><highlight class="normal">void<sp/>UserMain(void)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(&quot;\n<sp/>user<sp/>task\n&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#if<sp/>DEMO_CONSOLE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CreateDemoTask();</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//user&apos;s<sp/>task</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para></sect2>
+<sect2 id="index_1compile">
+<title>How to compile</title>
+<para>To build with the sdk you can use the keil tools. Opening &quot;Tools\Keil\Project\WM_SDK.uvproj&quot; to compile.</para></sect2>
+</sect1>
+<sect1 id="index_1install_sec">
+<title>How to download the firmware</title>
+<sect2 id="index_1fw_flash">
+<title>Download the &quot;WM_SDK.img&quot; image</title>
+<para>Go to write image to flash.</para></sect2>
+<sect2 id="index_1fw_ram">
+<title>Download the &quot;WM_SDK_UART.img&quot; image</title>
+<para>Go to download image to ram. <programlisting><codeline><highlight class="normal">Press<sp/>&quot;ESC&quot;<sp/>and<sp/>the<sp/>reset<sp/>key<sp/>until<sp/>the<sp/>com0<sp/>output:<sp/>&quot;cc...&quot;</highlight></codeline>
+</programlisting></para><para><linebreak/>
+<simplesect kind="attention"><para>1. It is recommended that users set the timer to the periodic mode for periodic checks. </para></simplesect>
+<simplesect kind="attention"><para>(1). In freeRTOS timer or os_timer, do not delay by while(1) or in the manner that will block the thread. </para></simplesect>
+<simplesect kind="attention"><para>(2). The timer callback should not occupy CPU more than 15ms. </para></simplesect>
+<simplesect kind="attention"><para>(3). os_timer_t should not define a local variable, it has to be global varialbe or memory got by malloc.</para></simplesect>
+<simplesect kind="attention"><para>2. Functions are stored in CACHE by default, need not ICACHE_FLASH_ATTR any more. The interrupt functions can also be stored in CACHE. If users want to store some frequently called functions in RAM, please add IRAM_ATTR before functions&apos; name.</para></simplesect>
+<simplesect kind="attention"><para>3. Priority of the RTOS SDK is 15. xTaskCreate is an interface of freeRTOS. For details of the freeRTOS and APIs of the system, please visit <ulink url="http://www.freertos.org">http://www.freertos.org</ulink> </para></simplesect>
+<simplesect kind="attention"><para>(1). When using xTaskCreate to create a task, the task stack range is [176, 512]. </para></simplesect>
+<simplesect kind="attention"><para>(2). If an array whose length is over 60 bytes is used in a task, it is suggested that users use malloc and free rather than local variable to allocate array. Large local variables could lead to task stack overflow. </para></simplesect>
+<simplesect kind="attention"><para>(3). The RTOS SDK takes some priorities. Priority of the pp task is 13; priority of precise timer(ms) thread is 12; priority of the TCP/IP task is 10; priority of the freeRTOS timer is 2; priority of the idle task is 0. </para></simplesect>
+<simplesect kind="attention"><para>(4). Users can use tasks with priorities from 1 to 9. </para></simplesect>
+<simplesect kind="attention"><para>(5). Do not revise FreeRTOSConfig.h, configurations are decided by source code inside the RTOS SDK, users can not change it. </para></simplesect>
+</para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

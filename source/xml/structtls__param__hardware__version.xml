@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__param__hardware__version" kind="struct" language="C++" prot="public">
+    <compoundname>tls_param_hardware_version</compoundname>
+    <includes refid="wm__params_8h" local="no">wm_params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__param__hardware__version_1aa92df429c8f71a2b50e8b424a2dcd761" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_hardware_version::mark</definition>
+        <argsstring></argsstring>
+        <name>mark</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="280" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__hardware__version_1a7af17aacc72ecccd45dbef944dcb578d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_hardware_version::main</definition>
+        <argsstring></argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="281" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__hardware__version_1acfbbc6c15be561f7b1d19e51cb8de8a7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_hardware_version::sub</definition>
+        <argsstring></argsstring>
+        <name>sub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="282" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__hardware__version_1a97a34b53d0c75627162810204a832c21" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_hardware_version::material</definition>
+        <argsstring></argsstring>
+        <name>material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="283" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__hardware__version_1a1aa3761726d33290c35a3d0ed0e4cd15" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_hardware_version::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="284" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__hardware__version_1acbd0b5c0a99f9c99c8da07f24787eb59" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_hardware_version::week</definition>
+        <argsstring></argsstring>
+        <name>week</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="285" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__hardware__version_1a010c89ae84d36a750c8bd19ee3df681c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_hardware_version::res[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="286" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure of hardware parameter </para>    </detaileddescription>
+    <location file="Include/Platform/wm_params.h" line="279" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="279" bodyend="287"/>
+    <listofallmembers>
+      <member refid="structtls__param__hardware__version_1a7af17aacc72ecccd45dbef944dcb578d" prot="public" virt="non-virtual"><scope>tls_param_hardware_version</scope><name>main</name></member>
+      <member refid="structtls__param__hardware__version_1aa92df429c8f71a2b50e8b424a2dcd761" prot="public" virt="non-virtual"><scope>tls_param_hardware_version</scope><name>mark</name></member>
+      <member refid="structtls__param__hardware__version_1a97a34b53d0c75627162810204a832c21" prot="public" virt="non-virtual"><scope>tls_param_hardware_version</scope><name>material</name></member>
+      <member refid="structtls__param__hardware__version_1a010c89ae84d36a750c8bd19ee3df681c" prot="public" virt="non-virtual"><scope>tls_param_hardware_version</scope><name>res</name></member>
+      <member refid="structtls__param__hardware__version_1acfbbc6c15be561f7b1d19e51cb8de8a7" prot="public" virt="non-virtual"><scope>tls_param_hardware_version</scope><name>sub</name></member>
+      <member refid="structtls__param__hardware__version_1acbd0b5c0a99f9c99c8da07f24787eb59" prot="public" virt="non-virtual"><scope>tls_param_hardware_version</scope><name>week</name></member>
+      <member refid="structtls__param__hardware__version_1a1aa3761726d33290c35a3d0ed0e4cd15" prot="public" virt="non-virtual"><scope>tls_param_hardware_version</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

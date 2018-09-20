@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__uart__tx__msg" kind="struct" language="C++" prot="public">
+    <compoundname>tls_uart_tx_msg</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__uart__tx__msg_1a4a28a05571e495907f27bbcc11884996" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref></type>
+        <definition>struct dl_list tls_uart_tx_msg::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="296" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__tx__msg_1a1de1d79cf163fc8d6d8ed37cc085a38a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* tls_uart_tx_msg::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="305" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__tx__msg_1a6479a3cdf8f86b6dd54be30397323208" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_uart_tx_msg::buflen</definition>
+        <argsstring></argsstring>
+        <name>buflen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="306" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__tx__msg_1a8d2e79fba0492404a28a7c823016b62f" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_uart_tx_msg::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="307" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__tx__msg_1a196931813c8aaabd4d8ae225595ffd66" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* tls_uart_tx_msg::finish_callback) (void *arg)</definition>
+        <argsstring>)(void *arg)</argsstring>
+        <name>finish_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="308" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__uart__tx__msg_1a0a2219f2bdd784caa2213cd897ddb3ae" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* tls_uart_tx_msg::callback_arg</definition>
+        <argsstring></argsstring>
+        <name>callback_arg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="309" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="265">
+        <label>tls_uart_tx_msg</label>
+        <link refid="structtls__uart__tx__msg"/>
+        <childnode refid="266" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="266">
+        <label>dl_list</label>
+        <link refid="structdl__list"/>
+        <childnode refid="266" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_uart.h" line="303" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="302" bodyend="310"/>
+    <listofallmembers>
+      <member refid="structtls__uart__tx__msg_1a1de1d79cf163fc8d6d8ed37cc085a38a" prot="public" virt="non-virtual"><scope>tls_uart_tx_msg</scope><name>buf</name></member>
+      <member refid="structtls__uart__tx__msg_1a6479a3cdf8f86b6dd54be30397323208" prot="public" virt="non-virtual"><scope>tls_uart_tx_msg</scope><name>buflen</name></member>
+      <member refid="structtls__uart__tx__msg_1a0a2219f2bdd784caa2213cd897ddb3ae" prot="public" virt="non-virtual"><scope>tls_uart_tx_msg</scope><name>callback_arg</name></member>
+      <member refid="structtls__uart__tx__msg_1a196931813c8aaabd4d8ae225595ffd66" prot="public" virt="non-virtual"><scope>tls_uart_tx_msg</scope><name>finish_callback</name></member>
+      <member refid="structtls__uart__tx__msg_1a4a28a05571e495907f27bbcc11884996" prot="public" virt="non-virtual"><scope>tls_uart_tx_msg</scope><name>list</name></member>
+      <member refid="structtls__uart__tx__msg_1a8d2e79fba0492404a28a7c823016b62f" prot="public" virt="non-virtual"><scope>tls_uart_tx_msg</scope><name>offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

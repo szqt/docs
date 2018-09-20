@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__param__uart" kind="struct" language="C++" prot="public">
+    <compoundname>tls_param_uart</compoundname>
+    <includes refid="wm__params_8h" local="no">wm_params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__param__uart_1ab8ff7028dae9805d6ac54f7085bd659c" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_param_uart::baudrate</definition>
+        <argsstring></argsstring>
+        <name>baudrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="343" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__uart_1a353a5f2308c52aff633b4f779d5ed3cd" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_uart::stop_bits</definition>
+        <argsstring></argsstring>
+        <name>stop_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="344" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__uart_1a01db83edf2ff4ee06fb2e0b36bf99846" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_uart::parity</definition>
+        <argsstring></argsstring>
+        <name>parity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="345" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__uart_1a718e30e71a79709ce16db947863e2b94" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_uart::flow</definition>
+        <argsstring></argsstring>
+        <name>flow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="346" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__uart_1a9ef92f76edfb0726d0fa6d04b2773aa8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_uart::charsize</definition>
+        <argsstring></argsstring>
+        <name>charsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="347" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure of uart parameter </para>    </detaileddescription>
+    <location file="Include/Platform/wm_params.h" line="342" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="342" bodyend="348"/>
+    <listofallmembers>
+      <member refid="structtls__param__uart_1ab8ff7028dae9805d6ac54f7085bd659c" prot="public" virt="non-virtual"><scope>tls_param_uart</scope><name>baudrate</name></member>
+      <member refid="structtls__param__uart_1a9ef92f76edfb0726d0fa6d04b2773aa8" prot="public" virt="non-virtual"><scope>tls_param_uart</scope><name>charsize</name></member>
+      <member refid="structtls__param__uart_1a718e30e71a79709ce16db947863e2b94" prot="public" virt="non-virtual"><scope>tls_param_uart</scope><name>flow</name></member>
+      <member refid="structtls__param__uart_1a01db83edf2ff4ee06fb2e0b36bf99846" prot="public" virt="non-virtual"><scope>tls_param_uart</scope><name>parity</name></member>
+      <member refid="structtls__param__uart_1a353a5f2308c52aff633b4f779d5ed3cd" prot="public" virt="non-virtual"><scope>tls_param_uart</scope><name>stop_bits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

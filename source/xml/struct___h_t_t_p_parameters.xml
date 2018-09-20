@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct___h_t_t_p_parameters" kind="struct" language="C++" prot="public">
+    <compoundname>_HTTPParameters</compoundname>
+    <includes refid="wm__http__client_8h" local="no">wm_http_client.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___h_t_t_p_parameters_1af6cfdbba0500e5490838d03eed5e610c" prot="public" static="no" mutable="no">
+        <type>CHAR *</type>
+        <definition>CHAR* _HTTPParameters::Uri</definition>
+        <argsstring></argsstring>
+        <name>Uri</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="190" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p_parameters_1a292f3e4c7baaf5884c99d79312fc05bd" prot="public" static="no" mutable="no">
+        <type>CHAR *</type>
+        <definition>CHAR* _HTTPParameters::ProxyHost</definition>
+        <argsstring></argsstring>
+        <name>ProxyHost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="191" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p_parameters_1add4e0718460caf5a5b94c04f87ed2ec4" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 _HTTPParameters::UseProxy</definition>
+        <argsstring></argsstring>
+        <name>UseProxy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="192" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p_parameters_1adf23f64eed6255140277d16ad9a2ba73" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 _HTTPParameters::ProxyPort</definition>
+        <argsstring></argsstring>
+        <name>ProxyPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="193" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p_parameters_1ae5cd41578a05723409198c187fb09621" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 _HTTPParameters::Verbose</definition>
+        <argsstring></argsstring>
+        <name>Verbose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="194" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p_parameters_1a4c49a127b143b3421a415b7a5535d3bc" prot="public" static="no" mutable="no">
+        <type>CHAR *</type>
+        <definition>CHAR* _HTTPParameters::UserName</definition>
+        <argsstring></argsstring>
+        <name>UserName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="195" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p_parameters_1ac61d995ed387ae08c60663ee3da3ad3f" prot="public" static="no" mutable="no">
+        <type>CHAR *</type>
+        <definition>CHAR* _HTTPParameters::Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="196" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___h_t_t_p_parameters_1a2e1e59633c5c291fb3bc96f3e7abf9ff" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__http__client_8h_1a18affbb260729e84c6990396fa23c69e" kindref="member">HTTP_AUTH_SCHEMA</ref></type>
+        <definition>HTTP_AUTH_SCHEMA _HTTPParameters::AuthType</definition>
+        <argsstring></argsstring>
+        <name>AuthType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="197" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>HTTP parameters </para>    </detaileddescription>
+    <location file="Include/App/wm_http_client.h" line="189" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="188" bodyend="199"/>
+    <listofallmembers>
+      <member refid="struct___h_t_t_p_parameters_1a2e1e59633c5c291fb3bc96f3e7abf9ff" prot="public" virt="non-virtual"><scope>_HTTPParameters</scope><name>AuthType</name></member>
+      <member refid="struct___h_t_t_p_parameters_1ac61d995ed387ae08c60663ee3da3ad3f" prot="public" virt="non-virtual"><scope>_HTTPParameters</scope><name>Password</name></member>
+      <member refid="struct___h_t_t_p_parameters_1a292f3e4c7baaf5884c99d79312fc05bd" prot="public" virt="non-virtual"><scope>_HTTPParameters</scope><name>ProxyHost</name></member>
+      <member refid="struct___h_t_t_p_parameters_1adf23f64eed6255140277d16ad9a2ba73" prot="public" virt="non-virtual"><scope>_HTTPParameters</scope><name>ProxyPort</name></member>
+      <member refid="struct___h_t_t_p_parameters_1af6cfdbba0500e5490838d03eed5e610c" prot="public" virt="non-virtual"><scope>_HTTPParameters</scope><name>Uri</name></member>
+      <member refid="struct___h_t_t_p_parameters_1add4e0718460caf5a5b94c04f87ed2ec4" prot="public" virt="non-virtual"><scope>_HTTPParameters</scope><name>UseProxy</name></member>
+      <member refid="struct___h_t_t_p_parameters_1a4c49a127b143b3421a415b7a5535d3bc" prot="public" virt="non-virtual"><scope>_HTTPParameters</scope><name>UserName</name></member>
+      <member refid="struct___h_t_t_p_parameters_1ae5cd41578a05723409198c187fb09621" prot="public" virt="non-virtual"><scope>_HTTPParameters</scope><name>Verbose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

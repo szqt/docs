@@ -1,0 +1,912 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__type__def_8h" kind="file" language="C++">
+    <compoundname>wm_type_def.h</compoundname>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <includedby refid="wm__http__client_8h" local="yes">Include/App/wm_http_client.h</includedby>
+    <includedby refid="wm__netif_8h" local="yes">Include/App/wm_netif.h</includedby>
+    <includedby refid="wm__netif2_80_83_8h" local="yes">Include/App/wm_netif2.0.3.h</includedby>
+    <includedby refid="wm__ntp_8h" local="yes">Include/App/wm_ntp.h</includedby>
+    <includedby refid="wm__wifi__oneshot_8h" local="no">Include/App/wm_wifi_oneshot.h</includedby>
+    <includedby refid="_v_s10_x_x_8h" local="yes">Include/Driver/VS10XX.h</includedby>
+    <includedby refid="wm__7816_8h" local="yes">Include/Driver/wm_7816.h</includedby>
+    <includedby refid="wm__adc_8h" local="yes">Include/Driver/wm_adc.h</includedby>
+    <includedby refid="wm__flash_8h" local="yes">Include/Driver/wm_flash.h</includedby>
+    <includedby refid="wm__gpio_8h" local="yes">Include/Driver/wm_gpio.h</includedby>
+    <includedby refid="wm__irq_8h" local="yes">Include/Driver/wm_irq.h</includedby>
+    <includedby refid="wm__hostspi_8h" local="yes">Include/Driver/wm_hostspi.h</includedby>
+    <includedby refid="wm__hspi_8h" local="yes">Include/Driver/wm_hspi.h</includedby>
+    <includedby refid="wm__i2c_8h" local="yes">Include/Driver/wm_i2c.h</includedby>
+    <includedby refid="wm__i2s_8h" local="yes">Include/Driver/wm_i2s.h</includedby>
+    <includedby refid="wm__internal__flash_8h" local="yes">Include/Driver/wm_internal_flash.h</includedby>
+    <includedby refid="wm__pmu_8h" local="yes">Include/Driver/wm_pmu.h</includedby>
+    <includedby refid="wm__pwm_8h" local="yes">Include/Driver/wm_pwm.h</includedby>
+    <includedby refid="wm__reflector_8h" local="yes">Include/Driver/wm_reflector.h</includedby>
+    <includedby refid="wm__rtc_8h" local="yes">Include/Driver/wm_rtc.h</includedby>
+    <includedby refid="wm__uart_8h" local="yes">Include/Driver/wm_uart.h</includedby>
+    <includedby refid="wm__socket_8h" local="yes">Include/Net/wm_socket.h</includedby>
+    <includedby refid="wm__socket2_80_83_8h" local="yes">Include/Net/wm_socket2.0.3.h</includedby>
+    <includedby refid="wm__sockets_8h" local="yes">Include/Net/wm_sockets.h</includedby>
+    <includedby refid="wm__sockets2_80_83_8h" local="yes">Include/Net/wm_sockets2.0.3.h</includedby>
+    <includedby refid="wm__osal_8h" local="yes">Include/OS/wm_osal.h</includedby>
+    <includedby refid="aes_8h" local="yes">Include/Platform/aes.h</includedby>
+    <includedby refid="wm__crypto__hard_8h" local="yes">Include/Platform/wm_crypto_hard.h</includedby>
+    <includedby refid="wm__mem_8h" local="yes">Include/Platform/wm_mem.h</includedby>
+    <includedby refid="wm__params_8h" local="yes">Include/Platform/wm_params.h</includedby>
+    <includedby refid="wm__wl__mbox_8h" local="yes">Include/Platform/wm_wl_mbox.h</includedby>
+    <includedby refid="wm__wl__task_8h" local="yes">Include/Platform/wm_wl_task.h</includedby>
+    <includedby refid="wm__wl__timers_8h" local="yes">Include/Platform/wm_wl_timers.h</includedby>
+    <includedby refid="litepoint_8h" local="yes">Include/WiFi/litepoint.h</includedby>
+    <invincdepgraph>
+      <node id="529">
+        <label>Include/Driver/wm_pmu.h</label>
+        <link refid="wm__pmu_8h"/>
+      </node>
+      <node id="535">
+        <label>Include/Net/wm_sockets2.0.3.h</label>
+        <link refid="wm__sockets2_80_83_8h"/>
+      </node>
+      <node id="512">
+        <label>Include/Net/wm_socket2.0.3.h</label>
+        <link refid="wm__socket2_80_83_8h"/>
+      </node>
+      <node id="540">
+        <label>Include/Platform/wm_wl_task.h</label>
+        <link refid="wm__wl__task_8h"/>
+      </node>
+      <node id="520">
+        <label>Include/Driver/wm_flash.h</label>
+        <link refid="wm__flash_8h"/>
+      </node>
+      <node id="511">
+        <label>Include/App/wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+      </node>
+      <node id="519">
+        <label>Include/Driver/wm_adc.h</label>
+        <link refid="wm__adc_8h_source"/>
+      </node>
+      <node id="508">
+        <label>Include/wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="542" relation="include">
+        </childnode>
+        <childnode refid="543" relation="include">
+        </childnode>
+        <childnode refid="544" relation="include">
+        </childnode>
+        <childnode refid="545" relation="include">
+        </childnode>
+        <childnode refid="539" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+        <childnode refid="546" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>Include/Driver/wm_irq.h</label>
+        <link refid="wm__irq_8h"/>
+        <childnode refid="522" relation="include">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>Include/Driver/VS10XX.h</label>
+        <link refid="_v_s10_x_x_8h"/>
+      </node>
+      <node id="546">
+        <label>Include/WiFi/litepoint.h</label>
+        <link refid="litepoint_8h_source"/>
+      </node>
+      <node id="513">
+        <label>Include/Net/wm_sockets.h</label>
+        <link refid="wm__sockets_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>Include/Driver/wm_rtc.h</label>
+        <link refid="wm__rtc_8h"/>
+      </node>
+      <node id="528">
+        <label>Include/Driver/wm_internal_flash.h</label>
+        <link refid="wm__internal__flash_8h"/>
+      </node>
+      <node id="522">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+      </node>
+      <node id="536">
+        <label>Include/OS/wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+        <childnode refid="538" relation="include">
+        </childnode>
+        <childnode refid="539" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>Include/App/wm_wifi_oneshot.h</label>
+        <link refid="wm__wifi__oneshot_8h"/>
+      </node>
+      <node id="521">
+        <label>Include/Driver/wm_gpio.h</label>
+        <link refid="wm__gpio_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+      </node>
+      <node id="545">
+        <label>Include/Platform/wm_params.h</label>
+        <link refid="wm__params_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>Include/Driver/wm_7816.h</label>
+        <link refid="wm__7816_8h"/>
+      </node>
+      <node id="541">
+        <label>Include/Platform/wm_wl_timers.h</label>
+        <link refid="wm__wl__timers_8h"/>
+        <childnode refid="540" relation="include">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>Include/App/wm_netif2.0.3.h</label>
+        <link refid="wm__netif2_80_83_8h"/>
+      </node>
+      <node id="530">
+        <label>Include/Driver/wm_pwm.h</label>
+        <link refid="wm__pwm_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>Include/App/wm_ntp.h</label>
+        <link refid="wm__ntp_8h"/>
+      </node>
+      <node id="539">
+        <label>Include/Platform/wm_wl_mbox.h</label>
+        <link refid="wm__wl__mbox_8h"/>
+        <childnode refid="540" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+      </node>
+      <node id="543">
+        <label>Include/Platform/wm_crypto_hard.h</label>
+        <link refid="wm__crypto__hard_8h"/>
+      </node>
+      <node id="538">
+        <label>Include/Platform/wm_fwup.h</label>
+        <link refid="wm__fwup_8h"/>
+      </node>
+      <node id="510">
+        <label>Include/App/wm_http_client.h</label>
+        <link refid="wm__http__client_8h"/>
+      </node>
+      <node id="524">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="542">
+        <label>Include/Platform/aes.h</label>
+        <link refid="aes_8h"/>
+      </node>
+      <node id="525">
+        <label>Include/Driver/wm_hspi.h</label>
+        <link refid="wm__hspi_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="526">
+        <label>Include/Driver/wm_i2c.h</label>
+        <link refid="wm__i2c_8h"/>
+      </node>
+      <node id="534">
+        <label>Include/Net/wm_socket.h</label>
+        <link refid="wm__socket_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>Include/Driver/wm_i2s.h</label>
+        <link refid="wm__i2s_8h"/>
+      </node>
+      <node id="544">
+        <label>Include/Platform/wm_mem.h</label>
+        <link refid="wm__mem_8h_source"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="537">
+        <label>Include/wm_debug.h</label>
+        <link refid="wm__debug_8h"/>
+      </node>
+      <node id="531">
+        <label>Include/Driver/wm_reflector.h</label>
+        <link refid="wm__reflector_8h"/>
+      </node>
+      <node id="509">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+      <node id="533">
+        <label>Include/Driver/wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__type__def_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" prot="public" static="no">
+        <name>TRUE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="146" column="10" bodyfile="Include/wm_type_def.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__type__def_8h_1aa93f0eb578d23995850d61f7d61c55c1" prot="public" static="no">
+        <name>FALSE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="151" column="10" bodyfile="Include/wm_type_def.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__type__def_8h_1a41f9c5fb8b08eb5dc3edce4dcb37fee7" prot="public" static="no">
+        <name>true</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="153" column="9" bodyfile="Include/wm_type_def.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__type__def_8h_1a65e9886d74aaee76545e83dd09011727" prot="public" static="no">
+        <name>false</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="154" column="9" bodyfile="Include/wm_type_def.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__type__def_8h_1a2db881de1f2958d75d5b6fbe35007b74" prot="public" static="no">
+        <name>WM_SUCCESS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="156" column="9" bodyfile="Include/wm_type_def.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__type__def_8h_1ac059898bdc695c7cd3c96a869d228bd6" prot="public" static="no">
+        <name>WM_FAILED</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="157" column="9" bodyfile="Include/wm_type_def.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__type__def_8h_1a6b69244abd015c4dd9e9046de687cf7b" prot="public" static="no">
+        <name>IGNORE_PARAMETER</name>
+        <param><defname>x</defname></param>
+        <initializer>((x) = (x))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="160" column="9" bodyfile="Include/wm_type_def.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__type__def_8h_1ae2b02ed168fc99cff3851603910b1fb6" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char u_char</definition>
+        <argsstring></argsstring>
+        <name>u_char</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="44" column="1" bodyfile="Include/wm_type_def.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1aa6b4f0d7384ed9d5ed0dd95e92bc5a2c" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char INT8U</definition>
+        <argsstring></argsstring>
+        <name>INT8U</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="49" column="1" bodyfile="Include/wm_type_def.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a26678b92d672555b29f190d6d9706b26" prot="public" static="no">
+        <type>signed char</type>
+        <definition>typedef signed char INT8S</definition>
+        <argsstring></argsstring>
+        <name>INT8S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="54" column="1" bodyfile="Include/wm_type_def.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a97a80ca1602ebf2303258971a2c938e2" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char bool</definition>
+        <argsstring></argsstring>
+        <name>bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="56" column="1" bodyfile="Include/wm_type_def.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1aed742c436da53c1080638ce6ef7d13de" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char u8</definition>
+        <argsstring></argsstring>
+        <name>u8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="57" column="1" bodyfile="Include/wm_type_def.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a151f780fb455885061d3b77ec1c90c03" prot="public" static="no">
+        <type>signed char</type>
+        <definition>typedef signed char s8</definition>
+        <argsstring></argsstring>
+        <name>s8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="58" column="1" bodyfile="Include/wm_type_def.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a9e6c91d77e24643b888dbd1a1a590054" prot="public" static="no">
+        <type>unsigned short</type>
+        <definition>typedef unsigned short u16</definition>
+        <argsstring></argsstring>
+        <name>u16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="59" column="1" bodyfile="Include/wm_type_def.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a5ffa4f640862b25ba6d4f635b78bdbe1" prot="public" static="no">
+        <type>signed short</type>
+        <definition>typedef signed short s16</definition>
+        <argsstring></argsstring>
+        <name>s16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="60" column="1" bodyfile="Include/wm_type_def.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a10e94b422ef0c20dcdec20d31a1f5049" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int u32</definition>
+        <argsstring></argsstring>
+        <name>u32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="61" column="1" bodyfile="Include/wm_type_def.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" prot="public" static="no">
+        <type>signed int</type>
+        <definition>typedef signed int s32</definition>
+        <argsstring></argsstring>
+        <name>s32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="62" column="1" bodyfile="Include/wm_type_def.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" prot="public" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long u64</definition>
+        <argsstring></argsstring>
+        <name>u64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="63" column="1" bodyfile="Include/wm_type_def.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a93680f46d09022794e3923824923b42b" prot="public" static="no">
+        <type>long long</type>
+        <definition>typedef long long s64</definition>
+        <argsstring></argsstring>
+        <name>s64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="64" column="1" bodyfile="Include/wm_type_def.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a32f2e37ee053cf2ce8ca28d1f74630e5" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int int32_t</definition>
+        <argsstring></argsstring>
+        <name>int32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="70" column="1" bodyfile="Include/wm_type_def.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a435d1572bf3f880d55459d9805097f62" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int uint32_t</definition>
+        <argsstring></argsstring>
+        <name>uint32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="75" column="1" bodyfile="Include/wm_type_def.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1af632da489ebc3708ec3ab6791ee53fa4" prot="public" static="no">
+        <type>unsigned long</type>
+        <definition>typedef unsigned long ULONG</definition>
+        <argsstring></argsstring>
+        <name>ULONG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="83" column="1" bodyfile="Include/wm_type_def.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1ae081489b4906f65a3cb18e9fbe9f8d23" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char u8_t</definition>
+        <argsstring></argsstring>
+        <name>u8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="88" column="1" bodyfile="Include/wm_type_def.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1aba7bc1797add20fe3efdf37ced1182c5" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char uint8_t</definition>
+        <argsstring></argsstring>
+        <name>uint8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="93" column="1" bodyfile="Include/wm_type_def.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1afc6499c1f28697aa3bfc2804d496fd11" prot="public" static="no">
+        <type>unsigned short</type>
+        <definition>typedef unsigned short u16_t</definition>
+        <argsstring></argsstring>
+        <name>u16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="98" column="1" bodyfile="Include/wm_type_def.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a273cf69d639a59973b6019625df33e30" prot="public" static="no">
+        <type>unsigned short</type>
+        <definition>typedef unsigned short uint16_t</definition>
+        <argsstring></argsstring>
+        <name>uint16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="103" column="1" bodyfile="Include/wm_type_def.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a0c0a490ab7fa397be6c764a935cc5ea4" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int u32_t</definition>
+        <argsstring></argsstring>
+        <name>u32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="108" column="1" bodyfile="Include/wm_type_def.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1ac94561f8204ddeac10e706b2be080619" prot="public" static="no">
+        <type>signed char</type>
+        <definition>typedef signed char s8_t</definition>
+        <argsstring></argsstring>
+        <name>s8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="114" column="1" bodyfile="Include/wm_type_def.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a380196cf569a21f473e69d791e1f4cc1" prot="public" static="no">
+        <type>signed short</type>
+        <definition>typedef signed short s16_t</definition>
+        <argsstring></argsstring>
+        <name>s16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="119" column="1" bodyfile="Include/wm_type_def.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1aeeae8d6781b7e821dd3e743202314d66" prot="public" static="no">
+        <type>signed int</type>
+        <definition>typedef signed int s32_t</definition>
+        <argsstring></argsstring>
+        <name>s32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="124" column="1" bodyfile="Include/wm_type_def.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a7c94ea6f8948649f8d181ae55911eeaf" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int size_t</definition>
+        <argsstring></argsstring>
+        <name>size_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="129" column="1" bodyfile="Include/wm_type_def.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1a6541f4c3675dac2c8b08708e3338af25" prot="public" static="no">
+        <type>signed char</type>
+        <definition>typedef signed char err_t</definition>
+        <argsstring></argsstring>
+        <name>err_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="135" column="1" bodyfile="Include/wm_type_def.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__type__def_8h_1ac4f859bf80e7c96866dc3f7c36ae113c" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int mem_ptr_t</definition>
+        <argsstring></argsstring>
+        <name>mem_ptr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_type_def.h" line="141" column="1" bodyfile="Include/wm_type_def.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WM type redefine. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>winnermicro</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WM_TYPE_DEF_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WM_TYPE_DEF_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>u8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>u8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>s8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>s8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>u16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>u16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>s16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>s16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>u32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>u32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>s32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>s32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>u64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>u64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>s64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>s64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>u_char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>u_char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>u_char;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>INT8U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>INT8U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>INT8U;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>INT8S</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>INT8S</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>INT8S;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u8;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s8;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u16;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s16;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s32;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/>u64;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s64;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(GCC_COMPILE==0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>int32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>int32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>int32_t;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>uint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uint32_t;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ULONG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ULONG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ULONG;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>u8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>u8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>u8_t;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>uint8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>uint8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>uint8_t;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>u16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>u16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>u16_t;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>uint16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>uint16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>uint16_t;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>u32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>u32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u32_t;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>s8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>s8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>s8_t;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>s16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>s16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>s16_t;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>s32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>s32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s32_t;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(GCC_COMPILE==0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size_t;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>err_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>err_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>err_t;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>mem_ptr_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>mem_ptr_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mem_ptr_t;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/><sp/>TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>FALSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/><sp/>FALSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FALSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>true<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>false<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IGNORE_PARAMETER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IGNORE_PARAMETER(x)<sp/><sp/><sp/><sp/><sp/>((x)<sp/>=<sp/>(x))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Include/wm_type_def.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__spi__message" kind="struct" language="C++" prot="public">
+    <compoundname>tls_spi_message</compoundname>
+    <includes refid="wm__hostspi_8h" local="no">wm_hostspi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__spi__message_1a252e4800db91f38c0872526e776c3bdb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref></type>
+        <definition>struct dl_list tls_spi_message::queue</definition>
+        <argsstring></argsstring>
+        <name>queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transaction messages are sequenced through <ref refid="structtls__spi__port_1ab7759dcf7e0d537de9787ae3aac6488e" kindref="member">tls_spi_port.wait_queue</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="98" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__message_1af8645b3fca3c23ac5c99e606f2c530eb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref></type>
+        <definition>struct dl_list tls_spi_message::transfers</definition>
+        <argsstring></argsstring>
+        <name>transfers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>list of transfer segments in this transaction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="98" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__message_1adcbfba3f6ec2e3f6a576e5857df73327" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* tls_spi_message::complete) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>complete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>called to report transaction completions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="116" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__message_1a554e52c622febed6b6785c2946e789cd" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* tls_spi_message::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the argument to <ref refid="structtls__spi__message_1adcbfba3f6ec2e3f6a576e5857df73327" kindref="member">complete()</ref> when it&apos;s called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="117" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__spi__message_1a57f2d7cffe5ebe148d832c47418c6bf0" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_spi_message::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transaction message status. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hostspi.h" line="118" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>one multi-segment SPI transaction</para><para>A struct <ref refid="structtls__spi__message" kindref="compound">tls_spi_message</ref> is used to execute an atomic sequence of data transfers, each represented by a struct <ref refid="structtls__spi__transfer" kindref="compound">tls_spi_transfer</ref>. The sequence is &quot;atomic&quot; in the sense that no other spi_message may use that SPI bus until that sequence completes. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="232">
+        <label>dl_list</label>
+        <link refid="structdl__list"/>
+        <childnode refid="232" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="231">
+        <label>tls_spi_message</label>
+        <link refid="structtls__spi__message"/>
+        <childnode refid="232" relation="usage">
+          <edgelabel>transfers</edgelabel>
+          <edgelabel>queue</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_hostspi.h" line="111" column="1" bodyfile="Include/Driver/wm_hostspi.h" bodystart="110" bodyend="119"/>
+    <listofallmembers>
+      <member refid="structtls__spi__message_1adcbfba3f6ec2e3f6a576e5857df73327" prot="public" virt="non-virtual"><scope>tls_spi_message</scope><name>complete</name></member>
+      <member refid="structtls__spi__message_1a554e52c622febed6b6785c2946e789cd" prot="public" virt="non-virtual"><scope>tls_spi_message</scope><name>context</name></member>
+      <member refid="structtls__spi__message_1a252e4800db91f38c0872526e776c3bdb" prot="public" virt="non-virtual"><scope>tls_spi_message</scope><name>queue</name></member>
+      <member refid="structtls__spi__message_1a57f2d7cffe5ebe148d832c47418c6bf0" prot="public" virt="non-virtual"><scope>tls_spi_message</scope><name>status</name></member>
+      <member refid="structtls__spi__message_1af8645b3fca3c23ac5c99e606f2c530eb" prot="public" virt="non-virtual"><scope>tls_spi_message</scope><name>transfers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

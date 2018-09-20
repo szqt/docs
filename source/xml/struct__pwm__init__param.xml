@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct__pwm__init__param" kind="struct" language="C++" prot="public">
+    <compoundname>_pwm_init_param</compoundname>
+    <includes refid="wm__pwm_8h" local="no">wm_pwm.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__pwm__init__param_1a88042276143655de091119f11f771d08" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="wm__pwm_8h_1a739c3f333812be5ec2b0c01a86597665" kindref="member">tls_pwm_out_mode</ref></type>
+        <definition>enum tls_pwm_out_mode _pwm_init_param::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>work mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="390" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1a40b1e4856eb67c12e709e3f0065e764e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 _pwm_init_param::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>channel id 0~4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="71" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1af50fa9d5b3fd0dcdc2a2f8ecaeb50c61" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 _pwm_init_param::clkdiv</definition>
+        <argsstring></argsstring>
+        <name>clkdiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clock divided value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="72" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1a5b320d7e5efaeef349fc21676c6fbf64" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 _pwm_init_param::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>period value(output frequency F = CLK/CLK_DIV/PERIOD) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="73" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1a4ff91f8af86313ee8da2dfcb86a3d0c4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 _pwm_init_param::duty</definition>
+        <argsstring></argsstring>
+        <name>duty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>duty radio (range 0~255, high level or low level by out_inversion decided </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="74" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1a0319ed97a0d8b5688d1d646821b4d10a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _pwm_init_param::dten</definition>
+        <argsstring></argsstring>
+        <name>dten</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable dead zone time (ENABLE or DISABLE) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="75" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1ab773992bc633ff21cefb6a3e5428a81a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 _pwm_init_param::dtclkdiv</definition>
+        <argsstring></argsstring>
+        <name>dtclkdiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dead zone clock divided value (0~3) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="76" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1ae8760855ca8837953546572926a30935" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 _pwm_init_param::dtcnt</definition>
+        <argsstring></argsstring>
+        <name>dtcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>period number of dead zone time (0~255) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="77" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1abeff96d785654a006901e30e8215a6da" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="wm__pwm_8h_1aef94fedb54125d41fa026634933c133c" kindref="member">tls_pwm_cnt_type</ref></type>
+        <definition>enum tls_pwm_cnt_type _pwm_init_param::cnt_type</definition>
+        <argsstring></argsstring>
+        <name>cnt_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>count type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="77" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1a5dc8705c0479e6bc40180462b7323ff4" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="wm__pwm_8h_1ab235618a090324788ef488342916756b" kindref="member">tls_pwm_loop_type</ref></type>
+        <definition>enum tls_pwm_loop_type _pwm_init_param::loop_type</definition>
+        <argsstring></argsstring>
+        <name>loop_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cycle type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="77" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1a14e6de54a4ad736aa586d091db6e8adb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _pwm_init_param::inverse_en</definition>
+        <argsstring></argsstring>
+        <name>inverse_en</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>output is inverse </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="80" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1a32be78d8ca8f575bd70a05312d0e25a0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 _pwm_init_param::pnum</definition>
+        <argsstring></argsstring>
+        <name>pnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>generate interrupt after pnum period </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="81" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__pwm__init__param_1a68569715c8cf3601262537ecd4ed663d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _pwm_init_param::pnum_int</definition>
+        <argsstring></argsstring>
+        <name>pnum_int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>period interrupt is enable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_pwm.h" line="82" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>pwm initial parameters </para>    </detaileddescription>
+    <location file="Include/Driver/wm_pwm.h" line="69" column="1" bodyfile="Include/Driver/wm_pwm.h" bodystart="69" bodyend="83"/>
+    <listofallmembers>
+      <member refid="struct__pwm__init__param_1a40b1e4856eb67c12e709e3f0065e764e" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>channel</name></member>
+      <member refid="struct__pwm__init__param_1af50fa9d5b3fd0dcdc2a2f8ecaeb50c61" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>clkdiv</name></member>
+      <member refid="struct__pwm__init__param_1abeff96d785654a006901e30e8215a6da" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>cnt_type</name></member>
+      <member refid="struct__pwm__init__param_1ab773992bc633ff21cefb6a3e5428a81a" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>dtclkdiv</name></member>
+      <member refid="struct__pwm__init__param_1ae8760855ca8837953546572926a30935" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>dtcnt</name></member>
+      <member refid="struct__pwm__init__param_1a0319ed97a0d8b5688d1d646821b4d10a" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>dten</name></member>
+      <member refid="struct__pwm__init__param_1a4ff91f8af86313ee8da2dfcb86a3d0c4" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>duty</name></member>
+      <member refid="struct__pwm__init__param_1a14e6de54a4ad736aa586d091db6e8adb" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>inverse_en</name></member>
+      <member refid="struct__pwm__init__param_1a5dc8705c0479e6bc40180462b7323ff4" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>loop_type</name></member>
+      <member refid="struct__pwm__init__param_1a88042276143655de091119f11f771d08" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>mode</name></member>
+      <member refid="struct__pwm__init__param_1a5b320d7e5efaeef349fc21676c6fbf64" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>period</name></member>
+      <member refid="struct__pwm__init__param_1a32be78d8ca8f575bd70a05312d0e25a0" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>pnum</name></member>
+      <member refid="struct__pwm__init__param_1a68569715c8cf3601262537ecd4ed663d" prot="public" virt="non-virtual"><scope>_pwm_init_param</scope><name>pnum_int</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

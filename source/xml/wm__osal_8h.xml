@@ -1,0 +1,2145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__osal_8h" kind="file" language="C++">
+    <compoundname>wm_osal.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="wm__config_8h" local="yes">wm_config.h</includes>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includedby refid="wm__debug_8h" local="yes">Include/wm_debug.h</includedby>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <includedby refid="wm__flash_8h" local="yes">Include/Driver/wm_flash.h</includedby>
+    <includedby refid="wm__gpio__afsel_8h" local="yes">Include/Driver/wm_gpio_afsel.h</includedby>
+    <includedby refid="wm__hostspi_8h" local="yes">Include/Driver/wm_hostspi.h</includedby>
+    <includedby refid="wm__i2s_8h" local="yes">Include/Driver/wm_i2s.h</includedby>
+    <includedby refid="wm__internal__flash_8h" local="yes">Include/Driver/wm_internal_flash.h</includedby>
+    <includedby refid="wm__uart_8h" local="yes">Include/Driver/wm_uart.h</includedby>
+    <includedby refid="wm__fwup_8h" local="yes">Include/Platform/wm_fwup.h</includedby>
+    <includedby refid="wm__wl__mbox_8h" local="yes">Include/Platform/wm_wl_mbox.h</includedby>
+    <incdepgraph>
+      <node id="303">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="298">
+        <label>stdlib.h</label>
+      </node>
+      <node id="296">
+        <label>Include/OS/wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="300">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="299">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>stdio.h</label>
+      </node>
+      <node id="302">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="315">
+        <label>Include/Platform/wm_wl_task.h</label>
+        <link refid="wm__wl__task_8h"/>
+      </node>
+      <node id="307">
+        <label>Include/Driver/wm_flash.h</label>
+        <link refid="wm__flash_8h"/>
+      </node>
+      <node id="311">
+        <label>Include/Driver/wm_internal_flash.h</label>
+        <link refid="wm__internal__flash_8h"/>
+      </node>
+      <node id="308">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+      </node>
+      <node id="304">
+        <label>Include/OS/wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>Include/Platform/wm_wl_timers.h</label>
+        <link refid="wm__wl__timers_8h"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>Include/Platform/wm_wl_mbox.h</label>
+        <link refid="wm__wl__mbox_8h"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>Include/Platform/wm_fwup.h</label>
+        <link refid="wm__fwup_8h"/>
+      </node>
+      <node id="309">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>Include/Driver/wm_i2s.h</label>
+        <link refid="wm__i2s_8h"/>
+      </node>
+      <node id="305">
+        <label>Include/wm_debug.h</label>
+        <link refid="wm__debug_8h"/>
+      </node>
+      <node id="306">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+      <node id="312">
+        <label>Include/Driver/wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structos__time" prot="public">os_time</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__osal_8h_1a8489802eaedf42fdb5f2ce1708eaffa2" prot="public" static="no">
+        <name>HZ</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OS TICK Frequency </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="20" column="9" bodyfile="Include/OS/wm_osal.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__osal_8h_1af552ede7837d1fbd9fea8a1269989337" prot="public" static="no">
+        <name>TLS_OS_TIMER_OPT_ONE_SHORT</name>
+        <initializer>1u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO definition of TIMER ONE times </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="63" column="9" bodyfile="Include/OS/wm_osal.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__osal_8h_1af137fd1b107daff7218179d2e7b7f008" prot="public" static="no">
+        <name>TLS_OS_TIMER_OPT_PERIOD</name>
+        <initializer>2u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO definition of TIMER PERIOD </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="65" column="9" bodyfile="Include/OS/wm_osal.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__osal_8h_1a3fbf8b2313eac68f4e07c4a13d899c62" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TLS_OS_TYPE</name>
+        <enumvalue id="wm__osal_8h_1a3fbf8b2313eac68f4e07c4a13d899c62a78cf58a9351d61f8369fcc88ac6d1fe4" prot="public">
+          <name>OS_UCOSII</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__osal_8h_1a3fbf8b2313eac68f4e07c4a13d899c62a8c9fbb6cfff374d9eed4a1162651307c" prot="public">
+          <name>OS_FREERTOS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__osal_8h_1a3fbf8b2313eac68f4e07c4a13d899c62a55b9a613fc7d350a1878915e7ca001d5" prot="public">
+          <name>OS_MAX_NUM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ENUMERATION of OS </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="30" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__osal_8h_1a60da450cfc12dc8d49c0a2f9ae21e28a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_os_status</name>
+        <enumvalue id="wm__osal_8h_1a60da450cfc12dc8d49c0a2f9ae21e28aa848b1616174919de2ab790dad23b903a" prot="public">
+          <name>TLS_OS_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__osal_8h_1a60da450cfc12dc8d49c0a2f9ae21e28aaa544a3483062f2dc8924b72795a6d198" prot="public">
+          <name>TLS_OS_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__osal_8h_1a60da450cfc12dc8d49c0a2f9ae21e28aa037e1b45350ddaaed90079565b2c639a" prot="public">
+          <name>TLS_OS_ERR_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ENUMERATION definition of OS STATUS </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="68" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="68" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__osal_8h_1ac6ac05f7879dc24bc9cc5f75f93eb79c" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long os_time_t</definition>
+        <argsstring></argsstring>
+        <name>os_time_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type definition of os_time_t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="23" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1a1f60e2713aaa63efc8c5fafdcdeaa8a2" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int OS_STK</definition>
+        <argsstring></argsstring>
+        <name>OS_STK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE definition of OS_STK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="40" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1a5205c42256d1cca93aaa0171a20bae61" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int OS_CPU_SR</definition>
+        <argsstring></argsstring>
+        <name>OS_CPU_SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE definition of OS_CPU_SR </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="46" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1a9c6a7a2c332763f53835c9c473c0205c" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* tls_os_task_t</definition>
+        <argsstring></argsstring>
+        <name>tls_os_task_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE definition of tls_os_task_t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="48" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void tls_os_timer_t</definition>
+        <argsstring></argsstring>
+        <name>tls_os_timer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE definition of tls_os_timer_t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="50" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void tls_os_sem_t</definition>
+        <argsstring></argsstring>
+        <name>tls_os_sem_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE definition of tls_os_sem_t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="52" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void tls_os_queue_t</definition>
+        <argsstring></argsstring>
+        <name>tls_os_queue_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE definition of tls_os_queue_t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="54" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void tls_os_mailbox_t</definition>
+        <argsstring></argsstring>
+        <name>tls_os_mailbox_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE definition of tls_os_mailbox_t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="56" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void tls_os_mutex_t</definition>
+        <argsstring></argsstring>
+        <name>tls_os_mutex_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE definition of tls_os_mutex_t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="58" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1a87ee168760be7b82abba354009c129e5" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* TLS_OS_TIMER_CALLBACK) (void *ptmr, void *parg)</definition>
+        <argsstring>)(void *ptmr, void *parg)</argsstring>
+        <name>TLS_OS_TIMER_CALLBACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TYPE definition of TLS_OS_TIMER_CALLBACK </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="60" column="1" bodyfile="Include/OS/wm_osal.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" prot="public" static="no">
+        <type>enum <ref refid="wm__osal_8h_1a60da450cfc12dc8d49c0a2f9ae21e28a" kindref="member">tls_os_status</ref></type>
+        <definition>typedef enum tls_os_status  tls_os_status_t</definition>
+        <argsstring></argsstring>
+        <name>tls_os_status_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ENUMERATION definition of OS STATUS </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="72" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga6e548a8a372fc51cbb02cc6204a490fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_timer_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_os_timer_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to register OS tick timer irq. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga8181d0c2981c83973af2255687e6a681" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_time_tick</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>tls_os_time_tick</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to tick handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga559145726e6c0c16424a59a0da20dbf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_init</definition>
+        <argsstring>(void *arg)</argsstring>
+        <name>tls_os_init</name>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to initialize OS common resource. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gaaf9a9594681605a9a72c087387fbaa4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_start_scheduler</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_os_start_scheduler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to start task scheduler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga105ee06f8df6a4ef564249a1e8704451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_os_get_type</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_os_get_type</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get OS type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OS_UCOSII </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OS_FREERTOS</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga1b139e703d90deb3e25b2807641727fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_task_create</definition>
+        <argsstring>(tls_os_task_t *task, const char *name, void(*entry)(void *param), void *param, u8 *stk_start, u32 stk_size, u32 prio, u32 flag)</argsstring>
+        <name>tls_os_task_create</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a9c6a7a2c332763f53835c9c473c0205c" kindref="member">tls_os_task_t</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void(*)(void *param)</type>
+          <declname>entry</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>stk_start</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>stk_size</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to have uC/OS-II manage the execut- ion of a task. Tasks can either be created prior to the start of multitasking or by a running task. A task cannot be created by an ISR. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task&apos;s name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task&apos;s entry function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an optional data area which can be used to pass parameters to the task when the task first executes. Where the task is concerned it thinks it was invoked and passed the argument &apos;param&apos; as follows: void Task (void *param) { for (;;) { Task code; } } </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*stk_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the task&apos;s bottom of stack. Address must be between 0x20000000 and 0x20028000 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stk_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the stack in number of elements. If OS_STK is set to INT8U, &apos;stk_size&apos; corresponds to the number of bytes available. If OS_STK is set to INT16U, &apos;stk_size&apos; contains the number of 16-bit entries available. Finally, if OS_STK is set to INT32U, &apos;stk_size&apos; contains the number of 32-bit entries available on the stack. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">prio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task&apos;s priority. A unique priority MUST be assigned to each task and the lower the number, the higher the priority. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contains additional information about the behavior of the task</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the call was successful. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>1) Stack Range: [stk_start, stk_start + stk_size) must be between 0x20000000 and 0x20028000 2) task stack: Using static memory like array, not using dynamic memory. 3) And if you use static memory like array (large size) as data storage in your application, we suggest you change it to dynamic memory by tls_mem_alloc. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga44a382aec34d8ae13475b268ac7ef6df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_task_del</definition>
+        <argsstring>(u8 prio, void(*freefun)(void))</argsstring>
+        <name>tls_os_task_del</name>
+        <param>
+          <type>u8</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>freefun</declname>
+        </param>
+        <briefdescription>
+<para>This function allows you to delete a task. The calling task can delete itself by its own priority number. The deleted task is returned to the dormant state and can be re-activated by creating the deleted task again. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task priority to delete </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">(*freefun)(void)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function to free resource</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the call is successful </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga0ee6b456ea9cf944312c18031b3b288a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_mutex_create</definition>
+        <argsstring>(u8 prio, tls_os_mutex_t **mutex)</argsstring>
+        <name>tls_os_mutex_create</name>
+        <param>
+          <type>u8</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kindref="member">tls_os_mutex_t</ref> **</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>This function creates a mutual exclusion semaphore. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the priority to use when accessing the mutual exclusion semaphore. In other words, when the semaphore is acquired and a higher priority task attempts to obtain the semaphore then the priority of the task owning the semaphore is raised to this priority. It is assumed that you will specify a priority that is LOWER in value than ANY of the tasks competing for the mutex. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">**mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control clock (OS_EVENT) associated with the created mutex.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the call was successful </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>1) The LEAST significant 8 bits of &apos;.OSEventCnt&apos; are used to hold the priority number of the task owning the mutex or 0xFF if no task owns the mutex. 2) The MOST significant 8 bits of &apos;.OSEventCnt&apos; are used to hold the priority number to use to reduce priority inversion. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gae756400c5aab47548f7ec1b0da295e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_mutex_delete</definition>
+        <argsstring>(tls_os_mutex_t *mutex)</argsstring>
+        <name>tls_os_mutex_delete</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kindref="member">tls_os_mutex_t</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>This function deletes a mutual exclusion semaphore and readies all tasks pending on the it. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired mutex</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call was successful and the mutex was deleted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>1) This function must be used with care. Tasks that would normally expect the presence of the mutex MUST check the return code of OSMutexPend(). 2) This call can potentially disable interrupts for a long time. The interrupt disable time is directly proportional to the number of tasks waiting on the mutex. 3) Because ALL tasks pending on the mutex will be readied, you MUST be careful because the resource(s) will no longer be guarded by the mutex. 4) IMPORTANT: In the &apos;OS_DEL_ALWAYS&apos; case, we assume that the owner of the Mutex (if there is one) is ready-to-run and is thus NOT pending on another kernel object or has delayed itself.In other words, if a task owns the mutex being deleted,that task will be made ready-to-run at its original priority. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga8160efbe5307f96f6e2ed0c2cea34572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_mutex_acquire</definition>
+        <argsstring>(tls_os_mutex_t *mutex, u32 wait_time)</argsstring>
+        <name>tls_os_mutex_acquire</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kindref="member">tls_os_mutex_t</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>wait_time</declname>
+        </param>
+        <briefdescription>
+<para>This function waits for a mutual exclusion semaphore. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired mutex </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">wait_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional timeout period (in clock ticks). If non-zero, your task will wait for the resource up to the amount of time specified by this argument. If you specify 0, however, your task will wait forever at the specified mutex or, until the resource becomes available.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call was successful and your task owns the mutex </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>1) The task that owns the Mutex MUST NOT pend on any other event while it owns the mutex. 2) You MUST NOT change the priority of the task that owns the mutex </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="298" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gacd5908ad43e8a0a7dd5c69d521eb2bb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_mutex_release</definition>
+        <argsstring>(tls_os_mutex_t *mutex)</argsstring>
+        <name>tls_os_mutex_release</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kindref="member">tls_os_mutex_t</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>This function signals a mutual exclusion semaphore. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*mutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired mutex</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call was successful and the mutex was signaled. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gab0d06b8435947367b600a83efde816fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_sem_create</definition>
+        <argsstring>(tls_os_sem_t **sem, u32 cnt)</argsstring>
+        <name>tls_os_sem_create</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> **</type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+<para>This function creates a semaphore. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">**sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block (OS_EVENT) associated with the created semaphore </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the initial value for the semaphore. If the value is 0, no resource is available (or no event has occurred). You initialize the semaphore to a non-zero value to specify how many resources are available (e.g. if you have 10 resources, you would initialize the semaphore to 10).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success,The call was successful </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="332" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gafa3f3c0039e6252d71d8e4a7d4e19b2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_sem_delete</definition>
+        <argsstring>(tls_os_sem_t *sem)</argsstring>
+        <name>tls_os_sem_delete</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+<para>This function deletes a semaphore and readies all tasks pending on the semaphore. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired semaphore</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="347" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gaeb1b502d11d25b65bba7e6cb16e90078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_sem_acquire</definition>
+        <argsstring>(tls_os_sem_t *sem, u32 wait_time)</argsstring>
+        <name>tls_os_sem_acquire</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>wait_time</declname>
+        </param>
+        <briefdescription>
+<para>This function waits for a semaphore. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired semaphore </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">wait_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional timeout period (in clock ticks). If non-zero, your task will wait for the resource up to the amount of time specified by this argument.If you specify 0, however, your task will wait forever at the specified semaphore or, until the resource becomes available (or the event occurs).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="367" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga894bc38a19059b8f084f96f4edc5dd96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_sem_release</definition>
+        <argsstring>(tls_os_sem_t *sem)</argsstring>
+        <name>tls_os_sem_release</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+<para>This function signals a semaphore. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired semaphore</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="381" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gabe3b59bc50f78636edf1fd3d1d3afe6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_sem_set</definition>
+        <argsstring>(tls_os_sem_t *sem, u16 cnt)</argsstring>
+        <name>tls_os_sem_set</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+<para>This function sets the semaphore count to the value spec- ified as an argument.Typically,this value would be 0.You would typically use this function when a semaphore is used as a signaling mechanism and, you want to reset the count value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*sem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new value for the semaphore count. You would pass 0 to reset the semaphore count.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="399" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gac3092293cbb017e7a042ca07d462b0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_queue_create</definition>
+        <argsstring>(tls_os_queue_t **queue, u32 queue_size)</argsstring>
+        <name>tls_os_queue_create</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref> **</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>queue_size</declname>
+        </param>
+        <briefdescription>
+<para>This function creates a message queue if free event cont- rol blocks are available. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">**queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control clock (OS_EVENT) associated with the created queue </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">queue_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of elements in the storage area</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gac4f8539b60be31ce8cf59e3d7b86f5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_queue_delete</definition>
+        <argsstring>(tls_os_queue_t *queue)</argsstring>
+        <name>tls_os_queue_delete</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+<para>This function deletes a message queue and readies all tasks pending on the queue. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired queue</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="429" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga881f3210ba2d8701c8f59a956b6bb1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_queue_send</definition>
+        <argsstring>(tls_os_queue_t *queue, void *msg, u32 msg_size)</argsstring>
+        <name>tls_os_queue_send</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>msg_size</declname>
+        </param>
+        <briefdescription>
+<para>This function sends a message to a queue. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired queue </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message to send. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msg_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="444" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gad2da86e8e8514f3fa119cf853421f9f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_queue_flush</definition>
+        <argsstring>(tls_os_queue_t *queue)</argsstring>
+        <name>tls_os_queue_flush</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to flush the contents of the message queue. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="459" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga5be384c667ae9daa58dd92c8518482d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_queue_receive</definition>
+        <argsstring>(tls_os_queue_t *queue, void **msg, u32 msg_size, u32 wait_time)</argsstring>
+        <name>tls_os_queue_receive</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref> *</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>msg_size</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>wait_time</declname>
+        </param>
+        <briefdescription>
+<para>This function waits for a message to be sent to a queue. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*queue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired queue </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">**msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message received </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msg_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">wait_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional timeout period (in clock ticks). If non-zero, your task will wait for a message to arrive at the queue up to the amount of time specified by this argument. If you specify 0, however, your task will wait forever at the specified queue or, until a message arrives.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="481" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga9e3e36e61c1c207d490cf224a842046c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_mailbox_create</definition>
+        <argsstring>(tls_os_mailbox_t **mailbox, u32 mailbox_size)</argsstring>
+        <name>tls_os_mailbox_create</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" kindref="member">tls_os_mailbox_t</ref> **</type>
+          <declname>mailbox</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>mailbox_size</declname>
+        </param>
+        <briefdescription>
+<para>This function creates a message mailbox if free event control blocks are available. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">**mailbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control clock (OS_EVENT) associated with the created mailbox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mailbox_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="498" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gafd7053c37a7c796457b5e0bf7504b977" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_mailbox_delete</definition>
+        <argsstring>(tls_os_mailbox_t *mailbox)</argsstring>
+        <name>tls_os_mailbox_delete</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" kindref="member">tls_os_mailbox_t</ref> *</type>
+          <declname>mailbox</declname>
+        </param>
+        <briefdescription>
+<para>This function deletes a mailbox and readies all tasks pending on the mailbox. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*mailbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired mailbox.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="512" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga25ae765d00938f4b66d89c9850898a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_mailbox_send</definition>
+        <argsstring>(tls_os_mailbox_t *mailbox, void *msg)</argsstring>
+        <name>tls_os_mailbox_send</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" kindref="member">tls_os_mailbox_t</ref> *</type>
+          <declname>mailbox</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>This function sends a message to a mailbox. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*mailbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired mailbox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message to send. You MUST NOT send a NULL pointer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="527" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gae93489ddaaf44c3f7cb27eb8186410bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_mailbox_receive</definition>
+        <argsstring>(tls_os_mailbox_t *mailbox, void **msg, u32 wait_time)</argsstring>
+        <name>tls_os_mailbox_receive</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" kindref="member">tls_os_mailbox_t</ref> *</type>
+          <declname>mailbox</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>wait_time</declname>
+        </param>
+        <briefdescription>
+<para>This function waits for a message to be sent to a mailbox. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*mailbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the event control block associated with the desired mailbox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">**msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message received </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">wait_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional timeout period (in clock ticks). If non-zero, your task will wait for a message to arrive at the mailbox up to the amount of time specified by this argument. If you specify 0, however, your task will wait forever at the specified mailbox or, until a message arrives.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="550" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga6f112f2f45d012d4dcf18d11908a705d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 tls_os_get_time</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_os_get_time</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used by your application to obtain the current value of the 32-bit counter which keeps track of the number of clock ticks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of OSTime</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="565" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga2e828c3b756722bcf56a8ccba7ed561a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 tls_os_set_critical</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_os_set_critical</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to disable interrupts by preserving the state of interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>cpu_sr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="577" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gaa9582663dfc6f3bbd5f3e3f65b506989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_release_critical</definition>
+        <argsstring>(u32 cpu_sr)</argsstring>
+        <name>tls_os_release_critical</name>
+        <param>
+          <type>u32</type>
+          <declname>cpu_sr</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to enable interrupts by preserving the state of interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cpu_sr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="589" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga63e039673b40600e0f80cd21032fda15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
+        <definition>tls_os_status_t tls_os_timer_create</definition>
+        <argsstring>(tls_os_timer_t **timer, TLS_OS_TIMER_CALLBACK callback, void *callback_arg, u32 period, bool repeat, u8 *name)</argsstring>
+        <name>tls_os_timer_create</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref> **</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__osal_8h_1a87ee168760be7b82abba354009c129e5" kindref="member">TLS_OS_TIMER_CALLBACK</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callback_arg</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by your application code to create a timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">**timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an OS_TMR data structure. This is the &apos;handle&apos; that your application will use to reference the timer created </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a callback function that will be called when the timer expires. The callback function must be declared as follows void MyCallback (OS_TMR *ptmr, void *p_arg); </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*callback_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argument (a pointer) that is passed to the callback function when it is called </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The &apos;period&apos; being repeated for the timer. If you specified &apos;OS_TMR_OPT_PERIODIC&apos; as an option, when the timer expires, it will automatically restart with the same period. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">repeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if repeat </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an ASCII string that is used to name the timer. Names are useful for debugging.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="619" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga62653724780698fe82fce98c5a3abbe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_timer_start</definition>
+        <argsstring>(tls_os_timer_t *timer)</argsstring>
+        <name>tls_os_timer_start</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by your application code to start a timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to an OS_TMR</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="636" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga0ae709f759984ca3c0f86f492f505ba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_timer_change</definition>
+        <argsstring>(tls_os_timer_t *timer, u32 ticks)</argsstring>
+        <name>tls_os_timer_change</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>ticks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="649" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1gad2269aea48c5d9a9b076dfed8eabe24d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_timer_stop</definition>
+        <argsstring>(tls_os_timer_t *timer)</argsstring>
+        <name>tls_os_timer_stop</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by your application code to stop a timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the timer to stop.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="661" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga55fd918baee77b277d4cb3ffffe663f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_os_timer_delete</definition>
+        <argsstring>(tls_os_timer_t *timer)</argsstring>
+        <name>tls_os_timer_delete</name>
+        <param>
+          <type><ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref> *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by your application code to delete a timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the timer to delete</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_OS_ERROR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="674" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga1e22e6c6c8648038ada87ae223d52571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_time_delay</definition>
+        <argsstring>(u32 ticks)</argsstring>
+        <name>tls_os_time_delay</name>
+        <param>
+          <type>u32</type>
+          <declname>ticks</declname>
+        </param>
+        <briefdescription>
+<para>This function is called to delay execution of the curren- tly running task until the specified number of system ticks expires. This, of course, directly equates to delaying the current task for some time to expire. No delay will result If the specified delay is 0. If the specified delay is greater than 0 then, a context switch will result. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ticks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time delay that the task will be suspended in number of clock &apos;ticks&apos;.Note that by specifying 0, the task will not be delayed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="693" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___o_s___a_p_is_1ga91d4da43735ac05074a9756d7e2cf9b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_os_disp_task_stat_info</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_os_disp_task_stat_info</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to display stat info. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/OS/wm_osal.h" line="705" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WM OS adapter layer. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>winnermicro</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>WM_OSAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_OSAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__config_8h" kindref="compound">wm_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="wm__osal_8h_1a8489802eaedf42fdb5f2ce1708eaffa2" refkind="member"><highlight class="preprocessor">#define<sp/>HZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="wm__osal_8h_1ac6ac05f7879dc24bc9cc5f75f93eb79c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="wm__osal_8h_1ac6ac05f7879dc24bc9cc5f75f93eb79c" kindref="member">os_time_t</ref>;</highlight></codeline>
+<codeline lineno="25" refid="structos__time" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structos__time" kindref="compound">os_time</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1ac6ac05f7879dc24bc9cc5f75f93eb79c" kindref="member">os_time_t</ref><sp/>sec;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1ac6ac05f7879dc24bc9cc5f75f93eb79c" kindref="member">os_time_t</ref><sp/>usec;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30" refid="wm__osal_8h_1a3fbf8b2313eac68f4e07c4a13d899c62" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a3fbf8b2313eac68f4e07c4a13d899c62" kindref="member">TLS_OS_TYPE</ref>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>OS_UCOSII<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>OS_FREERTOS<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>OS_MAX_NUM</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#ifdef<sp/>OS_STK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>OS_STK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="wm__osal_8h_1a1f60e2713aaa63efc8c5fafdcdeaa8a2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a1f60e2713aaa63efc8c5fafdcdeaa8a2" kindref="member">OS_STK</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor">#ifdef<sp/>OS_CPU_SR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>OS_CPU_SR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="wm__osal_8h_1a5205c42256d1cca93aaa0171a20bae61" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a5205c42256d1cca93aaa0171a20bae61" kindref="member">OS_CPU_SR</ref>;</highlight></codeline>
+<codeline lineno="48" refid="wm__osal_8h_1a9c6a7a2c332763f53835c9c473c0205c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><sp/><ref refid="wm__osal_8h_1a9c6a7a2c332763f53835c9c473c0205c" kindref="member">tls_os_task_t</ref>;</highlight></codeline>
+<codeline lineno="50" refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref>;</highlight></codeline>
+<codeline lineno="52" refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref>;</highlight></codeline>
+<codeline lineno="54" refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref>;</highlight></codeline>
+<codeline lineno="56" refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" kindref="member">tls_os_mailbox_t</ref>;</highlight></codeline>
+<codeline lineno="58" refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kindref="member">tls_os_mutex_t</ref>;</highlight></codeline>
+<codeline lineno="60" refid="wm__osal_8h_1a87ee168760be7b82abba354009c129e5" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/>void<sp/>(*<ref refid="wm__osal_8h_1a87ee168760be7b82abba354009c129e5" kindref="member">TLS_OS_TIMER_CALLBACK</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptmr,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*parg);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="wm__osal_8h_1af552ede7837d1fbd9fea8a1269989337" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_OS_TIMER_OPT_ONE_SHORT<sp/><sp/><sp/><sp/>1u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="wm__osal_8h_1af137fd1b107daff7218179d2e7b7f008" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_OS_TIMER_OPT_PERIOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2u</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="wm__osal_8h_1a60da450cfc12dc8d49c0a2f9ae21e28a" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a60da450cfc12dc8d49c0a2f9ae21e28a" kindref="member">tls_os_status</ref><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_OS_SUCCESS<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_OS_ERROR,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_OS_ERR_TIMEOUT,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1ga6e548a8a372fc51cbb02cc6204a490fc" kindref="member">tls_os_timer_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1ga8181d0c2981c83973af2255687e6a681" kindref="member">tls_os_time_tick</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1ga559145726e6c0c16424a59a0da20dbf0" kindref="member">tls_os_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1gaaf9a9594681605a9a72c087387fbaa4d" kindref="member">tls_os_start_scheduler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1ga105ee06f8df6a4ef564249a1e8704451" kindref="member">tls_os_get_type</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga1b139e703d90deb3e25b2807641727fd" kindref="member">tls_os_task_create</ref>(<ref refid="wm__osal_8h_1a9c6a7a2c332763f53835c9c473c0205c" kindref="member">tls_os_task_t</ref><sp/>*task,</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*entry)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>param),</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>param,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/>*stk_start,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>stk_size,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>prio,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>flag);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga44a382aec34d8ae13475b268ac7ef6df" kindref="member">tls_os_task_del</ref>(u8<sp/>prio,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*freefun)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga0ee6b456ea9cf944312c18031b3b288a" kindref="member">tls_os_mutex_create</ref>(u8<sp/>prio,<sp/><ref refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kindref="member">tls_os_mutex_t</ref><sp/>**mutex);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gae756400c5aab47548f7ec1b0da295e06" kindref="member">tls_os_mutex_delete</ref>(<ref refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kindref="member">tls_os_mutex_t</ref><sp/>*mutex);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga8160efbe5307f96f6e2ed0c2cea34572" kindref="member">tls_os_mutex_acquire</ref>(<ref refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kindref="member">tls_os_mutex_t</ref><sp/>*mutex,</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>wait_time);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gacd5908ad43e8a0a7dd5c69d521eb2bb9" kindref="member">tls_os_mutex_release</ref>(<ref refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kindref="member">tls_os_mutex_t</ref><sp/>*mutex);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gab0d06b8435947367b600a83efde816fc" kindref="member">tls_os_sem_create</ref>(<ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref><sp/>**sem,<sp/>u32<sp/>cnt);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gafa3f3c0039e6252d71d8e4a7d4e19b2c" kindref="member">tls_os_sem_delete</ref>(<ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref><sp/>*sem);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gaeb1b502d11d25b65bba7e6cb16e90078" kindref="member">tls_os_sem_acquire</ref>(<ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref><sp/>*sem,</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>wait_time);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga894bc38a19059b8f084f96f4edc5dd96" kindref="member">tls_os_sem_release</ref>(<ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref><sp/>*sem);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gabe3b59bc50f78636edf1fd3d1d3afe6c" kindref="member">tls_os_sem_set</ref>(<ref refid="wm__osal_8h_1ae7411af4399d75e628f5a3d6c7421b8e" kindref="member">tls_os_sem_t</ref><sp/>*sem,<sp/>u16<sp/>cnt);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gac3092293cbb017e7a042ca07d462b0e0" kindref="member">tls_os_queue_create</ref>(<ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref><sp/>**queue,<sp/>u32<sp/>queue_size);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gac4f8539b60be31ce8cf59e3d7b86f5b7" kindref="member">tls_os_queue_delete</ref>(<ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref><sp/>*queue);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga881f3210ba2d8701c8f59a956b6bb1ba" kindref="member">tls_os_queue_send</ref>(<ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref><sp/>*queue,</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*msg,</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>msg_size);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gad2da86e8e8514f3fa119cf853421f9f5" kindref="member">tls_os_queue_flush</ref>(<ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref><sp/>*queue);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga5be384c667ae9daa58dd92c8518482d9" kindref="member">tls_os_queue_receive</ref>(<ref refid="wm__osal_8h_1a8f5e1923e4ef3ac81dc40d138a04380d" kindref="member">tls_os_queue_t</ref><sp/>*queue,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**msg,</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>msg_size,</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>wait_time);</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga9e3e36e61c1c207d490cf224a842046c" kindref="member">tls_os_mailbox_create</ref>(<ref refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" kindref="member">tls_os_mailbox_t</ref><sp/>**mailbox,<sp/>u32<sp/>mailbox_size);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gafd7053c37a7c796457b5e0bf7504b977" kindref="member">tls_os_mailbox_delete</ref>(<ref refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" kindref="member">tls_os_mailbox_t</ref><sp/>*mailbox);</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga25ae765d00938f4b66d89c9850898a48" kindref="member">tls_os_mailbox_send</ref>(<ref refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" kindref="member">tls_os_mailbox_t</ref><sp/>*mailbox,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*msg);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1gae93489ddaaf44c3f7cb27eb8186410bf" kindref="member">tls_os_mailbox_receive</ref>(<ref refid="wm__osal_8h_1a774fbd9d4e6b9ca6f6de656bada11a8b" kindref="member">tls_os_mailbox_t</ref><sp/>*mailbox,</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**msg,</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>wait_time);</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/>u32<sp/><ref refid="group___o_s___a_p_is_1ga6f112f2f45d012d4dcf18d11908a705d" kindref="member">tls_os_get_time</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/>u32<sp/><ref refid="group___o_s___a_p_is_1ga2e828c3b756722bcf56a8ccba7ed561a" kindref="member">tls_os_set_critical</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1gaa9582663dfc6f3bbd5f3e3f65b506989" kindref="member">tls_os_release_critical</ref>(u32<sp/>cpu_sr);</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref><sp/><ref refid="group___o_s___a_p_is_1ga63e039673b40600e0f80cd21032fda15" kindref="member">tls_os_timer_create</ref>(<ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref><sp/>**timer,</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__osal_8h_1a87ee168760be7b82abba354009c129e5" kindref="member">TLS_OS_TIMER_CALLBACK</ref><sp/>callback,</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*callback_arg,</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>period,</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>repeat,</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/>*name);</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1ga62653724780698fe82fce98c5a3abbe7" kindref="member">tls_os_timer_start</ref>(<ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref><sp/>*timer);</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="639"><highlight class="comment">************************************************************************************************************************</highlight></codeline>
+<codeline lineno="640"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHANGE<sp/>A<sp/>TIMER<sp/>WAIT<sp/>TIME</highlight></codeline>
+<codeline lineno="641"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="642"><highlight class="comment">*<sp/>Description:<sp/>This<sp/>function<sp/>is<sp/>called<sp/>by<sp/>your<sp/>application<sp/>code<sp/>to<sp/>change<sp/>a<sp/>timer<sp/>wait<sp/>time.</highlight></codeline>
+<codeline lineno="643"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="644"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/>timer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Is<sp/>a<sp/>pointer<sp/>to<sp/>an<sp/>OS_TMR</highlight></codeline>
+<codeline lineno="645"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="646"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ticks<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>the<sp/>wait<sp/>time</highlight></codeline>
+<codeline lineno="647"><highlight class="comment">************************************************************************************************************************</highlight></codeline>
+<codeline lineno="648"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_os_timer_change(<ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref><sp/>*timer,<sp/>u32<sp/>ticks);</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1gad2269aea48c5d9a9b076dfed8eabe24d" kindref="member">tls_os_timer_stop</ref>(<ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref><sp/>*timer);</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight></codeline>
+<codeline lineno="674"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1ga55fd918baee77b277d4cb3ffffe663f7" kindref="member">tls_os_timer_delete</ref>(<ref refid="wm__osal_8h_1a1e7345dbbf9df96b581017e1c053b04b" kindref="member">tls_os_timer_t</ref><sp/>*timer);</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"></highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1ga1e22e6c6c8648038ada87ae223d52571" kindref="member">tls_os_time_delay</ref>(u32<sp/>ticks);</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight></codeline>
+<codeline lineno="705"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___o_s___a_p_is_1ga91d4da43735ac05074a9756d7e2cf9b4" kindref="member">tls_os_disp_task_stat_info</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>end<sp/>of<sp/>WM_OSAL_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/OS/wm_osal.h"/>
+  </compounddef>
+</doxygen>

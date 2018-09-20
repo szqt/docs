@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtask__msg" kind="struct" language="C++" prot="public">
+    <compoundname>task_msg</compoundname>
+    <includes refid="wm__wl__task_8h" local="no">wm_wl_task.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtask__msg_1a09be61f9c4e94b182549edf3ec59eaa9" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02a" kindref="member">task_msg_type</ref></type>
+        <definition>enum task_msg_type task_msg::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="218" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1a2942db1e2d2d7e4e4f7ef31af63812a6" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__wl__task_8h_1a432c791edd563702d1d4bfcd1031f35f" kindref="member">tls_sem_t</ref> *</type>
+        <definition>tls_sem_t* task_msg::sem</definition>
+        <argsstring></argsstring>
+        <name>sem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="83" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1a6c66ab4ac6bfe888e0f6a8b9e3c830fd" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref></type>
+        <definition>start_routine task_msg::function</definition>
+        <argsstring></argsstring>
+        <name>function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="86" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1aaa7cc671ad262169349bab4599b04172" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* task_msg::ctx</definition>
+        <argsstring></argsstring>
+        <name>ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="87" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1abab970a0462c6362b76a8cf5814b6c8b" prot="public" static="no" mutable="no">
+        <type>struct task_msg::@5::@6</type>
+        <definition>struct task_msg::@5::@6  task_msg::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1a6b27b2e143fee0208e8c7471de0e28fc" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 task_msg::cnt</definition>
+        <argsstring></argsstring>
+        <name>cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="92" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1a37c7131cb8a1b946720810b9b8d74030" prot="public" static="no" mutable="no">
+        <type>struct task_msg::@5::@7</type>
+        <definition>struct task_msg::@5::@7  task_msg::cbs</definition>
+        <argsstring></argsstring>
+        <name>cbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1a9c4094accd68ae2194b43f9864b7c02c" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 task_msg::msecs</definition>
+        <argsstring></argsstring>
+        <name>msecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="95" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1a789c34aaa536b5bdbe4bef41a949d188" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref></type>
+        <definition>tls_timeout_handler task_msg::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="96" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1aad780a34e5ffc5db1578b60de50efda7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* task_msg::arg</definition>
+        <argsstring></argsstring>
+        <name>arg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="97" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1ac033d0dd48d58747626f4eb028577901" prot="public" static="no" mutable="no">
+        <type>struct task_msg::@5::@8</type>
+        <definition>struct task_msg::@5::@8  task_msg::tmo</definition>
+        <argsstring></argsstring>
+        <name>tmo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtask__msg_1aa06288bb67c3e4851c263eac7e1ff88f" prot="public" static="no" mutable="no">
+        <type>union task_msg::@5</type>
+        <definition>union task_msg::@5  task_msg::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_wl_task.h" line="99" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>message of task </para>    </detaileddescription>
+    <location file="Include/Platform/wm_wl_task.h" line="81" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="81" bodyend="100"/>
+    <listofallmembers>
+      <member refid="structtask__msg_1aad780a34e5ffc5db1578b60de50efda7" prot="public" virt="non-virtual"><scope>task_msg</scope><name>arg</name></member>
+      <member refid="structtask__msg_1abab970a0462c6362b76a8cf5814b6c8b" prot="public" virt="non-virtual"><scope>task_msg</scope><name>cb</name></member>
+      <member refid="structtask__msg_1a37c7131cb8a1b946720810b9b8d74030" prot="public" virt="non-virtual"><scope>task_msg</scope><name>cbs</name></member>
+      <member refid="structtask__msg_1a6b27b2e143fee0208e8c7471de0e28fc" prot="public" virt="non-virtual"><scope>task_msg</scope><name>cnt</name></member>
+      <member refid="structtask__msg_1aaa7cc671ad262169349bab4599b04172" prot="public" virt="non-virtual"><scope>task_msg</scope><name>ctx</name></member>
+      <member refid="structtask__msg_1a6c66ab4ac6bfe888e0f6a8b9e3c830fd" prot="public" virt="non-virtual"><scope>task_msg</scope><name>function</name></member>
+      <member refid="structtask__msg_1a789c34aaa536b5bdbe4bef41a949d188" prot="public" virt="non-virtual"><scope>task_msg</scope><name>h</name></member>
+      <member refid="structtask__msg_1a9c4094accd68ae2194b43f9864b7c02c" prot="public" virt="non-virtual"><scope>task_msg</scope><name>msecs</name></member>
+      <member refid="structtask__msg_1aa06288bb67c3e4851c263eac7e1ff88f" prot="public" virt="non-virtual"><scope>task_msg</scope><name>msg</name></member>
+      <member refid="structtask__msg_1a2942db1e2d2d7e4e4f7ef31af63812a6" prot="public" virt="non-virtual"><scope>task_msg</scope><name>sem</name></member>
+      <member refid="structtask__msg_1ac033d0dd48d58747626f4eb028577901" prot="public" virt="non-virtual"><scope>task_msg</scope><name>tmo</name></member>
+      <member refid="structtask__msg_1a09be61f9c4e94b182549edf3ec59eaa9" prot="public" virt="non-virtual"><scope>task_msg</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

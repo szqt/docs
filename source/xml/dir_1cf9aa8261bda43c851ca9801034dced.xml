@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_1cf9aa8261bda43c851ca9801034dced" kind="dir">
+    <compoundname>Include/OS</compoundname>
+    <innerfile refid="wm__config__gcc_8inc">wm_config_gcc.inc</innerfile>
+    <innerfile refid="wm__os__config_8h">wm_os_config.h</innerfile>
+    <innerfile refid="wm__os__config_8inc">wm_os_config.inc</innerfile>
+    <innerfile refid="wm__osal_8h">wm_osal.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/OS/"/>
+  </compounddef>
+</doxygen>

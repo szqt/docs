@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_d374840edaa1ef87f7b9fc8fa2802801" kind="dir">
+    <compoundname>Include/App</compoundname>
+    <innerfile refid="wm__at__ri__init_8h">wm_at_ri_init.h</innerfile>
+    <innerfile refid="wm__cloud_8h">wm_cloud.h</innerfile>
+    <innerfile refid="wm__crypto_8h">wm_crypto.h</innerfile>
+    <innerfile refid="wm__dhcp__server_8h">wm_dhcp_server.h</innerfile>
+    <innerfile refid="wm__dlna__dmr_8h">wm_dlna_dmr.h</innerfile>
+    <innerfile refid="wm__dns__server_8h">wm_dns_server.h</innerfile>
+    <innerfile refid="wm__http__client_8h">wm_http_client.h</innerfile>
+    <innerfile refid="wm__netif_8h">wm_netif.h</innerfile>
+    <innerfile refid="wm__netif2_80_83_8h">wm_netif2.0.3.h</innerfile>
+    <innerfile refid="wm__ntp_8h">wm_ntp.h</innerfile>
+    <innerfile refid="wm__ssl__server_8h">wm_ssl_server.h</innerfile>
+    <innerfile refid="wm__webserver_8h">wm_webserver.h</innerfile>
+    <innerfile refid="wm__wifi__oneshot_8h">wm_wifi_oneshot.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/App/"/>
+  </compounddef>
+</doxygen>

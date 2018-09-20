@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__debug_8h" kind="file" language="C++">
+    <compoundname>wm_debug.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="wm__config_8h" local="yes">wm_config.h</includes>
+    <includes refid="wm__osal_8h" local="yes">wm_osal.h</includes>
+    <incdepgraph>
+      <node id="442">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="436">
+        <label>stdlib.h</label>
+      </node>
+      <node id="441">
+        <label>wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+      </node>
+      <node id="439">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="438">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="437">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>Include/wm_debug.h</label>
+        <link refid="wm__debug_8h"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="435">
+        <label>stdio.h</label>
+      </node>
+      <node id="440">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__debug_8h_1a94384c17a1d28192eb0558c7180407e5" prot="public" static="no">
+        <name>TLS_DBG_ON</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the debugging switch: on </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="20" column="9" bodyfile="Include/wm_debug.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__debug_8h_1adf05ba605b1ed73ea141a285a8167f85" prot="public" static="no">
+        <name>TLS_DBG_OFF</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the debugging switch: off </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="22" column="9" bodyfile="Include/wm_debug.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__debug_8h_1a9e8e26b832f315c996ef97e7d9d4e361" prot="public" static="no">
+        <name>TLS_DBG_LEVEL_INFO</name>
+        <initializer><ref refid="wm__debug_8h_1adf05ba605b1ed73ea141a285a8167f85" kindref="member">TLS_DBG_OFF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the debugging level: info </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="27" column="9" bodyfile="Include/wm_debug.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__debug_8h_1abde4d33f201b6b5de55b44aba85a017a" prot="public" static="no">
+        <name>TLS_DBG_LEVEL_WARNING</name>
+        <initializer><ref refid="wm__debug_8h_1adf05ba605b1ed73ea141a285a8167f85" kindref="member">TLS_DBG_OFF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the debugging level: warning </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="29" column="9" bodyfile="Include/wm_debug.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__debug_8h_1a1c3061a5ef73c8d65365412ae3303cc5" prot="public" static="no">
+        <name>TLS_DBG_LEVEL_ERR</name>
+        <initializer><ref refid="wm__debug_8h_1adf05ba605b1ed73ea141a285a8167f85" kindref="member">TLS_DBG_OFF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the debugging level: error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="31" column="9" bodyfile="Include/wm_debug.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__debug_8h_1af957cfd53c29898ce4cbf4ee993fc1c9" prot="public" static="no">
+        <name>TLS_DBG_LEVEL_DUMP</name>
+        <initializer><ref refid="wm__debug_8h_1adf05ba605b1ed73ea141a285a8167f85" kindref="member">TLS_DBG_OFF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define the debugging level: dump </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="33" column="9" bodyfile="Include/wm_debug.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__debug_8h_1a592e5a01a8cdc48904e8f492bb68596d" prot="public" static="no">
+        <name>TLS_GENERAL_DBG</name>
+        <initializer><ref refid="wm__debug_8h_1adf05ba605b1ed73ea141a285a8167f85" kindref="member">TLS_DBG_OFF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>general debug info switch, default: off </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="36" column="9" bodyfile="Include/wm_debug.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__debug_8h_1aba05b697cffc7fff381963032334d7c4" prot="public" static="no">
+        <name>__TLS_DBGPRT_INFO</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>do {									                     \
+       u32 time = <ref refid="group___o_s___a_p_is_1ga6f112f2f45d012d4dcf18d11908a705d" kindref="member">tls_os_get_time</ref>();	                 \
+       printf(&quot;[WM_I] &lt;%d.%02d&gt; %s : &quot;fmt, (time/100), (time%100), __func__ , ##__VA_ARGS__); \
+} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="39" column="9" bodyfile="Include/wm_debug.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__debug_8h_1a668407509d7740bb0ce2d56267af14f4" prot="public" static="no">
+        <name>__TLS_DBGPRT_WARNING</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>do {									                     \
+       u32 time = <ref refid="group___o_s___a_p_is_1ga6f112f2f45d012d4dcf18d11908a705d" kindref="member">tls_os_get_time</ref>();	                 \
+       printf(&quot;[WM_W] &lt;%d.%02d&gt; %s : &quot;fmt, (time/100), (time%100), __func__ , ##__VA_ARGS__); \
+} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="45" column="9" bodyfile="Include/wm_debug.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__debug_8h_1a629b0b54e52bce4d600166833f8d13c9" prot="public" static="no">
+        <name>__TLS_DBGPRT_ERR</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>do {									                     \
+       u32 time = <ref refid="group___o_s___a_p_is_1ga6f112f2f45d012d4dcf18d11908a705d" kindref="member">tls_os_get_time</ref>();	                 \
+       printf(&quot;[WM_E] &lt;%d.%02d&gt; %s : &quot;fmt, (time/100), (time%100), __func__ , ##__VA_ARGS__); \
+} while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="51" column="9" bodyfile="Include/wm_debug.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_b_u_g___a_p_is_1ga73da14a6302943bfb4bd4d9e58c15071" prot="public" static="no">
+        <name>TLS_DBGPRT_INFO</name>
+        <param><defname>f</defname></param>
+        <param><defname>a...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print information of the info level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="83" column="9" bodyfile="Include/wm_debug.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_b_u_g___a_p_is_1ga131f0ac212eb2e86a5717612212ecd53" prot="public" static="no">
+        <name>TLS_DBGPRT_WARNING</name>
+        <param><defname>f</defname></param>
+        <param><defname>a...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print information of the warning level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="91" column="9" bodyfile="Include/wm_debug.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_b_u_g___a_p_is_1gaa5b6b61e64339544ba63cd7484ebfb9a" prot="public" static="no">
+        <name>TLS_DBGPRT_ERR</name>
+        <param><defname>f</defname></param>
+        <param><defname>a...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print information of the error level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="99" column="9" bodyfile="Include/wm_debug.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_b_u_g___a_p_is_1gab308cdd2968e3de2dd5c7c6d25945dc2" prot="public" static="no">
+        <name>TLS_DBGPRT_DUMP</name>
+        <param><defname>p</defname></param>
+        <param><defname>len</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>print information of the dump level </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_debug.h" line="116" column="9" bodyfile="Include/wm_debug.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>debug Module APIs </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_DEBUG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_DEBUG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__config_8h" kindref="compound">wm_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__osal_8h" kindref="compound">wm_osal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>0x00000000<sp/>-<sp/>0x80000000<sp/>*/</highlight></codeline>
+<codeline lineno="20" refid="wm__debug_8h_1a94384c17a1d28192eb0558c7180407e5" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBG_ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="wm__debug_8h_1adf05ba605b1ed73ea141a285a8167f85" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBG_OFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>0x0000000F<sp/>-<sp/>0x00000001<sp/>*/</highlight></codeline>
+<codeline lineno="27" refid="wm__debug_8h_1a9e8e26b832f315c996ef97e7d9d4e361" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBG_LEVEL_INFO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TLS_DBG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="wm__debug_8h_1abde4d33f201b6b5de55b44aba85a017a" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBG_LEVEL_WARNING<sp/><sp/><sp/><sp/><sp/><sp/><sp/>TLS_DBG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="wm__debug_8h_1a1c3061a5ef73c8d65365412ae3303cc5" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBG_LEVEL_ERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TLS_DBG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="wm__debug_8h_1af957cfd53c29898ce4cbf4ee993fc1c9" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBG_LEVEL_DUMP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TLS_DBG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="wm__debug_8h_1a592e5a01a8cdc48904e8f492bb68596d" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_GENERAL_DBG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TLS_DBG_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TLS_DBGPRT_INFO(fmt,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor">do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>time<sp/>=<sp/>tls_os_get_time();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;[WM_I]<sp/>&lt;%d.%02d&gt;<sp/>%s<sp/>:<sp/>&quot;fmt,<sp/>(time/100),<sp/>(time%100),<sp/>__func__<sp/>,<sp/>##__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor">}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TLS_DBGPRT_WARNING(fmt,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor">do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>time<sp/>=<sp/>tls_os_get_time();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;[WM_W]<sp/>&lt;%d.%02d&gt;<sp/>%s<sp/>:<sp/>&quot;fmt,<sp/>(time/100),<sp/>(time%100),<sp/>__func__<sp/>,<sp/>##__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor">}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TLS_DBGPRT_ERR(fmt,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor">do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>time<sp/>=<sp/>tls_os_get_time();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;[WM_E]<sp/>&lt;%d.%02d&gt;<sp/>%s<sp/>:<sp/>&quot;fmt,<sp/>(time/100),<sp/>(time%100),<sp/>__func__<sp/>,<sp/>##__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor">}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor">#if<sp/>(TLS_GENERAL_DBG<sp/>&amp;&amp;<sp/>TLS_DBG_LEVEL_INFO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor">#define<sp/>TLS_DBGPRT_INFO(f,<sp/>a...)<sp/><sp/><sp/><sp/><sp/>__TLS_DBGPRT_INFO(f,<sp/>##a)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="group___d_e_b_u_g___a_p_is_1ga73da14a6302943bfb4bd4d9e58c15071" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBGPRT_INFO(f,<sp/>a...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(TLS_GENERAL_DBG<sp/>&amp;&amp;<sp/>TLS_DBG_LEVEL_WARNING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor">#define<sp/>TLS_DBGPRT_WARNING(f,<sp/>a...)<sp/><sp/>__TLS_DBGPRT_WARNING(f,<sp/>##a)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="group___d_e_b_u_g___a_p_is_1ga131f0ac212eb2e86a5717612212ecd53" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBGPRT_WARNING(f,<sp/>a...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(TLS_GENERAL_DBG<sp/>&amp;&amp;<sp/>TLS_DBG_LEVEL_ERR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor">#define<sp/>TLS_DBGPRT_ERR(f,<sp/>a...)<sp/><sp/><sp/><sp/><sp/><sp/>__TLS_DBGPRT_ERR(f,<sp/>##a)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="group___d_e_b_u_g___a_p_is_1gaa5b6b61e64339544ba63cd7484ebfb9a" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBGPRT_ERR(f,<sp/>a...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(TLS_GENERAL_DBG<sp/>&amp;&amp;<sp/>TLS_DBG_LEVEL_DUMP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___d_e_b_u_g___a_p_is_1gab308cdd2968e3de2dd5c7c6d25945dc2" kindref="member">TLS_DBGPRT_DUMP</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*p,<sp/>u32<sp/>len);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="group___d_e_b_u_g___a_p_is_1gab308cdd2968e3de2dd5c7c6d25945dc2" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_DBGPRT_DUMP(p,<sp/>len)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>end<sp/>of<sp/>WM_DEBUG_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/wm_debug.h"/>
+  </compounddef>
+</doxygen>

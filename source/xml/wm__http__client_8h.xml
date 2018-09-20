@@ -1,0 +1,2037 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__http__client_8h" kind="file" language="C++">
+    <compoundname>wm_http_client.h</compoundname>
+    <includes refid="wm__config_8h" local="yes">wm_config.h</includes>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="19">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="18">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="16">
+        <label>Include/App/wm_http_client.h</label>
+        <link refid="wm__http__client_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct___h_t_t_p___c_l_i_e_n_t" prot="public">_HTTP_CLIENT</innerclass>
+    <innerclass refid="struct___h_t_t_p_parameters" prot="public">_HTTPParameters</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__http__client_8h_1a7f319bfc2492a2136964194204e7a8cf" prot="public" static="no">
+        <name>VOID</name>
+        <initializer>void</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="48" column="22" bodyfile="Include/App/wm_http_client.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a8804f260b000de6a1eb3487269bbfa2f" prot="public" static="no">
+        <name>HTTP_CLIENT_SUCCESS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HTTP Success status </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="65" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a12775c0273f055fabd91e165a75b79a9" prot="public" static="no">
+        <name>HTTP_CLIENT_UNKNOWN_ERROR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unknown error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="67" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a94d88476c4753cbf6eb8caa1d0791acc" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_INVALID_HANDLE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>an Invalid handle or possible bad pointer was passed to a function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="69" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a18eccfd7b402690a0d5b76885c17e29d" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_NO_MEMORY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer too small or a failure while in memory allocation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="71" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1adb11d6293ce45bb3fcfb103225b50bb5" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_SOCKET_INVALID</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>an attempt to use an invalid socket handle was made </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="73" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1ae630ac28680e723ec566c010caa32c09" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_SOCKET_CANT_SET</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Can&apos;t send socket parameters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="75" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1aead4ccda88a7b947f11ea3443a0f6791" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_SOCKET_RESOLVE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error while resolving host name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="77" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a8a028a596ba2b624eef45413b554a829" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_SOCKET_CONNECT</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error while connecting to the remote server </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="79" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1ae1ea53a39b1d23e7fa847657d1ab6c1f" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_SOCKET_TIME_OUT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>socket time out error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="81" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a061fb46b5914ba3e3241c4fd53d01d64" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_SOCKET_RECV</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error while receiving data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="83" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a2db46296c38b56e0f58cf84be0cd8914" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_SOCKET_SEND</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error while sending data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="85" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a224ba23b5e06d115ce93baad11eb30af" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_HEADER_RECV</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error while receiving the remote HTTP headers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="87" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a5fd00ac39e9e12b715a1f05a19061b94" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_HEADER_NOT_FOUND</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Could not find element within header </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="89" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a69d13458451addcf5f8b0e863384a4e4" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_HEADER_BIG_CLUE</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The headers search clue was too large for the internal API buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="91" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a520e28281bd2f94d0229ce6a72443138" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_HEADER_NO_LENGTH</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>No content length was specified for the outgoing data. the caller should specify chunking mode in the session creation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="94" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a33ecd1b7d78b0368a47ffe3e240af34a" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_CHUNK_TOO_BIG</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The HTTP chunk token that was received from the server was too big and possibly wrong </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="96" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1accc070732484c5ef881f6fb6948de178" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_AUTH_HOST</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Could not authenticate with the remote host </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="98" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1addf94f5e71a41c6fe602a2f83beed23f" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_AUTH_PROXY</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Could not authenticate with the remote proxy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="100" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1ab2f013291b78e05c8172b178689fe3b9" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_BAD_VERB</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bad or not supported HTTP verb was passed to a function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="102" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a6a5de1495b01bf6a6517d7efc96a5cf0" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_LONG_INPUT</name>
+        <initializer>19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a function received a parameter that was too large </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="104" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a47c46142bc8bb898d16ee7e7df6bc660" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_BAD_STATE</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The session state prevents the current function from proceeding </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="106" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a69ce7f1a427ce477a049efb26830da87" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_CHUNK</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Could not parse the chunk length while in chunked transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="108" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a805d54debf1e71f5b9c9aade9f7b589b" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_BAD_URL</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Could not parse curtail elements from the URL (such as the host name, HTTP prefix act&apos;) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="110" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1ad9df9140e8ba5ae896d4f1e2ab7aa010" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_BAD_HEADER</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Could not detect key elements in the received headers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="112" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1ac034eacbd4c6120da18cfd9adff4b4e8" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_BUFFER_RSIZE</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error while attempting to resize a buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="114" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a9225a6e1b8e54de7caf6cb5385f9fff3" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_BAD_AUTH</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Authentication schema is not supported </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="116" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1aae9a58a10e287f3efa37e503d5291f9a" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_AUTH_MISMATCH</name>
+        <initializer>26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The selected authentication schema does not match the server response </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="118" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a59496f02f68639d640004eee4b22ff3d" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_NO_DIGEST_TOKEN</name>
+        <initializer>27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>an element was missing while parsing the digest authentication challenge </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="120" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1aa08c9b6f53cd1bff9ea70c20c0212e17" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_NO_DIGEST_ALG</name>
+        <initializer>28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Digest algorithem could be MD5 or MD5-sess other types are not supported </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="122" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1aff609db859127b3a71d07ff3bcfa37e2" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_SOCKET_BIND</name>
+        <initializer>29</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Binding error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="124" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1aff79b01a63faf6916d4987fa9929a7a9" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_TLS_NEGO</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tls negotiation error </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="126" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1ac649e6be45318328a6abef6dabf85378" prot="public" static="no">
+        <name>HTTP_CLIENT_ERROR_NOT_IMPLEMENTED</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Feature is not (yet) implemented </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="128" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a6841379bbc5dd91885c84cf6e4163334" prot="public" static="no">
+        <name>HTTP_CLIENT_EOS</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HTTP end of stream message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="130" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a2043c2cdc3619247b3119d163c325579" prot="public" static="no">
+        <name>HTTP_CLIENT_FLAG_KEEP_ALIVE</name>
+        <initializer>0x00000001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="133" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1a64a8ecdc6ef625d3ebeb27b2d7942d78" prot="public" static="no">
+        <name>HTTP_CLIENT_FLAG_SEND_CHUNKED</name>
+        <initializer>0x00000002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="134" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1ab040201f111a47741af7a0a53cc43d33" prot="public" static="no">
+        <name>HTTP_CLIENT_FLAG_NO_CACHE</name>
+        <initializer>0x00000004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="135" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1aeda79c72c4a3395f28e13d1842e1d795" prot="public" static="no">
+        <name>HTTP_CLIENT_FLAG_ASYNC</name>
+        <initializer>0x00000008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="136" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__http__client_8h_1afcc2bfc93627547b091ecd7de55d94a8" prot="public" static="no">
+        <name>HTTP_CLIENT_FLAG_MULTIPART_FORM</name>
+        <initializer>0x00000010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="137" column="9" bodyfile="Include/App/wm_http_client.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__http__client_8h_1a91dcf453b00607b13fb25aa4fb9996d8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_HTTP_AUTH_SCHEMA</name>
+        <enumvalue id="wm__http__client_8h_1a91dcf453b00607b13fb25aa4fb9996d8ad6efe0f980dee76b8505c443edfde1fc" prot="public">
+          <name>AuthSchemaNone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__http__client_8h_1a91dcf453b00607b13fb25aa4fb9996d8ae0b63092d89e83e571cbf63a783d559c" prot="public">
+          <name>AuthSchemaBasic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__http__client_8h_1a91dcf453b00607b13fb25aa4fb9996d8ac7505db601a68450d12b7e1c7540c89f" prot="public">
+          <name>AuthSchemaDigest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__http__client_8h_1a91dcf453b00607b13fb25aa4fb9996d8a2bb6dd925fad2ce2c1fa518fe583fa2a" prot="public">
+          <name>AuthSchemaKerberos</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__http__client_8h_1a91dcf453b00607b13fb25aa4fb9996d8a2015c40db4e01979850be1ad3777b009" prot="public">
+          <name>AuthNotSupported</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HTTP Supported authentication methods </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="156" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="155" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_HTTP_VERB</name>
+        <enumvalue id="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89a739d286bd4563435877aa34dff622f40" prot="public">
+          <name>VerbGet</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89a65469031b27ae67e3459f341bd76264c" prot="public">
+          <name>VerbHead</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89a20e85dba5e03af2103e01314432b4c55" prot="public">
+          <name>VerbPost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89a43cc19851dc6e09f327df1be172a4b70" prot="public">
+          <name>VerbPut</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89a0e3791b0fdace567d1a9410ce93d5696" prot="public">
+          <name>VerbFwup</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89ac98facfbe89a38789d70476483d5b828" prot="public">
+          <name>VerbNotSupported</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HTTP supported verbs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="166" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="165" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__http__client_8h_1a050c65e107f0c828f856a231f4b4e788" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int BOOL</definition>
+        <argsstring></argsstring>
+        <name>BOOL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="49" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a4f4bb67531a9bf6f0b9c6ad76aeba587" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char UCHAR</definition>
+        <argsstring></argsstring>
+        <name>UCHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="50" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1aebb9e13210d88d43e32e735ada43a425" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char CHAR</definition>
+        <argsstring></argsstring>
+        <name>CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="52" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a09f1a1fb2293e33483cc8d44aefb1eb1" prot="public" static="no">
+        <type>unsigned short</type>
+        <definition>typedef unsigned short UINT16</definition>
+        <argsstring></argsstring>
+        <name>UINT16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="53" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a30f500129d8c688af07726d5d34ce52d" prot="public" static="no">
+        <type>signed short</type>
+        <definition>typedef signed short INT16</definition>
+        <argsstring></argsstring>
+        <name>INT16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="54" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1ae1e6edbbc26d6fbc71a90190d0266018" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int UINT32</definition>
+        <argsstring></argsstring>
+        <name>UINT32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="55" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a1137216524060afd426c34677fed058b" prot="public" static="no">
+        <type>signed int</type>
+        <definition>typedef signed int INT32</definition>
+        <argsstring></argsstring>
+        <name>INT32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="56" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a57be03562867144161c1bfee95ca8f7c" prot="public" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long UINT64</definition>
+        <argsstring></argsstring>
+        <name>UINT64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="57" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a6a2b55a6391419ed0b7b9da06e094b4b" prot="public" static="no">
+        <type>long long</type>
+        <definition>typedef long long INT64</definition>
+        <argsstring></argsstring>
+        <name>INT64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="58" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1af632da489ebc3708ec3ab6791ee53fa4" prot="public" static="no">
+        <type>unsigned long</type>
+        <definition>typedef unsigned long ULONG</definition>
+        <argsstring></argsstring>
+        <name>ULONG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="59" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a73a5fec9b19159a6647fbf000017b221" prot="public" static="no">
+        <type>signed long</type>
+        <definition>typedef signed long LONG</definition>
+        <argsstring></argsstring>
+        <name>LONG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="60" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a35fcb24dd6f18270bdb0331249398208" prot="public" static="no">
+        <type>UINT32</type>
+        <definition>typedef UINT32 HTTP_SESSION_HANDLE</definition>
+        <argsstring></argsstring>
+        <name>HTTP_SESSION_HANDLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="140" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a62b94e69955c9a1c4829e5a89a94c1a7" prot="public" static="no">
+        <type>UINT32</type>
+        <definition>typedef UINT32 HTTP_CLIENT_SESSION_FLAGS</definition>
+        <argsstring></argsstring>
+        <name>HTTP_CLIENT_SESSION_FLAGS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="141" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1aae7692887854fdaeb8c062181183b528" prot="public" static="no">
+        <type>u32</type>
+        <definition>typedef u32 tls_http_session_handle_t</definition>
+        <argsstring></argsstring>
+        <name>tls_http_session_handle_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>http seesion handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="150" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a4d3a9f7cd4d167e6a4d70a1459277c90" prot="public" static="no">
+        <type>u32</type>
+        <definition>typedef u32 tls_http_session_flags_t</definition>
+        <argsstring></argsstring>
+        <name>tls_http_session_flags_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>http seesion flags </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="152" column="1" bodyfile="Include/App/wm_http_client.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a18affbb260729e84c6990396fa23c69e" prot="public" static="no">
+        <type>enum <ref refid="wm__http__client_8h_1a91dcf453b00607b13fb25aa4fb9996d8" kindref="member">_HTTP_AUTH_SCHEMA</ref></type>
+        <definition>typedef enum _HTTP_AUTH_SCHEMA  HTTP_AUTH_SCHEMA</definition>
+        <argsstring></argsstring>
+        <name>HTTP_AUTH_SCHEMA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HTTP Supported authentication methods </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a9115e80a961baddfd0ff9ffdf47c273d" prot="public" static="no">
+        <type>enum <ref refid="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89" kindref="member">_HTTP_VERB</ref></type>
+        <definition>typedef enum _HTTP_VERB  HTTP_VERB</definition>
+        <argsstring></argsstring>
+        <name>HTTP_VERB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HTTP supported verbs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a2752d98f954792b6135aee4b5fbdea06" prot="public" static="no">
+        <type>struct <ref refid="struct___h_t_t_p___c_l_i_e_n_t" kindref="compound">_HTTP_CLIENT</ref></type>
+        <definition>typedef struct _HTTP_CLIENT  HTTP_CLIENT</definition>
+        <argsstring></argsstring>
+        <name>HTTP_CLIENT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data structure that the caller can request at any time that will include some information regarding the session </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__http__client_8h_1a0fbba624a408447b2b76446641aad703" prot="public" static="no">
+        <type>struct <ref refid="struct___h_t_t_p_parameters" kindref="compound">_HTTPParameters</ref></type>
+        <definition>typedef struct _HTTPParameters  HTTPParameters</definition>
+        <argsstring></argsstring>
+        <name>HTTPParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HTTP parameters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="199" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga31533824fbe5aedc9c1557c2e665868e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HTTP_SESSION_HANDLE</type>
+        <definition>HTTP_SESSION_HANDLE HTTPClientOpenRequest</definition>
+        <argsstring>(HTTP_CLIENT_SESSION_FLAGS Flags)</argsstring>
+        <name>HTTPClientOpenRequest</name>
+        <param>
+          <type>HTTP_CLIENT_SESSION_FLAGS</type>
+          <declname>Flags</declname>
+        </param>
+        <briefdescription>
+<para>Allocate memory for a new HTTP Session. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session internal API flags, 0 should be passed here</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gaabcb6773e0e84a721c48e354cda84a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientCloseRequest</definition>
+        <argsstring>(HTTP_SESSION_HANDLE *pSession)</argsstring>
+        <name>HTTPClientCloseRequest</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE *</type>
+          <declname>pSession</declname>
+        </param>
+        <briefdescription>
+<para>Closes any active connection and free any used memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gaff6b211e89218c78e12d521f5ed6d9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSetAuth</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, HTTP_AUTH_SCHEMA AuthSchema, void *pReserved)</argsstring>
+        <name>HTTPClientSetAuth</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__http__client_8h_1a18affbb260729e84c6990396fa23c69e" kindref="member">HTTP_AUTH_SCHEMA</ref></type>
+          <declname>AuthSchema</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pReserved</declname>
+        </param>
+        <briefdescription>
+<para>Sets the HTTP authentication schema. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">AuthSchema</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Supported authentication methods </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pReserved</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reserved parameter</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga35bf3bc5117fa6eff1043146c2608929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSetCredentials</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pUserName, CHAR *pPassword)</argsstring>
+        <name>HTTPClientSetCredentials</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pUserName</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pPassword</declname>
+        </param>
+        <briefdescription>
+<para>Sets credentials for the target host. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pUserName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pPassword</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga15880b2d84f77155be14b1d0fbe8e937" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSetProxy</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pProxyName, UINT16 nPort, CHAR *pUserName, CHAR *pPassword)</argsstring>
+        <name>HTTPClientSetProxy</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pProxyName</declname>
+        </param>
+        <param>
+          <type>UINT16</type>
+          <declname>nPort</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pUserName</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pPassword</declname>
+        </param>
+        <briefdescription>
+<para>Sets all the proxy related parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pProxyName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The host name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The proxy port number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pUserName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User name for proxy authentication (can be null) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pPassword</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User password for proxy authentication (can be null)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="309" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gad8308ea8dcf181c72775d00112f0183c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSetVerb</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, HTTP_VERB HttpVerb)</argsstring>
+        <name>HTTPClientSetVerb</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__http__client_8h_1a9115e80a961baddfd0ff9ffdf47c273d" kindref="member">HTTP_VERB</ref></type>
+          <declname>HttpVerb</declname>
+        </param>
+        <briefdescription>
+<para>Sets the HTTP verb for the outgoing request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">HttpVerb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP supported verbs</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="321" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga0eb1fe3f76106de5e22e4a2682e2d758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientAddRequestHeaders</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pHeaderName, CHAR *pHeaderData, BOOL nInsert)</argsstring>
+        <name>HTTPClientAddRequestHeaders</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pHeaderName</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pHeaderData</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>nInsert</declname>
+        </param>
+        <briefdescription>
+<para>Add headers to the outgoing request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pHeaderName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Headers name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pHeaderData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The headers data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nInsert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reserved could be any</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga6357d1572d460c97d78812c3d7907812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientSendRequest</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pUrl, VOID *pData, UINT32 nDataLength, BOOL TotalLength, UINT32 nTimeout, UINT32 nClientPort)</argsstring>
+        <name>HTTPClientSendRequest</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pUrl</declname>
+        </param>
+        <param>
+          <type>VOID *</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nDataLength</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>TotalLength</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nTimeout</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nClientPort</declname>
+        </param>
+        <briefdescription>
+<para>This function builds the request headers, performs a DNS resolution, opens the connection (if it was not opened yet by a previous request or if it has closed) and sends the request headers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The requested URL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to post to the server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nDataLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of posted data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">TotalLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valid only when http method is post TRUE: Post data to http server. FALSE: In a post request without knowing the total length in advance so return error or use chunking. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation timeout </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nClientPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Client side port 0 for none</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga624f1870cc147bf6ad5c482da9b7decb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientWriteData</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, VOID *pBuffer, UINT32 nBufferLength, UINT32 nTimeout)</argsstring>
+        <name>HTTPClientWriteData</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>VOID *</type>
+          <declname>pBuffer</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nBufferLength</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nTimeout</declname>
+        </param>
+        <briefdescription>
+<para>Write data to the remote server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to write to the server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nBufferLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of wtitten data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout for the operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="371" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga00212d4a63c9cc2cc8f44e1d4d2f7370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientRecvResponse</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, UINT32 nTimeout)</argsstring>
+        <name>HTTPClientRecvResponse</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nTimeout</declname>
+        </param>
+        <briefdescription>
+<para>Receives the response header on the connection and parses it. Performs any required authentication. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout for the operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gad4f9ce9263df70ebcf289024748d1b6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientReadData</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, VOID *pBuffer, UINT32 nBytesToRead, UINT32 nTimeout, UINT32 *nBytesRecived)</argsstring>
+        <name>HTTPClientReadData</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>VOID *</type>
+          <declname>pBuffer</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nBytesToRead</declname>
+        </param>
+        <param>
+          <type>UINT32</type>
+          <declname>nTimeout</declname>
+        </param>
+        <param>
+          <type>UINT32 *</type>
+          <declname>nBytesRecived</declname>
+        </param>
+        <briefdescription>
+<para>Read data from the server. Parse out the chunks data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*pBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a buffer that will be filled with the servers response </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nBytesToRead</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the buffer (numbers of bytes to read) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nTimeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operation timeout in seconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*nBytesRecived</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count of the bytes that were received in this operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="399" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gaaed0d145d2632414beaeb6e372735480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientGetInfo</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, HTTP_CLIENT *HTTPClient)</argsstring>
+        <name>HTTPClientGetInfo</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__http__client_8h_1a2752d98f954792b6135aee4b5fbdea06" kindref="member">HTTP_CLIENT</ref> *</type>
+          <declname>HTTPClient</declname>
+        </param>
+        <briefdescription>
+<para>Fill the users structure with the session information. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*HTTPClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The session information</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="411" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gad7e756b250d7c202a045ac239e85a501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientFindFirstHeader</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pSearchClue, CHAR *pHeaderBuffer, UINT32 *nLength)</argsstring>
+        <name>HTTPClientFindFirstHeader</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pSearchClue</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pHeaderBuffer</declname>
+        </param>
+        <param>
+          <type>UINT32 *</type>
+          <declname>nLength</declname>
+        </param>
+        <briefdescription>
+<para>Initiate the headr searching functions and find the first header. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*pSearchClue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Search clue </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*pHeaderBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a buffer that will be filled with the header name and value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*nLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count of the bytes that were received in this operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="425" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1ga3246ce097dc44ce3bba937130401ed4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientGetNextHeader</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession, CHAR *pHeaderBuffer, UINT32 *nLength)</argsstring>
+        <name>HTTPClientGetNextHeader</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <param>
+          <type>CHAR *</type>
+          <declname>pHeaderBuffer</declname>
+        </param>
+        <param>
+          <type>UINT32 *</type>
+          <declname>nLength</declname>
+        </param>
+        <briefdescription>
+<para>Find the next header. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*pHeaderBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a buffer that will be filled with the header name and value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">*nLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count of the bytes that were received in this operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="438" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_t_t_p_c___a_p_is_1gac1c142c6185597df667ce54164dced03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT32</type>
+        <definition>UINT32 HTTPClientFindCloseHeader</definition>
+        <argsstring>(HTTP_SESSION_HANDLE pSession)</argsstring>
+        <name>HTTPClientFindCloseHeader</name>
+        <param>
+          <type>HTTP_SESSION_HANDLE</type>
+          <declname>pSession</declname>
+        </param>
+        <briefdescription>
+<para>Terminate a headers search session. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pSession</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HTTP Session handle</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>HTTP_CLIENT_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_http_client.h" line="449" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Http client APIs. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>wanghf</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_HTTP_CLIENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_HTTP_CLIENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__config_8h" kindref="compound">wm_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BOOL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>BOOL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>UCHAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>UCHAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CHAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>CHAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>UINT16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>UINT16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>INT16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>INT16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>UINT32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>UINT32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>INT32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>INT32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>UINT64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>UINT64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>INT64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>INT64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ULONG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ULONG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>LONG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LONG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VOID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BOOL;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UCHAR;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>signed<sp/>char<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHAR;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHAR;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT16;<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INT16;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT32;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INT32;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>UINT64;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INT64;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ULONG;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LONG;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>HTTP<sp/>Status,<sp/>API<sp/>Return<sp/>codes<sp/>*/</highlight></codeline>
+<codeline lineno="65" refid="wm__http__client_8h_1a8804f260b000de6a1eb3487269bbfa2f" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="wm__http__client_8h_1a12775c0273f055fabd91e165a75b79a9" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_UNKNOWN_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="wm__http__client_8h_1a94d88476c4753cbf6eb8caa1d0791acc" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_INVALID_HANDLE<sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="wm__http__client_8h_1a18eccfd7b402690a0d5b76885c17e29d" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_NO_MEMORY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="wm__http__client_8h_1adb11d6293ce45bb3fcfb103225b50bb5" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_SOCKET_INVALID<sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="wm__http__client_8h_1ae630ac28680e723ec566c010caa32c09" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_SOCKET_CANT_SET<sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="wm__http__client_8h_1aead4ccda88a7b947f11ea3443a0f6791" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_SOCKET_RESOLVE<sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="wm__http__client_8h_1a8a028a596ba2b624eef45413b554a829" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_SOCKET_CONNECT<sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="wm__http__client_8h_1ae1ea53a39b1d23e7fa847657d1ab6c1f" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_SOCKET_TIME_OUT<sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="wm__http__client_8h_1a061fb46b5914ba3e3241c4fd53d01d64" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_SOCKET_RECV<sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="wm__http__client_8h_1a2db46296c38b56e0f58cf84be0cd8914" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_SOCKET_SEND<sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="wm__http__client_8h_1a224ba23b5e06d115ce93baad11eb30af" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_HEADER_RECV<sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="wm__http__client_8h_1a5fd00ac39e9e12b715a1f05a19061b94" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_HEADER_NOT_FOUND<sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="wm__http__client_8h_1a69d13458451addcf5f8b0e863384a4e4" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_HEADER_BIG_CLUE<sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="wm__http__client_8h_1a520e28281bd2f94d0229ce6a72443138" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_HEADER_NO_LENGTH<sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="wm__http__client_8h_1a33ecd1b7d78b0368a47ffe3e240af34a" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_CHUNK_TOO_BIG<sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="wm__http__client_8h_1accc070732484c5ef881f6fb6948de178" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_AUTH_HOST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="wm__http__client_8h_1addf94f5e71a41c6fe602a2f83beed23f" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_AUTH_PROXY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="wm__http__client_8h_1ab2f013291b78e05c8172b178689fe3b9" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_BAD_VERB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="wm__http__client_8h_1a6a5de1495b01bf6a6517d7efc96a5cf0" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_LONG_INPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="wm__http__client_8h_1a47c46142bc8bb898d16ee7e7df6bc660" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_BAD_STATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="wm__http__client_8h_1a69ce7f1a427ce477a049efb26830da87" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_CHUNK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="wm__http__client_8h_1a805d54debf1e71f5b9c9aade9f7b589b" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_BAD_URL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="wm__http__client_8h_1ad9df9140e8ba5ae896d4f1e2ab7aa010" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_BAD_HEADER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="wm__http__client_8h_1ac034eacbd4c6120da18cfd9adff4b4e8" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_BUFFER_RSIZE<sp/><sp/><sp/><sp/><sp/><sp/>24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="wm__http__client_8h_1a9225a6e1b8e54de7caf6cb5385f9fff3" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_BAD_AUTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="wm__http__client_8h_1aae9a58a10e287f3efa37e503d5291f9a" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_AUTH_MISMATCH<sp/><sp/><sp/><sp/><sp/>26</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="wm__http__client_8h_1a59496f02f68639d640004eee4b22ff3d" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_NO_DIGEST_TOKEN<sp/><sp/><sp/>27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="wm__http__client_8h_1aa08c9b6f53cd1bff9ea70c20c0212e17" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_NO_DIGEST_ALG<sp/><sp/><sp/><sp/><sp/>28</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="wm__http__client_8h_1aff609db859127b3a71d07ff3bcfa37e2" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_SOCKET_BIND<sp/><sp/><sp/><sp/><sp/><sp/><sp/>29</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="wm__http__client_8h_1aff79b01a63faf6916d4987fa9929a7a9" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_TLS_NEGO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="wm__http__client_8h_1ac649e6be45318328a6abef6dabf85378" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_ERROR_NOT_IMPLEMENTED<sp/><sp/><sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="wm__http__client_8h_1a6841379bbc5dd91885c84cf6e4163334" refkind="member"><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_EOS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//<sp/>HTTP<sp/>Session<sp/>flags<sp/>(Public<sp/>flags)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_FLAG_KEEP_ALIVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000001<sp/>//<sp/>Set<sp/>the<sp/>keep<sp/>alive<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_FLAG_SEND_CHUNKED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002<sp/>//<sp/>The<sp/>outgoing<sp/>should<sp/>chunked</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_FLAG_NO_CACHE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004<sp/>//<sp/>Set<sp/>the<sp/>no<sp/>cache<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_FLAG_ASYNC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000008<sp/>//<sp/>Currently<sp/>not<sp/>implemented<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HTTP_CLIENT_FLAG_MULTIPART_FORM<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000010<sp/>//<sp/>The<sp/>outgoing<sp/>should<sp/>multipart/form-data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//<sp/>HTTP<sp/>Type<sp/>Definitions<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HTTP_SESSION_HANDLE;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HTTP_CLIENT_SESSION_FLAGS;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="143"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="144"><highlight class="comment">*<sp/><sp/>Section<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>HTTP<sp/>API<sp/>structures</highlight></codeline>
+<codeline lineno="145"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="146"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>HTTP<sp/>Type<sp/>Definitions<sp/>*/</highlight></codeline>
+<codeline lineno="150" refid="wm__http__client_8h_1aae7692887854fdaeb8c062181183b528" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>u32<sp/><ref refid="wm__http__client_8h_1aae7692887854fdaeb8c062181183b528" kindref="member">tls_http_session_handle_t</ref>;</highlight></codeline>
+<codeline lineno="152" refid="wm__http__client_8h_1a4d3a9f7cd4d167e6a4d70a1459277c90" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>u32<sp/><ref refid="wm__http__client_8h_1a4d3a9f7cd4d167e6a4d70a1459277c90" kindref="member">tls_http_session_flags_t</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="wm__http__client_8h_1a91dcf453b00607b13fb25aa4fb9996d8" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__http__client_8h_1a91dcf453b00607b13fb25aa4fb9996d8" kindref="member">_HTTP_AUTH_SCHEMA</ref></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>AuthSchemaNone<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>AuthSchemaBasic,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>AuthSchemaDigest,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>AuthSchemaKerberos,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>AuthNotSupported</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}<sp/><ref refid="wm__http__client_8h_1a18affbb260729e84c6990396fa23c69e" kindref="member">HTTP_AUTH_SCHEMA</ref>;</highlight></codeline>
+<codeline lineno="165" refid="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__http__client_8h_1a7cc287df0e13e0a635141ea84c95bd89" kindref="member">_HTTP_VERB</ref></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>VerbGet<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>VerbHead,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>VerbPost,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>VerbPut,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>VerbFwup,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>VerbNotSupported</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>others<sp/>verb<sp/>such<sp/>as<sp/>connect<sp/>and<sp/>put<sp/>are<sp/>currently<sp/>not<sp/>supported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}<sp/><ref refid="wm__http__client_8h_1a9115e80a961baddfd0ff9ffdf47c273d" kindref="member">HTTP_VERB</ref>;</highlight></codeline>
+<codeline lineno="178" refid="struct___h_t_t_p___c_l_i_e_n_t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___h_t_t_p___c_l_i_e_n_t" kindref="compound">_HTTP_CLIENT</ref></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HTTPStatusCode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>HTTP<sp/>Status<sp/>code<sp/>(200<sp/>OK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RequestBodyLengthSent;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Total<sp/>bytes<sp/>sent<sp/>(body<sp/>only)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBodyLengthReceived;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Total<sp/>bytes<sp/>received<sp/>(body<sp/>only)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TotalResponseBodyLength;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>extracted<sp/>from<sp/>the<sp/>?content-length&quot;<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HttpState;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}<sp/><ref refid="wm__http__client_8h_1a2752d98f954792b6135aee4b5fbdea06" kindref="member">HTTP_CLIENT</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="struct___h_t_t_p_parameters" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___h_t_t_p_parameters" kindref="compound">_HTTPParameters</ref></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>CHAR*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Uri;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>CHAR*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProxyHost;<sp/><sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UseProxy<sp/>;<sp/><sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ProxyPort;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Verbose;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>CHAR*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserName;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>CHAR*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Password;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__http__client_8h_1a18affbb260729e84c6990396fa23c69e" kindref="member">HTTP_AUTH_SCHEMA</ref><sp/><sp/><sp/><sp/><sp/><sp/>AuthType;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}<sp/><ref refid="wm__http__client_8h_1a0fbba624a408447b2b76446641aad703" kindref="member">HTTPParameters</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TLS_CONFIG_HTTP_CLIENT_TASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/><sp/>(*http_client_recv_callback_fn)(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>CHAR<sp/>*<sp/>data,<sp/>UINT32<sp/>totallen,<sp/>UINT32<sp/>datalen);</highlight></codeline>
+<codeline lineno="205"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/><sp/>(*http_client_err_callback_fn)(HTTP_SESSION_HANDLE<sp/>pSession,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_http_client_msg</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>HTTP_SESSION_HANDLE<sp/>pSession;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___h_t_t_p_parameters" kindref="compound">HTTPParameters</ref><sp/>param;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__http__client_8h_1a9115e80a961baddfd0ff9ffdf47c273d" kindref="member">HTTP_VERB</ref><sp/>method;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>CHAR*<sp/>sendData;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/>dataLen;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>http_client_recv_callback_fn<sp/>recv_fn;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>http_client_err_callback_fn<sp/>err_fn;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}<sp/>http_client_msg;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="242"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="243"><highlight class="comment">*<sp/><sp/>Section<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>HTTP<sp/>API<sp/>public<sp/>interface</highlight></codeline>
+<codeline lineno="244"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="245"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal">HTTP_SESSION_HANDLE<sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1ga31533824fbe5aedc9c1557c2e665868e" kindref="member">HTTPClientOpenRequest</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_CLIENT_SESSION_FLAGS<sp/>Flags);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1gaabcb6773e0e84a721c48e354cda84a6c" kindref="member">HTTPClientCloseRequest</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>*pSession);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1gaff6b211e89218c78e12d521f5ed6d9cc" kindref="member">HTTPClientSetAuth</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/><ref refid="wm__http__client_8h_1a18affbb260729e84c6990396fa23c69e" kindref="member">HTTP_AUTH_SCHEMA</ref><sp/>AuthSchema,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pReserved);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1ga35bf3bc5117fa6eff1043146c2608929" kindref="member">HTTPClientSetCredentials</ref><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>CHAR<sp/>*pUserName,<sp/>CHAR<sp/>*pPassword);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1ga15880b2d84f77155be14b1d0fbe8e937" kindref="member">HTTPClientSetProxy</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>CHAR<sp/>*pProxyName,<sp/>UINT16<sp/>nPort,<sp/>CHAR<sp/>*pUserName,<sp/>CHAR<sp/>*pPassword);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1gad8308ea8dcf181c72775d00112f0183c" kindref="member">HTTPClientSetVerb</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/><ref refid="wm__http__client_8h_1a9115e80a961baddfd0ff9ffdf47c273d" kindref="member">HTTP_VERB</ref><sp/>HttpVerb);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1ga0eb1fe3f76106de5e22e4a2682e2d758" kindref="member">HTTPClientAddRequestHeaders</ref><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>CHAR<sp/>*pHeaderName,<sp/>CHAR<sp/>*pHeaderData,<sp/>BOOL<sp/>nInsert);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1ga6357d1572d460c97d78812c3d7907812" kindref="member">HTTPClientSendRequest</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>CHAR<sp/>*pUrl,<sp/>VOID<sp/>*pData,<sp/>UINT32<sp/>nDataLength,<sp/>BOOL<sp/>TotalLength,<sp/>UINT32<sp/>nTimeout,UINT32<sp/>nClientPort);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1ga624f1870cc147bf6ad5c482da9b7decb" kindref="member">HTTPClientWriteData</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>VOID<sp/>*pBuffer,<sp/>UINT32<sp/>nBufferLength,<sp/>UINT32<sp/>nTimeout);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1ga00212d4a63c9cc2cc8f44e1d4d2f7370" kindref="member">HTTPClientRecvResponse</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>UINT32<sp/>nTimeout);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1gad4f9ce9263df70ebcf289024748d1b6e" kindref="member">HTTPClientReadData</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>VOID<sp/>*pBuffer,<sp/>UINT32<sp/>nBytesToRead,<sp/>UINT32<sp/>nTimeout,<sp/>UINT32<sp/>*nBytesRecived);</highlight></codeline>
+<codeline lineno="411"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1gaaed0d145d2632414beaeb6e372735480" kindref="member">HTTPClientGetInfo</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/><ref refid="struct___h_t_t_p___c_l_i_e_n_t" kindref="compound">HTTP_CLIENT</ref><sp/>*HTTPClient);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1gad7e756b250d7c202a045ac239e85a501" kindref="member">HTTPClientFindFirstHeader</ref><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>CHAR<sp/>*pSearchClue,CHAR<sp/>*pHeaderBuffer,<sp/>UINT32<sp/>*nLength);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1ga3246ce097dc44ce3bba937130401ed4e" kindref="member">HTTPClientGetNextHeader</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession,<sp/>CHAR<sp/>*pHeaderBuffer,<sp/>UINT32<sp/>*nLength);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal">UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___h_t_t_p_c___a_p_is_1gac1c142c6185597df667ce54164dced03" kindref="member">HTTPClientFindCloseHeader</ref><sp/><sp/><sp/><sp/><sp/>(HTTP_SESSION_HANDLE<sp/>pSession);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TLS_CONFIG_HTTP_CLIENT_TASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>http_client_task_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>http_client_post(http_client_msg<sp/>*<sp/>msg);</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TLS_CONFIG_HTTP_CLIENT_TASK<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_HTTP_CLIENT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/App/wm_http_client.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2019 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___i_e_e_e80211___a_p_is" kind="group">
+    <compoundname>IEEE80211_APIs</compoundname>
+    <title>IEEE80211 APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gaf07815e889a15749f7ee4e5e02ec36b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_has_tods</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_has_tods</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FCTL_TODS is set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no tods </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has tods</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="276" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga4ccea16f85835ffa743570cf55f4ed20" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_has_fromds</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_has_fromds</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FCTL_FROMDS is set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no fromds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has fromds</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="291" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="291" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga1ef5db47b23a17b45be398d4a43c1e5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_has_a4</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_has_a4</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FCTL_TODS and IEEE80211_FCTL_FROMDS are set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no a4 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has a4</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="306" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="306" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga0bc0556dd5342d10347cf72e870ed58b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_has_morefrags</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_has_morefrags</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FCTL_MOREFRAGS is set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no morefrags </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has morefrags</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="322" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="322" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga503eea63896b3c1e4700e4257489e45d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_has_retry</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_has_retry</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FCTL_RETRY is set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no retry </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has retry</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="337" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="337" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga9946c52e8ffb1595828936ac600b4671" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_has_pm</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_has_pm</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FCTL_PM is set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no pm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has pm</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="352" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="352" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga2a3725c98415154569bfe1d13102fa70" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_has_moredata</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_has_moredata</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FCTL_MOREDATA is set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no moredata </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has moredata</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="367" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="367" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga6e803fd3afc44c3b628a01285291abcd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_has_protected</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_has_protected</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FCTL_PROTECTED is set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no protected </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has protected</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="382" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="382" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3c4d8118db01060d37977291456fe41a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_has_order</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_has_order</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FCTL_ORDER is set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no order </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>has order</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="397" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="397" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3242e7a0af28d7b9546d4bffa1e09f15" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_mgmt</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_mgmt</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if type is IEEE80211_FTYPE_MGMT </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is mgmt </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is mgmt</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="412" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="412" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gaf95e715523754214af837e080093b454" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_ctl</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_ctl</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if type is IEEE80211_FTYPE_CTL </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is ctl </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is ctl</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="427" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="427" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga8c3341a99bc865013cc543093319c7c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_data</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_data</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if type is IEEE80211_FTYPE_DATA </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="442" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="442" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gaeeb41a16b2c8b3da3eab6a338a52ae2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_data_qos</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_data_qos</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if type is IEEE80211_FTYPE_DATA and IEEE80211_STYPE_QOS_DATA is set </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is qos data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is qos data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="457" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="457" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga0ce406a50abfc5e8f4ee2e40ebc2c47d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_data_present</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_data_present</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if type is IEEE80211_FTYPE_DATA and has data </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is present data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is present data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="477" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="477" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga18fda3400c6ddab70e57eab814d2f25d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_assoc_req</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_assoc_req</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_ASSOC_REQ </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is assoc req </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is assoc req</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="497" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="497" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gad2c6ed3c6d68957615980311d8fee5f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_assoc_resp</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_assoc_resp</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_ASSOC_RESP </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is assoc resp </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is assoc resp</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="513" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="513" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gaa0369cf8a5a91c272769ae33187a05a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_reassoc_req</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_reassoc_req</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_REASSOC_REQ </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is reassoc req </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is reassoc req</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="529" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="529" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga5b25cea19895ff393fa0991efe24394c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_reassoc_resp</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_reassoc_resp</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_REASSOC_RESP </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is reassoc resp </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is reassoc resp</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="545" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="545" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3d5a328d93f1a04e1d7ffa44a9b9b0a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_probe_req</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_probe_req</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_PROBE_REQ </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is probe req </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is probe req</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="561" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="561" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga071391970d2f0107ccf3c13681f410da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_probe_resp</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_probe_resp</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_PROBE_RESP </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is probe resp </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is probe resp</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="577" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="577" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga5b02c8e88dd472c09d3a47cee961556a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_beacon</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_beacon</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_BEACON </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is beacon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is beacon</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="593" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="593" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gaef074313f2c878f1e8fae8aa206b9b83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_atim</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_atim</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_ATIM </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is atim </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is atim</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="609" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="609" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gae67748eed65d02c249e004fe0c29f081" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_disassoc</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_disassoc</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_DISASSOC </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is disassoc </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is disassoc</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="625" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="625" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gad8e45fa5e8a95c28987857ebdafa6a32" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_auth</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_auth</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_AUTH </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is auth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is auth</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="641" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="641" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga0ceba189598818c7522f54d1a8935a8d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_deauth</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_deauth</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_DEAUTH </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is deauth </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is deauth</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="657" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="657" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gae9635ef101364abf04caf21a11dac20a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_action</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_action</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_MGMT &amp;&amp; IEEE80211_STYPE_ACTION </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is action </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is action</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="673" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="673" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga7435ba2499564ed5a8881c98a16713ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_back_req</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_back_req</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_CTL &amp;&amp; IEEE80211_STYPE_BACK_REQ </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is back req </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is back req</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="689" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="689" bodyend="693"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3efbf59fec64c2c28084a74cfd6e003c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_back</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_back</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_CTL &amp;&amp; IEEE80211_STYPE_BACK </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is back </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is back</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="705" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="705" bodyend="709"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga08c29e058bbb7fa821ffed01ce039804" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_pspoll</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_pspoll</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_CTL &amp;&amp; IEEE80211_STYPE_PSPOLL </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is pspoll </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is pspoll</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="721" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="721" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga528a9f1c09ded8d08992864e2767bd4d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_rts</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_rts</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_CTL &amp;&amp; IEEE80211_STYPE_RTS </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is rts </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is rts</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="737" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="737" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gae7147964ecfcce2c05bd6d21b6df66c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_cts</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_cts</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_CTL &amp;&amp; IEEE80211_STYPE_CTS </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is cts </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is cts</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="753" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="753" bodyend="757"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gab8c621e86103d61b09d32fe29c806051" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_ack</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_ack</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_CTL &amp;&amp; IEEE80211_STYPE_ACK </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is ack </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is ack</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="769" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="769" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga623af8d567f71235fcbcafbc6ca60943" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_cfend</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_cfend</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_CTL &amp;&amp; IEEE80211_STYPE_CFEND </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is cfend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is cfend</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="785" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="785" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga7eaaddcef0bd50636769a98a5d2e0fa7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_cfendack</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_cfendack</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if IEEE80211_FTYPE_CTL &amp;&amp; IEEE80211_STYPE_CFENDACK </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is cfendack </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is cfendack</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="801" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="801" bodyend="805"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga08d00d4194ef78b5832293be1779e962" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_nullfunc</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_nullfunc</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if frame is a regular (non-QoS) nullfunc frame </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is nullfunc </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is nullfunc</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="817" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="817" bodyend="821"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gada680e2ae96bfd12f6d5b4452349a29d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_is_qos_nullfunc</definition>
+        <argsstring>(u16 fc)</argsstring>
+        <name>ieee80211_is_qos_nullfunc</name>
+        <param>
+          <type>u16</type>
+          <declname>fc</declname>
+        </param>
+        <briefdescription>
+<para>check if frame is a QoS nullfunc frame </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame control bytes in little-endian byteorder</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not is qos nullfunc </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is qos nullfunc</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="833" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="833" bodyend="837"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3b74180128bb1d38358bc8fdfa6d1e07" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline u8 *</type>
+        <definition>static __inline u8* ieee80211_get_qos_ctl</definition>
+        <argsstring>(struct ieee80211_hdr *hdr)</argsstring>
+        <name>ieee80211_get_qos_ctl</name>
+        <param>
+          <type>struct <ref refid="structieee80211__hdr" kindref="compound">ieee80211_hdr</ref> *</type>
+          <declname>hdr</declname>
+        </param>
+        <briefdescription>
+<para>get pointer to qos control bytes </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to qos control bytes</para></simplesect>
+<simplesect kind="note"><para>The qos ctrl bytes come after the frame_control, duration, seq_num and 3 or 4 addresses of length ETH_ALEN. 3 addr: 2 + 2 + 2 + 3*6 = 24 4 addr: 2 + 2 + 2 + 4*6 = 30 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1722" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1722" bodyend="1728"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga535b255dacd941ef6f0e050a9e9c9133" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline u8 *</type>
+        <definition>static __inline u8* ieee80211_get_SA</definition>
+        <argsstring>(struct ieee80211_hdr *hdr)</argsstring>
+        <name>ieee80211_get_SA</name>
+        <param>
+          <type>struct <ref refid="structieee80211__hdr" kindref="compound">ieee80211_hdr</ref> *</type>
+          <declname>hdr</declname>
+        </param>
+        <briefdescription>
+<para>get pointer to SA </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SA address</para></simplesect>
+<simplesect kind="note"><para>Given an 802.11 frame, this function returns the offset to the source address (SA). It does not verify that the header is long enough to contain the address, and the header must be long enough to contain the frame control field. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1744" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1744" bodyend="1751"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga899dd3551a175179b93a15fb3dc45c72" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline u8 *</type>
+        <definition>static __inline u8* ieee80211_get_DA</definition>
+        <argsstring>(struct ieee80211_hdr *hdr)</argsstring>
+        <name>ieee80211_get_DA</name>
+        <param>
+          <type>struct <ref refid="structieee80211__hdr" kindref="compound">ieee80211_hdr</ref> *</type>
+          <declname>hdr</declname>
+        </param>
+        <briefdescription>
+<para>get pointer to DA </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>DA address</para></simplesect>
+<simplesect kind="note"><para>Given an 802.11 frame, this function returns the offset to the destination address (DA). It does not verify that the header is long enough to contain the address, and the header must be long enough to contain the frame control field. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1767" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1767" bodyend="1773"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga24ef253bcfd73be0d51d7da6666e5422" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline bool</type>
+        <definition>static __inline bool ieee80211_is_robust_mgmt_frame</definition>
+        <argsstring>(struct ieee80211_hdr *hdr)</argsstring>
+        <name>ieee80211_is_robust_mgmt_frame</name>
+        <param>
+          <type>struct <ref refid="structieee80211__hdr" kindref="compound">ieee80211_hdr</ref> *</type>
+          <declname>hdr</declname>
+        </param>
+        <briefdescription>
+<para>check if frame is a robust management frame </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frame (buffer must include at least the first octet of payload)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TRUE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>yes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FALSE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1785" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1785" bodyend="1810"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga878ebf58062861494302d4e6375aaf7a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_fhss_chan_to_freq</definition>
+        <argsstring>(int channel)</argsstring>
+        <name>ieee80211_fhss_chan_to_freq</name>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>get channel frequency </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the FHSS channel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Convert IEEE802.11 FHSS channel to frequency (MHz) Ref IEEE 802.11-2007 section 14.6 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1824" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1824" bodyend="1830"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga699fc19043d4b46126fdfbacb107e5ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_freq_to_fhss_chan</definition>
+        <argsstring>(int freq)</argsstring>
+        <name>ieee80211_freq_to_fhss_chan</name>
+        <param>
+          <type>int</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>get channel </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the channels frequency</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Convert frequency (MHz) to IEEE802.11 FHSS channel Ref IEEE 802.11-2007 section 14.6 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1844" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1844" bodyend="1850"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga25ab45be792ea6f4de77d99c46bc4e34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_dsss_chan_to_freq</definition>
+        <argsstring>(int channel)</argsstring>
+        <name>ieee80211_dsss_chan_to_freq</name>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>get channel center frequency </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the DSSS channel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Convert IEEE802.11 DSSS channel to the center frequency (MHz). Ref IEEE 802.11-2007 section 15.6 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1864" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1864" bodyend="1872"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga7b138dd01777d4dbbf335bccb0ac9ccf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_freq_to_dsss_chan</definition>
+        <argsstring>(int freq)</argsstring>
+        <name>ieee80211_freq_to_dsss_chan</name>
+        <param>
+          <type>int</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>get channel </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frequency</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Convert frequency (MHz) to IEEE802.11 DSSS channel Ref IEEE 802.11-2007 section 15.6 This routine selects the channel with the closest center frequency. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1887" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1887" bodyend="1895"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga0e9f9f953ba72a06fd887e63d6160460" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_ofdm_chan_to_freq</definition>
+        <argsstring>(int s_freq, int channel)</argsstring>
+        <name>ieee80211_ofdm_chan_to_freq</name>
+        <param>
+          <type>int</type>
+          <declname>s_freq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>get channel center frequency </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>starting frequency == (dotChannelStartingFactor/2) MHz </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the OFDM channel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Convert IEEE802.11 OFDM channel to center frequency (MHz) Ref IEEE 802.11-2007 section 17.3.8.3.2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1922" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1922" bodyend="1928"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga4cdfc8d5890783045ff0c081d9f6e4b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int ieee80211_freq_to_ofdm_chan</definition>
+        <argsstring>(int s_freq, int freq)</argsstring>
+        <name>ieee80211_freq_to_ofdm_chan</name>
+        <param>
+          <type>int</type>
+          <declname>s_freq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>get channel </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s_freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>starting frequency == (dotChannelStartingFactor/2) MHz </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frequency</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Convert frequency (MHz) to IEEE802.11 OFDM channel Ref IEEE 802.11-2007 section 17.3.8.3.2 This routine selects the channel with the closest center frequency. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1944" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1944" bodyend="1950"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gac9a69984e13c46c28056f17a199e9019" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline unsigned long</type>
+        <definition>static __inline unsigned long ieee80211_tu_to_usec</definition>
+        <argsstring>(unsigned long tu)</argsstring>
+        <name>ieee80211_tu_to_usec</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tu</declname>
+        </param>
+        <briefdescription>
+<para>convert time units (TU) to microseconds </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the TUs</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>microseconds value</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1961" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1961" bodyend="1964"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga5f7e12080850708a1c227a543619511f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline bool</type>
+        <definition>static __inline bool ieee80211_check_tim</definition>
+        <argsstring>(struct ieee80211_tim_ie *tim, u8 tim_len, u16 aid)</argsstring>
+        <name>ieee80211_check_tim</name>
+        <param>
+          <type>struct <ref refid="structieee80211__tim__ie" kindref="compound">ieee80211_tim_ie</ref> *</type>
+          <declname>tim</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>tim_len</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>aid</declname>
+        </param>
+        <briefdescription>
+<para>check if AID bit is set in TIM </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*tim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the TIM IE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tim_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the TIM IE </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">aid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the AID to look for</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AID bit not is set in TIM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AID bit is set im TIM</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1978" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1978" bodyend="2000"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i_e_e_e80211___a_p_is_1ga148293d588a3d8cb7e9db69467e41c7a" prot="public" static="no">
+        <name>ieee80211_hr_chan_to_freq</name>
+        <param><defname>chan</defname></param>
+        <initializer>ieee80211_dsss_chan_to_freq(chan)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert IEEE802.11 HR DSSS channel to frequency (MHz). Ref IEEE 802.11-2007 section 18.4.6.2. The channels and frequencies are the same as those defined for DSSS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1899" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1899" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_e_e_e80211___a_p_is_1gadc9416b12a6ff8f083fbe292d2e6773e" prot="public" static="no">
+        <name>ieee80211_freq_to_hr_chan</name>
+        <param><defname>freq</defname></param>
+        <initializer>ieee80211_freq_to_dsss_chan(freq)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert IEEE802.11 frequency (MHz) to HR DSSS channel. Ref IEEE 802.11-2007 section 18.4.6.2. The channels and frequencies are the same as those defined for DSSS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1902" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1902" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_e_e_e80211___a_p_is_1gaf260e43bf20825302a272e1501567470" prot="public" static="no">
+        <name>ieee80211_erp_chan_to_freq</name>
+        <param><defname>chan</defname></param>
+        <initializer><ref refid="group___i_e_e_e80211___a_p_is_1ga148293d588a3d8cb7e9db69467e41c7a" kindref="member">ieee80211_hr_chan_to_freq</ref>(chan)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert IEEE802.11 ERP channel to frequency (MHz). Ref IEEE 802.11-2007 section 19.4.2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1905" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1905" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i_e_e_e80211___a_p_is_1ga749d05722c7abf7e630e7d3252e50155" prot="public" static="no">
+        <name>ieee80211_freq_to_erp_chan</name>
+        <param><defname>freq</defname></param>
+        <initializer><ref refid="group___i_e_e_e80211___a_p_is_1gadc9416b12a6ff8f083fbe292d2e6773e" kindref="member">ieee80211_freq_to_hr_chan</ref>(freq)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert IEEE802.11 frequency (MHz) to ERP channel. Ref IEEE 802.11-2007 section 19.4.2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1907" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1907" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>IEEE80211 APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

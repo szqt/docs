@@ -1,0 +1,1199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__gpio__afsel_8h" kind="file" language="C++">
+    <compoundname>wm_gpio_afsel.h</compoundname>
+    <includes refid="wm__gpio_8h" local="yes">wm_gpio.h</includes>
+    <includes refid="wm__regs_8h" local="yes">wm_regs.h</includes>
+    <includes refid="wm__irq_8h" local="yes">wm_irq.h</includes>
+    <includes refid="wm__osal_8h" local="yes">wm_osal.h</includes>
+    <includes local="yes">tls_common.h</includes>
+    <incdepgraph>
+      <node id="115">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="116">
+        <label>wm_io.h</label>
+        <link refid="wm__io_8h"/>
+      </node>
+      <node id="122">
+        <label>stdlib.h</label>
+      </node>
+      <node id="119">
+        <label>wm_irq.h</label>
+        <link refid="wm__irq_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>tls_common.h</label>
+      </node>
+      <node id="118">
+        <label>core_cm3.h</label>
+      </node>
+      <node id="113">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>wm_gpio.h</label>
+        <link refid="wm__gpio_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="124">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="123">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>stdio.h</label>
+      </node>
+      <node id="117">
+        <label>wm_regs.h</label>
+        <link refid="wm__regs_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a0d4138022e28d013d5304c7d92d516ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_hspi_gpio_config</definition>
+        <argsstring>(uint8_t numsel)</argsstring>
+        <name>wm_hspi_gpio_config</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>numsel</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for highspeed spi </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numsel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config highspeed spi pins multiplex relation,valid para 0,1 0: hspi0 hspi_int PB14 hspi_cs PB15 hspi_ck PB16 hspi_di PB17 hspi_do PB18 1: hspi1 hspi_int PB08 hspi_cs PB09 hspi_ck PB10 hspi_di PB11 hspi_do PB12 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a255e4cd898b3b36370c815c07b681ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_spi_ck_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_spi_ck_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for spi ck </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config spi ck pins name WM_IO_PA_01 <linebreak/>
+ WM_IO_PB_16 WM_IO_PB_27 WM_IO_PA_11 <linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1affede51c02ca8bd06e9497c4f6f1a811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_spi_cs_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_spi_cs_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for spi cs </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config spi cs pins name WM_IO_PA_02 <linebreak/>
+ WM_IO_PB_15 WM_IO_PB_00 WM_IO_PB_07 WM_IO_PA_12</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1adec3ab01b45a36277e907dec079a6514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_spi_di_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_spi_di_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for spi di </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config spi di pins name WM_IO_PA_03 <linebreak/>
+ WM_IO_PB_17 WM_IO_PB_01 WM_IO_PA_05 WM_IO_PA_10</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1ac535885b4412f3110c1573498c4b982f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_spi_do_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_spi_do_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for spi do </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config spi do pins name WM_IO_PB_18 WM_IO_PB_02 WM_IO_PB_04 WM_IO_PA_09 WM_IO_PA_10</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a7e66607e6bc713e1d8ec32eced702fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sdio_config</definition>
+        <argsstring>(uint8_t numsel)</argsstring>
+        <name>wm_sdio_config</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>numsel</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for sdio ck dat0 dat1 dat2 dat3 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numsel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config sdio ck dat0 dat1 dat2 dat3 pins multiplex relation,valid para 0 0: sdio_ck PB08 sdio_dat0 PB09 sdio_dat1 PB10 sdio_dat2 PB11 sdio_dat3 PB12</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a692a2d4203de61b0af80943955e65b7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sdio_cmd_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_sdio_cmd_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for sdio cmd </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config sdio cmd pins name WM_IO_PA_06 <linebreak/>
+ WM_IO_PB_07 WM_IO_PB_13</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1ac4e93c2b6d92366ef57cbfaa04966942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart0_tx_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart0_tx_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart0 tx </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart0 tx pins name WM_IO_PA_04 <linebreak/>
+ WM_IO_PA_08 WM_IO_PB_07 WM_IO_PB_26</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1aae1b62ae7ac462a83f326dfe4d10b736" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart0_rx_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart0_rx_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart0 rx </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart0 rx pins name WM_IO_PA_05 <linebreak/>
+ WM_IO_PA_09 WM_IO_PB_06 WM_IO_PB_25</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1afdeaa715a2609b3c12a4e032de5c86c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart0_rts_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart0_rts_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart0 rts </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart0 rts pins name WM_IO_PA_13 <linebreak/>
+ WM_IO_PB_04 WM_IO_PB_24 <linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1aaa89cfdf874d361a30b82153ce084b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart0_cts_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart0_cts_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart0 cts </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart0 cts pins name WM_IO_PA_14 <linebreak/>
+ WM_IO_PB_05 WM_IO_PB_23 <linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1acc6c4d54288fadaf7b596d9e8ae75719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart1_tx_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart1_tx_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart1 tx </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart1 tx pins name WM_IO_PB_12 <linebreak/>
+ WM_IO_PB_18</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1acf3f083badf5d6f3ea9b95e55d18ec91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart1_rx_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart1_rx_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart1 rx </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart1 rx pins name WM_IO_PB_11 <linebreak/>
+ WM_IO_PB_17</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1ab67ca655885472e2c7f60e62439e5eb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart1_rts_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart1_rts_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart1 rts </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart1 rts pins name WM_IO_PB_10 <linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a12eba5d812ff9caa336ad2248d5bdcbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart1_cts_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart1_cts_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart1 cts </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart1 cts pins name WM_IO_PB_09 <linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a63ed0bacb40f0a31093a2e65ee1a34c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart2_tx_scio_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart2_tx_scio_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart2 tx or 7816-io </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart2 tx or 7816-io pins name WM_IO_PA_01 <linebreak/>
+ WM_IO_PA_11 WM_IO_PB_02 WM_IO_PB_20</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1ae2e1a507e4f40aa73d682a5120a57a01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart2_rx_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart2_rx_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart2 rx </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart2 rx pins name WM_IO_PA_00 <linebreak/>
+ WM_IO_PA_10 WM_IO_PB_03 WM_IO_PB_19 WM_IO_PB_30</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1af5e3fe0a268e7a40fb82a84767d3d55a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart2_rts_scclk_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart2_rts_scclk_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart2 rts or 7816-clk </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart2 rts or 7816-clk pins name WM_IO_PA_02 <linebreak/>
+ WM_IO_PA_12 WM_IO_PB_01 WM_IO_PB_21 WM_IO_PB_06</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a9eafc5cfaf67e3b30b4699b48de75fcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_uart2_cts_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_uart2_cts_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for uart2 cts </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config uart2 cts pins name WM_IO_PA_03 <linebreak/>
+ WM_IO_PB_28 WM_IO_PB_00</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1ab92be766823e3d6a2704c5ab4f29c6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2s_m_ck_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2s_m_ck_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2s master ck </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2s master ck pins name WM_IO_PA_04 <linebreak/>
+ WM_IO_PA_08 WM_IO_PB_08</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="253" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a77b947e547459eb17b04a25c1c334a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2s_m_ws_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2s_m_ws_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2s master ws </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2s master ws pins name WM_IO_PA_13 <linebreak/>
+ WM_IO_PA_09 WM_IO_PB_10</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1ae20ce199279fe7ab088ed729a4d95fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2s_m_do_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2s_m_do_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2s master do </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2s master do pins name WM_IO_PA_03 <linebreak/>
+ WM_IO_PA_07 WM_IO_PB_09</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1aa23a177d6abd0ced60fdb416ebaf0919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2s_s_ck_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2s_s_ck_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2s slave ck </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2s slave ck pins name WM_IO_PA_15 <linebreak/>
+ WM_IO_PA_11 WM_IO_PB_15 WM_IO_PB_04</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a212c91cf650324a9a99aba00a588e49c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2s_s_ws_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2s_s_ws_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2s slave ws </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2s slave ws pins name WM_IO_PA_06 <linebreak/>
+ WM_IO_PA_12 WM_IO_PB_16 WM_IO_PB_05</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="299" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1ae2c1be9a94a1e75055075b462b603168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2s_s_di_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2s_s_di_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2s slave di </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2s slave di pins name WM_IO_PA_14 <linebreak/>
+ WM_IO_PA_10 WM_IO_PB_14 WM_IO_PB_03</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="311" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1aefa9ab09f6a14e2b4d397bf51182a7bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2s_mclk_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2s_mclk_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2s mclk </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2s mclk pins name WM_IO_PA_02 <linebreak/>
+ WM_IO_PB_28 WM_IO_PB_31</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="322" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a6c6f90c7dfa1359f6a892994238b9748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2s_extclk_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2s_extclk_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2s extclk </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2s extclk pins name WM_IO_PA_05</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="331" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1ad351e688debc4cb8f5ac2c91c0bc2895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2c_scl_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2c_scl_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2c scl </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2c scl pins name WM_IO_PA_06 WM_IO_PA_08 WM_IO_PB_13 WM_IO_PB_11 WM_IO_PB_21</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="344" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1aec67d07bfd64f3f3db898b4313a4f822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2c_sda_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_i2c_sda_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for i2c sda </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config i2c sda pins name WM_IO_PA_15 WM_IO_PA_07 WM_IO_PB_14 WM_IO_PB_12 WM_IO_PB_22</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1af15e67a986cb884affb6b8e1f4be7662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_pwm1_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_pwm1_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for pwm1 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config pwm1 pins name WM_IO_PA_00 WM_IO_PB_18 WM_IO_PB_05 WM_IO_PA_05 WM_IO_PB_19 WM_IO_PB_30</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="371" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1afa6771fd2f9ba7808d5c242182424a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_pwm2_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_pwm2_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for pwm1 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config pwm1 pins name WM_IO_PA_01 WM_IO_PB_11 WM_IO_PB_04 WM_IO_PA_07 WM_IO_PB_13 WM_IO_PB_20</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="385" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a53147615cfd214c7e184d7b3d74cf45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_pwm3_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_pwm3_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for pwm3 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config pwm3 pins name WM_IO_PA_02 WM_IO_PB_16 WM_IO_PB_03 WM_IO_PA_08 WM_IO_PB_21</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="398" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a7d6f378fb1df548bc77d8b1dbc5f6521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_pwm4_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_pwm4_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for pwm4 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config pwm4 pins name WM_IO_PA_03 WM_IO_PB_15 WM_IO_PB_02 WM_IO_PA_09 WM_IO_PB_22</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="411" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a716a61a90f60e9fa2c12a415466c2475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_pwm5_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_pwm5_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for pwm5 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config pwm5 pins name WM_IO_PA_04 WM_IO_PB_14 WM_IO_PB_01 WM_IO_PA_10 WM_IO_PB_23</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="424" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a4abf54803270d678445a44cda981a956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_pwmbrk_config</definition>
+        <argsstring>(enum tls_io_name io_name)</argsstring>
+        <name>wm_pwmbrk_config</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>io_name</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for pwm break </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>config pwm break pins name WM_IO_PB_24 WM_IO_PB_29 WM_IO_PB_00 WM_IO_PA_11</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="436" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a9d75478491885baea7b6db6796283813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_swd_config</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>wm_swd_config</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for swd </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>enable or disable chip swd function 1: enable 0: disable</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="446" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a5d45e25ceff838682b8f3ecb5d5ca0bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_adc_config</definition>
+        <argsstring>(u8 Channel)</argsstring>
+        <name>wm_adc_config</name>
+        <param>
+          <type>u8</type>
+          <declname>Channel</declname>
+        </param>
+        <briefdescription>
+<para>config the pins used for adc </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the channel that shall be used 0~07: single-ended input 8~11: differential input</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="456" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio__afsel_8h_1a439b80fae6d9cac2e5f128806f90049b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_gpio_af_disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_gpio_af_disable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>disable all the gpio af </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>This function must call before anyothers for configure gpio Alternate functions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio_afsel.h" line="466" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GPIO Driver Module. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__gpio_8h" kindref="compound">wm_gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__regs_8h" kindref="compound">wm_regs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__irq_8h" kindref="compound">wm_irq.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__osal_8h" kindref="compound">wm_osal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tls_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a0d4138022e28d013d5304c7d92d516ac" kindref="member">wm_hspi_gpio_config</ref>(uint8_t<sp/>numsel);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a255e4cd898b3b36370c815c07b681ef0" kindref="member">wm_spi_ck_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1affede51c02ca8bd06e9497c4f6f1a811" kindref="member">wm_spi_cs_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1adec3ab01b45a36277e907dec079a6514" kindref="member">wm_spi_di_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1ac535885b4412f3110c1573498c4b982f" kindref="member">wm_spi_do_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a7e66607e6bc713e1d8ec32eced702fed" kindref="member">wm_sdio_config</ref>(uint8_t<sp/>numsel);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a692a2d4203de61b0af80943955e65b7c" kindref="member">wm_sdio_cmd_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1ac4e93c2b6d92366ef57cbfaa04966942" kindref="member">wm_uart0_tx_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1aae1b62ae7ac462a83f326dfe4d10b736" kindref="member">wm_uart0_rx_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1afdeaa715a2609b3c12a4e032de5c86c6" kindref="member">wm_uart0_rts_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1aaa89cfdf874d361a30b82153ce084b4f" kindref="member">wm_uart0_cts_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1acc6c4d54288fadaf7b596d9e8ae75719" kindref="member">wm_uart1_tx_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1acf3f083badf5d6f3ea9b95e55d18ec91" kindref="member">wm_uart1_rx_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1ab67ca655885472e2c7f60e62439e5eb1" kindref="member">wm_uart1_rts_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a12eba5d812ff9caa336ad2248d5bdcbd" kindref="member">wm_uart1_cts_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a63ed0bacb40f0a31093a2e65ee1a34c5" kindref="member">wm_uart2_tx_scio_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1ae2e1a507e4f40aa73d682a5120a57a01" kindref="member">wm_uart2_rx_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1af5e3fe0a268e7a40fb82a84767d3d55a" kindref="member">wm_uart2_rts_scclk_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a9eafc5cfaf67e3b30b4699b48de75fcb" kindref="member">wm_uart2_cts_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1ab92be766823e3d6a2704c5ab4f29c6ca" kindref="member">wm_i2s_m_ck_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a77b947e547459eb17b04a25c1c334a09" kindref="member">wm_i2s_m_ws_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1ae20ce199279fe7ab088ed729a4d95fa2" kindref="member">wm_i2s_m_do_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1aa23a177d6abd0ced60fdb416ebaf0919" kindref="member">wm_i2s_s_ck_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a212c91cf650324a9a99aba00a588e49c" kindref="member">wm_i2s_s_ws_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1ae2c1be9a94a1e75055075b462b603168" kindref="member">wm_i2s_s_di_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1aefa9ab09f6a14e2b4d397bf51182a7bf" kindref="member">wm_i2s_mclk_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a6c6f90c7dfa1359f6a892994238b9748" kindref="member">wm_i2s_extclk_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1ad351e688debc4cb8f5ac2c91c0bc2895" kindref="member">wm_i2c_scl_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1aec67d07bfd64f3f3db898b4313a4f822" kindref="member">wm_i2c_sda_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1af15e67a986cb884affb6b8e1f4be7662" kindref="member">wm_pwm1_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1afa6771fd2f9ba7808d5c242182424a90" kindref="member">wm_pwm2_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a53147615cfd214c7e184d7b3d74cf45d" kindref="member">wm_pwm3_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a7d6f378fb1df548bc77d8b1dbc5f6521" kindref="member">wm_pwm4_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a716a61a90f60e9fa2c12a415466c2475" kindref="member">wm_pwm5_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a4abf54803270d678445a44cda981a956" kindref="member">wm_pwmbrk_config</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_name);</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a9d75478491885baea7b6db6796283813" kindref="member">wm_swd_config</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a5d45e25ceff838682b8f3ecb5d5ca0bf" kindref="member">wm_adc_config</ref>(u8<sp/>Channel);</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio__afsel_8h_1a439b80fae6d9cac2e5f128806f90049b" kindref="member">wm_gpio_af_disable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_gpio_afsel.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__wifi__oneshot_8h" kind="file" language="C++">
+    <compoundname>wm_wifi_oneshot.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="wm__type__def_8h" local="no">wm_type_def.h</includes>
+    <includes refid="wm__ieee80211_8h" local="no">wm_ieee80211.h</includes>
+    <includes refid="wm__config_8h" local="yes">wm_config.h</includes>
+    <incdepgraph>
+      <node id="64">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="62">
+        <label>stdlib.h</label>
+      </node>
+      <node id="65">
+        <label>wm_ieee80211.h</label>
+        <link refid="wm__ieee80211_8h"/>
+      </node>
+      <node id="60">
+        <label>Include/App/wm_wifi_oneshot.h</label>
+        <link refid="wm__wifi__oneshot_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="67">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="63">
+        <label>string.h</label>
+      </node>
+      <node id="66">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>stdio.h</label>
+      </node>
+      <node id="69">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1ae7a0158047a8f4fad6b0f509dc224e67" prot="public" static="no">
+        <name>CONFIG_ONESHOT_MAC_FILTER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DEBUG USE MAC FILTER START </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="25" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1a99797e183eeda95cfd584084e34acbb7" prot="public" static="no">
+        <name>CONFIG_CONNECT_RANDOMTIME_AFTER_ONESHOT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>after onshot configuration, add random time to connect Wi-Fi </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="30" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1ad377bfbe6f46425787dab9ccc7f8218a" prot="public" static="no">
+        <name>ONESHOT_ON</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="34" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1a2d89c0976289ba820e746217156d273d" prot="public" static="no">
+        <name>ONESHOT_OFF</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="35" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1a22085d588a2d011800ee25ccf233ca6a" prot="public" static="no">
+        <name>TLS_CONFIG_UDP_ONE_SHOT</name>
+        <initializer>ONESHOT_ON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UDP MULTICAST ONE SHOT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="39" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1ae33cc08087c21958e6916fec5ef89103" prot="public" static="no">
+        <name>TLS_CONFIG_UDP_JD_ONESHOT</name>
+        <initializer>(ONESHOT_OFF&amp;&amp; <ref refid="wm__wifi__oneshot_8h_1a22085d588a2d011800ee25ccf233ca6a" kindref="member">TLS_CONFIG_UDP_ONE_SHOT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>JD ONESHOT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="41" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1ae2b3f362933659c4df74fa839fcb9b0d" prot="public" static="no">
+        <name>TLS_CONFIG_UDP_LSD_ONESHOT</name>
+        <initializer>(ONESHOT_ON&amp;&amp; <ref refid="wm__wifi__oneshot_8h_1a22085d588a2d011800ee25ccf233ca6a" kindref="member">TLS_CONFIG_UDP_ONE_SHOT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WinnerMicro ONSHOT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="43" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1a3b157432fb924cfec4c1330c42bb381d" prot="public" static="no">
+        <name>TLS_CONFIG_AP_MODE_ONESHOT</name>
+        <initializer>(ONESHOT_OFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AP ONESHOT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="46" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1a021d5a05fbfcbf2dc446928ca3f022a4" prot="public" static="no">
+        <name>TLS_CONFIG_AIRKISS_MODE_ONESHOT</name>
+        <initializer>(ONESHOT_ON &amp;&amp; <ref refid="wm__wifi__oneshot_8h_1a22085d588a2d011800ee25ccf233ca6a" kindref="member">TLS_CONFIG_UDP_ONE_SHOT</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AIRKISS ONESHOT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="49" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__wifi__oneshot_8h_1ab5519e53247c5c2cb39a24b5ec392615" prot="public" static="no">
+        <name>AIRKISS_USE_SELF_WRITE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="50" column="9" bodyfile="Include/App/wm_wifi_oneshot.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__wifi__oneshot_8h_1a4c6700d196549da278262c94d00036af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_filter_module_srcmac</definition>
+        <argsstring>(u8 *mac)</argsstring>
+        <name>tls_filter_module_srcmac</name>
+        <param>
+          <type>u8 *</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga8c052cff491faa002106bc9c992aafd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_wifi_dataframe_recv</definition>
+        <argsstring>(struct ieee80211_hdr *hdr, u32 data_len)</argsstring>
+        <name>tls_wifi_dataframe_recv</name>
+        <param>
+          <type>struct <ref refid="structieee80211__hdr" kindref="compound">ieee80211_hdr</ref> *</type>
+          <declname>hdr</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>WiFi data frame receive call back function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point to ieee80211 data header </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data len of ieee80211 data</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mean</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga7fd56a1699beb71845007b343bb83661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void oneshot_airkiss_send_reply</definition>
+        <argsstring>(void)</argsstring>
+        <name>oneshot_airkiss_send_reply</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to reply to app of phone when airk- iss of WeChat configures successfully. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga189e6763a1a848189a6395a4c52fe473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_airkiss_recv</definition>
+        <argsstring>(u8 *data, u16 data_len)</argsstring>
+        <name>tls_airkiss_recv</name>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>data_len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to deal with airkiss&apos;s protocol packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ieee80211 packet </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packet length</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1gad9418d5b0ef894f3cbfcb5ebf202406e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_airkiss_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_airkiss_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to start airkiss. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga18bec4a77e6a69139a82a25d8575c662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_airkiss_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_airkiss_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop airkiss. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1gad0093be0797ef8a428b3ccf6b4fc94f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_oneshot_airkiss_change_channel</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_oneshot_airkiss_change_channel</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to change channel for airkiss. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga36409231df7e83719b20d8c501490738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int wm_oneshot_task_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_oneshot_task_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to init oneshot task. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga27f65431a471b8220be5a9dd296925e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_oneshot_switch_channel_tim_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_oneshot_switch_channel_tim_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop oneshot timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1gab62769507d01baf5126652bc118755ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_oneshot_switch_channel_tim_temp_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_oneshot_switch_channel_tim_temp_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop oneshot temp timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1gac620df8585aa030a001ff42b126801a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_oneshot_is_ssid_bssid_match</definition>
+        <argsstring>(u8 *ssid, u8 ssid_len, u8 *bssid)</argsstring>
+        <name>tls_oneshot_is_ssid_bssid_match</name>
+        <param>
+          <type>u8 *</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>ssid_len</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>bssid</declname>
+        </param>
+        <briefdescription>
+<para>Judge bssid&amp;ssid if match. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ssid to be compared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ssid_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ssid length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bssid to be compared</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>1:bssid&amp;ssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>match 0:bssid&amp;ssid not match</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga2bf80c6873e73539cad5fbdb54f0b96d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_oneshot_find_chlist</definition>
+        <argsstring>(u8 *ssid, u8 ssid_len, u16 *chlist)</argsstring>
+        <name>tls_oneshot_find_chlist</name>
+        <param>
+          <type>u8 *</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>ssid_len</declname>
+        </param>
+        <param>
+          <type>u16 *</type>
+          <declname>chlist</declname>
+        </param>
+        <briefdescription>
+<para>Find channel according to ssid. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ssid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ssid to be compared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ssid_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ssid length </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">chlist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chlist to be add according to ssid info</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___a_p_p___a_p_is_1ga76562ddc3d6c654272aaa3cb9eec5085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_oneshot_netif_status_event</definition>
+        <argsstring>(u8 status)</argsstring>
+        <name>wm_oneshot_netif_status_event</name>
+        <param>
+          <type>u8</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="204" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wi-Fi OneShot. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>winnermicro</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>WM_WIFI_ONESHOT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_WIFI_ONESHOT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(GCC_COMPILE==1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wm_ieee80211_gcc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="wm__ieee80211_8h" kindref="compound">wm_ieee80211.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__config_8h" kindref="compound">wm_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="wm__wifi__oneshot_8h_1ae7a0158047a8f4fad6b0f509dc224e67" refkind="member"><highlight class="preprocessor">#define<sp/>CONFIG_ONESHOT_MAC_FILTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_filter_module_srcmac(u8<sp/>*mac);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="wm__wifi__oneshot_8h_1a99797e183eeda95cfd584084e34acbb7" refkind="member"><highlight class="preprocessor">#define<sp/>CONFIG_CONNECT_RANDOMTIME_AFTER_ONESHOT<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ONESHOT_ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ONESHOT_OFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ONE<sp/>SHOT<sp/>*/</highlight></codeline>
+<codeline lineno="39" refid="wm__wifi__oneshot_8h_1a22085d588a2d011800ee25ccf233ca6a" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_UDP_ONE_SHOT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ONESHOT_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="wm__wifi__oneshot_8h_1ae33cc08087c21958e6916fec5ef89103" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_UDP_JD_ONESHOT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(ONESHOT_OFF&amp;&amp;<sp/>TLS_CONFIG_UDP_ONE_SHOT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="wm__wifi__oneshot_8h_1ae2b3f362933659c4df74fa839fcb9b0d" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_UDP_LSD_ONESHOT<sp/><sp/><sp/><sp/><sp/><sp/>(ONESHOT_ON&amp;&amp;<sp/>TLS_CONFIG_UDP_ONE_SHOT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="wm__wifi__oneshot_8h_1a3b157432fb924cfec4c1330c42bb381d" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_AP_MODE_ONESHOT<sp/><sp/><sp/><sp/><sp/><sp/>(ONESHOT_OFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="wm__wifi__oneshot_8h_1a021d5a05fbfcbf2dc446928ca3f022a4" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_CONFIG_AIRKISS_MODE_ONESHOT<sp/>(ONESHOT_ON<sp/>&amp;&amp;<sp/>TLS_CONFIG_UDP_ONE_SHOT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AIRKISS_USE_SELF_WRITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">u8<sp/><ref refid="group___oneshot___a_p_is_1ga8c052cff491faa002106bc9c992aafd9" kindref="member">tls_wifi_dataframe_recv</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structieee80211__hdr" kindref="compound">ieee80211_hdr</ref><sp/>*hdr,<sp/>u32<sp/>data_len);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TLS_CONFIG_AIRKISS_MODE_ONESHOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1ga7fd56a1699beb71845007b343bb83661" kindref="member">oneshot_airkiss_send_reply</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1ga189e6763a1a848189a6395a4c52fe473" kindref="member">tls_airkiss_recv</ref>(u8<sp/>*data,<sp/>u16<sp/>data_len);</highlight></codeline>
+<codeline lineno="117"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1gad9418d5b0ef894f3cbfcb5ebf202406e" kindref="member">tls_airkiss_start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1ga18bec4a77e6a69139a82a25d8575c662" kindref="member">tls_airkiss_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1gad0093be0797ef8a428b3ccf6b4fc94f0" kindref="member">tls_oneshot_airkiss_change_channel</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*TLS_CONFIG_AIRKISS_MODE_ONESHOT*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1ga36409231df7e83719b20d8c501490738" kindref="member">wm_oneshot_task_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1ga27f65431a471b8220be5a9dd296925e1" kindref="member">tls_oneshot_switch_channel_tim_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1gab62769507d01baf5126652bc118755ed" kindref="member">tls_oneshot_switch_channel_tim_temp_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1gac620df8585aa030a001ff42b126801a7" kindref="member">tls_oneshot_is_ssid_bssid_match</ref>(u8<sp/>*ssid,<sp/>u8<sp/>ssid_len,<sp/>u8<sp/>*bssid);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___oneshot___a_p_is_1ga2bf80c6873e73539cad5fbdb54f0b96d" kindref="member">tls_oneshot_find_chlist</ref>(u8<sp/>*ssid,<sp/>u8<sp/>ssid_len,<sp/>u16<sp/>*chlist);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wm_oneshot_netif_status_event(u8<sp/>status<sp/>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*WM_WIFI_ONESHOT_H*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/App/wm_wifi_oneshot.h"/>
+  </compounddef>
+</doxygen>

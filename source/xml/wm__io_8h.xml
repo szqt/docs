@@ -1,0 +1,1518 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__io_8h" kind="file" language="C++">
+    <compoundname>wm_io.h</compoundname>
+    <includedby refid="wm__7816_8h" local="yes">Include/Driver/wm_7816.h</includedby>
+    <includedby refid="wm__gpio_8h" local="yes">Include/Driver/wm_gpio.h</includedby>
+    <invincdepgraph>
+      <node id="176">
+        <label>Include/Driver/wm_io.h</label>
+        <link refid="wm__io_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+      </node>
+      <node id="178">
+        <label>Include/Driver/wm_gpio.h</label>
+        <link refid="wm__gpio_8h"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>Include/Driver/wm_7816.h</label>
+        <link refid="wm__7816_8h"/>
+      </node>
+      <node id="179">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__io_8h_1ad8eb0937cf4bbebc81b792ba782828f4" prot="public" static="no">
+        <name>TLS_IO_AB_OFFSET</name>
+        <initializer>(0x40011200 - 0x40010C00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="14" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" prot="public" static="no">
+        <name>WM_IO_OPTION1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>option 1 of the io </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="70" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" prot="public" static="no">
+        <name>WM_IO_OPTION2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>option 2 of the io </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="72" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" prot="public" static="no">
+        <name>WM_IO_OPTION3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>option 3 of the io </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="74" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a8f0efef21541e5a73f00adf48b1116c8" prot="public" static="no">
+        <name>WM_IO_OPTION4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>option 4 of the io </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="76" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1af76acca84ccfe0c09e19c6deb0731fa7" prot="public" static="no">
+        <name>WM_IO_OPTION5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>option 5 of the io </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="78" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ae3adbabf5f5295622b4a729dc53b7855" prot="public" static="no">
+        <name>WM_IO_OPTION6</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>option 6 of the io </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="80" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ae6ffe243ddf66c23880d25204cdff213" prot="public" static="no">
+        <name>WM_IO_OPT1_I2C_DAT</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="84" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a010ae72cf2acf4b7088c82037454c071" prot="public" static="no">
+        <name>WM_IO_OPT1_PWM1</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="85" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1aa6f00f55117f3e2de9775eb5b984556e" prot="public" static="no">
+        <name>WM_IO_OPT1_PWM2</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="86" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a49be8695387390952a647df4cf6fb617" prot="public" static="no">
+        <name>WM_IO_OPT1_PWM3</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="87" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ac19a260abbdba525931a61f1ed986197" prot="public" static="no">
+        <name>WM_IO_OPT1_PWM4</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="88" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1abe9e6885ad8d4ce76d211ba8fd236c87" prot="public" static="no">
+        <name>WM_IO_OPT1_PWM5</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="89" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a799f10a7a00a9c7fa2372bb49c16256c" prot="public" static="no">
+        <name>WM_IO_OPT1_UART0_RXD</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="90" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1aced426526993924a20d2973429343a46" prot="public" static="no">
+        <name>WM_IO_OPT1_UART0_TXD</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="91" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ae531c7c37a55b5fa402449d0ca136417" prot="public" static="no">
+        <name>WM_IO_OPT1_PWM_BRAKE</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="92" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a3b28cf20d9e4273f2e649f210e8cc9f4" prot="public" static="no">
+        <name>WM_IO_OPT1_I2S_M_EXTCLK</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="93" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a09bc785ae3b65c5d3f59aeceaa8d474b" prot="public" static="no">
+        <name>WM_IO_OPT1_SPI_M_DO</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="94" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1af1cbd61766eade80476c0475fe11f31a" prot="public" static="no">
+        <name>WM_IO_OPT1_SPI_M_DI</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="95" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a8a98b19cb89310cb230aa4476dfdd901" prot="public" static="no">
+        <name>WM_IO_OPT1_SPI_M_CS</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="96" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ae53d08a34970cc73eef5a7fb188cd400" prot="public" static="no">
+        <name>WM_IO_OPT1_SPI_M_CK</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="97" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a7055502c5a660b3e8a51f9e1fcc4439b" prot="public" static="no">
+        <name>WM_IO_OPT1_I2S_S_RL</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="98" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a78e7851b7da1606dde3447bd20950ba8" prot="public" static="no">
+        <name>WM_IO_OPT1_I2S_S_SCL</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="99" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a392170d15485293d529e9c898de67bdb" prot="public" static="no">
+        <name>WM_IO_OPT1_I2S_S_SDA</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="100" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a5df6ceec1f9e180230a2c4bb0921418d" prot="public" static="no">
+        <name>WM_IO_OPT1_I2S_M_RL</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="101" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ab26c540557476247ae69a4b7e8a732be" prot="public" static="no">
+        <name>WM_IO_OPT1_I2S_M_SCL</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="102" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a140abc1ed5f5873a49795d9e946ae5e0" prot="public" static="no">
+        <name>WM_IO_OPT1_I2S_M_SDA</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="103" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a875b04dfc4a74c6ea4d82eded1839ea9" prot="public" static="no">
+        <name>WM_IO_OPT1_JTAG_RST</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="104" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a8b201aa91549585bd473ec17f35a1cb3" prot="public" static="no">
+        <name>WM_IO_OPT1_JTAG_TDO</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="105" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a986ee977e4af0de85df13c1e378a4e2b" prot="public" static="no">
+        <name>WM_IO_OPT1_JTAG_TDI</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="106" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a1b4c6432bbb2562579270821a5b149a2" prot="public" static="no">
+        <name>WM_IO_OPT1_JTAG_TCK_SWDCK</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="107" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a52e343c64436a9b6e8d9e77b3657a70c" prot="public" static="no">
+        <name>WM_IO_OPT1_JTAG_TMS_SWDAT</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="108" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a5ffdb5b95228d6319b3bc0c17e9f20a2" prot="public" static="no">
+        <name>WM_IO_OPT1_UART1_RXD</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="109" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a1e7018301f525741f4b8f18786dc1a97" prot="public" static="no">
+        <name>WM_IO_OPT1_UART1_TXD</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="110" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1afee3969d0ecd6f28c3fc0336a76d9b42" prot="public" static="no">
+        <name>WM_IO_OPT1_UART1_RTS</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="111" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1af125042aef2cb419ad2c7438c25edb20" prot="public" static="no">
+        <name>WM_IO_OPT1_UART1_CTS</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="112" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a61a47fdf68bd2ed8097f9b0b8a26645f" prot="public" static="no">
+        <name>WM_IO_OPT1_SDIO_DAT</name>
+        <initializer><ref refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" kindref="member">WM_IO_OPTION1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="113" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a7115cf7456928247a1bf193f764dc2db" prot="public" static="no">
+        <name>WM_IO_OPT2_PWM1</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="116" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ad964b53f86737c8aa5360b440bceac53" prot="public" static="no">
+        <name>WM_IO_OPT2_PWM2</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="117" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ad7e8570c73aa52a037a8041690c84f6b" prot="public" static="no">
+        <name>WM_IO_OPT2_PWM3</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="118" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ab33a664242dd7a65fa1103370316e1d6" prot="public" static="no">
+        <name>WM_IO_OPT2_PWM4</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="119" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1aadda3fe14f656c71138422b4b8c0e1ca" prot="public" static="no">
+        <name>WM_IO_OPT2_PWM5</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="120" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a8f58649106d75ee0b66d28a7d2dfb859" prot="public" static="no">
+        <name>WM_IO_OPT2_SPI_M_DO</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="121" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ad33f9d16af90abb4a2c3ac229e1065de" prot="public" static="no">
+        <name>WM_IO_OPT2_SPI_M_DI</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="122" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a6d72f9268758779e5d2692e9bf80fce8" prot="public" static="no">
+        <name>WM_IO_OPT2_SPI_M_CS</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="123" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ad592eb7435236868f0dbe6d85e6e1fb6" prot="public" static="no">
+        <name>WM_IO_OPT2_SPI_M_CK</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="124" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1aaf4f270855e9eea43591b6000a33e9ae" prot="public" static="no">
+        <name>WM_IO_OPT2_I2C_SCL</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="125" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ae2a109f73e28e6c253a9d35e271ee53c" prot="public" static="no">
+        <name>WM_IO_OPT2_I2S_M_EXTCLK</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="126" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a4b48cfc7495451a0f7d7ddcabcc11e15" prot="public" static="no">
+        <name>WM_IO_OPT2_UART1_RXD</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="127" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a663b3123340b90b25478fc550d40ad8c" prot="public" static="no">
+        <name>WM_IO_OPT2_UART1_TXD</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="128" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a02ac07bc7b0ea85c065c4d413a51f77b" prot="public" static="no">
+        <name>WM_IO_OPT2_UART1_RTS</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="129" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a20a1fe2e4e1c405b8aa252e5cd6263cf" prot="public" static="no">
+        <name>WM_IO_OPT2_UART1_CTS</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="130" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a7284f4fe10b3b61117b58004d82895d6" prot="public" static="no">
+        <name>WM_IO_OPT2_I2C_DAT</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="131" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a41dd7a4ee39a4bd5aa4fa7ba89f224a3" prot="public" static="no">
+        <name>WM_IO_OPT2_PWM_BRAKE</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="132" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a36fc80a7d39dd0a3f0acefca863687e4" prot="public" static="no">
+        <name>WM_IO_OPT2_UART0_RTS</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="133" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a03d7d5309b024c9d3b967cc881c7c9ce" prot="public" static="no">
+        <name>WM_IO_OPT2_UART0_CTS</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="134" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ac2b09016b96109676aeac1e7a34b01a9" prot="public" static="no">
+        <name>WM_IO_OPT2_SDIO_DAT</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="135" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1aae76e21f4e9ce40b042999f370789ba1" prot="public" static="no">
+        <name>WM_IO_OPT2_HSPI_CK</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="136" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ab4caac413e10291e6a14159a4649e114" prot="public" static="no">
+        <name>WM_IO_OPT2_HSPI_INT</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="137" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a173635a73df801d83573c5ad3186edc1" prot="public" static="no">
+        <name>WM_IO_OPT2_HSPI_CS</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="138" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a0232d99789e10ebc04b1727ebe7338a6" prot="public" static="no">
+        <name>WM_IO_OPT2_HSPI_DI</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="139" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a64ba689662cf86beddd0501d16749b40" prot="public" static="no">
+        <name>WM_IO_OPT2_HSPI_DO</name>
+        <initializer><ref refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" kindref="member">WM_IO_OPTION2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="140" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a556f5626dbc3e4d5e52ba133c9feb8a6" prot="public" static="no">
+        <name>WM_IO_OPT3_UART0_RXD</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="143" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a409e31ffcd5c621171aca8aca52537e9" prot="public" static="no">
+        <name>WM_IO_OPT3_UART0_TXD</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="144" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a5d52fc0b741e1b550d0e111f472f1dbc" prot="public" static="no">
+        <name>WM_IO_OPT3_UART0_RTS</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="145" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1afddabd648e830d9b51e5cadec0a15431" prot="public" static="no">
+        <name>WM_IO_OPT3_UART0_CTS</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="146" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a423cfcab0fcadcc8fed65e435349ae25" prot="public" static="no">
+        <name>WM_IO_OPT3_SPI_M_DO</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="147" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a860de0a0e8db3b7bc777d70fc30583c9" prot="public" static="no">
+        <name>WM_IO_OPT3_SPI_M_DI</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="148" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a4314c7be09ff39dd12db31185b6393fb" prot="public" static="no">
+        <name>WM_IO_OPT3_SPI_M_CS</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="149" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1aececb83d2f127f31a61022cb9b885cab" prot="public" static="no">
+        <name>WM_IO_OPT3_SDIO_CK</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="150" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a8e7bdc30d1912d263e9ab1a70ab3e22a" prot="public" static="no">
+        <name>WM_IO_OPT3_SDIO_CMD</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="151" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a58850a1810d4605427b0f02562dfa278" prot="public" static="no">
+        <name>WM_IO_OPT3_SDIO_DAT</name>
+        <initializer><ref refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" kindref="member">WM_IO_OPTION3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="152" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a6c49b26d6e18633584826f560d62ea19" prot="public" static="no">
+        <name>WM_IO_OPT4_I2S_M_MCLK</name>
+        <initializer><ref refid="wm__io_8h_1a8f0efef21541e5a73f00adf48b1116c8" kindref="member">WM_IO_OPTION4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="155" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ad86efefd2b3ea05558e77c5a70e35537" prot="public" static="no">
+        <name>WM_IO_OPT4_I2S_M_RL</name>
+        <initializer><ref refid="wm__io_8h_1a8f0efef21541e5a73f00adf48b1116c8" kindref="member">WM_IO_OPTION4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="156" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a7bfa1cefe60a6f7bf21bb4fb8db9332c" prot="public" static="no">
+        <name>WM_IO_OPT4_I2S_M_SCL</name>
+        <initializer><ref refid="wm__io_8h_1a8f0efef21541e5a73f00adf48b1116c8" kindref="member">WM_IO_OPTION4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="157" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a73614d2bb5d0a35171a1e44e38bfc504" prot="public" static="no">
+        <name>WM_IO_OPT4_I2S_M_SDA</name>
+        <initializer><ref refid="wm__io_8h_1a8f0efef21541e5a73f00adf48b1116c8" kindref="member">WM_IO_OPTION4</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="158" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a575e2b4ff8a3965e18f61f4b123400a3" prot="public" static="no">
+        <name>WM_IO_OPT5_GPIO</name>
+        <initializer><ref refid="wm__io_8h_1af76acca84ccfe0c09e19c6deb0731fa7" kindref="member">WM_IO_OPTION5</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="161" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1ab305f687ba4b951ed4be5c5909977c89" prot="public" static="no">
+        <name>WM_IO_OPT6_ADC</name>
+        <initializer><ref refid="wm__io_8h_1ae3adbabf5f5295622b4a729dc53b7855" kindref="member">WM_IO_OPTION6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="164" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a73a5bf2decd4e2d7dbfa9b9fb9d197b0" prot="public" static="no">
+        <name>WM_IO_OPT6_LCD_COM</name>
+        <initializer><ref refid="wm__io_8h_1ae3adbabf5f5295622b4a729dc53b7855" kindref="member">WM_IO_OPTION6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="165" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__io_8h_1a4e0e8fd2bac8ded0210663d3df6eae6a" prot="public" static="no">
+        <name>WM_IO_OPT6_LCD_SEG</name>
+        <initializer><ref refid="wm__io_8h_1ae3adbabf5f5295622b4a729dc53b7855" kindref="member">WM_IO_OPTION6</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="166" column="9" bodyfile="Include/Driver/wm_io.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_io_name</name>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8af18c4c7a1c355c2c141dac5658db485a" prot="public">
+          <name>WM_IO_PA_00</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a26693d42fd2e5c16b9ef4a9b752164f1" prot="public">
+          <name>WM_IO_PA_01</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ae04b7050e27995e4b6ad7ddffe6acdd3" prot="public">
+          <name>WM_IO_PA_02</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a2 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8accd2a2011fbd4046f3ea0930b5e3e6db" prot="public">
+          <name>WM_IO_PA_03</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a3 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4c9c955ef3f59332bf297736e6336eba" prot="public">
+          <name>WM_IO_PA_04</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a4 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2d963948f9f6b228e0e8298f32ac89c8" prot="public">
+          <name>WM_IO_PA_05</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a5 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a191cad8d525ad5596e6a812ab63bfb56" prot="public">
+          <name>WM_IO_PA_06</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a6 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8adfd1a58122e46095898c53286ae5e10e" prot="public">
+          <name>WM_IO_PA_07</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a7 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a374ece0882aac378d5896ee465eafb91" prot="public">
+          <name>WM_IO_PA_08</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a8 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a44cbaab480540eacac5618491822ee53" prot="public">
+          <name>WM_IO_PA_09</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a9 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8aa9c7451f84d57ddd5248f1e8a4d7d030" prot="public">
+          <name>WM_IO_PA_10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a10 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8afa55470fa9d1be7fb25da0ce460d6ff8" prot="public">
+          <name>WM_IO_PA_11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a11 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8abe429609358a5feff864d7d702b791a1" prot="public">
+          <name>WM_IO_PA_12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a12 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a5e120713cbd2879a156cc9a3445ed47b" prot="public">
+          <name>WM_IO_PA_13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a13 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ae17811a746a1d20a9558c801de976ff0" prot="public">
+          <name>WM_IO_PA_14</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a14 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a9dbc99643b5d1ae7c225e053c6adbe0c" prot="public">
+          <name>WM_IO_PA_15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio a15 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a576d0fc70e378c7ebeb8f277a29eae88" prot="public">
+          <name>WM_IO_PB_00</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ab04c56c02c87f2835132ca40d602ece1" prot="public">
+          <name>WM_IO_PB_01</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ac96e20ed91a3e13abac5ce2e2f948588" prot="public">
+          <name>WM_IO_PB_02</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b2 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a7b8ac763ed57a3d100f223d06e434b2c" prot="public">
+          <name>WM_IO_PB_03</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b3 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad39a8e0a3e651c9834235ce73b11fdf1" prot="public">
+          <name>WM_IO_PB_04</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b4 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4a5d397ff634e30c299d14d5bc8c7595" prot="public">
+          <name>WM_IO_PB_05</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b5 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ae952373e095b77dabca99cecd0604c54" prot="public">
+          <name>WM_IO_PB_06</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b6 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a073f20487b41a8c59806387ed32295f3" prot="public">
+          <name>WM_IO_PB_07</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b7 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2e1f6e6f56abdb667047dc0d09e9faa8" prot="public">
+          <name>WM_IO_PB_08</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b8 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad4edc97a38782ee8f7378688a7dcd0cb" prot="public">
+          <name>WM_IO_PB_09</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b9 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ab4c7c7ce24a8029ba0474b9f825c3f1d" prot="public">
+          <name>WM_IO_PB_10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b10 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad5538841a59b6fbbeccccd8ca80c9ec5" prot="public">
+          <name>WM_IO_PB_11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b11 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a1cceb4e01ddb5dbe4d6394966b035bc0" prot="public">
+          <name>WM_IO_PB_12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b12 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a774252c5bb44770ed209db669f87fc29" prot="public">
+          <name>WM_IO_PB_13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b13 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a434877399b16f0d19b1f37cd762ee84a" prot="public">
+          <name>WM_IO_PB_14</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b14 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8acf1c9e182894692d178fcf212042d5d2" prot="public">
+          <name>WM_IO_PB_15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b15 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a36bf16c3ca8929bea8ab7ef142539dd9" prot="public">
+          <name>WM_IO_PB_16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b16 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8abaa8ec6df8169a91705e88f8a27bbbfa" prot="public">
+          <name>WM_IO_PB_17</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b17 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a328c0f3748f556111ec3f282f53a377f" prot="public">
+          <name>WM_IO_PB_18</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b18 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a8b6cc447245abffb5c312f058bfb743c" prot="public">
+          <name>WM_IO_PB_19</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b19 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8afb2f0bb82f3e6b812a0c117ad7b729bd" prot="public">
+          <name>WM_IO_PB_20</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b20 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad3ba150bca4b67d911ec05bdb235b99c" prot="public">
+          <name>WM_IO_PB_21</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b21 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a3afb95129d0f69a1ddbc9481472d7646" prot="public">
+          <name>WM_IO_PB_22</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b22 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4a0c60fd855da65c265d50fc8754fc41" prot="public">
+          <name>WM_IO_PB_23</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b23 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a7bdbf106bc5c9fa5ffb8283a82e1f421" prot="public">
+          <name>WM_IO_PB_24</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b24 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a60610a6e2a8eadf4b7407293b9751c11" prot="public">
+          <name>WM_IO_PB_25</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b25 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8af9b6d9b61e2a8d5d1d68b86b7979630d" prot="public">
+          <name>WM_IO_PB_26</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b26 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a7732d246318338f4eae042a9de39efdc" prot="public">
+          <name>WM_IO_PB_27</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b27 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a9aa9af4bec24a47bee981e0d71db3ce0" prot="public">
+          <name>WM_IO_PB_28</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b28 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2012d1b597ae1dc14cbedc0035bc2eb4" prot="public">
+          <name>WM_IO_PB_29</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b29 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a8cd3e511a3089e93411a89d5f4b2dabb" prot="public">
+          <name>WM_IO_PB_30</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b30 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8aca4ce4205b06278fb306e473a13f9157" prot="public">
+          <name>WM_IO_PB_31</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>gpio b31 </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>io name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="17" column="1" bodyfile="Include/Driver/wm_io.h" bodystart="17" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__io_8h_1a374044511a191a1d7701085c900e7912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_io_cfg_set</definition>
+        <argsstring>(enum tls_io_name name, u8 option)</argsstring>
+        <name>tls_io_cfg_set</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>option</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config io function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>io name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>io function option, value is WM_IO_OPT*_*, also is WM_IO_OPTION1~6</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__io_8h_1a5d77895633e82f114f1ec6debcb88007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_io_cfg_get</definition>
+        <argsstring>(enum tls_io_name name)</argsstring>
+        <name>tls_io_cfg_get</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get io function config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>io name</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_IO_OPTION1~6</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mapping io function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_io.h" line="191" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>IO Driver Module. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>lilm</para></simplesect>
+<simplesect kind="copyright"><para>(c) 2015 Winner Microelectronics Co., Ltd. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_IO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_IO_AB_OFFSET<sp/><sp/>(0x40011200<sp/>-<sp/>0x40010C00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8af18c4c7a1c355c2c141dac5658db485a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8af18c4c7a1c355c2c141dac5658db485a" kindref="member">WM_IO_PA_00</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a26693d42fd2e5c16b9ef4a9b752164f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a26693d42fd2e5c16b9ef4a9b752164f1" kindref="member">WM_IO_PA_01</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ae04b7050e27995e4b6ad7ddffe6acdd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ae04b7050e27995e4b6ad7ddffe6acdd3" kindref="member">WM_IO_PA_02</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8accd2a2011fbd4046f3ea0930b5e3e6db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8accd2a2011fbd4046f3ea0930b5e3e6db" kindref="member">WM_IO_PA_03</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4c9c955ef3f59332bf297736e6336eba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4c9c955ef3f59332bf297736e6336eba" kindref="member">WM_IO_PA_04</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2d963948f9f6b228e0e8298f32ac89c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2d963948f9f6b228e0e8298f32ac89c8" kindref="member">WM_IO_PA_05</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a191cad8d525ad5596e6a812ab63bfb56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a191cad8d525ad5596e6a812ab63bfb56" kindref="member">WM_IO_PA_06</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8adfd1a58122e46095898c53286ae5e10e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8adfd1a58122e46095898c53286ae5e10e" kindref="member">WM_IO_PA_07</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a374ece0882aac378d5896ee465eafb91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a374ece0882aac378d5896ee465eafb91" kindref="member">WM_IO_PA_08</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a44cbaab480540eacac5618491822ee53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a44cbaab480540eacac5618491822ee53" kindref="member">WM_IO_PA_09</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8aa9c7451f84d57ddd5248f1e8a4d7d030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8aa9c7451f84d57ddd5248f1e8a4d7d030" kindref="member">WM_IO_PA_10</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8afa55470fa9d1be7fb25da0ce460d6ff8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8afa55470fa9d1be7fb25da0ce460d6ff8" kindref="member">WM_IO_PA_11</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8abe429609358a5feff864d7d702b791a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8abe429609358a5feff864d7d702b791a1" kindref="member">WM_IO_PA_12</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a5e120713cbd2879a156cc9a3445ed47b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a5e120713cbd2879a156cc9a3445ed47b" kindref="member">WM_IO_PA_13</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ae17811a746a1d20a9558c801de976ff0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ae17811a746a1d20a9558c801de976ff0" kindref="member">WM_IO_PA_14</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a9dbc99643b5d1ae7c225e053c6adbe0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a9dbc99643b5d1ae7c225e053c6adbe0c" kindref="member">WM_IO_PA_15</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a576d0fc70e378c7ebeb8f277a29eae88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a576d0fc70e378c7ebeb8f277a29eae88" kindref="member">WM_IO_PB_00</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ab04c56c02c87f2835132ca40d602ece1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ab04c56c02c87f2835132ca40d602ece1" kindref="member">WM_IO_PB_01</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ac96e20ed91a3e13abac5ce2e2f948588" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ac96e20ed91a3e13abac5ce2e2f948588" kindref="member">WM_IO_PB_02</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a7b8ac763ed57a3d100f223d06e434b2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a7b8ac763ed57a3d100f223d06e434b2c" kindref="member">WM_IO_PB_03</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad39a8e0a3e651c9834235ce73b11fdf1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad39a8e0a3e651c9834235ce73b11fdf1" kindref="member">WM_IO_PB_04</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4a5d397ff634e30c299d14d5bc8c7595" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4a5d397ff634e30c299d14d5bc8c7595" kindref="member">WM_IO_PB_05</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ae952373e095b77dabca99cecd0604c54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ae952373e095b77dabca99cecd0604c54" kindref="member">WM_IO_PB_06</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a073f20487b41a8c59806387ed32295f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a073f20487b41a8c59806387ed32295f3" kindref="member">WM_IO_PB_07</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2e1f6e6f56abdb667047dc0d09e9faa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2e1f6e6f56abdb667047dc0d09e9faa8" kindref="member">WM_IO_PB_08</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad4edc97a38782ee8f7378688a7dcd0cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad4edc97a38782ee8f7378688a7dcd0cb" kindref="member">WM_IO_PB_09</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ab4c7c7ce24a8029ba0474b9f825c3f1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ab4c7c7ce24a8029ba0474b9f825c3f1d" kindref="member">WM_IO_PB_10</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad5538841a59b6fbbeccccd8ca80c9ec5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad5538841a59b6fbbeccccd8ca80c9ec5" kindref="member">WM_IO_PB_11</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a1cceb4e01ddb5dbe4d6394966b035bc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a1cceb4e01ddb5dbe4d6394966b035bc0" kindref="member">WM_IO_PB_12</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a774252c5bb44770ed209db669f87fc29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a774252c5bb44770ed209db669f87fc29" kindref="member">WM_IO_PB_13</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a434877399b16f0d19b1f37cd762ee84a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a434877399b16f0d19b1f37cd762ee84a" kindref="member">WM_IO_PB_14</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8acf1c9e182894692d178fcf212042d5d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8acf1c9e182894692d178fcf212042d5d2" kindref="member">WM_IO_PB_15</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a36bf16c3ca8929bea8ab7ef142539dd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a36bf16c3ca8929bea8ab7ef142539dd9" kindref="member">WM_IO_PB_16</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8abaa8ec6df8169a91705e88f8a27bbbfa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8abaa8ec6df8169a91705e88f8a27bbbfa" kindref="member">WM_IO_PB_17</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a328c0f3748f556111ec3f282f53a377f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a328c0f3748f556111ec3f282f53a377f" kindref="member">WM_IO_PB_18</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a8b6cc447245abffb5c312f058bfb743c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a8b6cc447245abffb5c312f058bfb743c" kindref="member">WM_IO_PB_19</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8afb2f0bb82f3e6b812a0c117ad7b729bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8afb2f0bb82f3e6b812a0c117ad7b729bd" kindref="member">WM_IO_PB_20</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad3ba150bca4b67d911ec05bdb235b99c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8ad3ba150bca4b67d911ec05bdb235b99c" kindref="member">WM_IO_PB_21</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a3afb95129d0f69a1ddbc9481472d7646" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a3afb95129d0f69a1ddbc9481472d7646" kindref="member">WM_IO_PB_22</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4a0c60fd855da65c265d50fc8754fc41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4a0c60fd855da65c265d50fc8754fc41" kindref="member">WM_IO_PB_23</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a7bdbf106bc5c9fa5ffb8283a82e1f421" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a7bdbf106bc5c9fa5ffb8283a82e1f421" kindref="member">WM_IO_PB_24</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a60610a6e2a8eadf4b7407293b9751c11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a60610a6e2a8eadf4b7407293b9751c11" kindref="member">WM_IO_PB_25</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8af9b6d9b61e2a8d5d1d68b86b7979630d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8af9b6d9b61e2a8d5d1d68b86b7979630d" kindref="member">WM_IO_PB_26</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a7732d246318338f4eae042a9de39efdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a7732d246318338f4eae042a9de39efdc" kindref="member">WM_IO_PB_27</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a9aa9af4bec24a47bee981e0d71db3ce0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a9aa9af4bec24a47bee981e0d71db3ce0" kindref="member">WM_IO_PB_28</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2012d1b597ae1dc14cbedc0035bc2eb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2012d1b597ae1dc14cbedc0035bc2eb4" kindref="member">WM_IO_PB_29</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a8cd3e511a3089e93411a89d5f4b2dabb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a8cd3e511a3089e93411a89d5f4b2dabb" kindref="member">WM_IO_PB_30</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8aca4ce4205b06278fb306e473a13f9157" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8aca4ce4205b06278fb306e473a13f9157" kindref="member">WM_IO_PB_31</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="wm__io_8h_1ae8af2537170fa2935e12040f3de8542c" refkind="member"><highlight class="preprocessor">#define<sp/>WM_IO_OPTION1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="wm__io_8h_1a19d9ca894751c26049b8b00c590fa970" refkind="member"><highlight class="preprocessor">#define<sp/>WM_IO_OPTION2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="wm__io_8h_1ae9c1d0a46dd48578f05b20f4fb63cd4a" refkind="member"><highlight class="preprocessor">#define<sp/>WM_IO_OPTION3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="wm__io_8h_1a8f0efef21541e5a73f00adf48b1116c8" refkind="member"><highlight class="preprocessor">#define<sp/>WM_IO_OPTION4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="wm__io_8h_1af76acca84ccfe0c09e19c6deb0731fa7" refkind="member"><highlight class="preprocessor">#define<sp/>WM_IO_OPTION5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="wm__io_8h_1ae3adbabf5f5295622b4a729dc53b7855" refkind="member"><highlight class="preprocessor">#define<sp/>WM_IO_OPTION6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>io<sp/>option1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_I2C_DAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_PWM1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_PWM2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_PWM3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_PWM4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_PWM5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_UART0_RXD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_UART0_TXD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_PWM_BRAKE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_I2S_M_EXTCLK<sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_SPI_M_DO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_SPI_M_DI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_SPI_M_CS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_SPI_M_CK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_I2S_S_RL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_I2S_S_SCL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_I2S_S_SDA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_I2S_M_RL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_I2S_M_SCL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_I2S_M_SDA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_JTAG_RST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_JTAG_TDO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_JTAG_TDI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_JTAG_TCK_SWDCK<sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_JTAG_TMS_SWDAT<sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_UART1_RXD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_UART1_TXD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_UART1_RTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_UART1_CTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT1_SDIO_DAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>io<sp/>option2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_PWM1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_PWM2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_PWM3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_PWM4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_PWM5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_SPI_M_DO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_SPI_M_DI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_SPI_M_CS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_SPI_M_CK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_I2C_SCL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_I2S_M_EXTCLK<sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_UART1_RXD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_UART1_TXD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_UART1_RTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_UART1_CTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_I2C_DAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_PWM_BRAKE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_UART0_RTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_UART0_CTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_SDIO_DAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_HSPI_CK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_HSPI_INT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_HSPI_CS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_HSPI_DI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT2_HSPI_DO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>io<sp/>option3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_UART0_RXD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_UART0_TXD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_UART0_RTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_UART0_CTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_SPI_M_DO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_SPI_M_DI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_SPI_M_CS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_SDIO_CK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_SDIO_CMD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT3_SDIO_DAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>io<sp/>option4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT4_I2S_M_MCLK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT4_I2S_M_RL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT4_I2S_M_SCL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT4_I2S_M_SDA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>io<sp/>option5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT5_GPIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>io<sp/>option6<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT6_ADC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT6_LCD_COM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_IO_OPT6_LCD_SEG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_OPTION6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1a374044511a191a1d7701085c900e7912" kindref="member">tls_io_cfg_set</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>name,<sp/>u8<sp/>option);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1a5d77895633e82f114f1ec6debcb88007" kindref="member">tls_io_cfg_get</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>name);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>end<sp/>of<sp/>WM_IO_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_io.h"/>
+  </compounddef>
+</doxygen>

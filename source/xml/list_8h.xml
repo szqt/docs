@@ -1,0 +1,803 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="list_8h" kind="file" language="C++">
+    <compoundname>list.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="wm__hostspi_8h" local="yes">Include/Driver/wm_hostspi.h</includedby>
+    <includedby refid="wm__uart_8h" local="yes">Include/Driver/wm_uart.h</includedby>
+    <includedby refid="wm__fwup_8h" local="yes">Include/Platform/wm_fwup.h</includedby>
+    <incdepgraph>
+      <node id="220">
+        <label>Include/list.h</label>
+        <link refid="list_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="222">
+        <label>Include/list.h</label>
+        <link refid="list_8h"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>Include/Platform/wm_fwup.h</label>
+        <link refid="wm__fwup_8h"/>
+      </node>
+      <node id="223">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+      <node id="225">
+        <label>Include/Driver/wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdl__list" prot="public">dl_list</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="list_8h_1afd049f7ad59dbe455f460807475c2841" prot="public" static="no">
+        <name>offsetof</name>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>((long) &amp;((type *) 0)-&gt;member)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>offset address of the struct member </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="154" column="9" bodyfile="Include/list.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a70f0db94023bbe2508bf1be77b036373" prot="public" static="no">
+        <name>dl_list_entry</name>
+        <param><defname>item</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>((type *) ((char *) item - offsetof(type, member)))</initializer>
+        <briefdescription>
+<para>get the struct for this entry </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the &amp;struct list_head pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of the struct this is embedded in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the list_struct within the struct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the struct for this entry</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="168" column="9" bodyfile="Include/list.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a8ce925d0931f33a694c7b8d97be15f83" prot="public" static="no">
+        <name>dl_list_first</name>
+        <param><defname>list</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>(dl_list_empty((list)) ? NULL : \
+	 dl_list_entry((list)-&gt;next, type, member))</initializer>
+        <briefdescription>
+<para>get the first element from a list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list head to take the element from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of the struct this is embedded in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the list_struct within the struct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the first element from a list</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="182" column="9" bodyfile="Include/list.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1ad3ec952dc218648003cd71e9cd1a26a6" prot="public" static="no">
+        <name>dl_list_last</name>
+        <param><defname>list</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>(dl_list_empty((list)) ? NULL : \
+	 dl_list_entry((list)-&gt;prev, type, member))</initializer>
+        <briefdescription>
+<para>get the last element from a list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list head to take the element from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of the struct this is embedded in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the list_struct within the struct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to the last element from a list</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="197" column="9" bodyfile="Include/list.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a77396de7cd653c23197d415f82f34def" prot="public" static="no">
+        <name>dl_list_for_each</name>
+        <param><defname>item</defname></param>
+        <param><defname>list</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (item = dl_list_entry((list)-&gt;next, type, member); \
+	     &amp;item-&gt;member != (list); \
+	     item = dl_list_entry(item-&gt;member.next, type, member))</initializer>
+        <briefdescription>
+<para>iterate over list of given type </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a loop cursor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the head for your list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>struct type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the list_struct within the struct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="213" column="9" bodyfile="Include/list.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a18714979efbb5e00672f33900f6462cb" prot="public" static="no">
+        <name>dl_list_for_each_safe</name>
+        <param><defname>item</defname></param>
+        <param><defname>n</defname></param>
+        <param><defname>list</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (item = dl_list_entry((list)-&gt;next, type, member), \
+		     n = dl_list_entry(item-&gt;member.next, type, member); \
+	     &amp;item-&gt;member != (list); \
+	     item = n, n = dl_list_entry(n-&gt;member.next, type, member))</initializer>
+        <briefdescription>
+<para>iterate over list of given type safe against removal of list entry </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a loop cursor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>temporary storage </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the head for your list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>struct type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the list_struct within the struct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="231" column="9" bodyfile="Include/list.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1aaba024cdd6d7c280937bafe63082d69c" prot="public" static="no">
+        <name>dl_list_for_each_reverse</name>
+        <param><defname>item</defname></param>
+        <param><defname>list</defname></param>
+        <param><defname>type</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (item = dl_list_entry((list)-&gt;prev, type, member); \
+	     &amp;item-&gt;member != (list); \
+	     item = dl_list_entry(item-&gt;member.prev, type, member))</initializer>
+        <briefdescription>
+<para>iterate backwards over list of given type </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a loop cursor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the head for your list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>struct type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the list_struct within the struct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="249" column="9" bodyfile="Include/list.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a11c3f290d911ebf93e42fc75c0560d10" prot="public" static="no">
+        <name>DEFINE_DL_LIST</name>
+        <param><defname>name</defname></param>
+        <initializer>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> name = { &amp;(name), &amp;(name) }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>define the list head </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="255" column="9" bodyfile="Include/list.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a8c44ed6df028478642b4ff2ab50a699d" prot="public" static="no">
+        <name>__dl_list_for_each</name>
+        <param><defname>item</defname></param>
+        <param><defname>list</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (item = dl_list_entry((list)-&gt;next, typeof(*(item)), member); \
+	     &amp;item-&gt;member != (list); \
+	     item = dl_list_entry(item-&gt;member.next, typeof(*(item)), member))</initializer>
+        <briefdescription>
+<para>iterate over list of given type </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type * to use as a loop cursor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the head for your list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the list_struct within the struct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="269" column="9" bodyfile="Include/list.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1ae6e3800ea722b0e293e6e3fbb42f4966" prot="public" static="no">
+        <name>__dl_list_for_each_safe</name>
+        <param><defname>item</defname></param>
+        <param><defname>n</defname></param>
+        <param><defname>list</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (item = dl_list_entry((list)-&gt;next, typeof(*(item)), member), \
+		     n = dl_list_entry(item-&gt;member.next, typeof(*(item)), member); \
+	     &amp;item-&gt;member != (list); \
+	     item = n, n = dl_list_entry(n-&gt;member.next, typeof(*(item)), member))</initializer>
+        <briefdescription>
+<para>iterate over list of given type safe against removal of list entry </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type * to use as a loop cursor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>temporary storage </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the head for your list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the list_struct within the struct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="286" column="9" bodyfile="Include/list.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a0224902a5554708944fb042466196b45" prot="public" static="no">
+        <name>__dl_list_for_each_reverse</name>
+        <param><defname>item</defname></param>
+        <param><defname>list</defname></param>
+        <param><defname>member</defname></param>
+        <initializer>for (item = dl_list_entry((list)-&gt;prev, typeof(*(item)), member); \
+	     &amp;item-&gt;member != (list); \
+	     item = dl_list_entry(item-&gt;member.prev, typeof(*(item)), member))</initializer>
+        <briefdescription>
+<para>iterate backwards over list of given type </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type * to use as a loop cursor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the head for your list </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the list_struct within the struct</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="303" column="9" bodyfile="Include/list.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1gab7ce08624765b64fe3a6557a3b421d19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void dl_list_init</definition>
+        <argsstring>(struct dl_list *list)</argsstring>
+        <name>dl_list_init</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>reinitialize the list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="55" column="1" bodyfile="Include/list.h" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1ga2d3a5645e3394ec9d98941564a04df91" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void dl_list_add</definition>
+        <argsstring>(struct dl_list *list, struct dl_list *item)</argsstring>
+        <name>dl_list_add</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Insert a new entry after the specified head. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list head to add it after </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new entry to be added</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="71" column="1" bodyfile="Include/list.h" bodystart="71" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1gac17958688d53a48e8394c28e1e8be171" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void dl_list_add_tail</definition>
+        <argsstring>(struct dl_list *list, struct dl_list *item)</argsstring>
+        <name>dl_list_add_tail</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Insert a new entry before the specified head. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list head to add it after </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new entry to be added</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="89" column="1" bodyfile="Include/list.h" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1ga39c42a435d028fca044f676b38431367" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void dl_list_del</definition>
+        <argsstring>(struct dl_list *item)</argsstring>
+        <name>dl_list_del</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>deletes entry from list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to delete from the list</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="103" column="1" bodyfile="Include/list.h" bodystart="103" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1ga2744a1a75ec0fb6b0129a2459c416410" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int dl_list_empty</definition>
+        <argsstring>(struct dl_list *list)</argsstring>
+        <name>dl_list_empty</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>tests whether a list is empty </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list to test</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not empty </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>empty</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="121" column="1" bodyfile="Include/list.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1ga0aaf68f8b96255caba85c84c19f99ba2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline unsigned int</type>
+        <definition>static __inline unsigned int dl_list_len</definition>
+        <argsstring>(struct dl_list *list)</argsstring>
+        <name>dl_list_len</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>count length of the list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list to count</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>length</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="135" column="1" bodyfile="Include/list.h" bodystart="135" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Doubly-linked<sp/>list</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2009,<sp/>Jouni<sp/>Malinen<sp/>&lt;j@w1.fi&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>version<sp/>2<sp/>as</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Alternatively,<sp/>this<sp/>software<sp/>may<sp/>be<sp/>distributed<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>BSD</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>license.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>See<sp/>README<sp/>and<sp/>COPYING<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structdl__list" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>{</highlight></codeline>
+<codeline lineno="22" refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*<ref refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" kindref="member">prev</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dl_list_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref><sp/>=<sp/>list;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;<ref refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" kindref="member">prev</ref><sp/>=<sp/>list;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dl_list_add(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*list,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*item)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>item-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref><sp/>=<sp/>list-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>item-&gt;<ref refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" kindref="member">prev</ref><sp/>=<sp/>list;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref>-&gt;<ref refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" kindref="member">prev</ref><sp/>=<sp/>item;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref><sp/>=<sp/>item;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dl_list_add_tail(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*list,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*item)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>dl_list_add(list-&gt;<ref refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" kindref="member">prev</ref>,<sp/>item);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dl_list_del(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*item)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>item-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref>-&gt;<ref refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" kindref="member">prev</ref><sp/>=<sp/>item-&gt;<ref refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" kindref="member">prev</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>item-&gt;<ref refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" kindref="member">prev</ref>-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref><sp/>=<sp/>item-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>item-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>item-&gt;<ref refid="structdl__list_1afca3d6ddb75c1892430ea0000fa419e9" kindref="member">prev</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dl_list_empty(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>list-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref><sp/>==<sp/>list;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dl_list_len(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdl__list" kindref="compound">dl_list</ref><sp/>*item;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(item<sp/>=<sp/>list-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref>;<sp/>item<sp/>!=<sp/>list;<sp/>item<sp/>=<sp/>item-&gt;<ref refid="structdl__list_1ac79fda13622c575daa1596a8434b270d" kindref="member">next</ref>)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor">#ifndef<sp/>offsetof</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor">#define<sp/>offsetof(type,<sp/>member)<sp/>((long)<sp/>&amp;((type<sp/>*)<sp/>0)-&gt;member)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor">#define<sp/>dl_list_entry(item,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((type<sp/>*)<sp/>((char<sp/>*)<sp/>item<sp/>-<sp/>offsetof(type,<sp/>member)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor">#define<sp/>dl_list_first(list,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(dl_list_empty((list))<sp/>?<sp/>NULL<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>dl_list_entry((list)-&gt;next,<sp/>type,<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor">#define<sp/>dl_list_last(list,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(dl_list_empty((list))<sp/>?<sp/>NULL<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="199"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>dl_list_entry((list)-&gt;prev,<sp/>type,<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor">#define<sp/>dl_list_for_each(item,<sp/>list,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(item<sp/>=<sp/>dl_list_entry((list)-&gt;next,<sp/>type,<sp/>member);<sp/>\</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;item-&gt;member<sp/>!=<sp/>(list);<sp/>\</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/>dl_list_entry(item-&gt;member.next,<sp/>type,<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor">#define<sp/>dl_list_for_each_safe(item,<sp/>n,<sp/>list,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(item<sp/>=<sp/>dl_list_entry((list)-&gt;next,<sp/>type,<sp/>member),<sp/>\</highlight></codeline>
+<codeline lineno="233"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>dl_list_entry(item-&gt;member.next,<sp/>type,<sp/>member);<sp/>\</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;item-&gt;member<sp/>!=<sp/>(list);<sp/>\</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/>n,<sp/>n<sp/>=<sp/>dl_list_entry(n-&gt;member.next,<sp/>type,<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="preprocessor">#define<sp/>dl_list_for_each_reverse(item,<sp/>list,<sp/>type,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(item<sp/>=<sp/>dl_list_entry((list)-&gt;prev,<sp/>type,<sp/>member);<sp/>\</highlight></codeline>
+<codeline lineno="251"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;item-&gt;member<sp/>!=<sp/>(list);<sp/>\</highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/>dl_list_entry(item-&gt;member.prev,<sp/>type,<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor">#define<sp/>DEFINE_DL_LIST(name)<sp/>\</highlight></codeline>
+<codeline lineno="256"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>struct<sp/>dl_list<sp/>name<sp/>=<sp/>{<sp/>&amp;(name),<sp/>&amp;(name)<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="preprocessor">#define<sp/>__dl_list_for_each(item,<sp/>list,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="270"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(item<sp/>=<sp/>dl_list_entry((list)-&gt;next,<sp/>typeof(*(item)),<sp/>member);<sp/>\</highlight></codeline>
+<codeline lineno="271"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;item-&gt;member<sp/>!=<sp/>(list);<sp/>\</highlight></codeline>
+<codeline lineno="272"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/>dl_list_entry(item-&gt;member.next,<sp/>typeof(*(item)),<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="preprocessor">#define<sp/>__dl_list_for_each_safe(item,<sp/>n,<sp/>list,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="287"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(item<sp/>=<sp/>dl_list_entry((list)-&gt;next,<sp/>typeof(*(item)),<sp/>member),<sp/>\</highlight></codeline>
+<codeline lineno="288"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>dl_list_entry(item-&gt;member.next,<sp/>typeof(*(item)),<sp/>member);<sp/>\</highlight></codeline>
+<codeline lineno="289"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;item-&gt;member<sp/>!=<sp/>(list);<sp/>\</highlight></codeline>
+<codeline lineno="290"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/>n,<sp/>n<sp/>=<sp/>dl_list_entry(n-&gt;member.next,<sp/>typeof(*(item)),<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="preprocessor">#define<sp/>__dl_list_for_each_reverse(item,<sp/>list,<sp/>member)<sp/>\</highlight></codeline>
+<codeline lineno="304"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for<sp/>(item<sp/>=<sp/>dl_list_entry((list)-&gt;prev,<sp/>typeof(*(item)),<sp/>member);<sp/>\</highlight></codeline>
+<codeline lineno="305"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;item-&gt;member<sp/>!=<sp/>(list);<sp/>\</highlight></codeline>
+<codeline lineno="306"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/>dl_list_entry(item-&gt;member.prev,<sp/>typeof(*(item)),<sp/>member))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIST_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Include/list.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,854 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__7816_8h" kind="file" language="C++">
+    <compoundname>wm_7816.h</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="wm__regs_8h" local="yes">wm_regs.h</includes>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includes refid="wm__io_8h" local="yes">wm_io.h</includes>
+    <incdepgraph>
+      <node id="76">
+        <label>stdbool.h</label>
+      </node>
+      <node id="79">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="80">
+        <label>wm_io.h</label>
+        <link refid="wm__io_8h"/>
+      </node>
+      <node id="78">
+        <label>core_cm3.h</label>
+      </node>
+      <node id="75">
+        <label>string.h</label>
+      </node>
+      <node id="74">
+        <label>Include/Driver/wm_7816.h</label>
+        <link refid="wm__7816_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>wm_regs.h</label>
+        <link refid="wm__regs_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structsc__io__map__" prot="public">sc_io_map_</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__7816_8h_1a8adcffd3d51026a8458e9be5f961ba85" prot="public" static="no">
+        <name>WM_SC_RST_PIN</name>
+        <initializer><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a4a0c60fd855da65c265d50fc8754fc41" kindref="member">WM_IO_PB_23</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="22" column="9" bodyfile="Include/Driver/wm_7816.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__7816_8h_1abc5c8ba6c0c4b4bb9135cb8f563b5ef1" prot="public" static="no">
+        <name>WM_SC_PWR_PIN</name>
+        <initializer><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8a2012d1b597ae1dc14cbedc0035bc2eb4" kindref="member">WM_IO_PB_29</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="23" column="9" bodyfile="Include/Driver/wm_7816.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__7816_8h_1aba290d399700470109d0661000772555" prot="public" static="no">
+        <name>WM_SC_DEFAULT_FD</name>
+        <initializer>(372)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="25" column="9" bodyfile="Include/Driver/wm_7816.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__7816_8h_1ab64674bf3923aa5189c70152a678d210" prot="public" static="no">
+        <type>struct <ref refid="structsc__io__map__" kindref="compound">sc_io_map_</ref></type>
+        <definition>typedef struct sc_io_map_  sc_io_map</definition>
+        <argsstring></argsstring>
+        <name>sc_io_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="33" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="wm__7816_8h_1a46157f2e7491c82227457ee5578fbe69" prot="public" static="no" mutable="no">
+        <type><ref refid="structsc__io__map__" kindref="compound">sc_io_map</ref></type>
+        <definition>sc_io_map sc_io</definition>
+        <argsstring></argsstring>
+        <name>sc_io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="35" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__7816_8h_1af353a6163ea61f8588828ecd8ff76125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_io_clk_config</definition>
+        <argsstring>(uint8_t mode)</argsstring>
+        <name>wm_sc_io_clk_config</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config the pin in gpio or 7816 mode for the 7816 power on timing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 1<ndash/>gpio mode ; 0<ndash/>7816 mode <linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a2bd1d6393de99e053017c8b25eadf01c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_powerInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_sc_powerInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>close af to use as gpio </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1adf68fac57f5f48e71ce7f303f8549c9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_poweron</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_sc_poweron</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>power on the 7816 device if power is controled by GPIO </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1abdd59003ee21783076d3bad739e0993d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_poweroff</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_sc_poweroff</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>power off the 7816 device if power is controled by GPIO </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a1355f32769503b9981efc2b4324d7c71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_rst_low</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_sc_rst_low</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>driver the reset gpio in low level </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a47ccbc4ab1e930b79a860c618f88abe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_rst_high</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_sc_rst_high</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>driver the reset gpio in high level </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1ae79ff3abdcf6247939949505711a94fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_hotreset</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_sc_hotreset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>hotrest the 7816 device obey the 7816-3 timing </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1ae258b725f00743642383e631d8e8bebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_colreset</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_sc_colreset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>colreset the 7816 device obey the 7816-3 timing </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a5006c9d7bdf2c51b5545acd12fae81a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_deactive</definition>
+        <argsstring>(void)</argsstring>
+        <name>wm_sc_deactive</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>deactive the 7816 device obey the 7816-3 timing </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a2ba4f45cbef11d60ac0b0aaddc4aefea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_set_bgt</definition>
+        <argsstring>(uint8_t bgt)</argsstring>
+        <name>wm_sc_set_bgt</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>bgt</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config the block guard time param in 7816 mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bgt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the value of blcok guard time will be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a6e906b0d46c64f2dd838c38475c25119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_tx_retry_times</definition>
+        <argsstring>(uint8_t count)</argsstring>
+        <name>wm_sc_tx_retry_times</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config the tx retry count when detect err signal. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the value of retry time will be set 7 for max </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1aade9137d6c2de20a3f38c0d618c6d30c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_rx_retry_times</definition>
+        <argsstring>(uint8_t count)</argsstring>
+        <name>wm_sc_rx_retry_times</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config the rx retry count when detect parity error. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the value of retry time will be set 7 for max </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a8dd347a7afae10db107014f8cecf449a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_set_etu</definition>
+        <argsstring>(uint16_t etu)</argsstring>
+        <name>wm_sc_set_etu</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>etu</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config the etu param. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">etu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the value of etu will be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a7656ac334ebf2092f119f262db87f525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_sc_set_frequency</definition>
+        <argsstring>(uint32_t freq)</argsstring>
+        <name>wm_sc_set_frequency</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>This function config the module clock freq. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the value of clock freq </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1ad2148d7e77242a6683377d63a7d2636d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wm_sc_parity_recv</definition>
+        <argsstring>(bool bl)</argsstring>
+        <name>wm_sc_parity_recv</name>
+        <param>
+          <type>bool</type>
+          <declname>bl</declname>
+        </param>
+        <briefdescription>
+<para>config recv or not when parity error </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 1<mdash/> recv 0<mdash/> don&apos;t recv </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="150" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a9ed1e54d6f1fb90000452410a7d93f52" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wm_sc_7816_mode</definition>
+        <argsstring>(bool bl)</argsstring>
+        <name>wm_sc_7816_mode</name>
+        <param>
+          <type>bool</type>
+          <declname>bl</declname>
+        </param>
+        <briefdescription>
+<para>select the model in 7816 or uart function </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 1<mdash/>7816 mode 0<mdash/>uart mode </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="162" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1ac2344928ab041ef230c6c52bb85d0a63" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wm_sc_set_guardtime</definition>
+        <argsstring>(uint8_t gt)</argsstring>
+        <name>wm_sc_set_guardtime</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>gt</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config the guard time param. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the value of the guard time will be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="173" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a747613ab12d1a512b05acbc9a1b20560" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wm_sc_set_bcwt</definition>
+        <argsstring>(uint32_t bwt)</argsstring>
+        <name>wm_sc_set_bcwt</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>bwt</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config the CWT or BWT param. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bwt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the value of CWT or BWT will be set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="184" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="184" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1aa4c16823243df7d030578ccf8c09cc28" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wm_sc_tx_errsignal_mask</definition>
+        <argsstring>(bool bl)</argsstring>
+        <name>wm_sc_tx_errsignal_mask</name>
+        <param>
+          <type>bool</type>
+          <declname>bl</declname>
+        </param>
+        <briefdescription>
+<para>module errsignal int enable or disable </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 1<mdash/>enable 0<mdash/>disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="197" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a65a8e0f957f9361926ac49f8245b09d3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wm_sc_set_protocol</definition>
+        <argsstring>(bool bl)</argsstring>
+        <name>wm_sc_set_protocol</name>
+        <param>
+          <type>bool</type>
+          <declname>bl</declname>
+        </param>
+        <briefdescription>
+<para>config the module protol </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 1<mdash/> T1 protocol 0<mdash/> T0 protocol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="209" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a33ddf1d267b4b67bf060ca13484a1839" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t wm_sc_get_protocol</definition>
+        <argsstring>()</argsstring>
+        <name>wm_sc_get_protocol</name>
+        <briefdescription>
+<para>get the module protol </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>1&amp;mdash;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>T1 protocol 0<mdash/> T0 protocol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="221" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__7816_8h_1a6f0250e23c0e3d29ee6355e0c6cc0cc3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void wm_sc_clk_enable</definition>
+        <argsstring>(bool bl)</argsstring>
+        <name>wm_sc_clk_enable</name>
+        <param>
+          <type>bool</type>
+          <declname>bl</declname>
+        </param>
+        <briefdescription>
+<para>smart card clock output enable or disable </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 0<mdash/>enable; 1<mdash/>disable; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_7816.h" line="233" column="1" bodyfile="Include/Driver/wm_7816.h" bodystart="233" bodyend="236"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para></para></simplesect>
+<simplesect kind="version"><para></para></simplesect>
+<simplesect kind="date"><para></para></simplesect>
+<simplesect kind="copyright"><para>(c) 2014 Winner Microelectronics Co., Ltd. All rights reserved. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>WM_7816_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_7816_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__regs_8h" kindref="compound">wm_regs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__io_8h" kindref="compound">wm_io.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_SC_RST_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_PB_23<sp/>//(23)<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_SC_PWR_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>WM_IO_PB_29<sp/>//(29)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_SC_DEFAULT_FD<sp/><sp/><sp/><sp/>(372)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structsc__io__map__" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsc__io__map__" kindref="compound">sc_io_map_</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/><sp/>clk_pin_num;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/>clk_opt;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>io_pin_num;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/>io_opt;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>initialed;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<sp/><ref refid="structsc__io__map__" kindref="compound">sc_io_map</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structsc__io__map__" kindref="compound">sc_io_map</ref><sp/>sc_io;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1af353a6163ea61f8588828ecd8ff76125" kindref="member">wm_sc_io_clk_config</ref>(uint8_t<sp/>mode);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1a2bd1d6393de99e053017c8b25eadf01c" kindref="member">wm_sc_powerInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1adf68fac57f5f48e71ce7f303f8549c9b" kindref="member">wm_sc_poweron</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1abdd59003ee21783076d3bad739e0993d" kindref="member">wm_sc_poweroff</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1a1355f32769503b9981efc2b4324d7c71" kindref="member">wm_sc_rst_low</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1a47ccbc4ab1e930b79a860c618f88abe4" kindref="member">wm_sc_rst_high</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1ae79ff3abdcf6247939949505711a94fc" kindref="member">wm_sc_hotreset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1ae258b725f00743642383e631d8e8bebe" kindref="member">wm_sc_colreset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1a5006c9d7bdf2c51b5545acd12fae81a9" kindref="member">wm_sc_deactive</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1a2ba4f45cbef11d60ac0b0aaddc4aefea" kindref="member">wm_sc_set_bgt</ref>(uint8_t<sp/>bgt);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1a6e906b0d46c64f2dd838c38475c25119" kindref="member">wm_sc_tx_retry_times</ref>(uint8_t<sp/>count);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1aade9137d6c2de20a3f38c0d618c6d30c" kindref="member">wm_sc_rx_retry_times</ref>(uint8_t<sp/>count);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1a8dd347a7afae10db107014f8cecf449a" kindref="member">wm_sc_set_etu</ref>(uint16_t<sp/>etu);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__7816_8h_1a7656ac334ebf2092f119f262db87f525" kindref="member">wm_sc_set_frequency</ref>(uint32_t<sp/>freq);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wm_sc_parity_recv(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>tls_bitband_write(HR_UART2_LINE_CTRL,<sp/>9,<sp/>bl);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wm_sc_7816_mode(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>tls_bitband_write(HR_UART2_LINE_CTRL,<sp/>24,<sp/>bl);<sp/><sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wm_sc_set_guardtime(uint8_t<sp/>gt)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>tls_reg_write32(HR_UART2_GUARD_TIME,<sp/>gt);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wm_sc_set_bcwt(uint32_t<sp/>bwt)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>bwt<sp/>=<sp/>(bwt<sp/>&gt;<sp/>0xFFFFFF)<sp/>?<sp/>0xFFFFFF<sp/>:<sp/>bwt;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>tls_reg_write32(HR_UART2_WAIT_TIME,<sp/>bwt);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wm_sc_tx_errsignal_mask(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>tls_bitband_write(HR_UART2_INT_MASK,<sp/>9,<sp/>bl);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wm_sc_set_protocol(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>tls_bitband_write(HR_UART2_LINE_CTRL,<sp/>8,<sp/>bl);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8_t<sp/>wm_sc_get_protocol()</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tls_bitband_read(HR_UART2_LINE_CTRL,<sp/>8);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>wm_sc_clk_enable(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bl)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>tls_bitband_write(HR_UART2_LINE_CTRL,<sp/>10,<sp/>bl);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_7816.h"/>
+  </compounddef>
+</doxygen>

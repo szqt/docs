@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structin__address" kind="struct" language="C++" prot="public">
+    <compoundname>in_address</compoundname>
+    <includes refid="wm__sockets_8h" local="no">wm_sockets.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structin__address_1a6413167e51a3269aae63e9209d1b0b02" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 in_address::s_addr</definition>
+        <argsstring></argsstring>
+        <name>s_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="39" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Internet address </para>    </detaileddescription>
+    <location file="Include/Net/wm_sockets.h" line="38" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="38" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structin__address_1a6413167e51a3269aae63e9209d1b0b02" prot="public" virt="non-virtual"><scope>in_address</scope><name>s_addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___d_l_i_s_t___a_p_is" kind="group">
+    <compoundname>DLIST_APIs</compoundname>
+    <title>DLIST APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1gab7ce08624765b64fe3a6557a3b421d19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void dl_list_init</definition>
+        <argsstring>(struct dl_list *list)</argsstring>
+        <name>dl_list_init</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>reinitialize the list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="55" column="1" bodyfile="Include/list.h" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1ga2d3a5645e3394ec9d98941564a04df91" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void dl_list_add</definition>
+        <argsstring>(struct dl_list *list, struct dl_list *item)</argsstring>
+        <name>dl_list_add</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Insert a new entry after the specified head. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list head to add it after </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new entry to be added</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="71" column="1" bodyfile="Include/list.h" bodystart="71" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1gac17958688d53a48e8394c28e1e8be171" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void dl_list_add_tail</definition>
+        <argsstring>(struct dl_list *list, struct dl_list *item)</argsstring>
+        <name>dl_list_add_tail</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Insert a new entry before the specified head. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list head to add it after </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new entry to be added</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="89" column="1" bodyfile="Include/list.h" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1ga39c42a435d028fca044f676b38431367" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline void</type>
+        <definition>static __inline void dl_list_del</definition>
+        <argsstring>(struct dl_list *item)</argsstring>
+        <name>dl_list_del</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>deletes entry from list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the element to delete from the list</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="103" column="1" bodyfile="Include/list.h" bodystart="103" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1ga2744a1a75ec0fb6b0129a2459c416410" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline int</type>
+        <definition>static __inline int dl_list_empty</definition>
+        <argsstring>(struct dl_list *list)</argsstring>
+        <name>dl_list_empty</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>tests whether a list is empty </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list to test</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>not empty </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>empty</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="121" column="1" bodyfile="Include/list.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_l_i_s_t___a_p_is_1ga0aaf68f8b96255caba85c84c19f99ba2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline unsigned int</type>
+        <definition>static __inline unsigned int dl_list_len</definition>
+        <argsstring>(struct dl_list *list)</argsstring>
+        <name>dl_list_len</name>
+        <param>
+          <type>struct <ref refid="structdl__list" kindref="compound">dl_list</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>count length of the list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list to count</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>length</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/list.h" line="135" column="1" bodyfile="Include/list.h" bodystart="135" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Double listed APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

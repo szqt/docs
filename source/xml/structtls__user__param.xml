@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__user__param" kind="struct" language="C++" prot="public">
+    <compoundname>tls_user_param</compoundname>
+    <includes refid="wm__params_8h" local="no">wm_params.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__user__param_1a68b35035ba9713c846243d71525311bc" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::wireless_protocol</definition>
+        <argsstring></argsstring>
+        <name>wireless_protocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="383" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1aa23e4f2d890eb877e24f22b211f7b209" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::auto_mode</definition>
+        <argsstring></argsstring>
+        <name>auto_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="384" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a60963e775231c4c7531e38cc53ec7e35" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::dhcp_enable</definition>
+        <argsstring></argsstring>
+        <name>dhcp_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="385" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a705562dbbcdeb434b004af581f5b4656" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::user_port_mode</definition>
+        <argsstring></argsstring>
+        <name>user_port_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="386" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a08f74ff11e9d4b908d4f3b87c773c625" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::ip[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="388" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a1bb94197648936e3baa2214a53471e7d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::netmask[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>netmask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="389" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1ada2fb0c2495005dcdae3d1dcc6662393" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::gateway[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>gateway</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="390" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1aaa6c0724ca980f14fe27598ce23417b1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::dns[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>dns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="391" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a5561b5c6ffa483f8eb687374f6f79a10" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_user_param::baudrate</definition>
+        <argsstring></argsstring>
+        <name>baudrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="393" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a873db8660e66b6f7235a428861dde5fc" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::socket_protocol</definition>
+        <argsstring></argsstring>
+        <name>socket_protocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="395" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a5a2590227bf654eb938da5efb20cdf47" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::socket_client_or_server</definition>
+        <argsstring></argsstring>
+        <name>socket_client_or_server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="396" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a677f952662ab6de939f0073a80680d1d" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_user_param::socket_port_num</definition>
+        <argsstring></argsstring>
+        <name>socket_port_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="397" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a79c22e4660f4c2a03655e2b8e3fcb32f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::socket_host[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>socket_host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="398" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a1ad017e7022f510cd1211b01fc70c64a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::auto_powersave</definition>
+        <argsstring></argsstring>
+        <name>auto_powersave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="399" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__user__param_1a919e8a7a7c690db618d3310b61f7698c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_user_param::PassWord[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>PassWord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="400" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure of user default parameter </para>    </detaileddescription>
+    <location file="Include/Platform/wm_params.h" line="381" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="381" bodyend="401"/>
+    <listofallmembers>
+      <member refid="structtls__user__param_1aa23e4f2d890eb877e24f22b211f7b209" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>auto_mode</name></member>
+      <member refid="structtls__user__param_1a1ad017e7022f510cd1211b01fc70c64a" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>auto_powersave</name></member>
+      <member refid="structtls__user__param_1a5561b5c6ffa483f8eb687374f6f79a10" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>baudrate</name></member>
+      <member refid="structtls__user__param_1a60963e775231c4c7531e38cc53ec7e35" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>dhcp_enable</name></member>
+      <member refid="structtls__user__param_1aaa6c0724ca980f14fe27598ce23417b1" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>dns</name></member>
+      <member refid="structtls__user__param_1ada2fb0c2495005dcdae3d1dcc6662393" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>gateway</name></member>
+      <member refid="structtls__user__param_1a08f74ff11e9d4b908d4f3b87c773c625" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>ip</name></member>
+      <member refid="structtls__user__param_1a1bb94197648936e3baa2214a53471e7d" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>netmask</name></member>
+      <member refid="structtls__user__param_1a919e8a7a7c690db618d3310b61f7698c" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>PassWord</name></member>
+      <member refid="structtls__user__param_1a5a2590227bf654eb938da5efb20cdf47" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>socket_client_or_server</name></member>
+      <member refid="structtls__user__param_1a79c22e4660f4c2a03655e2b8e3fcb32f" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>socket_host</name></member>
+      <member refid="structtls__user__param_1a677f952662ab6de939f0073a80680d1d" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>socket_port_num</name></member>
+      <member refid="structtls__user__param_1a873db8660e66b6f7235a428861dde5fc" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>socket_protocol</name></member>
+      <member refid="structtls__user__param_1a705562dbbcdeb434b004af581f5b4656" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>user_port_mode</name></member>
+      <member refid="structtls__user__param_1a68b35035ba9713c846243d71525311bc" prot="public" virt="non-virtual"><scope>tls_user_param</scope><name>wireless_protocol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

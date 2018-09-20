@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__gpio_8h" kind="file" language="C++">
+    <compoundname>wm_gpio.h</compoundname>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includes refid="wm__io_8h" local="yes">wm_io.h</includes>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <includedby refid="wm__gpio__afsel_8h" local="yes">Include/Driver/wm_gpio_afsel.h</includedby>
+    <incdepgraph>
+      <node id="108">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="109">
+        <label>wm_io.h</label>
+        <link refid="wm__io_8h"/>
+      </node>
+      <node id="107">
+        <label>Include/Driver/wm_gpio.h</label>
+        <link refid="wm__gpio_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="112">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+      </node>
+      <node id="110">
+        <label>Include/Driver/wm_gpio.h</label>
+        <link refid="wm__gpio_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_gpio_dir</name>
+        <enumvalue id="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6fae35e827665c6f10c109b4c1d06e255ae" prot="public">
+          <name>WM_GPIO_DIR_OUTPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>output </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6fad4e019406692ad1291a14d01e475a564" prot="public">
+          <name>WM_GPIO_DIR_INPUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>input </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicating gpio direction </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="20" column="1" bodyfile="Include/Driver/wm_gpio.h" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_gpio_attr</name>
+        <enumvalue id="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fcafd2bf4d7c83ca9cb449b10800134e5e9" prot="public">
+          <name>WM_GPIO_ATTR_FLOATING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>floating status </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fca01316ce713031f401c431d3638688582" prot="public">
+          <name>WM_GPIO_ATTR_PULLHIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>pull high </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fcaa7858cd89f777f228e2fb438a0916896" prot="public">
+          <name>WM_GPIO_ATTR_PULLLOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>pull low </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicating gpio attribute </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="26" column="1" bodyfile="Include/Driver/wm_gpio.h" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_gpio_irq_trig</name>
+        <enumvalue id="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a8fb58644c8b5cc7e2d4d5cf23335a41d" prot="public">
+          <name>WM_GPIO_IRQ_TRIG_RISING_EDGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>rising edge arises the interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a2c7191b7ac381e539bc51183eabd9f7e" prot="public">
+          <name>WM_GPIO_IRQ_TRIG_FALLING_EDGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>falling edge arises the interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a27d1f5a1f9b7587ab9924a1757e214f3" prot="public">
+          <name>WM_GPIO_IRQ_TRIG_DOUBLE_EDGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>both rising edge and falling edge arise the interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a727c3957a0acd6d0d1fdd9a4a4d2cad4" prot="public">
+          <name>WM_GPIO_IRQ_TRIG_HIGH_LEVEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>high power level arises the interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a43063d889e9b402cfc3609840c6f7914" prot="public">
+          <name>WM_GPIO_IRQ_TRIG_LOW_LEVEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>low power level arises the interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicating gpio interrupt trigger type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="33" column="1" bodyfile="Include/Driver/wm_gpio.h" bodystart="33" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__gpio_8h_1ad8d26eb9684c1a4e56e73836bed81287" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* tls_gpio_irq_callback) (void *arg)</definition>
+        <argsstring>)(void *arg)</argsstring>
+        <name>tls_gpio_irq_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gpio interrupte callback function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="17" column="1" bodyfile="Include/Driver/wm_gpio.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__gpio_8h_1ac9790f6b77ee72da028bd91eb8593976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_gpio_cfg</definition>
+        <argsstring>(enum tls_io_name gpio_pin, enum tls_gpio_dir dir, enum tls_gpio_attr attr)</argsstring>
+        <name>tls_gpio_cfg</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>gpio_pin</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6f" kindref="member">tls_gpio_dir</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fc" kindref="member">tls_gpio_attr</ref></type>
+          <declname>attr</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config gpio function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio pin num </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio direction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio attribute</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio_8h_1ae3ac819663a89619b5332b1a1613ca31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_gpio_read</definition>
+        <argsstring>(enum tls_io_name gpio_pin)</argsstring>
+        <name>tls_gpio_read</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>gpio_pin</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to read gpio status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio pin num</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>power level is low </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>power level is high</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio_8h_1a6e380b431af4eec82b94955550aea346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_gpio_write</definition>
+        <argsstring>(enum tls_io_name gpio_pin, u8 value)</argsstring>
+        <name>tls_gpio_write</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>gpio_pin</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to modify gpio status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio pin num </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>power level 0: low power level 1: high power level</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio_8h_1a6c938b0d6dde1c38f41d09b3c5024b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_gpio_irq_enable</definition>
+        <argsstring>(enum tls_io_name gpio_pin, enum tls_gpio_irq_trig mode)</argsstring>
+        <name>tls_gpio_irq_enable</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>gpio_pin</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019" kindref="member">tls_gpio_irq_trig</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config gpio interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio pin num </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt trigger type</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio_8h_1a005169dbb49fa21624f15b1ed894f0f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_gpio_irq_disable</definition>
+        <argsstring>(enum tls_io_name gpio_pin)</argsstring>
+        <name>tls_gpio_irq_disable</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>gpio_pin</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to disable gpio interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio pin num</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio_8h_1afe5e593f9b6450fef997cfb64acc8a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_get_gpio_irq_status</definition>
+        <argsstring>(enum tls_io_name gpio_pin)</argsstring>
+        <name>tls_get_gpio_irq_status</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>gpio_pin</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get gpio interrupt status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio pin num</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no interrupt happened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>interrupt happened</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio_8h_1a41b6f22c082e93db1cfbd42d82228ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_clr_gpio_irq_status</definition>
+        <argsstring>(enum tls_io_name gpio_pin)</argsstring>
+        <name>tls_clr_gpio_irq_status</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>gpio_pin</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to clear gpio interrupt flag. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio pin num</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__gpio_8h_1a741e0366b5a1b8a3f27041ad055f8145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_gpio_isr_register</definition>
+        <argsstring>(enum tls_io_name gpio_pin, tls_gpio_irq_callback callback, void *arg)</argsstring>
+        <name>tls_gpio_isr_register</name>
+        <param>
+          <type>enum <ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref></type>
+          <declname>gpio_pin</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__gpio_8h_1ad8d26eb9684c1a4e56e73836bed81287" kindref="member">tls_gpio_irq_callback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to register gpio interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">gpio_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gpio pin num </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gpio interrupt call back function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parammeter for the callback</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>gpio callback function is called in interrupt, so can not operate the critical data in the callback fuuction, recommendation to send messages to other tasks to operate it. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_gpio.h" line="149" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GPIO Driver Module. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_GPIO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_GPIO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__io_8h" kindref="compound">wm_io.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="wm__gpio_8h_1ad8d26eb9684c1a4e56e73836bed81287" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="wm__gpio_8h_1ad8d26eb9684c1a4e56e73836bed81287" kindref="member">tls_gpio_irq_callback</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6f" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6f" kindref="member">tls_gpio_dir</ref><sp/>{</highlight></codeline>
+<codeline lineno="21" refid="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6fae35e827665c6f10c109b4c1d06e255ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6fae35e827665c6f10c109b4c1d06e255ae" kindref="member">WM_GPIO_DIR_OUTPUT</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6fad4e019406692ad1291a14d01e475a564" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6fad4e019406692ad1291a14d01e475a564" kindref="member">WM_GPIO_DIR_INPUT</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fc" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fc" kindref="member">tls_gpio_attr</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fcafd2bf4d7c83ca9cb449b10800134e5e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fcafd2bf4d7c83ca9cb449b10800134e5e9" kindref="member">WM_GPIO_ATTR_FLOATING</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fca01316ce713031f401c431d3638688582" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fca01316ce713031f401c431d3638688582" kindref="member">WM_GPIO_ATTR_PULLHIGH</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fcaa7858cd89f777f228e2fb438a0916896" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fcaa7858cd89f777f228e2fb438a0916896" kindref="member">WM_GPIO_ATTR_PULLLOW</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019" kindref="member">tls_gpio_irq_trig</ref><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a8fb58644c8b5cc7e2d4d5cf23335a41d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a8fb58644c8b5cc7e2d4d5cf23335a41d" kindref="member">WM_GPIO_IRQ_TRIG_RISING_EDGE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a2c7191b7ac381e539bc51183eabd9f7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a2c7191b7ac381e539bc51183eabd9f7e" kindref="member">WM_GPIO_IRQ_TRIG_FALLING_EDGE</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a27d1f5a1f9b7587ab9924a1757e214f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a27d1f5a1f9b7587ab9924a1757e214f3" kindref="member">WM_GPIO_IRQ_TRIG_DOUBLE_EDGE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a727c3957a0acd6d0d1fdd9a4a4d2cad4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a727c3957a0acd6d0d1fdd9a4a4d2cad4" kindref="member">WM_GPIO_IRQ_TRIG_HIGH_LEVEL</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a43063d889e9b402cfc3609840c6f7914" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019a43063d889e9b402cfc3609840c6f7914" kindref="member">WM_GPIO_IRQ_TRIG_LOW_LEVEL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1ac9790f6b77ee72da028bd91eb8593976" kindref="member">tls_gpio_cfg</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>gpio_pin,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1aee3d891e8ad49d81199c96c07592cd6f" kindref="member">tls_gpio_dir</ref><sp/>dir,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1abc525b1ba7a1cd200c45c18a02afd6fc" kindref="member">tls_gpio_attr</ref><sp/>attr);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">u8<sp/><ref refid="wm__gpio_8h_1ae3ac819663a89619b5332b1a1613ca31" kindref="member">tls_gpio_read</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>gpio_pin);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1a6e380b431af4eec82b94955550aea346" kindref="member">tls_gpio_write</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>gpio_pin,<sp/>u8<sp/>value);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1a6c938b0d6dde1c38f41d09b3c5024b71" kindref="member">tls_gpio_irq_enable</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>gpio_pin,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1a5a677e3741ed94ccd5981c72b8573019" kindref="member">tls_gpio_irq_trig</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1a005169dbb49fa21624f15b1ed894f0f3" kindref="member">tls_gpio_irq_disable</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>gpio_pin);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">u8<sp/><ref refid="wm__gpio_8h_1afe5e593f9b6450fef997cfb64acc8a76" kindref="member">tls_get_gpio_irq_status</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>gpio_pin);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1a41b6f22c082e93db1cfbd42d82228ac6" kindref="member">tls_clr_gpio_irq_status</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>gpio_pin);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wm__gpio_8h_1a741e0366b5a1b8a3f27041ad055f8145" kindref="member">tls_gpio_isr_register</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__io_8h_1ac159b2d925be75ef1b0c59b0589149d8" kindref="member">tls_io_name</ref><sp/>gpio_pin,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="wm__gpio_8h_1ad8d26eb9684c1a4e56e73836bed81287" kindref="member">tls_gpio_irq_callback</ref><sp/>callback,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>end<sp/>of<sp/>WM_GPIO_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/Driver/wm_gpio.h"/>
+  </compounddef>
+</doxygen>

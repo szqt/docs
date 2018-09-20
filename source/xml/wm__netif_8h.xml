@@ -1,0 +1,930 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__netif_8h" kind="file" language="C++">
+    <compoundname>wm_netif.h</compoundname>
+    <includes refid="wm__config_8h" local="yes">wm_config.h</includes>
+    <includes refid="wm__wifi_8h" local="yes">wm_wifi.h</includes>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includes refid="wm__params_8h" local="yes">wm_params.h</includes>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <includedby refid="wm__socket2_80_83_8h" local="yes">Include/Net/wm_socket2.0.3.h</includedby>
+    <includedby refid="wm__sockets_8h" local="yes">Include/Net/wm_sockets.h</includedby>
+    <incdepgraph>
+      <node id="23">
+        <label>Include/App/wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="26">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="25">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="30">
+        <label>wm_params.h</label>
+        <link refid="wm__params_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>wm_wifi.h</label>
+        <link refid="wm__wifi_8h"/>
+      </node>
+      <node id="24">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="33">
+        <label>Include/Net/wm_socket2.0.3.h</label>
+        <link refid="wm__socket2_80_83_8h"/>
+      </node>
+      <node id="31">
+        <label>Include/App/wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Include/Net/wm_sockets.h</label>
+        <link refid="wm__sockets_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Include/App/wm_netif2.0.3.h</label>
+        <link refid="wm__netif2_80_83_8h"/>
+      </node>
+      <node id="32">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structip__addr" prot="public">ip_addr</innerclass>
+    <innerclass refid="structtls__ethif" prot="public">tls_ethif</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__netif_8h_1a677fc015e9585ab841f76c499f4f9027" prot="public" static="no">
+        <name>NETIF_WIFI_JOIN_SUCCESS</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO for callback EVENT to join AP or create soft-AP successfully </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="21" column="9" bodyfile="Include/App/wm_netif.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__netif_8h_1a3d2cbb9ddf693f2abbd8bcaa17dffcb7" prot="public" static="no">
+        <name>NETIF_WIFI_JOIN_FAILED</name>
+        <initializer>0x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO for callback EVENT to fail to join AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="23" column="9" bodyfile="Include/App/wm_netif.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__netif_8h_1a1e1164598efcc88cd1d75a1e09b5a4d3" prot="public" static="no">
+        <name>NETIF_WIFI_DISCONNECTED</name>
+        <initializer>0x3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO for callback EVENT to disconnect from AP or destroy soft-AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="25" column="9" bodyfile="Include/App/wm_netif.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__netif_8h_1a3364dd29d2f25b90f08d2ba60630c3ac" prot="public" static="no">
+        <name>NETIF_IP_NET_UP</name>
+        <initializer>0x4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO for callbck EVENT to get IP address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="27" column="9" bodyfile="Include/App/wm_netif.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__netif_8h_1af2a4e4555d779b01d21cbc39b473cc59" prot="public" static="no">
+        <name>NETIF_WIFI_SOFTAP_SUCCESS</name>
+        <initializer>0x5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO for callback EVNET to join AP successfully for APSTA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="29" column="9" bodyfile="Include/App/wm_netif.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__netif_8h_1a66119c3a0a2e60f778a68650de3991de" prot="public" static="no">
+        <name>NETIF_WIFI_SOFTAP_FAILED</name>
+        <initializer>0x6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO for callback EVNET to Create soft-AP successfully for APSTA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="31" column="9" bodyfile="Include/App/wm_netif.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__netif_8h_1a69b2fbc353c41d5463a1e4226eaa9fc1" prot="public" static="no">
+        <name>NETIF_WIFI_SOFTAP_CLOSED</name>
+        <initializer>0x7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO for callback EVNET to get IP successfully for APSTA&apos;s STA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="33" column="9" bodyfile="Include/App/wm_netif.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__netif_8h_1ac98f7285e2bfcff9de725bbddc757400" prot="public" static="no">
+        <name>NETIF_IP_NET2_UP</name>
+        <initializer>0x8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MACRO for callback EVNET to inform soft ap&apos;s net </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="35" column="9" bodyfile="Include/App/wm_netif.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" prot="public" static="no">
+        <type>struct <ref refid="structip__addr" kindref="compound">ip_addr</ref></type>
+        <definition>typedef struct ip_addr ip_addr_t</definition>
+        <argsstring></argsstring>
+        <name>ip_addr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type definition of struct <ref refid="structip__addr" kindref="compound">ip_addr</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="197" column="1" bodyfile="Include/App/wm_netif.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__netif_8h_1a4745dffe73b62b1f149690cd7a36e843" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* tls_netif_status_event_fn) (u8 status)</definition>
+        <argsstring>)(u8 status)</argsstring>
+        <name>tls_netif_status_event_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type definition of netif status changed callback </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="57" column="1" bodyfile="Include/App/wm_netif.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1gacda50c543e5396f00e0f39685c15e09f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_ethernet_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_ethernet_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to initialize TCP/IP Stack. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1ga1a15214af4d679d9f771dc9c0dd3fd35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structtls__ethif" kindref="compound">tls_ethif</ref> *</type>
+        <definition>struct tls_ethif* tls_netif_get_ethif</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_netif_get_ethif</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get IP parameters stored in <ref refid="structtls__ethif" kindref="compound">tls_ethif</ref> struct. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="structtls__ethif" kindref="compound">tls_ethif</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* Pointer to struct <ref refid="structtls__ethif" kindref="compound">tls_ethif</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1ga9513c8c2a845ea3490eb3baab38edf5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_dhcp_start</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_dhcp_start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to start DHCP Client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1ga156c9173f943a696d54becb075bdd158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_dhcp_stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_dhcp_stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to stop DHCP client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1ga78644b587287dfae1be29c16dd3f4c6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_netif_set_addr</definition>
+        <argsstring>(ip_addr_t *ipaddr, ip_addr_t *netmask, ip_addr_t *gw)</argsstring>
+        <name>tls_netif_set_addr</name>
+        <param>
+          <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref> *</type>
+          <declname>ipaddr</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref> *</type>
+          <declname>netmask</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref> *</type>
+          <declname>gw</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to change IP address configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ipaddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IP address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*netmask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>netmask </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*gw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default gateway</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1gae507ce67edc9c20bf5b73b02aedd6095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_netif_dns_setserver</definition>
+        <argsstring>(u8 numdns, ip_addr_t *dnsserver)</argsstring>
+        <name>tls_netif_dns_setserver</name>
+        <param>
+          <type>u8</type>
+          <declname>numdns</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref> *</type>
+          <declname>dnsserver</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set dns servers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">numdns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the DNS server to set must be &lt; DNS_MAX_SERVERS </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*dnsserver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IP address of the DNS server to set</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1ga83abcdefb139784a2f27da6675775d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_netif_set_up</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_netif_set_up</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to bring up an interface,available for processing traffic. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1gaec091196e67319aa3788370ea540fd20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_netif_set_down</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_netif_set_down</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to bring down an interface,disabling any traffic processing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1gabb1111ee940eb2f56bc36985cbd30209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_netif_add_status_event</definition>
+        <argsstring>(tls_netif_status_event_fn event_fn)</argsstring>
+        <name>tls_netif_add_status_event</name>
+        <param>
+          <type><ref refid="wm__netif_8h_1a4745dffe73b62b1f149690cd7a36e843" kindref="member">tls_netif_status_event_fn</ref></type>
+          <declname>event_fn</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to add netif status changed callback to event list,if exists, do nothing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">event_fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to tls_netif_status_event_fn</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1gaca7f15e1c9f91bc5ffa62d2a87739202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_netif_remove_status_event</definition>
+        <argsstring>(tls_netif_status_event_fn event_fn)</argsstring>
+        <name>tls_netif_remove_status_event</name>
+        <param>
+          <type><ref refid="wm__netif_8h_1a4745dffe73b62b1f149690cd7a36e843" kindref="member">tls_netif_status_event_fn</ref></type>
+          <declname>event_fn</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to remove netif status changed callback from event list,if not exists, do nothing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">event_fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to tls_netif_status_event_fn</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="204" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1gaa29ec79047cf35e7c8f11c40df03c180" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct netif *</type>
+        <definition>struct netif* tls_get_netif</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_get_netif</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get default net device interface. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>netif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pointer to net device interface</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1gac1430533635ab93009ad07c12ad46845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structtls__ethif" kindref="compound">tls_ethif</ref> *</type>
+        <definition>struct tls_ethif* tls_netif_get_ethif2</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_netif_get_ethif2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get softap&apos;s net device interface. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>netif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pointer to net device interface</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1ga913d52f7b582ccec096dbc78a07f5aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_netif2_set_up</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_netif2_set_up</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This is used to bring up an interface for APSTA,available for processing traffic. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Only APSTA used </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1gabae0e48a6730d0a010e4ce14345c65f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_netif2_set_down</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_netif2_set_down</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This is used to bring down an interface for APSTA, disab- ling any traffic processing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Only APSTA used </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_e_t_i_f___a_p_is_1ga7c5638b3e422c30dc5e4a00d6115b3c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s8</type>
+        <definition>s8 tls_netif2_set_addr</definition>
+        <argsstring>(ip_addr_t *ipaddr, ip_addr_t *netmask, ip_addr_t *gw)</argsstring>
+        <name>tls_netif2_set_addr</name>
+        <param>
+          <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref> *</type>
+          <declname>ipaddr</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref> *</type>
+          <declname>netmask</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" kindref="member">ip_addr_t</ref> *</type>
+          <declname>gw</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to change IP configuration for a network interface for APSTA. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ipaddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IP address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*netmask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>netmask </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*gw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default gateway</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Minus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Only APSTA used </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_netif.h" line="270" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ETHERNET INIT Interface. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>winnermicro</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>WM_NETIF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_NETIF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__config_8h" kindref="compound">wm_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TLS_CONFIG_LWIP_VER2_0_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__netif2_80_83_8h" kindref="compound">wm_netif2.0.3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__wifi_8h" kindref="compound">wm_wifi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__params_8h" kindref="compound">wm_params.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="wm__netif_8h_1a677fc015e9585ab841f76c499f4f9027" refkind="member"><highlight class="preprocessor">#define<sp/>NETIF_WIFI_JOIN_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="wm__netif_8h_1a3d2cbb9ddf693f2abbd8bcaa17dffcb7" refkind="member"><highlight class="preprocessor">#define<sp/>NETIF_WIFI_JOIN_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="wm__netif_8h_1a1e1164598efcc88cd1d75a1e09b5a4d3" refkind="member"><highlight class="preprocessor">#define<sp/>NETIF_WIFI_DISCONNECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="wm__netif_8h_1a3364dd29d2f25b90f08d2ba60630c3ac" refkind="member"><highlight class="preprocessor">#define<sp/>NETIF_IP_NET_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="wm__netif_8h_1af2a4e4555d779b01d21cbc39b473cc59" refkind="member"><highlight class="preprocessor">#define<sp/>NETIF_WIFI_SOFTAP_SUCCESS<sp/><sp/><sp/><sp/>0x5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="wm__netif_8h_1a66119c3a0a2e60f778a68650de3991de" refkind="member"><highlight class="preprocessor">#define<sp/>NETIF_WIFI_SOFTAP_FAILED<sp/><sp/><sp/><sp/><sp/>0x6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="wm__netif_8h_1a69b2fbc353c41d5463a1e4226eaa9fc1" refkind="member"><highlight class="preprocessor">#define<sp/>NETIF_WIFI_SOFTAP_CLOSED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="wm__netif_8h_1ac98f7285e2bfcff9de725bbddc757400" refkind="member"><highlight class="preprocessor">#define<sp/>NETIF_IP_NET2_UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structip__addr" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structip__addr" kindref="compound">ip_addr</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>u32<sp/>addr;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structtls__ethif" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__ethif" kindref="compound">tls_ethif</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45" refid="structtls__ethif_1aed38077ce7dd22b54c2d637e3478a4bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structip__addr" kindref="compound">ip_addr</ref><sp/><ref refid="structip__addr" kindref="compound">ip_addr</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structtls__ethif_1a30438db023995aa5eb91ed62ab93d042" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structip__addr" kindref="compound">ip_addr</ref><sp/><ref refid="structtls__ethif_1a30438db023995aa5eb91ed62ab93d042" kindref="member">netmask</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structtls__ethif_1a2d85e35b1231528f942388a792f71eab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structip__addr" kindref="compound">ip_addr</ref><sp/><ref refid="structtls__ethif_1a2d85e35b1231528f942388a792f71eab" kindref="member">gw</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structtls__ethif_1aad642411246e9bf749dafd895dc02957" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structip__addr" kindref="compound">ip_addr</ref><sp/><ref refid="structtls__ethif_1aad642411246e9bf749dafd895dc02957" kindref="member">dns1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structtls__ethif_1abb4fa35f2f1692f081686065b6fab949" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structip__addr" kindref="compound">ip_addr</ref><sp/><ref refid="structtls__ethif_1abb4fa35f2f1692f081686065b6fab949" kindref="member">dns2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structtls__ethif_1a980e87ecefd4b1e5200317b8250d91fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtls__ethif_1a980e87ecefd4b1e5200317b8250d91fe" kindref="member">status</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="wm__netif_8h_1a335a8c9df66319e88a1a529047ce0a1e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structip__addr" kindref="compound">ip_addr</ref><sp/><ref refid="structip__addr" kindref="compound">ip_addr_t</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="wm__netif_8h_1a4745dffe73b62b1f149690cd7a36e843" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="wm__netif_8h_1a4745dffe73b62b1f149690cd7a36e843" kindref="member">tls_netif_status_event_fn</ref>)(u8<sp/>status);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___n_e_t_i_f___a_p_is_1gacda50c543e5396f00e0f39685c15e09f" kindref="member">tls_ethernet_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__ethif" kindref="compound">tls_ethif</ref><sp/>*<ref refid="group___n_e_t_i_f___a_p_is_1ga1a15214af4d679d9f771dc9c0dd3fd35" kindref="member">tls_netif_get_ethif</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1ga9513c8c2a845ea3490eb3baab38edf5a" kindref="member">tls_dhcp_start</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1ga156c9173f943a696d54becb075bdd158" kindref="member">tls_dhcp_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1ga78644b587287dfae1be29c16dd3f4c6d" kindref="member">tls_netif_set_addr</ref>(<ref refid="structip__addr" kindref="compound">ip_addr_t</ref><sp/>*ipaddr,<sp/><ref refid="structip__addr" kindref="compound">ip_addr_t</ref><sp/>*<ref refid="structtls__ethif_1a30438db023995aa5eb91ed62ab93d042" kindref="member">netmask</ref>,<sp/><ref refid="structip__addr" kindref="compound">ip_addr_t</ref><sp/>*<ref refid="structtls__ethif_1a2d85e35b1231528f942388a792f71eab" kindref="member">gw</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___n_e_t_i_f___a_p_is_1gae507ce67edc9c20bf5b73b02aedd6095" kindref="member">tls_netif_dns_setserver</ref>(u8<sp/>numdns,<sp/><ref refid="structip__addr" kindref="compound">ip_addr_t</ref><sp/>*dnsserver);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1ga83abcdefb139784a2f27da6675775d05" kindref="member">tls_netif_set_up</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1gaec091196e67319aa3788370ea540fd20" kindref="member">tls_netif_set_down</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1gabb1111ee940eb2f56bc36985cbd30209" kindref="member">tls_netif_add_status_event</ref>(<ref refid="wm__netif_8h_1a4745dffe73b62b1f149690cd7a36e843" kindref="member">tls_netif_status_event_fn</ref><sp/>event_fn);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1gaca7f15e1c9f91bc5ffa62d2a87739202" kindref="member">tls_netif_remove_status_event</ref>(<ref refid="wm__netif_8h_1a4745dffe73b62b1f149690cd7a36e843" kindref="member">tls_netif_status_event_fn</ref><sp/>event_fn);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">netif<sp/>*<ref refid="group___n_e_t_i_f___a_p_is_1gaa29ec79047cf35e7c8f11c40df03c180" kindref="member">tls_get_netif</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__ethif" kindref="compound">tls_ethif</ref><sp/>*<sp/><ref refid="group___n_e_t_i_f___a_p_is_1gac1430533635ab93009ad07c12ad46845" kindref="member">tls_netif_get_ethif2</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1ga913d52f7b582ccec096dbc78a07f5aa2" kindref="member">tls_netif2_set_up</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1gabae0e48a6730d0a010e4ce14345c65f2" kindref="member">tls_netif2_set_down</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal">s8<sp/><ref refid="group___n_e_t_i_f___a_p_is_1ga7c5638b3e422c30dc5e4a00d6115b3c7" kindref="member">tls_netif2_set_addr</ref>(<ref refid="structip__addr" kindref="compound">ip_addr_t</ref><sp/>*ipaddr,<sp/><ref refid="structip__addr" kindref="compound">ip_addr_t</ref><sp/>*<ref refid="structtls__ethif_1a30438db023995aa5eb91ed62ab93d042" kindref="member">netmask</ref>,<sp/><ref refid="structip__addr" kindref="compound">ip_addr_t</ref><sp/>*<ref refid="structtls__ethif_1a2d85e35b1231528f942388a792f71eab" kindref="member">gw</ref>);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_NETIF_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/App/wm_netif.h"/>
+  </compounddef>
+</doxygen>

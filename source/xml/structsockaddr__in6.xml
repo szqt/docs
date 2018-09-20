@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structsockaddr__in6" kind="struct" language="C++" prot="public">
+    <compoundname>sockaddr_in6</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsockaddr__in6_1a7102610a498d7774513503ed2ef3dc05" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 sockaddr_in6::sin6_len</definition>
+        <argsstring></argsstring>
+        <name>sin6_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="61" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__in6_1aefa41e43be9c615f8cfd6266c0ed1687" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__sockets2_80_83_8h_1ac1d1bf0e58741cf5e92739411d9e848f" kindref="member">sa_family_t</ref></type>
+        <definition>sa_family_t sockaddr_in6::sin6_family</definition>
+        <argsstring></argsstring>
+        <name>sin6_family</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="62" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__in6_1a1a1aec2c794e1b8d2fd8705fc20c881b" prot="public" static="no" mutable="no">
+        <type><ref refid="wm__sockets2_80_83_8h_1ae8ae7e0167cd5587b7403e02f202ddd9" kindref="member">in_port_t</ref></type>
+        <definition>in_port_t sockaddr_in6::sin6_port</definition>
+        <argsstring></argsstring>
+        <name>sin6_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="63" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__in6_1a5ec5e0cffe055ea0622c257e50200542" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 sockaddr_in6::sin6_flowinfo</definition>
+        <argsstring></argsstring>
+        <name>sin6_flowinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="64" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__in6_1a219e7f3ecd6d7dcf8fc2465475be490f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structin6__addr" kindref="compound">in6_addr</ref></type>
+        <definition>struct in6_addr sockaddr_in6::sin6_addr</definition>
+        <argsstring></argsstring>
+        <name>sin6_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="64" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__in6_1a70c7a45e383d300358f3fc9823de81de" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 sockaddr_in6::sin6_scope_id</definition>
+        <argsstring></argsstring>
+        <name>sin6_scope_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="66" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="126">
+        <label>sockaddr_in6</label>
+        <link refid="structsockaddr__in6"/>
+        <childnode refid="127" relation="usage">
+          <edgelabel>sin6_addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="127">
+        <label>in6_addr</label>
+        <link refid="structin6__addr"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Net/wm_sockets.h" line="60" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="60" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structsockaddr__in6_1a219e7f3ecd6d7dcf8fc2465475be490f" prot="public" virt="non-virtual"><scope>sockaddr_in6</scope><name>sin6_addr</name></member>
+      <member refid="structsockaddr__in6_1aefa41e43be9c615f8cfd6266c0ed1687" prot="public" virt="non-virtual"><scope>sockaddr_in6</scope><name>sin6_family</name></member>
+      <member refid="structsockaddr__in6_1a5ec5e0cffe055ea0622c257e50200542" prot="public" virt="non-virtual"><scope>sockaddr_in6</scope><name>sin6_flowinfo</name></member>
+      <member refid="structsockaddr__in6_1a7102610a498d7774513503ed2ef3dc05" prot="public" virt="non-virtual"><scope>sockaddr_in6</scope><name>sin6_len</name></member>
+      <member refid="structsockaddr__in6_1a1a1aec2c794e1b8d2fd8705fc20c881b" prot="public" virt="non-virtual"><scope>sockaddr_in6</scope><name>sin6_port</name></member>
+      <member refid="structsockaddr__in6_1a70c7a45e383d300358f3fc9823de81de" prot="public" virt="non-virtual"><scope>sockaddr_in6</scope><name>sin6_scope_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

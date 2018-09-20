@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structps_aes_key__t" kind="struct" language="C++" prot="public">
+    <compoundname>psAesKey_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structps_aes_key__t_1a162c610a2b0dfe695343b031ecc52877" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int psAesKey_t::eK[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>eK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="96" column="1" bodyfile="Include/Platform/aes.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structps_aes_key__t_1aa5f289dadebd3025daf5d3cb46a7168e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int psAesKey_t::dK[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>dK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="96" column="1" bodyfile="Include/Platform/aes.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structps_aes_key__t_1afcd8e6eda65b8c303c7a4d180379cfff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psAesKey_t::Nr</definition>
+        <argsstring></argsstring>
+        <name>Nr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/aes.h" line="97" column="1" bodyfile="Include/Platform/aes.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Platform/aes.h" line="95" column="1" bodyfile="Include/Platform/aes.h" bodystart="95" bodyend="98"/>
+    <listofallmembers>
+      <member refid="structps_aes_key__t_1aa5f289dadebd3025daf5d3cb46a7168e" prot="public" virt="non-virtual"><scope>psAesKey_t</scope><name>dK</name></member>
+      <member refid="structps_aes_key__t_1a162c610a2b0dfe695343b031ecc52877" prot="public" virt="non-virtual"><scope>psAesKey_t</scope><name>eK</name></member>
+      <member refid="structps_aes_key__t_1afcd8e6eda65b8c303c7a4d180379cfff" prot="public" virt="non-virtual"><scope>psAesKey_t</scope><name>Nr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

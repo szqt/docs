@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__hdr" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_hdr</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__hdr_1a2de939bc7a50059bc714f2bd97cc5ee8" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_hdr::frame_control</definition>
+        <argsstring></argsstring>
+        <name>frame_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="207" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__hdr_1a926689cd412e9ed25d05a3e7c7e2b0c3" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_hdr::duration_id</definition>
+        <argsstring></argsstring>
+        <name>duration_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="208" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__hdr_1add4b413f7ebf585a5aa40ba63d49543d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_hdr::addr1</definition>
+        <argsstring>[6]</argsstring>
+        <name>addr1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="209" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__hdr_1a8fa1e6d9ef7bb94e467d9dcde2fafd3e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_hdr::addr2</definition>
+        <argsstring>[6]</argsstring>
+        <name>addr2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="210" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__hdr_1ac7843d34f0d03e8ba0631990443cfafb" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_hdr::addr3</definition>
+        <argsstring>[6]</argsstring>
+        <name>addr3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="211" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__hdr_1a6139b651fc96641465e3ccfdbf4134ae" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ieee80211_hdr::seq_ctrl</definition>
+        <argsstring></argsstring>
+        <name>seq_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="212" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__hdr_1a9df470fb29f3ca6a5090b35ded12ae9b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_hdr::addr4</definition>
+        <argsstring>[6]</argsstring>
+        <name>addr4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="213" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/WiFi/wm_ieee80211.h" line="206" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="206" bodyend="214"/>
+    <listofallmembers>
+      <member refid="structieee80211__hdr_1add4b413f7ebf585a5aa40ba63d49543d" prot="public" virt="non-virtual"><scope>ieee80211_hdr</scope><name>addr1</name></member>
+      <member refid="structieee80211__hdr_1a8fa1e6d9ef7bb94e467d9dcde2fafd3e" prot="public" virt="non-virtual"><scope>ieee80211_hdr</scope><name>addr2</name></member>
+      <member refid="structieee80211__hdr_1ac7843d34f0d03e8ba0631990443cfafb" prot="public" virt="non-virtual"><scope>ieee80211_hdr</scope><name>addr3</name></member>
+      <member refid="structieee80211__hdr_1a9df470fb29f3ca6a5090b35ded12ae9b" prot="public" virt="non-virtual"><scope>ieee80211_hdr</scope><name>addr4</name></member>
+      <member refid="structieee80211__hdr_1a926689cd412e9ed25d05a3e7c7e2b0c3" prot="public" virt="non-virtual"><scope>ieee80211_hdr</scope><name>duration_id</name></member>
+      <member refid="structieee80211__hdr_1a2de939bc7a50059bc714f2bd97cc5ee8" prot="public" virt="non-virtual"><scope>ieee80211_hdr</scope><name>frame_control</name></member>
+      <member refid="structieee80211__hdr_1a6139b651fc96641465e3ccfdbf4134ae" prot="public" virt="non-virtual"><scope>ieee80211_hdr</scope><name>seq_ctrl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

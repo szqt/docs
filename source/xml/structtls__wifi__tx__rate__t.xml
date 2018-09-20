@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__wifi__tx__rate__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_wifi_tx_rate_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__wifi__tx__rate__t_1a8559501c3c855255cf2736c0a38645b2" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="wm__wifi_8h_1a86d5b3ebcab41ccf93a21b1f7967cc16" kindref="member">tls_wifi_tx_rate</ref></type>
+        <definition>enum tls_wifi_tx_rate tls_wifi_tx_rate_t::tx_rate</definition>
+        <argsstring></argsstring>
+        <name>tx_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wi-Fi ransport rate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="270" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__wifi__tx__rate__t_1a17d04ecf8e5cac27b408d6bf390c251b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_wifi_tx_rate_t::tx_gain</definition>
+        <argsstring></argsstring>
+        <name>tx_gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wi-Fi ransport gain </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="276" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>transport rate and gain </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_wifi.h" line="274" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="274" bodyend="277"/>
+    <listofallmembers>
+      <member refid="structtls__wifi__tx__rate__t_1a17d04ecf8e5cac27b408d6bf390c251b" prot="public" virt="non-virtual"><scope>tls_wifi_tx_rate_t</scope><name>tx_gain</name></member>
+      <member refid="structtls__wifi__tx__rate__t_1a8559501c3c855255cf2736c0a38645b2" prot="public" virt="non-virtual"><scope>tls_wifi_tx_rate_t</scope><name>tx_rate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

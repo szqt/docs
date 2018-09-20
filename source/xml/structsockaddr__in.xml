@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structsockaddr__in" kind="struct" language="C++" prot="public">
+    <compoundname>sockaddr_in</compoundname>
+    <includes refid="wm__sockets_8h" local="no">wm_sockets.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsockaddr__in_1a5a44d7c63f2a63207889253dbf8771ac" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 sockaddr_in::sin_len</definition>
+        <argsstring></argsstring>
+        <name>sin_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="53" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__in_1ab49bcca40b28a0c8eb0a2941ca098795" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 sockaddr_in::sin_family</definition>
+        <argsstring></argsstring>
+        <name>sin_family</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address family </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="54" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__in_1a44f9f5870495104b62d7753d88f40ee3" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 sockaddr_in::sin_port</definition>
+        <argsstring></argsstring>
+        <name>sin_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="55" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__in_1afdcaa232019d7b23d7c2e9b0367a9adc" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structin__address" kindref="compound">in_address</ref></type>
+        <definition>struct in_address sockaddr_in::sin_addr</definition>
+        <argsstring></argsstring>
+        <name>sin_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure describing an Internet (IP) socket address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="55" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsockaddr__in_1a0254bfac1c18e922cb6638c3f6139e09" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sockaddr_in::sin_zero[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>sin_zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pad to size of <lsquo/>struct sockaddr<rsquo/> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="57" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure describing an Internet (IP) socket address, members are in network byte order </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="123">
+        <label>sockaddr_in</label>
+        <link refid="structsockaddr__in"/>
+        <childnode refid="124" relation="usage">
+          <edgelabel>sin_addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="124">
+        <label>in_address</label>
+        <link refid="structin__address"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Net/wm_sockets.h" line="52" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="52" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structsockaddr__in_1afdcaa232019d7b23d7c2e9b0367a9adc" prot="public" virt="non-virtual"><scope>sockaddr_in</scope><name>sin_addr</name></member>
+      <member refid="structsockaddr__in_1ab49bcca40b28a0c8eb0a2941ca098795" prot="public" virt="non-virtual"><scope>sockaddr_in</scope><name>sin_family</name></member>
+      <member refid="structsockaddr__in_1a5a44d7c63f2a63207889253dbf8771ac" prot="public" virt="non-virtual"><scope>sockaddr_in</scope><name>sin_len</name></member>
+      <member refid="structsockaddr__in_1a44f9f5870495104b62d7753d88f40ee3" prot="public" virt="non-virtual"><scope>sockaddr_in</scope><name>sin_port</name></member>
+      <member refid="structsockaddr__in_1a0254bfac1c18e922cb6638c3f6139e09" prot="public" virt="non-virtual"><scope>sockaddr_in</scope><name>sin_zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

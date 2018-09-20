@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__tim__ie" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_tim_ie</compoundname>
+    <includes refid="wm__ieee80211_8h" local="no">wm_ieee80211.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__tim__ie_1a627c701236fd15a0cbac4363bb438b62" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_tim_ie::dtim_count</definition>
+        <argsstring></argsstring>
+        <name>dtim_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="888" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="888" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__tim__ie_1a1518cd89f221ac7a91ad7f99db8dc2ca" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_tim_ie::dtim_period</definition>
+        <argsstring></argsstring>
+        <name>dtim_period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="889" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="889" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__tim__ie_1a8170b1799167b5b8eae52712b8eac8e2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_tim_ie::bitmap_ctrl</definition>
+        <argsstring></argsstring>
+        <name>bitmap_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="890" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="890" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__tim__ie_1a9eb4ffdfa2058ab374443273b9043b04" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_tim_ie::virtual_map</definition>
+        <argsstring>[1]</argsstring>
+        <name>virtual_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="892" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="892" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct ieee80211_tim</para><para>This structure refers to &quot;Traffic Indication Map information element&quot; </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_ieee80211.h" line="887" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="887" bodyend="893"/>
+    <listofallmembers>
+      <member refid="structieee80211__tim__ie_1a8170b1799167b5b8eae52712b8eac8e2" prot="public" virt="non-virtual"><scope>ieee80211_tim_ie</scope><name>bitmap_ctrl</name></member>
+      <member refid="structieee80211__tim__ie_1a627c701236fd15a0cbac4363bb438b62" prot="public" virt="non-virtual"><scope>ieee80211_tim_ie</scope><name>dtim_count</name></member>
+      <member refid="structieee80211__tim__ie_1a1518cd89f221ac7a91ad7f99db8dc2ca" prot="public" virt="non-virtual"><scope>ieee80211_tim_ie</scope><name>dtim_period</name></member>
+      <member refid="structieee80211__tim__ie_1a9eb4ffdfa2058ab374443273b9043b04" prot="public" virt="non-virtual"><scope>ieee80211_tim_ie</scope><name>virtual_map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__socket_8h" kind="file" language="C++">
+    <compoundname>wm_socket.h</compoundname>
+    <includes refid="wm__config_8h" local="yes">wm_config.h</includes>
+    <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
+    <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
+    <incdepgraph>
+      <node id="232">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="230">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="229">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="227">
+        <label>Include/Net/wm_socket.h</label>
+        <link refid="wm__socket_8h"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="233">
+        <label>Include/Net/wm_socket.h</label>
+        <link refid="wm__socket_8h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpbuf" prot="public">pbuf</innerclass>
+    <innerclass refid="structtls__socket__desc" prot="public">tls_socket_desc</innerclass>
+    <innerclass refid="structtls__skt__status__ext__t" prot="public">tls_skt_status_ext_t</innerclass>
+    <innerclass refid="structtls__skt__status__t" prot="public">tls_skt_status_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__socket_8h_1af1af7846ea83f628858e989510d361b5" prot="public" static="no">
+        <name>NETCONN_STATE_NONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="21" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1abfc732f26996c5da3e4a54515879bd54" prot="public" static="no">
+        <name>NETCONN_STATE_WAITING</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="22" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a4fdf216799415180e2010d55c663373d" prot="public" static="no">
+        <name>NETCONN_STATE_CONNECTED</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="23" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a0835f6dfa234b6ba6f1a82ff6e8d3309" prot="public" static="no">
+        <name>NETCONN_STATE_CLOSED</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="24" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a84b451b161c19192938bec1ec524a1ae" prot="public" static="no">
+        <name>NET_EVENT_TCP_JOINED</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="27" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a56825cb3d091b9914fd5990d365d1629" prot="public" static="no">
+        <name>NET_EVENT_TCP_DISCONNECT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="28" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a1b78e038f1a379a4c856ad296e6a67f9" prot="public" static="no">
+        <name>NET_EVENT_TCP_CONNECTED</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="29" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a2f017dc5126c8a6ea85d9697dbae35a3" prot="public" static="no">
+        <name>NET_EVENT_TCP_CONNECT_FAILED</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="30" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a659574b2b01d86f48177c2b6b2dc0e2c" prot="public" static="no">
+        <name>NET_EVENT_UDP_START</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="31" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a3b686b6eb81f931497d784f94df88576" prot="public" static="no">
+        <name>NET_EVENT_UDP_START_FAILED</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="32" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a15bab486f7fcd8b1d815b8506e7af938" prot="public" static="no">
+        <name>TLS_MAX_SOCKET_NUM</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="34" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a59739e0e696d467f02396eb81e6580e6" prot="public" static="no">
+        <name>TLS_MAX_NETCONN_NUM</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="35" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a98c763adfeea8e9831c46ec269e47ae9" prot="public" static="no">
+        <name>ERR_OK</name>
+        <initializer>0    /* No error, everything OK. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="175" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a6ab63185cc5dff3c50c61d99bdf98369" prot="public" static="no">
+        <name>ERR_MEM</name>
+        <initializer>-1    /* Out of memory error.     */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="176" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1ae1dcf352601ec4d3b700910df24f863d" prot="public" static="no">
+        <name>ERR_BUF</name>
+        <initializer>-2    /* Buffer error.            */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="177" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1aedcf61ffa26ceba66e9995937de74d64" prot="public" static="no">
+        <name>ERR_TIMEOUT</name>
+        <initializer>-3    /* Timeout.                 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="178" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a99462c1105f849cc0db4c87261e0b63d" prot="public" static="no">
+        <name>ERR_RTE</name>
+        <initializer>-4    /* Routing problem.         */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="179" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1ae07d802f89a09e400c3adbc01aa24968" prot="public" static="no">
+        <name>ERR_INPROGRESS</name>
+        <initializer>-5    /* Operation in progress    */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="180" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1aa803bb0b2c462e8b1f60459dd1f54bc9" prot="public" static="no">
+        <name>ERR_VAL</name>
+        <initializer>-6    /* Illegal value.           */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="181" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a9ffc9c4f78a546508cd265dddc126ab8" prot="public" static="no">
+        <name>ERR_WOULDBLOCK</name>
+        <initializer>-7    /* Operation would block.   */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="182" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a7a7ef5bec7c4a01857f4430b82915a0a" prot="public" static="no">
+        <name>ERR_USE</name>
+        <initializer>-8    /* Address in use.          */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="183" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a2906f5b6f8b7c277830e5695f92b9ad6" prot="public" static="no">
+        <name>ERR_ISCONN</name>
+        <initializer>-9    /* Already connected.       */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="184" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1ac36f9cda08ffce1f67529a432a046248" prot="public" static="no">
+        <name>ERR_IS_FATAL</name>
+        <param><defname>e</defname></param>
+        <initializer>((e) &lt; <ref refid="wm__socket2_80_83_8h_1ae2e66c7d13afc90ffecd6151680fbadca8543e1d6422fed7b318d97e08dcbaa33" kindref="member">ERR_ISCONN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="186" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a0629f0c91a328ccf469923287db34d7f" prot="public" static="no">
+        <name>ERR_ABRT</name>
+        <initializer>-10   /* Connection aborted.      */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="188" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a1ef610d9fa2a04aef05d5410a2b3b65a" prot="public" static="no">
+        <name>ERR_RST</name>
+        <initializer>-11   /* Connection reset.        */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="189" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1af26c7107aefe53fdfef57965fd9b937d" prot="public" static="no">
+        <name>ERR_CLSD</name>
+        <initializer>-12   /* Connection closed.       */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="190" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a88c4da0bf5d6a4410f6cfb864a5f04ce" prot="public" static="no">
+        <name>ERR_CONN</name>
+        <initializer>-13   /* Not connected.           */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="191" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1a8700518a3e3d0c7a4439a37dcbcf2143" prot="public" static="no">
+        <name>ERR_ARG</name>
+        <initializer>-14   /* Illegal argument.        */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="193" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__socket_8h_1afc95037d229067130084274ed078ef63" prot="public" static="no">
+        <name>ERR_IF</name>
+        <initializer>-15   /* Low-level netif error    */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="195" column="9" bodyfile="Include/Net/wm_socket.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="wm__socket_8h_1ab93e1c3ceb50f5a55f0faca2ce9bd3b1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_socket_protocol</name>
+        <enumvalue id="wm__socket_8h_1ab93e1c3ceb50f5a55f0faca2ce9bd3b1aca20a07b9c8f8b22aa5da27cb544b689" prot="public">
+          <name>SOCKET_PROTO_TCP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket_8h_1ab93e1c3ceb50f5a55f0faca2ce9bd3b1a7a41552244192796193b9941796baf7a" prot="public">
+          <name>SOCKET_PROTO_UDP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1ab93e1c3ceb50f5a55f0faca2ce9bd3b1aca20a07b9c8f8b22aa5da27cb544b689" prot="public">
+          <name>SOCKET_PROTO_TCP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1ab93e1c3ceb50f5a55f0faca2ce9bd3b1a7a41552244192796193b9941796baf7a" prot="public">
+          <name>SOCKET_PROTO_UDP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="198" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__socket_8h_1a1cec142d5cedd4b1cd39d71d2d199c51" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tls_socket_cs_mode</name>
+        <enumvalue id="wm__socket_8h_1a1cec142d5cedd4b1cd39d71d2d199c51aa519f25842e56b4749a4905aa7ec4f54" prot="public">
+          <name>SOCKET_CS_MODE_CLIENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket_8h_1a1cec142d5cedd4b1cd39d71d2d199c51ac0a3c44c89c6a9d0cd6c52c78166ea8d" prot="public">
+          <name>SOCKET_CS_MODE_SERVER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1a1cec142d5cedd4b1cd39d71d2d199c51aa519f25842e56b4749a4905aa7ec4f54" prot="public">
+          <name>SOCKET_CS_MODE_CLIENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1a1cec142d5cedd4b1cd39d71d2d199c51ac0a3c44c89c6a9d0cd6c52c78166ea8d" prot="public">
+          <name>SOCKET_CS_MODE_SERVER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="203" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__socket_8h_1aee1baa59bb2f85ba575b5a8619ac1ebf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>pbuf_layer</name>
+        <enumvalue id="wm__socket_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfa2ded3594a3977f8bf9cf09552be327b5" prot="public">
+          <name>PBUF_TRANSPORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfafcc1e506061ba69dfa142eb6b3da5f13" prot="public">
+          <name>PBUF_IP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfab4de441e737330558b609a990cd17346" prot="public">
+          <name>PBUF_LINK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfa21116654fbab6d5a4dfeb87a1bb8f0ba" prot="public">
+          <name>PBUF_RAW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfa2ded3594a3977f8bf9cf09552be327b5" prot="public">
+          <name>PBUF_TRANSPORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Includes spare room for transport layer header, e.g. UDP header. Use this if you intend to pass the pbuf to functions like udp_send(). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfafcc1e506061ba69dfa142eb6b3da5f13" prot="public">
+          <name>PBUF_IP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Includes spare room for IP header. Use this if you intend to pass the pbuf to functions like raw_send(). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfab4de441e737330558b609a990cd17346" prot="public">
+          <name>PBUF_LINK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Includes spare room for link layer header (ethernet header). Use this if you intend to pass the pbuf to functions like ethernet_output(). <simplesect kind="see"><para>PBUF_LINK_HLEN </para></simplesect>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfa0ff039585f05f9208bcb66c2d37783e2" prot="public">
+          <name>PBUF_RAW_TX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Includes spare room for additional encapsulation header before ethernet headers (e.g. 802.11). Use this if you intend to pass the pbuf to functions like netif-&gt;linkoutput(). <simplesect kind="see"><para>PBUF_LINK_ENCAPSULATION_HLEN </para></simplesect>
+</para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfa21116654fbab6d5a4dfeb87a1bb8f0ba" prot="public">
+          <name>PBUF_RAW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use this for input packets in a netif driver when calling netif-&gt;input() in the most common case - ethernet-layer netif driver. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="306" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="306" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="enum" id="wm__socket_8h_1ab7e0e32fcc292c0d7107721766ed92fb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>pbuf_type</name>
+        <enumvalue id="wm__socket_8h_1ab7e0e32fcc292c0d7107721766ed92fbac5e9f28455bca98944a030d4b84ecfab" prot="public">
+          <name>PBUF_RAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket_8h_1ab7e0e32fcc292c0d7107721766ed92fbac120b0fe39efe35bb682e4aa3b82e2c9" prot="public">
+          <name>PBUF_ROM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket_8h_1ab7e0e32fcc292c0d7107721766ed92fbac9b6ba960fdea6f2e8f35c8313b77e4e" prot="public">
+          <name>PBUF_REF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket_8h_1ab7e0e32fcc292c0d7107721766ed92fbae969347127387b9b59a23ccd24b76d21" prot="public">
+          <name>PBUF_POOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1ab7e0e32fcc292c0d7107721766ed92fbac5e9f28455bca98944a030d4b84ecfab" prot="public">
+          <name>PBUF_RAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>pbuf data is stored in RAM, used for TX mostly, struct pbuf and its payload are allocated in one piece of contiguous memory (so the first payload byte can be calculated from struct pbuf). <ref refid="wm__socket2_80_83_8h_1a35f3fd31f61b1fa06257f1e9c34db063" kindref="member">pbuf_alloc()</ref> allocates PBUF_RAM pbufs as unchained pbufs (although that might change in future versions). This should be used for all OUTGOING packets (TX). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1ab7e0e32fcc292c0d7107721766ed92fbac120b0fe39efe35bb682e4aa3b82e2c9" prot="public">
+          <name>PBUF_ROM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>pbuf data is stored in ROM, i.e. struct pbuf and its payload are located in totally different memory areas. Since it points to ROM, payload does not have to be copied when queued for transmission. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1ab7e0e32fcc292c0d7107721766ed92fbac9b6ba960fdea6f2e8f35c8313b77e4e" prot="public">
+          <name>PBUF_REF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>pbuf comes from the pbuf pool. Much like PBUF_ROM but payload might change so it has to be duplicated when queued before transmitting, depending on who has a &apos;ref&apos; to it. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="wm__socket2_80_83_8h_1ab7e0e32fcc292c0d7107721766ed92fbae969347127387b9b59a23ccd24b76d21" prot="public">
+          <name>PBUF_POOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>pbuf payload refers to RAM. This one comes from a pool and should be used for RX. Payload can be chained (scatter-gather RX) but like PBUF_RAM, struct pbuf and its payload are allocated in one piece of contiguous memory (so the first payload byte can be calculated from struct pbuf). Don&apos;t use this for TX, if the pool becomes empty e.g. because of TCP queuing, you are unable to receive TCP acks! </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="313" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="313" bodyend="318"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wm__socket_8h_1a4dfd098a87501848567f2a3cf5a97f42" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* socket_err_fn) (u8 skt_num, s8 err)</definition>
+        <argsstring>)(u8 skt_num, s8 err)</argsstring>
+        <name>socket_err_fn</name>
+        <briefdescription>
+<para>This Function prototype for tcp error callback functions. Called when receives a RST or is unexpectedly closed for any other reason. The corresponding socket is already freed when this callback is called! </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error code to indicate why the socket has been closed ERR_ABRT: aborted through returning ERR_ABRT from within others callback functions ERR_RST: the connection was reset by the remote host </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="82" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__socket_8h_1a138b58e0178afc139bf74eeaed855257" prot="public" static="no">
+        <type>s8(*</type>
+        <definition>typedef s8(* socket_recv_fn) (u8 skt_num, struct pbuf *p, s8 err)</definition>
+        <argsstring>)(u8 skt_num, struct pbuf *p, s8 err)</argsstring>
+        <name>socket_recv_fn</name>
+        <briefdescription>
+<para>This Function prototype for socket receive callback functions. Called when data has been received. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The received data (or NULL when the connection has been closed!)</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An error code if there has been an error receiving, always be ERR_OK when cs mode is udp.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>return value is only valid for tcp receive, for upd it means nothing. ERR_OK: Return this value after handling the received data. ERR_ABRT: Only return ERR_ABRT if you want to abort the socket from within the callback function! </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="100" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__socket_8h_1a91b601342ef9263f38d6d11f8edf71d0" prot="public" static="no">
+        <type>s8(*</type>
+        <definition>typedef s8(* socket_recv_ip_rpt_fn) (u8 skt_num, u16 datalen, u8 *ipsrc, u16 port, s8 err)</definition>
+        <argsstring>)(u8 skt_num, u16 datalen, u8 *ipsrc, u16 port, s8 err)</argsstring>
+        <name>socket_recv_ip_rpt_fn</name>
+        <briefdescription>
+<para>This Function prototype for socket srce ip callback functions. Called when data has been received. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">datalen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The received data length</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsrc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source ip addr</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source port</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An error code if there has been an error receiving, always be ERR_OK when cs mode is udp.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>return value is only valid for UDP receive, for udp it means nothing. ERR_OK: Return this value after handling the received data. ERR_ABRT: Only return ERR_ABRT if you want to abort the socket from within the callback function! </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="122" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__socket_8h_1a46732a784f4804d0ecbc11f72e14bc31" prot="public" static="no">
+        <type>s8(*</type>
+        <definition>typedef s8(* socket_connected_fn) (u8 skt_num, s8 err)</definition>
+        <argsstring>)(u8 skt_num, s8 err)</argsstring>
+        <name>socket_connected_fn</name>
+        <briefdescription>
+<para>This Function prototype for tcp connected callback functions. Called when connected to the remote side. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An unused error code, always ERR_OK currently.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>ERR_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Return this value after handling your logic. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ERR_ABRT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Only return ERR_ABRT if you want to abort the socket from within the callback function! </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="136" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__socket_8h_1a0528dd06ffeaafeb4b9ba5c561292dfd" prot="public" static="no">
+        <type>s8(*</type>
+        <definition>typedef s8(* socket_poll_fn) (u8 skt_num)</definition>
+        <argsstring>)(u8 skt_num)</argsstring>
+        <name>socket_poll_fn</name>
+        <briefdescription>
+<para>This Function prototype for tcp poll callback functions. Called periodically. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>ERR_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Try to do something periodically. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ERR_ABRT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Only return ERR_ABRT if you want to abort the socket from within the callback function! </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="147" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__socket_8h_1a4c321f1dfdc953c1d48eea46d9a16115" prot="public" static="no">
+        <type>s8(*</type>
+        <definition>typedef s8(* socket_accept_fn) (u8 skt_num, s8 err)</definition>
+        <argsstring>)(u8 skt_num, s8 err)</argsstring>
+        <name>socket_accept_fn</name>
+        <briefdescription>
+<para>This Function prototype for tcp accept callback functions. Called when a new connection can be accepted on a listening tcp. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An error code if there has been an error accepting.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>ERR_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Return this value after handling your logic. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ERR_ABRT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Only return ERR_ABRT if you want to abort the socket from within the callback function! </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="161" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="wm__socket_8h_1a83c4e1f5f01e54fec567b2452d3d1e15" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* socket_state_changed_fn) (u8 skt_num, u8 event, u8 state)</definition>
+        <argsstring>)(u8 skt_num, u8 event, u8 state)</argsstring>
+        <name>socket_state_changed_fn</name>
+        <briefdescription>
+<para>This Function prototype for socket state changed callback functions. Called when socket the sockte&apos;s state changed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the event number, see socket event defination.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket state, see socket state defination. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="173" column="1" bodyfile="Include/Net/wm_socket.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wm__socket_8h_1a89cb085ada81097da50841ba6fba40db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_socket_create</definition>
+        <argsstring>(struct tls_socket_desc *skd)</argsstring>
+        <name>tls_socket_create</name>
+        <param>
+          <type>struct <ref refid="structtls__socket__desc" kindref="compound">tls_socket_desc</ref> *</type>
+          <declname>skd</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by your application code to create a socket. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is a pointer to an <ref refid="structtls__socket__desc" kindref="compound">tls_socket_desc</ref>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>ERR_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If create socket successfully. negative number If an error was detected. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__socket_8h_1a97b414e2fadc8d822b5876001a622f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_socket_send</definition>
+        <argsstring>(u8 skt_num, void *pdata, u16 len)</argsstring>
+        <name>tls_socket_send</name>
+        <param>
+          <type>u8</type>
+          <declname>skt_num</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pdata</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by your application code to send data by the socket. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is a pointer to the data which need to be send by the socket.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data&apos;s length.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>ERR_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If send data successfully. negative number If an error was detected. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__socket_8h_1a453fe0518a40340f9b9e734643dc6887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_socket_close</definition>
+        <argsstring>(u8 skt_num)</argsstring>
+        <name>tls_socket_close</name>
+        <param>
+          <type>u8</type>
+          <declname>skt_num</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by your application code to close the socket, and the related resources would be released. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>ERR_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If close socket successfully. negative number If an error was detected. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__socket_8h_1a943a6908d7ef4f99e75eae8ff3225990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_socket_get_status</definition>
+        <argsstring>(u8 skt_num, u8 *buf, u32 bufsize)</argsstring>
+        <name>tls_socket_get_status</name>
+        <param>
+          <type>u8</type>
+          <declname>skt_num</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>bufsize</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by your application code to get the socket status of specified socket num. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">skt_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the socket number that returned by tls_socket_create function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is a pointer to the data contains the socket status, if the socket is server, also contains it&apos;s client&apos;s status.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bufsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buf&apos;s length. At least, the len should be bigger than sizeof(struct tls_skt_status_t).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>ERR_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If send data successfully. negative number If an error was detected. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__socket_8h_1a0a5fa0b907e0ff7658e4344ad11d057d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_socket_udp_sendto</definition>
+        <argsstring>(u16 localport, u8 *ip_addr, u16 port, void *pdata, u16 len)</argsstring>
+        <name>tls_socket_udp_sendto</name>
+        <param>
+          <type>u16</type>
+          <declname>localport</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>ip_addr</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pdata</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by your application code to send data by udp socket. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">localport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This function will search all created sockets, if there is a socket whose localport equals this value and it&apos;s protocol is udp, then send the data by this socket, otherwise, nothing to send.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in"><ref refid="structip__addr" kindref="compound">ip_addr</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the remote ip address.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the remote port which upd send to.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is a pointer to the data which need to be send by the socket.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data&apos;s length. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>ERR_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If send data successfully. negative number If an error was detected. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="304" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__socket_8h_1ac90fcef2c354199d12673e7580fec4a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structpbuf" kindref="compound">pbuf</ref> *</type>
+        <definition>struct pbuf* pbuf_alloc</definition>
+        <argsstring>(pbuf_layer l, u16 length, pbuf_type type)</argsstring>
+        <name>pbuf_alloc</name>
+        <param>
+          <type><ref refid="wm__socket_8h_1aee1baa59bb2f85ba575b5a8619ac1ebf" kindref="member">pbuf_layer</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="wm__socket_8h_1ab7e0e32fcc292c0d7107721766ed92fb" kindref="member">pbuf_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>This Function allocates a pbuf of the given type (possibly a chain for PBUF_POOL type). </para>        </briefdescription>
+        <detaileddescription>
+<para>The actual memory allocated for the pbuf is determined by the layer at which the pbuf is allocated and the requested size (from the size parameter).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>layer flag to define header size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the pbuf&apos;s payload </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this parameter decides how and where the pbuf</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>allocated pbuf. If multiple pbufs where allocated, this is the first pbuf of a pbuf chain. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__socket_8h_1a8efc874b7d1ee03febc4cf819603549b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 pbuf_free</definition>
+        <argsstring>(struct pbuf *p)</argsstring>
+        <name>pbuf_free</name>
+        <param>
+          <type>struct <ref refid="structpbuf" kindref="compound">pbuf</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>This Function for release the buffer that you receive within the socket_recv_fn callback function. Attention please: If you return ERR_OK in the socket_recv_fn callback function, you must call this function to release the buffer by yourself. Otherwise, the buffer do not need be released by your code. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer you received in the socket_recv_fn callback function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of de-allocated pbufs </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__socket_8h_1afe4e674705997d8dc4beca700f3a2c85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u16</type>
+        <definition>u16 pbuf_copy_partial</definition>
+        <argsstring>(struct pbuf *p, void *dataptr, u16 len, u16 offset)</argsstring>
+        <name>pbuf_copy_partial</name>
+        <param>
+          <type>struct <ref refid="structpbuf" kindref="compound">pbuf</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dataptr</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>This Function for copy (part of) the contents of a packet buffer to an application supplied buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pbuf from which to copy data.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dataptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the application supplied buffer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of data to copy (dataptr must be big enough). No more than buf-&gt;tot_len will be copied, irrespective of len</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>offset into the packet buffer from where to begin copying len bytes</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes copied, or 0 on failure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_socket.h" line="362" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>socket Module </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>dave</para></simplesect>
+Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>WM_SOCKET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WM_SOCKET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__config_8h" kindref="compound">wm_config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TLS_CONFIG_LWIP_VER2_0_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__socket2_80_83_8h" kindref="compound">wm_socket2.0.3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wm__type__def_8h" kindref="compound">wm_type_def.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//socket<sp/>state<sp/>defination</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NETCONN_STATE_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NETCONN_STATE_WAITING<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NETCONN_STATE_CONNECTED<sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NETCONN_STATE_CLOSED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//socket<sp/>event<sp/>defination</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_EVENT_TCP_JOINED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_EVENT_TCP_DISCONNECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_EVENT_TCP_CONNECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_EVENT_TCP_CONNECT_FAILED<sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_EVENT_UDP_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_EVENT_UDP_START_FAILED<sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MAX_SOCKET_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_MAX_NETCONN_NUM<sp/><sp/><sp/><sp/><sp/><sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structpbuf" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpbuf" kindref="compound">pbuf</ref><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="structpbuf_1a41ea0f0854e54c5b8492aebf096b9247" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpbuf" kindref="compound">pbuf</ref><sp/>*<ref refid="structpbuf_1a41ea0f0854e54c5b8492aebf096b9247" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structpbuf_1a11fb0edc141d71761d1f928c63c72c7e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structpbuf_1a11fb0edc141d71761d1f928c63c72c7e" kindref="member">payload</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structpbuf_1abaaed0a04b594d2457b0c9241676265d" refkind="member"><highlight class="normal"><sp/><sp/>u16<sp/><ref refid="structpbuf_1abaaed0a04b594d2457b0c9241676265d" kindref="member">tot_len</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structpbuf_1acdc5e5c3ef97592f47296bc91c35b7bf" refkind="member"><highlight class="normal"><sp/><sp/>u16<sp/><ref refid="structpbuf_1acdc5e5c3ef97592f47296bc91c35b7bf" kindref="member">len</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="structpbuf_1ac4a841b22ebe34813627c91ada58e429" refkind="member"><highlight class="normal"><sp/><sp/>u8<sp/></highlight><highlight class="comment">/*pbuf_type*/</highlight><highlight class="normal"><sp/><ref refid="structpbuf_1ac4a841b22ebe34813627c91ada58e429" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="structpbuf_1a8084b484e5e209764decf7c7c9b2bfd4" refkind="member"><highlight class="normal"><sp/><sp/>u8<sp/><ref refid="structpbuf_1a8084b484e5e209764decf7c7c9b2bfd4" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structpbuf_1a2787a9eb59025c1063d1103f2d1e15a4" refkind="member"><highlight class="normal"><sp/><sp/>u16<sp/><ref refid="structpbuf_1a2787a9eb59025c1063d1103f2d1e15a4" kindref="member">ref</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="wm__socket_8h_1a4dfd098a87501848567f2a3cf5a97f42" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/><sp/>(*<ref refid="wm__socket_8h_1a4dfd098a87501848567f2a3cf5a97f42" kindref="member">socket_err_fn</ref>)(u8<sp/>skt_num,<sp/>s8<sp/>err);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="wm__socket_8h_1a138b58e0178afc139bf74eeaed855257" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>s8<sp/><sp/>(*<ref refid="wm__socket_8h_1a138b58e0178afc139bf74eeaed855257" kindref="member">socket_recv_fn</ref>)(u8<sp/>skt_num,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpbuf" kindref="compound">pbuf</ref><sp/>*p,<sp/>s8<sp/>err);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="wm__socket_8h_1a91b601342ef9263f38d6d11f8edf71d0" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>s8<sp/><sp/>(*<ref refid="wm__socket_8h_1a91b601342ef9263f38d6d11f8edf71d0" kindref="member">socket_recv_ip_rpt_fn</ref>)(u8<sp/>skt_num,<sp/>u16<sp/>datalen,<sp/>u8<sp/>*ipsrc,<sp/>u16<sp/>port,<sp/>s8<sp/>err);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="wm__socket_8h_1a46732a784f4804d0ecbc11f72e14bc31" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>s8<sp/>(*<ref refid="wm__socket_8h_1a46732a784f4804d0ecbc11f72e14bc31" kindref="member">socket_connected_fn</ref>)(u8<sp/>skt_num,<sp/><sp/>s8<sp/>err);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="wm__socket_8h_1a0528dd06ffeaafeb4b9ba5c561292dfd" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>s8<sp/>(*<ref refid="wm__socket_8h_1a0528dd06ffeaafeb4b9ba5c561292dfd" kindref="member">socket_poll_fn</ref>)(u8<sp/>skt_num);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="wm__socket_8h_1a4c321f1dfdc953c1d48eea46d9a16115" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>s8<sp/>(*<ref refid="wm__socket_8h_1a4c321f1dfdc953c1d48eea46d9a16115" kindref="member">socket_accept_fn</ref>)(u8<sp/>skt_num,<sp/>s8<sp/>err);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="wm__socket_8h_1a83c4e1f5f01e54fec567b2452d3d1e15" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*<ref refid="wm__socket_8h_1a83c4e1f5f01e54fec567b2452d3d1e15" kindref="member">socket_state_changed_fn</ref>)(u8<sp/>skt_num,<sp/>u8<sp/>event,<sp/>u8<sp/>state);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>error,<sp/>everything<sp/>OK.<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_MEM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Out<sp/>of<sp/>memory<sp/>error.<sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_BUF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-2<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Buffer<sp/>error.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_TIMEOUT<sp/><sp/><sp/><sp/>-3<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Timeout.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_RTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-4<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Routing<sp/>problem.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_INPROGRESS<sp/>-5<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Operation<sp/>in<sp/>progress<sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_VAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-6<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Illegal<sp/>value.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_WOULDBLOCK<sp/>-7<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Operation<sp/>would<sp/>block.<sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_USE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-8<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Address<sp/>in<sp/>use.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_ISCONN<sp/><sp/><sp/><sp/><sp/>-9<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Already<sp/>connected.<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_IS_FATAL(e)<sp/>((e)<sp/>&lt;<sp/>ERR_ISCONN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_ABRT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-10<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Connection<sp/>aborted.<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_RST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-11<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Connection<sp/>reset.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_CLSD<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-12<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Connection<sp/>closed.<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_CONN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-13<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>connected.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_ARG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-14<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Illegal<sp/>argument.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_IF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-15<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Low-level<sp/>netif<sp/>error<sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>tls_socket_protocol{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>SOCKET_PROTO_TCP,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TCP<sp/>Protocol<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>SOCKET_PROTO_UDP,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>UDP<sp/>Protocol<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>tls_socket_cs_mode{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>SOCKET_CS_MODE_CLIENT,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Client<sp/>mode<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>SOCKET_CS_MODE_SERVER,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Server<sp/>mode<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="structtls__socket__desc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__socket__desc" kindref="compound">tls_socket_desc</ref><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>tls_socket_cs_mode<sp/>cs_mode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Server<sp/>mode<sp/><sp/>or<sp/>Client<sp/>mode,<sp/>Only<sp/>for<sp/>tcp<sp/>protocol<sp/>is<sp/>valid<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>tls_socket_protocol<sp/>protocol;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TCP<sp/>Protocol<sp/>or<sp/>UDP<sp/>Protocol<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structip__addr" kindref="compound">ip_addr</ref>[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Remote<sp/>ip<sp/>address,<sp/>for<sp/>tcp<sp/>client<sp/>mode<sp/>is<sp/>remote<sp/>server&apos;s<sp/>ip<sp/>address;<sp/>for<sp/>tcp<sp/>server<sp/>mode<sp/>can<sp/>be<sp/>any<sp/>address.<sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>udp<sp/>is<sp/>remote<sp/>server&apos;s<sp/>ip<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>port;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>port,<sp/>for<sp/>tcp<sp/>client<sp/>mode<sp/>is<sp/>remote<sp/>server&apos;s<sp/>port;<sp/>for<sp/>tcp<sp/>server<sp/>mode<sp/>is<sp/>local<sp/>listen<sp/>port<sp/>.<sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>udp<sp/>is<sp/>remote<sp/>server&apos;s<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>localport;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>local<sp/>port,<sp/>for<sp/>udp<sp/>and<sp/>tcp<sp/>client<sp/>is<sp/>local<sp/>listen<sp/>port,<sp/>for<sp/>tcp<sp/>server<sp/>means<sp/>nothing,<sp/>tcp<sp/>server<sp/>always<sp/>listen<sp/>at<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>host_name[32];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>remote<sp/>host<sp/>name,<sp/>not<sp/>support<sp/>for<sp/>now<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>host_len;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>length<sp/>of<sp/>host<sp/>name<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>timeout;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>poll<sp/>timeout,<sp/>not<sp/>implemented<sp/>for<sp/>now<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__socket_8h_1a4dfd098a87501848567f2a3cf5a97f42" kindref="member">socket_err_fn</ref><sp/>errf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>pointer<sp/>to<sp/>socket_err_fn<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__socket_8h_1a138b58e0178afc139bf74eeaed855257" kindref="member">socket_recv_fn</ref><sp/>recvf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>pointer<sp/>to<sp/>socket_recv_fn<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__socket_8h_1a46732a784f4804d0ecbc11f72e14bc31" kindref="member">socket_connected_fn</ref><sp/>connf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>pointer<sp/>to<sp/>socket_connected_fn<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__socket_8h_1a0528dd06ffeaafeb4b9ba5c561292dfd" kindref="member">socket_poll_fn</ref><sp/>pollf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>pointer<sp/>to<sp/>socket_poll_fn<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__socket_8h_1a4c321f1dfdc953c1d48eea46d9a16115" kindref="member">socket_accept_fn</ref><sp/>acceptf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>pointer<sp/>to<sp/>socket_accept_fn<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__socket_8h_1a83c4e1f5f01e54fec567b2452d3d1e15" kindref="member">socket_state_changed_fn</ref><sp/>state_changed;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>pointer<sp/>to<sp/>socket_state_changed_fn<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wm__socket_8h_1a91b601342ef9263f38d6d11f8edf71d0" kindref="member">socket_recv_ip_rpt_fn</ref><sp/>recvwithipf;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*recv<sp/>skt<sp/>info<sp/>report*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__socket_8h_1a89cb085ada81097da50841ba6fba40db" kindref="member">tls_socket_create</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__socket__desc" kindref="compound">tls_socket_desc</ref><sp/>*<sp/>skd);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__socket_8h_1a97b414e2fadc8d822b5876001a622f22" kindref="member">tls_socket_send</ref>(u8<sp/>skt_num,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pdata,<sp/>u16<sp/>len);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__socket_8h_1a453fe0518a40340f9b9e734643dc6887" kindref="member">tls_socket_close</ref>(u8<sp/>skt_num);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="structtls__skt__status__ext__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__skt__status__ext__t" kindref="compound">tls_skt_status_ext_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>socket;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>status;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>tls_socket_protocol<sp/>protocol;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>host_ipaddr[4];</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>remote_port;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>local_port;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="structtls__skt__status__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__skt__status__t" kindref="compound">tls_skt_status_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>socket_cnt;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__skt__status__ext__t" kindref="compound">tls_skt_status_ext_t</ref><sp/>skts_ext[1];</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="287"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__socket_8h_1a943a6908d7ef4f99e75eae8ff3225990" kindref="member">tls_socket_get_status</ref>(u8<sp/>skt_num,<sp/>u8<sp/>*buf,<sp/>u32<sp/>bufsize);</highlight></codeline>
+<codeline lineno="304"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__socket_8h_1a0a5fa0b907e0ff7658e4344ad11d057d" kindref="member">tls_socket_udp_sendto</ref>(u16<sp/>localport,<sp/>u8<sp/><sp/>*<ref refid="structip__addr" kindref="compound">ip_addr</ref>,<sp/>u16<sp/>port,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pdata,<sp/>u16<sp/>len);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="wm__socket_8h_1aee1baa59bb2f85ba575b5a8619ac1ebf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><ref refid="wm__socket2_80_83_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfa2ded3594a3977f8bf9cf09552be327b5" kindref="member">PBUF_TRANSPORT</ref>,</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><ref refid="wm__socket2_80_83_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfafcc1e506061ba69dfa142eb6b3da5f13" kindref="member">PBUF_IP</ref>,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><ref refid="wm__socket2_80_83_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfab4de441e737330558b609a990cd17346" kindref="member">PBUF_LINK</ref>,</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><ref refid="wm__socket2_80_83_8h_1aee1baa59bb2f85ba575b5a8619ac1ebfa21116654fbab6d5a4dfeb87a1bb8f0ba" kindref="member">PBUF_RAW</ref></highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}<sp/><ref refid="wm__socket_8h_1aee1baa59bb2f85ba575b5a8619ac1ebf" kindref="member">pbuf_layer</ref>;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="wm__socket_8h_1ab7e0e32fcc292c0d7107721766ed92fb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><ref refid="wm__socket2_80_83_8h_1ab7e0e32fcc292c0d7107721766ed92fbac5e9f28455bca98944a030d4b84ecfab" kindref="member">PBUF_RAM</ref>,<sp/></highlight><highlight class="comment">/*<sp/>pbuf<sp/>data<sp/>is<sp/>stored<sp/>in<sp/>RAM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><ref refid="wm__socket2_80_83_8h_1ab7e0e32fcc292c0d7107721766ed92fbac120b0fe39efe35bb682e4aa3b82e2c9" kindref="member">PBUF_ROM</ref>,<sp/></highlight><highlight class="comment">/*<sp/>pbuf<sp/>data<sp/>is<sp/>stored<sp/>in<sp/>ROM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><ref refid="wm__socket2_80_83_8h_1ab7e0e32fcc292c0d7107721766ed92fbac9b6ba960fdea6f2e8f35c8313b77e4e" kindref="member">PBUF_REF</ref>,<sp/></highlight><highlight class="comment">/*<sp/>pbuf<sp/>comes<sp/>from<sp/>the<sp/>pbuf<sp/>pool<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><ref refid="wm__socket2_80_83_8h_1ab7e0e32fcc292c0d7107721766ed92fbae969347127387b9b59a23ccd24b76d21" kindref="member">PBUF_POOL</ref><sp/></highlight><highlight class="comment">/*<sp/>pbuf<sp/>payload<sp/>refers<sp/>to<sp/>RAM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal">}<sp/><ref refid="wm__socket_8h_1ab7e0e32fcc292c0d7107721766ed92fb" kindref="member">pbuf_type</ref>;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpbuf" kindref="compound">pbuf</ref><sp/>*<ref refid="wm__socket_8h_1ac90fcef2c354199d12673e7580fec4a6" kindref="member">pbuf_alloc</ref>(<ref refid="wm__socket_8h_1aee1baa59bb2f85ba575b5a8619ac1ebf" kindref="member">pbuf_layer</ref><sp/>l,<sp/>u16<sp/>length,<sp/><ref refid="wm__socket_8h_1ab7e0e32fcc292c0d7107721766ed92fb" kindref="member">pbuf_type</ref><sp/><ref refid="structpbuf_1ac4a841b22ebe34813627c91ada58e429" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">u8<sp/><ref refid="wm__socket_8h_1a8efc874b7d1ee03febc4cf819603549b" kindref="member">pbuf_free</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpbuf" kindref="compound">pbuf</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal">u16<sp/><ref refid="wm__socket_8h_1afe4e674705997d8dc4beca700f3a2c85" kindref="member">pbuf_copy_partial</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structpbuf" kindref="compound">pbuf</ref><sp/>*p,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dataptr,<sp/>u16<sp/><ref refid="structpbuf_1acdc5e5c3ef97592f47296bc91c35b7bf" kindref="member">len</ref>,<sp/>u16<sp/>offset);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Include/Net/wm_socket.h"/>
+  </compounddef>
+</doxygen>

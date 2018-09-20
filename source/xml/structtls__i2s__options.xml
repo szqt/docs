@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__i2s__options" kind="struct" language="C++" prot="public">
+    <compoundname>tls_i2s_options</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__i2s__options_1a2fddc030a8f55c744bbc8b5f8f746742" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t tls_i2s_options::rx_en</definition>
+        <argsstring></argsstring>
+        <name>rx_en</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S receiver enable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="162" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__i2s__options_1a9385b4332e1c7d52f21b366e3f462902" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t tls_i2s_options::tx_en</definition>
+        <argsstring></argsstring>
+        <name>tx_en</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S transfer enable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="164" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__i2s__options_1a726e1852b5446821774576d2415b23f0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tls_i2s_options::stereo_mono</definition>
+        <argsstring></argsstring>
+        <name>stereo_mono</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S Stereo or Monaural<itemizedlist>
+<listitem><para><ref refid="wm__i2s_8h_1abace156036f746bfeb7714956610fb54" kindref="member">I2S_CTRL_STERO</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1a1c57c1c472dd8ea93cb5572b59772c20" kindref="member">I2S_CTRL_MONO</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="169" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__i2s__options_1a1b052106c23a40c1613a64aeb837cd93" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tls_i2s_options::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S module format<itemizedlist>
+<listitem><para><ref refid="wm__i2s_8h_1ab005ff75adf898b0f7cc187c65bfeaec" kindref="member">I2S_CTRL_FORMAT_I2S</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1ae18a9ddcc833a83d13c0b6f7d0b19f47" kindref="member">I2S_CTRL_FORMAT_MSB</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1a260faf388cb365cb8fa0e4c6c67b1b9a" kindref="member">I2S_CTRL_FORMAT_PCMA</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1add632bd895f8cc1d6d736f2a73e033a7" kindref="member">I2S_CTRL_FORMAT_PCMB</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="176" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__i2s__options_1a97d2364bcf3b38192495d90982c9c2ec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tls_i2s_options::data_width</definition>
+        <argsstring></argsstring>
+        <name>data_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S module data width<itemizedlist>
+<listitem><para><ref refid="wm__i2s_8h_1a9019f1842c73be222c043307b233e89c" kindref="member">I2S_CTRL_DATABIT_8</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1a2864ce599b1116cf8c5ffa96e6e91955" kindref="member">I2S_CTRL_DATABIT_16</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1a14ff733e8d5ac1179d07e4720b79a98d" kindref="member">I2S_CTRL_DATABIT_24</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1af202b630d1884b15130f9329e7c401da" kindref="member">I2S_CTRL_DATABIT_32</ref> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="183" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__i2s__options_1aca01b76416a95e45aca5da4e11b6c890" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tls_i2s_options::sample_rate</definition>
+        <argsstring></argsstring>
+        <name>sample_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2S module sample rate max 128KHz </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="185" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_i2s.h" line="160" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="159" bodyend="186"/>
+    <listofallmembers>
+      <member refid="structtls__i2s__options_1a97d2364bcf3b38192495d90982c9c2ec" prot="public" virt="non-virtual"><scope>tls_i2s_options</scope><name>data_width</name></member>
+      <member refid="structtls__i2s__options_1a1b052106c23a40c1613a64aeb837cd93" prot="public" virt="non-virtual"><scope>tls_i2s_options</scope><name>format</name></member>
+      <member refid="structtls__i2s__options_1a2fddc030a8f55c744bbc8b5f8f746742" prot="public" virt="non-virtual"><scope>tls_i2s_options</scope><name>rx_en</name></member>
+      <member refid="structtls__i2s__options_1aca01b76416a95e45aca5da4e11b6c890" prot="public" virt="non-virtual"><scope>tls_i2s_options</scope><name>sample_rate</name></member>
+      <member refid="structtls__i2s__options_1a726e1852b5446821774576d2415b23f0" prot="public" virt="non-virtual"><scope>tls_i2s_options</scope><name>stereo_mono</name></member>
+      <member refid="structtls__i2s__options_1a9385b4332e1c7d52f21b366e3f462902" prot="public" virt="non-virtual"><scope>tls_i2s_options</scope><name>tx_en</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

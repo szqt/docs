@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structieee80211__msrment__ie" kind="struct" language="C++" prot="public">
+    <compoundname>ieee80211_msrment_ie</compoundname>
+    <includes refid="wm__ieee80211_8h" local="no">wm_ieee80211.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structieee80211__msrment__ie_1a645d89d7385ed753f8511cbc0964c6cb" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_msrment_ie::token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="865" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__msrment__ie_1a0c45f0349473a818aea6cc1cb2e08cfc" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_msrment_ie::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="866" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__msrment__ie_1abebbbf68309ae824d7409056f9f82080" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_msrment_ie::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="867" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structieee80211__msrment__ie_1a51bd6af557d1bf7d783eee65d71d9fa6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ieee80211_msrment_ie::request</definition>
+        <argsstring>[1]</argsstring>
+        <name>request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_ieee80211.h" line="868" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="868" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct <ref refid="structieee80211__msrment__ie" kindref="compound">ieee80211_msrment_ie</ref></para><para>This structure refers to &quot;Measurement Request/Report information element&quot; </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_ieee80211.h" line="864" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="864" bodyend="869"/>
+    <listofallmembers>
+      <member refid="structieee80211__msrment__ie_1a0c45f0349473a818aea6cc1cb2e08cfc" prot="public" virt="non-virtual"><scope>ieee80211_msrment_ie</scope><name>mode</name></member>
+      <member refid="structieee80211__msrment__ie_1a51bd6af557d1bf7d783eee65d71d9fa6" prot="public" virt="non-virtual"><scope>ieee80211_msrment_ie</scope><name>request</name></member>
+      <member refid="structieee80211__msrment__ie_1a645d89d7385ed753f8511cbc0964c6cb" prot="public" virt="non-virtual"><scope>ieee80211_msrment_ie</scope><name>token</name></member>
+      <member refid="structieee80211__msrment__ie_1abebbbf68309ae824d7409056f9f82080" prot="public" virt="non-virtual"><scope>ieee80211_msrment_ie</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

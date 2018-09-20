@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wm__ram__config_8h" kind="file" language="C++">
+    <compoundname>wm_ram_config.h</compoundname>
+    <includedby refid="wm__config_8h" local="yes">Include/wm_config.h</includedby>
+    <includedby refid="wm__hostspi_8h" local="yes">Include/Driver/wm_hostspi.h</includedby>
+    <includedby refid="wm__hspi_8h" local="yes">Include/Driver/wm_hspi.h</includedby>
+    <invincdepgraph>
+      <node id="485">
+        <label>Include/Net/wm_sockets2.0.3.h</label>
+        <link refid="wm__sockets2_80_83_8h"/>
+      </node>
+      <node id="479">
+        <label>Include/Net/wm_socket2.0.3.h</label>
+        <link refid="wm__socket2_80_83_8h"/>
+      </node>
+      <node id="495">
+        <label>Include/Platform/wm_wl_task.h</label>
+        <link refid="wm__wl__task_8h"/>
+      </node>
+      <node id="487">
+        <label>Include/Driver/wm_flash.h</label>
+        <link refid="wm__flash_8h"/>
+      </node>
+      <node id="477">
+        <label>Include/App/wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+      </node>
+      <node id="482">
+        <label>Include/App/wm_ssl_server.h</label>
+        <link refid="wm__ssl__server_8h_source"/>
+      </node>
+      <node id="480">
+        <label>Include/Net/wm_sockets.h</label>
+        <link refid="wm__sockets_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>Include/App/wm_cloud.h</label>
+        <link refid="wm__cloud_8h"/>
+      </node>
+      <node id="491">
+        <label>Include/Driver/wm_internal_flash.h</label>
+        <link refid="wm__internal__flash_8h"/>
+      </node>
+      <node id="488">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+      </node>
+      <node id="486">
+        <label>Include/OS/wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
+        <childnode refid="492" relation="include">
+        </childnode>
+        <childnode refid="493" relation="include">
+        </childnode>
+        <childnode refid="494" relation="include">
+        </childnode>
+      </node>
+      <node id="483">
+        <label>Include/App/wm_wifi_oneshot.h</label>
+        <link refid="wm__wifi__oneshot_8h"/>
+      </node>
+      <node id="496">
+        <label>Include/Platform/wm_wl_timers.h</label>
+        <link refid="wm__wl__timers_8h"/>
+        <childnode refid="495" relation="include">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>Include/App/wm_netif2.0.3.h</label>
+        <link refid="wm__netif2_80_83_8h"/>
+      </node>
+      <node id="494">
+        <label>Include/Platform/wm_wl_mbox.h</label>
+        <link refid="wm__wl__mbox_8h"/>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="496" relation="include">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>Include/Platform/wm_fwup.h</label>
+        <link refid="wm__fwup_8h"/>
+      </node>
+      <node id="476">
+        <label>Include/App/wm_http_client.h</label>
+        <link refid="wm__http__client_8h"/>
+      </node>
+      <node id="489">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>Include/Driver/wm_hspi.h</label>
+        <link refid="wm__hspi_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>Include/Net/wm_socket.h</label>
+        <link refid="wm__socket_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="490">
+        <label>Include/Driver/wm_i2s.h</label>
+        <link refid="wm__i2s_8h"/>
+      </node>
+      <node id="473">
+        <label>Include/wm_config.h</label>
+        <link refid="wm__config_8h"/>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+      </node>
+      <node id="474">
+        <label>Include/wm_debug.h</label>
+        <link refid="wm__debug_8h"/>
+      </node>
+      <node id="478">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+      <node id="492">
+        <label>Include/Driver/wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>Include/wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wm__ram__config_8h_1a597cff79dd82370918e122286a90ed22" prot="public" static="no">
+        <name>TASK_STACK_USING_MEM_LOWER_RANGE</name>
+        <initializer>(0x20000000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_ram_config.h" line="14" column="9" bodyfile="Include/wm_ram_config.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__ram__config_8h_1acf0ce2b8cbbc33ccd071d29512b0827f" prot="public" static="no">
+        <name>TASK_STACK_USING_MEM_UPPER_RANGE</name>
+        <initializer>(0x20028000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_ram_config.h" line="15" column="9" bodyfile="Include/wm_ram_config.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__ram__config_8h_1a8bd3237cebb9d8ff0da3d3f62f20b009" prot="public" static="no">
+        <name>MASTER_SPI_DMA_ADDR</name>
+        <initializer>0x20038000UL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_ram_config.h" line="20" column="9" bodyfile="Include/wm_ram_config.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__ram__config_8h_1a342eb53269ba1a48fd3b6aa60d06f1ae" prot="public" static="no">
+        <name>SLAVE_HSPI_SDIO_ADDR</name>
+        <initializer>0x2003A000UL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_ram_config.h" line="23" column="9" bodyfile="Include/wm_ram_config.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__ram__config_8h_1a4a3e9ebdd1b8e58f6315d14d19597e40" prot="public" static="no">
+        <name>WIFI_MEM_START_ADDR</name>
+        <initializer>0x2003C000UL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/wm_ram_config.h" line="26" column="9" bodyfile="Include/wm_ram_config.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>WM ram model configure. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>winnermicro</para></simplesect>
+Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>__WM_RAM_CONFIG_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WM_RAM_CONFIG_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*OS<sp/>Task<sp/>Stack&apos;s<sp/>lower<sp/>&amp;<sp/>upper<sp/>range*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TASK_STACK_USING_MEM_LOWER_RANGE<sp/>(0x20000000UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TASK_STACK_USING_MEM_UPPER_RANGE<sp/>(0x20028000UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*0x20000000~MASTER_SPI_DMA_ADDR<sp/>for<sp/>stack,heap<sp/>&amp;<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*Master<sp/>SPI<sp/>use<sp/>buffer<sp/>when<sp/>spi<sp/>use<sp/>dma<sp/>transfer<sp/>mode*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MASTER_SPI_DMA_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20038000UL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*High<sp/>speed<sp/>SPI<sp/>or<sp/>SDIO<sp/>buffer<sp/>to<sp/>exchange<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLAVE_HSPI_SDIO_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2003A000UL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*Wi-Fi<sp/>use<sp/>buffer<sp/>to<sp/>exchange<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIFI_MEM_START_ADDR<sp/><sp/><sp/><sp/><sp/>0x2003C000UL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*__WM_RAM_CONFIG_H__*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Include/wm_ram_config.h"/>
+  </compounddef>
+</doxygen>

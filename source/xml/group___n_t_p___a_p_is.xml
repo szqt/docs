@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___n_t_p___a_p_is" kind="group">
+    <compoundname>NTP_APIs</compoundname>
+    <title>NTP APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___n_t_p___a_p_is_1ga58ae5b9aa583881c9c9bdd31dcd411ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 tls_ntp_client</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_ntp_client</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get network time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_ntp.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_t_p___a_p_is_1ga3d44dc1638a4af67e361b7b24fb21dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_ntp_set_server</definition>
+        <argsstring>(char *ipaddr, int server_no)</argsstring>
+        <name>tls_ntp_set_server</name>
+        <param>
+          <type>char *</type>
+          <declname>ipaddr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>server_no</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set ntp servers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*ipaddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>xxx.xxx.xxx.xxx </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">server_no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max num is three</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_ntp.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___n_t_p___a_p_is_1ga5bd7b279b2f3c127b44b535a9bfd8185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_ntp_query_sntpcfg</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_ntp_query_sntpcfg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to query params of the ntp servers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>WM_SUCCESS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WM_FAILED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_ntp.h" line="69" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>NTP APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

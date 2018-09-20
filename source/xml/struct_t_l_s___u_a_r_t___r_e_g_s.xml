@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_t_l_s___u_a_r_t___r_e_g_s" kind="struct" language="C++" prot="public">
+    <compoundname>TLS_UART_REGS</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1aab5259bbe7a0619c3805bb3a282fc165" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_LC</definition>
+        <argsstring></argsstring>
+        <name>UR_LC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>line control register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="235" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a68b46c91e2db76807015a3eeb2c3654a" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_FC</definition>
+        <argsstring></argsstring>
+        <name>UR_FC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flow control register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="236" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a4d79a754e72816a18b1342a93e84ed17" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_DMAC</definition>
+        <argsstring></argsstring>
+        <name>UR_DMAC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dma control register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="237" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a52170ffee3af164731aca4171889771e" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_FIFOC</definition>
+        <argsstring></argsstring>
+        <name>UR_FIFOC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fifo control register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="238" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1addadf5ba8b7f6d46a4b0320a23012ff3" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_BD</definition>
+        <argsstring></argsstring>
+        <name>UR_BD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>baud rate register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="239" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a897b84f50669162b4c2fa92fde9d3b0d" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_INTM</definition>
+        <argsstring></argsstring>
+        <name>UR_INTM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt mask register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="240" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a1d44659a59bb48cf2befc5c56202282a" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_INTS</definition>
+        <argsstring></argsstring>
+        <name>UR_INTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt source register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="241" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a871a4d7d6569ca6dea95019910d8946f" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_FIFOS</definition>
+        <argsstring></argsstring>
+        <name>UR_FIFOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fifo status register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="242" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a86a5869aff90e2a38b682ba3f8659fba" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_TXW</definition>
+        <argsstring></argsstring>
+        <name>UR_TXW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tx windows register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="243" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1af861a4f1cfad7fd3dcbce5b68e942479" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_RES0</definition>
+        <argsstring></argsstring>
+        <name>UR_RES0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="244" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a8fafe7ff7f4d15f18fe345bce744d81e" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_RES1</definition>
+        <argsstring></argsstring>
+        <name>UR_RES1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="245" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a6fa3b1817dceebfe8b597e41a217a43b" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_RES2</definition>
+        <argsstring></argsstring>
+        <name>UR_RES2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="246" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_l_s___u_a_r_t___r_e_g_s_1a71f19161f5aab1874d4a466377bfc8a2" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 TLS_UART_REGS::UR_RXW</definition>
+        <argsstring></argsstring>
+        <name>UR_RXW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>rx windows register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_uart.h" line="247" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Driver/wm_uart.h" line="234" column="1" bodyfile="Include/Driver/wm_uart.h" bodystart="233" bodyend="248"/>
+    <listofallmembers>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1addadf5ba8b7f6d46a4b0320a23012ff3" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_BD</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a4d79a754e72816a18b1342a93e84ed17" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_DMAC</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a68b46c91e2db76807015a3eeb2c3654a" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_FC</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a52170ffee3af164731aca4171889771e" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_FIFOC</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a871a4d7d6569ca6dea95019910d8946f" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_FIFOS</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a897b84f50669162b4c2fa92fde9d3b0d" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_INTM</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a1d44659a59bb48cf2befc5c56202282a" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_INTS</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1aab5259bbe7a0619c3805bb3a282fc165" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_LC</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1af861a4f1cfad7fd3dcbce5b68e942479" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_RES0</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a8fafe7ff7f4d15f18fe345bce744d81e" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_RES1</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a6fa3b1817dceebfe8b597e41a217a43b" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_RES2</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a71f19161f5aab1874d4a466377bfc8a2" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_RXW</name></member>
+      <member refid="struct_t_l_s___u_a_r_t___r_e_g_s_1a86a5869aff90e2a38b682ba3f8659fba" prot="public" virt="non-virtual"><scope>TLS_UART_REGS</scope><name>UR_TXW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

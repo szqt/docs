@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structin6__addr" kind="struct" language="C++" prot="public">
+    <compoundname>in6_addr</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structin6__addr_1a6658b13b0eb020d6f61983f8def06d50" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 in6_addr::u32_addr[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>u32_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="44" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structin6__addr_1a3412f25d52fe399e5aca288267b04209" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 in6_addr::u8_addr[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>u8_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="45" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structin6__addr_1a498c500ad25a20b2b8a95898ffa8f052" prot="public" static="no" mutable="no">
+        <type>union in6_addr::@2</type>
+        <definition>union in6_addr::@2  in6_addr::un</definition>
+        <argsstring></argsstring>
+        <name>un</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structin6__addr_1a5a2ca960bb7ff446cb8ca70478843cdd" prot="public" static="no" mutable="no">
+        <type>u32_t</type>
+        <definition>u32_t in6_addr::u32_addr[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>u32_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets2.0.3.h" line="40" column="1" bodyfile="Include/Net/wm_sockets2.0.3.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structin6__addr_1abfef295d9dd6db109a1f1f95eacdb5f6" prot="public" static="no" mutable="no">
+        <type>u8_t</type>
+        <definition>u8_t in6_addr::u8_addr[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>u8_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets2.0.3.h" line="41" column="1" bodyfile="Include/Net/wm_sockets2.0.3.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structin6__addr_1a145bf6858129ba897656c34157fe2cf3" prot="public" static="no" mutable="no">
+        <type>union in6_addr::@3</type>
+        <definition>union in6_addr::@3  in6_addr::un</definition>
+        <argsstring></argsstring>
+        <name>un</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Net/wm_sockets2.0.3.h" line="42" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Net/wm_sockets.h" line="42" column="1" bodyfile="Include/Net/wm_sockets.h" bodystart="42" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structin6__addr_1a6658b13b0eb020d6f61983f8def06d50" prot="public" virt="non-virtual"><scope>in6_addr</scope><name>u32_addr</name></member>
+      <member refid="structin6__addr_1a5a2ca960bb7ff446cb8ca70478843cdd" prot="public" virt="non-virtual"><scope>in6_addr</scope><name>u32_addr</name></member>
+      <member refid="structin6__addr_1a3412f25d52fe399e5aca288267b04209" prot="public" virt="non-virtual"><scope>in6_addr</scope><name>u8_addr</name></member>
+      <member refid="structin6__addr_1abfef295d9dd6db109a1f1f95eacdb5f6" prot="public" virt="non-virtual"><scope>in6_addr</scope><name>u8_addr</name></member>
+      <member refid="structin6__addr_1a498c500ad25a20b2b8a95898ffa8f052" prot="public" virt="non-virtual"><scope>in6_addr</scope><name>un</name></member>
+      <member refid="structin6__addr_1a145bf6858129ba897656c34157fe2cf3" prot="public" virt="non-virtual"><scope>in6_addr</scope><name>un</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

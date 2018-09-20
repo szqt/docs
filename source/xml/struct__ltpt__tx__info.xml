@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct__ltpt__tx__info" kind="struct" language="C++" prot="public">
+    <compoundname>_ltpt_tx_info</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1a6e013b63f1e839ad14a5b7cadf51604e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _ltpt_tx_info::cnt_total</definition>
+        <argsstring></argsstring>
+        <name>cnt_total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="20" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1a8dc45c207c60b69e4c64105e60a6fe32" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _ltpt_tx_info::packetcount</definition>
+        <argsstring></argsstring>
+        <name>packetcount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="21" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1aee5f3c7b594338cad879e6cf84ba182d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _ltpt_tx_info::psdulen</definition>
+        <argsstring></argsstring>
+        <name>psdulen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="22" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1a8d4d924d80676a1dd4d5e29e56f43522" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char _ltpt_tx_info::txgain</definition>
+        <argsstring></argsstring>
+        <name>txgain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="24" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1aa793aaac58c59154c69c62d2f9a39293" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char _ltpt_tx_info::datarate</definition>
+        <argsstring></argsstring>
+        <name>datarate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="25" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1ac71c919b502a6e6aad41f29c26409576" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char _ltpt_tx_info::gimode</definition>
+        <argsstring></argsstring>
+        <name>gimode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="26" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1aedc3872632b42a7f5aeb2dd667a08761" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char _ltpt_tx_info::greenfield</definition>
+        <argsstring></argsstring>
+        <name>greenfield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="27" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1aaa0186caa5457489f0b6a1667b563735" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char _ltpt_tx_info::rifs</definition>
+        <argsstring></argsstring>
+        <name>rifs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="28" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1aa7bdde800ad0f9c06428baecefed9237" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char _ltpt_tx_info::bprocess</definition>
+        <argsstring></argsstring>
+        <name>bprocess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="29" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1a82282e9d8fa89deca9bfa6cd309f2ddb" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char _ltpt_tx_info::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="30" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__ltpt__tx__info_1a7d9af04bb3341a94db277a01ddbd0853" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char _ltpt_tx_info::longpreamble</definition>
+        <argsstring></argsstring>
+        <name>longpreamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/litepoint.h" line="31" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/WiFi/litepoint.h" line="19" column="1" bodyfile="Include/WiFi/litepoint.h" bodystart="18" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct__ltpt__tx__info_1aa7bdde800ad0f9c06428baecefed9237" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>bprocess</name></member>
+      <member refid="struct__ltpt__tx__info_1a82282e9d8fa89deca9bfa6cd309f2ddb" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>channel</name></member>
+      <member refid="struct__ltpt__tx__info_1a6e013b63f1e839ad14a5b7cadf51604e" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>cnt_total</name></member>
+      <member refid="struct__ltpt__tx__info_1aa793aaac58c59154c69c62d2f9a39293" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>datarate</name></member>
+      <member refid="struct__ltpt__tx__info_1ac71c919b502a6e6aad41f29c26409576" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>gimode</name></member>
+      <member refid="struct__ltpt__tx__info_1aedc3872632b42a7f5aeb2dd667a08761" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>greenfield</name></member>
+      <member refid="struct__ltpt__tx__info_1a7d9af04bb3341a94db277a01ddbd0853" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>longpreamble</name></member>
+      <member refid="struct__ltpt__tx__info_1a8dc45c207c60b69e4c64105e60a6fe32" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>packetcount</name></member>
+      <member refid="struct__ltpt__tx__info_1aee5f3c7b594338cad879e6cf84ba182d" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>psdulen</name></member>
+      <member refid="struct__ltpt__tx__info_1aaa0186caa5457489f0b6a1667b563735" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>rifs</name></member>
+      <member refid="struct__ltpt__tx__info_1a8d4d924d80676a1dd4d5e29e56f43522" prot="public" virt="non-virtual"><scope>_ltpt_tx_info</scope><name>txgain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

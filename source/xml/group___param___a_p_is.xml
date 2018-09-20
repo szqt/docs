@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___param___a_p_is" kind="group">
+    <compoundname>Param_APIs</compoundname>
+    <title>Param APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___param___a_p_is_1gac9b208c0d9c4371df9a8ca7d15e2e095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_param_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_param_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to initialize system param. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>init success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_EMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>io error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_EPERM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>magic number error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="435" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1ga8f0a80b66cefad1e75ee0662ad3184de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_param_load_factory_default</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_param_load_factory_default</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to load the system default parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>This function read user defined parameters first, if wrong, all the parameters restore factory settings </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="448" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1ga74eeb50c2dad2092d0a8ad7ce44f5017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_param_set</definition>
+        <argsstring>(int id, void *argv, bool to_flash)</argsstring>
+        <name>tls_param_set</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>to_flash</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set system parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>param id,from TLS_PARAM_ID_SSID to (TLS_PARAM_ID_MAX - 1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>store parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">to_flash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether the parameter is written to flash, 1:write to flash,0:only write memory</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_EINVALID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid param</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="464" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1gaa89c7150198ab56796cb7170dc5766cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_param_get</definition>
+        <argsstring>(int id, void *argv, bool from_flash)</argsstring>
+        <name>tls_param_get</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>from_flash</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get system parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>param id,from TLS_PARAM_ID_SSID to (TLS_PARAM_ID_MAX - 1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>store parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">from_flash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether the parameter is readed from flash, 1 read from flash,0 read from memory</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_EINVALID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid param</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="480" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1ga6356609a6f60cd0e937c1e5f20a4c9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_param_to_flash</definition>
+        <argsstring>(int id)</argsstring>
+        <name>tls_param_to_flash</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to write parameter to flash. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>param id,from TLS_PARAM_ID_ALL to (TLS_PARAM_ID_MAX - 1)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_EINVALID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid param </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>read or write flash error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="494" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1ga34ef1edd79eb49002c667b8290a75f0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_restore_param_from_backup</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_restore_param_from_backup</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to recovery the parameters from the backup area to the parameter area,and read to memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="506" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1ga4a1ee99acc1a3a9a6b3786802ba3257e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_param_to_default</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_param_to_default</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to load default parametes to memory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_EINVALID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter wrong </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_EIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>read or write falsh error</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function read user defined parameters first, if wrong, all the parameters restore factory settings </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="521" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1ga34391dd8880ac0c4604706e69f5ebe3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_param_save_user_default</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_param_save_user_default</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to write user parameters to the flash. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="534" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1ga151a1dee494aa7d7ce3138d94832aa9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_param_save_user</definition>
+        <argsstring>(struct tls_user_param *user_param)</argsstring>
+        <name>tls_param_save_user</name>
+        <param>
+          <type>struct <ref refid="structtls__user__param" kindref="compound">tls_user_param</ref> *</type>
+          <declname>user_param</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to modify user default parameters, then write to flash. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*user_param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TLS_PARAM_STATUS_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="547" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1gab182a1ef9b87d0b44fc64ffb8df0ed5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_param_get_updp_mode</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_param_get_updp_mode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get updp mode.(updp:update user default parameters) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="559" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1gad5ed12686c045276aab0a7d81a3db3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_param_set_updp_mode</definition>
+        <argsstring>(u8 mode)</argsstring>
+        <name>tls_param_set_updp_mode</name>
+        <param>
+          <type>u8</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set updp mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="570" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1ga6dde7ee1328c09ad61360bfa320c5595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_param_get_program_param</definition>
+        <argsstring>(u32 *pBase)</argsstring>
+        <name>tls_param_get_program_param</name>
+        <param>
+          <type>u32 *</type>
+          <declname>pBase</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to get program param. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pBase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to save base address</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="582" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___param___a_p_is_1ga5e0518c8e13fe8e2a44c3625c29c6552" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_param_set_program_param</definition>
+        <argsstring>(u32 base, u32 totallen, u32 checksum)</argsstring>
+        <name>tls_param_set_program_param</name>
+        <param>
+          <type>u32</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>totallen</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>checksum</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set program base、image len， checksum. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">totallen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>total length of image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">checksum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>image content checksum</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>failed</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="597" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Param manager APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

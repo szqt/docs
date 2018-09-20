@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__wifi__hdr__mac__t" kind="struct" language="C++" prot="public">
+    <compoundname>tls_wifi_hdr_mac_t</compoundname>
+    <includes refid="wm__wifi_8h" local="no">wm_wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__wifi__hdr__mac__t_1ae6c7026b38acafca9328ca6bc2012fca" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_wifi_hdr_mac_t::da_addr[ETH_ALEN]</definition>
+        <argsstring>[ETH_ALEN]</argsstring>
+        <name>da_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MAC address of destination </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="268" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__wifi__hdr__mac__t_1aedc5b92a032dee327df392719f8cf524" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_wifi_hdr_mac_t::sa_addr[ETH_ALEN]</definition>
+        <argsstring>[ETH_ALEN]</argsstring>
+        <name>sa_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MAC address of source </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="269" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__wifi__hdr__mac__t_1a3203858f16ccf37ea65b5dd836da9de7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_wifi_hdr_mac_t::bssid[ETH_ALEN]</definition>
+        <argsstring>[ETH_ALEN]</argsstring>
+        <name>bssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MAC address of AP </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/WiFi/wm_wifi.h" line="270" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>802.11 mac address </para>    </detaileddescription>
+    <location file="Include/WiFi/wm_wifi.h" line="267" column="1" bodyfile="Include/WiFi/wm_wifi.h" bodystart="267" bodyend="271"/>
+    <listofallmembers>
+      <member refid="structtls__wifi__hdr__mac__t_1a3203858f16ccf37ea65b5dd836da9de7" prot="public" virt="non-virtual"><scope>tls_wifi_hdr_mac_t</scope><name>bssid</name></member>
+      <member refid="structtls__wifi__hdr__mac__t_1ae6c7026b38acafca9328ca6bc2012fca" prot="public" virt="non-virtual"><scope>tls_wifi_hdr_mac_t</scope><name>da_addr</name></member>
+      <member refid="structtls__wifi__hdr__mac__t_1aedc5b92a032dee327df392719f8cf524" prot="public" virt="non-virtual"><scope>tls_wifi_hdr_mac_t</scope><name>sa_addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

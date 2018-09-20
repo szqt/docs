@@ -1,0 +1,854 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___i2_s___driver___a_p_is" kind="group">
+    <compoundname>I2S_Driver_APIs</compoundname>
+    <title>I2S Driver APIs</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gabb3a95bc777ad9371855c1da5a67e0d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_i2s_port_init</definition>
+        <argsstring>(tls_i2s_options_t *opts)</argsstring>
+        <name>tls_i2s_port_init</name>
+        <param>
+          <type><ref refid="structtls__i2s__options" kindref="compound">tls_i2s_options_t</ref> *</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to initial i2s port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">opts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the i2s setting options,if this param is NULL,this function will use the default options. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WM_SUCCESS<itemizedlist>
+<listitem><para>WM_FAILED </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gac3b73d3ee0b1c3a88a363fb68fcc7bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_i2s_config</definition>
+        <argsstring>(tls_i2s_options_t *opts)</argsstring>
+        <name>tls_i2s_config</name>
+        <param>
+          <type><ref refid="structtls__i2s__options" kindref="compound">tls_i2s_options_t</ref> *</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to config i2s port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">opts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the i2s setting options </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gadeed960480f60c211c330d612a1a9af9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_i2s_set_freq</definition>
+        <argsstring>(uint32_t freq)</argsstring>
+        <name>tls_i2s_set_freq</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>set the frequency of the i2s port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the required frequency of the i2s module </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gaf816dc64bcbd7462ed1982836b7ce800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wm_i2s_set_freq_exclk</definition>
+        <argsstring>(uint32_t freq, uint32_t exclk)</argsstring>
+        <name>wm_i2s_set_freq_exclk</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>exclk</declname>
+        </param>
+        <briefdescription>
+<para>set the frequency of the i2s port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the required frequency of the i2s module </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">exclk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frequency of the ext clock</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gab642c26490009682a15707c701ab8ec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_i2s_tx_block</definition>
+        <argsstring>(uint32_t *buf, uint16_t len)</argsstring>
+        <name>tls_i2s_tx_block</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to transfer data in blocking mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>amount of data to be sent. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WM_SUCCESS<itemizedlist>
+<listitem><para>WM_FAILED </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga47376f4b8da71d54306148fc7db3cf05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_i2s_tx_nonblock</definition>
+        <argsstring>(uint32_t *buf, uint16_t len, void(*tx_callback)())</argsstring>
+        <name>tls_i2s_tx_nonblock</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void(*)()</type>
+          <declname>tx_callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to transfer data in non-blocking mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>amount of data to be sent. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tx_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer to a callback,when the data have been sent this specified function will be called </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WM_SUCCESS<itemizedlist>
+<listitem><para>WM_FAILED </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>this function only submit the data when the data transfer finished the tx_callback function will be called </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="298" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga9dadb270324ff0062acbdf7ee6117452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_i2s_rx_nonblock</definition>
+        <argsstring>(uint32_t *buf, uint16_t len, void(*rx_callback)())</argsstring>
+        <name>tls_i2s_rx_nonblock</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>void(*)()</type>
+          <declname>rx_callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to receive data in non-blocking mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>amount of data to be sent. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rx_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer to a callback,when the data have been received this specified function will be called</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WM_SUCCESS<itemizedlist>
+<listitem><para>WM_FAILED </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga871fc1c942a1ea17810236c9007e08b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_i2s_tx_dma</definition>
+        <argsstring>(uint32_t *addr, uint16_t len, tls_i2s_callback callback)</argsstring>
+        <name>tls_i2s_tx_dma</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>tls_i2s_callback</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to receive data in DMA mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>amount of data to be sent. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer to a callback,when the data have been sent this specified function will be called </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WM_SUCCESS<itemizedlist>
+<listitem><para>WM_FAILED </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gadc246d9034c369268bafba9f00b39ff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_i2s_rx_dma</definition>
+        <argsstring>(uint32_t *addr, uint16_t len, tls_i2s_callback callback)</argsstring>
+        <name>tls_i2s_rx_dma</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>tls_i2s_callback</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to receive data in DMA mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buf pointer to data buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>amount of data to be sent. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer to a callback,when the data have been received this specified function will be called </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WM_SUCCESS<itemizedlist>
+<listitem><para>WM_FAILED </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>this function only submit the data when the data transfer finished the callback function will be called </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="339" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gae27af338e48e5bcd00cb5b7eb1c33478" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ void</type>
+        <definition>static __inline__ void tls_i2s_set_rxth</definition>
+        <argsstring>(uint8_t level)</argsstring>
+        <name>tls_i2s_set_rxth</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Set receive FIFO threshold level. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value set to Rx threshold level </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="490" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="490" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga62a38aa9e857cec235ff6c8ffe5c20e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ void</type>
+        <definition>static __inline__ void tls_i2s_set_txth</definition>
+        <argsstring>(uint8_t level)</argsstring>
+        <name>tls_i2s_set_txth</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Set transmit FIFO threshold level. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value set to Tx threshold level </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="504" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="504" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gaaa2bae5cb9c65089da5f84d331cd7527" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ void</type>
+        <definition>static __inline__ void tls_i2s_channel_sel</definition>
+        <argsstring>(I2S_CHANNEL_SEL channel_sel)</argsstring>
+        <name>tls_i2s_channel_sel</name>
+        <param>
+          <type><ref refid="wm__i2s_8h_1a4e11647fa1c73050e140dfaa61c9e408" kindref="member">I2S_CHANNEL_SEL</ref></type>
+          <declname>channel_sel</declname>
+        </param>
+        <briefdescription>
+<para>Enable or disable receiver of I2S module. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When one enable the receiver of I2S module, when zero disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="516" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="516" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga0b16258c44db25897d5680e375b15259" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__inline__ void</type>
+        <definition>static __inline__ void tls_i2s_int_config</definition>
+        <argsstring>(uint32_t i2s_int_mask, uint8_t enable)</argsstring>
+        <name>tls_i2s_int_config</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>i2s_int_mask</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the specified I2S interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2s_int_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the I2S interrupt sources to be enabled or disabled. This parameter can be one of the following values:<itemizedlist>
+<listitem><para><ref refid="wm__i2s_8h_1a8f055350f4d7583ed96427d75dc6374d" kindref="member">I2S_INT_MASK_LZC</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1a7dc86d4ec36c2ecb610786c36fcabe93" kindref="member">I2S_INT_MASK_RZC</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1afcef55607019bf94cd902aa5867f5cb8" kindref="member">I2S_INT_MASK_TXDONE</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1a83c81d28cd8f903a002d69805f104b54" kindref="member">I2S_INT_MASK_TXTH</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1af27b4db260be9da6416c305a921461a5" kindref="member">I2S_INT_MASK_TXOV</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1a3c27b977e4d6e24de93f7db5075a55a6" kindref="member">I2S_INT_MASK_TXUD</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1afb73156e9bb68d46ebe0b0438964e555" kindref="member">I2S_INT_MASK_RXDONE</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1af226e286c22f2d24045e956d59e08538" kindref="member">I2S_INT_MASK_RXTH</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1a260fa80c21fd12248915ceefefc9c9f1" kindref="member">I2S_INT_MASK_RXOV</ref></para></listitem><listitem><para><ref refid="wm__i2s_8h_1aff9f0b2e4ae3a1472e58e05c96354e78" kindref="member">I2S_INT_MASK_RXUD</ref> </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when set ,enable interrupt, zero disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="539" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="539" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gac400f3eb38801ddfdd790a6064b36996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t tls_i2s_mclk_enable</definition>
+        <argsstring>(uint32_t clock)</argsstring>
+        <name>tls_i2s_mclk_enable</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>clock</declname>
+        </param>
+        <briefdescription>
+<para>Enable master clock (MCLK). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">clock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target MCLK clock rate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>actual</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MCLK clock rate</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Set the master clock rate according to u32BusClock parameter and enable master clock output. The actual master clock rate may be different from the target master clock rate. The real master clock rate will be returned for reference. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="559" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga3c3d08c6528eb48b5c827cd29da3b5b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_i2s_mclk_disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_i2s_mclk_disable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>disable master clock (MCLK). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="565" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga2399470023ec4a9f0fb5142d3267617a" prot="public" static="no">
+        <name>TLS_I2S_ENABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL |= <ref refid="wm__i2s_8h_1aa05ce1748b11402f75ec0ed768c1c71f" kindref="member">I2S_CTRL_EN_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Enable I2S module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="346" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga95126daeadaef952598979adba8f6599" prot="public" static="no">
+        <name>TLS_I2S_DISABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL &amp;= ~<ref refid="wm__i2s_8h_1aa05ce1748b11402f75ec0ed768c1c71f" kindref="member">I2S_CTRL_EN_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Disable I2S module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="352" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga5b94008d331694111d01703b375873fd" prot="public" static="no">
+        <name>TLS_I2S_CLK_ENABLE</name>
+        <param></param>
+        <initializer>do { \
+		tls_bitband_write(HR_CLK_I2S_CTL, <ref refid="wm__regs_8h_1a89644378fe892ac9610c1a75ef1b99c3" kindref="member">HR_CLK_I2S_GATE_Pos</ref> , 1); \
+	} while(0)</initializer>
+        <briefdescription>
+<para>Enable clock of I2S module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="358" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gac96767388b7987c9e1ad555fb4b2484c" prot="public" static="no">
+        <name>TLS_I2S_CLK_DISABLE</name>
+        <param></param>
+        <initializer>do { \
+		tls_bitband_write(HR_CLK_I2S_CTL, <ref refid="wm__regs_8h_1a89644378fe892ac9610c1a75ef1b99c3" kindref="member">HR_CLK_I2S_GATE_Pos</ref> , 0); \
+	} while(0)</initializer>
+        <briefdescription>
+<para>Disnable clock of I2S module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="367" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gad3f5567ea9955b3d8482389e54fefe05" prot="public" static="no">
+        <name>TLS_I2S_TX_ENABLE</name>
+        <param></param>
+        <initializer>do { \
+		tls_bitband_write(HR_I2S_CTRL, <ref refid="wm__i2s_8h_1a49fceea6065a25427f81131b063139e4" kindref="member">I2S_CTRL_TXE_Pos</ref>, 1); \
+	} while(0)</initializer>
+        <briefdescription>
+<para>Enable transmit of I2S module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="376" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gaaa50a58c9a5fec1947bc0cfc66413bca" prot="public" static="no">
+        <name>TLS_I2S_TX_DISABLE</name>
+        <param></param>
+        <initializer>do { \
+		tls_bitband_write(HR_I2S_CTRL, <ref refid="wm__i2s_8h_1a49fceea6065a25427f81131b063139e4" kindref="member">I2S_CTRL_TXE_Pos</ref>, 0); \
+	} while(0)</initializer>
+        <briefdescription>
+<para>Disable transmit of I2S module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="385" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga3b33c1e67c05de8517e04f3755c53314" prot="public" static="no">
+        <name>TLS_I2S_RX_ENABLE</name>
+        <param></param>
+        <initializer>do { \
+		tls_bitband_write(HR_I2S_CTRL, <ref refid="wm__i2s_8h_1a6baebe1f2e747b4586552cc6022f7d60" kindref="member">I2S_CTRL_RXE_Pos</ref>, 1); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Enable receive of I2S module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="394" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga3f62db93cb4ebc8c58ea648dc3719844" prot="public" static="no">
+        <name>TLS_I2S_RX_DISABLE</name>
+        <param></param>
+        <initializer>do { \
+		tls_bitband_write(HR_I2S_CTRL, <ref refid="wm__i2s_8h_1a6baebe1f2e747b4586552cc6022f7d60" kindref="member">I2S_CTRL_RXE_Pos</ref>, 0); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Disable receive of I2S module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="403" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga35ea1a15c4cf8f8b55972a9acab79777" prot="public" static="no">
+        <name>TLS_I2S_RX_FIFO_CLEAR</name>
+        <param></param>
+        <initializer>do { \
+		tls_bitband_write(HR_I2S_CTRL, <ref refid="wm__i2s_8h_1ad1289e8cc1ed107e17d38375902264d5" kindref="member">I2S_CTRL_RX_CLR_Pos</ref>, 1); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Clear transmit FIFO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="412" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga2dfeeb0f78f5fb0af14196560eb0afe9" prot="public" static="no">
+        <name>TLS_I2S_TX_FIFO_CLEAR</name>
+        <param></param>
+        <initializer>do { \
+		tls_bitband_write(HR_I2S_CTRL, <ref refid="wm__i2s_8h_1aaa4fdc0db6ef2e40a1a51e7a2d525718" kindref="member">I2S_CTRL_TX_CLR_Pos</ref>, 1); \
+		} while(0)</initializer>
+        <briefdescription>
+<para>Clear receive FIFO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="421" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gab5581f9dec31d86446be59fab655204a" prot="public" static="no">
+        <name>TLS_I2S_TXDMA_ENABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL |= <ref refid="wm__i2s_8h_1ae835858e3bf0e71794c4ed340b1e946d" kindref="member">I2S_CTRL_TXDMA_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Enable transmit DMA request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="430" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gaeec6b1c22ff4d7ca8c2490251e367cf4" prot="public" static="no">
+        <name>TLS_I2S_TXDMA_DISABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL &amp;= ~<ref refid="wm__i2s_8h_1ae835858e3bf0e71794c4ed340b1e946d" kindref="member">I2S_CTRL_TXDMA_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Disnable transmit DMA request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="436" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gae59d7654b751366446ef2903ed5fbfc4" prot="public" static="no">
+        <name>TLS_I2S_RXDMA_ENABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL |= <ref refid="wm__i2s_8h_1a79796465f302af6dc236095afa482ea1" kindref="member">I2S_CTRL_RXDMA_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Enable receive DMA request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="442" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gaab0427d0ff3b3ef9aab136bd0b2604c2" prot="public" static="no">
+        <name>TLS_I2S_RXDMA_DISABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL &amp;= ~<ref refid="wm__i2s_8h_1a79796465f302af6dc236095afa482ea1" kindref="member">I2S_CTRL_RXDMA_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Disnable receive DMA request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="448" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga945846e350fbb2ff28e5f96329d2352a" prot="public" static="no">
+        <name>TLS_I2S_LZC_ENABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL |= <ref refid="wm__i2s_8h_1ac7f519fdbdbc0a0952d2ded7b89aab5e" kindref="member">I2S_CTRL_LZCEN_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Left channel zero-cross detection enable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="454" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga9bb75fa1d7dc4c773bb343bea382b44a" prot="public" static="no">
+        <name>TLS_I2S_LZC_DISABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL &amp;= ~<ref refid="wm__i2s_8h_1ac7f519fdbdbc0a0952d2ded7b89aab5e" kindref="member">I2S_CTRL_LZCEN_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Left channel zero-cross detection disable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="460" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga929aa4f4b10b74aef640cd5f5a75b270" prot="public" static="no">
+        <name>TLS_I2S_RZC_ENABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL |= <ref refid="wm__i2s_8h_1a66742666decab9e1c22a872bb0bca7d3" kindref="member">I2S_CTRL_RZCEN_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Right channel zero-cross detection enable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="466" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga1b4e81e75267ccc516b247fcbc651380" prot="public" static="no">
+        <name>TLS_I2S_RZC_DISABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL &amp;= ~<ref refid="wm__i2s_8h_1a66742666decab9e1c22a872bb0bca7d3" kindref="member">I2S_CTRL_RZCEN_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Right channel zero-cross detection disable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="472" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga7313a93beafe741f56696af055479dd9" prot="public" static="no">
+        <name>TLS_I2S_TX_MUTE_ENABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL |= <ref refid="wm__i2s_8h_1a69f33e75de6487851392ae8ac76bb84a" kindref="member">I2S_CTRL_MUTE_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Enable transmit mute. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="477" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gaa11db6474ffabadbedce2e5abb8e267f" prot="public" static="no">
+        <name>TLS_I2S_TX_MUTE_DISABLE</name>
+        <param></param>
+        <initializer>(<ref refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kindref="member">I2S</ref>-&gt;CTRL &amp;= ~ <ref refid="wm__i2s_8h_1a69f33e75de6487851392ae8ac76bb84a" kindref="member">I2S_CTRL_MUTE_MASK</ref>)</initializer>
+        <briefdescription>
+<para>Disable transmit mute. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_i2s.h" line="483" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2S driver APIs. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

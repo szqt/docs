@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__slave__hspi" kind="struct" language="C++" prot="public">
+    <compoundname>tls_slave_hspi</compoundname>
+    <includes refid="wm__hspi_8h" local="no">wm_hspi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__slave__hspi_1afa9994e4f9d41d284e66cb0eff485008" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_slave_hspi::ifusermode</definition>
+        <argsstring></argsstring>
+        <name>ifusermode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="133" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__slave__hspi_1a6e41a7700f97e1e1569f3f8eca71d6ca" prot="public" static="no" mutable="no">
+        <type>s16(*</type>
+        <definition>s16(* tls_slave_hspi::rx_cmd_callback) (char *buf)</definition>
+        <argsstring>)(char *buf)</argsstring>
+        <name>rx_cmd_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="135" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__slave__hspi_1a1edf93a1fe06881108363613f30bca88" prot="public" static="no" mutable="no">
+        <type>s16(*</type>
+        <definition>s16(* tls_slave_hspi::rx_data_callback) (char *buf)</definition>
+        <argsstring>)(char *buf)</argsstring>
+        <name>rx_data_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="137" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__slave__hspi_1abd52f7aee9f9b8d49f149badf1caf429" prot="public" static="no" mutable="no">
+        <type>s16(*</type>
+        <definition>s16(* tls_slave_hspi::tx_data_callback) (char *buf)</definition>
+        <argsstring>)(char *buf)</argsstring>
+        <name>tx_data_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="139" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__slave__hspi_1a53ee3ea9a81a4da9cf26aeb1de7fa76c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__hspi__tx__desc" kindref="compound">tls_hspi_tx_desc</ref> *</type>
+        <definition>struct tls_hspi_tx_desc* tls_slave_hspi::curr_tx_desc</definition>
+        <argsstring></argsstring>
+        <name>curr_tx_desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Upstream data management </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="141" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__slave__hspi_1a2185c20d041068789d112fb31ed4f93a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__hspi__rx__desc" kindref="compound">tls_hspi_rx_desc</ref> *</type>
+        <definition>struct tls_hspi_rx_desc* tls_slave_hspi::curr_rx_desc</definition>
+        <argsstring></argsstring>
+        <name>curr_rx_desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Downlink data management </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_hspi.h" line="143" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct <ref refid="structtls__slave__hspi" kindref="compound">tls_slave_hspi</ref> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="221">
+        <label>tls_hspi_rx_desc</label>
+        <link refid="structtls__hspi__rx__desc"/>
+      </node>
+      <node id="222">
+        <label>tls_hspi_tx_desc</label>
+        <link refid="structtls__hspi__tx__desc"/>
+      </node>
+      <node id="220">
+        <label>tls_slave_hspi</label>
+        <link refid="structtls__slave__hspi"/>
+        <childnode refid="221" relation="usage">
+          <edgelabel>curr_rx_desc</edgelabel>
+        </childnode>
+        <childnode refid="222" relation="usage">
+          <edgelabel>curr_tx_desc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Driver/wm_hspi.h" line="132" column="1" bodyfile="Include/Driver/wm_hspi.h" bodystart="132" bodyend="148"/>
+    <listofallmembers>
+      <member refid="structtls__slave__hspi_1a2185c20d041068789d112fb31ed4f93a" prot="public" virt="non-virtual"><scope>tls_slave_hspi</scope><name>curr_rx_desc</name></member>
+      <member refid="structtls__slave__hspi_1a53ee3ea9a81a4da9cf26aeb1de7fa76c" prot="public" virt="non-virtual"><scope>tls_slave_hspi</scope><name>curr_tx_desc</name></member>
+      <member refid="structtls__slave__hspi_1afa9994e4f9d41d284e66cb0eff485008" prot="public" virt="non-virtual"><scope>tls_slave_hspi</scope><name>ifusermode</name></member>
+      <member refid="structtls__slave__hspi_1a6e41a7700f97e1e1569f3f8eca71d6ca" prot="public" virt="non-virtual"><scope>tls_slave_hspi</scope><name>rx_cmd_callback</name></member>
+      <member refid="structtls__slave__hspi_1a1edf93a1fe06881108363613f30bca88" prot="public" virt="non-virtual"><scope>tls_slave_hspi</scope><name>rx_data_callback</name></member>
+      <member refid="structtls__slave__hspi_1abd52f7aee9f9b8d49f149badf1caf429" prot="public" virt="non-virtual"><scope>tls_slave_hspi</scope><name>tx_data_callback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
