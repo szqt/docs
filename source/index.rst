@@ -4,8 +4,18 @@
 `本文档 <https://docs.thingsturn.com>`_ 主要由 `星通智联 <https://www.thingsturn.com>`_ 进行维护，您可以通过 `GitHub <https://github.com/thingsturn/w600_docs>`_ 进行协助编辑。
 
 .. important::
-    初次上手，强烈建议您优先阅读  `W600 入门指导 <start>`__ 和 `W600 常见问题 <faq>`__
+    初次上手，强烈建议您优先阅读  `W600_AT开发入门指导 <AT/at_start>`__ 、   `W600_SDK开发入门指导 <sdk/sdk_start>`__ 和 `W600 常见问题 <faq>`__
 
+W600系列产品，是深圳市星通智联科技有限公司开发的一系列基于联盛德W600的UART-WiFi模块，该系列模块支持标准的 802.11 b/g/n 协议，内置完整的 TCP/IP 协议栈。
+
+W600_SoC芯片集成 Cortex-M3 内核，内置 Flash，集成射频收发前端 RF Transceiver，CMOS PA 功率放
+大器，基带处理器/媒体访问控制，支持 SDIO、SPI、UART、GPIO、I²C、PWM、I²S、7816 等接口, 支持
+多种加解密协议，如 PRNG(Pseudo random Number Generator)/ SHA1/ MD5/ RC4/ DES/ 3DES/
+AES/ CRC 等。
+
+W600是一款支持多接口、多协议的无线局域网 IEEE802.11n（1T1R）的 SoC 芯片。适用于智能家
+电、智能家居、无线音视频、智能玩具、医疗监护、工业控制等物联网应用领域。
+	
 W600 特性
 ==========
 1. 内置 288KB SRAM，用户可用RAM超过160KB；
@@ -20,26 +30,39 @@ W600 特性
 10. 集成7816接口，支持EVM2000规范，并兼容串口功能。
 11. 集成通用加密硬件加速器，支持PRNG/ SHA1/ MD5/ RC4/ DES/ 3DES/ AES/ CRC等多种加解密协议；
 12. 除 wlan.lib 外，其它资源完全开放；
-13. 使用keil 开发环境（GCC近期会出教程）。
+13. 使用 keil 开发环境;
+14. 支持 gcc 开发。
 
 选型表
 =========
-.. image:: img/tw_01.png
++--------+---------------+---------------+---------------+
+|  型号  |     TW-01     |     TW-02     |     TW-03     |
++========+===============+===============+===============+
+|  封装  |     DIP-8     |    SMD-22     |    DIP-22     |
++--------+---------------+---------------+---------------+
+|  天线  |    PCB天线    |    PCB天线    |    PCB天线    |
++--------+---------------+---------------+---------------+
+|  尺寸  |18*17*2.8±0.2mm|15*17.3*3±0.2mm| 24*16*3±0.2mm |
++--------+---------------+---------------+---------------+
+|  板层  |       2       |       2       |       2       |
++--------+---------------+---------------+---------------+
+
+.. image:: img/index/tw_01.png
    :width: 300px
 
 TW-01，兼容ESP-01，8Pin直插
 
-.. image:: img/tw_02.png
+.. image:: img/index/tw_02.png
    :width: 300px
 
 TW-02，兼容E2S，11Pin 金手指
 
-.. image:: img/tw_03.png
+.. image:: img/index/tw_03.png
    :width: 300px
 
 TW-03，兼容ESP-12F，22Pin 邮票孔
 
-.. image:: img/tb_01.png
+.. image:: img/index/tb_01.png
    :width: 300px
 
 TB-01，全IO引出，支持一键下载
@@ -63,10 +86,11 @@ TB-01，全IO引出，支持一键下载
 .. toctree::
    :hidden:
 
-   start
+   AT/index
+   sdk/index
+   document/index
+   prduct/index
    develop/index
-   api/index
-   hardware/index
-   vsf/index
    tools
    faq
+
