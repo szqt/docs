@@ -1,10 +1,10 @@
 欢迎访问 W600 文档中心
 ==========================================
 
-`本文档 <https://docs.thingsturn.com>`_ 主要由 `星通智联 <https://www.thingsturn.com>`_ 进行维护，您可以通过 `GitHub <https://github.com/w600/docs>`_ 进行协助编辑。
+`本文档 <http://docs.thingsturn.com>`_ 主要由 `星通智联 <https://www.thingsturn.com>`_ 进行维护，您可以通过 `GitHub <https://github.com/w600/docs>`_ 进行协助编辑。
 
 .. important::
-    初次上手，强烈建议您优先阅读  `W600_AT开发入门指导 <at/start>`__ 、   `W600_SDK开发入门指导 <sdk/start>`__ 和 `W600 常见问题 <faq>`__
+    初次上手，强烈建议您优先阅读  `W600_AT开发入门指导 <at/start>`__ 、   `W600_SDK开发入门指导 <soc/start>`__ 和 `W600 常见问题 <faq>`__
 
 W600系列产品，是深圳市星通智联科技有限公司开发的一系列基于联盛德W600的UART-WiFi模块，该系列模块支持标准的 802.11 b/g/n 协议，内置完整的 TCP/IP 协议栈。
 
