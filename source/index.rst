@@ -1,10 +1,10 @@
 欢迎访问 W600 文档中心
 ==========================================
 
-`本文档 <https://docs.thingsturn.com>`_ 主要由 `星通智联 <https://www.thingsturn.com>`_ 进行维护，您可以通过 `GitHub <https://github.com/thingsturn/w600_docs>`_ 进行协助编辑。
+`本文档 <https://docs.thingsturn.com>`_ 主要由 `星通智联 <https://www.thingsturn.com>`_ 进行维护，您可以通过 `GitHub <https://github.com/w600/docs>`_ 进行协助编辑。
 
 .. important::
-    初次上手，强烈建议您优先阅读  `W600_AT开发入门指导 <AT/at_start>`__ 、   `W600_SDK开发入门指导 <sdk/sdk_start>`__ 和 `W600 常见问题 <faq>`__
+    初次上手，强烈建议您优先阅读  `W600_AT开发入门指导 <at/start>`__ 、   `W600_SDK开发入门指导 <sdk/start>`__ 和 `W600 常见问题 <faq>`__
 
 W600系列产品，是深圳市星通智联科技有限公司开发的一系列基于联盛德W600的UART-WiFi模块，该系列模块支持标准的 802.11 b/g/n 协议，内置完整的 TCP/IP 协议栈。
 
@@ -47,22 +47,22 @@ W600 特性
 |  板层  |       2       |       2       |       2       |
 +--------+---------------+---------------+---------------+
 
-.. image:: img/index/tw_01.png
+.. image:: index.assets/tw_01.png
    :width: 300px
 
 TW-01，兼容ESP-01，8Pin直插
 
-.. image:: img/index/tw_02.png
+.. image:: index.assets/tw_02.png
    :width: 300px
 
 TW-02，兼容E2S，11Pin 金手指
 
-.. image:: img/index/tw_03.png
+.. image:: index.assets/tw_03.png
    :width: 300px
 
 TW-03，兼容ESP-12F，22Pin 邮票孔
 
-.. image:: img/index/tb_01.png
+.. image:: index.assets/tb_01.png
    :width: 300px
 
 TB-01，全IO引出，支持一键下载
@@ -86,11 +86,10 @@ TB-01，全IO引出，支持一键下载
 .. toctree::
    :hidden:
 
-   AT/index
-   sdk/index
-   document/index
-   prduct/index
-   develop/index
-   tools
-   faq
-
+   at/index
+   soc/index
+   api/index
+   third_party/index
+   product/index
+   download/index
+   faq/index

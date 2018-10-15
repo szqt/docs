@@ -75,17 +75,17 @@
     <detaileddescription>
 <para>a read/write buffer pair</para><para>SPI transfers always write the same number of bytes as they read. If the transmit buffer is null, zeroes will be shifted out while filling rx_buf. If the receive buffer is null, the data shifted in will be discarded. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="239">
+      <node id="261">
         <label>tls_spi_transfer</label>
         <link refid="structtls__spi__transfer"/>
-        <childnode refid="240" relation="usage">
+        <childnode refid="262" relation="usage">
           <edgelabel>transfer_list</edgelabel>
         </childnode>
       </node>
-      <node id="240">
+      <node id="262">
         <label>dl_list</label>
         <link refid="structdl__list"/>
-        <childnode refid="240" relation="usage">
+        <childnode refid="262" relation="usage">
           <edgelabel>prev</edgelabel>
           <edgelabel>next</edgelabel>
         </childnode>

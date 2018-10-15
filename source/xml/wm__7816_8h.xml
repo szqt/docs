@@ -15,16 +15,6 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
-      <node id="80">
-        <label>wm_io.h</label>
-        <link refid="wm__io_8h"/>
-      </node>
-      <node id="78">
-        <label>core_cm3.h</label>
-      </node>
-      <node id="75">
-        <label>string.h</label>
-      </node>
       <node id="74">
         <label>Include/Driver/wm_7816.h</label>
         <link refid="wm__7816_8h"/>
@@ -38,6 +28,16 @@
         </childnode>
         <childnode refid="80" relation="include">
         </childnode>
+      </node>
+      <node id="78">
+        <label>core_cm3.h</label>
+      </node>
+      <node id="75">
+        <label>string.h</label>
+      </node>
+      <node id="80">
+        <label>wm_io.h</label>
+        <link refid="wm__io_8h"/>
       </node>
       <node id="77">
         <label>wm_regs.h</label>

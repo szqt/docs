@@ -8,21 +8,21 @@
     <includes refid="wm__wifi_8h" local="yes">wm_wifi.h</includes>
     <includes refid="wm__params_8h" local="yes">wm_params.h</includes>
     <incdepgraph>
-      <node id="44">
-        <label>wm_netif.h</label>
-        <link refid="wm__netif_8h"/>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="45" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-      </node>
       <node id="41">
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="38">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="40">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+      <node id="39">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
       </node>
       <node id="42">
         <label>wm_sockets.h</label>
@@ -34,20 +34,6 @@
         <childnode refid="41" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
-        </childnode>
-      </node>
-      <node id="39">
-        <label>wm_wifi_config.h</label>
-        <link refid="wm__wifi__config_8h"/>
-      </node>
-      <node id="38">
-        <label>wm_os_config.h</label>
-        <link refid="wm__os__config_8h"/>
-      </node>
-      <node id="46">
-        <label>wm_params.h</label>
-        <link refid="wm__params_8h"/>
-        <childnode refid="41" relation="include">
         </childnode>
       </node>
       <node id="36">
@@ -68,6 +54,24 @@
         <label>wm_wifi.h</label>
         <link refid="wm__wifi_8h"/>
       </node>
+      <node id="44">
+        <label>wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>wm_params.h</label>
+        <link refid="wm__params_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
       <node id="37">
         <label>wm_config.h</label>
         <link refid="wm__config_8h"/>
@@ -80,10 +84,6 @@
       </node>
       <node id="43">
         <label>stdio.h</label>
-      </node>
-      <node id="40">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
     <innerclass refid="structtls__ethif" prot="public">tls_ethif</innerclass>
@@ -297,7 +297,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to get IP parameters stored in <ref refid="structtls__ethif" kindref="compound">tls_ethif</ref> struct. </para>        </briefdescription>
+<para>This function is used to get IP information stored in <ref refid="structtls__ethif" kindref="compound">tls_ethif</ref> struct. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -419,7 +419,7 @@
           <declname>gw</declname>
         </param>
         <briefdescription>
-<para>This function is used to change IP address configuration. </para>        </briefdescription>
+<para>This function is used to change IP information. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -633,7 +633,7 @@
           <declname>event_fn</declname>
         </param>
         <briefdescription>
-<para>This function is used to remove netif status changed callback from event list,if not exists, do nothing. </para>        </briefdescription>
+<para>This function is used to remove netif status changed callback function from event list,if not exists, do nothing. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -830,7 +830,7 @@ Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="355"><highlight class="comment">*<sp/>Function:<sp/>tls_dhcps_setdns</highlight></codeline>
 <codeline lineno="356"><highlight class="comment">*<sp/>Description:<sp/>Set<sp/>dhcp<sp/>server&apos;s<sp/>dns<sp/>address.</highlight></codeline>
 <codeline lineno="357"><highlight class="comment">*<sp/></highlight></codeline>
-<codeline lineno="358"><highlight class="comment">*<sp/>Input:<sp/><sp/>numdns:<sp/><sp/><sp/><sp/><sp/>the<sp/>index<sp/>of<sp/>the<sp/>DNS<sp/>server<sp/>to<sp/>set<sp/>must<sp/>be<sp/>&lt;<sp/>DNS_MAX_SERVERS</highlight></codeline>
+<codeline lineno="358"><highlight class="comment">*<sp/>Input:<sp/><sp/>numdns:<sp/><sp/><sp/><sp/><sp/>the<sp/>index<sp/>of<sp/>the<sp/>DNS<sp/>server<sp/>to<sp/>set<sp/>must<sp/>be<sp/>less<sp/>than<sp/>DNS_MAX_SERVERS</highlight></codeline>
 <codeline lineno="359"><highlight class="comment">*<sp/></highlight></codeline>
 <codeline lineno="360"><highlight class="comment">*<sp/>Output:<sp/>None</highlight></codeline>
 <codeline lineno="361"><highlight class="comment">*<sp/></highlight></codeline>

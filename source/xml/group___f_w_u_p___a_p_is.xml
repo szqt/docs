@@ -61,7 +61,7 @@
           <declname>image_src</declname>
         </param>
         <briefdescription>
-<para>This function is used to enter firmware update. </para>        </briefdescription>
+<para>This function is used to enter firmware update progress. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -102,14 +102,14 @@
           <declname>session_id</declname>
         </param>
         <briefdescription>
-<para>This function is used to exit firmware update. </para>        </briefdescription>
+<para>This function is used to exit firmware update progress. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">session_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>session identity of firmware update</para></parameterdescription>
+<para>session identity of firmware update progress</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -165,7 +165,7 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>This function is used to start update. </para>        </briefdescription>
+<para>This function is used to start update progress. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -303,7 +303,7 @@
           <declname>session_id</declname>
         </param>
         <briefdescription>
-<para>This function is used to reset update information. </para>        </briefdescription>
+<para>This function is used to reset the update information. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -439,7 +439,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to get busy status. </para>        </briefdescription>
+<para>This function is used to get progress&apos;s status. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

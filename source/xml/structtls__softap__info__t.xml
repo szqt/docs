@@ -62,14 +62,14 @@
     <detaileddescription>
 <para>Wi-Fi configuration of softap </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="228">
+      <node id="250">
         <label>tls_softap_info_t</label>
         <link refid="structtls__softap__info__t"/>
-        <childnode refid="229" relation="usage">
+        <childnode refid="251" relation="usage">
           <edgelabel>keyinfo</edgelabel>
         </childnode>
       </node>
-      <node id="229">
+      <node id="251">
         <label>tls_key_info_t</label>
         <link refid="structtls__key__info__t"/>
       </node>

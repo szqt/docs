@@ -37,7 +37,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="245" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="247" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gac3b73d3ee0b1c3a88a363fb68fcc7bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -62,7 +62,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="252" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="254" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gadeed960480f60c211c330d612a1a9af9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -74,7 +74,7 @@
           <declname>freq</declname>
         </param>
         <briefdescription>
-<para>set the frequency of the i2s port. </para>        </briefdescription>
+<para>Set the frequency of the i2s port. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -94,7 +94,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="260" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="262" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gaf816dc64bcbd7462ed1982836b7ce800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -124,7 +124,7 @@
 <parametername direction="in">exclk</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>the frequency of the ext clock</para></parameterdescription>
+<para>the frequency of the external clock</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -137,7 +137,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="274" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="276" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gab642c26490009682a15707c701ab8ec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -183,12 +183,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="284" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="286" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga47376f4b8da71d54306148fc7db3cf05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga541498ce37020eb6b5c3fbbf4138f409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int tls_i2s_tx_nonblock</definition>
-        <argsstring>(uint32_t *buf, uint16_t len, void(*tx_callback)())</argsstring>
+        <argsstring>(uint32_t *buf, uint16_t len, void(*tx_callback)(u16 len))</argsstring>
         <name>tls_i2s_tx_nonblock</name>
         <param>
           <type>uint32_t *</type>
@@ -199,7 +199,7 @@
           <declname>len</declname>
         </param>
         <param>
-          <type>void(*)()</type>
+          <type>void(*)(u16 len)</type>
           <declname>tx_callback</declname>
         </param>
         <briefdescription>
@@ -217,7 +217,7 @@
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>amount of data to be sent. </para></parameterdescription>
+<para>bytes of data to be sent. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -241,12 +241,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="298" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="300" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga9dadb270324ff0062acbdf7ee6117452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gae3ade66fe8cfdce1ac6ade72f7efa403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int tls_i2s_rx_nonblock</definition>
-        <argsstring>(uint32_t *buf, uint16_t len, void(*rx_callback)())</argsstring>
+        <argsstring>(uint32_t *buf, uint16_t len, void(*rx_callback)(u16 len))</argsstring>
         <name>tls_i2s_rx_nonblock</name>
         <param>
           <type>uint32_t *</type>
@@ -257,7 +257,7 @@
           <declname>len</declname>
         </param>
         <param>
-          <type>void(*)()</type>
+          <type>void(*)(u16 len)</type>
           <declname>rx_callback</declname>
         </param>
         <briefdescription>
@@ -275,7 +275,7 @@
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>amount of data to be sent. </para></parameterdescription>
+<para>bytes of data to be sent. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -299,7 +299,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="312" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="314" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga871fc1c942a1ea17810236c9007e08b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -333,7 +333,7 @@
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>amount of data to be sent. </para></parameterdescription>
+<para>bytes of data to be sent. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -357,7 +357,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="325" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="327" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gadc246d9034c369268bafba9f00b39ff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -384,14 +384,14 @@
 <parametername direction="in">addr</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>buf pointer to data buffer </para></parameterdescription>
+<para>pointer to data buffer </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>amount of data to be sent. </para></parameterdescription>
+<para>bytes of data to be sent. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -415,7 +415,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="339" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="341" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gae27af338e48e5bcd00cb5b7eb1c33478" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline__ void</type>
@@ -440,7 +440,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="490" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="490" bodyend="498"/>
+        <location file="Include/Driver/wm_i2s.h" line="492" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="492" bodyend="500"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga62a38aa9e857cec235ff6c8ffe5c20e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline__ void</type>
@@ -465,7 +465,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="504" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="504" bodyend="510"/>
+        <location file="Include/Driver/wm_i2s.h" line="506" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="506" bodyend="512"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gaaa2bae5cb9c65089da5f84d331cd7527" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline__ void</type>
@@ -490,7 +490,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="516" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="516" bodyend="520"/>
+        <location file="Include/Driver/wm_i2s.h" line="518" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="518" bodyend="522"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga0b16258c44db25897d5680e375b15259" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline__ void</type>
@@ -536,7 +536,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="539" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="539" bodyend="549"/>
+        <location file="Include/Driver/wm_i2s.h" line="541" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="541" bodyend="551"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1gac400f3eb38801ddfdd790a6064b36996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -569,7 +569,7 @@
 Set the master clock rate according to u32BusClock parameter and enable master clock output. The actual master clock rate may be different from the target master clock rate. The real master clock rate will be returned for reference. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="559" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="561" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___i2_s___driver___a_p_is_1ga3c3d08c6528eb48b5c827cd29da3b5b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -585,7 +585,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="565" column="1"/>
+        <location file="Include/Driver/wm_i2s.h" line="567" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -599,7 +599,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="346" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="346" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="348" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="348" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga95126daeadaef952598979adba8f6599" prot="public" static="no">
         <name>TLS_I2S_DISABLE</name>
@@ -611,7 +611,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="352" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="352" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="354" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga5b94008d331694111d01703b375873fd" prot="public" static="no">
         <name>TLS_I2S_CLK_ENABLE</name>
@@ -625,7 +625,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="358" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="358" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="360" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="360" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gac96767388b7987c9e1ad555fb4b2484c" prot="public" static="no">
         <name>TLS_I2S_CLK_DISABLE</name>
@@ -639,7 +639,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="367" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="367" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="369" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="369" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gad3f5567ea9955b3d8482389e54fefe05" prot="public" static="no">
         <name>TLS_I2S_TX_ENABLE</name>
@@ -653,7 +653,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="376" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="376" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="378" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="378" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gaaa50a58c9a5fec1947bc0cfc66413bca" prot="public" static="no">
         <name>TLS_I2S_TX_DISABLE</name>
@@ -667,7 +667,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="385" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="385" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="387" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="387" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga3b33c1e67c05de8517e04f3755c53314" prot="public" static="no">
         <name>TLS_I2S_RX_ENABLE</name>
@@ -681,7 +681,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="394" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="394" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="396" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="396" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga3f62db93cb4ebc8c58ea648dc3719844" prot="public" static="no">
         <name>TLS_I2S_RX_DISABLE</name>
@@ -695,7 +695,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="403" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="403" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="405" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="405" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga35ea1a15c4cf8f8b55972a9acab79777" prot="public" static="no">
         <name>TLS_I2S_RX_FIFO_CLEAR</name>
@@ -704,12 +704,12 @@ Set the master clock rate according to u32BusClock parameter and enable master c
 		tls_bitband_write(HR_I2S_CTRL, <ref refid="wm__i2s_8h_1ad1289e8cc1ed107e17d38375902264d5" kindref="member">I2S_CTRL_RX_CLR_Pos</ref>, 1); \
 		} while(0)</initializer>
         <briefdescription>
-<para>Clear transmit FIFO. </para>        </briefdescription>
+<para>Clear receive FIFO. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="412" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="412" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="414" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="414" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga2dfeeb0f78f5fb0af14196560eb0afe9" prot="public" static="no">
         <name>TLS_I2S_TX_FIFO_CLEAR</name>
@@ -718,12 +718,12 @@ Set the master clock rate according to u32BusClock parameter and enable master c
 		tls_bitband_write(HR_I2S_CTRL, <ref refid="wm__i2s_8h_1aaa4fdc0db6ef2e40a1a51e7a2d525718" kindref="member">I2S_CTRL_TX_CLR_Pos</ref>, 1); \
 		} while(0)</initializer>
         <briefdescription>
-<para>Clear receive FIFO. </para>        </briefdescription>
+<para>Clear transmit FIFO. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="421" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="421" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="423" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="423" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gab5581f9dec31d86446be59fab655204a" prot="public" static="no">
         <name>TLS_I2S_TXDMA_ENABLE</name>
@@ -735,7 +735,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="430" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="430" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="432" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="432" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gaeec6b1c22ff4d7ca8c2490251e367cf4" prot="public" static="no">
         <name>TLS_I2S_TXDMA_DISABLE</name>
@@ -747,7 +747,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="436" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="436" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="438" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="438" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gae59d7654b751366446ef2903ed5fbfc4" prot="public" static="no">
         <name>TLS_I2S_RXDMA_ENABLE</name>
@@ -759,7 +759,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="442" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="442" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="444" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="444" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gaab0427d0ff3b3ef9aab136bd0b2604c2" prot="public" static="no">
         <name>TLS_I2S_RXDMA_DISABLE</name>
@@ -771,7 +771,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="448" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="448" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="450" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="450" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga945846e350fbb2ff28e5f96329d2352a" prot="public" static="no">
         <name>TLS_I2S_LZC_ENABLE</name>
@@ -783,7 +783,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="454" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="454" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="456" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="456" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga9bb75fa1d7dc4c773bb343bea382b44a" prot="public" static="no">
         <name>TLS_I2S_LZC_DISABLE</name>
@@ -795,7 +795,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="460" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="460" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="462" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="462" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga929aa4f4b10b74aef640cd5f5a75b270" prot="public" static="no">
         <name>TLS_I2S_RZC_ENABLE</name>
@@ -807,7 +807,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="466" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="466" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="468" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="468" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga1b4e81e75267ccc516b247fcbc651380" prot="public" static="no">
         <name>TLS_I2S_RZC_DISABLE</name>
@@ -819,7 +819,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="472" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="472" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="474" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="474" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1ga7313a93beafe741f56696af055479dd9" prot="public" static="no">
         <name>TLS_I2S_TX_MUTE_ENABLE</name>
@@ -831,7 +831,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="477" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="477" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="479" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="479" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i2_s___driver___a_p_is_1gaa11db6474ffabadbedce2e5abb8e267f" prot="public" static="no">
         <name>TLS_I2S_TX_MUTE_DISABLE</name>
@@ -843,7 +843,7 @@ Set the master clock rate according to u32BusClock parameter and enable master c
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="483" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="483" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="485" column="9" bodyfile="Include/Driver/wm_i2s.h" bodystart="485" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

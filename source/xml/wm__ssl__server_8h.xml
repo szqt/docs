@@ -5,6 +5,18 @@
     <includes refid="wm__config_8h" local="yes">wm_config.h</includes>
     <includes local="yes">HTTPClientWrapper.h</includes>
     <incdepgraph>
+      <node id="53">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="55">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+      <node id="54">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
       <node id="51">
         <label>Include/App/wm_ssl_server.h</label>
         <link refid="wm__ssl__server_8h"/>
@@ -12,14 +24,6 @@
         </childnode>
         <childnode refid="56" relation="include">
         </childnode>
-      </node>
-      <node id="54">
-        <label>wm_wifi_config.h</label>
-        <link refid="wm__wifi__config_8h"/>
-      </node>
-      <node id="53">
-        <label>wm_os_config.h</label>
-        <link refid="wm__os__config_8h"/>
       </node>
       <node id="56">
         <label>HTTPClientWrapper.h</label>
@@ -33,10 +37,6 @@
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-      </node>
-      <node id="55">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
     <briefdescription>

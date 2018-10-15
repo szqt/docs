@@ -35,14 +35,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="217">
+      <node id="239">
         <label>tls_skt_status_t</label>
         <link refid="structtls__skt__status__t"/>
-        <childnode refid="218" relation="usage">
+        <childnode refid="240" relation="usage">
           <edgelabel>skts_ext</edgelabel>
         </childnode>
       </node>
-      <node id="218">
+      <node id="240">
         <label>tls_skt_status_ext_t</label>
         <link refid="structtls__skt__status__ext__t"/>
       </node>

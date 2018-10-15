@@ -8,9 +8,6 @@
       <node id="188">
         <label>stdbool.h</label>
       </node>
-      <node id="187">
-        <label>core_cm3.h</label>
-      </node>
       <node id="185">
         <label>Include/Driver/wm_lcd.h</label>
         <link refid="wm__lcd_8h"/>
@@ -18,6 +15,9 @@
         </childnode>
         <childnode refid="188" relation="include">
         </childnode>
+      </node>
+      <node id="187">
+        <label>core_cm3.h</label>
       </node>
       <node id="186">
         <label>wm_regs.h</label>
@@ -444,7 +444,7 @@
 <para>When one will set segment, when zero will clear segment </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>before this function be called, the module must have been intialized </para></simplesect>
+<simplesect kind="note"><para>Before this function be called, the module must have been intialized </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -460,7 +460,7 @@
           <declname>vlcd</declname>
         </param>
         <briefdescription>
-<para>select the voltage of LCD module </para>        </briefdescription>
+<para>Select the voltage of LCD module. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -487,7 +487,7 @@
           <declname>duty</declname>
         </param>
         <briefdescription>
-<para>set the duty of LCD module </para>        </briefdescription>
+<para>Set the duty of LCD module. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -514,7 +514,7 @@
           <declname>bias</declname>
         </param>
         <briefdescription>
-<para>set the bias of LCD module </para>        </briefdescription>
+<para>Set the bias of LCD module. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -541,7 +541,7 @@
           <declname>vdd_mode</declname>
         </param>
         <briefdescription>
-<para>config the vdd mode of LCD module </para>        </briefdescription>
+<para>Config the vdd mode of LCD module. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -568,7 +568,7 @@
           <declname>val</declname>
         </param>
         <briefdescription>
-<para>enable or disable the LCD module gpio </para>        </briefdescription>
+<para>Enable or disable the LCD module gpio. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

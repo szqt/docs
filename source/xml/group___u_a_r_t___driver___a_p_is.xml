@@ -172,7 +172,7 @@
           <declname>writesize</declname>
         </param>
         <briefdescription>
-<para>This function is used to transfer data synchronous. </para>        </briefdescription>
+<para>This function is used to transfer data synchronously. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -239,7 +239,7 @@
           <declname>uart_no</declname>
         </param>
         <briefdescription>
-<para>This function is used to transfer data throuth DMA. </para>        </briefdescription>
+<para>This function is used to transfer data with DMA. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

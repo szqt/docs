@@ -87,17 +87,17 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="265">
+      <node id="304">
         <label>tls_uart_tx_msg</label>
         <link refid="structtls__uart__tx__msg"/>
-        <childnode refid="266" relation="usage">
+        <childnode refid="305" relation="usage">
           <edgelabel>list</edgelabel>
         </childnode>
       </node>
-      <node id="266">
+      <node id="305">
         <label>dl_list</label>
         <link refid="structdl__list"/>
-        <childnode refid="266" relation="usage">
+        <childnode refid="305" relation="usage">
           <edgelabel>prev</edgelabel>
           <edgelabel>next</edgelabel>
         </childnode>

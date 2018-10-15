@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="888" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="888" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="891" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="891" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__tim__ie_1a1518cd89f221ac7a91ad7f99db8dc2ca" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="889" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="889" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="892" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="892" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__tim__ie_1a8170b1799167b5b8eae52712b8eac8e2" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="890" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="890" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="893" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="893" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__tim__ie_1a9eb4ffdfa2058ab374443273b9043b04" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -54,14 +54,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="892" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="892" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="895" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="895" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>struct ieee80211_tim</para><para>This structure refers to &quot;Traffic Indication Map information element&quot; </para>    </detaileddescription>
-    <location file="Include/WiFi/wm_ieee80211.h" line="887" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="887" bodyend="893"/>
+    <location file="Include/WiFi/wm_ieee80211.h" line="890" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="890" bodyend="896"/>
     <listofallmembers>
       <member refid="structieee80211__tim__ie_1a8170b1799167b5b8eae52712b8eac8e2" prot="public" virt="non-virtual"><scope>ieee80211_tim_ie</scope><name>bitmap_ctrl</name></member>
       <member refid="structieee80211__tim__ie_1a627c701236fd15a0cbac4363bb438b62" prot="public" virt="non-virtual"><scope>ieee80211_tim_ie</scope><name>dtim_count</name></member>

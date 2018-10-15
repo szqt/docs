@@ -9,6 +9,18 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
+      <node id="171">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="173">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+      <node id="172">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
       <node id="169">
         <label>stdlib.h</label>
       </node>
@@ -32,14 +44,6 @@
         <childnode refid="166" relation="include">
         </childnode>
       </node>
-      <node id="172">
-        <label>wm_wifi_config.h</label>
-        <link refid="wm__wifi__config_8h"/>
-      </node>
-      <node id="171">
-        <label>wm_os_config.h</label>
-        <link refid="wm__os__config_8h"/>
-      </node>
       <node id="170">
         <label>wm_config.h</label>
         <link refid="wm__config_8h"/>
@@ -52,10 +56,6 @@
       </node>
       <node id="168">
         <label>stdio.h</label>
-      </node>
-      <node id="173">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
     <innerclass refid="struct_f_l_a_s_h___type_def" prot="public">FLASH_TypeDef</innerclass>
@@ -677,7 +677,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to semaphore protect. </para>        </briefdescription>
+<para>This function is used to get the flash semaphore. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -704,7 +704,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to semaphore protect cancel. </para>        </briefdescription>
+<para>This function is used to release the flash semaphore. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -794,21 +794,21 @@
 <parametername direction="in">addr</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is byte offset addr for read from the flash. </para></parameterdescription>
+<para>Specifies the starting address to read from. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">buf</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is user for data buffer of flash read </para></parameterdescription>
+<para>Specified the address to save the readback data. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is byte length for read.</para></parameterdescription>
+<para>Specifies the length of the data to read.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -850,28 +850,28 @@
           <declname>len</declname>
         </param>
         <briefdescription>
-<para>This function is used to write data to the flash. </para>        </briefdescription>
+<para>This function is used to write data into the flash. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">addr</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is byte offset addr for write to the flash </para></parameterdescription>
+<para>Specifies the starting address to write to </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">buf</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the data buffer want to write to flash </para></parameterdescription>
+<para>Pointer to a byte array that is to be written </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the byte length want to write</para></parameterdescription>
+<para>Specifies the length of the data to be written</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -926,14 +926,14 @@
           <declname>sector</declname>
         </param>
         <briefdescription>
-<para>This function is used to erase the appoint sector. </para>        </briefdescription>
+<para>This function is used to erase the appointed sector. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">sector</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>sector num of the flash, 4K byte a sector <linebreak/>
+<para>sector num of the flash, 4K bytes every sector <linebreak/>
  </para></parameterdescription>
 </parameteritem>
 </parameterlist>

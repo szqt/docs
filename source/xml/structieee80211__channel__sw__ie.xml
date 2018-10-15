@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="877" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="877" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="880" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="880" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__channel__sw__ie_1a29d210197860a0add8d80986a0bcbd10" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="878" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="878" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="881" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="881" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__channel__sw__ie_1a4766c1a195c7ae443f6e8f05285eed00" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -41,14 +41,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="879" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="879" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="882" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="882" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>struct <ref refid="structieee80211__channel__sw__ie" kindref="compound">ieee80211_channel_sw_ie</ref></para><para>This structure refers to &quot;Channel Switch Announcement information element&quot; </para>    </detaileddescription>
-    <location file="Include/WiFi/wm_ieee80211.h" line="876" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="876" bodyend="880"/>
+    <location file="Include/WiFi/wm_ieee80211.h" line="879" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="879" bodyend="883"/>
     <listofallmembers>
       <member refid="structieee80211__channel__sw__ie_1a4766c1a195c7ae443f6e8f05285eed00" prot="public" virt="non-virtual"><scope>ieee80211_channel_sw_ie</scope><name>count</name></member>
       <member refid="structieee80211__channel__sw__ie_1aa6e87ff6f9d05ba9ae2f97709e750c31" prot="public" virt="non-virtual"><scope>ieee80211_channel_sw_ie</scope><name>mode</name></member>

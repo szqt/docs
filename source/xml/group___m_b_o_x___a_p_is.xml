@@ -18,7 +18,7 @@
           <declname>size</declname>
         </param>
         <briefdescription>
-<para>create a malibox </para>        </briefdescription>
+<para>Create a malibox. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -66,7 +66,7 @@
           <declname>mbox</declname>
         </param>
         <briefdescription>
-<para>check if an mbox is valid/allocated </para>        </briefdescription>
+<para>Check if an mbox is valid/allocated. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -111,7 +111,7 @@
           <declname>msg</declname>
         </param>
         <briefdescription>
-<para>sends a message to a mailbox </para>        </briefdescription>
+<para>Sends a message to a mailbox. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -149,7 +149,7 @@
           <declname>msg</declname>
         </param>
         <briefdescription>
-<para>posts the &quot;msg&quot; to the mailbox. </para>        </briefdescription>
+<para>Posts the msg to the mailbox. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -205,7 +205,7 @@
           <declname>timeout</declname>
         </param>
         <briefdescription>
-<para>waits for a message within the specified time </para>        </briefdescription>
+<para>Waits for a message within specified time. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

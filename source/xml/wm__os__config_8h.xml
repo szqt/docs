@@ -4,35 +4,35 @@
     <compoundname>wm_os_config.h</compoundname>
     <includedby refid="wm__config_8h" local="yes">Include/wm_config.h</includedby>
     <invincdepgraph>
-      <node id="282">
-        <label>Include/Net/wm_sockets2.0.3.h</label>
-        <link refid="wm__sockets2_80_83_8h"/>
+      <node id="271">
+        <label>Include/wm_debug.h</label>
+        <link refid="wm__debug_8h"/>
       </node>
-      <node id="276">
-        <label>Include/Net/wm_socket2.0.3.h</label>
-        <link refid="wm__socket2_80_83_8h"/>
+      <node id="269">
+        <label>Include/OS/wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>Include/Driver/wm_uart.h</label>
+        <link refid="wm__uart_8h"/>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="275" relation="include">
+        </childnode>
       </node>
       <node id="292">
         <label>Include/Platform/wm_wl_task.h</label>
         <link refid="wm__wl__task_8h"/>
       </node>
-      <node id="284">
-        <label>Include/Driver/wm_flash.h</label>
-        <link refid="wm__flash_8h"/>
-      </node>
-      <node id="274">
-        <label>Include/App/wm_netif.h</label>
-        <link refid="wm__netif_8h"/>
-        <childnode refid="275" relation="include">
-        </childnode>
-        <childnode refid="276" relation="include">
-        </childnode>
-        <childnode refid="277" relation="include">
-        </childnode>
-      </node>
-      <node id="279">
-        <label>Include/App/wm_ssl_server.h</label>
-        <link refid="wm__ssl__server_8h_source"/>
+      <node id="272">
+        <label>Include/App/wm_cloud.h</label>
+        <link refid="wm__cloud_8h"/>
       </node>
       <node id="277">
         <label>Include/Net/wm_sockets.h</label>
@@ -42,17 +42,13 @@
         <childnode refid="278" relation="include">
         </childnode>
       </node>
-      <node id="272">
-        <label>Include/App/wm_cloud.h</label>
-        <link refid="wm__cloud_8h"/>
+      <node id="290">
+        <label>Include/Platform/wm_fwup.h</label>
+        <link refid="wm__fwup_8h"/>
       </node>
       <node id="288">
         <label>Include/Driver/wm_internal_flash.h</label>
         <link refid="wm__internal__flash_8h"/>
-      </node>
-      <node id="285">
-        <label>Include/Driver/wm_gpio_afsel.h</label>
-        <link refid="wm__gpio__afsel_8h"/>
       </node>
       <node id="283">
         <label>Include/OS/wm_osal.h</label>
@@ -78,26 +74,6 @@
         <childnode refid="291" relation="include">
         </childnode>
       </node>
-      <node id="280">
-        <label>Include/App/wm_wifi_oneshot.h</label>
-        <link refid="wm__wifi__oneshot_8h"/>
-      </node>
-      <node id="269">
-        <label>Include/OS/wm_os_config.h</label>
-        <link refid="wm__os__config_8h"/>
-        <childnode refid="270" relation="include">
-        </childnode>
-      </node>
-      <node id="293">
-        <label>Include/Platform/wm_wl_timers.h</label>
-        <link refid="wm__wl__timers_8h"/>
-        <childnode refid="292" relation="include">
-        </childnode>
-      </node>
-      <node id="278">
-        <label>Include/App/wm_netif2.0.3.h</label>
-        <link refid="wm__netif2_80_83_8h"/>
-      </node>
       <node id="291">
         <label>Include/Platform/wm_wl_mbox.h</label>
         <link refid="wm__wl__mbox_8h"/>
@@ -106,18 +82,34 @@
         <childnode refid="293" relation="include">
         </childnode>
       </node>
-      <node id="290">
-        <label>Include/Platform/wm_fwup.h</label>
-        <link refid="wm__fwup_8h"/>
+      <node id="278">
+        <label>Include/App/wm_netif2.0.3.h</label>
+        <link refid="wm__netif2_80_83_8h"/>
       </node>
-      <node id="273">
-        <label>Include/App/wm_http_client.h</label>
-        <link refid="wm__http__client_8h"/>
+      <node id="285">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
       </node>
-      <node id="286">
-        <label>Include/Driver/wm_hostspi.h</label>
-        <link refid="wm__hostspi_8h"/>
+      <node id="279">
+        <label>Include/App/wm_ssl_server.h</label>
+        <link refid="wm__ssl__server_8h_source"/>
+      </node>
+      <node id="287">
+        <label>Include/Driver/wm_i2s.h</label>
+        <link refid="wm__i2s_8h"/>
+      </node>
+      <node id="275">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
+      <node id="274">
+        <label>Include/App/wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
         <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
         </childnode>
       </node>
       <node id="281">
@@ -126,9 +118,13 @@
         <childnode refid="275" relation="include">
         </childnode>
       </node>
-      <node id="287">
-        <label>Include/Driver/wm_i2s.h</label>
-        <link refid="wm__i2s_8h"/>
+      <node id="273">
+        <label>Include/App/wm_http_client.h</label>
+        <link refid="wm__http__client_8h"/>
+      </node>
+      <node id="282">
+        <label>Include/Net/wm_sockets2.0.3.h</label>
+        <link refid="wm__sockets2_80_83_8h"/>
       </node>
       <node id="270">
         <label>Include/wm_config.h</label>
@@ -156,19 +152,23 @@
         <childnode refid="283" relation="include">
         </childnode>
       </node>
-      <node id="271">
-        <label>Include/wm_debug.h</label>
-        <link refid="wm__debug_8h"/>
+      <node id="284">
+        <label>Include/Driver/wm_flash.h</label>
+        <link refid="wm__flash_8h"/>
       </node>
-      <node id="275">
-        <label>Include/wm_include.h</label>
-        <link refid="wm__include_8h"/>
-      </node>
-      <node id="289">
-        <label>Include/Driver/wm_uart.h</label>
-        <link refid="wm__uart_8h"/>
-        <childnode refid="275" relation="include">
+      <node id="293">
+        <label>Include/Platform/wm_wl_timers.h</label>
+        <link refid="wm__wl__timers_8h"/>
+        <childnode refid="292" relation="include">
         </childnode>
+      </node>
+      <node id="276">
+        <label>Include/Net/wm_socket2.0.3.h</label>
+        <link refid="wm__socket2_80_83_8h"/>
+      </node>
+      <node id="280">
+        <label>Include/App/wm_wifi_oneshot.h</label>
+        <link refid="wm__wifi__oneshot_8h"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

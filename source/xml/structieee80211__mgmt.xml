@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="912" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="912" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="915" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="915" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a74179d50044cf654e382380c7239b715" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="913" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="913" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="916" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="916" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a4e191f615ba1c543ceef62aac8f39e4e" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="914" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="914" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="917" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="917" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1ad8ce1c67c7203ebe45512f6c5da49e99" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="915" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="915" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="918" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="918" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1ad2eb3e3e49d00555d735ed635a12b690" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="916" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="916" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="919" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="919" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1aa4511c7fbdf682b14def43d19345561a" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="917" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="917" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="920" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="920" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a89467e2b031d7e35d352b64130aae129" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="920" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="920" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="923" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="923" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a988d4e42ec6ca68d525c0fd563a78d02" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="921" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="921" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="924" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="924" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1ab6769c76182b54110806ed66ac0c4fb3" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="922" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="922" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="925" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="925" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a1a855a6f18abf94ca7b9f44a64d0d76d" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="924" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="924" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="927" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="927" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a5f04ac9a780859e4cd91ff68af382492" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="927" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="927" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="930" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="930" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a378836b10c991b88a6095a7de582ee95" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="930" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="930" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="933" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="933" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1ace5862510660a2a0c4ebe67ac676e3b9" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="931" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="931" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="934" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="934" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a02c39293cc514fee3376b713650b575d" prot="public" static="no" mutable="no">
         <type>struct ieee80211_mgmt::@10::@13</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="934" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="937" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1ae7c8108b8f7bbcd5e0be530b0808809b" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="938" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="938" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="941" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="941" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1afe71891b1edf243311be2cc5f9712aad" prot="public" static="no" mutable="no">
         <type>struct ieee80211_mgmt::@10::@14</type>
@@ -209,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="941" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="941" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="944" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="944" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a93aa2b04305d761eb507e4260eb6573a" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -222,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="945" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="945" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="948" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="948" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a7b4fc80143841c2f8fab92a767b6a3ba" prot="public" static="no" mutable="no">
         <type>u64</type>
@@ -235,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="953" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="953" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="956" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="956" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1aaeae6371330277b24d70b38441459b10" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="954" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="954" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="957" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="957" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a7a928076e9b272a4efad528a9acc786f" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -261,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="973" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="973" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="976" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="976" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a54f06bbab0c18ca76b5ecb09e9926a88" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="976" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="976" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="979" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="979" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a0ce2b96cf424fe90297821d5ecf9fc49" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -287,7 +287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="977" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="977" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="980" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="980" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1ad5b0008eecbc5304d4230290073d3ea6" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -300,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="978" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="978" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="981" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="981" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1ae275183868c5d351b64c91ebaaad5609" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="983" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="983" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="986" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="986" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a81e1270e0bf4a673ed426de1d094bd87" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -326,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="984" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="984" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="987" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="987" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a7d87df0a38120db0a8805ac50789860a" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structieee80211__channel__sw__ie" kindref="compound">ieee80211_channel_sw_ie</ref></type>
@@ -339,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="984" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="985" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="987" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="988" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1adeabac7b2d295d6466c4b5e8a009709e" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -352,7 +352,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="989" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="989" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="992" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="992" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a42b4424eb61c56b368b5ff0f510e0b6b" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structieee80211__msrment__ie" kindref="compound">ieee80211_msrment_ie</ref></type>
@@ -365,7 +365,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="995" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="996" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="998" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="999" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1af7ce05c6464a18da4c29f38d20709df3" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -378,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1001" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1001" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1004" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1004" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a381dcc634780edcfa7a2cd05d3d8e2f4" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -391,7 +391,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1002" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1002" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1005" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1005" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a0a71af89c07f404824c6dcf103fc3b41" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -404,7 +404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1003" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1003" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1006" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1006" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a59ed72e08a01c8b4f007d3196835123b" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -417,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1008" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1008" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1011" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1011" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1acf9ff074f9b23f647f1a54e4b06bcd22" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -430,7 +430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1014" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1014" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1017" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1017" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a75f1b4408097f43bb41f7acdfc5622ae" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -443,7 +443,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1020" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1020" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1023" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1023" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1af5a7aac07818c92bf0c66d43b452fe6c" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -456,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1031" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1031" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1034" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1034" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1af162017f429937e49c95a66bf888ad70" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -469,7 +469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1032" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1032" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1035" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1035" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a3021df3d23dfa90de191ef54d7957887" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -482,7 +482,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1036" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1036" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1039" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1039" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a9f4d40b7b3ea2776eb3389d4aafc2217" prot="public" static="no" mutable="no">
         <type>union ieee80211_mgmt::@10::@20::@21</type>
@@ -495,7 +495,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1038" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1041" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a89d7179ec6474bc2d405904ee8610dc7" prot="public" static="no" mutable="no">
         <type>union ieee80211_mgmt::@10</type>
@@ -508,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1040" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1043" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a1340066799287ae9617c76ebe63d4e3b" prot="public" static="no" mutable="no">
         <type>struct ieee80211_mgmt::@84::@87</type>
@@ -521,7 +521,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="680" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="683" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a1cf9d0a99c13ece79adef01dc8b20d90" prot="public" static="no" mutable="no">
         <type>struct ieee80211_mgmt::@84::@88</type>
@@ -534,7 +534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="687" column="1" bodyfile="Include/WiFi/wm_ieee80211_gcc.h" bodystart="687" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="690" column="1" bodyfile="Include/WiFi/wm_ieee80211_gcc.h" bodystart="690" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a40c95422537b8880e58cfee865841594" prot="public" static="no" mutable="no">
         <type>union ieee80211_mgmt::@84::@94::@95</type>
@@ -547,7 +547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="788" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="791" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mgmt_1a5bffd47599d582ebc96033a6f86acf85" prot="public" static="no" mutable="no">
         <type>union ieee80211_mgmt::@84</type>
@@ -560,7 +560,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="790" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="793" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -587,7 +587,7 @@
         <link refid="structieee80211__channel__sw__ie"/>
       </node>
     </collaborationgraph>
-    <location file="Include/WiFi/wm_ieee80211.h" line="911" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="911" bodyend="1041"/>
+    <location file="Include/WiFi/wm_ieee80211.h" line="914" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="914" bodyend="1044"/>
     <listofallmembers>
       <member refid="structieee80211__mgmt_1af5a7aac07818c92bf0c66d43b452fe6c" prot="public" virt="non-virtual"><scope>ieee80211_mgmt</scope><name>action</name></member>
       <member refid="structieee80211__mgmt_1a54f06bbab0c18ca76b5ecb09e9926a88" prot="public" virt="non-virtual"><scope>ieee80211_mgmt</scope><name>action_code</name></member>

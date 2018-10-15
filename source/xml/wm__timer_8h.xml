@@ -70,7 +70,7 @@
           <declname>cfg</declname>
         </param>
         <briefdescription>
-<para>This function is used to create the timer. </para>        </briefdescription>
+<para>This function is used to create a timer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -95,7 +95,7 @@
 <para>timer id</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>user not need clear interrupt flag. timer callback function is called in interrupt, so can not operate the critical data in the callback fuuction, recommendation to send messages to other tasks to operate it. </para></simplesect>
+<simplesect kind="note"><para>User does not need to clear the interrupt flag. Rtc callback function is called in interrupt, so do not operate the critical data in the callback fuuction. Sending messages to other tasks to handle is recommended. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -111,7 +111,7 @@
           <declname>timer_id</declname>
         </param>
         <briefdescription>
-<para>This function is used to start the timer. </para>        </briefdescription>
+<para>This function is used to start a timer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -138,7 +138,7 @@
           <declname>timer_id</declname>
         </param>
         <briefdescription>
-<para>This function is used to stop the timer. </para>        </briefdescription>
+<para>This function is used to stop a timer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -155,6 +155,51 @@
         </inbodydescription>
         <location file="Include/Driver/wm_timer.h" line="90" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_r___driver___a_p_is_1gac9354e976ab0262a498ed7cbf64b24b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_timer_change</definition>
+        <argsstring>(u8 timer_id, u32 newtime)</argsstring>
+        <name>tls_timer_change</name>
+        <param>
+          <type>u8</type>
+          <declname>timer_id</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>newtime</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to change a timer wait time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">timer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer id[0~5]</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">newtime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new wait time</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If the timer does not start, this function will start the timer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_timer.h" line="103" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="group___t_i_m_e_r___driver___a_p_is_1gabe37deea69053b62d5235e29d35ab5a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void tls_timer_destroy</definition>
@@ -165,7 +210,7 @@
           <declname>timer_id</declname>
         </param>
         <briefdescription>
-<para>This function is used to delete the timer. </para>        </briefdescription>
+<para>This function is used to delete a timer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -180,7 +225,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_timer.h" line="101" column="1"/>
+        <location file="Include/Driver/wm_timer.h" line="114" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -216,10 +261,12 @@ Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___t_i_m_e_r___driver___a_p_is_1ga414b9f30367bc4bbd9086e3662db8f94" kindref="member">tls_timer_stop</ref>(u8<sp/>timer_id);</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___t_i_m_e_r___driver___a_p_is_1gabe37deea69053b62d5235e29d35ab5a0" kindref="member">tls_timer_destroy</ref>(u8<sp/>timer_id);</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_TIMER_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___t_i_m_e_r___driver___a_p_is_1gac9354e976ab0262a498ed7cbf64b24b6" kindref="member">tls_timer_change</ref>(u8<sp/>timer_id,<sp/>u32<sp/>newtime);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___t_i_m_e_r___driver___a_p_is_1gabe37deea69053b62d5235e29d35ab5a0" kindref="member">tls_timer_destroy</ref>(u8<sp/>timer_id);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_TIMER_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Include/Driver/wm_timer.h"/>
   </compounddef>

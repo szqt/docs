@@ -5,17 +5,9 @@
     <includedby refid="wm__7816_8h" local="yes">Include/Driver/wm_7816.h</includedby>
     <includedby refid="wm__gpio_8h" local="yes">Include/Driver/wm_gpio.h</includedby>
     <invincdepgraph>
-      <node id="176">
-        <label>Include/Driver/wm_io.h</label>
-        <link refid="wm__io_8h"/>
-        <childnode refid="177" relation="include">
-        </childnode>
-        <childnode refid="178" relation="include">
-        </childnode>
-      </node>
-      <node id="180">
-        <label>Include/Driver/wm_gpio_afsel.h</label>
-        <link refid="wm__gpio__afsel_8h"/>
+      <node id="177">
+        <label>Include/Driver/wm_7816.h</label>
+        <link refid="wm__7816_8h"/>
       </node>
       <node id="178">
         <label>Include/Driver/wm_gpio.h</label>
@@ -25,13 +17,21 @@
         <childnode refid="180" relation="include">
         </childnode>
       </node>
-      <node id="177">
-        <label>Include/Driver/wm_7816.h</label>
-        <link refid="wm__7816_8h"/>
+      <node id="180">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
       </node>
       <node id="179">
         <label>Include/wm_include.h</label>
         <link refid="wm__include_8h"/>
+      </node>
+      <node id="176">
+        <label>Include/Driver/wm_io.h</label>
+        <link refid="wm__io_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

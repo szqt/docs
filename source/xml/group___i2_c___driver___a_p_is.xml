@@ -14,7 +14,7 @@
           <declname>freq</declname>
         </param>
         <briefdescription>
-<para>init the I2C module </para>        </briefdescription>
+<para>Init the I2C module. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -24,7 +24,7 @@
 <para>I2C reference clock frequency in Hz that will be used </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>the freq must between 100k and 400k </para></simplesect>
+<simplesect kind="note"><para>the value must be between 100k and 400k </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -55,7 +55,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>waiting for ack signal </para>        </briefdescription>
+<para>Waiting for ack signal. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="retval"><parameteritem>
 <parameternamelist>
@@ -86,7 +86,7 @@
           <declname>ifstart</declname>
         </param>
         <briefdescription>
-<para>writes the data to data register of I2C module when ifstart one the start signal will be sent followed by the data when ifstart zero only the data will be send </para>        </briefdescription>
+<para>Writes the data to data register of I2C module when ifstart one the start signal will be sent followed by the data when ifstart zero only the data will be send. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -129,7 +129,7 @@
           <declname>ifstop</declname>
         </param>
         <briefdescription>
-<para>get the data stored in data register of I2C module </para>        </briefdescription>
+<para>Get the data stored in data register of I2C module. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -215,7 +215,7 @@
           <declname>len</declname>
         </param>
         <briefdescription>
-<para>start write through int mode </para>        </briefdescription>
+<para>Start writing through int mode. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -283,7 +283,7 @@
           <declname>len</declname>
         </param>
         <briefdescription>
-<para>get the data stored in data register of I2C module </para>        </briefdescription>
+<para>Get the data stored in data register of I2C module. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

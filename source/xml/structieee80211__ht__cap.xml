@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1145" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1145" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1148" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__ht__cap_1ae3e88b02e17da60547efaf48e3b7c3f5" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1146" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1146" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1149" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__ht__cap_1a2319a55f8100278aab71094132137453" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structieee80211__mcs__info" kindref="compound">ieee80211_mcs_info</ref></type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1146" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1149" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1149" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__ht__cap_1a890337d508a688e78333895298c30dd6" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1151" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1151" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1154" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__ht__cap_1a4ddd868d9100d2ae515c3b21dd3c46aa" prot="public" static="no" mutable="no">
         <type>u32</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1152" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1152" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1155" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1155" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__ht__cap_1a1952bc68afc8ee6a8234d3abf8178345" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1153" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1153" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1156" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1156" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -100,7 +100,7 @@
         <link refid="structieee80211__mcs__info"/>
       </node>
     </collaborationgraph>
-    <location file="Include/WiFi/wm_ieee80211.h" line="1144" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1144" bodyend="1154"/>
+    <location file="Include/WiFi/wm_ieee80211.h" line="1147" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1147" bodyend="1157"/>
     <listofallmembers>
       <member refid="structieee80211__ht__cap_1ae3e88b02e17da60547efaf48e3b7c3f5" prot="public" virt="non-virtual"><scope>ieee80211_ht_cap</scope><name>ampdu_params_info</name></member>
       <member refid="structieee80211__ht__cap_1a1952bc68afc8ee6a8234d3abf8178345" prot="public" virt="non-virtual"><scope>ieee80211_ht_cap</scope><name>antenna_selection_info</name></member>

@@ -4,15 +4,15 @@
     <compoundname>wm_adc.h</compoundname>
     <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
     <incdepgraph>
+      <node id="83">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
+      </node>
       <node id="82">
         <label>Include/Driver/wm_adc.h</label>
         <link refid="wm__adc_8h"/>
         <childnode refid="83" relation="include">
         </childnode>
-      </node>
-      <node id="83">
-        <label>wm_type_def.h</label>
-        <link refid="wm__type__def_8h"/>
       </node>
     </incdepgraph>
     <innerclass refid="structadc__st" prot="public">adc_st</innerclass>
@@ -659,6 +659,87 @@
         </inbodydescription>
         <location file="Include/Driver/wm_adc.h" line="176" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a9c3f124a5c42d14e2e957ae3b4addefd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 adc_get_offset</definition>
+        <argsstring>(void)</argsstring>
+        <name>adc_get_offset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a8a56e90c19e309111adc446cf5ff1df6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 adc_get_interTemp</definition>
+        <argsstring>(void)</argsstring>
+        <name>adc_get_interTemp</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a171b1da0d1514a2ddcc9ab79d3ba0cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u16</type>
+        <definition>u16 adc_get_inputVolt</definition>
+        <argsstring>(u8 channel)</argsstring>
+        <name>adc_get_inputVolt</name>
+        <param>
+          <type>u8</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a4e3549b37a464f419ef1b8a5aba54e1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u16</type>
+        <definition>u16 adc_get_interVolt</definition>
+        <argsstring>(void)</argsstring>
+        <name>adc_get_interVolt</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wm__adc_8h_1a519a4ce0be524482be990b96a63f3ad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 adc_temp</definition>
+        <argsstring>(void)</argsstring>
+        <name>adc_temp</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_adc.h" line="182" column="1"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -833,7 +914,7 @@
 <codeline lineno="166"><highlight class="comment">*<sp/>Description:<sp/><sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>set<sp/>adc<sp/>reference<sp/>source.</highlight></codeline>
 <codeline lineno="167"><highlight class="comment">*</highlight></codeline>
 <codeline lineno="168"><highlight class="comment">*<sp/>Arguments<sp/><sp/>:<sp/><sp/>ref<sp/><sp/><sp/><sp/><sp/>ADC_REFERENCE_EXTERNAL</highlight></codeline>
-<codeline lineno="169"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_REFERENCE_INTERNAL<sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_REFERENCE_INTERNAL<sp/></highlight></codeline>
 <codeline lineno="170"><highlight class="comment">*<sp/>Returns<sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
 <codeline lineno="171"><highlight class="comment">**********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_reference_sel(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ref);</highlight></codeline>
@@ -842,9 +923,14 @@
 <codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_buffer_bypass_set(u8<sp/>isset);</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_adc_cmp_start(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Channel,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmp_data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cmp_pol);</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">u8<sp/><sp/>adc_get_offset(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">u32<sp/>adc_get_interTemp(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">u16<sp/>adc_get_inputVolt(u8<sp/>channel);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">u16<sp/>adc_get_interVolt(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">u32<sp/>adc_temp(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Include/Driver/wm_adc.h"/>
   </compounddef>

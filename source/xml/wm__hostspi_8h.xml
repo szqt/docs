@@ -12,13 +12,31 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
+      <node id="136">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="138">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+      <node id="137">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
       <node id="134">
         <label>stdlib.h</label>
       </node>
-      <node id="131">
-        <label>list.h</label>
-        <link refid="list_8h_source"/>
-        <childnode refid="132" relation="include">
+      <node id="129">
+        <label>Include/Driver/wm_hostspi.h</label>
+        <link refid="wm__hostspi_8h"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
         </childnode>
       </node>
       <node id="133">
@@ -33,24 +51,10 @@
         <childnode refid="130" relation="include">
         </childnode>
       </node>
-      <node id="137">
-        <label>wm_wifi_config.h</label>
-        <link refid="wm__wifi__config_8h"/>
-      </node>
-      <node id="136">
-        <label>wm_os_config.h</label>
-        <link refid="wm__os__config_8h"/>
-      </node>
-      <node id="129">
-        <label>Include/Driver/wm_hostspi.h</label>
-        <link refid="wm__hostspi_8h"/>
-        <childnode refid="130" relation="include">
-        </childnode>
-        <childnode refid="131" relation="include">
-        </childnode>
-        <childnode refid="133" relation="include">
-        </childnode>
-        <childnode refid="138" relation="include">
+      <node id="131">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="132" relation="include">
         </childnode>
       </node>
       <node id="135">
@@ -65,10 +69,6 @@
       </node>
       <node id="132">
         <label>stdio.h</label>
-      </node>
-      <node id="138">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -593,7 +593,7 @@
           <declname>fclk</declname>
         </param>
         <briefdescription>
-<para>This function is used to setup the spi CPOL,CPHA,cs signal and clock. </para>        </briefdescription>
+<para>This function is used to setup the spi controller. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -673,14 +673,14 @@
 <parametername direction="in">buf</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the user data. </para></parameterdescription>
+<para>data to be sent. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the data length.</para></parameterdescription>
+<para>data length.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -732,7 +732,7 @@
           <declname>len</declname>
         </param>
         <briefdescription>
-<para>This function is used to synchronous read data by SPI. </para>        </briefdescription>
+<para>This function is used to synchronously read data from SPI. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -806,7 +806,7 @@
           <declname>n_rx</declname>
         </param>
         <briefdescription>
-<para>This function is used to synchronous write command then read data by SPI. </para>        </briefdescription>
+<para>This function is used to synchronously write command and then read data from SPI. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -863,7 +863,7 @@
 <parametername>TLS_SPI_STATUS_ESHUTDOWN</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>if SPI driver does not installed.</para></parameterdescription>
+<para>if SPI driver has not been installed.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="note"><para>None </para></simplesect>
@@ -894,7 +894,7 @@
           <declname>n_tx</declname>
         </param>
         <briefdescription>
-<para>This function is used to synchronous write 32bit command then write data by SPI. </para>        </briefdescription>
+<para>This function is used to synchronous write 32bit command then write data from SPI. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -977,7 +977,7 @@
 <parametername direction="in">type</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the transfer type. type == SPI_BYTE_TRANSFER byte transfer type == SPI_WORD_TRANSFER word transfer type == SPI_DMA_TRANSFER DMA transfer</para></parameterdescription>
+<para>is the transfer type. SPI_BYTE_TRANSFER -&gt;byte transfer; SPI_WORD_TRANSFER -&gt;word transfer; SPI_DMA_TRANSFER -&gt;DMA transfer;</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>

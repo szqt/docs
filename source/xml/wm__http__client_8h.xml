@@ -9,13 +9,17 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
-      <node id="19">
-        <label>wm_wifi_config.h</label>
-        <link refid="wm__wifi__config_8h"/>
-      </node>
       <node id="18">
         <label>wm_os_config.h</label>
         <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="20">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+      <node id="19">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
       </node>
       <node id="16">
         <label>Include/App/wm_http_client.h</label>
@@ -34,10 +38,6 @@
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-      </node>
-      <node id="20">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
     <innerclass refid="struct___h_t_t_p___c_l_i_e_n_t" prot="public">_HTTP_CLIENT</innerclass>
@@ -877,7 +877,7 @@
           <declname>pSession</declname>
         </param>
         <briefdescription>
-<para>Closes any active connection and free any used memory. </para>        </briefdescription>
+<para>Closes the active connection and free the corresponding memory. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1193,35 +1193,35 @@
           <declname>nInsert</declname>
         </param>
         <briefdescription>
-<para>Add headers to the outgoing request. </para>        </briefdescription>
+<para>Add headers into the outgoing request. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">pSession</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>HTTP Session handle </para></parameterdescription>
+<para>HTTP Session </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">*pHeaderName</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Headers name </para></parameterdescription>
+<para>The Header name </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">*pHeaderData</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The headers data </para></parameterdescription>
+<para>The header data </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">nInsert</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Reserved could be any</para></parameterdescription>
+<para>Reserved, could be any</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -1966,7 +1966,7 @@ Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HTTPStatusCode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>HTTP<sp/>Status<sp/>code<sp/>(200<sp/>OK)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RequestBodyLengthSent;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Total<sp/>bytes<sp/>sent<sp/>(body<sp/>only)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResponseBodyLengthReceived;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Total<sp/>bytes<sp/>received<sp/>(body<sp/>only)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TotalResponseBodyLength;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>extracted<sp/>from<sp/>the<sp/>?content-length&quot;<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TotalResponseBodyLength;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>extracted<sp/>from<sp/>the<sp/>揷ontent-length&quot;<sp/>header</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HttpState;</highlight></codeline>
 <codeline lineno="185"><highlight class="normal">}<sp/><ref refid="wm__http__client_8h_1a2752d98f954792b6135aee4b5fbdea06" kindref="member">HTTP_CLIENT</ref>;</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>

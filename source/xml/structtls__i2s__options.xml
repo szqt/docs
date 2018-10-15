@@ -14,7 +14,7 @@
 <para>I2S receiver enable </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="162" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="162" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="164" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__i2s__options_1a9385b4332e1c7d52f21b366e3f462902" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -27,7 +27,7 @@
 <para>I2S transfer enable </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="164" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="164" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="166" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__i2s__options_1a726e1852b5446821774576d2415b23f0" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -42,7 +42,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="169" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="169" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="171" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="171" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__i2s__options_1a1b052106c23a40c1613a64aeb837cd93" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -57,7 +57,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="176" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="176" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="178" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__i2s__options_1a97d2364bcf3b38192495d90982c9c2ec" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -72,7 +72,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="183" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="183" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="185" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__i2s__options_1aca01b76416a95e45aca5da4e11b6c890" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -85,14 +85,14 @@
 <para>I2S module sample rate max 128KHz </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="185" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="185" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="187" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Include/Driver/wm_i2s.h" line="160" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="159" bodyend="186"/>
+    <location file="Include/Driver/wm_i2s.h" line="162" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="161" bodyend="188"/>
     <listofallmembers>
       <member refid="structtls__i2s__options_1a97d2364bcf3b38192495d90982c9c2ec" prot="public" virt="non-virtual"><scope>tls_i2s_options</scope><name>data_width</name></member>
       <member refid="structtls__i2s__options_1a1b052106c23a40c1613a64aeb837cd93" prot="public" virt="non-virtual"><scope>tls_i2s_options</scope><name>format</name></member>

@@ -5,17 +5,21 @@
     <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
     <includes refid="wm__osal_8h" local="yes">wm_osal.h</includes>
     <incdepgraph>
-      <node id="93">
-        <label>Include/Driver/wm_flash.h</label>
-        <link refid="wm__flash_8h"/>
-        <childnode refid="94" relation="include">
-        </childnode>
-        <childnode refid="95" relation="include">
-        </childnode>
-      </node>
       <node id="94">
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="99">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="101">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+      <node id="100">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
       </node>
       <node id="97">
         <label>stdlib.h</label>
@@ -32,14 +36,6 @@
         <childnode refid="94" relation="include">
         </childnode>
       </node>
-      <node id="100">
-        <label>wm_wifi_config.h</label>
-        <link refid="wm__wifi__config_8h"/>
-      </node>
-      <node id="99">
-        <label>wm_os_config.h</label>
-        <link refid="wm__os__config_8h"/>
-      </node>
       <node id="98">
         <label>wm_config.h</label>
         <link refid="wm__config_8h"/>
@@ -50,12 +46,16 @@
         <childnode refid="101" relation="include">
         </childnode>
       </node>
+      <node id="93">
+        <label>Include/Driver/wm_flash.h</label>
+        <link refid="wm__flash_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
       <node id="96">
         <label>stdio.h</label>
-      </node>
-      <node id="101">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
     <innerclass refid="structfls__list" prot="public">fls_list</innerclass>
@@ -367,21 +367,21 @@
 <parametername direction="in">addr</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is byte offset addr for read from the flash. </para></parameterdescription>
+<para>Specifies the starting address to read from </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">buf</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is user for data buffer of flash read </para></parameterdescription>
+<para>Pointer to a byte array that is to be written. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is byte length for read.</para></parameterdescription>
+<para>length to read.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -423,28 +423,28 @@
           <declname>len</declname>
         </param>
         <briefdescription>
-<para>This function is used to write data to the flash. </para>        </briefdescription>
+<para>This function is used to write data into the flash. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">addr</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is byte offset addr for write to the flash </para></parameterdescription>
+<para>Specifies the starting address to write to. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">buf</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the data buffer want to write to flash </para></parameterdescription>
+<para>Pointer to a byte array that holds the data to be written. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the byte length want to write</para></parameterdescription>
+<para>length to write.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>

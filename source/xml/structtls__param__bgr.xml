@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="325" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="325" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="332" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="332" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__param__bgr_1aee6a0273eb6b219b7db34d9ddf2869bb" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="326" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="326" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="333" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="333" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__param__bgr_1a510d93bd4a8f04f9027dee72ac8a370a" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -41,14 +41,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="327" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="327" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="334" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="334" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Structure of 802.11 bgn rate parameter </para>    </detaileddescription>
-    <location file="Include/Platform/wm_params.h" line="324" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="324" bodyend="328"/>
+    <location file="Include/Platform/wm_params.h" line="331" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="331" bodyend="335"/>
     <listofallmembers>
       <member refid="structtls__param__bgr_1aba849f6ae8f347aa12817c9a4e95f98d" prot="public" virt="non-virtual"><scope>tls_param_bgr</scope><name>bg</name></member>
       <member refid="structtls__param__bgr_1aee6a0273eb6b219b7db34d9ddf2869bb" prot="public" virt="non-virtual"><scope>tls_param_bgr</scope><name>max_rate</name></member>

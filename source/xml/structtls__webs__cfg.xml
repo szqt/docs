@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="375" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="375" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="382" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="382" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__webs__cfg_1a976788d4ba11c3d2e4f1c673295f9a9b" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="376" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="376" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="383" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="383" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__webs__cfg_1a8574d951b6ae8338cf4d82793c295d0c" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -41,14 +41,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="377" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="377" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="384" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="384" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Structure of web server parameter </para>    </detaileddescription>
-    <location file="Include/Platform/wm_params.h" line="374" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="374" bodyend="378"/>
+    <location file="Include/Platform/wm_params.h" line="381" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="381" bodyend="385"/>
     <listofallmembers>
       <member refid="structtls__webs__cfg_1a0647d88ee07f8b389fbbf0382d09f6e2" prot="public" virt="non-virtual"><scope>tls_webs_cfg</scope><name>AutoRun</name></member>
       <member refid="structtls__webs__cfg_1a8574d951b6ae8338cf4d82793c295d0c" prot="public" virt="non-virtual"><scope>tls_webs_cfg</scope><name>PortNum</name></member>

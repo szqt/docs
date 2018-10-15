@@ -4,14 +4,14 @@
     <compoundname>litepoint.h</compoundname>
     <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
     <incdepgraph>
-      <node id="392">
+      <node id="395">
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
-      <node id="391">
+      <node id="394">
         <label>Include/WiFi/litepoint.h</label>
         <link refid="litepoint_8h"/>
-        <childnode refid="392" relation="include">
+        <childnode refid="395" relation="include">
         </childnode>
       </node>
     </incdepgraph>

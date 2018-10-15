@@ -166,38 +166,38 @@
     <detaileddescription>
 <para>driver structure to SPI master controller</para><para>This data structure presents the SPI master controller&apos;s configuration data. The device attached to this SPI master controller share the same transfer mode, chipselect mode and clock rate. And this structure maintains a queue of <ref refid="structtls__spi__message" kindref="compound">tls_spi_message</ref> transactions and uses this <ref refid="structtls__spi__message" kindref="compound">tls_spi_message</ref> transaction to access to the SPI device. For each such message it queues, it calls the message&apos;s completion function when the transaction completes. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="235">
+      <node id="257">
         <label>tls_spi_transfer</label>
         <link refid="structtls__spi__transfer"/>
-        <childnode refid="236" relation="usage">
+        <childnode refid="258" relation="usage">
           <edgelabel>transfer_list</edgelabel>
         </childnode>
       </node>
-      <node id="234">
+      <node id="256">
         <label>tls_spi_port</label>
         <link refid="structtls__spi__port"/>
-        <childnode refid="235" relation="usage">
+        <childnode refid="257" relation="usage">
           <edgelabel>current_transfer</edgelabel>
         </childnode>
-        <childnode refid="236" relation="usage">
+        <childnode refid="258" relation="usage">
           <edgelabel>wait_queue</edgelabel>
         </childnode>
-        <childnode refid="237" relation="usage">
+        <childnode refid="259" relation="usage">
           <edgelabel>current_message</edgelabel>
         </childnode>
       </node>
-      <node id="236">
+      <node id="258">
         <label>dl_list</label>
         <link refid="structdl__list"/>
-        <childnode refid="236" relation="usage">
+        <childnode refid="258" relation="usage">
           <edgelabel>prev</edgelabel>
           <edgelabel>next</edgelabel>
         </childnode>
       </node>
-      <node id="237">
+      <node id="259">
         <label>tls_spi_message</label>
         <link refid="structtls__spi__message"/>
-        <childnode refid="236" relation="usage">
+        <childnode refid="258" relation="usage">
           <edgelabel>transfers</edgelabel>
           <edgelabel>queue</edgelabel>
         </childnode>

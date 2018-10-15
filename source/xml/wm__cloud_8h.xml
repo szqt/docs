@@ -4,19 +4,23 @@
     <compoundname>wm_cloud.h</compoundname>
     <includes refid="wm__config_8h" local="yes">wm_config.h</includes>
     <incdepgraph>
-      <node id="2">
-        <label>Include/App/wm_cloud.h</label>
-        <link refid="wm__cloud_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
+      <node id="4">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="6">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
       </node>
       <node id="5">
         <label>wm_wifi_config.h</label>
         <link refid="wm__wifi__config_8h"/>
       </node>
-      <node id="4">
-        <label>wm_os_config.h</label>
-        <link refid="wm__os__config_8h"/>
+      <node id="2">
+        <label>Include/App/wm_cloud.h</label>
+        <link refid="wm__cloud_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>wm_config.h</label>
@@ -27,10 +31,6 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-      </node>
-      <node id="6">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
     <briefdescription>

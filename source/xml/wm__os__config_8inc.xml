@@ -7,7 +7,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="normal">;__TLS_OS_UCOS<sp/><sp/>EQU<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssss</highlight></codeline>
+<codeline lineno="1"><highlight class="normal">;__TLS_OS_UCOS<sp/><sp/>EQU<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>;only select one</highlight></codeline>
 <codeline lineno="2"><highlight class="normal">__TLS_OS_FREERTOS<sp/><sp/><sp/>EQU<sp/>1</highlight></codeline>
 <codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>END</highlight></codeline>
     </programlisting>

@@ -26,7 +26,7 @@
           <declname>arg</declname>
         </param>
         <briefdescription>
-<para>create a one-shot timer (aka timeout) </para>        </briefdescription>
+<para>Create a one-shot timer (aka timeout) </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -58,7 +58,7 @@
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>
-<simplesect kind="note"><para>while waiting for a message using sys_timeouts_mbox_fetch() </para></simplesect>
+<simplesect kind="note"><para>While waiting for a message using sys_timeouts_mbox_fetch() </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -82,7 +82,7 @@
           <declname>arg</declname>
         </param>
         <briefdescription>
-<para>Go through timeout list (for this task only) and remove the first matching entry, even though the timeout has not triggered yet. </para>        </briefdescription>
+<para>Go through timeout list (for this task only) and remove the first matching entry, even though the timeout has not been triggered yet. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -171,7 +171,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>timer initialized </para>        </briefdescription>
+<para>Initialize the timer. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

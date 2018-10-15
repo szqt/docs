@@ -12,24 +12,52 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
-      <node id="116">
-        <label>wm_io.h</label>
-        <link refid="wm__io_8h"/>
+      <node id="124">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="126">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+      <node id="125">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
+      <node id="114">
+        <label>wm_gpio.h</label>
+        <link refid="wm__gpio_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
       </node>
       <node id="122">
         <label>stdlib.h</label>
-      </node>
-      <node id="119">
-        <label>wm_irq.h</label>
-        <link refid="wm__irq_8h"/>
-        <childnode refid="115" relation="include">
-        </childnode>
       </node>
       <node id="127">
         <label>tls_common.h</label>
       </node>
       <node id="118">
         <label>core_cm3.h</label>
+      </node>
+      <node id="120">
+        <label>wm_osal.h</label>
+        <link refid="wm__osal_8h"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>wm_irq.h</label>
+        <link refid="wm__irq_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
       </node>
       <node id="113">
         <label>Include/Driver/wm_gpio_afsel.h</label>
@@ -45,34 +73,6 @@
         <childnode refid="127" relation="include">
         </childnode>
       </node>
-      <node id="120">
-        <label>wm_osal.h</label>
-        <link refid="wm__osal_8h"/>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="122" relation="include">
-        </childnode>
-        <childnode refid="123" relation="include">
-        </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-      </node>
-      <node id="114">
-        <label>wm_gpio.h</label>
-        <link refid="wm__gpio_8h"/>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="116" relation="include">
-        </childnode>
-      </node>
-      <node id="125">
-        <label>wm_wifi_config.h</label>
-        <link refid="wm__wifi__config_8h"/>
-      </node>
-      <node id="124">
-        <label>wm_os_config.h</label>
-        <link refid="wm__os__config_8h"/>
-      </node>
       <node id="123">
         <label>wm_config.h</label>
         <link refid="wm__config_8h"/>
@@ -86,15 +86,15 @@
       <node id="121">
         <label>stdio.h</label>
       </node>
+      <node id="116">
+        <label>wm_io.h</label>
+        <link refid="wm__io_8h"/>
+      </node>
       <node id="117">
         <label>wm_regs.h</label>
         <link refid="wm__regs_8h"/>
         <childnode refid="118" relation="include">
         </childnode>
-      </node>
-      <node id="126">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">

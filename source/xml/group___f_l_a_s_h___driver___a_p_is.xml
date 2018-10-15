@@ -76,21 +76,21 @@
 <parametername direction="in">addr</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is byte offset addr for read from the flash. </para></parameterdescription>
+<para>Specifies the starting address to read from </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">buf</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is user for data buffer of flash read </para></parameterdescription>
+<para>Pointer to a byte array that is to be written. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is byte length for read.</para></parameterdescription>
+<para>length to read.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -132,28 +132,28 @@
           <declname>len</declname>
         </param>
         <briefdescription>
-<para>This function is used to write data to the flash. </para>        </briefdescription>
+<para>This function is used to write data into the flash. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">addr</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is byte offset addr for write to the flash </para></parameterdescription>
+<para>Specifies the starting address to write to. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">buf</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the data buffer want to write to flash </para></parameterdescription>
+<para>Pointer to a byte array that holds the data to be written. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the byte length want to write</para></parameterdescription>
+<para>length to write.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>

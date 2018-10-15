@@ -4,12 +4,12 @@
     <member refid="struct_____t___b_o_o_t_e_r_1a9540f045113ca089451daca3786eec91" kind="variable"><name>magic_no</name></member>
     <member refid="struct_____t___b_o_o_t_e_r_1a21a478f6ed27bc0b6aebf6aad34bb164" kind="variable"><name>img_type</name></member>
     <member refid="struct_____t___b_o_o_t_e_r_1ae777a24c06922c2a01ef560e1ea6d6d3" kind="variable"><name>zip_type</name></member>
-    <member refid="struct_____t___b_o_o_t_e_r_1acd100881cfdbf5f91ee1fd89d8d67229" kind="variable"><name>img_addr</name></member>
-    <member refid="struct_____t___b_o_o_t_e_r_1addf713fe2baee4ff3d1f4012ca6d8789" kind="variable"><name>img_len</name></member>
-    <member refid="struct_____t___b_o_o_t_e_r_1aad1aa32baad1098d099d83146a97e6ec" kind="variable"><name>org_checksum</name></member>
-    <member refid="struct_____t___b_o_o_t_e_r_1a981b61c92014ec122b1c2cfeba90ed25" kind="variable"><name>zip_img_addr</name></member>
-    <member refid="struct_____t___b_o_o_t_e_r_1a32d7be7fc35efb42986b4262bf969e74" kind="variable"><name>zip_img_len</name></member>
-    <member refid="struct_____t___b_o_o_t_e_r_1a5be913442ae554035a6cbf0b8b51e30c" kind="variable"><name>zip_checksum</name></member>
+    <member refid="struct_____t___b_o_o_t_e_r_1a6ba9b9adcb77a5b3a782963d29921023" kind="variable"><name>run_img_addr</name></member>
+    <member refid="struct_____t___b_o_o_t_e_r_1a9a6e2c24390c673bcbba91056df7e465" kind="variable"><name>run_img_len</name></member>
+    <member refid="struct_____t___b_o_o_t_e_r_1a23f01662ae83ca258aa3e20af5650112" kind="variable"><name>run_org_checksum</name></member>
+    <member refid="struct_____t___b_o_o_t_e_r_1a73fcd451b7891eeb3b9e86b14734e6cb" kind="variable"><name>upd_img_addr</name></member>
+    <member refid="struct_____t___b_o_o_t_e_r_1aed911597b0863af816413183d912b080" kind="variable"><name>upd_img_len</name></member>
+    <member refid="struct_____t___b_o_o_t_e_r_1ab6ce69fea55e2c17f0fa897d212d718b" kind="variable"><name>upd_checksum</name></member>
     <member refid="struct_____t___b_o_o_t_e_r_1a9e2c7f2c8d659a6c13575d81a9d8bc47" kind="variable"><name>upd_no</name></member>
     <member refid="struct_____t___b_o_o_t_e_r_1a6b7f19bf9f31175abb2428aec4cf5ca8" kind="variable"><name>ver</name></member>
     <member refid="struct_____t___b_o_o_t_e_r_1aabb5d355533668f001fba3d76c65a745" kind="variable"><name>hd_checksum</name></member>
@@ -77,8 +77,8 @@
     <member refid="struct__tls__i2s__port_1a338d5d672b5f6c8b3840dbe829d616b0" kind="variable"><name>tx_sem</name></member>
     <member refid="struct__tls__i2s__port_1a89a20da68922320d966728f76101c14a" kind="variable"><name>rx_buf</name></member>
     <member refid="struct__tls__i2s__port_1a95d7a0c493ea0c341bd27f91393f74b2" kind="variable"><name>tx_buf</name></member>
-    <member refid="struct__tls__i2s__port_1a06974d7b303d3b3065387d99d84c85ed" kind="variable"><name>rx_callback</name></member>
-    <member refid="struct__tls__i2s__port_1a0dc08731eff40c9c557a49115fbcfd19" kind="variable"><name>tx_callback</name></member>
+    <member refid="struct__tls__i2s__port_1ada86dd004f6a6f2c07a065c1c8f47b5f" kind="variable"><name>rx_callback</name></member>
+    <member refid="struct__tls__i2s__port_1ae90a6e01bacd93301538ee786f412a96" kind="variable"><name>tx_callback</name></member>
   </compound>
   <compound refid="structadc__st" kind="struct"><name>adc_st</name>
     <member refid="structadc__st_1a5a691c8026388dc4bb57ec2c08dd9cc5" kind="variable"><name>dmachannel</name></member>
@@ -631,7 +631,7 @@
     <member refid="structtls__hspi__rx__desc_1a6a2d79c8b452c1e3ba58c095c8bf50ca" kind="variable"><name>next_desc_addr</name></member>
   </compound>
   <compound refid="structtls__hspi__tx__desc" kind="struct"><name>tls_hspi_tx_desc</name>
-    <member refid="structtls__hspi__tx__desc_1a4b5d4a5961ee108a4839230c01ac11fd" kind="variable"><name>valid_ctrl</name></member>
+    <member refid="structtls__hspi__tx__desc_1a1ebea4b9e695bac173a996597618abe2" kind="variable"><name>valid_ctrl</name></member>
     <member refid="structtls__hspi__tx__desc_1a75d698e2555ae3d689427e736e2d8ff1" kind="variable"><name>buf_info</name></member>
     <member refid="structtls__hspi__tx__desc_1af428481f0b899909274dfe3307b41ac6" kind="variable"><name>buf_addr</name></member>
     <member refid="structtls__hspi__tx__desc_1a5ddbe9443e09746e804a154ce8c7b491" kind="variable"><name>next_desc_addr</name></member>
@@ -700,6 +700,16 @@
     <member refid="structtls__param__bssid_1a461bab7248b6920640d973bae467021e" kind="variable"><name>res</name></member>
     <member refid="structtls__param__bssid_1a921680fe27579c187a522040b7251134" kind="variable"><name>bssid</name></member>
   </compound>
+  <compound refid="structtls__param__flash" kind="struct"><name>tls_param_flash</name>
+    <member refid="structtls__param__flash_1a4c654b6005ad2694c67e6e3dc831fe43" kind="variable"><name>magic</name></member>
+    <member refid="structtls__param__flash_1af8b13e0b67839eaf2c930587371ce63b" kind="variable"><name>partition_num</name></member>
+    <member refid="structtls__param__flash_1a8bba48f2e26eb057a6427ef9f7d249d5" kind="variable"><name>modify_count</name></member>
+    <member refid="structtls__param__flash_1acea69ea2fa206863a01cdd005ff2bb42" kind="variable"><name>resv_1</name></member>
+    <member refid="structtls__param__flash_1a230f6352906ba74f393738783147b3be" kind="variable"><name>resv_2</name></member>
+    <member refid="structtls__param__flash_1ac7d246006e0f6da2223ff370a8fbe263" kind="variable"><name>length</name></member>
+    <member refid="structtls__param__flash_1ac19dcb270c3f7fa91605779293ab545d" kind="variable"><name>parameters</name></member>
+    <member refid="structtls__param__flash_1a5c04f7512b9759f03dfc15e309679cc3" kind="variable"><name>crc32</name></member>
+  </compound>
   <compound refid="structtls__param__hardware__version" kind="struct"><name>tls_param_hardware_version</name>
     <member refid="structtls__param__hardware__version_1aa92df429c8f71a2b50e8b424a2dcd761" kind="variable"><name>mark</name></member>
     <member refid="structtls__param__hardware__version_1a7af17aacc72ecccd45dbef944dcb578d" kind="variable"><name>main</name></member>
@@ -734,6 +744,10 @@
     <member refid="structtls__param__original__key_1a1f9ca0202ebd92db9d9db3f4156b1f9f" kind="variable"><name>psk</name></member>
     <member refid="structtls__param__original__key_1a21aa7f30302ab53f68b6558fead09510" kind="variable"><name>key_length</name></member>
   </compound>
+  <compound refid="structtls__param__quick__connect" kind="struct"><name>tls_param_quick_connect</name>
+    <member refid="structtls__param__quick__connect_1ab118ddc8236bfbdc293ec838b6d21141" kind="variable"><name>quick_connect_en</name></member>
+    <member refid="structtls__param__quick__connect_1a5e8d34588cad7556fdbc7d6d429e877d" kind="variable"><name>chanId</name></member>
+  </compound>
   <compound refid="structtls__param__sha1" kind="struct"><name>tls_param_sha1</name>
     <member refid="structtls__param__sha1_1a57cf62fd29e9449603db43a3ec45d0d0" kind="variable"><name>psk_set</name></member>
     <member refid="structtls__param__sha1_1a094452e3fe72791c4a29ced5e4c6bcef" kind="variable"><name>psk</name></member>
@@ -747,6 +761,10 @@
   <compound refid="structtls__param__ssid" kind="struct"><name>tls_param_ssid</name>
     <member refid="structtls__param__ssid_1a598352a914d6aa0d6deb83a2bf8a70bc" kind="variable"><name>ssid</name></member>
     <member refid="structtls__param__ssid_1a0f42395a29c537550e6f0e9038e95dbc" kind="variable"><name>ssid_len</name></member>
+  </compound>
+  <compound refid="structtls__param__tem__offset" kind="struct"><name>tls_param_tem_offset</name>
+    <member refid="structtls__param__tem__offset_1a7a5efe49debe91956dd0da9f4c8cdd63" kind="variable"><name>offset_len</name></member>
+    <member refid="structtls__param__tem__offset_1ab63dedbe286f53283351e87131a8ce71" kind="variable"><name>offset</name></member>
   </compound>
   <compound refid="structtls__param__uart" kind="struct"><name>tls_param_uart</name>
     <member refid="structtls__param__uart_1ab8ff7028dae9805d6ac54f7085bd659c" kind="variable"><name>baudrate</name></member>
@@ -846,6 +864,70 @@
     <member refid="structtls__sys__clk_1afbf667e5328b99d190e7b1a0da919f63" kind="variable"><name>apbclk</name></member>
     <member refid="structtls__sys__clk_1a888032fb54bdcc570484295cd8f13a21" kind="variable"><name>cpuclk</name></member>
     <member refid="structtls__sys__clk_1a8d2a46f3235a26db234f18044fb7972d" kind="variable"><name>wlanclk</name></member>
+  </compound>
+  <compound refid="structtls__sys__param" kind="struct"><name>tls_sys_param</name>
+    <member refid="structtls__sys__param_1a439d63815746ba424f048c128d1bae51" kind="variable"><name>hardware_version</name></member>
+    <member refid="structtls__sys__param_1a29049959201bf79d229b441e9ff51429" kind="variable"><name>bssid</name></member>
+    <member refid="structtls__sys__param_1a831c7939e723a3ed9a69a346f90593cb" kind="variable"><name>ssid</name></member>
+    <member refid="structtls__sys__param_1a70b999c35e6099499351291d8721fc34" kind="variable"><name>channel_enable</name></member>
+    <member refid="structtls__sys__param_1aa1803053ced635a8443b5006f36c70fe" kind="variable"><name>channel</name></member>
+    <member refid="structtls__sys__param_1a3e4c984c76b07d61b17577a03bea1ca5" kind="variable"><name>wireless_region</name></member>
+    <member refid="structtls__sys__param_1ad8dde2931d7f497f1a12705b5aa72a5d" kind="variable"><name>encry</name></member>
+    <member refid="structtls__sys__param_1ae153a6c60e4f4ab9951f33bafbf0c677" kind="variable"><name>wireless_protocol</name></member>
+    <member refid="structtls__sys__param_1abb6c1264bd342536c5acf6e1a4e9e9fe" kind="variable"><name>auto_create_adhoc</name></member>
+    <member refid="structtls__sys__param_1a296cdba5e97ea1184e519f5906365e9a" kind="variable"><name>auto_retrycnt</name></member>
+    <member refid="structtls__sys__param_1aedbf21946f2428286c9a6c5e7bf58235" kind="variable"><name>auto_roam</name></member>
+    <member refid="structtls__sys__param_1a33285b0a80161863efc159eaa0d63923" kind="variable"><name>auto_powersave</name></member>
+    <member refid="structtls__sys__param_1ab6b1587055a8a966f617fc1fff5ce881" kind="variable"><name>ssid_broadcast_enable</name></member>
+    <member refid="structtls__sys__param_1aa7c8316015e71d07c664ff1ba063b1b2" kind="variable"><name>channellist</name></member>
+    <member refid="structtls__sys__param_1a1cea0c6ba634aa199b7a91258bd205ee" kind="variable"><name>key</name></member>
+    <member refid="structtls__sys__param_1a3e3fe7e6b1c362934abb07d7f4f90724" kind="variable"><name>wbgr</name></member>
+    <member refid="structtls__sys__param_1ab6e7d0fa07fd3b1d8f2672c4a38b1418" kind="variable"><name>wps</name></member>
+    <member refid="structtls__sys__param_1a7f0609cb9437e95da065e58bc02adaf7" kind="variable"><name>ipcfg</name></member>
+    <member refid="structtls__sys__param_1aa217fc59ecf0270069f0a79c43fabbfe" kind="variable"><name>local_dnsname</name></member>
+    <member refid="structtls__sys__param_1a368091508e3b4be1bf9333850396e828" kind="variable"><name>local_device_name</name></member>
+    <member refid="structtls__sys__param_1a448fb349212eb8a25cdf9af0ba0c418e" kind="variable"><name>oray_client_setting</name></member>
+    <member refid="structtls__sys__param_1ace855071bdbabb127bf61f38e385ad3d" kind="variable"><name>upnp_enable</name></member>
+    <member refid="structtls__sys__param_1a3681cacd30a77ae6687d3c61f3cb8580" kind="variable"><name>always_online</name></member>
+    <member refid="structtls__sys__param_1ab791ff5ce3783b6150c2162e6b421138" kind="variable"><name>user_port_mode</name></member>
+    <member refid="structtls__sys__param_1afe6676e4b390f1b547fb37f19d95dcfc" kind="variable"><name>res_2</name></member>
+    <member refid="structtls__sys__param_1a654808a49e8fee8a45e0470c5d26367e" kind="variable"><name>uart_cfg</name></member>
+    <member refid="structtls__sys__param_1a50df9bec7813f8a4c7cfe5ead22661a3" kind="variable"><name>auto_mode</name></member>
+    <member refid="structtls__sys__param_1a40c029a1d26e92bc3d456d41b2911613" kind="variable"><name>res_3</name></member>
+    <member refid="structtls__sys__param_1a346ef2fcdaaf90d0cdc26d1575bc138c" kind="variable"><name>transparent_trigger_length</name></member>
+    <member refid="structtls__sys__param_1a4edeaf4ec5fdec35ba3810cbe1e83074" kind="variable"><name>transparent_trigger_period</name></member>
+    <member refid="structtls__sys__param_1a0ba4727119cca505b625dc9044f4f32d" kind="variable"><name>remote_socket_cfg</name></member>
+    <member refid="structtls__sys__param_1a7f5aa4543f7ea4c76a81dddc35015461" kind="variable"><name>debug_mode</name></member>
+    <member refid="structtls__sys__param_1af3f50ba40dfdc173030ab6e8e1b644da" kind="variable"><name>res_4</name></member>
+    <member refid="structtls__sys__param_1ae1aeaa2f4f84518e717006095ef65046" kind="variable"><name>EscapeChar</name></member>
+    <member refid="structtls__sys__param_1a417b2631c20279e9f97a5c46f94df25d" kind="variable"><name>EscReserved</name></member>
+    <member refid="structtls__sys__param_1ae6a375a74507bbe4c300787cc1a488f7" kind="variable"><name>EscapePeriod</name></member>
+    <member refid="structtls__sys__param_1a619dbc4e1b43fbe18a54861cf1c82bb4" kind="variable"><name>IoMode</name></member>
+    <member refid="structtls__sys__param_1a880e46b9a464bc8f40fe053dee3cbb19" kind="variable"><name>CmdMode</name></member>
+    <member refid="structtls__sys__param_1a25106d86a28f90e40ac086be58ac49f9" kind="variable"><name>PassWord</name></member>
+    <member refid="structtls__sys__param_1abde17bef1f3ddcdc1e36e8b7c84c5e2e" kind="variable"><name>WebsCfg</name></member>
+    <member refid="structtls__sys__param_1a2bcfc39ef652022c8f33bd0fe59f16f8" kind="variable"><name>oneshotflag</name></member>
+    <member refid="structtls__sys__param_1afa5fce00894de9fc54d9a81ee7947b68" kind="variable"><name>oneshotres</name></member>
+    <member refid="structtls__sys__param_1ae3ff65e29d7074300334b96b4f1c537a" kind="variable"><name>psk</name></member>
+    <member refid="structtls__sys__param_1a7f9920977bc306a0efa7894de1730913" kind="variable"><name>original_key</name></member>
+    <member refid="structtls__sys__param_1a71092b4e983495019dfd94863eae5c96" kind="variable"><name>original_ssid</name></member>
+    <member refid="structtls__sys__param_1a2bfdc54f0dfdeedba4851a03d2496381" kind="variable"><name>auto_reconnect</name></member>
+    <member refid="structtls__sys__param_1ac45e91744fb57757d5fb90510803dc8b" kind="variable"><name>res_5</name></member>
+    <member refid="structtls__sys__param_1afa5582bf5fa263577c7231539c827e4b" kind="variable"><name>quick_connect</name></member>
+    <member refid="structtls__sys__param_1afe2d8889c72346b599dd28550594ce88" kind="variable"><name>key_changed</name></member>
+    <member refid="structtls__sys__param_1a2a1c529f602ab218bf4b75b36ac5c921" kind="variable"><name>ssid_changed</name></member>
+    <member refid="structtls__sys__param_1a9bcebc693055170bacb0e6614e4d941f" kind="variable"><name>apsta_ssid</name></member>
+    <member refid="structtls__sys__param_1a2a18b102ba5eac50e10d5444d287ac5a" kind="variable"><name>apsta_psk</name></member>
+    <member refid="structtls__sys__param_1aa518dd02f138aa9389239317f83db1a2" kind="variable"><name>res_6</name></member>
+    <member refid="structtls__sys__param_1a91d33c42c27ce88f6750cd35cefb8f64" kind="variable"><name>channel4softap</name></member>
+    <member refid="structtls__sys__param_1a19d5296e555476eba745775ca6d344a4" kind="variable"><name>encry4softap</name></member>
+    <member refid="structtls__sys__param_1abf34b67c7dda7227d5ac9ade503f3237" kind="variable"><name>key4softap</name></member>
+    <member refid="structtls__sys__param_1a26a34e3412a4ae869e2c69b8842e092b" kind="variable"><name>ipcfg4softap</name></member>
+    <member refid="structtls__sys__param_1a2a0ec8e48d900500cf99e66e034ca3ed" kind="variable"><name>wbgr4softap</name></member>
+    <member refid="structtls__sys__param_1a0c816d7c2c7d3dbffe9eeb6c936eab04" kind="variable"><name>sntp_service1</name></member>
+    <member refid="structtls__sys__param_1a8fee34a0a3110b7253ec08de128d240d" kind="variable"><name>sntp_service2</name></member>
+    <member refid="structtls__sys__param_1a7e00d72afe0a9dbba0767c4ec5b7f101" kind="variable"><name>sntp_service3</name></member>
+    <member refid="structtls__sys__param_1abf71b2d99bef169095e0f1954fda261f" kind="variable"><name>params_tem</name></member>
   </compound>
   <compound refid="structtls__timer__cfg" kind="struct"><name>tls_timer_cfg</name>
     <member refid="structtls__timer__cfg_1ade00f2a44193559b8886aef66a55f490" kind="variable"><name>unit</name></member>
@@ -1169,9 +1251,26 @@
     <member refid="wm__wifi__oneshot_8h_1a22085d588a2d011800ee25ccf233ca6a" kind="define"><name>TLS_CONFIG_UDP_ONE_SHOT</name></member>
     <member refid="wm__wifi__oneshot_8h_1ae33cc08087c21958e6916fec5ef89103" kind="define"><name>TLS_CONFIG_UDP_JD_ONESHOT</name></member>
     <member refid="wm__wifi__oneshot_8h_1ae2b3f362933659c4df74fa839fcb9b0d" kind="define"><name>TLS_CONFIG_UDP_LSD_ONESHOT</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ab2bb0f7750af0a7d75f522954eda9f3f" kind="define"><name>TLS_CONFIG_UDP_LSD_SPECIAL</name></member>
     <member refid="wm__wifi__oneshot_8h_1a3b157432fb924cfec4c1330c42bb381d" kind="define"><name>TLS_CONFIG_AP_MODE_ONESHOT</name></member>
+    <member refid="wm__wifi__oneshot_8h_1a674007f582af423bdab90c61b078e7e5" kind="define"><name>TLS_CONFIG_WEB_SERVER_MODE</name></member>
+    <member refid="wm__wifi__oneshot_8h_1a748e2c6181c515c43cf86afa2990d299" kind="define"><name>TLS_CONFIG_SOCKET_MODE</name></member>
     <member refid="wm__wifi__oneshot_8h_1a021d5a05fbfcbf2dc446928ca3f022a4" kind="define"><name>TLS_CONFIG_AIRKISS_MODE_ONESHOT</name></member>
     <member refid="wm__wifi__oneshot_8h_1ab5519e53247c5c2cb39a24b5ec392615" kind="define"><name>AIRKISS_USE_SELF_WRITE</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60c" kind="enum"><name>ONESHOT_MSG_ENUM</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60ca8fb5939103083f64f1ae973cf49d1bfc" kind="enumvalue"><name>ONESHOT_SCAN_START</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60cab921995800358b55940a92fbed1a9d27" kind="enumvalue"><name>ONESHOT_SCAN_FINISHED</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60ca1e5b99d2b336e838dfe7fc1e365d2dcd" kind="enumvalue"><name>ONESHOT_SWITCH_CHANNEL</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60ca3099a2a6bd85992e58bbe736efc441dd" kind="enumvalue"><name>ONESHOT_STOP_TMP_CHAN_SWITCH</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60caefaeb5cf8433298fca5d95c9e21258cc" kind="enumvalue"><name>ONESHOT_STOP_CHAN_SWITCH</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60ca982725e7fcab0cbc296de5263a3051e6" kind="enumvalue"><name>ONESHOT_HANDSHAKE_TIMEOUT</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60cae80c0607731f1c97f603534ac6363ccc" kind="enumvalue"><name>ONESHOT_RECV_TIMEOUT</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60ca87d1d786c2d1e1bdae45374d3d2285bf" kind="enumvalue"><name>ONESHOT_STOP_DATA_CLEAR</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60caf3c54e9cf690177e9a91c653879ed191" kind="enumvalue"><name>ONESHOT_NET_UP</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60cac049257c92edb0ad0f161cb1c976b870" kind="enumvalue"><name>AP_SOCK_S_MSG_SOCKET_RECEIVE_DATA</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60caac0134e83da1bc62826841164e05a899" kind="enumvalue"><name>AP_WEB_S_MSG_RECEIVE_DATA</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60cafd32dc698023f30877a6b9248fc08831" kind="enumvalue"><name>AP_SOCK_S_MSG_SOCKET_CREATE</name></member>
+    <member refid="wm__wifi__oneshot_8h_1ae558d78ec245053a4c0a9c9a748ee60ca26c342ea1589d3c592c02bf00777c889" kind="enumvalue"><name>AP_SOCK_S_MSG_WJOIN_FAILD</name></member>
     <member refid="wm__wifi__oneshot_8h_1a4c6700d196549da278262c94d00036af" kind="function"><name>tls_filter_module_srcmac</name></member>
     <member refid="group___oneshot___a_p_is_1ga8c052cff491faa002106bc9c992aafd9" kind="function"><name>tls_wifi_dataframe_recv</name></member>
     <member refid="group___oneshot___a_p_is_1ga7fd56a1699beb71845007b343bb83661" kind="function"><name>oneshot_airkiss_send_reply</name></member>
@@ -1180,11 +1279,13 @@
     <member refid="group___oneshot___a_p_is_1ga18bec4a77e6a69139a82a25d8575c662" kind="function"><name>tls_airkiss_stop</name></member>
     <member refid="group___oneshot___a_p_is_1gad0093be0797ef8a428b3ccf6b4fc94f0" kind="function"><name>tls_oneshot_airkiss_change_channel</name></member>
     <member refid="group___oneshot___a_p_is_1ga36409231df7e83719b20d8c501490738" kind="function"><name>wm_oneshot_task_init</name></member>
-    <member refid="group___oneshot___a_p_is_1ga27f65431a471b8220be5a9dd296925e1" kind="function"><name>tls_oneshot_switch_channel_tim_stop</name></member>
+    <member refid="group___oneshot___a_p_is_1ga2511b67107fcf8ce147987686f24ff8d" kind="function"><name>tls_oneshot_switch_channel_tim_stop</name></member>
     <member refid="group___oneshot___a_p_is_1gab62769507d01baf5126652bc118755ed" kind="function"><name>tls_oneshot_switch_channel_tim_temp_stop</name></member>
     <member refid="group___oneshot___a_p_is_1gac620df8585aa030a001ff42b126801a7" kind="function"><name>tls_oneshot_is_ssid_bssid_match</name></member>
     <member refid="group___oneshot___a_p_is_1ga2bf80c6873e73539cad5fbdb54f0b96d" kind="function"><name>tls_oneshot_find_chlist</name></member>
     <member refid="group___a_p_p___a_p_is_1ga76562ddc3d6c654272aaa3cb9eec5085" kind="function"><name>wm_oneshot_netif_status_event</name></member>
+    <member refid="group___a_p_p___a_p_is_1gadefd8272fb759371d6452458db70e829" kind="function"><name>tls_wifi_set_oneshot_config_mode</name></member>
+    <member refid="group___a_p_p___a_p_is_1ga31140fa14ff0cc41b01bfdce74549338" kind="function"><name>tls_wifi_get_oneshot_config_mode</name></member>
   </compound>
   <compound refid="_v_s10_x_x_8h" kind="file"><name>VS10XX.h</name>
     <member refid="_v_s10_x_x_8h_1ad080267ca1bea53c27c3b93e8619f7f5" kind="define"><name>VS1001</name></member>
@@ -1332,6 +1433,11 @@
     <member refid="wm__adc_8h_1a5d407e1c88284ca6f8a70490f572cc01" kind="function"><name>signedToUnsignedData</name></member>
     <member refid="wm__adc_8h_1ab01ecabf88e3b24627967aacc49b8bed" kind="function"><name>tls_adc_buffer_bypass_set</name></member>
     <member refid="wm__adc_8h_1a1d42d6b3844a62de400880190204d26a" kind="function"><name>tls_adc_cmp_start</name></member>
+    <member refid="wm__adc_8h_1a9c3f124a5c42d14e2e957ae3b4addefd" kind="function"><name>adc_get_offset</name></member>
+    <member refid="wm__adc_8h_1a8a56e90c19e309111adc446cf5ff1df6" kind="function"><name>adc_get_interTemp</name></member>
+    <member refid="wm__adc_8h_1a171b1da0d1514a2ddcc9ab79d3ba0cdc" kind="function"><name>adc_get_inputVolt</name></member>
+    <member refid="wm__adc_8h_1a4e3549b37a464f419ef1b8a5aba54e1e" kind="function"><name>adc_get_interVolt</name></member>
+    <member refid="wm__adc_8h_1a519a4ce0be524482be990b96a63f3ad5" kind="function"><name>adc_temp</name></member>
   </compound>
   <compound refid="wm__cpu_8h" kind="file"><name>wm_cpu.h</name>
     <member refid="wm__cpu_8h_1a3ef646b4d2cb381a573dbaa3da0c2470" kind="define"><name>CPU_CLK_80M</name></member>
@@ -1403,6 +1509,7 @@
     <member refid="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6d1a1fe51f607950a86bbac44b515d5a" kind="enumvalue"><name>CMD_RX_IQ_PHASE</name></member>
     <member refid="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6d3181d3626a66f28f7184d4b03b60de" kind="enumvalue"><name>CMD_TX_GAIN</name></member>
     <member refid="wm__efuse_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6f9905a4d5a4c3db288dca0884c7cad1" kind="enumvalue"><name>CMD_ALL</name></member>
+    <member refid="wm__efuse_8h_1a8d847b2058d7a1127f75f839b3adec20" kind="function"><name>tls_ft_param_init</name></member>
     <member refid="wm__efuse_8h_1ab82f03053f49ddefb5a36640127911dd" kind="function"><name>tls_ft_param_set</name></member>
     <member refid="wm__efuse_8h_1a644f5cb50ba9f700fce9dea01c234cfc" kind="function"><name>tls_ft_param_get</name></member>
     <member refid="wm__efuse_8h_1acd60a68ee7ffd08be4f5ed111d0be703" kind="function"><name>tls_get_mac_addr</name></member>
@@ -1450,17 +1557,25 @@
   </compound>
   <compound refid="wm__flash__map_8h" kind="file"><name>wm_flash_map.h</name>
     <member refid="wm__flash__map_8h_1a0571de796f539e5779da6a9203190645" kind="define"><name>FLASH_BASE_ADDR</name></member>
-    <member refid="wm__flash__map_8h_1a03724ddfe5cae03d54fc18a23729db3e" kind="define"><name>SECBOOT_HEADER_ADDR</name></member>
-    <member refid="wm__flash__map_8h_1a08e305cd78fd77e65bb5eb3737537da2" kind="define"><name>SECBOOT_AREA_ADDR</name></member>
-    <member refid="wm__flash__map_8h_1a16d7149509823fc0d8e65683b073ee44" kind="define"><name>IMAGE_HEADER_ADDR1</name></member>
-    <member refid="wm__flash__map_8h_1a3eae7af388838a8602a77abee6f1c3b7" kind="define"><name>IMAGE_HEADER_ADDR2</name></member>
+    <member refid="wm__flash__map_8h_1af1e84e696b66ff3490b6b277fbfeaa65" kind="define"><name>CODE_UPD_HEADER_ADDR</name></member>
     <member refid="wm__flash__map_8h_1a0185e8d20171bbedf8e78adb897ee7f4" kind="define"><name>TLS_FLASH_PARAM1_ADDR</name></member>
     <member refid="wm__flash__map_8h_1a91dc8ac8bb9817fb8e357bae07d36889" kind="define"><name>TLS_FLASH_PARAM2_ADDR</name></member>
-    <member refid="wm__flash__map_8h_1ab54eb21f70c8f83e69ecd0699b4dba03" kind="define"><name>CODE_START_ADDR</name></member>
-    <member refid="wm__flash__map_8h_1a800719a49281db5bf889fd7617d7f689" kind="define"><name>CODE_END_ADDR</name></member>
+    <member refid="wm__flash__map_8h_1ab8da2365f3823436e8ef2fd7654c327a" kind="define"><name>TLS_FLASH_PARAM_RESTORE_ADDR</name></member>
+    <member refid="wm__flash__map_8h_1af246e6e1e235c5686031330e419a61d8" kind="define"><name>TLS_FLASH_END_ADDR</name></member>
+    <member refid="wm__flash__map_8h_1a4a387f50d3f4827bfb8cbcd068215ec5" kind="define"><name>FLASH_KEY_PARAM_AREA_LEN</name></member>
+    <member refid="wm__flash__map_8h_1a03724ddfe5cae03d54fc18a23729db3e" kind="define"><name>SECBOOT_HEADER_ADDR</name></member>
+    <member refid="wm__flash__map_8h_1a6e3cc14940b0b096013620d893b6ca5f" kind="define"><name>SECBOOT_HEADER_AREA_LEN</name></member>
+    <member refid="wm__flash__map_8h_1a08e305cd78fd77e65bb5eb3737537da2" kind="define"><name>SECBOOT_AREA_ADDR</name></member>
+    <member refid="wm__flash__map_8h_1af24470b874f822211ae529cab61212f9" kind="define"><name>SECBOOT_AREA_LEN</name></member>
+    <member refid="wm__flash__map_8h_1ab2321409428e6e1b50bcaa2fa785eb22" kind="define"><name>CODE_RUN_HEADER_ADDR</name></member>
+    <member refid="wm__flash__map_8h_1ae20824924292904083d686360976b484" kind="define"><name>CODE_RUN_HEADER_AREA_LEN</name></member>
+    <member refid="wm__flash__map_8h_1af1609f037f81631af6a4751ada7e4341" kind="define"><name>CODE_RUN_START_ADDR</name></member>
+    <member refid="wm__flash__map_8h_1a1876757eb2e38cab14721530c49d24d3" kind="define"><name>CODE_RUN_AREA_LEN</name></member>
+    <member refid="wm__flash__map_8h_1ad8e024a8cb8c34adb62b3aea2d137871" kind="define"><name>CODE_UPD_START_ADDR</name></member>
+    <member refid="wm__flash__map_8h_1a1ac16fba88b0ed46d01b3e8f07b24268" kind="define"><name>CODE_UPD_AREA_LEN</name></member>
     <member refid="wm__flash__map_8h_1adaa34bbaa66aa82aadc124048e7287ae" kind="define"><name>USER_ADDR_START</name></member>
     <member refid="wm__flash__map_8h_1a21e97f3d5ef21062bd2e924a7d9340ca" kind="define"><name>TLS_FLASH_PARAM_DEFAULT</name></member>
-    <member refid="wm__flash__map_8h_1abfe46cc09030161cbf0be2f0c14c9add" kind="define"><name>TLS_BOOT_IMAGE_SIGNATURE_WORD</name></member>
+    <member refid="wm__flash__map_8h_1a021c716c7ee91b12f6a5f3c2e9eacfa1" kind="define"><name>USER_AREA_LEN</name></member>
     <member refid="wm__flash__map_8h_1a48439aa39ffb27d281e87eaa91cb3243" kind="define"><name>SIGNATURE_WORD</name></member>
   </compound>
   <compound refid="wm__fls__gd25qxx_8h" kind="file"><name>wm_fls_gd25qxx.h</name>
@@ -1760,6 +1875,8 @@
     <member refid="wm__i2s_8h_1a8bd98969451c17dfc97c3ed552e029cb" kind="define"><name>I2S_RX_FIFO_CNT_MASK</name></member>
     <member refid="wm__i2s_8h_1ac5a8a3c7f4ed10ad4d7d19d598b1416f" kind="define"><name>I2S_TX_FIFO_CNT_MASK</name></member>
     <member refid="wm__i2s_8h_1a3d0db08facaf44e36fa63b6227adef21" kind="define"><name>I2S_MAX_RXTXFIFO_LEVEL</name></member>
+    <member refid="wm__i2s_8h_1acad43196c45cceb9e58cb395ae70c413" kind="define"><name>WM_I2S_TX_DMA_CHANNEL</name></member>
+    <member refid="wm__i2s_8h_1ab7108aa1001f9268814e5e71e599258a" kind="define"><name>WM_I2S_RX_DMA_CHANNEL</name></member>
     <member refid="wm__i2s_8h_1a96cf52252e490544f612c4e6d043198a" kind="define"><name>I2S</name></member>
     <member refid="group___i2_s___driver___a_p_is_1ga2399470023ec4a9f0fb5142d3267617a" kind="define"><name>TLS_I2S_ENABLE</name></member>
     <member refid="group___i2_s___driver___a_p_is_1ga95126daeadaef952598979adba8f6599" kind="define"><name>TLS_I2S_DISABLE</name></member>
@@ -1793,8 +1910,8 @@
     <member refid="group___i2_s___driver___a_p_is_1gadeed960480f60c211c330d612a1a9af9" kind="function"><name>tls_i2s_set_freq</name></member>
     <member refid="group___i2_s___driver___a_p_is_1gaf816dc64bcbd7462ed1982836b7ce800" kind="function"><name>wm_i2s_set_freq_exclk</name></member>
     <member refid="group___i2_s___driver___a_p_is_1gab642c26490009682a15707c701ab8ec9" kind="function"><name>tls_i2s_tx_block</name></member>
-    <member refid="group___i2_s___driver___a_p_is_1ga47376f4b8da71d54306148fc7db3cf05" kind="function"><name>tls_i2s_tx_nonblock</name></member>
-    <member refid="group___i2_s___driver___a_p_is_1ga9dadb270324ff0062acbdf7ee6117452" kind="function"><name>tls_i2s_rx_nonblock</name></member>
+    <member refid="group___i2_s___driver___a_p_is_1ga541498ce37020eb6b5c3fbbf4138f409" kind="function"><name>tls_i2s_tx_nonblock</name></member>
+    <member refid="group___i2_s___driver___a_p_is_1gae3ade66fe8cfdce1ac6ade72f7efa403" kind="function"><name>tls_i2s_rx_nonblock</name></member>
     <member refid="group___i2_s___driver___a_p_is_1ga871fc1c942a1ea17810236c9007e08b7" kind="function"><name>tls_i2s_tx_dma</name></member>
     <member refid="group___i2_s___driver___a_p_is_1gadc246d9034c369268bafba9f00b39ff7" kind="function"><name>tls_i2s_rx_dma</name></member>
     <member refid="group___i2_s___driver___a_p_is_1gae27af338e48e5bcd00cb5b7eb1c33478" kind="function"><name>tls_i2s_set_rxth</name></member>
@@ -2092,6 +2209,22 @@
     <member refid="group___l_c_d___driver___a_p_is_1gac6289032dae222cbfba30ae6eef076b3" kind="function"><name>tls_lcd_io_config</name></member>
   </compound>
   <compound refid="wm__pmu_8h" kind="file"><name>wm_pmu.h</name>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959c" kind="enum"><name>tls_peripheral_type_s</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959cace6072e5edad06e192aff473538728b4" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_I2C</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959ca5682950853235d9a051ad3d491b97059" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_UART0</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959ca7c857d4715423ad76f9614a40dffa22b" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_UART1</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959caf69f2dd90fc5b2f0a001de947a8b3c3b" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_LSPI</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959caf7d1fc8be2bc8b8a270345d257b71f8e" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_DMA</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959caa3fb2c966ec09024ed0d3cde11be1e4a" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_RFCFG</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959ca44bfc437bf52c84b215e58f809bec568" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_TIMER</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959caaacb936fa06d34827e365f3550c8bc1e" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_GPIO</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959cadd41feb890816a7b7b9b510af199c604" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_SDADC</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959cab3b5b1fbfb85d21ee88d3194003bb984" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_PWM</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959cafc5f9c9d0a2f70626ae0f3be8ef5d833" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_LCD</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959ca75d17052e801f4462e20505735d3add9" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_I2S</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959ca69b3cd75cb271f3aae0301471c4715dd" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_RSA</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959ca57768ad8ad2344c59bc496903516fc5e" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_GPSEC</name></member>
+    <member refid="wm__pmu_8h_1acf9b08fc92e8ce9d02ced492730c959ca33818bea8bb2b6000dcf5d71593ea6bd" kind="enumvalue"><name>TLS_PERIPHERAL_TYPE_7816</name></member>
     <member refid="wm__pmu_8h_1a02919571fc0abd851518b87705108357" kind="typedef"><name>tls_pmu_irq_callback</name></member>
     <member refid="wm__pmu_8h_1ab692fe990980477b38a03b9329ee1e3e" kind="function"><name>tls_pmu_timer1_isr_register</name></member>
     <member refid="wm__pmu_8h_1a84f3aa1a6a7c3a18e7ff8bc967c33c84" kind="function"><name>tls_pmu_timer0_isr_register</name></member>
@@ -2103,6 +2236,8 @@
     <member refid="wm__pmu_8h_1af4d5cdece68843b1570a2102e01a56da" kind="function"><name>tls_pmu_timer1_start</name></member>
     <member refid="wm__pmu_8h_1ad9c770b5b607bce32013adfe49233cfd" kind="function"><name>tls_pmu_timer1_stop</name></member>
     <member refid="wm__pmu_8h_1a301b289b97605d5b09e63f88aea677c3" kind="function"><name>tls_pmu_standby_start</name></member>
+    <member refid="wm__pmu_8h_1a60f03a9ac9dd660c7607cee09c425759" kind="function"><name>tls_close_peripheral_clock</name></member>
+    <member refid="wm__pmu_8h_1a587a5ce21f68f980ab766d8ccef8af7e" kind="function"><name>tls_open_peripheral_clock</name></member>
   </compound>
   <compound refid="wm__pwm_8h" kind="file"><name>wm_pwm.h</name>
     <member refid="wm__pwm_8h_1a61d0f345cb1ae13ff5ff3e4f1feb1a5d" kind="define"><name>PWM_CHANNEL_MAX_NUM</name></member>
@@ -2179,6 +2314,7 @@
     <member refid="group___t_i_m_e_r___driver___a_p_is_1ga0b3986991b1c8fb4a586e192af9810d9" kind="function"><name>tls_timer_create</name></member>
     <member refid="group___t_i_m_e_r___driver___a_p_is_1ga253e78f64fb869474ae5ef7f0ff0dcac" kind="function"><name>tls_timer_start</name></member>
     <member refid="group___t_i_m_e_r___driver___a_p_is_1ga414b9f30367bc4bbd9086e3662db8f94" kind="function"><name>tls_timer_stop</name></member>
+    <member refid="group___t_i_m_e_r___driver___a_p_is_1gac9354e976ab0262a498ed7cbf64b24b6" kind="function"><name>tls_timer_change</name></member>
     <member refid="group___t_i_m_e_r___driver___a_p_is_1gabe37deea69053b62d5235e29d35ab5a0" kind="function"><name>tls_timer_destroy</name></member>
   </compound>
   <compound refid="wm__uart_8h" kind="file"><name>wm_uart.h</name>
@@ -2785,7 +2921,6 @@
   <compound refid="wm__os__config_8inc" kind="file"><name>wm_os_config.inc</name>
   </compound>
   <compound refid="wm__osal_8h" kind="file"><name>wm_osal.h</name>
-    <member refid="wm__osal_8h_1a8489802eaedf42fdb5f2ce1708eaffa2" kind="define"><name>HZ</name></member>
     <member refid="wm__osal_8h_1af552ede7837d1fbd9fea8a1269989337" kind="define"><name>TLS_OS_TIMER_OPT_ONE_SHORT</name></member>
     <member refid="wm__osal_8h_1af137fd1b107daff7218179d2e7b7f008" kind="define"><name>TLS_OS_TIMER_OPT_PERIOD</name></member>
     <member refid="wm__osal_8h_1a3fbf8b2313eac68f4e07c4a13d899c62" kind="enum"><name>TLS_OS_TYPE</name></member>
@@ -2807,6 +2942,7 @@
     <member refid="wm__osal_8h_1aab72e7b139df8aeb44dd74be6ec7b2b7" kind="typedef"><name>tls_os_mutex_t</name></member>
     <member refid="wm__osal_8h_1a87ee168760be7b82abba354009c129e5" kind="typedef"><name>TLS_OS_TIMER_CALLBACK</name></member>
     <member refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kind="typedef"><name>tls_os_status_t</name></member>
+    <member refid="wm__osal_8h_1af9f92d5c1e2ba3d58c46be9d79179936" kind="variable"><name>HZ</name></member>
     <member refid="group___o_s___a_p_is_1ga6e548a8a372fc51cbb02cc6204a490fc" kind="function"><name>tls_os_timer_init</name></member>
     <member refid="group___o_s___a_p_is_1ga8181d0c2981c83973af2255687e6a681" kind="function"><name>tls_os_time_tick</name></member>
     <member refid="group___o_s___a_p_is_1ga559145726e6c0c16424a59a0da20dbf0" kind="function"><name>tls_os_init</name></member>
@@ -2901,7 +3037,7 @@
     <member refid="wm__crypto__hard_8h_1a24d85cb821c1c4d31ced8e25c269ddfd" kind="define"><name>HR_CRYPTO_RNG_RESULT</name></member>
     <member refid="wm__crypto__hard_8h_1a4296a8c91504a6441a9a1eba986dd807" kind="define"><name>HR_CRYPTO_CRC_KEY</name></member>
     <member refid="wm__crypto__hard_8h_1a032295ce7ae2083260a9419eacde1ef7" kind="define"><name>HR_CRYPTO_CRC_RESULT</name></member>
-    <member refid="wm__crypto__hard_8h_1a98c763adfeea8e9831c46ec269e47ae9" kind="define"><name>ERR_OK</name></member>
+    <member refid="wm__crypto__hard_8h_1a54dc05d08ee4eb5e85eb5305f607497c" kind="define"><name>ERR_CRY_OK</name></member>
     <member refid="wm__crypto__hard_8h_1aa26fc6554da458bd012638a7020b00b6" kind="define"><name>ERR_FAILURE</name></member>
     <member refid="wm__crypto__hard_8h_1a7dd9689361538a2af8d50a9e080e39b9" kind="define"><name>ERR_ARG_FAIL</name></member>
     <member refid="wm__crypto__hard_8h_1a7a47c9f176f63c30f33a3163f3f79ebb" kind="define"><name>OUTPUT_REFLECT</name></member>
@@ -3029,6 +3165,8 @@
     <member refid="wm__mem_8h_1ae03f0695e7accbba2beb580e96fadbd5" kind="function"><name>mem_realloc_debug</name></member>
     <member refid="wm__mem_8h_1a4c230080060a879d99817b0df3c290b1" kind="function"><name>mem_calloc_debug</name></member>
   </compound>
+  <compound refid="wm__param_8h" kind="file"><name>wm_param.h</name>
+  </compound>
   <compound refid="wm__params_8h" kind="file"><name>wm_params.h</name>
     <member refid="wm__params_8h_1a92791f9032d8deb51ffaac4b4f3d8a6b" kind="define"><name>TLS_PARAM_STATUS_OK</name></member>
     <member refid="wm__params_8h_1a3236d3ff93f308f8c6129f9a185531e2" kind="define"><name>TLS_PARAM_STATUS_EINVALID</name></member>
@@ -3093,6 +3231,7 @@
     <member refid="wm__params_8h_1a6ef5d1d3308de87e071361efe9302039" kind="define"><name>TLS_PARAM_ID_SNTP_SERVER1</name></member>
     <member refid="wm__params_8h_1a39ea03b9aaf4975daf19a21536af300f" kind="define"><name>TLS_PARAM_ID_SNTP_SERVER2</name></member>
     <member refid="wm__params_8h_1abd6b2ab123249151af1be4a982e21146" kind="define"><name>TLS_PARAM_ID_SNTP_SERVER3</name></member>
+    <member refid="wm__params_8h_1a2fc4eeb020acedca3436a87fea7a8486" kind="define"><name>TLS_PARAM_ID_TEM_OFFSET</name></member>
     <member refid="wm__params_8h_1a9a6bf303afbae79fc1a8317fcb8c83cd" kind="define"><name>TLS_PARAM_ID_MAX</name></member>
     <member refid="wm__params_8h_1ac5729f3aa0d6abd46e586a46a310116b" kind="define"><name>TLS_PARAM_PHY_11BG_MIXED</name></member>
     <member refid="wm__params_8h_1acea7f072b592b5dccdffbc755d9d90f0" kind="define"><name>TLS_PARAM_PHY_11B</name></member>
@@ -3243,6 +3382,7 @@
     <member refid="wm__wl__task_8h_1ac0ef3be3673d9ff3ff24be20b312efda" kind="define"><name>AP_SOCKET_S_TASK_PRIO</name></member>
     <member refid="wm__wl__task_8h_1a0163340b6f7577c010f58bad683a7691" kind="define"><name>TLS_UPNP_TASK_PRIO</name></member>
     <member refid="wm__wl__task_8h_1a34097dcdec5ba96211f9031e430aede1" kind="define"><name>TLS_ONESHOT_TASK_PRIO</name></member>
+    <member refid="wm__wl__task_8h_1ab8d2ef9622e10444561ce785ce3c2454" kind="define"><name>TLS_ONESHOT_SPEC_TASK_PRIO</name></member>
     <member refid="wm__wl__task_8h_1a02e646c238f0ac4efb0af1bd4bf301e9" kind="define"><name>TLS_MBOX_ALL_COUNT</name></member>
     <member refid="wm__wl__task_8h_1aa916eaaa68fbb00e12f1be76dc923fa5" kind="define"><name>TLS_MBOX_ID_WL_TASK</name></member>
     <member refid="wm__wl__task_8h_1a6a972f3d94eddb512208602068ac7c9b" kind="define"><name>TLS_MBOX_ID_HOSTIF_TASK</name></member>
@@ -3266,11 +3406,12 @@
     <member refid="wm__wl__task_8h_1ab486d26becdb506fdb41e52512e9ad7e" kind="define"><name>TLS_MSG_ID_TX_MGMT_CMPLT</name></member>
     <member refid="wm__wl__task_8h_1aff12a9050abaadfeb3c12a7d64280be3" kind="define"><name>TLS_MSG_ID_MLME_TASK</name></member>
     <member refid="wm__wl__task_8h_1aa6a1642ee57a2643305ea3123bcb7ee7" kind="define"><name>TLS_MSG_ID_UART_SENT_FREE</name></member>
-    <member refid="wm__wl__task_8h_1af7e4f939c73219f4c3976938c6770cad" kind="define"><name>TLS_MSG_ID_UART_RX</name></member>
+    <member refid="wm__wl__task_8h_1ad9768f8279c325528d5153b9254722ec" kind="define"><name>TLS_MSG_ID_UART0_RX</name></member>
     <member refid="wm__wl__task_8h_1a1cd641e7dfb0d46e9a284fb032029cd6" kind="define"><name>TLS_MSG_ID_HSPI_RX_CMD</name></member>
     <member refid="wm__wl__task_8h_1a447ea25d2a383127425018a23587fd69" kind="define"><name>TLS_MSG_ID_HSPI_RX_DATA</name></member>
     <member refid="wm__wl__task_8h_1af52ca7c59aa1510bca9eef9a37febf2f" kind="define"><name>TLS_MSG_ID_HSPI_TX_DATA</name></member>
     <member refid="wm__wl__task_8h_1a6c14ace31f572aeb2001b28ac7bbdf45" kind="define"><name>TLS_MSG_ID_TX_DATA_CMPLT</name></member>
+    <member refid="wm__wl__task_8h_1a257a87ec64dd7998d6d5b8c262a09774" kind="define"><name>TLS_MSG_ID_UART1_RX</name></member>
     <member refid="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02a" kind="enum"><name>task_msg_type</name></member>
     <member refid="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02aa9e2760bc66a3f146ef9558f48f9d3de0" kind="enumvalue"><name>TASK_MSG_TIMEOUT</name></member>
     <member refid="wm__wl__task_8h_1af67b1e7368de1e1db6e50b7feb1ce02aa18c7f04bf6bf843a0fa6791824befa75" kind="enumvalue"><name>TASK_MSG_UNTIMEOUT</name></member>
@@ -3409,6 +3550,8 @@
     <member refid="wm__ieee80211_8h_1a3ce552343f230b29410d5b1fd741dc4c" kind="define"><name>IEEE80211_STYPE_QOS_CFACK</name></member>
     <member refid="wm__ieee80211_8h_1aa982caceee24d0eaa3ad1073de352529" kind="define"><name>IEEE80211_STYPE_QOS_CFPOLL</name></member>
     <member refid="wm__ieee80211_8h_1ad0f308b91ebeac38d31c1dfc7f05b3d7" kind="define"><name>IEEE80211_STYPE_QOS_CFACKPOLL</name></member>
+    <member refid="wm__ieee80211_8h_1a5c9f030e5b74c98ff9fb97cfb89641ff" kind="define"><name>IEEE80211_STA_DEFAULT_LISTEN_INTERVAL</name></member>
+    <member refid="wm__ieee80211_8h_1a93c3528d648a3465271ca44ab496ca93" kind="define"><name>IEEE80211_STA_MIN_LISTEN_INTERVAL</name></member>
     <member refid="wm__ieee80211_8h_1a634a84857ad3da4cc34c5c48ae209937" kind="define"><name>IEEE80211_MAX_FRAG_THRESHOLD</name></member>
     <member refid="wm__ieee80211_8h_1a54e50bd4671185e010a5e1e758bd427e" kind="define"><name>IEEE80211_MAX_RTS_THRESHOLD</name></member>
     <member refid="wm__ieee80211_8h_1ad6aa616db48f5fd14d9c6e9b9cd184a9" kind="define"><name>IEEE80211_MAX_AID</name></member>
@@ -4170,6 +4313,8 @@
     <member refid="wm__ieee80211__gcc_8h_1a3ce552343f230b29410d5b1fd741dc4c" kind="define"><name>IEEE80211_STYPE_QOS_CFACK</name></member>
     <member refid="wm__ieee80211__gcc_8h_1aa982caceee24d0eaa3ad1073de352529" kind="define"><name>IEEE80211_STYPE_QOS_CFPOLL</name></member>
     <member refid="wm__ieee80211__gcc_8h_1ad0f308b91ebeac38d31c1dfc7f05b3d7" kind="define"><name>IEEE80211_STYPE_QOS_CFACKPOLL</name></member>
+    <member refid="wm__ieee80211__gcc_8h_1a5c9f030e5b74c98ff9fb97cfb89641ff" kind="define"><name>IEEE80211_STA_DEFAULT_LISTEN_INTERVAL</name></member>
+    <member refid="wm__ieee80211__gcc_8h_1a93c3528d648a3465271ca44ab496ca93" kind="define"><name>IEEE80211_STA_MIN_LISTEN_INTERVAL</name></member>
     <member refid="wm__ieee80211__gcc_8h_1a634a84857ad3da4cc34c5c48ae209937" kind="define"><name>IEEE80211_MAX_FRAG_THRESHOLD</name></member>
     <member refid="wm__ieee80211__gcc_8h_1a54e50bd4671185e010a5e1e758bd427e" kind="define"><name>IEEE80211_MAX_RTS_THRESHOLD</name></member>
     <member refid="wm__ieee80211__gcc_8h_1ad6aa616db48f5fd14d9c6e9b9cd184a9" kind="define"><name>IEEE80211_MAX_AID</name></member>
@@ -5070,6 +5215,7 @@
     <member refid="wm__config_8h_1ac420d566668d8fe20f67795517f930bf" kind="define"><name>TLS_CONFIG_DHCP_OPTION60</name></member>
     <member refid="wm__config_8h_1a176288795abde600fa618f597883a40a" kind="define"><name>TLS_CONFIG_SOCKET_STD</name></member>
     <member refid="wm__config_8h_1a54e90e54ab9664d2cf4a9113d2885422" kind="define"><name>TLS_CONFIG_SOCKET_RAW</name></member>
+    <member refid="wm__config_8h_1af2dcfd60a2bbd61c1bb3d30be8fbe699" kind="define"><name>TLS_CONFIG_CMD_USE_RAW_SOCKET</name></member>
     <member refid="wm__config_8h_1a46f20e78b9fa59710e721be6e5b011ff" kind="define"><name>TLS_CONFIG_HARD_CRYPTO</name></member>
     <member refid="wm__config_8h_1a69aab86cf7555e0a60bb49ef2a7f24a5" kind="define"><name>TLS_CONFIG_USE_POLARSSL</name></member>
     <member refid="wm__config_8h_1a4d7346c0b31b1f88258ebb6b5af0d981" kind="define"><name>TLS_CONFIG_SERVER_SIDE_SSL</name></member>
@@ -5080,12 +5226,10 @@
     <member refid="wm__config_8h_1a494aa9063dd12ef6e06a9f42566d374e" kind="define"><name>TLS_CONFIG_HTTP_CLIENT_AUTH</name></member>
     <member refid="wm__config_8h_1ad89f83741ed1325676325f8d956033f7" kind="define"><name>TLS_CONFIG_HTTP_CLIENT_SECURE</name></member>
     <member refid="wm__config_8h_1a1e28b294475cb02b1fd09378ebffb449" kind="define"><name>TLS_CONFIG_HTTP_CLIENT_TASK</name></member>
-    <member refid="wm__config_8h_1af646c39d98c77c6cebf098e372a90bc8" kind="define"><name>TLS_CONFIG_WEB_SERVER</name></member>
     <member refid="wm__config_8h_1a49e3523aac1c60efbbf4a31bd708f375" kind="define"><name>TLS_CONFIG_IGMP</name></member>
     <member refid="wm__config_8h_1a2080230ea3a7b3fc2a8d3027d93cb222" kind="define"><name>TLS_CONFIG_UPNP</name></member>
     <member refid="wm__config_8h_1adf5027063da634893a9a8980bcd4a893" kind="define"><name>TLS_CONFIG_DLNA</name></member>
     <member refid="wm__config_8h_1aae0df19fac118e0635ee8f11af1094ff" kind="define"><name>TLS_CONFIG_NTP</name></member>
-    <member refid="wm__config_8h_1a87a1549ff8800985ebf268f6a802662d" kind="define"><name>TLS_CONFIG_TEM</name></member>
     <member refid="wm__config_8h_1abd71a49cafe4aabc427bb7034b04f4a7" kind="define"><name>VERC_DNS_OPT</name></member>
     <member refid="wm__config_8h_1ab0a2ccfb5c72e7651ba7a4320124a563" kind="define"><name>VERC_LWIP_OPT</name></member>
   </compound>
@@ -5805,6 +5949,8 @@
   </compound>
   <compound refid="group___a_p_p___a_p_is" kind="group"><name>APP_APIs</name>
     <member refid="group___a_p_p___a_p_is_1ga76562ddc3d6c654272aaa3cb9eec5085" kind="function"><name>wm_oneshot_netif_status_event</name></member>
+    <member refid="group___a_p_p___a_p_is_1gadefd8272fb759371d6452458db70e829" kind="function"><name>tls_wifi_set_oneshot_config_mode</name></member>
+    <member refid="group___a_p_p___a_p_is_1ga31140fa14ff0cc41b01bfdce74549338" kind="function"><name>tls_wifi_get_oneshot_config_mode</name></member>
   </compound>
   <compound refid="group___a_t___r_i___a_p_is" kind="group"><name>AT_RI_APIs</name>
     <member refid="group___a_t___r_i___a_p_is_1ga852333f7f89a0d2eeca9b813880d90b1" kind="function"><name>tls_hostif_init</name></member>
@@ -5885,7 +6031,7 @@
     <member refid="group___oneshot___a_p_is_1ga18bec4a77e6a69139a82a25d8575c662" kind="function"><name>tls_airkiss_stop</name></member>
     <member refid="group___oneshot___a_p_is_1gad0093be0797ef8a428b3ccf6b4fc94f0" kind="function"><name>tls_oneshot_airkiss_change_channel</name></member>
     <member refid="group___oneshot___a_p_is_1ga36409231df7e83719b20d8c501490738" kind="function"><name>wm_oneshot_task_init</name></member>
-    <member refid="group___oneshot___a_p_is_1ga27f65431a471b8220be5a9dd296925e1" kind="function"><name>tls_oneshot_switch_channel_tim_stop</name></member>
+    <member refid="group___oneshot___a_p_is_1ga2511b67107fcf8ce147987686f24ff8d" kind="function"><name>tls_oneshot_switch_channel_tim_stop</name></member>
     <member refid="group___oneshot___a_p_is_1gab62769507d01baf5126652bc118755ed" kind="function"><name>tls_oneshot_switch_channel_tim_temp_stop</name></member>
     <member refid="group___oneshot___a_p_is_1gac620df8585aa030a001ff42b126801a7" kind="function"><name>tls_oneshot_is_ssid_bssid_match</name></member>
     <member refid="group___oneshot___a_p_is_1ga2bf80c6873e73539cad5fbdb54f0b96d" kind="function"><name>tls_oneshot_find_chlist</name></member>
@@ -5932,8 +6078,8 @@
     <member refid="group___i2_s___driver___a_p_is_1gadeed960480f60c211c330d612a1a9af9" kind="function"><name>tls_i2s_set_freq</name></member>
     <member refid="group___i2_s___driver___a_p_is_1gaf816dc64bcbd7462ed1982836b7ce800" kind="function"><name>wm_i2s_set_freq_exclk</name></member>
     <member refid="group___i2_s___driver___a_p_is_1gab642c26490009682a15707c701ab8ec9" kind="function"><name>tls_i2s_tx_block</name></member>
-    <member refid="group___i2_s___driver___a_p_is_1ga47376f4b8da71d54306148fc7db3cf05" kind="function"><name>tls_i2s_tx_nonblock</name></member>
-    <member refid="group___i2_s___driver___a_p_is_1ga9dadb270324ff0062acbdf7ee6117452" kind="function"><name>tls_i2s_rx_nonblock</name></member>
+    <member refid="group___i2_s___driver___a_p_is_1ga541498ce37020eb6b5c3fbbf4138f409" kind="function"><name>tls_i2s_tx_nonblock</name></member>
+    <member refid="group___i2_s___driver___a_p_is_1gae3ade66fe8cfdce1ac6ade72f7efa403" kind="function"><name>tls_i2s_rx_nonblock</name></member>
     <member refid="group___i2_s___driver___a_p_is_1ga871fc1c942a1ea17810236c9007e08b7" kind="function"><name>tls_i2s_tx_dma</name></member>
     <member refid="group___i2_s___driver___a_p_is_1gadc246d9034c369268bafba9f00b39ff7" kind="function"><name>tls_i2s_rx_dma</name></member>
     <member refid="group___i2_s___driver___a_p_is_1gae27af338e48e5bcd00cb5b7eb1c33478" kind="function"><name>tls_i2s_set_rxth</name></member>
@@ -6034,6 +6180,7 @@
     <member refid="group___t_i_m_e_r___driver___a_p_is_1ga0b3986991b1c8fb4a586e192af9810d9" kind="function"><name>tls_timer_create</name></member>
     <member refid="group___t_i_m_e_r___driver___a_p_is_1ga253e78f64fb869474ae5ef7f0ff0dcac" kind="function"><name>tls_timer_start</name></member>
     <member refid="group___t_i_m_e_r___driver___a_p_is_1ga414b9f30367bc4bbd9086e3662db8f94" kind="function"><name>tls_timer_stop</name></member>
+    <member refid="group___t_i_m_e_r___driver___a_p_is_1gac9354e976ab0262a498ed7cbf64b24b6" kind="function"><name>tls_timer_change</name></member>
     <member refid="group___t_i_m_e_r___driver___a_p_is_1gabe37deea69053b62d5235e29d35ab5a0" kind="function"><name>tls_timer_destroy</name></member>
   </compound>
   <compound refid="group___u_a_r_t___driver___a_p_is" kind="group"><name>UART_Driver_APIs</name>

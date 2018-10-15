@@ -88,21 +88,21 @@
     <detaileddescription>
 <para>struct <ref refid="structtls__slave__hspi" kindref="compound">tls_slave_hspi</ref> </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="221">
+      <node id="243">
         <label>tls_hspi_rx_desc</label>
         <link refid="structtls__hspi__rx__desc"/>
       </node>
-      <node id="222">
+      <node id="244">
         <label>tls_hspi_tx_desc</label>
         <link refid="structtls__hspi__tx__desc"/>
       </node>
-      <node id="220">
+      <node id="242">
         <label>tls_slave_hspi</label>
         <link refid="structtls__slave__hspi"/>
-        <childnode refid="221" relation="usage">
+        <childnode refid="243" relation="usage">
           <edgelabel>curr_rx_desc</edgelabel>
         </childnode>
-        <childnode refid="222" relation="usage">
+        <childnode refid="244" relation="usage">
           <edgelabel>curr_tx_desc</edgelabel>
         </childnode>
       </node>

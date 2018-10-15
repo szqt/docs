@@ -217,24 +217,24 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="224">
+      <node id="246">
         <label>tls_socket_desc</label>
         <link refid="structtls__socket__desc"/>
-        <childnode refid="225" relation="usage">
+        <childnode refid="247" relation="usage">
           <edgelabel>recvf</edgelabel>
         </childnode>
-        <childnode refid="226" relation="usage">
+        <childnode refid="248" relation="usage">
           <edgelabel>ip_addr</edgelabel>
         </childnode>
       </node>
-      <node id="226">
+      <node id="248">
         <label>ip_addr</label>
         <link refid="structip__addr"/>
       </node>
-      <node id="225">
+      <node id="247">
         <label>pbuf</label>
         <link refid="structpbuf"/>
-        <childnode refid="225" relation="usage">
+        <childnode refid="247" relation="usage">
           <edgelabel>next</edgelabel>
         </childnode>
       </node>

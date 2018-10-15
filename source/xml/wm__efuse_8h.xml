@@ -161,6 +161,45 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
+      <memberdef kind="function" id="wm__efuse_8h_1a8d847b2058d7a1127f75f839b3adec20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tls_ft_param_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_ft_param_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to init ft param. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>TRUE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>init success </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FALSE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>init failed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Driver/wm_efuse.h" line="42" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1ab82f03053f49ddefb5a36640127911dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int tls_ft_param_set</definition>
@@ -221,7 +260,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="45" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="55" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1a644f5cb50ba9f700fce9dea01c234cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -283,7 +322,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="57" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="67" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1acd60a68ee7ffd08be4f5ed111d0be703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -323,7 +362,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="68" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="78" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1af1af375fc2da6bc5d5ee577c0e1271d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -363,7 +402,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="78" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="88" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1af1842df9b55c20c00a64c438b033b69f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -403,7 +442,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="88" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="98" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1a8a64204ad73582d5131396f95e075620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -443,7 +482,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="98" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="108" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1ab3bb30286008db99219c8d96bd675f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -483,7 +522,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="108" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="118" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1ab7dc42d07c0812e433c2a6f8144a82f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -523,7 +562,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="119" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="129" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1ad6b868a60441edeed565620ec3f5ceeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -564,7 +603,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="129" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="139" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1af2ad2e9791cfd16ee5f945d15fda1bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -605,7 +644,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="139" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="149" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1ad313725efb9ca8f46647414116bcfcc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -646,7 +685,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="149" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="159" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1af8619af23dd947e2c0ead6622cc3d46b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -687,7 +726,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="159" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="169" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1a2a6bd19ce1596fc63bc9297138014e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -728,7 +767,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="169" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="179" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1a1816dcbded4c2ee39c0f6a8300be2337" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -769,7 +808,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="179" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="189" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1acb60fb92e431889a161946e38fc5dc1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -810,7 +849,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="189" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="199" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1a4ef48519c827a165e351c5b1c7087b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -851,7 +890,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="199" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="209" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1a96dc9b1681ad3e17cf293b5e4b9b6eb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -902,7 +941,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="209" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="219" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__efuse_8h_1a58041b7923295f30c6b302894f200dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -953,7 +992,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_efuse.h" line="220" column="1"/>
+        <location file="Include/Driver/wm_efuse.h" line="230" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -987,46 +1026,48 @@ Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TX_GAIN_NEW_ADDR<sp/>(VCG_ADDR+VCG_LEN)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TX_GAIN_LEN<sp/><sp/><sp/>(28*3)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ab82f03053f49ddefb5a36640127911dd" kindref="member">tls_ft_param_set</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opnum,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a644f5cb50ba9f700fce9dea01c234cfc" kindref="member">tls_ft_param_get</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opnum,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rdlen);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1acd60a68ee7ffd08be4f5ed111d0be703" kindref="member">tls_get_mac_addr</ref>(u8<sp/>*mac);</highlight></codeline>
+<codeline lineno="42"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a8d847b2058d7a1127f75f839b3adec20" kindref="member">tls_ft_param_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ab82f03053f49ddefb5a36640127911dd" kindref="member">tls_ft_param_set</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opnum,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a644f5cb50ba9f700fce9dea01c234cfc" kindref="member">tls_ft_param_get</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opnum,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rdlen);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af1af375fc2da6bc5d5ee577c0e1271d6" kindref="member">tls_set_mac_addr</ref>(u8<sp/>*mac);</highlight></codeline>
+<codeline lineno="78"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1acd60a68ee7ffd08be4f5ed111d0be703" kindref="member">tls_get_mac_addr</ref>(u8<sp/>*mac);</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af1842df9b55c20c00a64c438b033b69f" kindref="member">tls_get_tx_gain</ref>(u8<sp/>*txgain);</highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af1af375fc2da6bc5d5ee577c0e1271d6" kindref="member">tls_set_mac_addr</ref>(u8<sp/>*mac);</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a8a64204ad73582d5131396f95e075620" kindref="member">tls_set_tx_gain</ref>(u8<sp/>*txgain);</highlight></codeline>
+<codeline lineno="98"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af1842df9b55c20c00a64c438b033b69f" kindref="member">tls_get_tx_gain</ref>(u8<sp/>*txgain);</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ab3bb30286008db99219c8d96bd675f2a" kindref="member">tls_get_tx_lo</ref>(u8<sp/>*txlo);</highlight></codeline>
+<codeline lineno="108"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a8a64204ad73582d5131396f95e075620" kindref="member">tls_set_tx_gain</ref>(u8<sp/>*txgain);</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ab7dc42d07c0812e433c2a6f8144a82f1" kindref="member">tls_set_tx_lo</ref>(u8<sp/>*txlo);</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ad6b868a60441edeed565620ec3f5ceeb" kindref="member">tls_get_tx_iq_gain</ref>(u8<sp/>*txGain);</highlight></codeline>
+<codeline lineno="118"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ab3bb30286008db99219c8d96bd675f2a" kindref="member">tls_get_tx_lo</ref>(u8<sp/>*txlo);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ab7dc42d07c0812e433c2a6f8144a82f1" kindref="member">tls_set_tx_lo</ref>(u8<sp/>*txlo);</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af2ad2e9791cfd16ee5f945d15fda1bfa" kindref="member">tls_set_tx_iq_gain</ref>(u8<sp/>*txGain);</highlight></codeline>
+<codeline lineno="139"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ad6b868a60441edeed565620ec3f5ceeb" kindref="member">tls_get_tx_iq_gain</ref>(u8<sp/>*txGain);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ad313725efb9ca8f46647414116bcfcc4" kindref="member">tls_get_rx_iq_gain</ref>(u8<sp/>*rxGain);</highlight></codeline>
+<codeline lineno="149"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af2ad2e9791cfd16ee5f945d15fda1bfa" kindref="member">tls_set_tx_iq_gain</ref>(u8<sp/>*txGain);</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af8619af23dd947e2c0ead6622cc3d46b" kindref="member">tls_set_rx_iq_gain</ref>(u8<sp/>*rxGain);</highlight></codeline>
+<codeline lineno="159"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1ad313725efb9ca8f46647414116bcfcc4" kindref="member">tls_get_rx_iq_gain</ref>(u8<sp/>*rxGain);</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a2a6bd19ce1596fc63bc9297138014e75" kindref="member">tls_get_tx_iq_phase</ref>(u8<sp/>*txPhase);</highlight></codeline>
+<codeline lineno="169"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1af8619af23dd947e2c0ead6622cc3d46b" kindref="member">tls_set_rx_iq_gain</ref>(u8<sp/>*rxGain);</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a1816dcbded4c2ee39c0f6a8300be2337" kindref="member">tls_set_tx_iq_phase</ref>(u8<sp/>*txPhase);</highlight></codeline>
+<codeline lineno="179"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a2a6bd19ce1596fc63bc9297138014e75" kindref="member">tls_get_tx_iq_phase</ref>(u8<sp/>*txPhase);</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"></highlight></codeline>
-<codeline lineno="189"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1acb60fb92e431889a161946e38fc5dc1d" kindref="member">tls_get_rx_iq_phase</ref>(u8<sp/>*rxPhase);</highlight></codeline>
+<codeline lineno="189"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a1816dcbded4c2ee39c0f6a8300be2337" kindref="member">tls_set_tx_iq_phase</ref>(u8<sp/>*txPhase);</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a4ef48519c827a165e351c5b1c7087b8a" kindref="member">tls_set_rx_iq_phase</ref>(u8<sp/>*rxPhase);</highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1acb60fb92e431889a161946e38fc5dc1d" kindref="member">tls_get_rx_iq_phase</ref>(u8<sp/>*rxPhase);</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"></highlight></codeline>
-<codeline lineno="209"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a96dc9b1681ad3e17cf293b5e4b9b6eb4" kindref="member">tls_freq_err_op</ref>(u8<sp/>*freqerr,<sp/>u8<sp/>flag);</highlight></codeline>
+<codeline lineno="209"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a4ef48519c827a165e351c5b1c7087b8a" kindref="member">tls_set_rx_iq_phase</ref>(u8<sp/>*rxPhase);</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"></highlight></codeline>
-<codeline lineno="220"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a58041b7923295f30c6b302894f200dcd" kindref="member">tls_rf_vcg_ctrl_op</ref>(u8<sp/>*vcg,<sp/>u8<sp/>flag);</highlight></codeline>
-<codeline lineno="221"><highlight class="normal"></highlight></codeline>
-<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_EFUSE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a96dc9b1681ad3e17cf293b5e4b9b6eb4" kindref="member">tls_freq_err_op</ref>(u8<sp/>*freqerr,<sp/>u8<sp/>flag);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__efuse_8h_1a58041b7923295f30c6b302894f200dcd" kindref="member">tls_rf_vcg_ctrl_op</ref>(u8<sp/>*vcg,<sp/>u8<sp/>flag);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_EFUSE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Include/Driver/wm_efuse.h"/>
   </compounddef>

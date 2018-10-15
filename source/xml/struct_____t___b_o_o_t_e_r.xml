@@ -42,80 +42,80 @@
         </inbodydescription>
         <location file="Include/Platform/wm_fwup.h" line="73" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="73" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1acd100881cfdbf5f91ee1fd89d8d67229" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1a6ba9b9adcb77a5b3a782963d29921023" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
-        <definition>unsigned int __T_BOOTER::img_addr</definition>
+        <definition>unsigned int __T_BOOTER::run_img_addr</definition>
         <argsstring></argsstring>
-        <name>img_addr</name>
+        <name>run_img_addr</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>image type zip flag, 0: non-zip, 1:zip </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/Platform/wm_fwup.h" line="74" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="74" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1addf713fe2baee4ff3d1f4012ca6d8789" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1a9a6e2c24390c673bcbba91056df7e465" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
-        <definition>unsigned int __T_BOOTER::img_len</definition>
+        <definition>unsigned int __T_BOOTER::run_img_len</definition>
         <argsstring></argsstring>
-        <name>img_len</name>
+        <name>run_img_len</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>run area image start address </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/Platform/wm_fwup.h" line="75" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="75" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1aad1aa32baad1098d099d83146a97e6ec" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1a23f01662ae83ca258aa3e20af5650112" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
-        <definition>unsigned int __T_BOOTER::org_checksum</definition>
+        <definition>unsigned int __T_BOOTER::run_org_checksum</definition>
         <argsstring></argsstring>
-        <name>org_checksum</name>
+        <name>run_org_checksum</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>run area image length </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/Platform/wm_fwup.h" line="76" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="76" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1a981b61c92014ec122b1c2cfeba90ed25" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1a73fcd451b7891eeb3b9e86b14734e6cb" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
-        <definition>unsigned int __T_BOOTER::zip_img_addr</definition>
+        <definition>unsigned int __T_BOOTER::upd_img_addr</definition>
         <argsstring></argsstring>
-        <name>zip_img_addr</name>
+        <name>upd_img_addr</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>run area image checksum </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/Platform/wm_fwup.h" line="77" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="77" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1a32d7be7fc35efb42986b4262bf969e74" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1aed911597b0863af816413183d912b080" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
-        <definition>unsigned int __T_BOOTER::zip_img_len</definition>
+        <definition>unsigned int __T_BOOTER::upd_img_len</definition>
         <argsstring></argsstring>
-        <name>zip_img_len</name>
+        <name>upd_img_len</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>upgrade area image start address </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/Platform/wm_fwup.h" line="78" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="78" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1a5be913442ae554035a6cbf0b8b51e30c" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="struct_____t___b_o_o_t_e_r_1ab6ce69fea55e2c17f0fa897d212d718b" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
-        <definition>unsigned int __T_BOOTER::zip_checksum</definition>
+        <definition>unsigned int __T_BOOTER::upd_checksum</definition>
         <argsstring></argsstring>
-        <name>zip_checksum</name>
+        <name>upd_checksum</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>upgrade area image length </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/Platform/wm_fwup.h" line="79" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="79" bodyend="-1"/>
@@ -128,7 +128,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>upgrade area image checksum </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/Platform/wm_fwup.h" line="80" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="80" bodyend="-1"/>
@@ -167,16 +167,16 @@
     <location file="Include/Platform/wm_fwup.h" line="70" column="1" bodyfile="Include/Platform/wm_fwup.h" bodystart="69" bodyend="83"/>
     <listofallmembers>
       <member refid="struct_____t___b_o_o_t_e_r_1aabb5d355533668f001fba3d76c65a745" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>hd_checksum</name></member>
-      <member refid="struct_____t___b_o_o_t_e_r_1acd100881cfdbf5f91ee1fd89d8d67229" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>img_addr</name></member>
-      <member refid="struct_____t___b_o_o_t_e_r_1addf713fe2baee4ff3d1f4012ca6d8789" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>img_len</name></member>
       <member refid="struct_____t___b_o_o_t_e_r_1a21a478f6ed27bc0b6aebf6aad34bb164" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>img_type</name></member>
       <member refid="struct_____t___b_o_o_t_e_r_1a9540f045113ca089451daca3786eec91" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>magic_no</name></member>
-      <member refid="struct_____t___b_o_o_t_e_r_1aad1aa32baad1098d099d83146a97e6ec" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>org_checksum</name></member>
+      <member refid="struct_____t___b_o_o_t_e_r_1a6ba9b9adcb77a5b3a782963d29921023" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>run_img_addr</name></member>
+      <member refid="struct_____t___b_o_o_t_e_r_1a9a6e2c24390c673bcbba91056df7e465" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>run_img_len</name></member>
+      <member refid="struct_____t___b_o_o_t_e_r_1a23f01662ae83ca258aa3e20af5650112" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>run_org_checksum</name></member>
+      <member refid="struct_____t___b_o_o_t_e_r_1ab6ce69fea55e2c17f0fa897d212d718b" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>upd_checksum</name></member>
+      <member refid="struct_____t___b_o_o_t_e_r_1a73fcd451b7891eeb3b9e86b14734e6cb" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>upd_img_addr</name></member>
+      <member refid="struct_____t___b_o_o_t_e_r_1aed911597b0863af816413183d912b080" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>upd_img_len</name></member>
       <member refid="struct_____t___b_o_o_t_e_r_1a9e2c7f2c8d659a6c13575d81a9d8bc47" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>upd_no</name></member>
       <member refid="struct_____t___b_o_o_t_e_r_1a6b7f19bf9f31175abb2428aec4cf5ca8" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>ver</name></member>
-      <member refid="struct_____t___b_o_o_t_e_r_1a5be913442ae554035a6cbf0b8b51e30c" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>zip_checksum</name></member>
-      <member refid="struct_____t___b_o_o_t_e_r_1a981b61c92014ec122b1c2cfeba90ed25" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>zip_img_addr</name></member>
-      <member refid="struct_____t___b_o_o_t_e_r_1a32d7be7fc35efb42986b4262bf969e74" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>zip_img_len</name></member>
       <member refid="struct_____t___b_o_o_t_e_r_1ae777a24c06922c2a01ef560e1ea6d6d3" prot="public" virt="non-virtual"><scope>__T_BOOTER</scope><name>zip_type</name></member>
     </listofallmembers>
   </compounddef>

@@ -22,7 +22,7 @@
           <declname>addrlen</declname>
         </param>
         <briefdescription>
-<para>await a connection on socket ID </para>        </briefdescription>
+<para>Await a connection on socket ID. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -85,7 +85,7 @@
           <declname>namelen</declname>
         </param>
         <briefdescription>
-<para>give the socket ID the local address </para>        </briefdescription>
+<para>Give the socket ID the local address. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -144,7 +144,7 @@
           <declname>how</declname>
         </param>
         <briefdescription>
-<para>shut down all or part of the connection open on socket ID </para>        </briefdescription>
+<para>Shut down all or part of the connection open on socket ID. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -192,7 +192,7 @@
           <declname>s</declname>
         </param>
         <briefdescription>
-<para>destroy all or part of the connection open on socket ID </para>        </briefdescription>
+<para>Destroy all or part of the connection open on socket ID. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1195,7 +1195,7 @@
           <declname>name</declname>
         </param>
         <briefdescription>
-<para>get entry from host data base for host with name </para>        </briefdescription>
+<para>Get entry from host data base for host with name. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

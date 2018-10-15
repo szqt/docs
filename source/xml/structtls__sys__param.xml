@@ -1,0 +1,1000 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__sys__param" kind="struct" language="C++" prot="public">
+    <compoundname>tls_sys_param</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__sys__param_1a439d63815746ba424f048c128d1bae51" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__hardware__version" kindref="compound">tls_param_hardware_version</ref></type>
+        <definition>struct tls_param_hardware_version tls_sys_param::hardware_version</definition>
+        <argsstring></argsstring>
+        <name>hardware_version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="22" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a29049959201bf79d229b441e9ff51429" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__bssid" kindref="compound">tls_param_bssid</ref></type>
+        <definition>struct tls_param_bssid tls_sys_param::bssid</definition>
+        <argsstring></argsstring>
+        <name>bssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="22" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a831c7939e723a3ed9a69a346f90593cb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__ssid" kindref="compound">tls_param_ssid</ref></type>
+        <definition>struct tls_param_ssid tls_sys_param::ssid</definition>
+        <argsstring></argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="22" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a70b999c35e6099499351291d8721fc34" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::channel_enable</definition>
+        <argsstring></argsstring>
+        <name>channel_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="30" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1aa1803053ced635a8443b5006f36c70fe" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="31" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a3e4c984c76b07d61b17577a03bea1ca5" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::wireless_region</definition>
+        <argsstring></argsstring>
+        <name>wireless_region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="32" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ad8dde2931d7f497f1a12705b5aa72a5d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::encry</definition>
+        <argsstring></argsstring>
+        <name>encry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="33" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ae153a6c60e4f4ab9951f33bafbf0c677" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::wireless_protocol</definition>
+        <argsstring></argsstring>
+        <name>wireless_protocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="34" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1abb6c1264bd342536c5acf6e1a4e9e9fe" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::auto_create_adhoc</definition>
+        <argsstring></argsstring>
+        <name>auto_create_adhoc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="35" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a296cdba5e97ea1184e519f5906365e9a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::auto_retrycnt</definition>
+        <argsstring></argsstring>
+        <name>auto_retrycnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="36" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1aedbf21946f2428286c9a6c5e7bf58235" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::auto_roam</definition>
+        <argsstring></argsstring>
+        <name>auto_roam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="37" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a33285b0a80161863efc159eaa0d63923" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::auto_powersave</definition>
+        <argsstring></argsstring>
+        <name>auto_powersave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="38" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ab6b1587055a8a966f617fc1fff5ce881" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::ssid_broadcast_enable</definition>
+        <argsstring></argsstring>
+        <name>ssid_broadcast_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="39" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1aa7c8316015e71d07c664ff1ba063b1b2" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_sys_param::channellist</definition>
+        <argsstring></argsstring>
+        <name>channellist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="40" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a1cea0c6ba634aa199b7a91258bd205ee" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__key" kindref="compound">tls_param_key</ref></type>
+        <definition>struct tls_param_key tls_sys_param::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="40" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a3e3fe7e6b1c362934abb07d7f4f90724" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__bgr" kindref="compound">tls_param_bgr</ref></type>
+        <definition>struct tls_param_bgr tls_sys_param::wbgr</definition>
+        <argsstring></argsstring>
+        <name>wbgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="40" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ab6e7d0fa07fd3b1d8f2672c4a38b1418" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__wps" kindref="compound">tls_param_wps</ref></type>
+        <definition>struct tls_param_wps tls_sys_param::wps</definition>
+        <argsstring></argsstring>
+        <name>wps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="40" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a7f0609cb9437e95da065e58bc02adaf7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__ip" kindref="compound">tls_param_ip</ref></type>
+        <definition>struct tls_param_ip tls_sys_param::ipcfg</definition>
+        <argsstring></argsstring>
+        <name>ipcfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="40" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1aa217fc59ecf0270069f0a79c43fabbfe" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::local_dnsname[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>local_dnsname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="47" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a368091508e3b4be1bf9333850396e828" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::local_device_name[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>local_device_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="48" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a448fb349212eb8a25cdf9af0ba0c418e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__oray__client" kindref="compound">tls_param_oray_client</ref></type>
+        <definition>struct tls_param_oray_client tls_sys_param::oray_client_setting</definition>
+        <argsstring></argsstring>
+        <name>oray_client_setting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="48" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ace855071bdbabb127bf61f38e385ad3d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::upnp_enable</definition>
+        <argsstring></argsstring>
+        <name>upnp_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="52" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a3681cacd30a77ae6687d3c61f3cb8580" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::always_online</definition>
+        <argsstring></argsstring>
+        <name>always_online</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="54" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ab791ff5ce3783b6150c2162e6b421138" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::user_port_mode</definition>
+        <argsstring></argsstring>
+        <name>user_port_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="56" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1afe6676e4b390f1b547fb37f19d95dcfc" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::res_2</definition>
+        <argsstring></argsstring>
+        <name>res_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="58" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a654808a49e8fee8a45e0470c5d26367e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__uart" kindref="compound">tls_param_uart</ref></type>
+        <definition>struct tls_param_uart tls_sys_param::uart_cfg</definition>
+        <argsstring></argsstring>
+        <name>uart_cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="58" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a50df9bec7813f8a4c7cfe5ead22661a3" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::auto_mode</definition>
+        <argsstring></argsstring>
+        <name>auto_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="62" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a40c029a1d26e92bc3d456d41b2911613" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::res_3</definition>
+        <argsstring></argsstring>
+        <name>res_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="63" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a346ef2fcdaaf90d0cdc26d1575bc138c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_sys_param::transparent_trigger_length</definition>
+        <argsstring></argsstring>
+        <name>transparent_trigger_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="64" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a4edeaf4ec5fdec35ba3810cbe1e83074" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_sys_param::transparent_trigger_period</definition>
+        <argsstring></argsstring>
+        <name>transparent_trigger_period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="65" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a0ba4727119cca505b625dc9044f4f32d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__socket" kindref="compound">tls_param_socket</ref></type>
+        <definition>struct tls_param_socket tls_sys_param::remote_socket_cfg</definition>
+        <argsstring></argsstring>
+        <name>remote_socket_cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="65" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a7f5aa4543f7ea4c76a81dddc35015461" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_sys_param::debug_mode</definition>
+        <argsstring></argsstring>
+        <name>debug_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="69" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1af3f50ba40dfdc173030ab6e8e1b644da" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_sys_param::res_4[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>res_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="70" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ae1aeaa2f4f84518e717006095ef65046" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::EscapeChar</definition>
+        <argsstring></argsstring>
+        <name>EscapeChar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="73" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a417b2631c20279e9f97a5c46f94df25d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::EscReserved</definition>
+        <argsstring></argsstring>
+        <name>EscReserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="74" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ae6a375a74507bbe4c300787cc1a488f7" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_sys_param::EscapePeriod</definition>
+        <argsstring></argsstring>
+        <name>EscapePeriod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="75" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a619dbc4e1b43fbe18a54861cf1c82bb4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::IoMode</definition>
+        <argsstring></argsstring>
+        <name>IoMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="77" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a880e46b9a464bc8f40fe053dee3cbb19" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::CmdMode</definition>
+        <argsstring></argsstring>
+        <name>CmdMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="78" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a25106d86a28f90e40ac086be58ac49f9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::PassWord[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>PassWord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="79" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1abde17bef1f3ddcdc1e36e8b7c84c5e2e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__webs__cfg" kindref="compound">tls_webs_cfg</ref></type>
+        <definition>struct tls_webs_cfg tls_sys_param::WebsCfg</definition>
+        <argsstring></argsstring>
+        <name>WebsCfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="79" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a2bcfc39ef652022c8f33bd0fe59f16f8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::oneshotflag</definition>
+        <argsstring></argsstring>
+        <name>oneshotflag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="82" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1afa5fce00894de9fc54d9a81ee7947b68" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::oneshotres[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>oneshotres</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="83" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ae3ff65e29d7074300334b96b4f1c537a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__sha1" kindref="compound">tls_param_sha1</ref></type>
+        <definition>struct tls_param_sha1 tls_sys_param::psk</definition>
+        <argsstring></argsstring>
+        <name>psk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="83" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a7f9920977bc306a0efa7894de1730913" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__original__key" kindref="compound">tls_param_original_key</ref></type>
+        <definition>struct tls_param_original_key tls_sys_param::original_key</definition>
+        <argsstring></argsstring>
+        <name>original_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="83" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a71092b4e983495019dfd94863eae5c96" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__ssid" kindref="compound">tls_param_ssid</ref></type>
+        <definition>struct tls_param_ssid tls_sys_param::original_ssid</definition>
+        <argsstring></argsstring>
+        <name>original_ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="83" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a2bfdc54f0dfdeedba4851a03d2496381" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::auto_reconnect</definition>
+        <argsstring></argsstring>
+        <name>auto_reconnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="87" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1ac45e91744fb57757d5fb90510803dc8b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::res_5[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>res_5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="88" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1afa5582bf5fa263577c7231539c827e4b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__quick__connect" kindref="compound">tls_param_quick_connect</ref></type>
+        <definition>struct tls_param_quick_connect tls_sys_param::quick_connect</definition>
+        <argsstring></argsstring>
+        <name>quick_connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="88" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1afe2d8889c72346b599dd28550594ce88" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::key_changed</definition>
+        <argsstring></argsstring>
+        <name>key_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="92" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a2a1c529f602ab218bf4b75b36ac5c921" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::ssid_changed</definition>
+        <argsstring></argsstring>
+        <name>ssid_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="93" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a9bcebc693055170bacb0e6614e4d941f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__ssid" kindref="compound">tls_param_ssid</ref></type>
+        <definition>struct tls_param_ssid tls_sys_param::apsta_ssid</definition>
+        <argsstring></argsstring>
+        <name>apsta_ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="93" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a2a18b102ba5eac50e10d5444d287ac5a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__sha1" kindref="compound">tls_param_sha1</ref></type>
+        <definition>struct tls_param_sha1 tls_sys_param::apsta_psk</definition>
+        <argsstring></argsstring>
+        <name>apsta_psk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="93" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1aa518dd02f138aa9389239317f83db1a2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::res_6[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>res_6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="97" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a91d33c42c27ce88f6750cd35cefb8f64" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::channel4softap</definition>
+        <argsstring></argsstring>
+        <name>channel4softap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="98" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a19d5296e555476eba745775ca6d344a4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_sys_param::encry4softap</definition>
+        <argsstring></argsstring>
+        <name>encry4softap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="99" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1abf34b67c7dda7227d5ac9ade503f3237" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__key" kindref="compound">tls_param_key</ref></type>
+        <definition>struct tls_param_key tls_sys_param::key4softap</definition>
+        <argsstring></argsstring>
+        <name>key4softap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="99" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a26a34e3412a4ae869e2c69b8842e092b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__ip" kindref="compound">tls_param_ip</ref></type>
+        <definition>struct tls_param_ip tls_sys_param::ipcfg4softap</definition>
+        <argsstring></argsstring>
+        <name>ipcfg4softap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="99" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a2a0ec8e48d900500cf99e66e034ca3ed" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__bgr" kindref="compound">tls_param_bgr</ref></type>
+        <definition>struct tls_param_bgr tls_sys_param::wbgr4softap</definition>
+        <argsstring></argsstring>
+        <name>wbgr4softap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="99" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a0c816d7c2c7d3dbffe9eeb6c936eab04" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char tls_sys_param::sntp_service1[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>sntp_service1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="104" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a8fee34a0a3110b7253ec08de128d240d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char tls_sys_param::sntp_service2[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>sntp_service2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="105" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1a7e00d72afe0a9dbba0767c4ec5b7f101" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char tls_sys_param::sntp_service3[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>sntp_service3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="106" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__sys__param_1abf71b2d99bef169095e0f1954fda261f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__param__tem__offset" kindref="compound">tls_param_tem_offset</ref></type>
+        <definition>struct tls_param_tem_offset tls_sys_param::params_tem</definition>
+        <argsstring></argsstring>
+        <name>params_tem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="106" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="270">
+        <label>tls_param_oray_client</label>
+        <link refid="structtls__param__oray__client"/>
+      </node>
+      <node id="277">
+        <label>tls_param_hardware_version</label>
+        <link refid="structtls__param__hardware__version"/>
+      </node>
+      <node id="281">
+        <label>tls_webs_cfg</label>
+        <link refid="structtls__webs__cfg"/>
+      </node>
+      <node id="282">
+        <label>tls_param_uart</label>
+        <link refid="structtls__param__uart"/>
+      </node>
+      <node id="268">
+        <label>tls_sys_param</label>
+        <link refid="structtls__sys__param"/>
+        <childnode refid="269" relation="usage">
+          <edgelabel>quick_connect</edgelabel>
+        </childnode>
+        <childnode refid="270" relation="usage">
+          <edgelabel>oray_client_setting</edgelabel>
+        </childnode>
+        <childnode refid="271" relation="usage">
+          <edgelabel>key</edgelabel>
+          <edgelabel>key4softap</edgelabel>
+        </childnode>
+        <childnode refid="272" relation="usage">
+          <edgelabel>ipcfg4softap</edgelabel>
+          <edgelabel>ipcfg</edgelabel>
+        </childnode>
+        <childnode refid="273" relation="usage">
+          <edgelabel>params_tem</edgelabel>
+        </childnode>
+        <childnode refid="274" relation="usage">
+          <edgelabel>wbgr4softap</edgelabel>
+          <edgelabel>wbgr</edgelabel>
+        </childnode>
+        <childnode refid="275" relation="usage">
+          <edgelabel>bssid</edgelabel>
+        </childnode>
+        <childnode refid="276" relation="usage">
+          <edgelabel>apsta_psk</edgelabel>
+          <edgelabel>psk</edgelabel>
+        </childnode>
+        <childnode refid="277" relation="usage">
+          <edgelabel>hardware_version</edgelabel>
+        </childnode>
+        <childnode refid="278" relation="usage">
+          <edgelabel>remote_socket_cfg</edgelabel>
+        </childnode>
+        <childnode refid="279" relation="usage">
+          <edgelabel>wps</edgelabel>
+        </childnode>
+        <childnode refid="280" relation="usage">
+          <edgelabel>ssid</edgelabel>
+          <edgelabel>apsta_ssid</edgelabel>
+          <edgelabel>original_ssid</edgelabel>
+        </childnode>
+        <childnode refid="281" relation="usage">
+          <edgelabel>WebsCfg</edgelabel>
+        </childnode>
+        <childnode refid="282" relation="usage">
+          <edgelabel>uart_cfg</edgelabel>
+        </childnode>
+        <childnode refid="283" relation="usage">
+          <edgelabel>original_key</edgelabel>
+        </childnode>
+      </node>
+      <node id="271">
+        <label>tls_param_key</label>
+        <link refid="structtls__param__key"/>
+      </node>
+      <node id="273">
+        <label>tls_param_tem_offset</label>
+        <link refid="structtls__param__tem__offset"/>
+      </node>
+      <node id="279">
+        <label>tls_param_wps</label>
+        <link refid="structtls__param__wps"/>
+      </node>
+      <node id="283">
+        <label>tls_param_original_key</label>
+        <link refid="structtls__param__original__key"/>
+      </node>
+      <node id="275">
+        <label>tls_param_bssid</label>
+        <link refid="structtls__param__bssid"/>
+      </node>
+      <node id="278">
+        <label>tls_param_socket</label>
+        <link refid="structtls__param__socket"/>
+      </node>
+      <node id="272">
+        <label>tls_param_ip</label>
+        <link refid="structtls__param__ip"/>
+      </node>
+      <node id="276">
+        <label>tls_param_sha1</label>
+        <link refid="structtls__param__sha1"/>
+      </node>
+      <node id="269">
+        <label>tls_param_quick_connect</label>
+        <link refid="structtls__param__quick__connect"/>
+      </node>
+      <node id="280">
+        <label>tls_param_ssid</label>
+        <link refid="structtls__param__ssid"/>
+      </node>
+      <node id="274">
+        <label>tls_param_bgr</label>
+        <link refid="structtls__param__bgr"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Platform/wm_param.h" line="25" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="25" bodyend="108"/>
+    <listofallmembers>
+      <member refid="structtls__sys__param_1a3681cacd30a77ae6687d3c61f3cb8580" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>always_online</name></member>
+      <member refid="structtls__sys__param_1a2a18b102ba5eac50e10d5444d287ac5a" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>apsta_psk</name></member>
+      <member refid="structtls__sys__param_1a9bcebc693055170bacb0e6614e4d941f" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>apsta_ssid</name></member>
+      <member refid="structtls__sys__param_1abb6c1264bd342536c5acf6e1a4e9e9fe" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>auto_create_adhoc</name></member>
+      <member refid="structtls__sys__param_1a50df9bec7813f8a4c7cfe5ead22661a3" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>auto_mode</name></member>
+      <member refid="structtls__sys__param_1a33285b0a80161863efc159eaa0d63923" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>auto_powersave</name></member>
+      <member refid="structtls__sys__param_1a2bfdc54f0dfdeedba4851a03d2496381" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>auto_reconnect</name></member>
+      <member refid="structtls__sys__param_1a296cdba5e97ea1184e519f5906365e9a" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>auto_retrycnt</name></member>
+      <member refid="structtls__sys__param_1aedbf21946f2428286c9a6c5e7bf58235" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>auto_roam</name></member>
+      <member refid="structtls__sys__param_1a29049959201bf79d229b441e9ff51429" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>bssid</name></member>
+      <member refid="structtls__sys__param_1aa1803053ced635a8443b5006f36c70fe" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>channel</name></member>
+      <member refid="structtls__sys__param_1a91d33c42c27ce88f6750cd35cefb8f64" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>channel4softap</name></member>
+      <member refid="structtls__sys__param_1a70b999c35e6099499351291d8721fc34" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>channel_enable</name></member>
+      <member refid="structtls__sys__param_1aa7c8316015e71d07c664ff1ba063b1b2" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>channellist</name></member>
+      <member refid="structtls__sys__param_1a880e46b9a464bc8f40fe053dee3cbb19" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>CmdMode</name></member>
+      <member refid="structtls__sys__param_1a7f5aa4543f7ea4c76a81dddc35015461" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>debug_mode</name></member>
+      <member refid="structtls__sys__param_1ad8dde2931d7f497f1a12705b5aa72a5d" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>encry</name></member>
+      <member refid="structtls__sys__param_1a19d5296e555476eba745775ca6d344a4" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>encry4softap</name></member>
+      <member refid="structtls__sys__param_1ae1aeaa2f4f84518e717006095ef65046" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>EscapeChar</name></member>
+      <member refid="structtls__sys__param_1ae6a375a74507bbe4c300787cc1a488f7" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>EscapePeriod</name></member>
+      <member refid="structtls__sys__param_1a417b2631c20279e9f97a5c46f94df25d" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>EscReserved</name></member>
+      <member refid="structtls__sys__param_1a439d63815746ba424f048c128d1bae51" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>hardware_version</name></member>
+      <member refid="structtls__sys__param_1a619dbc4e1b43fbe18a54861cf1c82bb4" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>IoMode</name></member>
+      <member refid="structtls__sys__param_1a7f0609cb9437e95da065e58bc02adaf7" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>ipcfg</name></member>
+      <member refid="structtls__sys__param_1a26a34e3412a4ae869e2c69b8842e092b" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>ipcfg4softap</name></member>
+      <member refid="structtls__sys__param_1a1cea0c6ba634aa199b7a91258bd205ee" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>key</name></member>
+      <member refid="structtls__sys__param_1abf34b67c7dda7227d5ac9ade503f3237" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>key4softap</name></member>
+      <member refid="structtls__sys__param_1afe2d8889c72346b599dd28550594ce88" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>key_changed</name></member>
+      <member refid="structtls__sys__param_1a368091508e3b4be1bf9333850396e828" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>local_device_name</name></member>
+      <member refid="structtls__sys__param_1aa217fc59ecf0270069f0a79c43fabbfe" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>local_dnsname</name></member>
+      <member refid="structtls__sys__param_1a2bcfc39ef652022c8f33bd0fe59f16f8" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>oneshotflag</name></member>
+      <member refid="structtls__sys__param_1afa5fce00894de9fc54d9a81ee7947b68" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>oneshotres</name></member>
+      <member refid="structtls__sys__param_1a448fb349212eb8a25cdf9af0ba0c418e" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>oray_client_setting</name></member>
+      <member refid="structtls__sys__param_1a7f9920977bc306a0efa7894de1730913" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>original_key</name></member>
+      <member refid="structtls__sys__param_1a71092b4e983495019dfd94863eae5c96" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>original_ssid</name></member>
+      <member refid="structtls__sys__param_1abf71b2d99bef169095e0f1954fda261f" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>params_tem</name></member>
+      <member refid="structtls__sys__param_1a25106d86a28f90e40ac086be58ac49f9" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>PassWord</name></member>
+      <member refid="structtls__sys__param_1ae3ff65e29d7074300334b96b4f1c537a" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>psk</name></member>
+      <member refid="structtls__sys__param_1afa5582bf5fa263577c7231539c827e4b" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>quick_connect</name></member>
+      <member refid="structtls__sys__param_1a0ba4727119cca505b625dc9044f4f32d" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>remote_socket_cfg</name></member>
+      <member refid="structtls__sys__param_1afe6676e4b390f1b547fb37f19d95dcfc" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>res_2</name></member>
+      <member refid="structtls__sys__param_1a40c029a1d26e92bc3d456d41b2911613" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>res_3</name></member>
+      <member refid="structtls__sys__param_1af3f50ba40dfdc173030ab6e8e1b644da" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>res_4</name></member>
+      <member refid="structtls__sys__param_1ac45e91744fb57757d5fb90510803dc8b" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>res_5</name></member>
+      <member refid="structtls__sys__param_1aa518dd02f138aa9389239317f83db1a2" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>res_6</name></member>
+      <member refid="structtls__sys__param_1a0c816d7c2c7d3dbffe9eeb6c936eab04" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>sntp_service1</name></member>
+      <member refid="structtls__sys__param_1a8fee34a0a3110b7253ec08de128d240d" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>sntp_service2</name></member>
+      <member refid="structtls__sys__param_1a7e00d72afe0a9dbba0767c4ec5b7f101" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>sntp_service3</name></member>
+      <member refid="structtls__sys__param_1a831c7939e723a3ed9a69a346f90593cb" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>ssid</name></member>
+      <member refid="structtls__sys__param_1ab6b1587055a8a966f617fc1fff5ce881" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>ssid_broadcast_enable</name></member>
+      <member refid="structtls__sys__param_1a2a1c529f602ab218bf4b75b36ac5c921" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>ssid_changed</name></member>
+      <member refid="structtls__sys__param_1a346ef2fcdaaf90d0cdc26d1575bc138c" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>transparent_trigger_length</name></member>
+      <member refid="structtls__sys__param_1a4edeaf4ec5fdec35ba3810cbe1e83074" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>transparent_trigger_period</name></member>
+      <member refid="structtls__sys__param_1a654808a49e8fee8a45e0470c5d26367e" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>uart_cfg</name></member>
+      <member refid="structtls__sys__param_1ace855071bdbabb127bf61f38e385ad3d" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>upnp_enable</name></member>
+      <member refid="structtls__sys__param_1ab791ff5ce3783b6150c2162e6b421138" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>user_port_mode</name></member>
+      <member refid="structtls__sys__param_1a3e3fe7e6b1c362934abb07d7f4f90724" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>wbgr</name></member>
+      <member refid="structtls__sys__param_1a2a0ec8e48d900500cf99e66e034ca3ed" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>wbgr4softap</name></member>
+      <member refid="structtls__sys__param_1abde17bef1f3ddcdc1e36e8b7c84c5e2e" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>WebsCfg</name></member>
+      <member refid="structtls__sys__param_1ae153a6c60e4f4ab9951f33bafbf0c677" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>wireless_protocol</name></member>
+      <member refid="structtls__sys__param_1a3e4c984c76b07d61b17577a03bea1ca5" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>wireless_region</name></member>
+      <member refid="structtls__sys__param_1ab6e7d0fa07fd3b1d8f2672c4a38b1418" prot="public" virt="non-virtual"><scope>tls_sys_param</scope><name>wps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

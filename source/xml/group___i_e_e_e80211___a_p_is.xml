@@ -43,7 +43,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="276" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="276" bodyend="279"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="279" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="279" bodyend="282"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga4ccea16f85835ffa743570cf55f4ed20" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -84,7 +84,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="291" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="291" bodyend="294"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="294" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="294" bodyend="297"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga1ef5db47b23a17b45be398d4a43c1e5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -125,7 +125,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="306" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="306" bodyend="310"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="309" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="309" bodyend="313"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga0bc0556dd5342d10347cf72e870ed58b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -166,7 +166,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="322" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="322" bodyend="325"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="325" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="325" bodyend="328"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga503eea63896b3c1e4700e4257489e45d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -207,7 +207,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="337" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="337" bodyend="340"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="340" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="340" bodyend="343"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga9946c52e8ffb1595828936ac600b4671" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -248,7 +248,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="352" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="352" bodyend="355"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="355" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="355" bodyend="358"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga2a3725c98415154569bfe1d13102fa70" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -289,7 +289,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="367" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="367" bodyend="370"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="370" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="370" bodyend="373"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga6e803fd3afc44c3b628a01285291abcd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -330,7 +330,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="382" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="382" bodyend="385"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="385" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="385" bodyend="388"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3c4d8118db01060d37977291456fe41a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -371,7 +371,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="397" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="397" bodyend="400"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="400" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="400" bodyend="403"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3242e7a0af28d7b9546d4bffa1e09f15" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -412,7 +412,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="412" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="412" bodyend="415"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="415" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="415" bodyend="418"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gaf95e715523754214af837e080093b454" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -453,7 +453,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="427" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="427" bodyend="430"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="430" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="430" bodyend="433"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga8c3341a99bc865013cc543093319c7c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -494,7 +494,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="442" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="442" bodyend="445"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="445" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="445" bodyend="448"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gaeeb41a16b2c8b3da3eab6a338a52ae2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -535,7 +535,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="457" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="457" bodyend="465"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="460" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="460" bodyend="468"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga0ce406a50abfc5e8f4ee2e40ebc2c47d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -576,7 +576,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="477" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="477" bodyend="484"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="480" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="480" bodyend="487"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga18fda3400c6ddab70e57eab814d2f25d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -617,7 +617,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="497" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="497" bodyend="501"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="500" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="500" bodyend="504"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gad2c6ed3c6d68957615980311d8fee5f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -658,7 +658,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="513" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="513" bodyend="517"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="516" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="516" bodyend="520"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gaa0369cf8a5a91c272769ae33187a05a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -699,7 +699,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="529" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="529" bodyend="533"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="532" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="532" bodyend="536"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga5b25cea19895ff393fa0991efe24394c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -740,7 +740,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="545" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="545" bodyend="549"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="548" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="548" bodyend="552"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3d5a328d93f1a04e1d7ffa44a9b9b0a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -781,7 +781,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="561" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="561" bodyend="565"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="564" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="564" bodyend="568"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga071391970d2f0107ccf3c13681f410da" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -822,7 +822,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="577" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="577" bodyend="581"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="580" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="580" bodyend="584"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga5b02c8e88dd472c09d3a47cee961556a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -863,7 +863,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="593" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="593" bodyend="597"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="596" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="596" bodyend="600"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gaef074313f2c878f1e8fae8aa206b9b83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -904,7 +904,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="609" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="609" bodyend="613"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="612" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="612" bodyend="616"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gae67748eed65d02c249e004fe0c29f081" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -945,7 +945,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="625" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="625" bodyend="629"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="628" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="628" bodyend="632"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gad8e45fa5e8a95c28987857ebdafa6a32" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -986,7 +986,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="641" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="641" bodyend="645"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="644" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="644" bodyend="648"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga0ceba189598818c7522f54d1a8935a8d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1027,7 +1027,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="657" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="657" bodyend="661"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="660" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="660" bodyend="664"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gae9635ef101364abf04caf21a11dac20a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1068,7 +1068,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="673" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="673" bodyend="677"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="676" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="676" bodyend="680"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga7435ba2499564ed5a8881c98a16713ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1109,7 +1109,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="689" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="689" bodyend="693"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="692" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="692" bodyend="696"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3efbf59fec64c2c28084a74cfd6e003c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1150,7 +1150,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="705" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="705" bodyend="709"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="708" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="708" bodyend="712"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga08c29e058bbb7fa821ffed01ce039804" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1191,7 +1191,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="721" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="721" bodyend="725"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="724" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="724" bodyend="728"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga528a9f1c09ded8d08992864e2767bd4d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1232,7 +1232,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="737" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="737" bodyend="741"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="740" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="740" bodyend="744"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gae7147964ecfcce2c05bd6d21b6df66c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1273,7 +1273,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="753" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="753" bodyend="757"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="756" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="756" bodyend="760"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gab8c621e86103d61b09d32fe29c806051" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1314,7 +1314,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="769" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="769" bodyend="773"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="772" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="772" bodyend="776"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga623af8d567f71235fcbcafbc6ca60943" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1355,7 +1355,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="785" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="785" bodyend="789"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="788" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="788" bodyend="792"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga7eaaddcef0bd50636769a98a5d2e0fa7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1396,7 +1396,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="801" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="801" bodyend="805"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="804" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="804" bodyend="808"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga08d00d4194ef78b5832293be1779e962" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1437,7 +1437,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="817" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="817" bodyend="821"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="820" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="820" bodyend="824"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gada680e2ae96bfd12f6d5b4452349a29d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1478,7 +1478,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="833" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="833" bodyend="837"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="836" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="836" bodyend="840"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga3b74180128bb1d38358bc8fdfa6d1e07" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline u8 *</type>
@@ -1505,7 +1505,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1722" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1722" bodyend="1728"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1725" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1725" bodyend="1731"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga535b255dacd941ef6f0e050a9e9c9133" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline u8 *</type>
@@ -1532,7 +1532,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1744" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1744" bodyend="1751"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1747" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1747" bodyend="1754"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga899dd3551a175179b93a15fb3dc45c72" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline u8 *</type>
@@ -1559,7 +1559,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1767" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1767" bodyend="1773"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1770" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1770" bodyend="1776"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga24ef253bcfd73be0d51d7da6666e5422" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline bool</type>
@@ -1600,7 +1600,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1785" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1785" bodyend="1810"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1788" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1788" bodyend="1813"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga878ebf58062861494302d4e6375aaf7a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1641,7 +1641,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1824" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1824" bodyend="1830"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1827" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1827" bodyend="1833"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga699fc19043d4b46126fdfbacb107e5ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1682,7 +1682,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1844" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1844" bodyend="1850"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1847" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1847" bodyend="1853"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga25ab45be792ea6f4de77d99c46bc4e34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1723,7 +1723,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1864" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1864" bodyend="1872"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1867" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1867" bodyend="1875"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga7b138dd01777d4dbbf335bccb0ac9ccf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1764,7 +1764,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1887" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1887" bodyend="1895"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1890" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1890" bodyend="1898"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga0e9f9f953ba72a06fd887e63d6160460" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1816,7 +1816,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1922" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1922" bodyend="1928"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1925" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1925" bodyend="1931"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga4cdfc8d5890783045ff0c081d9f6e4b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline int</type>
@@ -1868,7 +1868,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1944" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1944" bodyend="1950"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1947" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1947" bodyend="1953"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1gac9a69984e13c46c28056f17a199e9019" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline unsigned long</type>
@@ -1895,7 +1895,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1961" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1961" bodyend="1964"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1964" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1964" bodyend="1967"/>
       </memberdef>
       <memberdef kind="function" id="group___i_e_e_e80211___a_p_is_1ga5f7e12080850708a1c227a543619511f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline bool</type>
@@ -1958,7 +1958,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1978" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1978" bodyend="2000"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1981" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1981" bodyend="2003"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -1972,7 +1972,7 @@
 <para>Convert IEEE802.11 HR DSSS channel to frequency (MHz). Ref IEEE 802.11-2007 section 18.4.6.2. The channels and frequencies are the same as those defined for DSSS. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1899" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1899" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1902" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1902" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i_e_e_e80211___a_p_is_1gadc9416b12a6ff8f083fbe292d2e6773e" prot="public" static="no">
         <name>ieee80211_freq_to_hr_chan</name>
@@ -1984,7 +1984,7 @@
 <para>Convert IEEE802.11 frequency (MHz) to HR DSSS channel. Ref IEEE 802.11-2007 section 18.4.6.2. The channels and frequencies are the same as those defined for DSSS. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1902" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1902" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1905" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1905" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i_e_e_e80211___a_p_is_1gaf260e43bf20825302a272e1501567470" prot="public" static="no">
         <name>ieee80211_erp_chan_to_freq</name>
@@ -1996,7 +1996,7 @@
 <para>Convert IEEE802.11 ERP channel to frequency (MHz). Ref IEEE 802.11-2007 section 19.4.2 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1905" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1905" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1908" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1908" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___i_e_e_e80211___a_p_is_1ga749d05722c7abf7e630e7d3252e50155" prot="public" static="no">
         <name>ieee80211_freq_to_erp_chan</name>
@@ -2008,7 +2008,7 @@
 <para>Convert IEEE802.11 frequency (MHz) to ERP channel. Ref IEEE 802.11-2007 section 19.4.2 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1907" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1907" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1910" column="9" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1910" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

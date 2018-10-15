@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="865" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="865" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="868" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="868" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__msrment__ie_1a0c45f0349473a818aea6cc1cb2e08cfc" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="866" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="866" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="869" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="869" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__msrment__ie_1abebbbf68309ae824d7409056f9f82080" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="867" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="867" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="870" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="870" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__msrment__ie_1a51bd6af557d1bf7d783eee65d71d9fa6" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -54,14 +54,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="868" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="868" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="871" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="871" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>struct <ref refid="structieee80211__msrment__ie" kindref="compound">ieee80211_msrment_ie</ref></para><para>This structure refers to &quot;Measurement Request/Report information element&quot; </para>    </detaileddescription>
-    <location file="Include/WiFi/wm_ieee80211.h" line="864" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="864" bodyend="869"/>
+    <location file="Include/WiFi/wm_ieee80211.h" line="867" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="867" bodyend="872"/>
     <listofallmembers>
       <member refid="structieee80211__msrment__ie_1a0c45f0349473a818aea6cc1cb2e08cfc" prot="public" virt="non-virtual"><scope>ieee80211_msrment_ie</scope><name>mode</name></member>
       <member refid="structieee80211__msrment__ie_1a51bd6af557d1bf7d783eee65d71d9fa6" prot="public" virt="non-virtual"><scope>ieee80211_msrment_ie</scope><name>request</name></member>

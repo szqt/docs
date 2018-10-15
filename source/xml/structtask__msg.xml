@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="218" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="82" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="221" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1a2942db1e2d2d7e4e4f7ef31af63812a6" prot="public" static="no" mutable="no">
         <type><ref refid="wm__wl__task_8h_1a432c791edd563702d1d4bfcd1031f35f" kindref="member">tls_sem_t</ref> *</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="83" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="83" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="86" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1a6c66ab4ac6bfe888e0f6a8b9e3c830fd" prot="public" static="no" mutable="no">
         <type><ref refid="wm__wl__task_8h_1a6d13ec2c7d9b8b7eb510f552bac04e5c" kindref="member">start_routine</ref></type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="86" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="86" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="89" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1aaa7cc671ad262169349bab4599b04172" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="87" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="87" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="90" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1abab970a0462c6362b76a8cf5814b6c8b" prot="public" static="no" mutable="no">
         <type>struct task_msg::@5::@6</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="88" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="91" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1a6b27b2e143fee0208e8c7471de0e28fc" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="92" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="92" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="95" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1a37c7131cb8a1b946720810b9b8d74030" prot="public" static="no" mutable="no">
         <type>struct task_msg::@5::@7</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="93" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="96" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1a9c4094accd68ae2194b43f9864b7c02c" prot="public" static="no" mutable="no">
         <type>u32</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="95" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="95" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="98" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1a789c34aaa536b5bdbe4bef41a949d188" prot="public" static="no" mutable="no">
         <type><ref refid="wm__wl__timers_8h_1acfc4125c5b90a63192b3372c35434217" kindref="member">tls_timeout_handler</ref></type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="96" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="96" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="99" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1aad780a34e5ffc5db1578b60de50efda7" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="97" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="97" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="100" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1ac033d0dd48d58747626f4eb028577901" prot="public" static="no" mutable="no">
         <type>struct task_msg::@5::@8</type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="98" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="101" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__msg_1aa06288bb67c3e4851c263eac7e1ff88f" prot="public" static="no" mutable="no">
         <type>union task_msg::@5</type>
@@ -158,14 +158,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="99" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="102" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>message of task </para>    </detaileddescription>
-    <location file="Include/Platform/wm_wl_task.h" line="81" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="81" bodyend="100"/>
+    <location file="Include/Platform/wm_wl_task.h" line="84" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="84" bodyend="103"/>
     <listofallmembers>
       <member refid="structtask__msg_1aad780a34e5ffc5db1578b60de50efda7" prot="public" virt="non-virtual"><scope>task_msg</scope><name>arg</name></member>
       <member refid="structtask__msg_1abab970a0462c6362b76a8cf5814b6c8b" prot="public" virt="non-virtual"><scope>task_msg</scope><name>cb</name></member>

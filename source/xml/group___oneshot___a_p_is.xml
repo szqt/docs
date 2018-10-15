@@ -18,7 +18,7 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>WiFi data frame receive call back function. </para>        </briefdescription>
+<para>Handle wild packets coming from the air. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -47,7 +47,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="82" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="104" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___oneshot___a_p_is_1ga7fd56a1699beb71845007b343bb83661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -58,7 +58,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to reply to app of phone when airk- iss of WeChat configures successfully. </para>        </briefdescription>
+<para>This function is used to acknowledge app when airkiss process is done. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -73,7 +73,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="95" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="116" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___oneshot___a_p_is_1ga189e6763a1a848189a6395a4c52fe473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -89,7 +89,7 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>This function is used to deal with airkiss&apos;s protocol packet. </para>        </briefdescription>
+<para>This function is used to deal with airkiss&apos;s wild packet. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -111,7 +111,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="107" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="128" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___oneshot___a_p_is_1gad9418d5b0ef894f3cbfcb5ebf202406e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -137,7 +137,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="117" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="138" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___oneshot___a_p_is_1ga18bec4a77e6a69139a82a25d8575c662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -163,7 +163,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="127" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="148" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___oneshot___a_p_is_1gad0093be0797ef8a428b3ccf6b4fc94f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -189,7 +189,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="138" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="159" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___oneshot___a_p_is_1ga36409231df7e83719b20d8c501490738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -211,19 +211,20 @@
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>
-<simplesect kind="note"><para>None </para></simplesect>
+<simplesect kind="note"><para>Not in use now </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="150" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="171" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="group___oneshot___a_p_is_1ga27f65431a471b8220be5a9dd296925e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group___oneshot___a_p_is_1ga2511b67107fcf8ce147987686f24ff8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void tls_oneshot_switch_channel_tim_stop</definition>
-        <argsstring>(void)</argsstring>
+        <argsstring>(struct ieee80211_hdr *hdr)</argsstring>
         <name>tls_oneshot_switch_channel_tim_stop</name>
         <param>
-          <type>void</type>
+          <type>struct <ref refid="structieee80211__hdr" kindref="compound">ieee80211_hdr</ref> *</type>
+          <declname>hdr</declname>
         </param>
         <briefdescription>
 <para>This function is used to stop oneshot timer. </para>        </briefdescription>
@@ -241,7 +242,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="161" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="182" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___oneshot___a_p_is_1gab62769507d01baf5126652bc118755ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -267,7 +268,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="172" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="193" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___oneshot___a_p_is_1gac620df8585aa030a001ff42b126801a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -313,17 +314,24 @@
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
 <parameternamelist>
-<parametername>1:bssid&amp;ssid</parametername>
+<parametername>1</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>match 0:bssid&amp;ssid not match</para></parameterdescription>
+<para>bssid&amp;ssid match </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bssid&amp;ssid not match</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="note"><para>None </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="186" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="207" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___oneshot___a_p_is_1ga2bf80c6873e73539cad5fbdb54f0b96d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -379,7 +387,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="199" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="220" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

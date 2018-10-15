@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1630" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1630" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1633" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1633" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a87a086dc968a76742281e06a3e0758c0" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1631" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1631" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1634" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1634" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a78a624282b2c358e90049419d0c523e7" prot="public" static="no" mutable="no">
         <type>s8</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1632" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1632" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1635" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1635" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a256fb042f4481b7165fba1e41d408c37" prot="public" static="no" mutable="no">
         <type>__packed struct ieee80211_country_ie_triplet::@80::@81</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1633" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1636" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a554a9fc5c988972d8789315f48279d52" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1635" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1635" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1638" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1638" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a48777649e4c55e1a74bd35bb28496441" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1636" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1636" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1639" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1639" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a602060bbceb0e5ae68ca05d5efcc2f9f" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1637" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1637" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1640" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1640" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a2989ac02f9f4ec95fca0f0c0264d3dd4" prot="public" static="no" mutable="no">
         <type>__packed struct ieee80211_country_ie_triplet::@80::@82</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1638" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1641" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__country__ie__triplet_1a4afaadd1dd83844b9116940f085b6b33" prot="public" static="no" mutable="no">
         <type>__packed union ieee80211_country_ie_triplet::@80</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1639" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1642" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -136,14 +136,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="592" column="1"/>
+        <location file="Include/WiFi/wm_ieee80211_gcc.h" line="595" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Include/WiFi/wm_ieee80211.h" line="1627" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1627" bodyend="1640"/>
+    <location file="Include/WiFi/wm_ieee80211.h" line="1630" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1630" bodyend="1643"/>
     <listofallmembers>
       <member refid="structieee80211__country__ie__triplet_1a9f0b20f7f5bdbbd56607dea90f207a2d" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>__attribute__</name></member>
       <member refid="structieee80211__country__ie__triplet_1a256fb042f4481b7165fba1e41d408c37" prot="public" virt="non-virtual"><scope>ieee80211_country_ie_triplet</scope><name>chans</name></member>

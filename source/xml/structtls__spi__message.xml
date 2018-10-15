@@ -75,18 +75,18 @@
     <detaileddescription>
 <para>one multi-segment SPI transaction</para><para>A struct <ref refid="structtls__spi__message" kindref="compound">tls_spi_message</ref> is used to execute an atomic sequence of data transfers, each represented by a struct <ref refid="structtls__spi__transfer" kindref="compound">tls_spi_transfer</ref>. The sequence is &quot;atomic&quot; in the sense that no other spi_message may use that SPI bus until that sequence completes. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="232">
+      <node id="254">
         <label>dl_list</label>
         <link refid="structdl__list"/>
-        <childnode refid="232" relation="usage">
+        <childnode refid="254" relation="usage">
           <edgelabel>prev</edgelabel>
           <edgelabel>next</edgelabel>
         </childnode>
       </node>
-      <node id="231">
+      <node id="253">
         <label>tls_spi_message</label>
         <link refid="structtls__spi__message"/>
-        <childnode refid="232" relation="usage">
+        <childnode refid="254" relation="usage">
           <edgelabel>transfers</edgelabel>
           <edgelabel>queue</edgelabel>
         </childnode>

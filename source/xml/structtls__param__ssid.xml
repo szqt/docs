@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="298" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="298" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="299" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="299" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__param__ssid_1a0f42395a29c537550e6f0e9038e95dbc" prot="public" static="no" mutable="no">
         <type>u32</type>
@@ -28,14 +28,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="299" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="299" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="300" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="300" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Structure of SSID parameter </para>    </detaileddescription>
-    <location file="Include/Platform/wm_params.h" line="297" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="297" bodyend="300"/>
+    <location file="Include/Platform/wm_params.h" line="298" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="298" bodyend="301"/>
     <listofallmembers>
       <member refid="structtls__param__ssid_1a598352a914d6aa0d6deb83a2bf8a70bc" prot="public" virt="non-virtual"><scope>tls_param_ssid</scope><name>ssid</name></member>
       <member refid="structtls__param__ssid_1a0f42395a29c537550e6f0e9038e95dbc" prot="public" virt="non-virtual"><scope>tls_param_ssid</scope><name>ssid_len</name></member>

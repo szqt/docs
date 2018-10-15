@@ -10,55 +10,55 @@
     <includedby refid="wm__i2s_8h" local="yes">Include/Driver/wm_i2s.h</includedby>
     <includedby refid="wm__lcd_8h" local="yes">Include/Driver/wm_lcd.h</includedby>
     <incdepgraph>
-      <node id="499">
+      <node id="503">
         <label>core_cm3.h</label>
       </node>
-      <node id="498">
+      <node id="502">
         <label>Include/wm_regs.h</label>
         <link refid="wm__regs_8h"/>
-        <childnode refid="499" relation="include">
+        <childnode refid="503" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="503">
-        <label>Include/Driver/wm_gpio_afsel.h</label>
-        <link refid="wm__gpio__afsel_8h"/>
-      </node>
-      <node id="502">
+      <node id="506">
         <label>Include/Driver/wm_7816.h</label>
         <link refid="wm__7816_8h"/>
       </node>
-      <node id="504">
-        <label>Include/Driver/wm_i2c.h</label>
-        <link refid="wm__i2c_8h"/>
-      </node>
-      <node id="506">
+      <node id="510">
         <label>Include/Driver/wm_lcd.h</label>
         <link refid="wm__lcd_8h"/>
       </node>
-      <node id="505">
+      <node id="507">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
+      </node>
+      <node id="509">
         <label>Include/Driver/wm_i2s.h</label>
         <link refid="wm__i2s_8h"/>
       </node>
-      <node id="501">
+      <node id="508">
+        <label>Include/Driver/wm_i2c.h</label>
+        <link refid="wm__i2c_8h"/>
+      </node>
+      <node id="505">
         <label>Include/wm_include.h</label>
         <link refid="wm__include_8h"/>
       </node>
-      <node id="500">
+      <node id="504">
         <label>Include/wm_regs.h</label>
         <link refid="wm__regs_8h"/>
-        <childnode refid="501" relation="include">
-        </childnode>
-        <childnode refid="502" relation="include">
-        </childnode>
-        <childnode refid="503" relation="include">
-        </childnode>
-        <childnode refid="504" relation="include">
-        </childnode>
         <childnode refid="505" relation="include">
         </childnode>
         <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -91,7 +91,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>STM32 uses 4 Bits for the Priority Levels </para>        </detaileddescription>
+<para>W600 uses 4 Bits for the Priority Levels </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/wm_regs.h" line="16" column="9" bodyfile="Include/wm_regs.h" bodystart="16" bodyend="-1"/>
@@ -3145,7 +3145,7 @@
       <memberdef kind="define" id="wm__regs_8h_1a4474c5e3b0e562375500b88f78a75dbc" prot="public" static="no">
         <name>SPI_GET_SCLK_DIVIDER</name>
         <param><defname>clk</defname></param>
-        <initializer>((APB_CLK)/((clk) * 2) - 1)/*In <ref refid="wm__osal_8h_1a8489802eaedf42fdb5f2ce1708eaffa2" kindref="member">HZ</ref>*/</initializer>
+        <initializer>((APB_CLK)/((clk) * 2) - 1)/*In HZ*/</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -6719,7 +6719,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/wm_regs.h" line="862" column="1" bodyfile="Include/wm_regs.h" bodystart="862" bodyend="866"/>
+        <location file="Include/wm_regs.h" line="861" column="1" bodyfile="Include/wm_regs.h" bodystart="861" bodyend="865"/>
       </memberdef>
       <memberdef kind="function" id="group___r_e_g___a_p_is_1ga45e9a249b27a47601fa57e5536a870c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline void</type>
@@ -6768,7 +6768,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/wm_regs.h" line="881" column="1" bodyfile="Include/wm_regs.h" bodystart="881" bodyend="890"/>
+        <location file="Include/wm_regs.h" line="880" column="1" bodyfile="Include/wm_regs.h" bodystart="880" bodyend="889"/>
       </memberdef>
       <memberdef kind="function" id="group___r_e_g___a_p_is_1ga58cb5725367e1d9579efb5dea453de4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>__inline unsigned int</type>
@@ -6813,7 +6813,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/wm_regs.h" line="903" column="1" bodyfile="Include/wm_regs.h" bodystart="903" bodyend="912"/>
+        <location file="Include/wm_regs.h" line="902" column="1" bodyfile="Include/wm_regs.h" bodystart="902" bodyend="911"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -7626,38 +7626,38 @@ Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="849"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="850"><highlight class="normal"></highlight></codeline>
 <codeline lineno="851"><highlight class="normal"></highlight></codeline>
-<codeline lineno="862"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_reg_read32(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reg)</highlight></codeline>
-<codeline lineno="863"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val<sp/>=<sp/>*(TLS_REG<sp/>*)reg;</highlight></codeline>
-<codeline lineno="865"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>val;</highlight></codeline>
-<codeline lineno="866"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="861"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_reg_read32(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reg)</highlight></codeline>
+<codeline lineno="862"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="863"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val<sp/>=<sp/>*(TLS_REG<sp/>*)reg;</highlight></codeline>
+<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>val;</highlight></codeline>
+<codeline lineno="865"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="866"><highlight class="normal"></highlight></codeline>
 <codeline lineno="867"><highlight class="normal"></highlight></codeline>
-<codeline lineno="868"><highlight class="normal"></highlight></codeline>
-<codeline lineno="881"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_bitband_write(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)</highlight></codeline>
-<codeline lineno="882"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="883"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
-<codeline lineno="884"><highlight class="normal"></highlight></codeline>
-<codeline lineno="885"><highlight class="normal"><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>(((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(addr)<sp/>&amp;<sp/>0xF0000000)<sp/>+<sp/>0x02000000)<sp/>\</highlight></codeline>
-<codeline lineno="886"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+((((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(addr)&amp;0xFFFFF)&lt;&lt;5)\</highlight></codeline>
-<codeline lineno="887"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+(<sp/><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(bit)&lt;&lt;2));</highlight></codeline>
-<codeline lineno="888"><highlight class="normal"></highlight></codeline>
-<codeline lineno="889"><highlight class="normal"><sp/><sp/><sp/><sp/>*((</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>)temp)<sp/>=<sp/>val;</highlight></codeline>
-<codeline lineno="890"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="891"><highlight class="normal"></highlight></codeline>
-<codeline lineno="903"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_bitband_read(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)</highlight></codeline>
-<codeline lineno="904"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="905"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
-<codeline lineno="906"><highlight class="normal"></highlight></codeline>
-<codeline lineno="907"><highlight class="normal"><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>(((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(addr)<sp/>&amp;<sp/>0xF0000000)<sp/>+<sp/>0x02000000)<sp/>\</highlight></codeline>
-<codeline lineno="908"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+((((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(addr)&amp;0xFFFFF)&lt;&lt;5)\</highlight></codeline>
-<codeline lineno="909"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+(<sp/><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(bit)&lt;&lt;2));</highlight></codeline>
-<codeline lineno="910"><highlight class="normal"></highlight></codeline>
-<codeline lineno="911"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*((</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*)temp);</highlight></codeline>
-<codeline lineno="912"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="880"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_bitband_write(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)</highlight></codeline>
+<codeline lineno="881"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="882"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="883"><highlight class="normal"></highlight></codeline>
+<codeline lineno="884"><highlight class="normal"><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>(((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(addr)<sp/>&amp;<sp/>0xF0000000)<sp/>+<sp/>0x02000000)<sp/>\</highlight></codeline>
+<codeline lineno="885"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+((((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(addr)&amp;0xFFFFF)&lt;&lt;5)\</highlight></codeline>
+<codeline lineno="886"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+(<sp/><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(bit)&lt;&lt;2));</highlight></codeline>
+<codeline lineno="887"><highlight class="normal"></highlight></codeline>
+<codeline lineno="888"><highlight class="normal"><sp/><sp/><sp/><sp/>*((</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>)temp)<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="889"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="890"><highlight class="normal"></highlight></codeline>
+<codeline lineno="902"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__inline<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_bitband_read(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)</highlight></codeline>
+<codeline lineno="903"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="904"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="905"><highlight class="normal"></highlight></codeline>
+<codeline lineno="906"><highlight class="normal"><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>(((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(addr)<sp/>&amp;<sp/>0xF0000000)<sp/>+<sp/>0x02000000)<sp/>\</highlight></codeline>
+<codeline lineno="907"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+((((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(addr)&amp;0xFFFFF)&lt;&lt;5)\</highlight></codeline>
+<codeline lineno="908"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+(<sp/><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)(bit)&lt;&lt;2));</highlight></codeline>
+<codeline lineno="909"><highlight class="normal"></highlight></codeline>
+<codeline lineno="910"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*((</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*)temp);</highlight></codeline>
+<codeline lineno="911"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="912"><highlight class="normal"></highlight></codeline>
 <codeline lineno="913"><highlight class="normal"></highlight></codeline>
-<codeline lineno="914"><highlight class="normal"></highlight></codeline>
-<codeline lineno="923"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_REGS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="924"><highlight class="normal"></highlight></codeline>
+<codeline lineno="922"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_REGS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="923"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Include/wm_regs.h"/>
   </compounddef>

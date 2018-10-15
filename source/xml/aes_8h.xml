@@ -9,9 +9,6 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
-      <node id="318">
-        <label>stddef.h</label>
-      </node>
       <node id="317">
         <label>Include/Platform/aes.h</label>
         <link refid="aes_8h"/>
@@ -19,6 +16,9 @@
         </childnode>
         <childnode refid="319" relation="include">
         </childnode>
+      </node>
+      <node id="318">
+        <label>stddef.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="structps_aes_key__t" prot="public">psAesKey_t</innerclass>

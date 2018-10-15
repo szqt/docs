@@ -10,6 +10,10 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
+      <node id="143">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
       <node id="141">
         <label>Include/Driver/wm_hspi.h</label>
         <link refid="wm__hspi_8h"/>
@@ -17,10 +21,6 @@
         </childnode>
         <childnode refid="143" relation="include">
         </childnode>
-      </node>
-      <node id="143">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -122,7 +122,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>spi/sdio buffer??Wraper controller can only access the address after the 0x60000 </para>        </detaileddescription>
+<para>spi/sdio buffer，Wraper controller can only access the address after the 0x60000 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/Driver/wm_hspi.h" line="30" column="9" bodyfile="Include/Driver/wm_hspi.h" bodystart="30" bodyend="-1"/>
@@ -680,7 +680,7 @@
 <para>failed</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>When the system is initialized, the function has been called, so users can not call the function. </para></simplesect>
+<simplesect kind="note"><para>When the system is initialized, the function has been called, so users can not call this function. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -975,7 +975,7 @@ Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
 <codeline lineno="113" refid="structtls__hspi__tx__desc" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__hspi__tx__desc" kindref="compound">tls_hspi_tx_desc</ref><sp/>{</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>valid_ctrl;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>u32<sp/>valid_ctrl;</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>buf_info;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>buf_addr[3];</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>next_desc_addr;</highlight></codeline>

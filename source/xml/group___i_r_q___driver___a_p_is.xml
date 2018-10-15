@@ -48,14 +48,14 @@
           <declname>data</declname>
         </param>
         <briefdescription>
-<para>This function is used to register interrupt. </para>        </briefdescription>
+<para>This function is used to register interrupt handler function. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">vec_no</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>interrupt no </para></parameterdescription>
+<para>interrupt NO </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -96,7 +96,7 @@
 <parametername direction="in">vec_no</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>interrupt no</para></parameterdescription>
+<para>interrupt NO</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>
@@ -123,7 +123,7 @@
 <parametername direction="in">vec_no</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>interrupt no</para></parameterdescription>
+<para>interrupt NO</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>
@@ -142,7 +142,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>get isr count </para>        </briefdescription>
+<para>This function is used to get the isr count. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

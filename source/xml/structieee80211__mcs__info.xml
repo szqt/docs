@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1111" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1111" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1114" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mcs__info_1ae0f11fddabdb6d20a1eca10edf2fe6d9" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1112" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1112" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1115" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mcs__info_1a3bf519900a16768b26cb398360df6180" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1113" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1113" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1116" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__mcs__info_1aac0079d11e956d8810e7f54c5ef2d022" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -54,14 +54,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1114" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1114" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1117" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1117" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>struct <ref refid="structieee80211__mcs__info" kindref="compound">ieee80211_mcs_info</ref> - MCS information : RX mask : highest supported RX rate. If set represents the highest supported RX data rate in units of 1 Mbps. If this field is 0 this value should not be used to consider the highest RX data rate supported. : TX parameters </para>    </detaileddescription>
-    <location file="Include/WiFi/wm_ieee80211.h" line="1110" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1110" bodyend="1115"/>
+    <location file="Include/WiFi/wm_ieee80211.h" line="1113" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1113" bodyend="1118"/>
     <listofallmembers>
       <member refid="structieee80211__mcs__info_1aac0079d11e956d8810e7f54c5ef2d022" prot="public" virt="non-virtual"><scope>ieee80211_mcs_info</scope><name>reserved</name></member>
       <member refid="structieee80211__mcs__info_1ae0f11fddabdb6d20a1eca10edf2fe6d9" prot="public" virt="non-virtual"><scope>ieee80211_mcs_info</scope><name>rx_highest</name></member>

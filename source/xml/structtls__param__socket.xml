@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="352" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="352" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="359" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="359" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__param__socket_1ad69417c93c0b774e6a2d3d9bae6716c8" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="353" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="353" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="360" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="360" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__param__socket_1ae43c73949144e4185ffa97a42d92cb5d" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="354" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="354" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="361" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="361" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtls__param__socket_1a4dd7f318b9ede8a7446638695a9843d5" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -54,14 +54,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="355" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="355" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="362" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="362" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Structure of socket parameter </para>    </detaileddescription>
-    <location file="Include/Platform/wm_params.h" line="351" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="351" bodyend="356"/>
+    <location file="Include/Platform/wm_params.h" line="358" column="1" bodyfile="Include/Platform/wm_params.h" bodystart="358" bodyend="363"/>
     <listofallmembers>
       <member refid="structtls__param__socket_1ad69417c93c0b774e6a2d3d9bae6716c8" prot="public" virt="non-virtual"><scope>tls_param_socket</scope><name>client_or_server</name></member>
       <member refid="structtls__param__socket_1a4dd7f318b9ede8a7446638695a9843d5" prot="public" virt="non-virtual"><scope>tls_param_socket</scope><name>host</name></member>

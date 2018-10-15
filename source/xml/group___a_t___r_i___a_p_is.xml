@@ -38,7 +38,7 @@
 <para>failed</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>None </para></simplesect>
+<simplesect kind="note"><para>Usually the system will call this api at power on. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -53,7 +53,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to initialize high speed SPI used by AT&amp;RI Command. </para>        </briefdescription>
+<para>This function is used to initialize high speed SPI. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -78,11 +78,11 @@
 <para>failed</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>None </para></simplesect>
+<simplesect kind="note"><para>Users can decide to call this api or not according to his application. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_at_ri_init.h" line="58" column="1"/>
+        <location file="Include/App/wm_at_ri_init.h" line="57" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___a_t___r_i___a_p_is_1gab956ba76458229921f3efbea50c637b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -93,7 +93,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to initialize UART used by AT&amp;RI Command. </para>        </briefdescription>
+<para>This function is used to initialize UART. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -104,11 +104,11 @@
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>
-<simplesect kind="note"><para>None </para></simplesect>
+<simplesect kind="note"><para>Usually the system will call this api at power on. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_at_ri_init.h" line="70" column="1"/>
+        <location file="Include/App/wm_at_ri_init.h" line="68" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

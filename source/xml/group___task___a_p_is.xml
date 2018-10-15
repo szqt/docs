@@ -13,7 +13,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>task initialized </para>        </briefdescription>
+<para>Task initialized. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -42,7 +42,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="143" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="146" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___task___a_p_is_1ga3123df4ab17dcd2872a04d8c8598de94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>s8</type>
@@ -54,7 +54,7 @@
           <declname>task_param</declname>
         </param>
         <briefdescription>
-<para>running the task </para>        </briefdescription>
+<para>Running the task. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -83,7 +83,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="155" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="158" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___task___a_p_is_1gaf39105749769ea398ec3606dfa022928" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>s8</type>
@@ -111,7 +111,7 @@
           <declname>msg_id</declname>
         </param>
         <briefdescription>
-<para>running the callback function </para>        </briefdescription>
+<para>Running the callback function. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -168,7 +168,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="171" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="174" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___task___a_p_is_1gaa9015aa23db873494a482e4c891d56f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>s8</type>
@@ -192,7 +192,7 @@
           <declname>block</declname>
         </param>
         <briefdescription>
-<para>running the callback function </para>        </briefdescription>
+<para>Running the callback function. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -242,7 +242,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="187" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="190" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___task___a_p_is_1ga085d796fbd8199146b1b1304a23ba5cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>s8</type>
@@ -266,7 +266,7 @@
           <declname>arg</declname>
         </param>
         <briefdescription>
-<para>add a timer to the task </para>        </briefdescription>
+<para>Add a timer to the task. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -316,7 +316,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="203" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="206" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___task___a_p_is_1ga66067de7784d05119b158fc09c5b5b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>s8</type>
@@ -336,7 +336,7 @@
           <declname>arg</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Stop or delay the timer to expire. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -379,7 +379,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="218" column="1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="221" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -11,7 +11,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>print information of the info level </para>        </detaileddescription>
+<para>Print information of the info level </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/wm_debug.h" line="83" column="9" bodyfile="Include/wm_debug.h" bodystart="83" bodyend="-1"/>
@@ -23,7 +23,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>print information of the warning level </para>        </detaileddescription>
+<para>Print information of the warning level </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/wm_debug.h" line="91" column="9" bodyfile="Include/wm_debug.h" bodystart="91" bodyend="-1"/>
@@ -35,7 +35,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>print information of the error level </para>        </detaileddescription>
+<para>Print information of the error level </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/wm_debug.h" line="99" column="9" bodyfile="Include/wm_debug.h" bodystart="99" bodyend="-1"/>
@@ -47,7 +47,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>print information of the dump level </para>        </detaileddescription>
+<para>Print information of the dump level </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="Include/wm_debug.h" line="116" column="9" bodyfile="Include/wm_debug.h" bodystart="116" bodyend="-1"/>

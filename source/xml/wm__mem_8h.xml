@@ -56,7 +56,7 @@
 <parametername>pointer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>memory alloc success</para></parameterdescription>
+<para>pointer to the address of the allocated memory</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="note"><para>None </para></simplesect>
@@ -112,7 +112,7 @@
 <parametername>Pointer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>realloc success</para></parameterdescription>
+<para>pointer to the address of the allocated memory</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="note"><para>None </para></simplesect>
@@ -147,7 +147,7 @@
 <parametername>Pointer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>realloc success</para></parameterdescription>
+<para>pointer to the address of the allocated memory</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="note"><para>None </para></simplesect>
@@ -163,21 +163,21 @@
         <param><defname>len</defname></param>
         <initializer>memcpy(dst,src,len)</initializer>
         <briefdescription>
-<para>This function is used to copy memory from src to dst. </para>        </briefdescription>
+<para>This function is used to copy memory content from one address to another address. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">dst</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>pointer to destination </para></parameterdescription>
+<para>pointer to destination address </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">src</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>pointer to source </para></parameterdescription>
+<para>pointer to source address </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -208,21 +208,21 @@
         <param><defname>len</defname></param>
         <initializer>memcpy(dst,src,len)</initializer>
         <briefdescription>
-<para>This function is used to copy memory from src to dst. </para>        </briefdescription>
+<para>This function is used to copy memory content from one address to another address. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">dst</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>pointer to destination </para></parameterdescription>
+<para>pointer to destination address </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">src</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>pointer to source </para></parameterdescription>
+<para>pointer to source address </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>

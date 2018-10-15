@@ -14,7 +14,7 @@
 <para>I2S Control Register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="133" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="133" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="135" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_i2_s___t_1aea829e996ec106bab7e691aea3a04981" prot="public" static="no" mutable="no">
         <type>__IO uint32_t</type>
@@ -27,7 +27,7 @@
 <para>I2S Interrupt mask Register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="135" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="135" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="137" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_i2_s___t_1a6ca469d52e059c2bc348c6bea2b94c4b" prot="public" static="no" mutable="no">
         <type>__IO uint32_t</type>
@@ -40,7 +40,7 @@
 <para>I2S Interrupt source Register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="137" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="137" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="139" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_i2_s___t_1a602a6dd8af02b810842d31d646f15f92" prot="public" static="no" mutable="no">
         <type>__I uint32_t</type>
@@ -53,7 +53,7 @@
 <para>I2S Interrupt status Register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="139" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="139" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="141" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_i2_s___t_1a3d6c62e3d024833df3258e5158d6d037" prot="public" static="no" mutable="no">
         <type>__O uint32_t</type>
@@ -66,7 +66,7 @@
 <para>I2S TX data Register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="141" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="141" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="143" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_i2_s___t_1a4710935556944c05a27447a90c256fd0" prot="public" static="no" mutable="no">
         <type>__I uint32_t</type>
@@ -79,14 +79,14 @@
 <para>I2S RX data Register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Driver/wm_i2s.h" line="143" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="143" bodyend="-1"/>
+        <location file="Include/Driver/wm_i2s.h" line="145" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Include/Driver/wm_i2s.h" line="131" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="130" bodyend="144"/>
+    <location file="Include/Driver/wm_i2s.h" line="133" column="1" bodyfile="Include/Driver/wm_i2s.h" bodystart="132" bodyend="146"/>
     <listofallmembers>
       <member refid="struct_i2_s___t_1a14d380e7e9080f3691afdcd5b4fb939b" prot="public" virt="non-virtual"><scope>I2S_T</scope><name>CTRL</name></member>
       <member refid="struct_i2_s___t_1aea829e996ec106bab7e691aea3a04981" prot="public" virt="non-virtual"><scope>I2S_T</scope><name>INT_MASK</name></member>

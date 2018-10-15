@@ -269,47 +269,47 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="260">
+      <node id="299">
         <label>tls_uart_options</label>
         <link refid="structtls__uart__options"/>
       </node>
-      <node id="257">
+      <node id="296">
         <label>tls_uart_circ_buf</label>
         <link refid="structtls__uart__circ__buf"/>
       </node>
-      <node id="256">
+      <node id="295">
         <label>tls_uart_port</label>
         <link refid="structtls__uart__port"/>
-        <childnode refid="257" relation="usage">
+        <childnode refid="296" relation="usage">
           <edgelabel>recv</edgelabel>
         </childnode>
-        <childnode refid="258" relation="usage">
+        <childnode refid="297" relation="usage">
           <edgelabel>tx_msg_pending_list</edgelabel>
           <edgelabel>tx_msg_to_be_freed_list</edgelabel>
         </childnode>
-        <childnode refid="259" relation="usage">
+        <childnode refid="298" relation="usage">
           <edgelabel>regs</edgelabel>
         </childnode>
-        <childnode refid="260" relation="usage">
+        <childnode refid="299" relation="usage">
           <edgelabel>opts</edgelabel>
         </childnode>
-        <childnode refid="261" relation="usage">
+        <childnode refid="300" relation="usage">
           <edgelabel>icount</edgelabel>
         </childnode>
       </node>
-      <node id="259">
+      <node id="298">
         <label>TLS_UART_REGS</label>
         <link refid="struct_t_l_s___u_a_r_t___r_e_g_s"/>
       </node>
-      <node id="258">
+      <node id="297">
         <label>dl_list</label>
         <link refid="structdl__list"/>
-        <childnode refid="258" relation="usage">
+        <childnode refid="297" relation="usage">
           <edgelabel>prev</edgelabel>
           <edgelabel>next</edgelabel>
         </childnode>
       </node>
-      <node id="261">
+      <node id="300">
         <label>tls_uart_icount</label>
         <link refid="structtls__uart__icount"/>
       </node>

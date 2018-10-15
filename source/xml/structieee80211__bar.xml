@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1086" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1086" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1089" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1089" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__bar_1a6d5244544915187d86caea052c352cca" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1087" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1087" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1090" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1090" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__bar_1ade04439126a8851e78cc6f536a624f81" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1088" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1088" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1091" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1091" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__bar_1a34e80342284a15b9f1436e43de46efc5" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1089" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1089" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1092" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1092" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__bar_1a9f8bc65acf917cd363e78c1af5ffb361" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1090" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1090" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1093" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1093" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__bar_1afce0c84e9b6920c5df32c07895960f2f" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -80,14 +80,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="1091" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1091" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="1094" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1094" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>struct <ref refid="structieee80211__bar" kindref="compound">ieee80211_bar</ref> - HT Block Ack Request</para><para>This structure refers to &quot;HT BlockAckReq&quot; as described in 802.11n draft section 7.2.1.7.1 </para>    </detaileddescription>
-    <location file="Include/WiFi/wm_ieee80211.h" line="1085" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1085" bodyend="1092"/>
+    <location file="Include/WiFi/wm_ieee80211.h" line="1088" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="1088" bodyend="1095"/>
     <listofallmembers>
       <member refid="structieee80211__bar_1a9f8bc65acf917cd363e78c1af5ffb361" prot="public" virt="non-virtual"><scope>ieee80211_bar</scope><name>control</name></member>
       <member refid="structieee80211__bar_1a6d5244544915187d86caea052c352cca" prot="public" virt="non-virtual"><scope>ieee80211_bar</scope><name>duration</name></member>

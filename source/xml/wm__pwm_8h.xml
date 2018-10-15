@@ -5,15 +5,15 @@
     <includes refid="wm__type__def_8h" local="yes">wm_type_def.h</includes>
     <includedby refid="wm__include_8h" local="yes">Include/wm_include.h</includedby>
     <incdepgraph>
-      <node id="194">
-        <label>wm_type_def.h</label>
-        <link refid="wm__type__def_8h"/>
-      </node>
       <node id="193">
         <label>Include/Driver/wm_pwm.h</label>
         <link refid="wm__pwm_8h"/>
         <childnode refid="194" relation="include">
         </childnode>
+      </node>
+      <node id="194">
+        <label>wm_type_def.h</label>
+        <link refid="wm__type__def_8h"/>
       </node>
     </incdepgraph>
     <invincdepgraph>

@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="217" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="217" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="220" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__hdr__3addr_1ac960331fa94245e30cf273dab1d8a8cb" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="218" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="218" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="221" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__hdr__3addr_1a9f8830199447b6fc6e2e48571d5d46eb" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="219" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="219" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="222" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__hdr__3addr_1a0e47236ea7d8115a03f8fa8d9c30e2de" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="220" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="220" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="223" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="223" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__hdr__3addr_1a49f5d33010c9109b949afe82cef29dd0" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="221" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="221" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="224" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structieee80211__hdr__3addr_1a1ec1ea9fe3ed450f1d361b33f2fff60c" prot="public" static="no" mutable="no">
         <type>u16</type>
@@ -79,14 +79,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_ieee80211.h" line="222" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="222" bodyend="-1"/>
+        <location file="Include/WiFi/wm_ieee80211.h" line="225" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="225" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Include/WiFi/wm_ieee80211.h" line="216" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="216" bodyend="223"/>
+    <location file="Include/WiFi/wm_ieee80211.h" line="219" column="1" bodyfile="Include/WiFi/wm_ieee80211.h" bodystart="219" bodyend="226"/>
     <listofallmembers>
       <member refid="structieee80211__hdr__3addr_1a9f8830199447b6fc6e2e48571d5d46eb" prot="public" virt="non-virtual"><scope>ieee80211_hdr_3addr</scope><name>addr1</name></member>
       <member refid="structieee80211__hdr__3addr_1a0e47236ea7d8115a03f8fa8d9c30e2de" prot="public" virt="non-virtual"><scope>ieee80211_hdr_3addr</scope><name>addr2</name></member>

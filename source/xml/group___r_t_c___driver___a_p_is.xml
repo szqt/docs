@@ -90,7 +90,7 @@
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>
-<simplesect kind="note"><para>user not need clear interrupt flag. rtc callback function is called in interrupt, so can not operate the critical data in the callback fuuction, recommendation to send messages to other tasks to operate it. </para></simplesect>
+<simplesect kind="note"><para>User does not need to clear the interrupt flag. Rtc callback function is called in interrupt, so do not operate the critical data in the callback fuuction. Sending messages to other tasks to handle is recommended. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>

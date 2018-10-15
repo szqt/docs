@@ -9,13 +9,27 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
+      <node id="335">
+        <label>wm_os_config.h</label>
+        <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="337">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+      <node id="336">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
+      </node>
       <node id="333">
         <label>stdlib.h</label>
       </node>
-      <node id="339">
-        <label>list.h</label>
-        <link refid="list_8h_source"/>
-        <childnode refid="332" relation="include">
+      <node id="330">
+        <label>Include/Platform/wm_fwup.h</label>
+        <link refid="wm__fwup_8h"/>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
         </childnode>
       </node>
       <node id="331">
@@ -30,20 +44,10 @@
         <childnode refid="338" relation="include">
         </childnode>
       </node>
-      <node id="336">
-        <label>wm_wifi_config.h</label>
-        <link refid="wm__wifi__config_8h"/>
-      </node>
-      <node id="335">
-        <label>wm_os_config.h</label>
-        <link refid="wm__os__config_8h"/>
-      </node>
-      <node id="330">
-        <label>Include/Platform/wm_fwup.h</label>
-        <link refid="wm__fwup_8h"/>
-        <childnode refid="331" relation="include">
-        </childnode>
-        <childnode refid="339" relation="include">
+      <node id="339">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+        <childnode refid="332" relation="include">
         </childnode>
       </node>
       <node id="334">
@@ -58,10 +62,6 @@
       </node>
       <node id="332">
         <label>stdio.h</label>
-      </node>
-      <node id="337">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
       </node>
     </incdepgraph>
     <innerclass refid="struct_____t___b_o_o_t_e_r" prot="public">__T_BOOTER</innerclass>
@@ -589,7 +589,7 @@
           <declname>image_src</declname>
         </param>
         <briefdescription>
-<para>This function is used to enter firmware update. </para>        </briefdescription>
+<para>This function is used to enter firmware update progress. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -630,14 +630,14 @@
           <declname>session_id</declname>
         </param>
         <briefdescription>
-<para>This function is used to exit firmware update. </para>        </briefdescription>
+<para>This function is used to exit firmware update progress. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">session_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>session identity of firmware update</para></parameterdescription>
+<para>session identity of firmware update progress</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -693,7 +693,7 @@
           <declname>data_len</declname>
         </param>
         <briefdescription>
-<para>This function is used to start update. </para>        </briefdescription>
+<para>This function is used to start update progress. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -831,7 +831,7 @@
           <declname>session_id</declname>
         </param>
         <briefdescription>
-<para>This function is used to reset update information. </para>        </briefdescription>
+<para>This function is used to reset the update information. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -967,7 +967,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to get busy status. </para>        </briefdescription>
+<para>This function is used to get progress&apos;s status. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1175,15 +1175,15 @@ Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="69" refid="struct_____t___b_o_o_t_e_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_____t___b_o_o_t_e_r" kindref="compound">__T_BOOTER</ref></highlight></codeline>
 <codeline lineno="70"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>magic_no;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/>img_type;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/>zip_type;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>img_addr;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>img_len;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>org_checksum;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>zip_img_addr;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>zip_img_len;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>zip_checksum;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>upd_no;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/>img_type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/>zip_type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="struct_____t___b_o_o_t_e_r_1a6ba9b9adcb77a5b3a782963d29921023" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_____t___b_o_o_t_e_r_1a6ba9b9adcb77a5b3a782963d29921023" kindref="member">run_img_addr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="struct_____t___b_o_o_t_e_r_1a9a6e2c24390c673bcbba91056df7e465" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_____t___b_o_o_t_e_r_1a9a6e2c24390c673bcbba91056df7e465" kindref="member">run_img_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="struct_____t___b_o_o_t_e_r_1a23f01662ae83ca258aa3e20af5650112" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_____t___b_o_o_t_e_r_1a23f01662ae83ca258aa3e20af5650112" kindref="member">run_org_checksum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="struct_____t___b_o_o_t_e_r_1a73fcd451b7891eeb3b9e86b14734e6cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_____t___b_o_o_t_e_r_1a73fcd451b7891eeb3b9e86b14734e6cb" kindref="member">upd_img_addr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="struct_____t___b_o_o_t_e_r_1aed911597b0863af816413183d912b080" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_____t___b_o_o_t_e_r_1aed911597b0863af816413183d912b080" kindref="member">upd_img_len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="struct_____t___b_o_o_t_e_r_1ab6ce69fea55e2c17f0fa897d212d718b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_____t___b_o_o_t_e_r_1ab6ce69fea55e2c17f0fa897d212d718b" kindref="member">upd_checksum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="struct_____t___b_o_o_t_e_r_1a9e2c7f2c8d659a6c13575d81a9d8bc47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_____t___b_o_o_t_e_r_1a9e2c7f2c8d659a6c13575d81a9d8bc47" kindref="member">upd_no</ref>;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/>ver[16];</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>hd_checksum;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal">}<sp/><ref refid="struct_____t___b_o_o_t_e_r" kindref="compound">T_BOOTER</ref>;</highlight></codeline>

@@ -7,62 +7,63 @@
     <includedby refid="wm__netif_8h" local="yes">Include/App/wm_netif.h</includedby>
     <includedby refid="wm__netif2_80_83_8h" local="yes">Include/App/wm_netif2.0.3.h</includedby>
     <incdepgraph>
-      <node id="346">
+      <node id="349">
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
-      <node id="345">
+      <node id="348">
         <label>Include/Platform/wm_params.h</label>
         <link refid="wm__params_8h"/>
-        <childnode refid="346" relation="include">
+        <childnode refid="349" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="350">
-        <label>Include/Net/wm_socket2.0.3.h</label>
-        <link refid="wm__socket2_80_83_8h"/>
-      </node>
-      <node id="349">
-        <label>Include/App/wm_netif.h</label>
-        <link refid="wm__netif_8h"/>
-        <childnode refid="348" relation="include">
-        </childnode>
-        <childnode refid="350" relation="include">
-        </childnode>
-        <childnode refid="351" relation="include">
-        </childnode>
-      </node>
-      <node id="351">
+      <node id="354">
         <label>Include/Net/wm_sockets.h</label>
         <link refid="wm__sockets_8h"/>
-        <childnode refid="348" relation="include">
+        <childnode refid="351" relation="include">
         </childnode>
-        <childnode refid="352" relation="include">
-        </childnode>
-      </node>
-      <node id="347">
-        <label>Include/Platform/wm_params.h</label>
-        <link refid="wm__params_8h"/>
-        <childnode refid="348" relation="include">
-        </childnode>
-        <childnode refid="349" relation="include">
-        </childnode>
-        <childnode refid="352" relation="include">
+        <childnode refid="355" relation="include">
         </childnode>
       </node>
-      <node id="352">
+      <node id="355">
         <label>Include/App/wm_netif2.0.3.h</label>
         <link refid="wm__netif2_80_83_8h"/>
       </node>
-      <node id="348">
+      <node id="351">
         <label>Include/wm_include.h</label>
         <link refid="wm__include_8h"/>
+      </node>
+      <node id="352">
+        <label>Include/App/wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>Include/Platform/wm_params.h</label>
+        <link refid="wm__params_8h"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>Include/Net/wm_socket2.0.3.h</label>
+        <link refid="wm__socket2_80_83_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structtls__param__hardware__version" prot="public">tls_param_hardware_version</innerclass>
     <innerclass refid="structtls__param__bssid" prot="public">tls_param_bssid</innerclass>
     <innerclass refid="structtls__param__ssid" prot="public">tls_param_ssid</innerclass>
+    <innerclass refid="structtls__param__tem__offset" prot="public">tls_param_tem_offset</innerclass>
     <innerclass refid="structtls__param__key" prot="public">tls_param_key</innerclass>
     <innerclass refid="structtls__param__original__key" prot="public">tls_param_original_key</innerclass>
     <innerclass refid="structtls__param__sha1" prot="public">tls_param_sha1</innerclass>
@@ -768,8 +769,8 @@
         </inbodydescription>
         <location file="Include/Platform/wm_params.h" line="130" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="130" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wm__params_8h_1a9a6bf303afbae79fc1a8317fcb8c83cd" prot="public" static="no">
-        <name>TLS_PARAM_ID_MAX</name>
+      <memberdef kind="define" id="wm__params_8h_1a2fc4eeb020acedca3436a87fea7a8486" prot="public" static="no">
+        <name>TLS_PARAM_ID_TEM_OFFSET</name>
         <initializer>(54)</initializer>
         <briefdescription>
         </briefdescription>
@@ -777,7 +778,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="132" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="132" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="131" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wm__params_8h_1a9a6bf303afbae79fc1a8317fcb8c83cd" prot="public" static="no">
+        <name>TLS_PARAM_ID_MAX</name>
+        <initializer>(55)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_params.h" line="133" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ac5729f3aa0d6abd46e586a46a310116b" prot="public" static="no">
         <name>TLS_PARAM_PHY_11BG_MIXED</name>
@@ -788,7 +800,7 @@
 <para>MACRO of Physical moe of Ieee802.11 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="134" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="134" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="135" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1acea7f072b592b5dccdffbc755d9d90f0" prot="public" static="no">
         <name>TLS_PARAM_PHY_11B</name>
@@ -799,7 +811,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="135" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="135" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="136" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a90254aa786f04de8c16be6bb01b2f162" prot="public" static="no">
         <name>TLS_PARAM_PHY_11BGN_MIXED</name>
@@ -810,7 +822,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="136" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="136" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="137" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a4a76c236d8e48d30c7dd5317f30efa00" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_1M</name>
@@ -821,7 +833,7 @@
 <para>MACRO of Ieee802.11 Tx Rate for parameter set </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="138" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="138" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="139" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a8a829a403225c2b90a360100d3922e9a" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_2M</name>
@@ -832,7 +844,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="139" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="139" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="140" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="140" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1aa6f3edb57315c14f8c292241d1f82e67" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_5_5M</name>
@@ -843,7 +855,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="140" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="140" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="141" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1acbcf66da56abc30e71ffd5ae78f128a1" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_11M</name>
@@ -854,7 +866,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="141" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="141" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="142" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1af802ca6cef6ef9fe4bae4f274fde9c16" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_6M</name>
@@ -865,7 +877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="142" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="142" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="143" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a50b1f4472b10c8d8703d92c568d7ad22" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_9M</name>
@@ -876,7 +888,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="143" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="143" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="144" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1afd1e47e9a2f89455ee1bb3d048b5daee" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_12M</name>
@@ -887,7 +899,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="144" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="144" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="145" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a1b16a730742c4b85e45cd161ea77a9c2" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_18M</name>
@@ -898,7 +910,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="145" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="145" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="146" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a37c28212df0f293e8865da887f35cbd6" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_24M</name>
@@ -909,7 +921,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="146" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="146" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="147" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a1da9b185ea7599324cf369cb01d04a27" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_36M</name>
@@ -920,7 +932,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="147" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="147" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="148" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ae89085312f3235c24a0846bbe867fbc9" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_48M</name>
@@ -931,7 +943,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="148" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="148" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="149" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a055a5dbfbff1465fe5ba51f58ef86b0f" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_54M</name>
@@ -942,7 +954,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="149" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="149" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="150" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="150" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a332c9b39f2ba7cacbd6638672ca95508" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS0</name>
@@ -953,7 +965,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="150" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="150" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="151" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a3d0e0fb7de1ff810dff39018fde48621" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS1</name>
@@ -964,7 +976,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="151" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="151" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="152" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1adc5e8003cc2e8d2aaca29091a96e38a5" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS2</name>
@@ -975,7 +987,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="152" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="152" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="153" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a58930f4a3288f43ddfa3b1d8164cf2bb" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS3</name>
@@ -986,7 +998,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="153" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="153" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="154" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a08009a901ebb937d04d6b41a8fe054e3" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS4</name>
@@ -997,7 +1009,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="154" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="154" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="155" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="155" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a69cd748e668881b091869e9e2dd3abf2" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS5</name>
@@ -1008,7 +1020,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="155" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="155" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="156" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1adca1e6b649bb716cd7d8cad4b54879a1" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS6</name>
@@ -1019,7 +1031,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="156" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="156" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="157" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="157" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a3b2f56064eca9408b4a841f61ce0bc55" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS7</name>
@@ -1030,7 +1042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="157" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="157" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="158" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ae14a51dbe97ec3670aa78f84b8974008" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS8</name>
@@ -1041,7 +1053,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="158" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="158" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="159" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a9f9d9573091f819236c3f42d1d70408d" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS9</name>
@@ -1052,7 +1064,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="159" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="159" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="160" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="160" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a1e05b1b78374514ace197b9c112967ab" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS10</name>
@@ -1063,7 +1075,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="160" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="160" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="161" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a0d9d60a9b1c6ff02e9843e4257920b76" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS11</name>
@@ -1074,7 +1086,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="161" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="161" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="162" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a6ddfad52cc5ec2a64d63f09487b3e48f" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS12</name>
@@ -1085,7 +1097,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="162" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="162" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="163" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="163" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1af1e096f934035735c37d8b1ebf63b4b6" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS13</name>
@@ -1096,7 +1108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="163" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="163" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="164" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a7de43799da1917192516158536d876e7" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS14</name>
@@ -1107,7 +1119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="164" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="164" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="165" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="165" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ac15accd8968f9a8b3de6830a08a786ed" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS15</name>
@@ -1118,7 +1130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="165" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="165" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="166" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a38b0c2fe541774438cdf401e19c65ac7" prot="public" static="no">
         <name>TLS_PARAM_TX_RATEIDX_MCS32</name>
@@ -1129,7 +1141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="166" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="166" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="167" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a1db732069b6255d3871d9e60fe445b60" prot="public" static="no">
         <name>TLS_PARAM_SSIDBRD_DISABLE</name>
@@ -1140,7 +1152,7 @@
 <para>MACRO of SSID Broadcast </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="170" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="170" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="171" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="171" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a21a39e3cecb4b0735c9a78bb9153bc5d" prot="public" static="no">
         <name>TLS_PARAM_SSIDBRD_ENABLE</name>
@@ -1151,7 +1163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="171" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="171" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="172" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="172" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1adbbf5354a3ee2d16851cadab420d441d" prot="public" static="no">
         <name>TLS_PARAM_ROAM_DISABLE</name>
@@ -1162,7 +1174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="173" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="173" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="174" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a34d8d09063a8bcc76abfad1815134ac1" prot="public" static="no">
         <name>TLS_PARAM_ROAM_ENABLE</name>
@@ -1173,7 +1185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="174" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="174" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="175" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a0eed4688aafbfa78421661bf0c424e91" prot="public" static="no">
         <name>TLS_PARAM_PSM_DISABLE</name>
@@ -1184,7 +1196,7 @@
 <para>MACRO of Power Saving Mode </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="177" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="177" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="178" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1af79baa5d065cfce102034095caf385a2" prot="public" static="no">
         <name>TLS_PARAM_PSM_ENABLE</name>
@@ -1195,7 +1207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="178" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="178" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="179" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ad58ef1d551ec80bbd0f73471d81288dd" prot="public" static="no">
         <name>TLS_PARAM_DDNS_DISABLE</name>
@@ -1206,7 +1218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="180" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="180" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="181" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a7003555b3ba52327541f96a25f738459" prot="public" static="no">
         <name>TLS_PARAM_DDNS_ENABLE</name>
@@ -1217,7 +1229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="181" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="181" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="182" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a7fabf15926e5738c2d38b6aaead2dc77" prot="public" static="no">
         <name>TLS_PARAM_AUTO_CREATE_ADHOC_DISABLE</name>
@@ -1228,7 +1240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="183" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="183" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="184" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1abb73d93ad4194c3a95019a2b0545d23b" prot="public" static="no">
         <name>TLS_PARAM_AUTO_CREATE_ADHOC_ENABLE</name>
@@ -1239,7 +1251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="184" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="184" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="185" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1afa4dca616286d1cc62cb0693e9fb61a8" prot="public" static="no">
         <name>TLS_PARAM_WPS_DISABLE</name>
@@ -1250,7 +1262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="186" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="186" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="187" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a48588d2b70156dd82c89f7c1a02dd4af" prot="public" static="no">
         <name>TLS_PARAM_WPS_ENABLE</name>
@@ -1261,7 +1273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="187" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="187" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="188" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a2a2c171c269b8f527abb688203ad0454" prot="public" static="no">
         <name>TLS_PARAM_WPS_MODE_PIN</name>
@@ -1272,7 +1284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="188" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="188" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="189" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1acd344c70768b437da1319360a3408330" prot="public" static="no">
         <name>TLS_PARAM_WPS_MODE_PBC</name>
@@ -1283,7 +1295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="189" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="189" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="190" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="190" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a99fb105a18361eb95024a138b5940126" prot="public" static="no">
         <name>TLS_PARAM_WPS_FLAG_NEGOTIATED</name>
@@ -1294,7 +1306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="190" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="190" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="191" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="191" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a4eebb34dd980c800673933b98b3ae1a7" prot="public" static="no">
         <name>TLS_PARAM_UPNP_DISABLE</name>
@@ -1305,7 +1317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="192" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="192" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="193" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a39689771950e71945ed3770f04eae29e" prot="public" static="no">
         <name>TLS_PARAM_UPNP_ENABLE</name>
@@ -1316,7 +1328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="193" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="193" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="194" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="194" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1acf1c85279b3a157ed8857a7b606f3488" prot="public" static="no">
         <name>TLS_PARAM_IEEE80211_INFRA</name>
@@ -1327,7 +1339,7 @@
 <para>MACRO of IEEE802.11 Work MODE </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="196" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="196" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="197" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="197" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1acbe9b7c91fc1fa0b48ac8c5cca8598ad" prot="public" static="no">
         <name>TLS_PARAM_IEEE80211_ADHOC</name>
@@ -1338,7 +1350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="197" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="197" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="198" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="198" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ac4dc8ea9738336d18f2406177d9d895d" prot="public" static="no">
         <name>TLS_PARAM_IEEE80211_SOFTAP</name>
@@ -1349,7 +1361,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="198" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="198" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="199" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a4a31ca70747c231fffea62794e193fd3" prot="public" static="no">
         <name>TLS_PARAM_MANUAL_MODE</name>
@@ -1360,7 +1372,7 @@
 <para>MACRO of Command or Transparent Mode </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="201" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="201" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="202" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a506066ec65955236b88ef9eccbe61b14" prot="public" static="no">
         <name>TLS_PARAM_AUTO_MODE</name>
@@ -1371,7 +1383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="202" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="202" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="203" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a5b5536ce97a348e34d05c5123210e7ea" prot="public" static="no">
         <name>TLS_PARAM_ALWAYS_ONLINE_ENABLE</name>
@@ -1382,7 +1394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="204" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="204" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="205" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1adcfc1bca92b7676a9b2d8f0ac4cb9a4b" prot="public" static="no">
         <name>TLS_PARAM_ALWAYS_ONLINE_DISABLE</name>
@@ -1393,7 +1405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="205" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="205" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="206" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1af90b5e1669e9b7aa454cbe412403e325" prot="public" static="no">
         <name>TLS_PARAM_DHCP_ENABLE</name>
@@ -1404,7 +1416,7 @@
 <para>MACRO of DHCP ENABLE or DISABLE </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="208" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="208" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="209" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="209" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a08c25b27396859d9c91d82254c779eee" prot="public" static="no">
         <name>TLS_PARAM_DHCP_DISABLE</name>
@@ -1415,7 +1427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="209" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="209" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="210" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="210" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a7f56bcb798574cdae30101d224e0b955" prot="public" static="no">
         <name>TLS_PARAM_REGION_0_BG_BAND</name>
@@ -1426,7 +1438,7 @@
 <para>MACRO of COUNTRY CODE for channel number </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="212" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="212" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="213" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a57ea04f13535c7b9ba9ed5bfcfe9f575" prot="public" static="no">
         <name>TLS_PARAM_REGION_1_BG_BAND</name>
@@ -1437,7 +1449,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="213" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="213" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="214" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="214" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a100a7633471d2ad856f4a01d652ed36a" prot="public" static="no">
         <name>TLS_PARAM_REGION_2_BG_BAND</name>
@@ -1448,7 +1460,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="214" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="214" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="215" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="215" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a65d21f993c24ac01642196d68ec60d9c" prot="public" static="no">
         <name>TLS_PARAM_REGION_3_BG_BAND</name>
@@ -1459,7 +1471,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="215" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="215" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="216" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="216" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a6f91c9c22ada04faeb33ebf4a80205d5" prot="public" static="no">
         <name>TLS_PARAM_REGION_4_BG_BAND</name>
@@ -1470,7 +1482,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="216" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="216" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="217" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="217" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a26191b06a41d1507b149677a9faa126d" prot="public" static="no">
         <name>TLS_PARAM_REGION_5_BG_BAND</name>
@@ -1481,7 +1493,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="217" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="217" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="218" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="218" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1accbea926991e516bd24e77ae92d0efcf" prot="public" static="no">
         <name>TLS_PARAM_REGION_6_BG_BAND</name>
@@ -1492,7 +1504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="218" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="218" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="219" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="219" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a7b35b07026485554d258a2c89eee6226" prot="public" static="no">
         <name>TLS_PARAM_REGION_7_BG_BAND</name>
@@ -1503,7 +1515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="219" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="219" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="220" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ae4c5c58aa1c59b67edda4dba7b13e3d1" prot="public" static="no">
         <name>TLS_PARAM_REGION_MAXIMUM_BG_BAND</name>
@@ -1514,7 +1526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="220" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="220" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="221" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1af9f465e18a3eb45cbdc63a96a5bbf4d7" prot="public" static="no">
         <name>TLS_PARAM_ENCRY_OPEN</name>
@@ -1525,7 +1537,7 @@
 <para>MACRO of ENCRYPT TYPE </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="223" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="223" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="224" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a75ae515a7bcaee5663968a71e12d1757" prot="public" static="no">
         <name>TLS_PARAM_ENCRY_WEP64</name>
@@ -1536,7 +1548,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="224" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="224" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="225" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="225" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1af1af12465f50388a6ad65f3a0b87dc27" prot="public" static="no">
         <name>TLS_PARAM_ENCRY_WEP128</name>
@@ -1547,7 +1559,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="225" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="225" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="226" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="226" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a94d23e1dce79d19144caee5fd89f6958" prot="public" static="no">
         <name>TLS_PARAM_ENCRY_WPA_PSK_TKIP</name>
@@ -1558,7 +1570,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="226" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="226" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="227" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="227" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a9ebffe58eca897d5b68af6b2dd44d6e6" prot="public" static="no">
         <name>TLS_PARAM_ENCRY_WPA_PSK_AES</name>
@@ -1569,7 +1581,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="227" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="227" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="228" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a9e0dc0c109cb513a3db6b75c8697475a" prot="public" static="no">
         <name>TLS_PARAM_ENCRY_WPA2_PSK_TKIP</name>
@@ -1580,7 +1592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="228" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="228" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="229" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="229" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1aa0e989336dacfbc83f30a614c01c0f1e" prot="public" static="no">
         <name>TLS_PARAM_ENCRY_WPA2_PSK_AES</name>
@@ -1591,7 +1603,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="229" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="229" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="230" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="230" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a2ad19699a92c15f00f45b5d0ceb2485d" prot="public" static="no">
         <name>TLS_PARAM_USR_INTF_LUART</name>
@@ -1602,7 +1614,7 @@
 <para>MACRO of USER INTERFACE TYPE </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="232" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="232" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="233" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a37fd71dda50cd4a54c65fe22d6aa4765" prot="public" static="no">
         <name>TLS_PARAM_USR_INTF_HUART</name>
@@ -1613,7 +1625,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="233" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="233" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="234" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ac788ec288fa8f3fec3986318ea58d1a3" prot="public" static="no">
         <name>TLS_PARAM_USR_INTF_HSPI</name>
@@ -1624,7 +1636,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="234" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="234" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="235" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="235" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a8ae8c874d38edf215e505f57095d35ea" prot="public" static="no">
         <name>TLS_PARAM_USR_INTF_HSDIO</name>
@@ -1635,7 +1647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="235" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="235" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="236" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="236" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ac45c904c8d49064bb717b9830c10e54d" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B600</name>
@@ -1646,7 +1658,7 @@
 <para>MACRO of UART BAUDRATE </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="238" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="238" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="239" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="239" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ab0859c97fa7281cd91c30cc03dbefbba" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B1200</name>
@@ -1657,7 +1669,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="239" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="239" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="240" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="240" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ad6a09d3d623a3aa3b2a2a08f1e84a799" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B1800</name>
@@ -1668,7 +1680,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="240" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="240" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="241" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="241" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a36c9f44cd637a279e2f5b18f8779901c" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B2400</name>
@@ -1679,7 +1691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="241" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="241" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="242" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="242" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a9cc43d2ce373b8b02c113e52c06281da" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B4800</name>
@@ -1690,7 +1702,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="242" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="242" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="243" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="243" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ab984a61d03455608d54f19f893b92fba" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B9600</name>
@@ -1701,7 +1713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="243" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="243" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="244" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1aa53c8c7d2d7285c56d9c12c72137222f" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B19200</name>
@@ -1712,7 +1724,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="244" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="244" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="245" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="245" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1add22f5c44b20d48de2b325e8df40fad8" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B38400</name>
@@ -1723,7 +1735,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="245" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="245" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="246" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="246" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1aa9f4a11be38694b4d9fe7e9a2ac063e5" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B57600</name>
@@ -1734,7 +1746,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="246" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="246" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="247" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="247" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ac7a0f2e671866c68cbd67fa5232e7582" prot="public" static="no">
         <name>TLS_PARAM_UART_BAUDRATE_B115200</name>
@@ -1745,7 +1757,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="247" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="247" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="248" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="248" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ab2789008e8ff66b820717b19e3c3226b" prot="public" static="no">
         <name>TLS_PARAM_HUART_BAUDRATE_B230400</name>
@@ -1756,7 +1768,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="248" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="248" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="249" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a69290677164ebf410b1046c8fcefa8d7" prot="public" static="no">
         <name>TLS_PARAM_HUART_BAUDRATE_B460800</name>
@@ -1767,7 +1779,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="249" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="249" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="250" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="250" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a1d27f6c1dbf8c574764c99f398912859" prot="public" static="no">
         <name>TLS_PARAM_HUART_BAUDRATE_B921600</name>
@@ -1778,7 +1790,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="250" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="250" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="251" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="251" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a65702d4634ce1daf2479e48121291b9a" prot="public" static="no">
         <name>TLS_PARAM_HUART_BAUDRATE_B1000000</name>
@@ -1789,7 +1801,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="251" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="251" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="252" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="252" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a127ad960d71f7002b5fe7eb4e8a5f1bc" prot="public" static="no">
         <name>TLS_PARAM_HUART_BAUDRATE_B1250000</name>
@@ -1800,7 +1812,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="252" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="252" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="253" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="253" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a1ae299a089fff06127002b1ed7724c2a" prot="public" static="no">
         <name>TLS_PARAM_HUART_BAUDRATE_B1500000</name>
@@ -1811,7 +1823,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="253" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="253" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="254" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="254" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ae127bb1ce021936c1abf862bbcf3e2c4" prot="public" static="no">
         <name>TLS_PARAM_HUART_BAUDRATE_B2000000</name>
@@ -1822,7 +1834,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="254" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="254" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="255" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="255" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1aa1c197b580cec1f3d1079acceb022e99" prot="public" static="no">
         <name>TLS_PARAM_UART_PARITY_NONE</name>
@@ -1833,7 +1845,7 @@
 <para>MACRO of UART PARITY </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="257" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="257" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="258" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ab0c53b9f58044a9de27cc89633fc5167" prot="public" static="no">
         <name>TLS_PARAM_UART_PARITY_EVEN</name>
@@ -1844,7 +1856,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="258" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="258" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="259" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="259" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a45d05016cf5a3b60db33f4dc3e5be4a8" prot="public" static="no">
         <name>TLS_PARAM_UART_PARITY_ODD</name>
@@ -1855,7 +1867,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="259" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="259" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="260" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="260" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a65ea431f16b9ae20111e8955a2afc3bf" prot="public" static="no">
         <name>TLS_PARAM_UART_PARITY_MARK</name>
@@ -1866,7 +1878,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="260" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="260" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="261" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="261" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a859690eb9c1a8835e3f71e41aaf1bded" prot="public" static="no">
         <name>TLS_PARAM_UART_PARITY_SPACE</name>
@@ -1877,7 +1889,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="261" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="261" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="262" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="262" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ad32e742b115b75b74fa9aece809a2a10" prot="public" static="no">
         <name>TLS_PARAM_UART_STOPBITS_1BITS</name>
@@ -1888,7 +1900,7 @@
 <para>MACRO of UART STOP BITS </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="264" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="264" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="265" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="265" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ae72baa9b436824355a73593282216886" prot="public" static="no">
         <name>TLS_PARAM_UART_STOPBITS_2BITS</name>
@@ -1899,7 +1911,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="265" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="265" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="266" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="266" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1adc1ec4ae128b73815b20cd761f83cd12" prot="public" static="no">
         <name>TLS_PARAM_UART_FLOW_DISABLE</name>
@@ -1910,7 +1922,7 @@
 <para>MACRO of UART FLOW CONTROL </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="268" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="268" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="269" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="269" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a8497555454598e5f2f1b7d54de868e62" prot="public" static="no">
         <name>TLS_PARAM_UART_FLOW_ENABLE</name>
@@ -1921,7 +1933,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="269" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="269" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="270" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="270" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a568a957cc686ca77dfedda6e23e5cf8d" prot="public" static="no">
         <name>TLS_PARAM_HSPI_MAX_SCLK</name>
@@ -1932,7 +1944,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="270" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="270" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="271" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="271" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1acd8a7fb0592de13d17f2d620b355aa23" prot="public" static="no">
         <name>TLS_PARAM_SOCKET_TCP</name>
@@ -1943,7 +1955,7 @@
 <para>MACRO of SOCKET PARAMETER </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="272" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="272" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="273" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="273" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a4fb3a12d8e1475a6efdb92223e444960" prot="public" static="no">
         <name>TLS_PARAM_SOCKET_UDP</name>
@@ -1954,7 +1966,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="273" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="273" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="274" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="274" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1a27dff224a2d41e4bc920a62147904d5d" prot="public" static="no">
         <name>TLS_PARAM_SOCKET_CLIENT</name>
@@ -1965,7 +1977,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="274" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="274" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="275" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="275" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1ae1d04800eefb317a5b82e439a287ee80" prot="public" static="no">
         <name>TLS_PARAM_SOCKET_SERVER</name>
@@ -1976,7 +1988,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="275" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="275" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="276" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="276" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="wm__params_8h_1afce1c9d2b5b970b8178d4b6cb05f6bbf" prot="public" static="no">
         <name>TLS_PARAM_SOCKET_DEFAULT_PORT</name>
@@ -1987,7 +1999,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="276" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="276" bodyend="-1"/>
+        <location file="Include/Platform/wm_params.h" line="277" column="9" bodyfile="Include/Platform/wm_params.h" bodystart="277" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -2002,7 +2014,7 @@
 <para>Structure of user default parameter </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="401" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="408" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -2015,7 +2027,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to initialize system param. </para>        </briefdescription>
+<para>This function is used to initialize parameter&apos;s manamge module. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2058,7 +2070,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="435" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="442" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga8f0a80b66cefad1e75ee0662ad3184de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2069,7 +2081,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to load the system default parameters. </para>        </briefdescription>
+<para>This function is used to load the system&apos;s default parameters. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2084,7 +2096,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="448" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="455" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga74eeb50c2dad2092d0a8ad7ce44f5017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2104,7 +2116,7 @@
           <declname>to_flash</declname>
         </param>
         <briefdescription>
-<para>This function is used to set system parameter. </para>        </briefdescription>
+<para>This function is used to set one system parameter by its id. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2147,7 +2159,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="464" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="471" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1gaa89c7150198ab56796cb7170dc5766cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2167,7 +2179,7 @@
           <declname>from_flash</declname>
         </param>
         <briefdescription>
-<para>This function is used to get system parameter. </para>        </briefdescription>
+<para>This function is used to get one system parameter by its id. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2210,7 +2222,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="480" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="487" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga6356609a6f60cd0e937c1e5f20a4c9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2222,7 +2234,7 @@
           <declname>id</declname>
         </param>
         <briefdescription>
-<para>This function is used to write parameter to flash. </para>        </briefdescription>
+<para>This function is used to write parameter into flash. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2258,7 +2270,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="494" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="501" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga34ef1edd79eb49002c667b8290a75f0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2269,7 +2281,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to recovery the parameters from the backup area to the parameter area,and read to memory. </para>        </briefdescription>
+<para>This function is used to recovery the parameters from the backup area to the parameter area,and load them into ram. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2284,7 +2296,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="506" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="513" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga4a1ee99acc1a3a9a6b3786802ba3257e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2295,7 +2307,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to load default parametes to memory. </para>        </briefdescription>
+<para>This function is used to load default parametes into ram. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2331,7 +2343,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="521" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="528" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga34391dd8880ac0c4604706e69f5ebe3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2342,7 +2354,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to write user parameters to the flash. </para>        </briefdescription>
+<para>This function is used to write user&apos;s parameters into the flash. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2371,7 +2383,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="534" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="541" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga151a1dee494aa7d7ce3138d94832aa9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2383,7 +2395,7 @@
           <declname>user_param</declname>
         </param>
         <briefdescription>
-<para>This function is used to modify user default parameters, then write to flash. </para>        </briefdescription>
+<para>This function is used to modify user&apos;s default parameters, then write them into flash. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2412,7 +2424,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="547" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="554" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1gab182a1ef9b87d0b44fc64ffb8df0ed5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>u8</type>
@@ -2445,7 +2457,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="559" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="566" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1gad5ed12686c045276aab0a7d81a3db3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2472,7 +2484,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="570" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="577" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga6dde7ee1328c09ad61360bfa320c5595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2491,7 +2503,7 @@
 <parametername direction="in">*pBase</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>to save base address</para></parameterdescription>
+<para>pointer to save base address</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -2513,7 +2525,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="582" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="589" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga5e0518c8e13fe8e2a44c3625c29c6552" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2533,7 +2545,7 @@
           <declname>checksum</declname>
         </param>
         <briefdescription>
-<para>This function is used to set program base、image len， checksum. </para>        </briefdescription>
+<para>This function is used to set program base,image len,and checksum. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2547,14 +2559,14 @@
 <parametername direction="in">totallen</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>total length of image </para></parameterdescription>
+<para>total length of the image </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">checksum</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>image content checksum</para></parameterdescription>
+<para>checksum value of the image</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -2576,7 +2588,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="597" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="604" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2704,281 +2716,287 @@ Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ID_SNTP_SERVER1<sp/><sp/><sp/>(51)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ID_SNTP_SERVER2<sp/><sp/><sp/>(52)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ID_SNTP_SERVER3<sp/><sp/><sp/>(53)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ID_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(54)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134" refid="wm__params_8h_1ac5729f3aa0d6abd46e586a46a310116b" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_PHY_11BG_MIXED<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_PHY_11B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_PHY_11BGN_MIXED<sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138" refid="wm__params_8h_1a4a76c236d8e48d30c7dd5317f30efa00" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_1M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_2M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_5_5M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_11M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_6M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_9M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_12M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(6)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_18M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(7)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_24M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(8)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_36M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(9)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_48M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_54M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(11)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(12)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(13)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(14)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(15)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(16)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(17)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(18)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(19)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(20)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(21)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(22)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(23)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(24)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS13<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(25)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(26)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(27)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(28)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ID_TEM_OFFSET<sp/><sp/><sp/><sp/><sp/>(54)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ID_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(55)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="wm__params_8h_1ac5729f3aa0d6abd46e586a46a310116b" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_PHY_11BG_MIXED<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_PHY_11B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_PHY_11BGN_MIXED<sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="wm__params_8h_1a4a76c236d8e48d30c7dd5317f30efa00" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_1M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_2M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_5_5M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_11M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_6M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_9M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_12M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_18M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_24M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_36M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_48M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_54M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(11)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(12)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(13)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(14)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(15)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(16)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(17)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(18)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(19)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(20)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(21)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(22)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(23)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS13<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(25)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(26)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(27)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_TX_RATEIDX_MCS32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(28)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170" refid="wm__params_8h_1a1db732069b6255d3871d9e60fe445b60" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_SSIDBRD_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SSIDBRD_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ROAM_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ROAM_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"></highlight></codeline>
-<codeline lineno="177" refid="wm__params_8h_1a0eed4688aafbfa78421661bf0c424e91" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_PSM_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_PSM_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_DDNS_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_DDNS_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_AUTO_CREATE_ADHOC_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_AUTO_CREATE_ADHOC_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"></highlight></codeline>
-<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_MODE_PIN<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_MODE_PBC<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_FLAG_NEGOTIATED<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="191"><highlight class="normal"></highlight></codeline>
-<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UPNP_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UPNP_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="194"><highlight class="normal"></highlight></codeline>
-<codeline lineno="196" refid="wm__params_8h_1acf1c85279b3a157ed8857a7b606f3488" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_IEEE80211_INFRA<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_IEEE80211_ADHOC<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_IEEE80211_SOFTAP<sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="201" refid="wm__params_8h_1a4a31ca70747c231fffea62794e193fd3" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_MANUAL_MODE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_AUTO_MODE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="203"><highlight class="normal"></highlight></codeline>
-<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ALWAYS_ONLINE_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ALWAYS_ONLINE_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="206"><highlight class="normal"></highlight></codeline>
-<codeline lineno="208" refid="wm__params_8h_1af90b5e1669e9b7aa454cbe412403e325" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_DHCP_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_DHCP_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight></codeline>
-<codeline lineno="212" refid="wm__params_8h_1a7f56bcb798574cdae30101d224e0b955" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_0_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(0)<sp/></highlight><highlight class="comment">/*<sp/>1-11<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_1_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(1)<sp/></highlight><highlight class="comment">/*<sp/>1-13<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_2_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(2)<sp/></highlight><highlight class="comment">/*<sp/>10-11<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_3_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(3)<sp/></highlight><highlight class="comment">/*<sp/>10-13<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_4_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(4)<sp/></highlight><highlight class="comment">/*<sp/>14<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_5_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(5)<sp/></highlight><highlight class="comment">/*<sp/>1-14<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_6_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(6)<sp/></highlight><highlight class="comment">/*<sp/>3-9<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="219"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_7_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(7)<sp/></highlight><highlight class="comment">/*<sp/>5-13<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_MAXIMUM_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>TLS_PARAM_REGION_7_BG_BAND</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="221"><highlight class="normal"></highlight></codeline>
-<codeline lineno="223" refid="wm__params_8h_1af9f465e18a3eb45cbdc63a96a5bbf4d7" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_OPEN<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WEP64<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WEP128<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WPA_PSK_TKIP<sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WPA_PSK_AES<sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WPA2_PSK_TKIP<sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WPA2_PSK_AES<sp/><sp/><sp/><sp/><sp/><sp/>(6)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="230"><highlight class="normal"></highlight></codeline>
-<codeline lineno="232" refid="wm__params_8h_1a2ad19699a92c15f00f45b5d0ceb2485d" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_USR_INTF_LUART<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="233"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_USR_INTF_HUART<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_USR_INTF_HSPI<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_USR_INTF_HSDIO<sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="236"><highlight class="normal"></highlight></codeline>
-<codeline lineno="238" refid="wm__params_8h_1ac45c904c8d49064bb717b9830c10e54d" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B600<sp/><sp/><sp/><sp/><sp/><sp/>(600)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B1200<sp/><sp/><sp/><sp/><sp/><sp/>(1200)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B1800<sp/><sp/><sp/><sp/><sp/><sp/>(1800)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B2400<sp/><sp/><sp/><sp/><sp/><sp/>(2400)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B4800<sp/><sp/><sp/><sp/><sp/><sp/>(4800)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B9600<sp/><sp/><sp/><sp/><sp/><sp/>(9600)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B19200<sp/><sp/><sp/><sp/><sp/><sp/>(19200)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B38400<sp/><sp/><sp/><sp/><sp/><sp/>(38400)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B57600<sp/><sp/><sp/><sp/><sp/><sp/>(57600)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B115200<sp/><sp/><sp/><sp/><sp/><sp/>(115200)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B230400<sp/><sp/><sp/><sp/><sp/><sp/>(230400)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B460800<sp/><sp/><sp/><sp/><sp/><sp/>(460800)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B921600<sp/><sp/><sp/><sp/><sp/><sp/>(921600)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B1000000<sp/><sp/><sp/><sp/><sp/><sp/>(1000000)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B1250000<sp/><sp/><sp/><sp/><sp/><sp/>(1250000)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="253"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B1500000<sp/><sp/><sp/><sp/><sp/><sp/>(1500000)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B2000000<sp/><sp/><sp/><sp/><sp/><sp/>(2000000)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="255"><highlight class="normal"></highlight></codeline>
-<codeline lineno="257" refid="wm__params_8h_1aa1c197b580cec1f3d1079acceb022e99" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_NONE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_EVEN<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_ODD<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_MARK<sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_SPACE<sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="262"><highlight class="normal"></highlight></codeline>
-<codeline lineno="264" refid="wm__params_8h_1ad32e742b115b75b74fa9aece809a2a10" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_STOPBITS_1BITS<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_STOPBITS_2BITS<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"></highlight></codeline>
-<codeline lineno="268" refid="wm__params_8h_1adc1ec4ae128b73815b20cd761f83cd12" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_FLOW_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_FLOW_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HSPI_MAX_SCLK<sp/><sp/><sp/><sp/><sp/><sp/>(33000000)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="271"><highlight class="normal"></highlight></codeline>
-<codeline lineno="272" refid="wm__params_8h_1acd8a7fb0592de13d17f2d620b355aa23" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_TCP<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_UDP<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_CLIENT<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_SERVER<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_DEFAULT_PORT<sp/><sp/><sp/><sp/><sp/><sp/>(60000)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="277"><highlight class="normal"></highlight></codeline>
-<codeline lineno="279" refid="structtls__param__hardware__version" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__hardware__version" kindref="compound">tls_param_hardware_version</ref><sp/>{</highlight></codeline>
-<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>mark;</highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>main;</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>sub;</highlight></codeline>
-<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>material;</highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>year;</highlight></codeline>
-<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>week;</highlight></codeline>
-<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res[2];</highlight></codeline>
-<codeline lineno="287"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="288"><highlight class="normal"></highlight></codeline>
-<codeline lineno="290" refid="structtls__param__bssid" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__bssid" kindref="compound">tls_param_bssid</ref><sp/>{</highlight></codeline>
-<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>bssid_enable;</highlight></codeline>
-<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res;</highlight></codeline>
-<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>bssid[6];</highlight></codeline>
-<codeline lineno="294"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="295"><highlight class="normal"></highlight></codeline>
-<codeline lineno="297" refid="structtls__param__ssid" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__ssid" kindref="compound">tls_param_ssid</ref><sp/>{</highlight></codeline>
-<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>ssid[32];</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>ssid_len;</highlight></codeline>
-<codeline lineno="300"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="301"><highlight class="normal"></highlight></codeline>
-<codeline lineno="303" refid="structtls__param__key" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__key" kindref="compound">tls_param_key</ref><sp/>{</highlight></codeline>
-<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>psk[64];</highlight></codeline>
-<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>key_length;</highlight></codeline>
-<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>key_index;</highlight></codeline>
-<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>key_format;</highlight></codeline>
-<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res;</highlight></codeline>
-<codeline lineno="309"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="310"><highlight class="normal"></highlight></codeline>
-<codeline lineno="312" refid="structtls__param__original__key" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__original__key" kindref="compound">tls_param_original_key</ref><sp/>{</highlight></codeline>
-<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>psk[64];</highlight></codeline>
-<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>key_length;</highlight></codeline>
-<codeline lineno="315"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="316"><highlight class="normal"></highlight></codeline>
-<codeline lineno="318" refid="structtls__param__sha1" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__sha1" kindref="compound">tls_param_sha1</ref>{</highlight></codeline>
-<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>psk_set;</highlight></codeline>
-<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>psk[32];</highlight></codeline>
-<codeline lineno="321"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="322"><highlight class="normal"></highlight></codeline>
-<codeline lineno="324" refid="structtls__param__bgr" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__bgr" kindref="compound">tls_param_bgr</ref><sp/>{</highlight></codeline>
-<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>bg;</highlight></codeline>
-<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>max_rate;</highlight></codeline>
-<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res[2];</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="wm__params_8h_1a1db732069b6255d3871d9e60fe445b60" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_SSIDBRD_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SSIDBRD_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ROAM_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ROAM_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="wm__params_8h_1a0eed4688aafbfa78421661bf0c424e91" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_PSM_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_PSM_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_DDNS_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_DDNS_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_AUTO_CREATE_ADHOC_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_AUTO_CREATE_ADHOC_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_MODE_PIN<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_MODE_PBC<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_WPS_FLAG_NEGOTIATED<sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UPNP_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UPNP_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="wm__params_8h_1acf1c85279b3a157ed8857a7b606f3488" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_IEEE80211_INFRA<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_IEEE80211_ADHOC<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_IEEE80211_SOFTAP<sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="wm__params_8h_1a4a31ca70747c231fffea62794e193fd3" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_MANUAL_MODE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_AUTO_MODE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ALWAYS_ONLINE_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ALWAYS_ONLINE_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="wm__params_8h_1af90b5e1669e9b7aa454cbe412403e325" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_DHCP_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_DHCP_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="wm__params_8h_1a7f56bcb798574cdae30101d224e0b955" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_0_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(0)<sp/></highlight><highlight class="comment">/*<sp/>1-11<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_1_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(1)<sp/></highlight><highlight class="comment">/*<sp/>1-13<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_2_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(2)<sp/></highlight><highlight class="comment">/*<sp/>10-11<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_3_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(3)<sp/></highlight><highlight class="comment">/*<sp/>10-13<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_4_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(4)<sp/></highlight><highlight class="comment">/*<sp/>14<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_5_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(5)<sp/></highlight><highlight class="comment">/*<sp/>1-14<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_6_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(6)<sp/></highlight><highlight class="comment">/*<sp/>3-9<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_7_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>(7)<sp/></highlight><highlight class="comment">/*<sp/>5-13<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_REGION_MAXIMUM_BG_BAND<sp/><sp/><sp/><sp/><sp/><sp/>TLS_PARAM_REGION_7_BG_BAND</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="wm__params_8h_1af9f465e18a3eb45cbdc63a96a5bbf4d7" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_OPEN<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WEP64<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WEP128<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WPA_PSK_TKIP<sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WPA_PSK_AES<sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WPA2_PSK_TKIP<sp/><sp/><sp/><sp/><sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_ENCRY_WPA2_PSK_AES<sp/><sp/><sp/><sp/><sp/><sp/>(6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="wm__params_8h_1a2ad19699a92c15f00f45b5d0ceb2485d" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_USR_INTF_LUART<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_USR_INTF_HUART<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_USR_INTF_HSPI<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_USR_INTF_HSDIO<sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="wm__params_8h_1ac45c904c8d49064bb717b9830c10e54d" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B600<sp/><sp/><sp/><sp/><sp/><sp/>(600)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B1200<sp/><sp/><sp/><sp/><sp/><sp/>(1200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B1800<sp/><sp/><sp/><sp/><sp/><sp/>(1800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B2400<sp/><sp/><sp/><sp/><sp/><sp/>(2400)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B4800<sp/><sp/><sp/><sp/><sp/><sp/>(4800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B9600<sp/><sp/><sp/><sp/><sp/><sp/>(9600)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B19200<sp/><sp/><sp/><sp/><sp/><sp/>(19200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B38400<sp/><sp/><sp/><sp/><sp/><sp/>(38400)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B57600<sp/><sp/><sp/><sp/><sp/><sp/>(57600)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_BAUDRATE_B115200<sp/><sp/><sp/><sp/><sp/><sp/>(115200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B230400<sp/><sp/><sp/><sp/><sp/><sp/>(230400)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B460800<sp/><sp/><sp/><sp/><sp/><sp/>(460800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B921600<sp/><sp/><sp/><sp/><sp/><sp/>(921600)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B1000000<sp/><sp/><sp/><sp/><sp/><sp/>(1000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B1250000<sp/><sp/><sp/><sp/><sp/><sp/>(1250000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B1500000<sp/><sp/><sp/><sp/><sp/><sp/>(1500000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HUART_BAUDRATE_B2000000<sp/><sp/><sp/><sp/><sp/><sp/>(2000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="wm__params_8h_1aa1c197b580cec1f3d1079acceb022e99" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_NONE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_EVEN<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_ODD<sp/><sp/><sp/><sp/><sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_MARK<sp/><sp/><sp/><sp/><sp/><sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_PARITY_SPACE<sp/><sp/><sp/><sp/><sp/><sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="wm__params_8h_1ad32e742b115b75b74fa9aece809a2a10" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_STOPBITS_1BITS<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_STOPBITS_2BITS<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="wm__params_8h_1adc1ec4ae128b73815b20cd761f83cd12" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_FLOW_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_UART_FLOW_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_HSPI_MAX_SCLK<sp/><sp/><sp/><sp/><sp/><sp/>(33000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="wm__params_8h_1acd8a7fb0592de13d17f2d620b355aa23" refkind="member"><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_TCP<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_UDP<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_CLIENT<sp/><sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_SERVER<sp/><sp/><sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLS_PARAM_SOCKET_DEFAULT_PORT<sp/><sp/><sp/><sp/><sp/><sp/>(60000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="structtls__param__hardware__version" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__hardware__version" kindref="compound">tls_param_hardware_version</ref><sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>mark;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>main;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>sub;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>material;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>year;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>week;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res[2];</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="structtls__param__bssid" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__bssid" kindref="compound">tls_param_bssid</ref><sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>bssid_enable;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>bssid[6];</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="structtls__param__ssid" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__ssid" kindref="compound">tls_param_ssid</ref><sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>ssid[32];</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>ssid_len;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="structtls__param__tem__offset" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__tem__offset" kindref="compound">tls_param_tem_offset</ref><sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>offset_len;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>s32<sp/>offset;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="structtls__param__key" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__key" kindref="compound">tls_param_key</ref><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>psk[64];</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>key_length;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>key_index;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>key_format;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="structtls__param__original__key" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__original__key" kindref="compound">tls_param_original_key</ref><sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>psk[64];</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>key_length;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325" refid="structtls__param__sha1" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__sha1" kindref="compound">tls_param_sha1</ref>{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>psk_set;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>psk[32];</highlight></codeline>
 <codeline lineno="328"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="329"><highlight class="normal"></highlight></codeline>
-<codeline lineno="331" refid="structtls__param__ip" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__ip" kindref="compound">tls_param_ip</ref><sp/>{</highlight></codeline>
-<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dhcp_enable;</highlight></codeline>
-<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res[3];</highlight></codeline>
-<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>ip[4];</highlight></codeline>
-<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>netmask[4];</highlight></codeline>
-<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>gateway[4];</highlight></codeline>
-<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dns1[4];</highlight></codeline>
-<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dns2[4];</highlight></codeline>
-<codeline lineno="339"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="340"><highlight class="normal"></highlight></codeline>
-<codeline lineno="342" refid="structtls__param__uart" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__uart" kindref="compound">tls_param_uart</ref><sp/>{</highlight></codeline>
-<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>baudrate;</highlight></codeline>
-<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>stop_bits;</highlight></codeline>
-<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>parity;</highlight></codeline>
-<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>flow;</highlight></codeline>
-<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>charsize;</highlight></codeline>
-<codeline lineno="348"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="349"><highlight class="normal"></highlight></codeline>
-<codeline lineno="351" refid="structtls__param__socket" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__socket" kindref="compound">tls_param_socket</ref><sp/>{</highlight></codeline>
-<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>protocol;</highlight></codeline>
-<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>client_or_server;</highlight></codeline>
-<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>port_num;</highlight></codeline>
-<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>host[32];</highlight></codeline>
-<codeline lineno="356"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="357"><highlight class="normal"></highlight></codeline>
-<codeline lineno="358" refid="structtls__param__wps" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__wps" kindref="compound">tls_param_wps</ref><sp/>{</highlight></codeline>
-<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>wps_enable;</highlight></codeline>
-<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>mode;</highlight></codeline>
-<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>flag;</highlight></codeline>
-<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res;</highlight></codeline>
-<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>pin[8];</highlight></codeline>
-<codeline lineno="364"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="365"><highlight class="normal"></highlight></codeline>
-<codeline lineno="367" refid="structtls__param__oray__client" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__oray__client" kindref="compound">tls_param_oray_client</ref><sp/>{</highlight></codeline>
-<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>oray_client_enable;</highlight></codeline>
-<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>oray_client_user[32];</highlight></codeline>
-<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>oray_client_pass[32];</highlight></codeline>
+<codeline lineno="331" refid="structtls__param__bgr" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__bgr" kindref="compound">tls_param_bgr</ref><sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>bg;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>max_rate;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res[2];</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338" refid="structtls__param__ip" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__ip" kindref="compound">tls_param_ip</ref><sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dhcp_enable;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res[3];</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>ip[4];</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>netmask[4];</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>gateway[4];</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dns1[4];</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dns2[4];</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="structtls__param__uart" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__uart" kindref="compound">tls_param_uart</ref><sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>baudrate;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>stop_bits;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>parity;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>flow;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>charsize;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="structtls__param__socket" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__socket" kindref="compound">tls_param_socket</ref><sp/>{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>protocol;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>client_or_server;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>port_num;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>host[32];</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="structtls__param__wps" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__wps" kindref="compound">tls_param_wps</ref><sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>wps_enable;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>mode;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>flag;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>res;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>pin[8];</highlight></codeline>
 <codeline lineno="371"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="372"><highlight class="normal"></highlight></codeline>
-<codeline lineno="374" refid="structtls__webs__cfg" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__webs__cfg" kindref="compound">tls_webs_cfg</ref><sp/>{</highlight></codeline>
-<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>AutoRun;</highlight></codeline>
-<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>Reserved;</highlight></codeline>
-<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>PortNum;</highlight></codeline>
+<codeline lineno="374" refid="structtls__param__oray__client" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__param__oray__client" kindref="compound">tls_param_oray_client</ref><sp/>{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>oray_client_enable;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>oray_client_user[32];</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>oray_client_pass[32];</highlight></codeline>
 <codeline lineno="378"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="379"><highlight class="normal"></highlight></codeline>
-<codeline lineno="381" refid="structtls__user__param" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__user__param" kindref="compound">tls_user_param</ref>{</highlight></codeline>
-<codeline lineno="382"><highlight class="normal"></highlight></codeline>
-<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>wireless_protocol;</highlight></codeline>
-<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>auto_mode;</highlight></codeline>
-<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dhcp_enable;</highlight></codeline>
-<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>user_port_mode;</highlight></codeline>
-<codeline lineno="387"><highlight class="normal"></highlight></codeline>
-<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>ip[4];</highlight></codeline>
-<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>netmask[4];</highlight></codeline>
-<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>gateway[4];</highlight></codeline>
-<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dns[4];</highlight></codeline>
-<codeline lineno="392"><highlight class="normal"></highlight></codeline>
-<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>baudrate;</highlight></codeline>
+<codeline lineno="381" refid="structtls__webs__cfg" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__webs__cfg" kindref="compound">tls_webs_cfg</ref><sp/>{</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>AutoRun;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>Reserved;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>PortNum;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388" refid="structtls__user__param" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtls__user__param" kindref="compound">tls_user_param</ref>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>wireless_protocol;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>auto_mode;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dhcp_enable;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>user_port_mode;</highlight></codeline>
 <codeline lineno="394"><highlight class="normal"></highlight></codeline>
-<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>socket_protocol;</highlight></codeline>
-<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>socket_client_or_server;</highlight></codeline>
-<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>socket_port_num;</highlight></codeline>
-<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>socket_host[32];</highlight></codeline>
-<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>auto_powersave;</highlight></codeline>
-<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>PassWord[6];</highlight></codeline>
-<codeline lineno="401"><highlight class="normal">}<ref refid="wm__params_8h_1ac9a23596388f168b36b94b0739a348fc" kindref="member">ST_Wm_User_Param</ref>;</highlight></codeline>
-<codeline lineno="402"><highlight class="normal"></highlight></codeline>
-<codeline lineno="435"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1gac9b208c0d9c4371df9a8ca7d15e2e095" kindref="member">tls_param_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="436"><highlight class="normal"></highlight></codeline>
-<codeline lineno="448"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga8f0a80b66cefad1e75ee0662ad3184de" kindref="member">tls_param_load_factory_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="449"><highlight class="normal"></highlight></codeline>
-<codeline lineno="464"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga74eeb50c2dad2092d0a8ad7ce44f5017" kindref="member">tls_param_set</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*argv,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>to_flash);</highlight></codeline>
-<codeline lineno="465"><highlight class="normal"></highlight></codeline>
-<codeline lineno="480"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1gaa89c7150198ab56796cb7170dc5766cf" kindref="member">tls_param_get</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*argv,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>from_flash);</highlight></codeline>
-<codeline lineno="481"><highlight class="normal"></highlight></codeline>
-<codeline lineno="494"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga6356609a6f60cd0e937c1e5f20a4c9b5" kindref="member">tls_param_to_flash</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="495"><highlight class="normal"></highlight></codeline>
-<codeline lineno="506"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga34ef1edd79eb49002c667b8290a75f0b" kindref="member">tls_restore_param_from_backup</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="507"><highlight class="normal"></highlight></codeline>
-<codeline lineno="521"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga4a1ee99acc1a3a9a6b3786802ba3257e" kindref="member">tls_param_to_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="522"><highlight class="normal"></highlight></codeline>
-<codeline lineno="534"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga34391dd8880ac0c4604706e69f5ebe3f" kindref="member">tls_param_save_user_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="535"><highlight class="normal"></highlight></codeline>
-<codeline lineno="547"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga151a1dee494aa7d7ce3138d94832aa9b" kindref="member">tls_param_save_user</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__user__param" kindref="compound">tls_user_param</ref><sp/>*user_param);</highlight></codeline>
-<codeline lineno="548"><highlight class="normal"></highlight></codeline>
-<codeline lineno="559"><highlight class="normal">u8<sp/><ref refid="group___param___a_p_is_1gab182a1ef9b87d0b44fc64ffb8df0ed5a" kindref="member">tls_param_get_updp_mode</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="560"><highlight class="normal"></highlight></codeline>
-<codeline lineno="570"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1gad5ed12686c045276aab0a7d81a3db3ff" kindref="member">tls_param_set_updp_mode</ref>(u8<sp/>mode);</highlight></codeline>
-<codeline lineno="571"><highlight class="normal"></highlight></codeline>
-<codeline lineno="582"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga6dde7ee1328c09ad61360bfa320c5595" kindref="member">tls_param_get_program_param</ref>(u32<sp/>*pBase);</highlight></codeline>
-<codeline lineno="583"><highlight class="normal"></highlight></codeline>
-<codeline lineno="597"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga5e0518c8e13fe8e2a44c3625c29c6552" kindref="member">tls_param_set_program_param</ref>(u32<sp/>base,<sp/>u32<sp/>totallen,<sp/>u32<sp/>checksum);</highlight></codeline>
-<codeline lineno="598"><highlight class="normal"></highlight></codeline>
-<codeline lineno="607"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_PARAM_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>ip[4];</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>netmask[4];</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>gateway[4];</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dns[4];</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>baudrate;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>socket_protocol;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>socket_client_or_server;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>socket_port_num;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>socket_host[32];</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>auto_powersave;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>PassWord[6];</highlight></codeline>
+<codeline lineno="408"><highlight class="normal">}<ref refid="wm__params_8h_1ac9a23596388f168b36b94b0739a348fc" kindref="member">ST_Wm_User_Param</ref>;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1gac9b208c0d9c4371df9a8ca7d15e2e095" kindref="member">tls_param_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga8f0a80b66cefad1e75ee0662ad3184de" kindref="member">tls_param_load_factory_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga74eeb50c2dad2092d0a8ad7ce44f5017" kindref="member">tls_param_set</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*argv,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>to_flash);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1gaa89c7150198ab56796cb7170dc5766cf" kindref="member">tls_param_get</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*argv,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>from_flash);</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga6356609a6f60cd0e937c1e5f20a4c9b5" kindref="member">tls_param_to_flash</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga34ef1edd79eb49002c667b8290a75f0b" kindref="member">tls_restore_param_from_backup</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga4a1ee99acc1a3a9a6b3786802ba3257e" kindref="member">tls_param_to_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga34391dd8880ac0c4604706e69f5ebe3f" kindref="member">tls_param_save_user_default</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga151a1dee494aa7d7ce3138d94832aa9b" kindref="member">tls_param_save_user</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__user__param" kindref="compound">tls_user_param</ref><sp/>*user_param);</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal">u8<sp/><ref refid="group___param___a_p_is_1gab182a1ef9b87d0b44fc64ffb8df0ed5a" kindref="member">tls_param_get_updp_mode</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1gad5ed12686c045276aab0a7d81a3db3ff" kindref="member">tls_param_set_updp_mode</ref>(u8<sp/>mode);</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga6dde7ee1328c09ad61360bfa320c5595" kindref="member">tls_param_get_program_param</ref>(u32<sp/>*pBase);</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="604"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___param___a_p_is_1ga5e0518c8e13fe8e2a44c3625c29c6552" kindref="member">tls_param_set_program_param</ref>(u32<sp/>base,<sp/>u32<sp/>totallen,<sp/>u32<sp/>checksum);</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WM_PARAM_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Include/Platform/wm_params.h"/>
   </compounddef>

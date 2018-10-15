@@ -10,12 +10,12 @@
     <includes local="yes">cryptolib.h</includes>
     <includes local="yes">cryptoApi.h</includes>
     <incdepgraph>
-      <node id="328">
-        <label>cryptoApi.h</label>
-      </node>
       <node id="322">
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
+      </node>
+      <node id="328">
+        <label>cryptoApi.h</label>
       </node>
       <node id="327">
         <label>cryptolib.h</label>
@@ -312,8 +312,8 @@
         </inbodydescription>
         <location file="Include/Platform/wm_crypto_hard.h" line="75" column="9" bodyfile="Include/Platform/wm_crypto_hard.h" bodystart="75" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="wm__crypto__hard_8h_1a98c763adfeea8e9831c46ec269e47ae9" prot="public" static="no">
-        <name>ERR_OK</name>
+      <memberdef kind="define" id="wm__crypto__hard_8h_1a54dc05d08ee4eb5e85eb5305f607497c" prot="public" static="no">
+        <name>ERR_CRY_OK</name>
         <initializer>0</initializer>
         <briefdescription>
 <para>No error, everything OK. </para>        </briefdescription>
@@ -2089,7 +2089,7 @@ Copyright (c) 2014 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
 <codeline lineno="75" refid="wm__crypto__hard_8h_1a032295ce7ae2083260a9419eacde1ef7" refkind="member"><highlight class="preprocessor">#define<sp/>HR_CRYPTO_CRC_RESULT<sp/><sp/><sp/><sp/>HR_CRYPTO_SHA1_DIGEST4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77" refid="wm__crypto__hard_8h_1a98c763adfeea8e9831c46ec269e47ae9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="wm__crypto__hard_8h_1a54dc05d08ee4eb5e85eb5305f607497c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_CRY_OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="78"><highlight class="preprocessor">#define<sp/>ERR_FAILURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>failure<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERR_ARG_FAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-6<sp/><sp/></highlight><highlight class="comment">/*<sp/>Failure<sp/>due<sp/>to<sp/>bad<sp/>function<sp/>param<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>

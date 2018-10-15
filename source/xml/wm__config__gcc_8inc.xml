@@ -7,7 +7,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="normal">@.equ<sp/>__TLS_OS_UCOS,<sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@;</highlight><highlight class="comment">//xx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal">@.equ<sp/>__TLS_OS_UCOS,<sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@;</highlight><highlight class="comment">//only select one</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal">@.equ<sp/>__TLS_OS_FREERTOS,<sp/><sp/><sp/><sp/>1</highlight></codeline>
 <codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
     </programlisting>

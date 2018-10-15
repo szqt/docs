@@ -28,7 +28,89 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/App/wm_wifi_oneshot.h" line="204" column="1"/>
+        <location file="Include/App/wm_wifi_oneshot.h" line="225" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___a_p_p___a_p_is_1gadefd8272fb759371d6452458db70e829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tls_wifi_set_oneshot_config_mode</definition>
+        <argsstring>(u8 flag)</argsstring>
+        <name>tls_wifi_set_oneshot_config_mode</name>
+        <param>
+          <type>u8</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>This function is used to set oneshot config mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flag</parametername>
+<parametername direction="in">0:one</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shot config 1:softap socket config 2:softap webserver config </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___a_p_p___a_p_is_1ga31140fa14ff0cc41b01bfdce74549338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tls_wifi_get_oneshot_config_mode</definition>
+        <argsstring>(void)</argsstring>
+        <name>tls_wifi_get_oneshot_config_mode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is used to get oneshot config mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one shot config 1: softap socket config 2: softap webserver config</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/App/wm_wifi_oneshot.h" line="254" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

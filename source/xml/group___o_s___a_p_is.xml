@@ -144,7 +144,7 @@
 <para>OS_FREERTOS</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>None </para></simplesect>
+<simplesect kind="note"><para>May not be used by now. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -188,7 +188,7 @@
           <declname>flag</declname>
         </param>
         <briefdescription>
-<para>This function is used to have uC/OS-II manage the execut- ion of a task. Tasks can either be created prior to the start of multitasking or by a running task. A task cannot be created by an ISR. </para>        </briefdescription>
+<para>This function is used to create a task. Tasks can either be created prior to the start of multitasking or by a running task. A task cannot be created in an ISR. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -266,7 +266,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="193" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="192" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga44a382aec34d8ae13475b268ac7ef6df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -314,11 +314,11 @@
 <para>failed</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>None </para></simplesect>
+<simplesect kind="note"><para>Generally, you do not need to call this function in your application. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="217" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="216" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga0ee6b456ea9cf944312c18031b3b288a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -370,7 +370,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="245" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="244" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gae756400c5aab47548f7ec1b0da295e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -411,7 +411,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="274" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="273" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga8160efbe5307f96f6e2ed0c2cea34572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -463,7 +463,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="298" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="297" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gacd5908ad43e8a0a7dd5c69d521eb2bb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -475,7 +475,7 @@
           <declname>mutex</declname>
         </param>
         <briefdescription>
-<para>This function signals a mutual exclusion semaphore. </para>        </briefdescription>
+<para>This function releases a mutual exclusion semaphore. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -504,7 +504,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="312" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="311" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gab0d06b8435947367b600a83efde816fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -556,7 +556,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="332" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="331" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gafa3f3c0039e6252d71d8e4a7d4e19b2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -568,7 +568,7 @@
           <declname>sem</declname>
         </param>
         <briefdescription>
-<para>This function deletes a semaphore and readies all tasks pending on the semaphore. </para>        </briefdescription>
+<para>This function deletes a semaphore and readies all tasks pending on this semaphore. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -597,7 +597,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="347" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="346" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gaeb1b502d11d25b65bba7e6cb16e90078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -649,7 +649,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="367" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="366" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga894bc38a19059b8f084f96f4edc5dd96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -690,7 +690,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="381" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="380" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gabe3b59bc50f78636edf1fd3d1d3afe6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -706,7 +706,7 @@
           <declname>cnt</declname>
         </param>
         <briefdescription>
-<para>This function sets the semaphore count to the value spec- ified as an argument.Typically,this value would be 0.You would typically use this function when a semaphore is used as a signaling mechanism and, you want to reset the count value. </para>        </briefdescription>
+<para>This function sets the semaphore count to the value specified as an argument.Typically,this value would be 0.You would typically use this function when a semaphore is used as a signaling mechanism and, you want to reset the count value. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -742,7 +742,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="399" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="398" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gac3092293cbb017e7a042ca07d462b0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -758,7 +758,7 @@
           <declname>queue_size</declname>
         </param>
         <briefdescription>
-<para>This function creates a message queue if free event cont- rol blocks are available. </para>        </briefdescription>
+<para>This function creates a message queue if free event cont rol blocks are available. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -794,7 +794,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="415" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="414" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gac4f8539b60be31ce8cf59e3d7b86f5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -835,7 +835,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="429" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="428" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga881f3210ba2d8701c8f59a956b6bb1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -898,7 +898,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="444" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="443" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gad2da86e8e8514f3fa119cf853421f9f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -939,7 +939,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="459" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="458" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga5be384c667ae9daa58dd92c8518482d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -1013,7 +1013,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="481" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="480" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga9e3e36e61c1c207d490cf224a842046c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -1065,7 +1065,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="498" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="497" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gafd7053c37a7c796457b5e0bf7504b977" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -1077,7 +1077,7 @@
           <declname>mailbox</declname>
         </param>
         <briefdescription>
-<para>This function deletes a mailbox and readies all tasks pending on the mailbox. </para>        </briefdescription>
+<para>This function deletes a mailbox and readies all of the tasks pending on the this mailbox. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1106,7 +1106,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="512" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="511" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga25ae765d00938f4b66d89c9850898a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -1158,7 +1158,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="527" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="526" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gae93489ddaaf44c3f7cb27eb8186410bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -1221,7 +1221,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="550" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="549" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga6f112f2f45d012d4dcf18d11908a705d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>u32</type>
@@ -1232,7 +1232,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used by your application to obtain the current value of the 32-bit counter which keeps track of the number of clock ticks. </para>        </briefdescription>
+<para>This function is used by your application to obtain the current value of the 32-bit counter which keeps track of the number of clock ticks since the system starts. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1254,7 +1254,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="565" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="564" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga2e828c3b756722bcf56a8ccba7ed561a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>u32</type>
@@ -1287,7 +1287,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="577" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="576" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gaa9582663dfc6f3bbd5f3e3f65b506989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1314,7 +1314,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="589" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="588" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga63e039673b40600e0f80cd21032fda15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="wm__osal_8h_1a31b3a3c05a78bf20c41cdfb735bbd281" kindref="member">tls_os_status_t</ref></type>
@@ -1410,7 +1410,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="619" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="618" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga62653724780698fe82fce98c5a3abbe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1437,7 +1437,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="636" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="635" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga0ae709f759984ca3c0f86f492f505ba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1458,7 +1458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="649" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="648" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1gad2269aea48c5d9a9b076dfed8eabe24d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1485,7 +1485,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="661" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="660" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga55fd918baee77b277d4cb3ffffe663f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1526,7 +1526,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="674" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="673" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga1e22e6c6c8648038ada87ae223d52571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1538,7 +1538,7 @@
           <declname>ticks</declname>
         </param>
         <briefdescription>
-<para>This function is called to delay execution of the curren- tly running task until the specified number of system ticks expires. This, of course, directly equates to delaying the current task for some time to expire. No delay will result If the specified delay is 0. If the specified delay is greater than 0 then, a context switch will result. </para>        </briefdescription>
+<para>This function is called to delay execution of the currently running task until the specified number of system ticks expires. This, of course, directly equates to delaying the current task for some time to expire. There will be no delay if the specified delay is 0. If the specified delay is greater than 0 then, a context switch will executed. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1553,7 +1553,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="693" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="692" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___o_s___a_p_is_1ga91d4da43735ac05074a9756d7e2cf9b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1564,7 +1564,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to display stat info. </para>        </briefdescription>
+<para>This function is used to display all the tasks&apos; detail status. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1579,7 +1579,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/OS/wm_osal.h" line="705" column="1"/>
+        <location file="Include/OS/wm_osal.h" line="704" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

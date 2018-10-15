@@ -69,7 +69,7 @@
           <declname>fclk</declname>
         </param>
         <briefdescription>
-<para>This function is used to setup the spi CPOL,CPHA,cs signal and clock. </para>        </briefdescription>
+<para>This function is used to setup the spi controller. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -149,14 +149,14 @@
 <parametername direction="in">buf</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the user data. </para></parameterdescription>
+<para>data to be sent. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">len</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the data length.</para></parameterdescription>
+<para>data length.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -208,7 +208,7 @@
           <declname>len</declname>
         </param>
         <briefdescription>
-<para>This function is used to synchronous read data by SPI. </para>        </briefdescription>
+<para>This function is used to synchronously read data from SPI. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -282,7 +282,7 @@
           <declname>n_rx</declname>
         </param>
         <briefdescription>
-<para>This function is used to synchronous write command then read data by SPI. </para>        </briefdescription>
+<para>This function is used to synchronously write command and then read data from SPI. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -339,7 +339,7 @@
 <parametername>TLS_SPI_STATUS_ESHUTDOWN</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>if SPI driver does not installed.</para></parameterdescription>
+<para>if SPI driver has not been installed.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="note"><para>None </para></simplesect>
@@ -370,7 +370,7 @@
           <declname>n_tx</declname>
         </param>
         <briefdescription>
-<para>This function is used to synchronous write 32bit command then write data by SPI. </para>        </briefdescription>
+<para>This function is used to synchronous write 32bit command then write data from SPI. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -453,7 +453,7 @@
 <parametername direction="in">type</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>is the transfer type. type == SPI_BYTE_TRANSFER byte transfer type == SPI_WORD_TRANSFER word transfer type == SPI_DMA_TRANSFER DMA transfer</para></parameterdescription>
+<para>is the transfer type. SPI_BYTE_TRANSFER -&gt;byte transfer; SPI_WORD_TRANSFER -&gt;word transfer; SPI_DMA_TRANSFER -&gt;DMA transfer;</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>

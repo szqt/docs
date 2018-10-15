@@ -206,7 +206,7 @@
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>
-<simplesect kind="note"><para>normally, it is used to restore mac filter after oneshot config </para></simplesect>
+<simplesect kind="note"><para>Normally, it is used to restore mac filter after oneshot config </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -472,7 +472,7 @@
           <declname>callback</declname>
         </param>
         <briefdescription>
-<para>before calling <ref refid="group___w_m___wi-_fi___a_p_is_1gabee9432a7be07447827bdc9c12ef872a" kindref="member">tls_wifi_scan()</ref> , application should call this function to register the call back function; </para>        </briefdescription>
+<para>Before calling <ref refid="group___w_m___wi-_fi___a_p_is_1gabee9432a7be07447827bdc9c12ef872a" kindref="member">tls_wifi_scan()</ref> , application should call this function to register the call back function;. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -503,7 +503,7 @@
           <declname>buffer_size</declname>
         </param>
         <briefdescription>
-<para>get scan result </para>        </briefdescription>
+<para>This function is used to get scan result. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -535,7 +535,7 @@
 <para>failed</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>user need to alloc buffer in advance. size for one item of scan result is 43Bytes; the buffer size depends how many items user wants. </para></simplesect>
+<simplesect kind="note"><para>User need to alloc buffer in advance. Size for one item of scan result is 43Bytes; The buffer size depends how many items user wants. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1060,10 +1060,10 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>[in</parametername>
+<parametername direction="in">mode</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>out] mode WIFI_AUTO_CNT_OFF WIFI_AUTO_CNT_ON or WIFI_AUTO_CNT_TMP_OFF</para></parameterdescription>
+<para>WIFI_AUTO_CNT_OFF WIFI_AUTO_CNT_ON or WIFI_AUTO_CNT_TMP_OFF</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -1085,7 +1085,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="680" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="679" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga8e9ebb34594c26ff66e420ed0bb9589c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1112,7 +1112,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="698" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="697" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga1b50af940952ec45d7ad32552fda3d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1124,7 +1124,7 @@
           <declname>bss</declname>
         </param>
         <briefdescription>
-<para>This function is used to register Wi-Fi status changed callback function. </para>        </briefdescription>
+<para>This function is used to get AP&apos;s info. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1139,7 +1139,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="709" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="708" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga9aebced2b79d4d8d010f7e3c43798ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1166,7 +1166,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="782" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="781" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga1c52421d516b50d09c4a8a2b46bc5ccc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1182,7 +1182,7 @@
           <declname>alwaysflag</declname>
         </param>
         <briefdescription>
-<para>set powersave flag </para>        </briefdescription>
+<para>This function is used to set powersave flag. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1204,7 +1204,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="807" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="806" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga4d435f1c3424d2433456b6775e5b11b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>u32</type>
@@ -1215,7 +1215,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>get current powersave flag </para>        </briefdescription>
+<para>This function is used to get current powersave flag. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1244,7 +1244,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="819" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="818" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga84df24ff00d6f17fdefb7c32b3001867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1293,7 +1293,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="833" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="832" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gad5ec9c8768ce9141db46ba8c1cb0c303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>u8</type>
@@ -1327,7 +1327,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="844" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="843" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gac2856f458751b687dc9d6550dd7fca75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1412,7 +1412,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="860" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="859" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gaf9e9ad8e104a7b239d6412fb8e7177e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1486,7 +1486,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="875" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="874" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga4e543971eb7529f695ef360bd12d2215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>enum <ref refid="wm__wifi_8h_1a68533ba3b74ad28ada8a0419149f7983" kindref="member">tls_wifi_states</ref></type>
@@ -1519,7 +1519,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="875" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="874" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga04806810b28f9c82abdb4a6ff6334dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1552,7 +1552,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="912" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="911" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gad82bec457e35cd87980ac768af606325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1564,7 +1564,7 @@
           <declname>info</declname>
         </param>
         <briefdescription>
-<para>This Function is used to print current error during joining AP. </para>        </briefdescription>
+<para>This function is used to print current error during joining AP. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1579,7 +1579,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="923" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="922" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga1e8b5310e04e610b4a030c74d983d26d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1613,7 +1613,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="935" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="934" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

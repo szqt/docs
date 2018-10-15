@@ -11,10 +11,6 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
-      <node id="109">
-        <label>wm_io.h</label>
-        <link refid="wm__io_8h"/>
-      </node>
       <node id="107">
         <label>Include/Driver/wm_gpio.h</label>
         <link refid="wm__gpio_8h"/>
@@ -23,12 +19,12 @@
         <childnode refid="109" relation="include">
         </childnode>
       </node>
+      <node id="109">
+        <label>wm_io.h</label>
+        <link refid="wm__io_8h"/>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="112">
-        <label>Include/Driver/wm_gpio_afsel.h</label>
-        <link refid="wm__gpio__afsel_8h"/>
-      </node>
       <node id="110">
         <label>Include/Driver/wm_gpio.h</label>
         <link refid="wm__gpio_8h"/>
@@ -36,6 +32,10 @@
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
+      </node>
+      <node id="112">
+        <label>Include/Driver/wm_gpio_afsel.h</label>
+        <link refid="wm__gpio__afsel_8h"/>
       </node>
       <node id="111">
         <label>Include/wm_include.h</label>

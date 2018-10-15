@@ -13,7 +13,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to initialize system param. </para>        </briefdescription>
+<para>This function is used to initialize parameter&apos;s manamge module. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -56,7 +56,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="435" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="442" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga8f0a80b66cefad1e75ee0662ad3184de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -67,7 +67,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to load the system default parameters. </para>        </briefdescription>
+<para>This function is used to load the system&apos;s default parameters. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -82,7 +82,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="448" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="455" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga74eeb50c2dad2092d0a8ad7ce44f5017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -102,7 +102,7 @@
           <declname>to_flash</declname>
         </param>
         <briefdescription>
-<para>This function is used to set system parameter. </para>        </briefdescription>
+<para>This function is used to set one system parameter by its id. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -145,7 +145,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="464" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="471" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1gaa89c7150198ab56796cb7170dc5766cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -165,7 +165,7 @@
           <declname>from_flash</declname>
         </param>
         <briefdescription>
-<para>This function is used to get system parameter. </para>        </briefdescription>
+<para>This function is used to get one system parameter by its id. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -208,7 +208,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="480" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="487" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga6356609a6f60cd0e937c1e5f20a4c9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -220,7 +220,7 @@
           <declname>id</declname>
         </param>
         <briefdescription>
-<para>This function is used to write parameter to flash. </para>        </briefdescription>
+<para>This function is used to write parameter into flash. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -256,7 +256,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="494" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="501" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga34ef1edd79eb49002c667b8290a75f0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -267,7 +267,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to recovery the parameters from the backup area to the parameter area,and read to memory. </para>        </briefdescription>
+<para>This function is used to recovery the parameters from the backup area to the parameter area,and load them into ram. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -282,7 +282,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="506" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="513" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga4a1ee99acc1a3a9a6b3786802ba3257e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -293,7 +293,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to load default parametes to memory. </para>        </briefdescription>
+<para>This function is used to load default parametes into ram. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -329,7 +329,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="521" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="528" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga34391dd8880ac0c4604706e69f5ebe3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -340,7 +340,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>This function is used to write user parameters to the flash. </para>        </briefdescription>
+<para>This function is used to write user&apos;s parameters into the flash. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -369,7 +369,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="534" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="541" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga151a1dee494aa7d7ce3138d94832aa9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -381,7 +381,7 @@
           <declname>user_param</declname>
         </param>
         <briefdescription>
-<para>This function is used to modify user default parameters, then write to flash. </para>        </briefdescription>
+<para>This function is used to modify user&apos;s default parameters, then write them into flash. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -410,7 +410,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="547" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="554" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1gab182a1ef9b87d0b44fc64ffb8df0ed5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>u8</type>
@@ -443,7 +443,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="559" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="566" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1gad5ed12686c045276aab0a7d81a3db3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -470,7 +470,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="570" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="577" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga6dde7ee1328c09ad61360bfa320c5595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -489,7 +489,7 @@
 <parametername direction="in">*pBase</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>to save base address</para></parameterdescription>
+<para>pointer to save base address</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -511,7 +511,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="582" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="589" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___param___a_p_is_1ga5e0518c8e13fe8e2a44c3625c29c6552" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -531,7 +531,7 @@
           <declname>checksum</declname>
         </param>
         <briefdescription>
-<para>This function is used to set program base、image len， checksum. </para>        </briefdescription>
+<para>This function is used to set program base,image len,and checksum. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -545,14 +545,14 @@
 <parametername direction="in">totallen</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>total length of image </para></parameterdescription>
+<para>total length of the image </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">checksum</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>image content checksum</para></parameterdescription>
+<para>checksum value of the image</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -574,7 +574,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_params.h" line="597" column="1"/>
+        <location file="Include/Platform/wm_params.h" line="604" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -10,13 +10,17 @@
         <label>wm_type_def.h</label>
         <link refid="wm__type__def_8h"/>
       </node>
-      <node id="230">
-        <label>wm_wifi_config.h</label>
-        <link refid="wm__wifi__config_8h"/>
-      </node>
       <node id="229">
         <label>wm_os_config.h</label>
         <link refid="wm__os__config_8h"/>
+      </node>
+      <node id="231">
+        <label>wm_ram_config.h</label>
+        <link refid="wm__ram__config_8h"/>
+      </node>
+      <node id="230">
+        <label>wm_wifi_config.h</label>
+        <link refid="wm__wifi__config_8h"/>
       </node>
       <node id="227">
         <label>Include/Net/wm_socket.h</label>
@@ -36,21 +40,17 @@
         <childnode refid="231" relation="include">
         </childnode>
       </node>
-      <node id="231">
-        <label>wm_ram_config.h</label>
-        <link refid="wm__ram__config_8h"/>
-      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="234">
+        <label>Include/wm_include.h</label>
+        <link refid="wm__include_8h"/>
+      </node>
       <node id="233">
         <label>Include/Net/wm_socket.h</label>
         <link refid="wm__socket_8h"/>
         <childnode refid="234" relation="include">
         </childnode>
-      </node>
-      <node id="234">
-        <label>Include/wm_include.h</label>
-        <link refid="wm__include_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structpbuf" prot="public">pbuf</innerclass>

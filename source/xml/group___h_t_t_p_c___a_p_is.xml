@@ -55,7 +55,7 @@
           <declname>pSession</declname>
         </param>
         <briefdescription>
-<para>Closes any active connection and free any used memory. </para>        </briefdescription>
+<para>Closes the active connection and free the corresponding memory. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -371,35 +371,35 @@
           <declname>nInsert</declname>
         </param>
         <briefdescription>
-<para>Add headers to the outgoing request. </para>        </briefdescription>
+<para>Add headers into the outgoing request. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">pSession</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>HTTP Session handle </para></parameterdescription>
+<para>HTTP Session </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">*pHeaderName</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Headers name </para></parameterdescription>
+<para>The Header name </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">*pHeaderData</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The headers data </para></parameterdescription>
+<para>The header data </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">nInsert</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Reserved could be any</para></parameterdescription>
+<para>Reserved, could be any</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>

@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__param__flash" kind="struct" language="C++" prot="public">
+    <compoundname>tls_param_flash</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__param__flash_1a4c654b6005ad2694c67e6e3dc831fe43" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_param_flash::magic</definition>
+        <argsstring></argsstring>
+        <name>magic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="111" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__flash_1af8b13e0b67839eaf2c930587371ce63b" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_param_flash::partition_num</definition>
+        <argsstring></argsstring>
+        <name>partition_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="112" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__flash_1a8bba48f2e26eb057a6427ef9f7d249d5" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_param_flash::modify_count</definition>
+        <argsstring></argsstring>
+        <name>modify_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="113" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__flash_1acea69ea2fa206863a01cdd005ff2bb42" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_param_flash::resv_1</definition>
+        <argsstring></argsstring>
+        <name>resv_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="114" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__flash_1a230f6352906ba74f393738783147b3be" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_param_flash::resv_2</definition>
+        <argsstring></argsstring>
+        <name>resv_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="115" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__flash_1ac7d246006e0f6da2223ff370a8fbe263" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tls_param_flash::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="116" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__flash_1ac19dcb270c3f7fa91605779293ab545d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtls__sys__param" kindref="compound">tls_sys_param</ref></type>
+        <definition>struct tls_sys_param tls_param_flash::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="116" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__flash_1a5c04f7512b9759f03dfc15e309679cc3" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tls_param_flash::crc32</definition>
+        <argsstring></argsstring>
+        <name>crc32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="118" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="195">
+        <label>tls_param_oray_client</label>
+        <link refid="structtls__param__oray__client"/>
+      </node>
+      <node id="202">
+        <label>tls_param_hardware_version</label>
+        <link refid="structtls__param__hardware__version"/>
+      </node>
+      <node id="206">
+        <label>tls_webs_cfg</label>
+        <link refid="structtls__webs__cfg"/>
+      </node>
+      <node id="207">
+        <label>tls_param_uart</label>
+        <link refid="structtls__param__uart"/>
+      </node>
+      <node id="193">
+        <label>tls_sys_param</label>
+        <link refid="structtls__sys__param"/>
+        <childnode refid="194" relation="usage">
+          <edgelabel>quick_connect</edgelabel>
+        </childnode>
+        <childnode refid="195" relation="usage">
+          <edgelabel>oray_client_setting</edgelabel>
+        </childnode>
+        <childnode refid="196" relation="usage">
+          <edgelabel>key</edgelabel>
+          <edgelabel>key4softap</edgelabel>
+        </childnode>
+        <childnode refid="197" relation="usage">
+          <edgelabel>ipcfg4softap</edgelabel>
+          <edgelabel>ipcfg</edgelabel>
+        </childnode>
+        <childnode refid="198" relation="usage">
+          <edgelabel>params_tem</edgelabel>
+        </childnode>
+        <childnode refid="199" relation="usage">
+          <edgelabel>wbgr4softap</edgelabel>
+          <edgelabel>wbgr</edgelabel>
+        </childnode>
+        <childnode refid="200" relation="usage">
+          <edgelabel>bssid</edgelabel>
+        </childnode>
+        <childnode refid="201" relation="usage">
+          <edgelabel>apsta_psk</edgelabel>
+          <edgelabel>psk</edgelabel>
+        </childnode>
+        <childnode refid="202" relation="usage">
+          <edgelabel>hardware_version</edgelabel>
+        </childnode>
+        <childnode refid="203" relation="usage">
+          <edgelabel>remote_socket_cfg</edgelabel>
+        </childnode>
+        <childnode refid="204" relation="usage">
+          <edgelabel>wps</edgelabel>
+        </childnode>
+        <childnode refid="205" relation="usage">
+          <edgelabel>ssid</edgelabel>
+          <edgelabel>apsta_ssid</edgelabel>
+          <edgelabel>original_ssid</edgelabel>
+        </childnode>
+        <childnode refid="206" relation="usage">
+          <edgelabel>WebsCfg</edgelabel>
+        </childnode>
+        <childnode refid="207" relation="usage">
+          <edgelabel>uart_cfg</edgelabel>
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>original_key</edgelabel>
+        </childnode>
+      </node>
+      <node id="196">
+        <label>tls_param_key</label>
+        <link refid="structtls__param__key"/>
+      </node>
+      <node id="198">
+        <label>tls_param_tem_offset</label>
+        <link refid="structtls__param__tem__offset"/>
+      </node>
+      <node id="204">
+        <label>tls_param_wps</label>
+        <link refid="structtls__param__wps"/>
+      </node>
+      <node id="208">
+        <label>tls_param_original_key</label>
+        <link refid="structtls__param__original__key"/>
+      </node>
+      <node id="192">
+        <label>tls_param_flash</label>
+        <link refid="structtls__param__flash"/>
+        <childnode refid="193" relation="usage">
+          <edgelabel>parameters</edgelabel>
+        </childnode>
+      </node>
+      <node id="200">
+        <label>tls_param_bssid</label>
+        <link refid="structtls__param__bssid"/>
+      </node>
+      <node id="203">
+        <label>tls_param_socket</label>
+        <link refid="structtls__param__socket"/>
+      </node>
+      <node id="197">
+        <label>tls_param_ip</label>
+        <link refid="structtls__param__ip"/>
+      </node>
+      <node id="201">
+        <label>tls_param_sha1</label>
+        <link refid="structtls__param__sha1"/>
+      </node>
+      <node id="194">
+        <label>tls_param_quick_connect</label>
+        <link refid="structtls__param__quick__connect"/>
+      </node>
+      <node id="205">
+        <label>tls_param_ssid</label>
+        <link refid="structtls__param__ssid"/>
+      </node>
+      <node id="199">
+        <label>tls_param_bgr</label>
+        <link refid="structtls__param__bgr"/>
+      </node>
+    </collaborationgraph>
+    <location file="Include/Platform/wm_param.h" line="110" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="110" bodyend="119"/>
+    <listofallmembers>
+      <member refid="structtls__param__flash_1a5c04f7512b9759f03dfc15e309679cc3" prot="public" virt="non-virtual"><scope>tls_param_flash</scope><name>crc32</name></member>
+      <member refid="structtls__param__flash_1ac7d246006e0f6da2223ff370a8fbe263" prot="public" virt="non-virtual"><scope>tls_param_flash</scope><name>length</name></member>
+      <member refid="structtls__param__flash_1a4c654b6005ad2694c67e6e3dc831fe43" prot="public" virt="non-virtual"><scope>tls_param_flash</scope><name>magic</name></member>
+      <member refid="structtls__param__flash_1a8bba48f2e26eb057a6427ef9f7d249d5" prot="public" virt="non-virtual"><scope>tls_param_flash</scope><name>modify_count</name></member>
+      <member refid="structtls__param__flash_1ac19dcb270c3f7fa91605779293ab545d" prot="public" virt="non-virtual"><scope>tls_param_flash</scope><name>parameters</name></member>
+      <member refid="structtls__param__flash_1af8b13e0b67839eaf2c930587371ce63b" prot="public" virt="non-virtual"><scope>tls_param_flash</scope><name>partition_num</name></member>
+      <member refid="structtls__param__flash_1acea69ea2fa206863a01cdd005ff2bb42" prot="public" virt="non-virtual"><scope>tls_param_flash</scope><name>resv_1</name></member>
+      <member refid="structtls__param__flash_1a230f6352906ba74f393738783147b3be" prot="public" virt="non-virtual"><scope>tls_param_flash</scope><name>resv_2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

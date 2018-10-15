@@ -38,7 +38,7 @@
 <para>failed</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>When the system is initialized, the function has been called, so users can not call the function. </para></simplesect>
+<simplesect kind="note"><para>When the system is initialized, the function has been called, so users can not call this function. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>

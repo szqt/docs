@@ -6,6 +6,7 @@
     <innerfile refid="wm__crypto__hard_8h">wm_crypto_hard.h</innerfile>
     <innerfile refid="wm__fwup_8h">wm_fwup.h</innerfile>
     <innerfile refid="wm__mem_8h">wm_mem.h</innerfile>
+    <innerfile refid="wm__param_8h">wm_param.h</innerfile>
     <innerfile refid="wm__params_8h">wm_params.h</innerfile>
     <innerfile refid="wm__wl__mbox_8h">wm_wl_mbox.h</innerfile>
     <innerfile refid="wm__wl__task_8h">wm_wl_task.h</innerfile>

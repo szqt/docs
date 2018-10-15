@@ -6,45 +6,45 @@
     <includedby refid="wm__netif_8h" local="yes">Include/App/wm_netif.h</includedby>
     <includedby refid="wm__netif2_80_83_8h" local="yes">Include/App/wm_netif2.0.3.h</includedby>
     <invincdepgraph>
-      <node id="403">
-        <label>Include/Net/wm_socket2.0.3.h</label>
-        <link refid="wm__socket2_80_83_8h"/>
-      </node>
-      <node id="402">
-        <label>Include/App/wm_netif.h</label>
-        <link refid="wm__netif_8h"/>
-        <childnode refid="401" relation="include">
-        </childnode>
-        <childnode refid="403" relation="include">
-        </childnode>
-        <childnode refid="404" relation="include">
-        </childnode>
-      </node>
-      <node id="404">
+      <node id="407">
         <label>Include/Net/wm_sockets.h</label>
         <link refid="wm__sockets_8h"/>
-        <childnode refid="401" relation="include">
+        <childnode refid="404" relation="include">
         </childnode>
-        <childnode refid="405" relation="include">
+        <childnode refid="408" relation="include">
         </childnode>
       </node>
-      <node id="405">
+      <node id="408">
         <label>Include/App/wm_netif2.0.3.h</label>
         <link refid="wm__netif2_80_83_8h"/>
       </node>
-      <node id="400">
+      <node id="403">
         <label>Include/WiFi/wm_wifi.h</label>
         <link refid="wm__wifi_8h"/>
-        <childnode refid="401" relation="include">
-        </childnode>
-        <childnode refid="402" relation="include">
+        <childnode refid="404" relation="include">
         </childnode>
         <childnode refid="405" relation="include">
         </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
       </node>
-      <node id="401">
+      <node id="404">
         <label>Include/wm_include.h</label>
         <link refid="wm__include_8h"/>
+      </node>
+      <node id="405">
+        <label>Include/App/wm_netif.h</label>
+        <link refid="wm__netif_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="407" relation="include">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>Include/Net/wm_socket2.0.3.h</label>
+        <link refid="wm__socket2_80_83_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structtls__curr__bss__t" prot="public">tls_curr_bss_t</innerclass>
@@ -1116,7 +1116,7 @@
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>
-<simplesect kind="note"><para>normally, it is used to restore mac filter after oneshot config </para></simplesect>
+<simplesect kind="note"><para>Normally, it is used to restore mac filter after oneshot config </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1382,7 +1382,7 @@
           <declname>callback</declname>
         </param>
         <briefdescription>
-<para>before calling <ref refid="group___w_m___wi-_fi___a_p_is_1gabee9432a7be07447827bdc9c12ef872a" kindref="member">tls_wifi_scan()</ref> , application should call this function to register the call back function; </para>        </briefdescription>
+<para>Before calling <ref refid="group___w_m___wi-_fi___a_p_is_1gabee9432a7be07447827bdc9c12ef872a" kindref="member">tls_wifi_scan()</ref> , application should call this function to register the call back function;. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1413,7 +1413,7 @@
           <declname>buffer_size</declname>
         </param>
         <briefdescription>
-<para>get scan result </para>        </briefdescription>
+<para>This function is used to get scan result. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1445,7 +1445,7 @@
 <para>failed</para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para>user need to alloc buffer in advance. size for one item of scan result is 43Bytes; the buffer size depends how many items user wants. </para></simplesect>
+<simplesect kind="note"><para>User need to alloc buffer in advance. Size for one item of scan result is 43Bytes; The buffer size depends how many items user wants. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1970,10 +1970,10 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>[in</parametername>
+<parametername direction="in">mode</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>out] mode WIFI_AUTO_CNT_OFF WIFI_AUTO_CNT_ON or WIFI_AUTO_CNT_TMP_OFF</para></parameterdescription>
+<para>WIFI_AUTO_CNT_OFF WIFI_AUTO_CNT_ON or WIFI_AUTO_CNT_TMP_OFF</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <parameterlist kind="retval"><parameteritem>
@@ -1995,7 +1995,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="680" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="679" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga8e9ebb34594c26ff66e420ed0bb9589c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2022,7 +2022,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="698" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="697" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga1b50af940952ec45d7ad32552fda3d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2034,7 +2034,7 @@
           <declname>bss</declname>
         </param>
         <briefdescription>
-<para>This function is used to register Wi-Fi status changed callback function. </para>        </briefdescription>
+<para>This function is used to get AP&apos;s info. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2049,7 +2049,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="709" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="708" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga9aebced2b79d4d8d010f7e3c43798ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2076,7 +2076,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="782" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="781" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga1c52421d516b50d09c4a8a2b46bc5ccc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2092,7 +2092,7 @@
           <declname>alwaysflag</declname>
         </param>
         <briefdescription>
-<para>set powersave flag </para>        </briefdescription>
+<para>This function is used to set powersave flag. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2114,7 +2114,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="807" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="806" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga4d435f1c3424d2433456b6775e5b11b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>u32</type>
@@ -2125,7 +2125,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>get current powersave flag </para>        </briefdescription>
+<para>This function is used to get current powersave flag. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2154,7 +2154,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="819" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="818" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga84df24ff00d6f17fdefb7c32b3001867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2203,7 +2203,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="833" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="832" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gad5ec9c8768ce9141db46ba8c1cb0c303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>u8</type>
@@ -2237,7 +2237,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="844" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="843" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gac2856f458751b687dc9d6550dd7fca75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2322,7 +2322,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="860" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="859" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gaf9e9ad8e104a7b239d6412fb8e7177e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2396,7 +2396,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="875" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="874" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga4e543971eb7529f695ef360bd12d2215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>enum <ref refid="wm__wifi_8h_1a68533ba3b74ad28ada8a0419149f7983" kindref="member">tls_wifi_states</ref></type>
@@ -2429,7 +2429,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="875" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="874" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga04806810b28f9c82abdb4a6ff6334dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2462,7 +2462,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="912" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="911" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1gad82bec457e35cd87980ac768af606325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2474,7 +2474,7 @@
           <declname>info</declname>
         </param>
         <briefdescription>
-<para>This Function is used to print current error during joining AP. </para>        </briefdescription>
+<para>This function is used to print current error during joining AP. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2489,7 +2489,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="923" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="922" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___w_m___wi-_fi___a_p_is_1ga1e8b5310e04e610b4a030c74d983d26d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -2523,7 +2523,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="935" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="934" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group___wi-_fi___a_p_is_1ga78bd6082218b88ead9c4b8f24dc99d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2540,7 +2540,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="941" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="940" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__wifi_8h_1aaed841a0c191bc10000bf51dc2d0e4b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>u8</type>
@@ -2556,7 +2556,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="946" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="945" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__wifi_8h_1a2f2a1556bdc30da42a5de4db093718e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2612,7 +2612,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="961" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="960" column="1"/>
       </memberdef>
       <memberdef kind="function" id="wm__wifi_8h_1ad3448863b523d62b86757c6b4c287a96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2628,7 +2628,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/WiFi/wm_wifi.h" line="966" column="1"/>
+        <location file="Include/WiFi/wm_wifi.h" line="965" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2963,68 +2963,68 @@ Copyright (c) 2015 Winner Microelectronics Co., Ltd. </para>    </detaileddescri
 <codeline lineno="656"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga7c18eb72b79e6711554494aaf9e0020a" kindref="member">tls_wifi_connect_by_ssid_bssid</ref>(u8<sp/>*ssid,<sp/>u8<sp/>ssid_len,<sp/>u8<sp/>*bssid,<sp/>u8<sp/>*pwd,<sp/>u8<sp/>pwd_len<sp/>);</highlight></codeline>
 <codeline lineno="657"><highlight class="normal"></highlight></codeline>
 <codeline lineno="658"><highlight class="normal"></highlight></codeline>
-<codeline lineno="680"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga7a32443f1f3011f4e4086774b01822fa" kindref="member">tls_wifi_auto_connect_flag</ref>(u8<sp/>opt,<sp/>u8*<sp/>mode);</highlight></codeline>
-<codeline lineno="681"><highlight class="normal"></highlight></codeline>
-<codeline lineno="698"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga8e9ebb34594c26ff66e420ed0bb9589c" kindref="member">tls_wifi_status_change_cb_register</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*callback)(u8<sp/>status));</highlight></codeline>
-<codeline lineno="699"><highlight class="normal"></highlight></codeline>
-<codeline lineno="709"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga1b50af940952ec45d7ad32552fda3d8d" kindref="member">tls_wifi_get_current_bss</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__curr__bss__t" kindref="compound">tls_curr_bss_t</ref>*<sp/>bss);</highlight></codeline>
-<codeline lineno="710"><highlight class="normal"></highlight></codeline>
-<codeline lineno="711"><highlight class="normal"></highlight><highlight class="comment">/*********************************************************************************************************</highlight></codeline>
-<codeline lineno="712"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Wifi<sp/>WPS<sp/>API</highlight></codeline>
-<codeline lineno="713"><highlight class="comment">*********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="714"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>TLS_CONFIG_WPS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="715"><highlight class="normal"></highlight></codeline>
-<codeline lineno="726"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wps_get_pin(u8*<sp/>pin);</highlight></codeline>
-<codeline lineno="727"><highlight class="normal"></highlight></codeline>
-<codeline lineno="739"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wps_set_pin(u8*<sp/>pin,<sp/>u8<sp/>pin_len);</highlight></codeline>
-<codeline lineno="740"><highlight class="normal"></highlight></codeline>
-<codeline lineno="755"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wps_start_pin(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="756"><highlight class="normal"></highlight></codeline>
-<codeline lineno="770"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wps_start_pbc(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="771"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="772"><highlight class="normal"></highlight></codeline>
-<codeline lineno="782"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga9aebced2b79d4d8d010f7e3c43798ede" kindref="member">tls_ethernet_data_rx_callback</ref>(<ref refid="wm__wifi_8h_1a81c727b3accf88c5069eeda88da55279" kindref="member">net_rx_data_cb</ref><sp/>callback);</highlight></codeline>
-<codeline lineno="783"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TLS_CONFIG_AP_OPT_FWD</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="784"><highlight class="normal"></highlight></codeline>
-<codeline lineno="794"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_ethernet_ip_rx_callback(<ref refid="wm__wifi_8h_1a81c727b3accf88c5069eeda88da55279" kindref="member">net_rx_data_cb</ref><sp/>callback);</highlight></codeline>
-<codeline lineno="795"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="796"><highlight class="normal"></highlight></codeline>
-<codeline lineno="807"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga1c52421d516b50d09c4a8a2b46bc5ccc" kindref="member">tls_wifi_set_psflag</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alwaysflag);</highlight></codeline>
-<codeline lineno="808"><highlight class="normal"></highlight></codeline>
-<codeline lineno="819"><highlight class="normal">u32<sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga4d435f1c3424d2433456b6775e5b11b8" kindref="member">tls_wifi_get_psflag</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="820"><highlight class="normal"></highlight></codeline>
-<codeline lineno="833"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga84df24ff00d6f17fdefb7c32b3001867" kindref="member">tls_wifi_send_oneshotdata</ref>(u8<sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*ssid,<sp/>u8<sp/>ssid_len);</highlight></codeline>
-<codeline lineno="834"><highlight class="normal"></highlight></codeline>
-<codeline lineno="844"><highlight class="normal">u8<sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gad5ec9c8768ce9141db46ba8c1cb0c303" kindref="member">tls_wifi_get_tx_gain_max</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__wifi_8h_1a86d5b3ebcab41ccf93a21b1f7967cc16" kindref="member">tls_wifi_tx_rate</ref><sp/>tx_rate);</highlight></codeline>
-<codeline lineno="845"><highlight class="normal"></highlight></codeline>
-<codeline lineno="860"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gac2856f458751b687dc9d6550dd7fca75" kindref="member">tls_wifi_send_mgmt</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__wifi_8h_1a3b119cac813943aa528918a32c12b2a6" kindref="member">tls_wifi_mgmt_type</ref><sp/>type,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__wifi__hdr__mac__t" kindref="compound">tls_wifi_hdr_mac_t</ref><sp/>*mac,<sp/>u8<sp/>*ie,<sp/>u16<sp/>ie_len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__wifi__tx__rate__t" kindref="compound">tls_wifi_tx_rate_t</ref><sp/>*tx);</highlight></codeline>
-<codeline lineno="861"><highlight class="normal"></highlight></codeline>
-<codeline lineno="875"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gaf9e9ad8e104a7b239d6412fb8e7177e8" kindref="member">tls_wifi_send_data</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__wifi__hdr__mac__t" kindref="compound">tls_wifi_hdr_mac_t</ref><sp/>*mac,<sp/>u8<sp/>*data,<sp/>u16<sp/>data_len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__wifi__tx__rate__t" kindref="compound">tls_wifi_tx_rate_t</ref><sp/>*tx);</highlight></codeline>
-<codeline lineno="876"><highlight class="normal"></highlight></codeline>
-<codeline lineno="877"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TLS_CONFIG_AP</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="878"><highlight class="normal"></highlight></codeline>
-<codeline lineno="889"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gaa915c36025feeb352765f82c97786aff" kindref="member">tls_wifi_get_authed_sta_info</ref>(u32<sp/>*sta_num,<sp/>u8<sp/>*buf,<sp/>u32<sp/>buf_size);</highlight></codeline>
-<codeline lineno="890"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="891"><highlight class="normal"></highlight></codeline>
-<codeline lineno="900"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__wifi_8h_1a68533ba3b74ad28ada8a0419149f7983" kindref="member">tls_wifi_states</ref><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga4e543971eb7529f695ef360bd12d2215" kindref="member">tls_wifi_get_state</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="901"><highlight class="normal"></highlight></codeline>
-<codeline lineno="912"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga04806810b28f9c82abdb4a6ff6334dac" kindref="member">tls_wifi_get_errno</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="913"><highlight class="normal"></highlight></codeline>
-<codeline lineno="923"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gad82bec457e35cd87980ac768af606325" kindref="member">tls_wifi_perror</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*info);</highlight></codeline>
-<codeline lineno="924"><highlight class="normal"></highlight></codeline>
-<codeline lineno="935"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group___w_m___wi-_fi___a_p_is_1ga1e8b5310e04e610b4a030c74d983d26d" kindref="member">tls_wifi_get_errinfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eno);</highlight></codeline>
+<codeline lineno="679"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga7a32443f1f3011f4e4086774b01822fa" kindref="member">tls_wifi_auto_connect_flag</ref>(u8<sp/>opt,<sp/>u8*<sp/>mode);</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga8e9ebb34594c26ff66e420ed0bb9589c" kindref="member">tls_wifi_status_change_cb_register</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*callback)(u8<sp/>status));</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"></highlight></codeline>
+<codeline lineno="708"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga1b50af940952ec45d7ad32552fda3d8d" kindref="member">tls_wifi_get_current_bss</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__curr__bss__t" kindref="compound">tls_curr_bss_t</ref>*<sp/>bss);</highlight></codeline>
+<codeline lineno="709"><highlight class="normal"></highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight><highlight class="comment">/*********************************************************************************************************</highlight></codeline>
+<codeline lineno="711"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Wifi<sp/>WPS<sp/>API</highlight></codeline>
+<codeline lineno="712"><highlight class="comment">*********************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>TLS_CONFIG_WPS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="725"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wps_get_pin(u8*<sp/>pin);</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"></highlight></codeline>
+<codeline lineno="738"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wps_set_pin(u8*<sp/>pin,<sp/>u8<sp/>pin_len);</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight></codeline>
+<codeline lineno="754"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wps_start_pin(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"></highlight></codeline>
+<codeline lineno="769"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wps_start_pbc(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight></codeline>
+<codeline lineno="781"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga9aebced2b79d4d8d010f7e3c43798ede" kindref="member">tls_ethernet_data_rx_callback</ref>(<ref refid="wm__wifi_8h_1a81c727b3accf88c5069eeda88da55279" kindref="member">net_rx_data_cb</ref><sp/>callback);</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TLS_CONFIG_AP_OPT_FWD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight></codeline>
+<codeline lineno="793"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_ethernet_ip_rx_callback(<ref refid="wm__wifi_8h_1a81c727b3accf88c5069eeda88da55279" kindref="member">net_rx_data_cb</ref><sp/>callback);</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="795"><highlight class="normal"></highlight></codeline>
+<codeline lineno="806"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga1c52421d516b50d09c4a8a2b46bc5ccc" kindref="member">tls_wifi_set_psflag</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alwaysflag);</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"></highlight></codeline>
+<codeline lineno="818"><highlight class="normal">u32<sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga4d435f1c3424d2433456b6775e5b11b8" kindref="member">tls_wifi_get_psflag</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="819"><highlight class="normal"></highlight></codeline>
+<codeline lineno="832"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga84df24ff00d6f17fdefb7c32b3001867" kindref="member">tls_wifi_send_oneshotdata</ref>(u8<sp/>*dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*ssid,<sp/>u8<sp/>ssid_len);</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"></highlight></codeline>
+<codeline lineno="843"><highlight class="normal">u8<sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gad5ec9c8768ce9141db46ba8c1cb0c303" kindref="member">tls_wifi_get_tx_gain_max</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__wifi_8h_1a86d5b3ebcab41ccf93a21b1f7967cc16" kindref="member">tls_wifi_tx_rate</ref><sp/>tx_rate);</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"></highlight></codeline>
+<codeline lineno="859"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gac2856f458751b687dc9d6550dd7fca75" kindref="member">tls_wifi_send_mgmt</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__wifi_8h_1a3b119cac813943aa528918a32c12b2a6" kindref="member">tls_wifi_mgmt_type</ref><sp/>type,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__wifi__hdr__mac__t" kindref="compound">tls_wifi_hdr_mac_t</ref><sp/>*mac,<sp/>u8<sp/>*ie,<sp/>u16<sp/>ie_len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__wifi__tx__rate__t" kindref="compound">tls_wifi_tx_rate_t</ref><sp/>*tx);</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"></highlight></codeline>
+<codeline lineno="874"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gaf9e9ad8e104a7b239d6412fb8e7177e8" kindref="member">tls_wifi_send_data</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__wifi__hdr__mac__t" kindref="compound">tls_wifi_hdr_mac_t</ref><sp/>*mac,<sp/>u8<sp/>*data,<sp/>u16<sp/>data_len,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtls__wifi__tx__rate__t" kindref="compound">tls_wifi_tx_rate_t</ref><sp/>*tx);</highlight></codeline>
+<codeline lineno="875"><highlight class="normal"></highlight></codeline>
+<codeline lineno="876"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TLS_CONFIG_AP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="877"><highlight class="normal"></highlight></codeline>
+<codeline lineno="888"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gaa915c36025feeb352765f82c97786aff" kindref="member">tls_wifi_get_authed_sta_info</ref>(u32<sp/>*sta_num,<sp/>u8<sp/>*buf,<sp/>u32<sp/>buf_size);</highlight></codeline>
+<codeline lineno="889"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="890"><highlight class="normal"></highlight></codeline>
+<codeline lineno="899"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="wm__wifi_8h_1a68533ba3b74ad28ada8a0419149f7983" kindref="member">tls_wifi_states</ref><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga4e543971eb7529f695ef360bd12d2215" kindref="member">tls_wifi_get_state</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="900"><highlight class="normal"></highlight></codeline>
+<codeline lineno="911"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1ga04806810b28f9c82abdb4a6ff6334dac" kindref="member">tls_wifi_get_errno</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="912"><highlight class="normal"></highlight></codeline>
+<codeline lineno="922"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___w_m___wi-_fi___a_p_is_1gad82bec457e35cd87980ac768af606325" kindref="member">tls_wifi_perror</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*info);</highlight></codeline>
+<codeline lineno="923"><highlight class="normal"></highlight></codeline>
+<codeline lineno="934"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group___w_m___wi-_fi___a_p_is_1ga1e8b5310e04e610b4a030c74d983d26d" kindref="member">tls_wifi_get_errinfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eno);</highlight></codeline>
+<codeline lineno="935"><highlight class="normal"></highlight></codeline>
 <codeline lineno="936"><highlight class="normal"></highlight></codeline>
-<codeline lineno="937"><highlight class="normal"></highlight></codeline>
-<codeline lineno="941"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_wifi_set_opmode(u8<sp/>mode);</highlight></codeline>
-<codeline lineno="942"><highlight class="normal"></highlight></codeline>
-<codeline lineno="946"><highlight class="normal">u8<sp/>tls_wifi_get_opmode(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="961"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__wifi_8h_1a2f2a1556bdc30da42a5de4db093718e5" kindref="member">tls_wifi_mem_cfg</ref>(u32<sp/>startmem,<sp/>u8<sp/>txcnt,<sp/>u8<sp/>rxcnt);</highlight></codeline>
-<codeline lineno="962"><highlight class="normal"></highlight></codeline>
-<codeline lineno="966"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wl_get_isr_count(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="940"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tls_wifi_set_opmode(u8<sp/>mode);</highlight></codeline>
+<codeline lineno="941"><highlight class="normal"></highlight></codeline>
+<codeline lineno="945"><highlight class="normal">u8<sp/>tls_wifi_get_opmode(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="960"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wm__wifi_8h_1a2f2a1556bdc30da42a5de4db093718e5" kindref="member">tls_wifi_mem_cfg</ref>(u32<sp/>startmem,<sp/>u8<sp/>txcnt,<sp/>u8<sp/>rxcnt);</highlight></codeline>
+<codeline lineno="961"><highlight class="normal"></highlight></codeline>
+<codeline lineno="965"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tls_wl_get_isr_count(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="966"><highlight class="normal"></highlight></codeline>
 <codeline lineno="967"><highlight class="normal"></highlight></codeline>
-<codeline lineno="968"><highlight class="normal"></highlight></codeline>
-<codeline lineno="969"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TLS_WIFI_FUNC_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="970"><highlight class="normal"></highlight></codeline>
+<codeline lineno="968"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TLS_WIFI_FUNC_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="969"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Include/WiFi/wm_wifi.h"/>
   </compounddef>

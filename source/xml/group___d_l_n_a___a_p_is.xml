@@ -203,7 +203,7 @@
           <declname>callback</declname>
         </param>
         <briefdescription>
-<para>This function is used to register volumedb control callb- ack which would be called while to get or set volumedb control. </para>        </briefdescription>
+<para>This function is used to register volumedb control callback which would be called while to get or set volumedb control. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -230,7 +230,7 @@
           <declname>callback</declname>
         </param>
         <briefdescription>
-<para>This function is used to register loudness control callb- ack which would be called while to get or set loudness control. </para>        </briefdescription>
+<para>This function is used to register loudness control callback which would be called while to get or set loudness control. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

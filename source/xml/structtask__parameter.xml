@@ -15,7 +15,7 @@
 <para>task ID </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="104" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="104" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="107" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__parameter_1aeea9112dee514c6a9717c782750d7e98" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -28,7 +28,7 @@
 <para>task name </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="105" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="105" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="108" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__parameter_1a0d83c9d91dc1402fec404e9bf2d06c07" prot="public" static="no" mutable="no">
         <type>u8 *</type>
@@ -41,7 +41,7 @@
 <para>start address of task stack </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="106" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="106" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="109" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__parameter_1aea5e915719380b6c6e9fb91cd065761a" prot="public" static="no" mutable="no">
         <type>u32</type>
@@ -54,7 +54,7 @@
 <para>size of task stack </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="107" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="107" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="110" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__parameter_1a0ab8abc941f0d0bcda24323125d77b98" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -67,7 +67,7 @@
 <para>size of mailbox </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="108" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="108" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="111" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__parameter_1a07bde9214225a299722d6d6b1df4959e" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -80,7 +80,7 @@
 <para>mailbox ID </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="109" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="109" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="112" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtask__parameter_1a97c6bc0dfb736326f25d838023ffb375" prot="public" static="no" mutable="no">
         <type>u8</type>
@@ -93,14 +93,14 @@
 <para>timer ID </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Include/Platform/wm_wl_task.h" line="110" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="110" bodyend="-1"/>
+        <location file="Include/Platform/wm_wl_task.h" line="113" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>task parameters </para>    </detaileddescription>
-    <location file="Include/Platform/wm_wl_task.h" line="103" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="103" bodyend="111"/>
+    <location file="Include/Platform/wm_wl_task.h" line="106" column="1" bodyfile="Include/Platform/wm_wl_task.h" bodystart="106" bodyend="114"/>
     <listofallmembers>
       <member refid="structtask__parameter_1a07bde9214225a299722d6d6b1df4959e" prot="public" virt="non-virtual"><scope>task_parameter</scope><name>mbox_id</name></member>
       <member refid="structtask__parameter_1a0ab8abc941f0d0bcda24323125d77b98" prot="public" virt="non-virtual"><scope>task_parameter</scope><name>mbox_size</name></member>

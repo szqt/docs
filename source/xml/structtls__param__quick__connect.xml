@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtls__param__quick__connect" kind="struct" language="C++" prot="public">
+    <compoundname>tls_param_quick_connect</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtls__param__quick__connect_1ab118ddc8236bfbdc293ec838b6d21141" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tls_param_quick_connect::quick_connect_en</definition>
+        <argsstring></argsstring>
+        <name>quick_connect_en</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="21" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtls__param__quick__connect_1a5e8d34588cad7556fdbc7d6d429e877d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tls_param_quick_connect::chanId</definition>
+        <argsstring></argsstring>
+        <name>chanId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Include/Platform/wm_param.h" line="22" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Include/Platform/wm_param.h" line="20" column="1" bodyfile="Include/Platform/wm_param.h" bodystart="20" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structtls__param__quick__connect_1a5e8d34588cad7556fdbc7d6d429e877d" prot="public" virt="non-virtual"><scope>tls_param_quick_connect</scope><name>chanId</name></member>
+      <member refid="structtls__param__quick__connect_1ab118ddc8236bfbdc293ec838b6d21141" prot="public" virt="non-virtual"><scope>tls_param_quick_connect</scope><name>quick_connect_en</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
