@@ -58,7 +58,7 @@ Micro USB
 4.1.1打开工程
 """"""""""""""""
 
-下载 :download:`WM_SDK_W600 </upload/tools/WM_SDK_W600_G2.02.08.zip>` ，解压后，打开 **\\WM_SDK\\Tools\\Keil\\Project\\WM\\_W600.uvproj** 文件
+下载  `W600 最新SDK <https://github.com/w600/sdk>`__  ，解压后，打开 **\\WM_SDK\\Tools\\Keil\\Project\\WM\\_W600.uvproj** 文件
 
 .. image:: start.assets/mdk_open_prj.png
    :width: 500px
@@ -95,7 +95,7 @@ Micro USB
 引脚连接在了一起，当您在使用其它串口工具（如
 SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可能会无输出。**
 
-固件烧录和调试需依赖\ `星通智联串口调试助手 <tools>`__
+固件烧录和调试需依赖\ `星通智联串口调试助手 </download/common>`__
 
 4.2.1 连接设备
 """"""""""""""""

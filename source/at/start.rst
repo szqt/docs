@@ -8,10 +8,12 @@
 
 -  电脑：固件下载当前仅支持Windows操作系统
 
--  软件：`串口调试助手 <tools>`__ 
+-  软件：`串口调试助手 </download/common>`__ 
 
--  硬件：TB-O1开发板 或
-   W600系列模组、开发板（\ `购买链接 <https://shop387867913.taobao.com/>`__\ ）
+-  固件：`AT兼容固件 </at/download>`__ 
+
+-  硬件：TB-01开发板 或
+   W600系列模组、开发板（\ `购买链接 <http://shop.thingsturn.com/>`__\ ）
 
 -  Micro USB线
 

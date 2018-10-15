@@ -25,6 +25,10 @@ wm_mem.h
 -----------------
 .. doxygenfile:: wm_mem.h
 
+wm_param.h
+-----------------
+.. doxygenfile:: wm_param.h
+
 wm_params.h
 -----------------
 .. doxygenfile:: wm_params.h
