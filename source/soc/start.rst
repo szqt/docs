@@ -25,8 +25,10 @@ Cortex-M3 处理器，代码可移植性更强、开发环境友善。
 2 准备工作
 ---------------
 
--  **电脑**\ ：目前仅支持 Windows 操作系统（需使用 MDK ）
--  **工具链**\ ：MDK (后续支持 GCC)
+-  **电脑**\ : 开发环境支持Keil 和GCC
+-  **S D K**\ : `W600 最新SDK <https://github.com/w600/sdk>`__  
+-  **keil工具链**\ : MDK （Keli 开发）
+-  **gcc开发环境**\ : `eclipse + cygwin+ gcc <https://eyun.baidu.com/s/3ghjX5xL>`__
 -  **TB-01 开发板**\ （或其它 W600 模组、开发板）
 -  **Micro USB 线**\ （需支持数据传输）
 
@@ -44,7 +46,7 @@ Micro USB
 4 KEil 环境搭建
 ----------------
 
-4.1 MDK 环境搭建
+4.1 安装MDK 环境搭建
 ~~~~~~~~~~~~~~~~~
 
 由于 SDK 需要 Cortex-M3 的 Device Pack 支持，如果在线下载速度较慢 或
@@ -55,18 +57,18 @@ Micro USB
 .. image:: start.assets/mdk_legacy.png
    :width: 500px
 
-4.1.1打开工程
-""""""""""""""""
+4.2 打开工程
+~~~~~~~~~~~~~~~~~
 
-下载  `W600 最新SDK <https://github.com/w600/sdk>`__  ，解压后，打开 **\\WM_SDK\\Tools\\Keil\\Project\\WM\\_W600.uvproj** 文件
+打开下载的SDK工程，找到 **\\SDK\\Tools\\Keil\\Project\\WM\\_W600.uvproj** 文件并打开
 
 .. image:: start.assets/mdk_open_prj.png
    :width: 500px
 
 ``注意：若提示工程打开失败，请检查 MDK 是否按照上一章节进行正确配置``
 
-4.1.2 修改 Demo 示例
-""""""""""""""""""""""
+4.3 修改 Demo 示例
+~~~~~~~~~~~~~~~~~~~~
 
 找到main.c，此处的 void UserMain(void) 是用户程序的函数入口
 
@@ -75,8 +77,8 @@ Micro USB
 .. image:: start.assets/modify_user_main.png
    :width: 500px
 
-4.1.3 编译固件
-""""""""""""""""
+4.4 编译
+~~~~~~~~
 
 点击菜单栏可进行编译
 
@@ -88,8 +90,79 @@ Micro USB
 .. image:: start.assets/build_output.png
    :width: 500px
 
-4.2 固件烧录与调试
-~~~~~~~~~~~~~~~~~~~~~
+
+
+	   
+5.GCC环境搭建
+-------------
+
+5.1 安装
+~~~~~~~~
+
+双击下载的 ``W600_IDE_Setup.exe`` ,如图，自行选择要解压的目录；
+
+.. image:: start.assets/decompression.png
+   :width: 500px
+
+解压后的目录如下
+
+.. image:: start.assets/list.png
+   :width: 500px
+
+   
+5.2 配置
+~~~~~~~~
+1. 点击 **ConfigTool.exe** 弹出配置界面；
+
+.. image:: start.assets/En_path.png
+   :width: 500px
+
+
+2. 点击 Default 按键，自动搜寻Eclipse Path 和 Cygwin Path路径；
+
+3. 点击 Register 注册 cygwin；
+
+4. 点击保存，使配置生效。可以在任何目录下，右键打开cygwin命令框。
+
+.. image:: start.assets/cygwin.png
+   :width: 500px
+
+
+5.3 导入新工程
+~~~~~~~~~~~~~~
+
+双击 **IDE.exe** 打开IDE应用程序, IDE内置了一份W600的SDK，不是最新版本，建议更新
+
+1. 点击 **file-> import**
+
+.. image:: start.assets/import.png
+   :width: 500px
+   
+2. 点击 **C/C++**，选择 **Existing Code as Makefile Project**
+
+.. image:: start.assets/import_1.png
+   :width: 500px
+
+
+3. 去除 **C++** 支持，选择 **Cygwin GCC** ;
+点击 **Browser** , 选中我们之前下载好的SDK工程
+
+.. image:: start.assets/import_2.png
+   :width: 500px
+   
+4. 点击Finish完成工程的导入
+
+
+5.4 编译
+~~~~~~~~~~~~~~
+
+右键需要编译的工程,点击 **Clean project**, 清除完后再右键工程，点击 **Build Project** 即可，出现 Build fininsh！则编译正常无误，可以烧录固件。
+
+.. image:: start.assets/gcc_build.png
+
+
+6.固件烧录与调试
+----------------
 
 **注意：由于我们在硬件上将 W600 的 RESET 引脚和串口芯片的 RTS
 引脚连接在了一起，当您在使用其它串口工具（如
@@ -97,8 +170,8 @@ SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可�
 
 固件烧录和调试需依赖\ `星通智联串口调试助手 </download/common>`__
 
-4.2.1 连接设备
-""""""""""""""""
+6.1 连接设备
+~~~~~~~~~~~~
 
 1. 将开发板与电脑通过 Micro USB 线进行连接
 
@@ -120,8 +193,9 @@ SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可�
 
    -  出现其它打印信息内容或者乱码，请联系对应的销售人员或技术支持人员；
 
-4.2.2 固件烧录及运行
-""""""""""""""""""""""
+6.2 固件烧录及运行
+~~~~~~~~~~~~~~~~~~
+
 
 1. 选择对应的固件，支持 FLS 和 img 格式；
    ``FLS 是 WM_W600_sec.img + secboot.img 的合并文件，一般用于芯片的首次下载，之后仅烧录 WM_W600_SEC.img即可。``
@@ -134,10 +208,6 @@ SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可�
        :width: 500px
 
 
-	   
-5.GCC环境搭建
--------------------
-10.14日开放
 
 
 结束
