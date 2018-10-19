@@ -1,10 +1,10 @@
-AliOS-Things（内容未更新）
-============================
+AliOS-Things
+============
 
 .. toctree::
    :titlesonly:
 
-   start
+   入门指导 <start>
    example
    download
    faq

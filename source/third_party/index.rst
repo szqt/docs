@@ -1,8 +1,11 @@
-第三方开发资源（内容未更新）
-==============================
+第三方开发资源
+==============
 
 .. toctree::
    :titlesonly:
 
    vsf/index
+   rt-thread/index
    alios-things/index
+   
+   
