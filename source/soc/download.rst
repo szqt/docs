@@ -11,9 +11,17 @@ SDK 相关文档
 
 :download:`W600_SDK DEMO运行指南 </upload/sdk/W600_SDK DEMO运行指南.pdf>` 
 
-:download:`W600 芯片SWD调试配置指南 </upload/sdk/W600 芯片SWD调试配置指南.pdf>` 
+:download:`W600 ROM功能简述 </upload/sdk/W600 ROM功能简述.pdf>` 
+
+:download:`W600_参数区使用说明 </upload/sdk/W600_参数区使用说明.pdf>` 
+
+:download:`W600_QFLASH布局说明 </upload/sdk/W600_QFLASH布局说明.pdf>` 
+
+:download:`W600_固件生成说明 </upload/sdk/W600_固件生成说明.pdf>` 
 
 :download:`W600 ROM功能简述 </upload/sdk/W600 ROM功能简述.pdf>` 
+
+
 
 
 测试报告
