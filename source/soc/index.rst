@@ -5,7 +5,7 @@ SoC 开发
 .. toctree::
 
    start
-   example
+   参考示例<example>
    swd
    download
    faq
