@@ -26,7 +26,7 @@ SDK 相关文档
 
 测试报告
 ------------------
-:download:`W600_SDK路由器连网兼容性测试报告 </upload/sdk/W600_SDK路由器连网兼容性测试报告.pdf>` 
+:download:`W600_SDK路由器连网兼容性测试报告 </upload/sdk/performance/W600_SDK路由器连网兼容性测试报告.pdf>` 
 
 SDK下载
 ------------------
