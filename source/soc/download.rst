@@ -5,6 +5,8 @@ SDK 相关文档
 ------------------
 :download:`SDK开发初级指南 </upload/sdk/SDK开发初级指南.pdf>` 
 
+:download:`W600_SDK用户手册 </upload/sdk/W600_SDK用户手册.pdf>` 
+
 :download:`W600 SDK_API手册 </upload/sdk/W600_APIs.zip>` 
 
 :download:`W600_SDK OS移植指导 </upload/sdk/W600_SDK OS移植指导.pdf>` 
@@ -20,6 +22,11 @@ SDK 相关文档
 :download:`W600_固件生成说明 </upload/sdk/W600_固件生成说明.pdf>` 
 
 :download:`W600 ROM功能简述 </upload/sdk/W600 ROM功能简述.pdf>` 
+
+:download:`W600_寄存器手册 </upload/sdk/W600_寄存器手册.pdf>` 
+
+:download:`W600_SECBOOT功能简述 </upload/sdk/W600_SECBOOT功能简述.pdf>` 
+
 
 
 
