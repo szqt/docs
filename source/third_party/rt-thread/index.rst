@@ -1,5 +1,5 @@
-RT-Thread（内容未更新）
-=======================
+RT-Thread
+=========
 
 .. toctree::
    :titlesonly:
