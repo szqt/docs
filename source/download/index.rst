@@ -7,4 +7,4 @@
    SoC开发相关下载 </soc/download>
    vsf相关下载 </third_party/vsf/download>
    AliOS-Things相关下载 </third_party/alios-things/download>
-   
+   应用笔记</upload/application_note/index>
