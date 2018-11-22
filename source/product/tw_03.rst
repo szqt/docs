@@ -29,4 +29,4 @@ TW-03无线模块是星通智联自主研发设计的一款高性价比Wi-Fi SOC
 -----------
 :download:`TW-03 规格书 </upload/product/tw03/tw_03_product_spec_cn_v1.1.pdf>` 
 
-:download:`TW-03 封装库 </upload/product/tw03/tw_03_lib.7z>` 
+:download:`TW-03 封装库 </upload/product/tw03/TW-03 Module.zip>` 
