@@ -7,4 +7,4 @@ AT兼容固件
 
 AT指令集
 -----------
-:download:`XTZL_W600_AT指令集 </upload/at/W600_AT指令集.pdf>` 
+:download:`XTZL_W600_AT指令集 </upload/at/W600_AT指令集_v1.1.pdf>` 
