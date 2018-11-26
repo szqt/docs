@@ -3,7 +3,7 @@
 
 AT兼容固件
 -------------
-:download:`XTZL_W600_AT_V1.0.10 </upload/at/XTZL_W600_AT_V1.1.3.zip>`
+:download:`XTZL_W600_AT_V1.1.3 </upload/at/XTZL_W600_AT_V1.1.3.zip>`
 
 AT指令集
 -----------
