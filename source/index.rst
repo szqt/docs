@@ -68,6 +68,11 @@ W600 特性
 
 `TB-01，全IO引出，支持一键下载 </product/tb_01>`_
 
+.. image:: index.assets/lsd_arduino.png
+   :width: 300px
+   
+`arduino开发板，全IO引出 </product/lsd_arduino>`_
+
 联系我们
 ==========
 
