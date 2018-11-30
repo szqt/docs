@@ -3,29 +3,39 @@
 
 SDK 相关文档
 ------------------
-:download:`SDK开发初级指南 </upload/sdk/SDK开发初级指南.pdf>` 
+:download:`W600_APIs.chm </upload/sdk/W600_APIs.chm>`
 
-:download:`W600_SDK用户手册 </upload/sdk/W600_SDK用户手册.pdf>` 
+:download:`W600_芯片产品规格书 </upload/sdk/W600_芯片产品规格书.pdf>`
 
-:download:`W600 SDK_API手册 </upload/sdk/W600_APIs.zip>` 
+:download:`W600_SDK_DEMO使用指导 </upload/sdk/W600_SDK_DEMO使用指导.pdf>`
 
-:download:`W600_SDK OS移植指导 </upload/sdk/W600_SDK OS移植指导.pdf>` 
+:download:`W600_SDK用户手册 </upload/sdk/W600_SDK用户手册.pdf>`
 
-:download:`W600_SDK DEMO运行指南 </upload/sdk/W600_SDK DEMO运行指南.pdf>` 
+:download:`W600_寄存器手册 </upload/sdk/W600_寄存器手册.pdf>`
 
-:download:`W600 ROM功能简述 </upload/sdk/W600 ROM功能简述.pdf>` 
+:download:`W600_一键配网使用指导 </upload/sdk/W600_一键配网使用指导.pdf>`
 
-:download:`W600_参数区使用说明 </upload/sdk/W600_参数区使用说明.pdf>` 
+:download:`W600_OneShotConfig2.0(Android) SDK用户手册 </upload/sdk/W600_OneShotConfig2.0(Android) SDK用户手册.pdf>`
 
-:download:`W600_QFLASH布局说明 </upload/sdk/W600_QFLASH布局说明.pdf>` 
+:download:`W600_OneShotConfig2.0(IOS) SDK用户手册 </upload/sdk/W600_OneShotConfig2.0(IOS) SDK用户手册.pdf>`
 
-:download:`W600_固件生成说明 </upload/sdk/W600_固件生成说明.pdf>` 
+:download:`W600_固件升级指导 </upload/sdk/W600_固件升级指导.pdf>`
 
-:download:`W600 ROM功能简述 </upload/sdk/W600 ROM功能简述.pdf>` 
+:download:`W600_固件生成说明 </upload/sdk/W600_固件生成说明.pdf>`
 
-:download:`W600_寄存器手册 </upload/sdk/W600_寄存器手册.pdf>` 
+:download:`W600_QFLASH布局说明 </upload/sdk/W600_QFLASH布局说明.pdf>`
 
-:download:`W600_SECBOOT功能简述 </upload/sdk/W600_SECBOOT功能简述.pdf>` 
+:download:`W600_ROM功能简述 </upload/sdk/W600_ROM功能简述.pdf>`
+
+:download:`W600_SDK_GCC编译指南 </upload/sdk/W600_SDK_GCC编译指南.pdf>`
+
+:download:`W600_SDK_OS移植指导 </upload/sdk/W600_SDK_OS移植指导.pdf>`
+
+:download:`W600_SECBOOT功能简述 </upload/sdk/W600_SECBOOT功能简述.pdf>`
+
+:download:`W600_SWD调试配置指南 </upload/sdk/W600_SWD调试配置指南.pdf>`
+
+:download:`W600_参数区使用说明 </upload/sdk/W600_参数区使用说明.pdf>`
 
 
 
@@ -33,7 +43,12 @@ SDK 相关文档
 
 测试报告
 ------------------
-:download:`W600_SDK路由器连网兼容性测试报告 </upload/sdk/performance/W600_SDK路由器连网兼容性测试报告.pdf>` 
+
+:download:`W600_路由器连网兼容性测试报告 </upload/sdk/performance/W600_路由器连网兼容性测试报告.pdf>`
+
+:download:`W600_配网兼容性测试报告（AirKiss） </upload/sdk/performance/W600_配网兼容性测试报告（AirKiss）.pdf>`
+
+:download:`W600_配网兼容性测试报告（OneShotConfig） </upload/sdk/performance/W600_配网兼容性测试报告（OneShotConfig）.pdf>`
 
 SDK下载
 ------------------
