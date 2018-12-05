@@ -47,6 +47,12 @@ W600 特性
 |  板层  |       2       |       2       |       2       |
 +--------+---------------+---------------+---------------+
 
+.. image:: /index.assets/w600_soc.png
+  :width: 300px
+
+
+`w600_wifi_soc </product/w600_soc>`_
+  
 .. image:: index.assets/tw_01.png
    :width: 300px
 
