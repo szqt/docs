@@ -3,6 +3,7 @@
 
 .. toctree::
 
+   w600_soc
    tw_01
    tw_02
    tw_03
