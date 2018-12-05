@@ -43,6 +43,7 @@ APP设计文档
 
 :download:`W600_OneShotConfig2.0(IOS) SDK用户手册 </upload/sdk/W600_OneShotConfig2.0(IOS) SDK用户手册.pdf>`
 
+APP源码：https://github.com/w600/
 
 测试报告
 --------
