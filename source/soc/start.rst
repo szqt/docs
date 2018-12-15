@@ -201,7 +201,7 @@ SecureCRT）时，需要去掉开发板上面的 R100 电阻，否则串口可�
    ``FLS 是 WM_W600_sec.img + secboot.img 的合并文件，一般用于芯片的首次下载，之后仅烧录 WM_W600_SEC.img即可。``
 
 2. 点击“下载”进行固件下载，\ ``波特率默认使用 115200 bps，支持 2Mbps！``\ ；
-   \ ``烧录遇到问题的用户请参考:``\ `**W600固件烧录指南** <upload/application_note/download_firmware>`__
+   \ ``烧录遇到问题的用户请参考:``\   `W600固件烧录指南 </upload/application_note/download_firmware/>`__
 
 3. 观察固件运行信息
 
