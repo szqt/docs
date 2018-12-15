@@ -94,7 +94,7 @@ git clone https://github.com/alibaba/AliOS-Things.git
 ~~~~~~~~~~~
 
 编译完成的固件在 **AliOS-things/out/helloworld@wm_w600/binary**
-\ ``烧录遇到问题的用户请参考:``\ `**W600固件烧录指南** <upload/application_note/download_firmware>`__
+\ ``烧录遇到问题的用户请参考:``\   `W600固件烧录指南 </upload/application_note/download_firmware/>`__
 
 .. image:: start.assets/文件目录.png
    :width: 600px
