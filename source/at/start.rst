@@ -34,7 +34,8 @@ Micro USB
 
 - 按照下图操作，使用星通智联串口工具烧录、测试;  
 - 点击“下载”进行固件下载，\ ``波特率默认使用 115200 bps，支持 2Mbps！``\ ;
-- \ ``烧录遇到问题的用户请参考:``\ `**W600固件烧录指南** </upload/application_note/index>`__
+- \ ``烧录遇到问题的用户请参考:``\   `W600固件烧录指南 </upload/application_note/index>`__
+
 
 .. image:: start.assets/at_download.png
    :width: 500px
