@@ -19,7 +19,7 @@
 
 SDK文档
 ---------
-:download:`W600_APIs.chm </upload/sdk/W600_APIs.chm>`
+:download:`W60X_APIs.chm </upload/sdk/W60X_APIs.chm>`
 
 :download:`W60X_OpenOCD调试指导 </upload/sdk/W60X_OpenOCD调试指导.pdf>` 
 
