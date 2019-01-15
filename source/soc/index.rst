@@ -6,6 +6,6 @@ SoC 开发
 
    start
    参考示例<example>
-   swd
+   swd调试<swd_debugging>
    download
    faq
