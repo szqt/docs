@@ -60,7 +60,7 @@ Target打开对话框，切换到Target标签界面，配置芯片的Flash 和 R
 
 IROM1: Start-0x8010100, Size-0x80000;
 
-IROM2: Start-0x20000000,Size-0x28000;
+IRAM2: Start-0x20000000,Size-0x28000;
 
 注意，配置的地址范围不能超过芯片的实际大小；
 
